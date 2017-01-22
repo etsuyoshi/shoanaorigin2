@@ -12,8 +12,8 @@
 @interface DetailViewController : UIViewController
 
 //@property (strong, nonatomic) NSDate *detailItem;
-@property (strong, nonatomic) Quiz *quiz;
-@property int quizNo;
+@property (strong, nonatomic) Quiz *quiz;//章番号はquiz.
+@property int quizNo;//何番目の問題か（章番号ではなく章の中の問題番号)
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *questionContentLabel;

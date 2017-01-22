@@ -1,0 +1,70 @@
+[
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Utils/ChartTransformerHorizontalBarChart.swift",
+  "offset": 328,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Utils/ChartTransformerHorizontalBarChart.swift",
+  "offset": 455,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Utils/ChartTransformerHorizontalBarChart.swift",
+  "offset": 496,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Utils/ChartTransformerHorizontalBarChart.swift",
+  "offset": 596,
+  "remove": 5,
+  "text": "(t",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Utils/ChartTransformerHorizontalBarChart.swift",
+  "offset": 611,
+  "remove": 1,
+  "text": "X: ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Utils/ChartTransformerHorizontalBarChart.swift",
+  "offset": 641,
+  "text": "y: ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Utils/ChartTransformerHorizontalBarChart.swift",
+  "offset": 781,
+  "remove": 5,
+  "text": "(s",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Utils/ChartTransformerHorizontalBarChart.swift",
+  "offset": 790,
+  "remove": 1,
+  "text": "X: ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Utils/ChartTransformerHorizontalBarChart.swift",
+  "offset": 797,
+  "text": "y: ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Utils/ChartTransformerHorizontalBarChart.swift",
+  "offset": 829,
+  "remove": 28,
+  "text": " ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Utils/ChartTransformerHorizontalBarChart.swift",
+  "offset": 870,
+  "remove": 18,
+  "text": ".translatedBy(x: ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Utils/ChartTransformerHorizontalBarChart.swift",
+  "offset": 967,
+  "text": "y: ",
+ }
+]

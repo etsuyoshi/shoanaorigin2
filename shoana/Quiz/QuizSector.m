@@ -1,0 +1,99 @@
+//
+//  QuizSector.m
+//  shoana
+//
+//  Created by EndoTsuyoshi on 2017/01/09.
+//  Copyright © 2017年 com.endo. All rights reserved.
+//
+
+#import "QuizSector.h"
+
+@implementation QuizSector
+
+
+// 初期化処理
+- (id)init
+{
+    self = [super init];
+    if (self)
+    {
+        // インスタンス変数の初期化
+        self.quizSectsArray = [NSMutableArray array];
+    }
+    return self;
+}
+
+
+/*
+ * 全csvファイルを読み込む（連番で存在するまで）
+ */
+-(BOOL)readAll{
+    
+    for(int sect = 1;sect < 100;sect++){
+        @autoreleasepool {
+            BOOL isSuccess = [self readData:sect];
+            if(!isSuccess){//when failure
+                NSLog(@"all file reading finsihed!!");
+                break;
+            }else{
+                NSLog(@"shoanakeizai%03d reading... success!", sect);
+            }
+        }
+        
+    }
+    
+    
+    if(self.quizSectsArray.count > 0){
+        return TRUE;
+    }else{
+        return FALSE;
+    }
+    
+}
+
+
+-(BOOL)readData:(int)noQuiz{
+    // クイズ出題画面用のビューコントローラを取得するための入れ物
+    //QuizRunningViewController *vc;
+    NSString *fileName = [NSString stringWithFormat:@"shoanakeizai%03d", noQuiz];
+    
+    
+    // クイズデータを読み込む
+    Quiz *quiz = [[Quiz alloc] init];
+    //self.quiz = [[Quiz alloc] init];
+    
+    // クイズデータのファイルパスを取得する
+    NSBundle *bundle = [NSBundle mainBundle];
+    NSString *path;
+    
+    
+    path = [bundle pathForResource:fileName ofType:@"csv"];
+    
+    //pathは存在しなければnullになる！
+    if(!path){
+        return FALSE;
+    }
+    
+    // ファイルから読み込んで、ローカル変数quizデータに格納する
+    [quiz readFromCSV:path];
+    
+    
+    [self.quizSectsArray addObject:quiz];
+    
+    
+    // 2回目以降の場合があるので、出題済みの情報をクリアする
+    //        [self.quiz clear];
+    
+    // クイズ出題画面用のビューコントローラを取得する
+    //vc = segue.destinationViewController;
+    
+    // クイズ情報を設定する
+    //        [vc setQuiz:self.quiz];
+    //[vc setQuiz:quiz];
+    return TRUE;
+}
+
+
+
+
+@end

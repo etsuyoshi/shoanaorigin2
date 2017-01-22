@@ -1,0 +1,176 @@
+[
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 290,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 368,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 440,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 540,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 1015,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 1044,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 1054,
+  "remove": 7,
+  "text": "y",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 1098,
+  "remove": 2,
+  "text": "=",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 1173,
+  "text": "(",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 1180,
+  "text": " as AnyObject)",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 1187,
+  "remove": 8,
+  "text": "(of: type(of: ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 1198,
+  "remove": 13,
+  "text": "f",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 1213,
+  "text": ")",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 1280,
+  "text": "(",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 1287,
+  "text": " as AnyObject)",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 1306,
+  "text": "((",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 1313,
+  "text": " as AnyObject)",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 1318,
+  "text": "??",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 1338,
+  "text": "!)",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 1405,
+  "text": "(",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 1412,
+  "text": " as AnyObject)",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 1502,
+  "text": "(",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 1509,
+  "text": " as AnyObject)",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 1652,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 1808,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 1833,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 1845,
+  "text": "?",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 1885,
+  "text": "type(of: ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 1889,
+  "remove": 14,
+  "text": ").i",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 2181,
+  "remove": 8,
+  "text": "(of: type(of: ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 2191,
+  "remove": 13,
+  "text": "s",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Data/Implementations/Standard/ChartDataEntry.swift",
+  "offset": 2206,
+  "text": ")",
+ }
+]

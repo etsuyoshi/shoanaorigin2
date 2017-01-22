@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface MasterTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *lbl_sector;
+@property (weak, nonatomic) IBOutlet UILabel *lbl_name;
+@property (weak, nonatomic) IBOutlet UILabel *lbl_seitouritu;
 
 @end

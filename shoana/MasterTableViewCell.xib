@@ -18,9 +18,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="light.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xkn-hB-DkE"/>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="第一章" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqe-Ia-Y5B">
-                        <frame key="frameInset" minX="8" minY="8" width="67" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第一章" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqe-Ia-Y5B">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="181" id="rAJ-b9-ZC4"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -40,7 +41,9 @@
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="Xkn-hB-DkE" firstAttribute="leadingMargin" secondItem="Uqe-Ia-Y5B" secondAttribute="leadingMargin" id="0JQ-ck-owk"/>
                     <constraint firstItem="Xkn-hB-DkE" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="7YL-Bw-ybh"/>
+                    <constraint firstItem="Xkn-hB-DkE" firstAttribute="topMargin" secondItem="Uqe-Ia-Y5B" secondAttribute="topMargin" id="FY6-I1-1kK"/>
                     <constraint firstAttribute="right" secondItem="Xkn-hB-DkE" secondAttribute="right" id="ItS-OG-fpc"/>
                     <constraint firstItem="Xkn-hB-DkE" firstAttribute="trailing" secondItem="zfL-Xu-wop" secondAttribute="trailingMargin" id="S96-6D-XEV"/>
                     <constraint firstAttribute="top" secondItem="Xkn-hB-DkE" secondAttribute="top" id="akD-OG-gg1"/>
@@ -51,6 +54,11 @@
                     <constraint firstItem="Xkn-hB-DkE" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="y6k-Bb-qn5"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="lbl_name" destination="zfL-Xu-wop" id="wQV-16-xkn"/>
+                <outlet property="lbl_sector" destination="Uqe-Ia-Y5B" id="5o7-yn-P1y"/>
+                <outlet property="lbl_seitouritu" destination="Hdf-qw-BKK" id="lC3-oO-4KF"/>
+            </connections>
             <point key="canvasLocation" x="28.5" y="90"/>
         </tableViewCell>
     </objects>

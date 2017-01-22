@@ -1,0 +1,20 @@
+[
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/Schema.swift",
+  "offset": 1965,
+  "remove": 1,
+  "text": "(f",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/Schema.swift",
+  "offset": 1977,
+  "remove": 1,
+  "text": ": ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/Schema.swift",
+  "offset": 2341,
+  "remove": 9,
+  "text": "(to: ",
+ }
+]

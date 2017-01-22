@@ -1,0 +1,38 @@
+[
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Renderers/ChartRendererBase.swift",
+  "offset": 311,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Renderers/ChartRendererBase.swift",
+  "offset": 440,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Renderers/ChartRendererBase.swift",
+  "offset": 562,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Renderers/ChartRendererBase.swift",
+  "offset": 659,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Renderers/ChartRendererBase.swift",
+  "offset": 1010,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Renderers/ChartRendererBase.swift",
+  "offset": 1038,
+  "remove": 7,
+  "text": "t",
+ }
+]

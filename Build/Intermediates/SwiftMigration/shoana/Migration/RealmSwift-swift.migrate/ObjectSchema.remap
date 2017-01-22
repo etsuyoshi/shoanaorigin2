@@ -1,0 +1,13 @@
+[
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/ObjectSchema.swift",
+  "offset": 2329,
+  "text": " as NSCopying",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/ObjectSchema.swift",
+  "offset": 2663,
+  "remove": 15,
+  "text": "(to: ",
+ }
+]

@@ -1,0 +1,77 @@
+[
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Renderers/ChartXAxisRendererRadarChart.swift",
+  "offset": 361,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Renderers/ChartXAxisRendererRadarChart.swift",
+  "offset": 429,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Renderers/ChartXAxisRendererRadarChart.swift",
+  "offset": 712,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Renderers/ChartXAxisRendererRadarChart.swift",
+  "offset": 756,
+  "remove": 9,
+  "text": "t",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Renderers/ChartXAxisRendererRadarChart.swift",
+  "offset": 841,
+  "text": "let ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Renderers/ChartXAxisRendererRadarChart.swift",
+  "offset": 1534,
+  "remove": 3,
+  "text": " ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Renderers/ChartXAxisRendererRadarChart.swift",
+  "offset": 1544,
+  "text": "from: 0, ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Renderers/ChartXAxisRendererRadarChart.swift",
+  "offset": 1811,
+  "remove": 3,
+  "text": ".truncatingRemainder(dividingBy: ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Renderers/ChartXAxisRendererRadarChart.swift",
+  "offset": 1819,
+  "text": ")",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Renderers/ChartXAxisRendererRadarChart.swift",
+  "offset": 2289,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Renderers/ChartXAxisRendererRadarChart.swift",
+  "offset": 2317,
+  "remove": 9,
+  "text": "t",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Renderers/ChartXAxisRendererRadarChart.swift",
+  "offset": 2840,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Renderers/ChartXAxisRendererRadarChart.swift",
+  "offset": 2884,
+  "remove": 9,
+  "text": "t",
+ }
+]

@@ -1,0 +1,188 @@
+[
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 297,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 428,
+  "remove": 1,
+  "text": "n",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 446,
+  "remove": 1,
+  "text": "r",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 528,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 563,
+  "remove": 1,
+  "text": "n",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 739,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 783,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 823,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 1295,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 1313,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 1521,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 1543,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 1801,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 1829,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 2124,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 2143,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 2343,
+  "remove": 1,
+  "text": "r",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 2449,
+  "remove": 1,
+  "text": "n",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 2589,
+  "text": "file",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 2626,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 2889,
+  "text": "repeating: false, ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 2908,
+  "remove": 23,
+  "text": "t",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 3881,
+  "text": "file",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 3918,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 3984,
+  "text": "keep: ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 3989,
+  "remove": 7,
+  "text": " ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 5427,
+  "text": "file",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 5464,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 6262,
+  "text": "file",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 6297,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 6688,
+  "text": "file",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 6721,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 7085,
+  "text": "file",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataApproximatorFilter.swift",
+  "offset": 7108,
+  "text": "_ ",
+ }
+]

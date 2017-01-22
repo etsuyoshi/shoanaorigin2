@@ -1,0 +1,215 @@
+[
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 290,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 379,
+  "text": "file",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 462,
+  "text": "file",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 490,
+  "remove": 3,
+  "text": "nan",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 577,
+  "text": "file",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 679,
+  "text": "file",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 820,
+  "text": "file",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 937,
+  "text": "file",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 4194,
+  "remove": 3,
+  "text": "nan",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 4554,
+  "remove": 3,
+  "text": "nan",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 4630,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 4676,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 4723,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 4775,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 4833,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 5019,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 5099,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 5352,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 5381,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 5391,
+  "remove": 7,
+  "text": "y",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 5435,
+  "remove": 2,
+  "text": "=",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 5510,
+  "text": "(",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 5517,
+  "text": " as AnyObject)",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 5524,
+  "remove": 8,
+  "text": "(of: type(of: ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 5535,
+  "remove": 13,
+  "text": "f",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 5550,
+  "text": ")",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 5617,
+  "text": "(",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 5624,
+  "text": " as AnyObject)",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 5710,
+  "text": "(",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 5717,
+  "text": " as AnyObject)",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 5808,
+  "text": "(",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 5815,
+  "text": " as AnyObject)",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 5913,
+  "text": "(",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 5920,
+  "text": " as AnyObject)",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 6014,
+  "text": "(",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 6021,
+  "text": " as AnyObject)",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 6258,
+  "remove": 8,
+  "text": "(of: type(of: ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 6268,
+  "remove": 13,
+  "text": "s",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/ChartHighlight.swift",
+  "offset": 6283,
+  "text": ")",
+ }
+]

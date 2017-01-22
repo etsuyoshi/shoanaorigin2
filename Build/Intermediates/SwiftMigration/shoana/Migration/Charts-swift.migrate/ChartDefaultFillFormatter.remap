@@ -1,0 +1,20 @@
+[
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Formatters/ChartDefaultFillFormatter.swift",
+  "offset": 432,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Formatters/ChartDefaultFillFormatter.swift",
+  "offset": 551,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Formatters/ChartDefaultFillFormatter.swift",
+  "offset": 589,
+  "remove": 9,
+  "text": "t",
+ }
+]

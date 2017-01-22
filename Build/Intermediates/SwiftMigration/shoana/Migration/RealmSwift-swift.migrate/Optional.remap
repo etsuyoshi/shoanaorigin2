@@ -1,0 +1,85 @@
+[
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/Optional.swift",
+  "offset": 1317,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/Optional.swift",
+  "offset": 1506,
+  "remove": 4,
+  "text": "value",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/Optional.swift",
+  "offset": 1526,
+  "text": " as Int",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/Optional.swift",
+  "offset": 1601,
+  "remove": 4,
+  "text": "value",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/Optional.swift",
+  "offset": 1622,
+  "text": " as Int",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/Optional.swift",
+  "offset": 1697,
+  "remove": 4,
+  "text": "value",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/Optional.swift",
+  "offset": 1718,
+  "text": " as Int",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/Optional.swift",
+  "offset": 1793,
+  "remove": 8,
+  "text": "value",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/Optional.swift",
+  "offset": 1813,
+  "text": " as Int64",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/Optional.swift",
+  "offset": 1988,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/Optional.swift",
+  "offset": 2091,
+  "remove": 4,
+  "text": "int",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/Optional.swift",
+  "offset": 2206,
+  "remove": 4,
+  "text": "int",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/Optional.swift",
+  "offset": 2322,
+  "remove": 4,
+  "text": "int",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/Optional.swift",
+  "offset": 2437,
+  "remove": 8,
+  "text": "int64",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/Optional.swift",
+  "offset": 2999,
+  "text": " as AnyObject?",
+ }
+]

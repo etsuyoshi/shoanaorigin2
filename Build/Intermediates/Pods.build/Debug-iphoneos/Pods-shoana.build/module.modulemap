@@ -1,0 +1,6 @@
+framework module Pods_shoana {
+  umbrella header "Pods-shoana-umbrella.h"
+
+  export *
+  module * { export * }
+}

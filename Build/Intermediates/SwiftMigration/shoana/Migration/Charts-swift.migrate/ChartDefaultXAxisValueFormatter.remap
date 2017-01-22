@@ -1,0 +1,19 @@
+[
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Formatters/ChartDefaultXAxisValueFormatter.swift",
+  "offset": 360,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Formatters/ChartDefaultXAxisValueFormatter.swift",
+  "offset": 452,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Formatters/ChartDefaultXAxisValueFormatter.swift",
+  "offset": 480,
+  "text": "_ ",
+ }
+]

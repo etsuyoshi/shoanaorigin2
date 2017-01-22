@@ -1,0 +1,13 @@
+[
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/SortDescriptor.swift",
+  "offset": 2891,
+  "text": "ExpressibleBy",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/SortDescriptor.swift",
+  "offset": 2903,
+  "remove": 12,
+  "text": "l",
+ }
+]

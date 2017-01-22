@@ -1,0 +1,49 @@
+[
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/Util.swift",
+  "offset": 831,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/Util.swift",
+  "offset": 973,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/Util.swift",
+  "offset": 1050,
+  "text": "NSExceptionName(rawValue: ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/Util.swift",
+  "offset": 1066,
+  "text": ")",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/Util.swift",
+  "offset": 1152,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/Util.swift",
+  "offset": 1326,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/Util.swift",
+  "offset": 1398,
+  "text": "?",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/Util.swift",
+  "offset": 1548,
+  "remove": 5,
+  "text": "(",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/RealmSwift/RealmSwift/Util.swift",
+  "offset": 1555,
+  "remove": 2,
+  "text": ": ",
+ }
+]

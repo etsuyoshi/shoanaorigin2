@@ -4,11 +4,14 @@
 
 // プロパティに対応するインスタンス変数とアクセッサメソッドの生成
 @synthesize sectorName = _sectorName;
+@synthesize category = _category;
 @synthesize questionNo = _questionNo;
 @synthesize question = _question;
 @synthesize rightAnswer = _rightAnswer;
 @synthesize choicesArray = _choicesArray;
 @synthesize explanation = _explanation;
+@synthesize kaitou = _kaitou;
+@synthesize seikai = _seikai;
 
 // 初期化処理
 - (id)init
@@ -18,11 +21,14 @@
     {
         // インスタンス変数を初期化
         _sectorName = nil;
+        _category = nil;
         _questionNo = nil;
         _question = nil;
         _rightAnswer = nil;
         _choicesArray = nil;
         _explanation = nil;
+        _kaitou = nil;
+        _seikai = nil;
     }
     return self;
 }
@@ -64,6 +70,10 @@
     NSLog(@"%@", self.rightAnswer);
     NSLog(@"%@", answer);
     return [self.rightAnswer isEqualToString:answer];
+}
+
+-(BOOL)checkIsRightNo:(int)answerNo{
+    return answerNo == self.rightNo;
 }
 
 @end

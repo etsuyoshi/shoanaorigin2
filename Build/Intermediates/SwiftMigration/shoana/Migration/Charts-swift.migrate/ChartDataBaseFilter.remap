@@ -1,0 +1,19 @@
+[
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataBaseFilter.swift",
+  "offset": 291,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataBaseFilter.swift",
+  "offset": 405,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Filters/ChartDataBaseFilter.swift",
+  "offset": 424,
+  "text": "_ ",
+ }
+]

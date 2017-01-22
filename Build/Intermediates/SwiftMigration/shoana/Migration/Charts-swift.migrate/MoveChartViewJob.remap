@@ -1,0 +1,25 @@
+[
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Jobs/MoveChartViewJob.swift",
+  "offset": 300,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Jobs/MoveChartViewJob.swift",
+  "offset": 745,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Jobs/MoveChartViewJob.swift",
+  "offset": 857,
+  "remove": 1,
+  "text": "let t",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Jobs/MoveChartViewJob.swift",
+  "offset": 896,
+  "text": "let ",
+ }
+]

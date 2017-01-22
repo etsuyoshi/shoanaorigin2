@@ -1,0 +1,340 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ScatterChartView"
+provides-nominal:
+- "C6Charts16ScatterChartView"
+provides-member:
+- ["C6Charts16ScatterChartView", ""]
+provides-dynamic-lookup:
+- "initialize"
+- "scatterData"
+depends-top-level:
+- "ScatterChartView"
+- "ScatterChartData"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- "BarLineChartViewBase"
+- "ScatterChartDataProvider"
+- !private "ScatterChartRenderer"
+depends-member:
+- !private ["P6Charts16AnimatorDelegate", "ScatterChartRenderer"]
+- !private ["P6Charts16AnimatorDelegate", "_animator"]
+- !private ["P6Charts16AnimatorDelegate", "_data"]
+- !private ["P6Charts16AnimatorDelegate", "_viewPortHandler"]
+- !private ["P6Charts16AnimatorDelegate", "init"]
+- ["P6Charts16AnimatorDelegate", "initialize"]
+- !private ["P6Charts16AnimatorDelegate", "renderer"]
+- ["P6Charts16AnimatorDelegate", "scatterData"]
+- ["P6Charts16AnimatorDelegate", ""]
+- !private ["Ps9AnyObject", "ScatterChartRenderer"]
+- !private ["Ps9AnyObject", "_animator"]
+- !private ["Ps9AnyObject", "_data"]
+- !private ["Ps9AnyObject", "_viewPortHandler"]
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "initialize"]
+- !private ["Ps9AnyObject", "renderer"]
+- ["Ps9AnyObject", "scatterData"]
+- ["Ps9AnyObject", ""]
+- ["C6Charts20BarLineChartViewBase", "ScatterChartData"]
+- !private ["C6Charts20BarLineChartViewBase", "ScatterChartRenderer"]
+- !private ["C6Charts20BarLineChartViewBase", "_animator"]
+- !private ["C6Charts20BarLineChartViewBase", "_data"]
+- !private ["C6Charts20BarLineChartViewBase", "_viewPortHandler"]
+- ["C6Charts20BarLineChartViewBase", "deinit"]
+- ["C6Charts20BarLineChartViewBase", "init"]
+- ["C6Charts20BarLineChartViewBase", "initialize"]
+- !private ["C6Charts20BarLineChartViewBase", "renderer"]
+- ["C6Charts20BarLineChartViewBase", "scatterData"]
+- ["C6Charts20BarLineChartViewBase", ""]
+- !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "ScatterChartRenderer"]
+- !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "_animator"]
+- !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "_data"]
+- !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "_viewPortHandler"]
+- !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "init"]
+- ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "initialize"]
+- !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "renderer"]
+- ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "scatterData"]
+- ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", ""]
+- ["VSC6CGRect", "deinit"]
+- !private ["Ps7CVarArg", "ScatterChartRenderer"]
+- !private ["Ps7CVarArg", "_animator"]
+- !private ["Ps7CVarArg", "_data"]
+- !private ["Ps7CVarArg", "_viewPortHandler"]
+- !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "initialize"]
+- !private ["Ps7CVarArg", "renderer"]
+- ["Ps7CVarArg", "scatterData"]
+- ["Ps7CVarArg", ""]
+- !private ["P6Charts17ChartDataProvider", "ScatterChartRenderer"]
+- !private ["P6Charts17ChartDataProvider", "_animator"]
+- !private ["P6Charts17ChartDataProvider", "_data"]
+- !private ["P6Charts17ChartDataProvider", "_viewPortHandler"]
+- !private ["P6Charts17ChartDataProvider", "init"]
+- ["P6Charts17ChartDataProvider", "initialize"]
+- !private ["P6Charts17ChartDataProvider", "renderer"]
+- ["P6Charts17ChartDataProvider", "scatterData"]
+- ["P6Charts17ChartDataProvider", ""]
+- ["C6Charts13ChartViewBase", "ScatterChartData"]
+- !private ["C6Charts13ChartViewBase", "ScatterChartRenderer"]
+- !private ["C6Charts13ChartViewBase", "_animator"]
+- !private ["C6Charts13ChartViewBase", "_data"]
+- !private ["C6Charts13ChartViewBase", "_viewPortHandler"]
+- ["C6Charts13ChartViewBase", "init"]
+- ["C6Charts13ChartViewBase", "initialize"]
+- !private ["C6Charts13ChartViewBase", "renderer"]
+- ["C6Charts13ChartViewBase", "scatterData"]
+- !private ["Ps28CustomDebugStringConvertible", "ScatterChartRenderer"]
+- !private ["Ps28CustomDebugStringConvertible", "_animator"]
+- !private ["Ps28CustomDebugStringConvertible", "_data"]
+- !private ["Ps28CustomDebugStringConvertible", "_viewPortHandler"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "initialize"]
+- !private ["Ps28CustomDebugStringConvertible", "renderer"]
+- ["Ps28CustomDebugStringConvertible", "scatterData"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "ScatterChartRenderer"]
+- !private ["Ps23CustomStringConvertible", "_animator"]
+- !private ["Ps23CustomStringConvertible", "_data"]
+- !private ["Ps23CustomStringConvertible", "_viewPortHandler"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "initialize"]
+- !private ["Ps23CustomStringConvertible", "renderer"]
+- ["Ps23CustomStringConvertible", "scatterData"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "ScatterChartRenderer"]
+- !private ["Ps9Equatable", "_animator"]
+- !private ["Ps9Equatable", "_data"]
+- !private ["Ps9Equatable", "_viewPortHandler"]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "initialize"]
+- !private ["Ps9Equatable", "renderer"]
+- ["Ps9Equatable", "scatterData"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "ScatterChartRenderer"]
+- !private ["Ps8Hashable", "_animator"]
+- !private ["Ps8Hashable", "_data"]
+- !private ["Ps8Hashable", "_viewPortHandler"]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "initialize"]
+- !private ["Ps8Hashable", "renderer"]
+- ["Ps8Hashable", "scatterData"]
+- ["Ps8Hashable", ""]
+- !private ["PSo15NSAccessibility", "ScatterChartRenderer"]
+- !private ["PSo15NSAccessibility", "_animator"]
+- !private ["PSo15NSAccessibility", "_data"]
+- !private ["PSo15NSAccessibility", "_viewPortHandler"]
+- !private ["PSo15NSAccessibility", "init"]
+- ["PSo15NSAccessibility", "initialize"]
+- !private ["PSo15NSAccessibility", "renderer"]
+- ["PSo15NSAccessibility", "scatterData"]
+- ["PSo15NSAccessibility", ""]
+- !private ["PSo30NSAccessibilityElementProtocol", "ScatterChartRenderer"]
+- !private ["PSo30NSAccessibilityElementProtocol", "_animator"]
+- !private ["PSo30NSAccessibilityElementProtocol", "_data"]
+- !private ["PSo30NSAccessibilityElementProtocol", "_viewPortHandler"]
+- !private ["PSo30NSAccessibilityElementProtocol", "init"]
+- ["PSo30NSAccessibilityElementProtocol", "initialize"]
+- !private ["PSo30NSAccessibilityElementProtocol", "renderer"]
+- ["PSo30NSAccessibilityElementProtocol", "scatterData"]
+- ["PSo30NSAccessibilityElementProtocol", ""]
+- !private ["PSo29NSAnimatablePropertyContainer", "ScatterChartRenderer"]
+- !private ["PSo29NSAnimatablePropertyContainer", "_animator"]
+- !private ["PSo29NSAnimatablePropertyContainer", "_data"]
+- !private ["PSo29NSAnimatablePropertyContainer", "_viewPortHandler"]
+- !private ["PSo29NSAnimatablePropertyContainer", "init"]
+- ["PSo29NSAnimatablePropertyContainer", "initialize"]
+- !private ["PSo29NSAnimatablePropertyContainer", "renderer"]
+- ["PSo29NSAnimatablePropertyContainer", "scatterData"]
+- ["PSo29NSAnimatablePropertyContainer", ""]
+- !private ["PSo25NSAppearanceCustomization", "ScatterChartRenderer"]
+- !private ["PSo25NSAppearanceCustomization", "_animator"]
+- !private ["PSo25NSAppearanceCustomization", "_data"]
+- !private ["PSo25NSAppearanceCustomization", "_viewPortHandler"]
+- !private ["PSo25NSAppearanceCustomization", "init"]
+- ["PSo25NSAppearanceCustomization", "initialize"]
+- !private ["PSo25NSAppearanceCustomization", "renderer"]
+- ["PSo25NSAppearanceCustomization", "scatterData"]
+- ["PSo25NSAppearanceCustomization", ""]
+- ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "ScatterChartRenderer"]
+- !private ["PSo8NSCoding", "_animator"]
+- !private ["PSo8NSCoding", "_data"]
+- !private ["PSo8NSCoding", "_viewPortHandler"]
+- !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "initialize"]
+- !private ["PSo8NSCoding", "renderer"]
+- ["PSo8NSCoding", "scatterData"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo21NSDraggingDestination", "ScatterChartRenderer"]
+- !private ["PSo21NSDraggingDestination", "_animator"]
+- !private ["PSo21NSDraggingDestination", "_data"]
+- !private ["PSo21NSDraggingDestination", "_viewPortHandler"]
+- !private ["PSo21NSDraggingDestination", "init"]
+- ["PSo21NSDraggingDestination", "initialize"]
+- !private ["PSo21NSDraggingDestination", "renderer"]
+- ["PSo21NSDraggingDestination", "scatterData"]
+- ["PSo21NSDraggingDestination", ""]
+- !private ["PSo27NSGestureRecognizerDelegate", "ScatterChartRenderer"]
+- !private ["PSo27NSGestureRecognizerDelegate", "_animator"]
+- !private ["PSo27NSGestureRecognizerDelegate", "_data"]
+- !private ["PSo27NSGestureRecognizerDelegate", "_viewPortHandler"]
+- !private ["PSo27NSGestureRecognizerDelegate", "init"]
+- ["PSo27NSGestureRecognizerDelegate", "initialize"]
+- !private ["PSo27NSGestureRecognizerDelegate", "renderer"]
+- ["PSo27NSGestureRecognizerDelegate", "scatterData"]
+- ["PSo27NSGestureRecognizerDelegate", ""]
+- ["CSo8NSObject", "ScatterChartData"]
+- !private ["CSo8NSObject", "ScatterChartRenderer"]
+- !private ["CSo8NSObject", "_animator"]
+- !private ["CSo8NSObject", "_data"]
+- !private ["CSo8NSObject", "_viewPortHandler"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "initialize"]
+- !private ["CSo8NSObject", "renderer"]
+- ["CSo8NSObject", "scatterData"]
+- !private ["PSo16NSObjectProtocol", "ScatterChartRenderer"]
+- !private ["PSo16NSObjectProtocol", "_animator"]
+- !private ["PSo16NSObjectProtocol", "_data"]
+- !private ["PSo16NSObjectProtocol", "_viewPortHandler"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "initialize"]
+- !private ["PSo16NSObjectProtocol", "renderer"]
+- ["PSo16NSObjectProtocol", "scatterData"]
+- ["PSo16NSObjectProtocol", ""]
+- ["CSo11NSResponder", "ScatterChartData"]
+- !private ["CSo11NSResponder", "ScatterChartRenderer"]
+- !private ["CSo11NSResponder", "_animator"]
+- !private ["CSo11NSResponder", "_data"]
+- !private ["CSo11NSResponder", "_viewPortHandler"]
+- ["CSo11NSResponder", "init"]
+- ["CSo11NSResponder", "initialize"]
+- !private ["CSo11NSResponder", "renderer"]
+- ["CSo11NSResponder", "scatterData"]
+- !private ["PSo18NSTouchBarProvider", "ScatterChartRenderer"]
+- !private ["PSo18NSTouchBarProvider", "_animator"]
+- !private ["PSo18NSTouchBarProvider", "_data"]
+- !private ["PSo18NSTouchBarProvider", "_viewPortHandler"]
+- !private ["PSo18NSTouchBarProvider", "init"]
+- ["PSo18NSTouchBarProvider", "initialize"]
+- !private ["PSo18NSTouchBarProvider", "renderer"]
+- ["PSo18NSTouchBarProvider", "scatterData"]
+- ["PSo18NSTouchBarProvider", ""]
+- ["C6Charts8NSUIView", "ScatterChartData"]
+- !private ["C6Charts8NSUIView", "ScatterChartRenderer"]
+- !private ["C6Charts8NSUIView", "_animator"]
+- !private ["C6Charts8NSUIView", "_data"]
+- !private ["C6Charts8NSUIView", "_viewPortHandler"]
+- ["C6Charts8NSUIView", "init"]
+- ["C6Charts8NSUIView", "initialize"]
+- !private ["C6Charts8NSUIView", "renderer"]
+- ["C6Charts8NSUIView", "scatterData"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "ScatterChartRenderer"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "_animator"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "_data"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "_viewPortHandler"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "init"]
+- ["PSo33NSUserInterfaceItemIdentification", "initialize"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "renderer"]
+- ["PSo33NSUserInterfaceItemIdentification", "scatterData"]
+- ["PSo33NSUserInterfaceItemIdentification", ""]
+- ["CSo6NSView", "ScatterChartData"]
+- !private ["CSo6NSView", "ScatterChartRenderer"]
+- !private ["CSo6NSView", "_animator"]
+- !private ["CSo6NSView", "_data"]
+- !private ["CSo6NSView", "_viewPortHandler"]
+- ["CSo6NSView", "init"]
+- ["CSo6NSView", "initialize"]
+- !private ["CSo6NSView", "renderer"]
+- ["CSo6NSView", "scatterData"]
+- ["Sq", "deinit"]
+- ["C6Charts16ScatterChartData", "deinit"]
+- !private ["P6Charts24ScatterChartDataProvider", "ScatterChartRenderer"]
+- !private ["P6Charts24ScatterChartDataProvider", "_animator"]
+- !private ["P6Charts24ScatterChartDataProvider", "_data"]
+- !private ["P6Charts24ScatterChartDataProvider", "_viewPortHandler"]
+- !private ["P6Charts24ScatterChartDataProvider", "renderer"]
+- ["P6Charts24ScatterChartDataProvider", "scatterData"]
+- ["P6Charts24ScatterChartDataProvider", ""]
+- ["C6Charts20ScatterChartRenderer", "deinit"]
+- !private ["C6Charts20ScatterChartRenderer", "init"]
+- ["C6Charts16ScatterChartView", "ScatterChartData"]
+- !private ["C6Charts16ScatterChartView", "ScatterChartRenderer"]
+- !private ["C6Charts16ScatterChartView", "_animator"]
+- !private ["C6Charts16ScatterChartView", "_data"]
+- !private ["C6Charts16ScatterChartView", "_viewPortHandler"]
+- ["C6Charts16ScatterChartView", "deinit"]
+- ["C6Charts16ScatterChartView", "init"]
+- ["C6Charts16ScatterChartView", "initialize"]
+- !private ["C6Charts16ScatterChartView", "renderer"]
+- ["C6Charts16ScatterChartView", "scatterData"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "ScatterChartRenderer"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "_animator"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "_data"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "_viewPortHandler"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "initialize"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "renderer"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "scatterData"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
+- !private ["Ps9_Hashable", "ScatterChartRenderer"]
+- !private ["Ps9_Hashable", "_animator"]
+- !private ["Ps9_Hashable", "_data"]
+- !private ["Ps9_Hashable", "_viewPortHandler"]
+- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "initialize"]
+- !private ["Ps9_Hashable", "renderer"]
+- ["Ps9_Hashable", "scatterData"]
+- ["Ps9_Hashable", ""]
+depends-nominal:
+- "P6Charts16AnimatorDelegate"
+- "Ps9AnyObject"
+- "C6Charts20BarLineChartViewBase"
+- "P6Charts43BarLineScatterCandleBubbleChartDataProvider"
+- "VSC6CGRect"
+- "Ps7CVarArg"
+- "P6Charts17ChartDataProvider"
+- "C6Charts13ChartViewBase"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "PSo15NSAccessibility"
+- "PSo30NSAccessibilityElementProtocol"
+- "PSo29NSAnimatablePropertyContainer"
+- "PSo25NSAppearanceCustomization"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- "PSo21NSDraggingDestination"
+- "PSo27NSGestureRecognizerDelegate"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "CSo11NSResponder"
+- "PSo18NSTouchBarProvider"
+- "C6Charts8NSUIView"
+- "PSo33NSUserInterfaceItemIdentification"
+- "CSo6NSView"
+- "Sq"
+- "C6Charts16ScatterChartData"
+- "P6Charts24ScatterChartDataProvider"
+- "C6Charts20ScatterChartRenderer"
+- "C6Charts16ScatterChartView"
+- "Ps37_DefaultCustomPlaygroundQuickLookable"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/Charts/Source/Supporting Files/Charts.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Charts.build/Debug/Charts.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "688f11baeb641fb11fa3d183a60caf27"

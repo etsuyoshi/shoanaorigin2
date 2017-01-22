@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A3E65F41E350DCB001C17DE /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E65F31E350DCB001C17DE /* ConfigViewController.m */; };
 		2A66EA181E1A5968009B5637 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A66EA171E1A5968009B5637 /* main.m */; };
 		2A66EA1B1E1A5968009B5637 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A66EA1A1E1A5968009B5637 /* AppDelegate.m */; };
 		2A66EA1E1E1A5968009B5637 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A66EA1D1E1A5968009B5637 /* MasterViewController.m */; };
@@ -32,6 +33,8 @@
 		2A66EA501E1A5A14009B5637 /* shoanakeizai00005.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2A66EA401E1A5A14009B5637 /* shoanakeizai00005.csv */; };
 		2A66EA541E1A5A68009B5637 /* Quiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A66EA531E1A5A68009B5637 /* Quiz.m */; };
 		2A66EA571E1A5A7A009B5637 /* QuizItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A66EA561E1A5A7A009B5637 /* QuizItem.m */; };
+		2A7005881E2C6D8700780D58 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7005831E2C6C1A00780D58 /* Charts.framework */; };
+		2A7005891E2C6D8700780D58 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7005831E2C6C1A00780D58 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2A9F1EAE1E1BA4D6009BB352 /* aman.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A9F1EA51E1BA4D6009BB352 /* aman.png */; };
 		2A9F1EAF1E1BA4D6009BB352 /* bird.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A9F1EA61E1BA4D6009BB352 /* bird.png */; };
 		2A9F1EB01E1BA4D6009BB352 /* building.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A9F1EA71E1BA4D6009BB352 /* building.png */; };
@@ -43,9 +46,65 @@
 		2A9F1EB61E1BA4D6009BB352 /* wood.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A9F1EAD1E1BA4D6009BB352 /* wood.png */; };
 		2A9F1EC21E1BABD9009BB352 /* MasterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9F1EC01E1BABD9009BB352 /* MasterTableViewCell.m */; };
 		2A9F1EC31E1BABD9009BB352 /* MasterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9F1EC11E1BABD9009BB352 /* MasterTableViewCell.xib */; };
+		2AA4DA581E2E76A400A8D6DD /* DemoBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA4DA571E2E76A400A8D6DD /* DemoBaseViewController.m */; };
+		2AA4DA5D1E2E774300A8D6DD /* PieChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA4DA5C1E2E774300A8D6DD /* PieChartViewController.m */; };
+		2AC85D621E27D02600524962 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC85D611E27D02600524962 /* ResultViewController.m */; };
+		2AE9C8591E32439900FDF995 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE9C8571E32439900FDF995 /* circle.png */; };
+		2AE9C85A1E32439900FDF995 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE9C8581E32439900FDF995 /* cross.png */; };
+		2AFB72611E23444B00A3E999 /* QuizSector.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB72601E23444B00A3E999 /* QuizSector.m */; };
+		2AFE2C0A1E3087BB00D30F37 /* ResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFE2C091E3087BB00D30F37 /* ResultModel.m */; };
+		5FD5179D7445E4BB40617463 /* Pods_shoana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE85A851D5B9F558596553C2 /* Pods_shoana.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2A7005821E2C6C1A00780D58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A70057C1E2C6C1A00780D58 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F241D8110E600722320;
+			remoteInfo = Charts;
+		};
+		2A7005841E2C6C1A00780D58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A70057C1E2C6C1A00780D58 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06B120D51D811E6200D14B02;
+			remoteInfo = ChartsRealm;
+		};
+		2A7005861E2C6C1A00780D58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A70057C1E2C6C1A00780D58 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F2E1D8110E600722320;
+			remoteInfo = ChartsTests;
+		};
+		2A70058A1E2C6D8700780D58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A70057C1E2C6C1A00780D58 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 06165F231D8110E600722320;
+			remoteInfo = Charts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2A70058C1E2C6D8700780D58 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2A7005891E2C6D8700780D58 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		041C820118BF2C745AE4321A /* Pods-shoana.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shoana.release.xcconfig"; path = "Pods/Target Support Files/Pods-shoana/Pods-shoana.release.xcconfig"; sourceTree = "<group>"; };
+		2A3E65F21E350DCB001C17DE /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigViewController.h; sourceTree = "<group>"; };
+		2A3E65F31E350DCB001C17DE /* ConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigViewController.m; sourceTree = "<group>"; };
 		2A66EA131E1A5968009B5637 /* shoana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shoana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A66EA171E1A5968009B5637 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A66EA191E1A5968009B5637 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +137,7 @@
 		2A66EA531E1A5A68009B5637 /* Quiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Quiz.m; path = Quiz/Quiz.m; sourceTree = "<group>"; };
 		2A66EA551E1A5A7A009B5637 /* QuizItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuizItem.h; path = Quiz/QuizItem.h; sourceTree = "<group>"; };
 		2A66EA561E1A5A7A009B5637 /* QuizItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuizItem.m; path = Quiz/QuizItem.m; sourceTree = "<group>"; };
+		2A70057C1E2C6C1A00780D58 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = ../../Charts/Charts.xcodeproj; sourceTree = "<group>"; };
 		2A9F1EA51E1BA4D6009BB352 /* aman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aman.png; sourceTree = "<group>"; };
 		2A9F1EA61E1BA4D6009BB352 /* bird.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird.png; sourceTree = "<group>"; };
 		2A9F1EA71E1BA4D6009BB352 /* building.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = building.png; sourceTree = "<group>"; };
@@ -90,6 +150,21 @@
 		2A9F1EBF1E1BABD9009BB352 /* MasterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterTableViewCell.h; sourceTree = "<group>"; };
 		2A9F1EC01E1BABD9009BB352 /* MasterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterTableViewCell.m; sourceTree = "<group>"; };
 		2A9F1EC11E1BABD9009BB352 /* MasterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterTableViewCell.xib; sourceTree = "<group>"; };
+		2AA4DA561E2E76A400A8D6DD /* DemoBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoBaseViewController.h; sourceTree = "<group>"; };
+		2AA4DA571E2E76A400A8D6DD /* DemoBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoBaseViewController.m; sourceTree = "<group>"; };
+		2AA4DA5B1E2E774300A8D6DD /* PieChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieChartViewController.h; sourceTree = "<group>"; };
+		2AA4DA5C1E2E774300A8D6DD /* PieChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieChartViewController.m; sourceTree = "<group>"; };
+		2AC85D601E27D02600524962 /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
+		2AC85D611E27D02600524962 /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
+		2AE9C8571E32439900FDF995 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
+		2AE9C8581E32439900FDF995 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
+		2AFB725F1E23444B00A3E999 /* QuizSector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuizSector.h; path = Quiz/QuizSector.h; sourceTree = "<group>"; };
+		2AFB72601E23444B00A3E999 /* QuizSector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuizSector.m; path = Quiz/QuizSector.m; sourceTree = "<group>"; };
+		2AFB7EEF1E30EF4000647605 /* Shoana-Prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Shoana-Prefix.h"; sourceTree = "<group>"; };
+		2AFE2C081E3087BB00D30F37 /* ResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultModel.h; sourceTree = "<group>"; };
+		2AFE2C091E3087BB00D30F37 /* ResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultModel.m; sourceTree = "<group>"; };
+		904106E1659843334BD7EC63 /* Pods-shoana.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shoana.debug.xcconfig"; path = "Pods/Target Support Files/Pods-shoana/Pods-shoana.debug.xcconfig"; sourceTree = "<group>"; };
+		EE85A851D5B9F558596553C2 /* Pods_shoana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_shoana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +172,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FD5179D7445E4BB40617463 /* Pods_shoana.framework in Frameworks */,
+				2A7005881E2C6D8700780D58 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +185,8 @@
 			children = (
 				2A66EA151E1A5968009B5637 /* shoana */,
 				2A66EA141E1A5968009B5637 /* Products */,
+				84D4582EA8B90E52DB431236 /* Pods */,
+				EA4E415955B4FB91D3C36115 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,10 +201,17 @@
 		2A66EA151E1A5968009B5637 /* shoana */ = {
 			isa = PBXGroup;
 			children = (
+				2A70057C1E2C6C1A00780D58 /* Charts.xcodeproj */,
 				2A66EA511E1A5A27009B5637 /* Quiz */,
 				2A66EA301E1A59F4009B5637 /* res */,
 				2A66EA191E1A5968009B5637 /* AppDelegate.h */,
 				2A66EA1A1E1A5968009B5637 /* AppDelegate.m */,
+				2AC85D601E27D02600524962 /* ResultViewController.h */,
+				2AC85D611E27D02600524962 /* ResultViewController.m */,
+				2AA4DA561E2E76A400A8D6DD /* DemoBaseViewController.h */,
+				2AA4DA571E2E76A400A8D6DD /* DemoBaseViewController.m */,
+				2AA4DA5B1E2E774300A8D6DD /* PieChartViewController.h */,
+				2AA4DA5C1E2E774300A8D6DD /* PieChartViewController.m */,
 				2A66EA1C1E1A5968009B5637 /* MasterViewController.h */,
 				2A66EA1D1E1A5968009B5637 /* MasterViewController.m */,
 				2A9F1EBF1E1BABD9009BB352 /* MasterTableViewCell.h */,
@@ -133,6 +219,10 @@
 				2A9F1EC11E1BABD9009BB352 /* MasterTableViewCell.xib */,
 				2A66EA1F1E1A5968009B5637 /* DetailViewController.h */,
 				2A66EA201E1A5968009B5637 /* DetailViewController.m */,
+				2A3E65F21E350DCB001C17DE /* ConfigViewController.h */,
+				2A3E65F31E350DCB001C17DE /* ConfigViewController.m */,
+				2AFE2C081E3087BB00D30F37 /* ResultModel.h */,
+				2AFE2C091E3087BB00D30F37 /* ResultModel.m */,
 				2A66EA221E1A5968009B5637 /* Main.storyboard */,
 				2A66EA251E1A5968009B5637 /* Assets.xcassets */,
 				2A66EA271E1A5968009B5637 /* LaunchScreen.storyboard */,
@@ -146,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				2A66EA171E1A5968009B5637 /* main.m */,
+				2AFB7EEF1E30EF4000647605 /* Shoana-Prefix.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -181,13 +272,27 @@
 				2A66EA531E1A5A68009B5637 /* Quiz.m */,
 				2A66EA551E1A5A7A009B5637 /* QuizItem.h */,
 				2A66EA561E1A5A7A009B5637 /* QuizItem.m */,
+				2AFB725F1E23444B00A3E999 /* QuizSector.h */,
+				2AFB72601E23444B00A3E999 /* QuizSector.m */,
 			);
 			name = Quiz;
+			sourceTree = "<group>";
+		};
+		2A70057D1E2C6C1A00780D58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A7005831E2C6C1A00780D58 /* Charts.framework */,
+				2A7005851E2C6C1A00780D58 /* ChartsRealm.framework */,
+				2A7005871E2C6C1A00780D58 /* ChartsTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		2A9F1EA41E1BA483009BB352 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				2AE9C8571E32439900FDF995 /* circle.png */,
+				2AE9C8581E32439900FDF995 /* cross.png */,
 				2A9F1EA51E1BA4D6009BB352 /* aman.png */,
 				2A9F1EA61E1BA4D6009BB352 /* bird.png */,
 				2A9F1EA71E1BA4D6009BB352 /* building.png */,
@@ -201,6 +306,23 @@
 			path = image;
 			sourceTree = "<group>";
 		};
+		84D4582EA8B90E52DB431236 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				904106E1659843334BD7EC63 /* Pods-shoana.debug.xcconfig */,
+				041C820118BF2C745AE4321A /* Pods-shoana.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EA4E415955B4FB91D3C36115 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE85A851D5B9F558596553C2 /* Pods_shoana.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -208,13 +330,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A66EA2D1E1A5968009B5637 /* Build configuration list for PBXNativeTarget "shoana" */;
 			buildPhases = (
+				7C0A2BC5FB6D3FEC2C2697E9 /* [CP] Check Pods Manifest.lock */,
 				2A66EA0F1E1A5968009B5637 /* Sources */,
 				2A66EA101E1A5968009B5637 /* Frameworks */,
 				2A66EA111E1A5968009B5637 /* Resources */,
+				F33DAC699020094C5F1C79C1 /* [CP] Embed Pods Frameworks */,
+				6C84409EB7E562D8CC5ADCC1 /* [CP] Copy Pods Resources */,
+				2A70058C1E2C6D8700780D58 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2A70058B1E2C6D8700780D58 /* PBXTargetDependency */,
 			);
 			name = shoana;
 			productName = shoana;
@@ -227,12 +354,13 @@
 		2A66EA0B1E1A5968009B5637 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = com.endo;
 				TargetAttributes = {
 					2A66EA121E1A5968009B5637 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = Y7QGWHWRZ7;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -248,12 +376,42 @@
 			mainGroup = 2A66EA0A1E1A5968009B5637;
 			productRefGroup = 2A66EA141E1A5968009B5637 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2A70057D1E2C6C1A00780D58 /* Products */;
+					ProjectRef = 2A70057C1E2C6C1A00780D58 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2A66EA121E1A5968009B5637 /* shoana */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2A7005831E2C6C1A00780D58 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 2A7005821E2C6C1A00780D58 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2A7005851E2C6C1A00780D58 /* ChartsRealm.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ChartsRealm.framework;
+			remoteRef = 2A7005841E2C6C1A00780D58 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2A7005871E2C6C1A00780D58 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 2A7005861E2C6C1A00780D58 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2A66EA111E1A5968009B5637 /* Resources */ = {
@@ -271,6 +429,7 @@
 				2A66EA4F1E1A5A14009B5637 /* shoanakeizai005.csv in Resources */,
 				2A66EA431E1A5A14009B5637 /* _homu3.csv in Resources */,
 				2A66EA291E1A5968009B5637 /* LaunchScreen.storyboard in Resources */,
+				2AE9C85A1E32439900FDF995 /* cross.png in Resources */,
 				2A66EA411E1A5A14009B5637 /* _homu1.csv in Resources */,
 				2A66EA4D1E1A5A14009B5637 /* shoanakeizai004.csv in Resources */,
 				2A9F1EB01E1BA4D6009BB352 /* building.png in Resources */,
@@ -287,6 +446,7 @@
 				2A9F1EB41E1BA4D6009BB352 /* street.png in Resources */,
 				2A66EA481E1A5A14009B5637 /* shoanakeizai00001.csv in Resources */,
 				2A66EA4B1E1A5A14009B5637 /* shoanakeizai003.csv in Resources */,
+				2AE9C8591E32439900FDF995 /* circle.png in Resources */,
 				2A9F1EB51E1BA4D6009BB352 /* sunset.png in Resources */,
 				2A66EA4E1E1A5A14009B5637 /* shoanakeizai00004.csv in Resources */,
 			);
@@ -294,22 +454,84 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6C84409EB7E562D8CC5ADCC1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-shoana/Pods-shoana-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C0A2BC5FB6D3FEC2C2697E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F33DAC699020094C5F1C79C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-shoana/Pods-shoana-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2A66EA0F1E1A5968009B5637 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AFE2C0A1E3087BB00D30F37 /* ResultModel.m in Sources */,
+				2AA4DA5D1E2E774300A8D6DD /* PieChartViewController.m in Sources */,
+				2AFB72611E23444B00A3E999 /* QuizSector.m in Sources */,
 				2A66EA571E1A5A7A009B5637 /* QuizItem.m in Sources */,
+				2A3E65F41E350DCB001C17DE /* ConfigViewController.m in Sources */,
 				2A66EA1B1E1A5968009B5637 /* AppDelegate.m in Sources */,
 				2A66EA1E1E1A5968009B5637 /* MasterViewController.m in Sources */,
 				2A66EA181E1A5968009B5637 /* main.m in Sources */,
 				2A9F1EC21E1BABD9009BB352 /* MasterTableViewCell.m in Sources */,
 				2A66EA541E1A5A68009B5637 /* Quiz.m in Sources */,
 				2A66EA211E1A5968009B5637 /* DetailViewController.m in Sources */,
+				2AA4DA581E2E76A400A8D6DD /* DemoBaseViewController.m in Sources */,
+				2AC85D621E27D02600524962 /* ResultViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A70058B1E2C6D8700780D58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = 2A70058A1E2C6D8700780D58 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2A66EA221E1A5968009B5637 /* Main.storyboard */ = {
@@ -349,6 +571,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -396,6 +619,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -421,27 +645,35 @@
 		};
 		2A66EA2E1E1A5968009B5637 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 904106E1659843334BD7EC63 /* Pods-shoana.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = Y7QGWHWRZ7;
+				GCC_PREFIX_HEADER = "shoana/Shoana-Prefix.h";
 				INFOPLIST_FILE = shoana/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.endo.shoana;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		2A66EA2F1E1A5968009B5637 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 041C820118BF2C745AE4321A /* Pods-shoana.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = Y7QGWHWRZ7;
+				GCC_PREFIX_HEADER = "shoana/Shoana-Prefix.h";
 				INFOPLIST_FILE = shoana/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.endo.shoana;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

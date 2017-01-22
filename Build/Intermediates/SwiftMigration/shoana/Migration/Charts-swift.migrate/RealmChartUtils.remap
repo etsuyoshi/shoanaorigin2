@@ -1,0 +1,109 @@
+[
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/ChartsRealm/Classes/Utils/RealmChartUtils.swift",
+  "offset": 303,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/ChartsRealm/Classes/Utils/RealmChartUtils.swift",
+  "offset": 447,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/ChartsRealm/Classes/Utils/RealmChartUtils.swift",
+  "offset": 481,
+  "remove": 2,
+  "text": ": RLMR",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/ChartsRealm/Classes/Utils/RealmChartUtils.swift",
+  "offset": 489,
+  "remove": 2,
+  "text": "<",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/ChartsRealm/Classes/Utils/RealmChartUtils.swift",
+  "offset": 494,
+  "remove": 7,
+  "text": "Object>",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/ChartsRealm/Classes/Utils/RealmChartUtils.swift",
+  "offset": 769,
+  "remove": 7,
+  "text": "s",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/ChartsRealm/Classes/Utils/RealmChartUtils.swift",
+  "offset": 827,
+  "remove": 7,
+  "text": "d",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/ChartsRealm/Classes/Utils/RealmChartUtils.swift",
+  "offset": 874,
+  "text": "!",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/ChartsRealm/Classes/Utils/RealmChartUtils.swift",
+  "offset": 968,
+  "remove": 5,
+  "text": "e",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/ChartsRealm/Classes/Utils/RealmChartUtils.swift",
+  "offset": 992,
+  "remove": 3,
+  "text": "makeIt",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/ChartsRealm/Classes/Utils/RealmChartUtils.swift",
+  "offset": 999,
+  "remove": 1,
+  "text": "or",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/ChartsRealm/Classes/Utils/RealmChartUtils.swift",
+  "offset": 1012,
+  "remove": 3,
+  "text": "EnumerationIt",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/ChartsRealm/Classes/Utils/RealmChartUtils.swift",
+  "offset": 1049,
+  "remove": 3,
+  "text": "EnumerationIt",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/ChartsRealm/Classes/Utils/RealmChartUtils.swift",
+  "offset": 1101,
+  "remove": 5,
+  "text": "e",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/ChartsRealm/Classes/Utils/RealmChartUtils.swift",
+  "offset": 1125,
+  "remove": 3,
+  "text": "makeIt",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/ChartsRealm/Classes/Utils/RealmChartUtils.swift",
+  "offset": 1132,
+  "remove": 1,
+  "text": "or",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/ChartsRealm/Classes/Utils/RealmChartUtils.swift",
+  "offset": 1145,
+  "remove": 3,
+  "text": "EnumerationIt",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/ChartsRealm/Classes/Utils/RealmChartUtils.swift",
+  "offset": 1182,
+  "remove": 3,
+  "text": "EnumerationIt",
+ }
+]

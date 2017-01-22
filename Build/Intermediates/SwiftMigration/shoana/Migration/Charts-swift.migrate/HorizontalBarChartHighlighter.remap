@@ -1,0 +1,66 @@
+[
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/HorizontalBarChartHighlighter.swift",
+  "offset": 325,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/HorizontalBarChartHighlighter.swift",
+  "offset": 395,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/HorizontalBarChartHighlighter.swift",
+  "offset": 429,
+  "remove": 3,
+  "text": "x",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/HorizontalBarChartHighlighter.swift",
+  "offset": 1214,
+  "remove": 23,
+  "text": ", ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/HorizontalBarChartHighlighter.swift",
+  "offset": 2136,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/HorizontalBarChartHighlighter.swift",
+  "offset": 2167,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/HorizontalBarChartHighlighter.swift",
+  "offset": 2250,
+  "remove": 19,
+  "text": ", ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/HorizontalBarChartHighlighter.swift",
+  "offset": 2535,
+  "remove": 1,
+  "text": "l",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/HorizontalBarChartHighlighter.swift",
+  "offset": 2819,
+  "remove": 6,
+  "text": "open",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/HorizontalBarChartHighlighter.swift",
+  "offset": 2848,
+  "text": "_ ",
+ },
+ {
+  "file": "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Charts/Classes/Highlight/HorizontalBarChartHighlighter.swift",
+  "offset": 3200,
+  "remove": 1,
+  "text": "l",
+ }
+]
