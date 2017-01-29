@@ -49,6 +49,9 @@
 		2AA4DA581E2E76A400A8D6DD /* DemoBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA4DA571E2E76A400A8D6DD /* DemoBaseViewController.m */; };
 		2AA4DA5D1E2E774300A8D6DD /* PieChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA4DA5C1E2E774300A8D6DD /* PieChartViewController.m */; };
 		2AC85D621E27D02600524962 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC85D611E27D02600524962 /* ResultViewController.m */; };
+		2AC8E3431E3DA477003859E1 /* GradientWhiteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC8E3421E3DA477003859E1 /* GradientWhiteView.m */; };
+		2AC8E3561E3DB084003859E1 /* tokyo_tower2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AC8E3541E3DB084003859E1 /* tokyo_tower2.png */; };
+		2AC8E3571E3DB084003859E1 /* water2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AC8E3551E3DB084003859E1 /* water2.png */; };
 		2AE9C8591E32439900FDF995 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE9C8571E32439900FDF995 /* circle.png */; };
 		2AE9C85A1E32439900FDF995 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE9C8581E32439900FDF995 /* cross.png */; };
 		2AFB72611E23444B00A3E999 /* QuizSector.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB72601E23444B00A3E999 /* QuizSector.m */; };
@@ -157,6 +160,10 @@
 		2AA4DA5C1E2E774300A8D6DD /* PieChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieChartViewController.m; sourceTree = "<group>"; };
 		2AC85D601E27D02600524962 /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
 		2AC85D611E27D02600524962 /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
+		2AC8E3411E3DA477003859E1 /* GradientWhiteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientWhiteView.h; sourceTree = "<group>"; };
+		2AC8E3421E3DA477003859E1 /* GradientWhiteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientWhiteView.m; sourceTree = "<group>"; };
+		2AC8E3541E3DB084003859E1 /* tokyo_tower2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tokyo_tower2.png; sourceTree = "<group>"; };
+		2AC8E3551E3DB084003859E1 /* water2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = water2.png; sourceTree = "<group>"; };
 		2AE9C8571E32439900FDF995 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
 		2AE9C8581E32439900FDF995 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
 		2AFB725F1E23444B00A3E999 /* QuizSector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuizSector.h; path = Quiz/QuizSector.h; sourceTree = "<group>"; };
@@ -236,6 +243,8 @@
 				2A66EA271E1A5968009B5637 /* LaunchScreen.storyboard */,
 				2A66EA2A1E1A5968009B5637 /* Info.plist */,
 				2A66EA161E1A5968009B5637 /* Supporting Files */,
+				2AC8E3411E3DA477003859E1 /* GradientWhiteView.h */,
+				2AC8E3421E3DA477003859E1 /* GradientWhiteView.m */,
 			);
 			path = shoana;
 			sourceTree = "<group>";
@@ -299,6 +308,8 @@
 		2A9F1EA41E1BA483009BB352 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				2AC8E3541E3DB084003859E1 /* tokyo_tower2.png */,
+				2AC8E3551E3DB084003859E1 /* water2.png */,
 				2AE9C8571E32439900FDF995 /* circle.png */,
 				2AE9C8581E32439900FDF995 /* cross.png */,
 				2A9F1EA51E1BA4D6009BB352 /* aman.png */,
@@ -432,6 +443,7 @@
 				2AE9C85A1E32439900FDF995 /* cross.png in Resources */,
 				2A66EA411E1A5A14009B5637 /* _homu1.csv in Resources */,
 				2A66EA4D1E1A5A14009B5637 /* shoanakeizai004.csv in Resources */,
+				2AC8E3571E3DB084003859E1 /* water2.png in Resources */,
 				2A9F1EB01E1BA4D6009BB352 /* building.png in Resources */,
 				2A66EA471E1A5A14009B5637 /* shoanakeizai001.csv in Resources */,
 				2A66EA261E1A5968009B5637 /* Assets.xcassets in Resources */,
@@ -445,6 +457,7 @@
 				2A9F1EAE1E1BA4D6009BB352 /* aman.png in Resources */,
 				2A9F1EB41E1BA4D6009BB352 /* street.png in Resources */,
 				2A66EA481E1A5A14009B5637 /* shoanakeizai00001.csv in Resources */,
+				2AC8E3561E3DB084003859E1 /* tokyo_tower2.png in Resources */,
 				2A66EA4B1E1A5A14009B5637 /* shoanakeizai003.csv in Resources */,
 				2AE9C8591E32439900FDF995 /* circle.png in Resources */,
 				2A9F1EB51E1BA4D6009BB352 /* sunset.png in Resources */,
@@ -507,6 +520,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AC8E3431E3DA477003859E1 /* GradientWhiteView.m in Sources */,
 				2AFE2C0A1E3087BB00D30F37 /* ResultModel.m in Sources */,
 				2AA4DA5D1E2E774300A8D6DD /* PieChartViewController.m in Sources */,
 				2AFB72611E23444B00A3E999 /* QuizSector.m in Sources */,

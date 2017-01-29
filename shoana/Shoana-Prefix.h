@@ -22,3 +22,19 @@
 #define QUIZ_CONFIG_KEY_TEST_RANDOM @"quizTestRandom"
 #define QUIZ_CONFIG_KEY_NO_EXP @"quizNoExp"
 #define QUIZ_CONFIG_KEY_JAKUTEN @"quizJakuten"
+
+
+
+//hん版でnslogを出力しない
+#if !defined(NS_BLOCK_ASSERTIONS)
+#if !defined(NSLog)
+#define NSLog( args... ) NSLog( args, 0 )
+#endif
+
+#else
+
+#if !defined(NSLog)
+#define NSLog( args... )
+#endif
+
+#endif

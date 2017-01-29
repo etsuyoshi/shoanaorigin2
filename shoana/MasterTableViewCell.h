@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface MasterTableViewCell : UITableViewCell
+@property (strong, nonatomic) IBOutlet UIImageView *img_back;
 @property (weak, nonatomic) IBOutlet UILabel *lbl_sector;
 @property (weak, nonatomic) IBOutlet UILabel *lbl_name;
 @property (weak, nonatomic) IBOutlet UILabel *lbl_seitouritu;

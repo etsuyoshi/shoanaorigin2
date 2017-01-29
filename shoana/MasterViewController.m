@@ -37,6 +37,8 @@
     NSMutableArray *arrMAnswers;
     NSMutableArray *arrMCorrects;
     BOOL didUpdate;//成績を更新するかどうかの判断（問題を解くか成績表に遷移したかどうかで判定）
+    
+    NSArray *arrImgCells;//セルの背景の画像名配列
 }
 
 @property NSMutableArray *objects;
@@ -56,6 +58,9 @@ QuizSector *quizSector;
     UINib *nib = [UINib nibWithNibName:@"MasterTableViewCell" bundle:nil];
     [self.tableView registerNib:nib forCellReuseIdentifier:@"masterCell"];
     
+    arrImgCells = [NSArray arrayWithObjects:
+                   @"tokyo_tower2", @"water2", @"light", @"bird", @"building", @"desk", @"sunset", @"wood", @"aman", nil];
+    //streetは暗すぎて表示に適さない
     
     //全ファイル読み込み実行
     quizSector = [[QuizSector alloc]init];
@@ -222,9 +227,28 @@ QuizSector *quizSector;
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"masterCell" forIndexPath:indexPath];
-    MasterTableViewCell *cell = (MasterTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"masterCell" forIndexPath:indexPath];
-    NSLog(@"%s, indexpath.row = %d", __func__, (int)indexPath.row);
+    MasterTableViewCell *cell = (MasterTableViewCell *)
+    [tableView dequeueReusableCellWithIdentifier:@"masterCell" forIndexPath:indexPath];
+    
+//    MasterTableViewCell *cell =
+//    (MasterTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"masterCell"];
+//    if(!cell){
+//        cell = [[MasterTableViewCell alloc]
+//        initWithStyle:UITableViewCellStyleDefault
+//                reuseIdentifier:@"masterCell"];
+////        [[UITableViewCell alloc]
+////                initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"masterCell"];
+//    }
+    
+        
+    //背景画像の設定
+    cell.img_back.image = [UIImage imageNamed:arrImgCells[indexPath.row % (int)arrImgCells.count]];
+    NSLog(@"%s, indexpath.row = %d, %@",
+          __func__, (int)indexPath.row,
+          (NSString *)arrImgCells[indexPath.row % (int)arrImgCells.count]);
+    
+    
+    //セル上の表示文言の設定
     @autoreleasepool {
         Quiz *quiz = (Quiz *)quizSector.quizSectsArray[indexPath.row];
         QuizItem *quizItem = quiz.quizItemsArray[0];
@@ -246,11 +270,34 @@ QuizSector *quizSector;
             strSeitouritu = @"未回答";
         }
         cell.lbl_seitouritu.text = strSeitouritu;
+        
+        
+        
+        //lbl_seitourituにグラデーションレイヤーを付ける場合
+//        NSLog(@"layer count = %ld", cell.lbl_seitouritu.layer.sublayers.count);
+//        //cell.lbl_seitouritu.layer.sublayers = nil;//なんども上塗りしないように
+//        //ある一定以上のレイヤーを削除する(以下で追加したレイヤーのため）
+//        if(cell.lbl_seitouritu.layer.sublayers.count > 10){
+//            for(int i = 10;i < cell.lbl_seitouritu.layer.sublayers.count;i++){
+//                [cell.lbl_seitouritu.layer.sublayers[i] removeFromSuperlayer];
+//            }
+//        }
+//        
+//        CAGradientLayer *gradient = [CAGradientLayer layer];
+//        gradient.frame = cell.lbl_seitouritu.bounds;
+//        gradient.colors =
+//        [NSArray arrayWithObjects:
+//         (id)[[UIColor colorWithWhite:1.f alpha:0.1f]CGColor],
+//         (id)[[UIColor whiteColor]CGColor], nil];
+//        [cell.lbl_seitouritu.layer addSublayer:gradient];
+        
+        
                                    
     }
 
-//    NSDate *object = self.objects[indexPath.row];
-//    cell.textLabel.text = [object description];
+    
+    
+    
     return cell;
 }
 
