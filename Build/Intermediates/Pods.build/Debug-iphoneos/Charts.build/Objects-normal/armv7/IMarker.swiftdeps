@@ -11,11 +11,11 @@ provides-dynamic-lookup:
 - "draw"
 - "refreshContent"
 depends-top-level:
-- "CGContext"
 - "IMarker"
 - "ChartDataEntry"
-- "CGPoint"
 - "NSObjectProtocol"
+- "CGContext"
+- "CGPoint"
 - "Highlight"
 depends-member:
 - ["P6Charts7IMarker", "CGContext"]

@@ -9,15 +9,15 @@ provides-dynamic-lookup:
 - "drawFilledPath"
 - "drawFilledPath"
 depends-top-level:
+- "Fill"
+- "CGPath"
+- "CGFloat"
 - "LineRadarRenderer"
 - "NSUIColor"
-- "ViewPortHandler"
-- "Animator"
-- "CGPath"
-- "LineScatterCandleRadarRenderer"
-- "CGFloat"
-- "Fill"
 - "CGContext"
+- "Animator"
+- "ViewPortHandler"
+- "LineScatterCandleRadarRenderer"
 depends-member:
 - !private ["Ps9AnyObject", "addPath"]
 - !private ["Ps9AnyObject", "beginPath"]

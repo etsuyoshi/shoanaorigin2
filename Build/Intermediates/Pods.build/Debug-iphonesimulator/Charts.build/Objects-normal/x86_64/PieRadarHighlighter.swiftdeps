@@ -6,25 +6,25 @@ provides-nominal:
 provides-member:
 - ["C6Charts19PieRadarHighlighter", ""]
 provides-dynamic-lookup:
-- "closestHighlight"
 - "getHighlight"
+- "closestHighlight"
 depends-top-level:
-- !private "??"
-- !private "fatalError"
-- !private "StringLiteralType"
-- !private "||"
-- "PieRadarHighlighter"
-- !private ">"
-- !private ">="
-- !private "PieRadarChartViewBase"
-- !private "PieChartView"
-- !private "/="
-- "ChartHighlighter"
-- "Highlight"
-- "CGFloat"
-- !private "<"
 - "Int"
 - "CastingPrecedence"
+- "ChartHighlighter"
+- "Highlight"
+- !private "PieChartView"
+- !private "fatalError"
+- !private "||"
+- "CGFloat"
+- "PieRadarHighlighter"
+- !private "??"
+- !private "PieRadarChartViewBase"
+- !private "StringLiteralType"
+- !private ">"
+- !private "/="
+- !private ">="
+- !private "<"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["C6Charts8Animator", "phaseY"]

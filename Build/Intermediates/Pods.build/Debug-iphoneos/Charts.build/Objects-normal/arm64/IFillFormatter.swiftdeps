@@ -8,9 +8,9 @@ provides-member:
 provides-dynamic-lookup:
 - "getFillLinePosition"
 depends-top-level:
-- "LineChartDataProvider"
 - "IFillFormatter"
 - "CGFloat"
+- "LineChartDataProvider"
 - "ILineChartDataSet"
 depends-member:
 - ["P6Charts14IFillFormatter", "CGFloat"]

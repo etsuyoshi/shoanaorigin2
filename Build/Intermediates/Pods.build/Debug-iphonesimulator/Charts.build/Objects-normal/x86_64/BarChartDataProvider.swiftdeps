@@ -6,15 +6,15 @@ provides-nominal:
 provides-member:
 - ["P6Charts20BarChartDataProvider", ""]
 provides-dynamic-lookup:
-- "isHighlightFullBarEnabled"
 - "isDrawValueAboveBarEnabled"
-- "barData"
 - "isDrawBarShadowEnabled"
+- "barData"
+- "isHighlightFullBarEnabled"
 depends-top-level:
-- "BarChartDataProvider"
-- "Bool"
-- "BarChartData"
 - "BarLineScatterCandleBubbleChartDataProvider"
+- "Bool"
+- "BarChartDataProvider"
+- "BarChartData"
 depends-member:
 - ["P6Charts20BarChartDataProvider", "BarChartData"]
 - ["P6Charts20BarChartDataProvider", "Bool"]

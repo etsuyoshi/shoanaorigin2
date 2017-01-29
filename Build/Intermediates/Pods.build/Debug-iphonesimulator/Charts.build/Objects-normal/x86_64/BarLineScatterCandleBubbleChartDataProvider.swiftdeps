@@ -11,12 +11,12 @@ provides-dynamic-lookup:
 - "highestVisibleX"
 - "isInverted"
 depends-top-level:
-- "BarLineScatterCandleBubbleChartDataProvider"
 - "Transformer"
+- "BarLineScatterCandleBubbleChartDataProvider"
 - "ChartDataProvider"
 - "Bool"
-- "YAxis"
 - "Double"
+- "YAxis"
 depends-member:
 - ["Ps9AnyObject", "AxisDependency"]
 - ["C6Charts8AxisBase", "AxisDependency"]

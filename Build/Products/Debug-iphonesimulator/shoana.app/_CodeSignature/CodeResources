@@ -54,35 +54,11 @@
 		</data>
 		<key>Frameworks/Realm.framework/Realm</key>
 		<data>
-		MEhBnpCRrWRNrZBQi+WVqPK+cRk=
+		I0dMTLYPZ2CndF9YL5stYQnTL5g=
 		</data>
 		<key>Frameworks/Realm.framework/_CodeSignature/CodeResources</key>
 		<data>
 		30UgB8huxY/bPG8HCYAFmiN7DIc=
-		</data>
-		<key>Frameworks/RealmSwift.framework/Info.plist</key>
-		<data>
-		sokW55ELXziw/w+9xF1VFB1UHdI=
-		</data>
-		<key>Frameworks/RealmSwift.framework/_CodeSignature/CodeDirectory</key>
-		<data>
-		gvYcaHcjKikbtL3DEzewj2Dum1E=
-		</data>
-		<key>Frameworks/RealmSwift.framework/_CodeSignature/CodeRequirements</key>
-		<data>
-		OnX22wWFKRSOFN1+obRynMCeyXM=
-		</data>
-		<key>Frameworks/RealmSwift.framework/_CodeSignature/CodeRequirements-1</key>
-		<data>
-		hZ9efEJAk2wHJbvZad8Ufknti/8=
-		</data>
-		<key>Frameworks/RealmSwift.framework/_CodeSignature/CodeResources</key>
-		<data>
-		NHRG4xvwfHrF+fM/HVVWGLZ1+OE=
-		</data>
-		<key>Frameworks/RealmSwift.framework/_CodeSignature/CodeSignature</key>
-		<data>
-		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
@@ -126,7 +102,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		gJqHXD93ZuGVJH2WAfa+WNIzul8=
+		4gV3FHpjFzpAEd4SLSFLjmPtWNY=
 		</data>
 		<key>LaunchImage-800-667h@2x.png</key>
 		<data>
@@ -138,7 +114,7 @@
 		</data>
 		<key>MasterTableViewCell.nib</key>
 		<data>
-		fvyjhMfjdkf8gtJ9aw/xwAnf1Cw=
+		392c0BwhviGqt4bzZhHwWIJtAEI=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -395,11 +371,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MEhBnpCRrWRNrZBQi+WVqPK+cRk=
+			I0dMTLYPZ2CndF9YL5stYQnTL5g=
 			</data>
 			<key>hash2</key>
 			<data>
-			qeY5hVb9TlMxH6SMNoSSQhEdpJqsjQ/Pd6Vg/TdU+N4=
+			jajJSfsLZjRcCHSJl+RuoLVj3Ic78eBIv3j0IzvgLdE=
 			</data>
 		</dict>
 		<key>Frameworks/Realm.framework/_CodeSignature/CodeResources</key>
@@ -411,72 +387,6 @@
 			<key>hash2</key>
 			<data>
 			DSxk9zHP3Eo0iPgfDQIM07nwc/XjJJe6FB3eEzIivjI=
-			</data>
-		</dict>
-		<key>Frameworks/RealmSwift.framework/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			sokW55ELXziw/w+9xF1VFB1UHdI=
-			</data>
-			<key>hash2</key>
-			<data>
-			7DrJqoIRFrmPyL3oG8G/ITAjcOjVHmSQzp/n4I12Ofc=
-			</data>
-		</dict>
-		<key>Frameworks/RealmSwift.framework/_CodeSignature/CodeDirectory</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			gvYcaHcjKikbtL3DEzewj2Dum1E=
-			</data>
-			<key>hash2</key>
-			<data>
-			FQU1aC6eQjrX5GXV4ynt6p0WAda/Z4uQm6iky7juCgg=
-			</data>
-		</dict>
-		<key>Frameworks/RealmSwift.framework/_CodeSignature/CodeRequirements</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OnX22wWFKRSOFN1+obRynMCeyXM=
-			</data>
-			<key>hash2</key>
-			<data>
-			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
-			</data>
-		</dict>
-		<key>Frameworks/RealmSwift.framework/_CodeSignature/CodeRequirements-1</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			hZ9efEJAk2wHJbvZad8Ufknti/8=
-			</data>
-			<key>hash2</key>
-			<data>
-			N0QBaKhbp822c6c06osgDRqzezwQQgWm9faJhEClpAQ=
-			</data>
-		</dict>
-		<key>Frameworks/RealmSwift.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			NHRG4xvwfHrF+fM/HVVWGLZ1+OE=
-			</data>
-			<key>hash2</key>
-			<data>
-			Hz/ix+bw1ONN6ie0crS7/GYywDz/FU7SeMDh2gJYY1Q=
-			</data>
-		</dict>
-		<key>Frameworks/RealmSwift.framework/_CodeSignature/CodeSignature</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
-			</data>
-			<key>hash2</key>
-			<data>
-			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
@@ -615,11 +525,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fvyjhMfjdkf8gtJ9aw/xwAnf1Cw=
+			392c0BwhviGqt4bzZhHwWIJtAEI=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZWQtpcJtOfeDU494gQ6En3XjiwxpTLUryXyNp8pHhvQ=
+			SeBVowq0Onyt/9DaHTiHyl+3d6o/uQiESN4du1919jc=
 			</data>
 		</dict>
 		<key>_homu1.csv</key>

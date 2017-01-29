@@ -8,22 +8,22 @@ provides-member:
 provides-dynamic-lookup:
 - "highlightColor"
 - "entryForHighlight"
-- "highlightLineWidth"
 - "highlightLineDashLengths"
+- "highlightLineWidth"
 - "labels"
 - "highlightLineDashPhase"
 depends-top-level:
-- "AssignmentPrecedence"
-- "ChartData"
-- "Highlight"
-- "CGFloat"
-- "/"
 - "String"
 - "NSUIColor"
-- "ChartDataEntry"
-- "IChartDataSet"
-- "RadarChartData"
+- "ChartData"
+- "Highlight"
 - !private "Int"
+- "/"
+- "CGFloat"
+- "ChartDataEntry"
+- "AssignmentPrecedence"
+- "RadarChartData"
+- "IChartDataSet"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]

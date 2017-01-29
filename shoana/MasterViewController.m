@@ -14,7 +14,10 @@
 
 
 /*
- * to do :全部終わったら戻る、正誤表示、成績表（回答数、誤答数を表示したテーブルビュー→タップしたら間違えたカテゴリ分布＠パイチャート）
+ * to do :全部終わったら戻る(done)、正誤表示(done)、成績表（done:回答数、誤答数を表示したテーブルビュー→タップしたら間違えたカテゴリ分布＠パイチャート）
+ * to do (done):Quizインスタンスを生成する際にQuizResultから過去の成績を取得して属性にセットする（detailviewconで使用しているため）
+ * to do :masterviewconを再描画する際の回答したかどうかのフラグを作成→viewDidAppear内で設定
+ * to do（次回ver） :弱点克服モードの設定(configviewconで設定＠２箇所、Quizインスタンスの設定、detailviewconでも設定不要？)
  */
 
 //#import "Quiz.h"
@@ -33,6 +36,7 @@
     //NSMutableArray *arrMRatioCorrects;
     NSMutableArray *arrMAnswers;
     NSMutableArray *arrMCorrects;
+    BOOL didUpdate;//成績を更新するかどうかの判断（問題を解くか成績表に遷移したかどうかで判定）
 }
 
 @property NSMutableArray *objects;
@@ -57,35 +61,9 @@ QuizSector *quizSector;
     quizSector = [[QuizSector alloc]init];
     [quizSector readAll];//全csvデータ読み込み
     
-    
-    //arrMRatioCorrects = [NSMutableArray array];
-    arrMAnswers = [NSMutableArray array];
-    arrMCorrects = [NSMutableArray array];
-    for(int i = 0;i < quizSector.quizSectsArray.count;i++){
-        @autoreleasepool {
-            Quiz *tmpQuiz = (Quiz *)quizSector.quizSectsArray[i];
-            ResultModel *myResultModel = [[ResultModel alloc] initWithSection:tmpQuiz];
-            
-            int sumAnswer = 0;
-            int sumCorrect = 0;
-            for(int j = 0;j < tmpQuiz.quizItemsArray.count;j++){
-                //セクションごとに回答率をarrMRatioCorrectsに格納する(未回答なら-1とする)
-                NSLog(@"get answer = %d", [myResultModel getAnswer:j]);
-                NSLog(@"get correct = %d", [myResultModel getCorrects:j]);
-                sumAnswer += [myResultModel getAnswer:j];
-                sumCorrect += [myResultModel getCorrects:j];
-                
-            }
-            //[arrMRatioCorrects addObject:[NSNumber numberWithInteger:sum]];
-            [arrMAnswers addObject:[NSNumber numberWithInteger:sumAnswer]];
-            [arrMCorrects addObject:[NSNumber numberWithInteger:sumCorrect]];
-            
-            tmpQuiz = nil;
-            myResultModel = nil;
-            
-        }
-    }
-    
+    //回答と正解数の配列セットアップ
+    [self setAnswerAndCorrect];
+    didUpdate = NO;//初回起動の場合は何も更新してない状況にする
     
     // UIBarButtonItemに表示文字列を渡して、インスタンス化します。
     UIBarButtonItem *btnRight = [[UIBarButtonItem alloc]
@@ -106,9 +84,39 @@ QuizSector *quizSector;
     
 }
 
+-(void)setAnswerAndCorrect{
+    arrMAnswers = [NSMutableArray array];
+    arrMCorrects = [NSMutableArray array];
+    for(int i = 0;i < quizSector.quizSectsArray.count;i++){
+        @autoreleasepool {
+            Quiz *tmpQuiz = (Quiz *)quizSector.quizSectsArray[i];
+            ResultModel *myResultModel = [[ResultModel alloc] initWithSection:tmpQuiz];
+            
+            int sumAnswer = 0;
+            int sumCorrect = 0;
+            for(int j = 0;j < tmpQuiz.quizItemsArray.count;j++){
+                //セクションごとに回答率をarrMRatioCorrectsに格納する(未回答なら-1とする)
+                NSLog(@"get answer = %d", [myResultModel getAnswer:j]);
+                NSLog(@"get correct = %d", [myResultModel getCorrect:j]);
+                sumAnswer += [myResultModel getAnswer:j];
+                sumCorrect += [myResultModel getCorrect:j];
+                
+            }
+            //[arrMRatioCorrects addObject:[NSNumber numberWithInteger:sum]];
+            [arrMAnswers addObject:[NSNumber numberWithInteger:sumAnswer]];
+            [arrMCorrects addObject:[NSNumber numberWithInteger:sumCorrect]];
+            
+            tmpQuiz = nil;
+            myResultModel = nil;
+            
+        }
+    }
+    
+}
+
 -(void)goConfig{
     NSLog(@"%s", __func__);
-    
+    didUpdate = YES;//成績表を更新する可能性のある設定画面に遷移したらアップデートしたことにする
     ConfigViewController *confViewCon = [[ConfigViewController alloc]init];
     [self.navigationController pushViewController:confViewCon animated:YES];
 }
@@ -116,17 +124,45 @@ QuizSector *quizSector;
 -(void)goResult{
     NSLog(@"%s", __func__);
     
-    ResultViewController *resultViewCon = [[ResultViewController alloc] init];
-//    PieChartViewController *resultViewCon = [[PieChartViewController alloc]init];
-    [self.navigationController pushViewController:resultViewCon animated:YES];
+    if(quizSector.quizSectsArray.count > 0){
+        ResultViewController *resultViewCon = [[ResultViewController alloc] init];
+        resultViewCon.arrQuiz = quizSector.quizSectsArray;
+//      PieChartViewController *resultViewCon = [[PieChartViewController alloc]init];
+        [self.navigationController pushViewController:resultViewCon animated:YES];
+    }
 }
 
 
 
 
 - (void)viewWillAppear:(BOOL)animated {
+    NSLog(@"%s", __func__);
     self.clearsSelectionOnViewWillAppear = self.splitViewController.isCollapsed;
     [super viewWillAppear:animated];
+    
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    NSLog(@"%s", __func__);
+    
+    
+    //ステータスが変わったかどうかのフラグ
+    if(didUpdate){//成績表を更新した場合に限って更新する
+        for(int i = 0;i < quizSector.quizSectsArray.count;i++){
+            @autoreleasepool {
+                Quiz *tmpQuiz = quizSector.quizSectsArray[i];
+                [tmpQuiz updateAllResult];
+                quizSector.quizSectsArray[i] = tmpQuiz;
+            }
+        }
+        [self setAnswerAndCorrect];
+        
+        [self.tableView reloadData];
+        didUpdate = NO;//次回以降更新しないように最新状態であるようにする
+    }
+    
 }
 
 
@@ -155,6 +191,7 @@ QuizSector *quizSector;
         DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
         //controller.quiz = self.quiz;
         //[controller setDetailItem:object];
+        [self.quiz updateAllResult];//解答状況を最新にする
         [controller setQuiz:(Quiz *)(self.quiz)];
         controller.quizNo = 0;
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
@@ -235,6 +272,7 @@ QuizSector *quizSector;
 //}
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    didUpdate = YES;//問題を解いた（解こうとした）場合に更新したことにする
     //NSDate *object = self.objects[indexPath.row];
 //    DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
     DetailViewController *controller = [[self storyboard] instantiateViewControllerWithIdentifier:@"detail"];

@@ -1,4 +1,5 @@
 #import "QuizItem.h"
+#import "ResultModel.h"
 
 @implementation QuizItem
 
@@ -75,5 +76,6 @@
 -(BOOL)checkIsRightNo:(int)answerNo{
     return answerNo == self.rightNo;
 }
+
 
 @end

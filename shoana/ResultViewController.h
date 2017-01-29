@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <Charts/Charts.h>
+#import "Quiz.h"
 
 @interface ResultViewController : UIViewController
+
+@property (strong, nonatomic) Quiz *myQuiz;//one section
+@property (strong, nonatomic) NSArray *arrQuiz;//all section
 
 @end

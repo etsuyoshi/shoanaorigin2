@@ -17,10 +17,15 @@
 // 出題済みの配列
 @property (retain, nonatomic) NSMutableArray *usedQuizItems;
 
-@property (nonatomic) int isOrdered;
-@property (nonatomic) int isRandom;
-@property (nonatomic) BOOL isKokuhukuMode;
-@property (nonatomic) int jakutenNo;
+
+@property (strong, nonatomic) NSString *strConfigKey;
+/*
+ *以下、QUIZ_CONFIG_KEYを格納するバリエーション変数でカバーする（isOrderedなどは消去してgoNextメソッドなどを修正する）
+ */
+//@property (nonatomic) int isOrdered;
+//@property (nonatomic) int isRandom;
+//@property (nonatomic) BOOL isKokuhukuMode;
+//@property (nonatomic) int jakutenNo;
 
 // 次の問題を返すメソッド
 - (int)nextQuiz:(int)nowNo;
@@ -37,5 +42,5 @@
 
 //CSVファイルからクイズデータを読み込むメソッド
 - (BOOL)readFromCSV:(NSString *)filePath;
-
+-(BOOL)updateAllResult;
 @end

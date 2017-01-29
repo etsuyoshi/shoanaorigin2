@@ -10,10 +10,10 @@ provides-dynamic-lookup:
 - "bubbleData"
 depends-top-level:
 - "AssignmentPrecedence"
-- "CastingPrecedence"
-- "BubbleChartView"
 - "BubbleChartData"
+- "CastingPrecedence"
 - !private "BubbleChartRenderer"
+- "BubbleChartView"
 - "BarLineChartViewBase"
 - "BubbleChartDataProvider"
 depends-member:

@@ -6,16 +6,16 @@ provides-nominal:
 provides-member:
 - ["C6Charts20CandleStickChartView", ""]
 provides-dynamic-lookup:
-- "initialize"
 - "candleData"
+- "initialize"
 depends-top-level:
-- "CandleStickChartView"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- "BarLineChartViewBase"
 - "CandleChartData"
 - !private "CandleStickChartRenderer"
-- "BarLineChartViewBase"
-- "CastingPrecedence"
-- "AssignmentPrecedence"
 - "CandleChartDataProvider"
+- "CandleStickChartView"
 depends-member:
 - !private ["P6Charts16AnimatorDelegate", "CandleStickChartRenderer"]
 - !private ["P6Charts16AnimatorDelegate", "_animator"]

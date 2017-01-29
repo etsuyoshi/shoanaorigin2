@@ -13,21 +13,21 @@ provides-dynamic-lookup:
 - "formatter"
 depends-top-level:
 - "AssignmentPrecedence"
-- "IValueFormatter"
-- "Int"
+- "NumberFormatter"
 - "Bool"
 - !private "!="
-- "NumberFormatter"
 - "String"
+- "Int"
+- "DefaultValueFormatter"
 - "BooleanLiteralType"
 - "Double"
 - "ChartDataEntry"
 - "ViewPortHandler"
 - "NSObject"
 - !private "StringLiteralType"
-- "DefaultValueFormatter"
-- !private "??"
 - !private "NSNumber"
+- "IValueFormatter"
+- !private "??"
 depends-member:
 - !private ["Ps9AnyObject", "DefaultValueFormatter"]
 - !private ["Ps9AnyObject", "NSNumber"]

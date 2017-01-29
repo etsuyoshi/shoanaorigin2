@@ -14,15 +14,15 @@ provides-dynamic-lookup:
 - "viewPortHandler"
 - "xValue"
 depends-top-level:
-- !private "StringLiteralType"
-- "CGPoint"
 - "Transformer"
+- "ViewPortJob"
 - "ChartViewBase"
 - "NSObject"
-- "ViewPortHandler"
-- "Double"
-- "ViewPortJob"
 - "AssignmentPrecedence"
+- "CGPoint"
+- "ViewPortHandler"
+- !private "StringLiteralType"
+- "Double"
 depends-member:
 - ["Ps9AnyObject", "CGPoint"]
 - ["Ps9AnyObject", "doJob"]

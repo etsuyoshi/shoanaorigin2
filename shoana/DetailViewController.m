@@ -14,6 +14,7 @@
 @interface DetailViewController (){
     QuizItem *myQuizItem;
     BOOL isDispExplain;
+    UIView *viewExp;//解説などを表示するビュー
 }
 
 @end
@@ -28,6 +29,8 @@
         
         self.title = [NSString stringWithFormat:@"第%d章", self.quiz.section];
         
+        //ランダム設定する
+        self.quiz.strConfigKey = self.strConfigKey;
         //self.detailDescriptionLabel.text = [self.detailItem description];
         myQuizItem = (QuizItem *)self.quiz.quizItemsArray[self.quizNo];
         
@@ -139,12 +142,14 @@
 -(void)displayExplanation{
     NSLog(@"%s", __func__);
     
-    
-    UIView *viewExp = [[UIView alloc]initWithFrame:
-                       CGRectMake(0, 0, self.view.bounds.size.width-30,
-                                  self.view.bounds.size.height/2)];
-    viewExp.center = CGPointMake(self.view.center.x,
-                                 self.view.bounds.size.height-10-viewExp.bounds.size.height/2);
+    int margin = 30;
+    viewExp = [[UIView alloc]initWithFrame:
+                       CGRectMake(0, 0, self.view.bounds.size.width-margin,
+                                  self.view.bounds.size.height - margin - self.navigationController.navigationBar.bounds.size.height)];
+    viewExp.center =
+    CGPointMake(self.view.center.x,
+                self.navigationController.navigationBar.bounds.size.height + [[UIApplication sharedApplication] statusBarFrame].size.height +
+                (self.view.bounds.size.height - self.navigationController.navigationBar.bounds.size.height - [[UIApplication sharedApplication] statusBarFrame].size.height)/2);
     viewExp.layer.borderColor = [[UIColor blackColor] CGColor];
     viewExp.layer.borderWidth = 2.f;
     viewExp.layer.cornerRadius = 10;
@@ -165,22 +170,96 @@
     
     
     //全画面のどこかを押すと消えるようにする
-    UIView *allView = [[UIView alloc]initWithFrame:self.view.bounds];
-    allView.backgroundColor = [UIColor whiteColor];
-    allView.alpha = .1f;
-    [self.view addSubview:allView];
-    allView.userInteractionEnabled = YES;
-    UITapGestureRecognizer *gesture =
-    [[UITapGestureRecognizer alloc]
-     initWithTarget:self
-     action:@selector(disappearExp:)];
-    [allView addGestureRecognizer:gesture];
+//    UIView *allView = [[UIView alloc]initWithFrame:self.view.bounds];
+//    allView.backgroundColor = [UIColor whiteColor];
+//    allView.alpha = .1f;
+//    [self.view addSubview:allView];
+//    allView.userInteractionEnabled = YES;
+//    UITapGestureRecognizer *gesture =
+//    [[UITapGestureRecognizer alloc]
+//     initWithTarget:self
+//     action:@selector(disappearExp:)];
+//    [allView addGestureRecognizer:gesture];
+    
+    
+    int marginBtn = 10;
+    int widthBtn = (viewExp.bounds.size.width-marginBtn*3) / 2;
+    int heightBtn = 64;
+    //次へ進むボタン
+    UIButton *btnNext = [UIButton buttonWithType:UIButtonTypeCustom];
+    btnNext.frame = CGRectMake(0, 0, widthBtn, heightBtn);
+    btnNext.center = CGPointMake(viewExp.bounds.size.width-marginBtn - widthBtn/2,
+                                 viewExp.bounds.size.height - marginBtn - heightBtn/2);
+    btnNext.layer.cornerRadius = 3;
+    btnNext.layer.borderColor = [[UIColor blackColor] CGColor];
+    btnNext.layer.borderWidth = 1;
+    //btnNext.backgroundColor = [UIColor blueColor];
+    [btnNext setTitle:@"次へ" forState:UIControlStateNormal];
+    [btnNext setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    btnNext.titleLabel.font = [UIFont systemFontOfSize:23.f];
+    [viewExp addSubview:btnNext];
+    
+    //やめるボタン
+    UIButton *btnStop = [UIButton buttonWithType:UIButtonTypeCustom];
+    btnStop.frame = CGRectMake(0, 0, widthBtn, heightBtn);
+    btnStop.center = CGPointMake(viewExp.bounds.size.width/4,
+                                 viewExp.bounds.size.height-marginBtn-heightBtn/2);
+    btnStop.layer.cornerRadius = 3;
+    btnStop.layer.borderColor = [[UIColor blackColor] CGColor];
+    btnStop.layer.borderWidth = 1;
+    [btnStop setTitle:@"やめる" forState:UIControlStateNormal];
+    [btnStop setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    btnStop.titleLabel.font = [UIFont systemFontOfSize:23.f];
+    [viewExp addSubview:btnStop];
+    
+    
+    [btnNext addTarget:self action:@selector(tappedNext) forControlEvents:UIControlEventTouchUpInside];
+    [btnStop addTarget:self action:@selector(tappedStop) forControlEvents:UIControlEventTouchUpInside];
+}
+
+-(void)tappedNext{
+    NSLog(@"%s", __func__);
+    [viewExp removeFromSuperview];
+    
+    [self goNext];
+}
+
+-(void)tappedStop{
+    NSLog(@"%s", __func__);
+    [viewExp removeFromSuperview];
+    
+    
+    //ダイアログを開いてイェスならばチェックマークをつける
+    UIAlertController * alertController =
+    [UIAlertController
+     alertControllerWithTitle:@"途中ですが"
+     message:@"全て終了しますか？"
+     preferredStyle:UIAlertControllerStyleActionSheet];
+    [alertController addAction:
+     [UIAlertAction
+      actionWithTitle:@"終了する"
+      style:UIAlertActionStyleDefault
+      handler:^(UIAlertAction *alert){
+          
+          [self.navigationController popToRootViewControllerAnimated:YES];
+      }]];
+    
+    [alertController addAction:
+     [UIAlertAction
+      actionWithTitle:@"キャンセル"
+      style:UIAlertActionStyleCancel
+      handler:^(UIAlertAction *alert){
+          //何もしない
+      }]];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
     
 }
 
 -(void)disappearExp:(UIGestureRecognizer *)gesture{
     NSLog(@"%s", __func__);
-    [gesture.view removeFromSuperview];
+    //[gesture.view removeFromSuperview];
+    [viewExp removeFromSuperview];
     
     [self goNext];
 }
@@ -209,9 +288,6 @@
              [imvIsCorrect removeFromSuperview];
          }
      }];
-    
-    
-    
 }
 
 
@@ -227,7 +303,14 @@
     
     
     //isDispExplain = false;//defaultでは解説
-    isDispExplain = YES;
+    if([self.strConfigKey isEqualToString:QUIZ_CONFIG_KEY_TEST] ||
+       [self.strConfigKey isEqualToString:QUIZ_CONFIG_KEY_TEST_RANDOM]){
+        isDispExplain = NO;
+        
+        
+    }else{
+        isDispExplain = YES;
+    }
     
     
     
@@ -253,6 +336,7 @@
     }else{
         //成績表示
         ResultViewController *controller = [[ResultViewController alloc]init];
+        controller.myQuiz = self.quiz;
         [self.navigationController pushViewController:controller animated:YES];
         
         //ルートに戻る(仮)

@@ -6,27 +6,27 @@ provides-nominal:
 provides-member:
 - ["P6Charts16IPieChartDataSet", ""]
 provides-dynamic-lookup:
-- "sliceSpace"
-- "selectionShift"
-- "valueLinePart1OffsetPercentage"
-- "valueLinePart2Length"
 - "entryLabelColor"
+- "valueLineColor"
+- "valueLinePart1Length"
+- "selectionShift"
+- "sliceSpace"
+- "valueLinePart2Length"
 - "valueLineWidth"
+- "entryLabelFont"
+- "valueLinePart1OffsetPercentage"
 - "xValuePosition"
 - "automaticallyDisableSliceSpacing"
-- "valueLineVariableLength"
 - "yValuePosition"
-- "entryLabelFont"
-- "valueLinePart1Length"
-- "valueLineColor"
+- "valueLineVariableLength"
 depends-top-level:
-- "IChartDataSet"
-- "PieChartDataSet"
 - "NSUIColor"
-- "CGFloat"
+- "PieChartDataSet"
 - "Bool"
-- "IPieChartDataSet"
+- "CGFloat"
 - "NSUIFont"
+- "IChartDataSet"
+- "IPieChartDataSet"
 depends-member:
 - ["Ps9AnyObject", "ValuePosition"]
 - ["Ps7CVarArg", "ValuePosition"]

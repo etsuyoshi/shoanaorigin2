@@ -5,7 +5,11 @@
 //  Created by EndoTsuyoshi on 2017/01/12.
 //  Copyright © 2017年 com.endo. All rights reserved.
 //
+
+//http://scurityanalysts.han-be.com/que1_zai/1-7.html
+//
 @import Charts;
+#import "ResultModel.h"
 
 /*
  * 間違えた問題のみ表示→誤回答のシェアを表示
@@ -16,6 +20,7 @@
 
 @interface ResultViewController ()<ChartViewDelegate>{
     PieChartView *pieChartView;
+    int section;
 }
 
 @end
@@ -61,32 +66,125 @@
 
 -(void)updateChartData{
     //NSLog(@"%s, range = %f, count = %d", __func__, range, count);
-    int count = 5;//データ数
+    //int count = 5;//データ数@default
     //    double mult = range;
-    double mult = .5f;//multiples:倍率
+    //double mult = .5f;//multiples:倍率
     
-    NSArray *arrChartLabels =
-    @[
-      @"Party A", @"Party B", @"Party C", @"Party D", @"Party E", @"Party F",
-      @"Party G", @"Party H", @"Party I", @"Party J", @"Party K", @"Party L",
-      @"Party M", @"Party N", @"Party O", @"Party P", @"Party Q", @"Party R",
-      @"Party S", @"Party T", @"Party U", @"Party V", @"Party W", @"Party X",
-      @"Party Y", @"Party Z"
-      ];
+    NSMutableArray *arrDataForGraph = [NSMutableArray array];
+    NSMutableArray *arrLabelForGraph = [NSMutableArray array];
     
     
+    /*
+     * セクション指定があれば当該セクションにおける誤った問題番号を、なければ全セクションの誤った回数を表示する
+     */
+    if(self.myQuiz){//Quizインスタンスの指定があれば該当セクションのみラベルでの集計結果を表示する
+        ResultModel *myResult = [[ResultModel alloc]initWithSection:self.myQuiz];
+        
+        section = self.myQuiz.section;
+        
+        
+        NSArray *arrAnswer = [myResult getAnswers];
+        NSArray *arrCorrect = [myResult getCorrects];
+        //        NSMutableArray *arrWrongs = [NSMutableArray array];
+        
+        //問題番号別に過去に誤った回数を格納する
+        if(arrAnswer){
+            for(int i = 0;i < arrAnswer.count;i++){
+                int numOfWrong = (int)[arrAnswer[i] integerValue] - (int)[arrCorrect[i] integerValue];
+                //                [arrWrongs addObject:[NSNumber numberWithInt:numOfWrong]];
+                [arrDataForGraph addObject:[NSNumber numberWithInt:numOfWrong]];
+                [arrLabelForGraph addObject:[NSString stringWithFormat:@"NO.%d", i]];
+            }
+        }
+        
+        
+        
+//        NSUserDefaults *userDef = [NSUserDefaults standardUserDefaults];
+//        NSArray *arrAnswer =
+//        [userDef arrayForKey:
+//         [NSString stringWithFormat:@"%@%d", USER_DEFAULTS_ANSWER, section]];
+//        NSArray *arrCorrect =
+//        [userDef arrayForKey:
+//         [NSString stringWithFormat:@"%@%d", USER_DEFAULTS_CORRECT, section]];
+        
+        self.title = @"苦手問題";
+        
+    }else if(self.arrQuiz){
+        section = -1;
+        
+        //セクション指定がなければi=0から100くらいまでのセクションで存在するセクションに対して集計して、誤った回数のみ集計
+        for(Quiz *myQuiz in self.arrQuiz){
+            @autoreleasepool {
+                ResultModel *myResult = [[ResultModel alloc]initWithSection:myQuiz];
+                
+                
+                
+                NSArray *arrAnswer = [myResult getAnswers];
+                NSArray *arrCorrect = [myResult getCorrects];
+                //        NSMutableArray *arrWrongs = [NSMutableArray array];
+                
+                int sumAnswer = 0;
+                int sumCorrect = 0;
+                //問題番号別に過去に誤った回数を格納する
+                if(arrAnswer){
+                    for(int i = 0;i < arrAnswer.count;i++){
+                        sumAnswer += (int)[arrAnswer[i] integerValue];
+                        sumCorrect += (int)[arrCorrect[i] integerValue];
+//                        int numOfWrong = (int)[arrAnswer[i] integerValue] - (int)[arrCorrect[i] integerValue];
+                        //                [arrWrongs addObject:[NSNumber numberWithInt:numOfWrong]];
+//                        [arrDataForGraph addObject:[NSNumber numberWithInt:numOfWrong]];
+//                        [arrLabelForGraph addObject:[NSString stringWithFormat:@"NO.%d", i]];
+                    }
+                }
+                
+                [arrDataForGraph addObject:[NSNumber numberWithInt:sumAnswer-sumCorrect]];
+                [arrLabelForGraph addObject:[NSString stringWithFormat:@"SECT.%d", myQuiz.section]];
+                
+                self.title = @"苦手セクション";
+                
+            }
+        }
+        
+    }
+    
+    
+    if(!arrDataForGraph){
+        //まだ一度も解答したことがない人
+        arrDataForGraph = [NSMutableArray arrayWithObjects:
+                           @10,@10,@10,@10,@10, nil];
+        arrLabelForGraph = [NSMutableArray arrayWithObjects:
+                            @"demo1", "demo2", @"demo3", @"demo4", @"demo5", nil];
+        
+    }
+//    NSArray *arrChartLabels =
+//    @[
+//      @"Party A", @"Party B", @"Party C", @"Party D", @"Party E", @"Party F",
+//      @"Party G", @"Party H", @"Party I", @"Party J", @"Party K", @"Party L",
+//      @"Party M", @"Party N", @"Party O", @"Party P", @"Party Q", @"Party R",
+//      @"Party S", @"Party T", @"Party U", @"Party V", @"Party W", @"Party X",
+//      @"Party Y", @"Party Z"
+//      ];
+    
+    NSLog(@"arr data count = %ld", arrDataForGraph.count);
     NSMutableArray *values = [[NSMutableArray alloc] init];
     
-    for (int i = 0; i < count; i++)
+    for (int i = 0; i < arrDataForGraph.count; i++)
     {
+//        [values addObject:
+//         [[PieChartDataEntry alloc]
+//          initWithValue:(arc4random_uniform(mult) + mult / 5)
+//          label:arrChartLabels[i % arrChartLabels.count]]];
+        
         [values addObject:
          [[PieChartDataEntry alloc]
-          initWithValue:(arc4random_uniform(mult) + mult / 5)
-          label:arrChartLabels[i % arrChartLabels.count]]];
+            initWithValue:[arrDataForGraph[i] integerValue]
+                    label:arrLabelForGraph[i]]];
+        
+        
     }
     
     PieChartDataSet *dataSet =
-    [[PieChartDataSet alloc] initWithValues:values label:@"Election Results"];
+    [[PieChartDataSet alloc] initWithValues:values label:@"解答状況"];
     dataSet.sliceSpace = 2.0;
     
     

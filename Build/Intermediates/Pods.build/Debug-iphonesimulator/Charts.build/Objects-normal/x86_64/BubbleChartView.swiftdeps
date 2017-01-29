@@ -6,16 +6,16 @@ provides-nominal:
 provides-member:
 - ["C6Charts15BubbleChartView", ""]
 provides-dynamic-lookup:
-- "initialize"
 - "bubbleData"
+- "initialize"
 depends-top-level:
 - "AssignmentPrecedence"
-- !private "BubbleChartRenderer"
+- "BubbleChartDataProvider"
 - "CastingPrecedence"
+- "BarLineChartViewBase"
+- !private "BubbleChartRenderer"
 - "BubbleChartData"
 - "BubbleChartView"
-- "BarLineChartViewBase"
-- "BubbleChartDataProvider"
 depends-member:
 - !private ["P6Charts16AnimatorDelegate", "BubbleChartRenderer"]
 - !private ["P6Charts16AnimatorDelegate", "_animator"]

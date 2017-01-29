@@ -6,14 +6,14 @@ provides-nominal:
 provides-member:
 - ["P6Charts19IBubbleChartDataSet", ""]
 provides-dynamic-lookup:
+- "highlightCircleWidth"
 - "maxSize"
 - "isNormalizeSizeEnabled"
-- "highlightCircleWidth"
 depends-top-level:
-- "CGFloat"
 - "IBarLineScatterCandleBubbleChartDataSet"
 - "IBubbleChartDataSet"
 - "Bool"
+- "CGFloat"
 depends-member:
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "Bool"]
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "CGFloat"]

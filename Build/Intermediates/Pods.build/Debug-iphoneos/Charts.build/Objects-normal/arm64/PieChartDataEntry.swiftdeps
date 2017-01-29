@@ -13,14 +13,14 @@ provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
 - "CastingPrecedence"
+- "String"
+- "Double"
+- !private "print"
+- "AnyObject"
 - "PieChartDataEntry"
 - "NSZone"
-- "ChartDataEntry"
-- "AnyObject"
-- "Double"
-- "String"
-- !private "print"
 - !private "StringLiteralType"
+- "ChartDataEntry"
 depends-member:
 - ["Ps9AnyObject", "copyWithZone"]
 - ["Ps9AnyObject", "deinit"]

@@ -38,35 +38,27 @@
 		</data>
 		<key>Frameworks/Charts.framework/Charts</key>
 		<data>
-		BEGKv8XhQtp6jYZLgEzT6f/1+Kw=
+		6rJGQvfTQRvhobJKSOi0l/cBerw=
 		</data>
 		<key>Frameworks/Charts.framework/Info.plist</key>
 		<data>
-		A01reZ/rUf9LXXF06P8XehrBUJ8=
+		t05Vspn5xjvEi1sTLOr8tZqhb2s=
 		</data>
-		<key>Frameworks/Charts.framework/Versions/A/Charts</key>
+		<key>Frameworks/Charts.framework/_CodeSignature/CodeResources</key>
 		<data>
-		IlL1mY1fyNbDZQv0bMCcIpbed4A=
-		</data>
-		<key>Frameworks/Charts.framework/Versions/A/Resources/Info.plist</key>
-		<data>
-		4uj63hXkP2Pq3P1mmqxOcW54xR0=
-		</data>
-		<key>Frameworks/Charts.framework/Versions/A/_CodeSignature/CodeResources</key>
-		<data>
-		C8aLKygXhLK6KKx2+G0c66hlsp8=
+		gHoACn3OKDX5bfaMrmJ+aQ0sWMA=
 		</data>
 		<key>Frameworks/Realm.framework/Info.plist</key>
 		<data>
-		WRNulOn/PpP8PnwCdEdovgWSCAk=
+		cjamGpY9N25zZt/GDRa1SL/RWGI=
 		</data>
 		<key>Frameworks/Realm.framework/Realm</key>
 		<data>
-		ly9DoyeriTkb2O/cnK6drr/up9k=
+		nGgMjDjhVnlgy6Ee4OIZmVCXBoA=
 		</data>
 		<key>Frameworks/Realm.framework/_CodeSignature/CodeResources</key>
 		<data>
-		CQpSPlWK0ScEA5+jyiwCoJOahqw=
+		MgoMt9j71dAOM8dN6j0Wujh3gwc=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
@@ -111,6 +103,10 @@
 		<key>Frameworks/libswiftUIKit.dylib</key>
 		<data>
 		mP3C6MXCJv6GprFS6jFmCLLGqJU=
+		</data>
+		<key>Info.plist</key>
+		<data>
+		7ScxtcqpZwdbDvDAtPL2AJeR1oE=
 		</data>
 		<key>LaunchImage-800-667h@2x.png</key>
 		<data>
@@ -167,6 +163,14 @@
 		<key>building2.png</key>
 		<data>
 		Fa9lMmKy6QecJd9MOuwjrH6cNn8=
+		</data>
+		<key>circle.png</key>
+		<data>
+		X6a3At8m0+XrEfVEK1VrsHOnczk=
+		</data>
+		<key>cross.png</key>
+		<data>
+		/g+DwlgyaczHzQKTjN+hoXmGigY=
 		</data>
 		<key>desk.png</key>
 		<data>
@@ -331,98 +335,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BEGKv8XhQtp6jYZLgEzT6f/1+Kw=
+			6rJGQvfTQRvhobJKSOi0l/cBerw=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZGLeM4UCDdXFc94Y33oDvBzr6W/ZamuUyaixhBX+BXc=
+			8uL1ZLtuZc70PA6W9aHjQ3uwcy4iDJgrLjUgSTvHGbc=
 			</data>
 		</dict>
 		<key>Frameworks/Charts.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			A01reZ/rUf9LXXF06P8XehrBUJ8=
+			t05Vspn5xjvEi1sTLOr8tZqhb2s=
 			</data>
 			<key>hash2</key>
 			<data>
-			GejPiefEE0zh/4sYpLC6UE7O6ct/ATjmrEFpE9lKFM8=
+			pObLJc0eY8Fwgadbz3mV0D2K1TQDFEyeeL12xC4nzzE=
 			</data>
 		</dict>
-		<key>Frameworks/Charts.framework/Resources</key>
-		<dict>
-			<key>symlink</key>
-			<string>Versions/Current/Resources</string>
-		</dict>
-		<key>Frameworks/Charts.framework/Versions/A/Charts</key>
+		<key>Frameworks/Charts.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IlL1mY1fyNbDZQv0bMCcIpbed4A=
+			gHoACn3OKDX5bfaMrmJ+aQ0sWMA=
 			</data>
 			<key>hash2</key>
 			<data>
-			XEKX9USbv7brwXjDwZ3uUs/gTwvTW3tNtQLTkXR94hc=
+			dvbtWFePAP/3aPhW3g/UVHb807xSo+0iYkwA9K2m0EU=
 			</data>
-		</dict>
-		<key>Frameworks/Charts.framework/Versions/A/Resources/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			4uj63hXkP2Pq3P1mmqxOcW54xR0=
-			</data>
-			<key>hash2</key>
-			<data>
-			FvcHdtj0xZOkdOA1JvKnExzuKp/86DHNwdFJUnqd5Qc=
-			</data>
-		</dict>
-		<key>Frameworks/Charts.framework/Versions/A/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			C8aLKygXhLK6KKx2+G0c66hlsp8=
-			</data>
-			<key>hash2</key>
-			<data>
-			R1szUmeKVMhZZyZ2E9vQGt1s8OC2tmcEQukJN2jCvfA=
-			</data>
-		</dict>
-		<key>Frameworks/Charts.framework/Versions/Current</key>
-		<dict>
-			<key>symlink</key>
-			<string>A</string>
 		</dict>
 		<key>Frameworks/Realm.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WRNulOn/PpP8PnwCdEdovgWSCAk=
+			cjamGpY9N25zZt/GDRa1SL/RWGI=
 			</data>
 			<key>hash2</key>
 			<data>
-			RWOnKDesKqI3R3oJ3ofKZZbBHiy/lyiJk6lug/HZ8S0=
+			6pcFYzO0WdumzRCcX1w2RUAcDkQ31FpHnPZSqSm1U8E=
 			</data>
 		</dict>
 		<key>Frameworks/Realm.framework/Realm</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ly9DoyeriTkb2O/cnK6drr/up9k=
+			nGgMjDjhVnlgy6Ee4OIZmVCXBoA=
 			</data>
 			<key>hash2</key>
 			<data>
-			xQ1xDsX/iRkLogO7bgj0PxoCA6VPN+g/sDvOsM+2lX4=
+			kP1CRRgwNq0xHRfSgZov206siZ+zFCIEMA+ICjzPisA=
 			</data>
 		</dict>
 		<key>Frameworks/Realm.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CQpSPlWK0ScEA5+jyiwCoJOahqw=
+			MgoMt9j71dAOM8dN6j0Wujh3gwc=
 			</data>
 			<key>hash2</key>
 			<data>
-			+qItONGH+JAWhDn7FvA67r1rhTLyX2GtXGjyN7AdzPU=
+			KF6Al6nwlwvm0GTXLMpnvanQzgtQoMjxLN8wQbcgGJc=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
@@ -687,6 +659,28 @@
 			<key>hash2</key>
 			<data>
 			DQzcGgww4CCVDK0o6819g0XOy+0q+dTEdOtQapxqkwU=
+			</data>
+		</dict>
+		<key>circle.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			X6a3At8m0+XrEfVEK1VrsHOnczk=
+			</data>
+			<key>hash2</key>
+			<data>
+			het4+oHk/AET1iZC/0rzzc/qaa/mF6baZ60EMPqrX+4=
+			</data>
+		</dict>
+		<key>cross.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/g+DwlgyaczHzQKTjN+hoXmGigY=
+			</data>
+			<key>hash2</key>
+			<data>
+			M+plY9ZNtxROp1HIUSR1USTHDno8twTopvdXNJj3U4k=
 			</data>
 		</dict>
 		<key>desk.png</key>

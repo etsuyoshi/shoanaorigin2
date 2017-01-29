@@ -12,6 +12,7 @@
 @interface ResultModel : NSObject
 
 @property int section;
+@property int allQuizCount;
 @property (nonatomic, strong) NSMutableArray *arrAnswerInSection;//当該セクションにおける問題数の回答数
 @property (nonatomic, strong) NSMutableArray *arrCorrectInSection;//該当セクションにおける問題数の正解数
 
@@ -20,5 +21,7 @@
 -(BOOL)setResult:(int)quizNo isCorrect:(BOOL)isCorrect;
 -(BOOL)resetAllData;
 -(int)getAnswer:(int)quizNo;
--(int)getCorrects:(int)quizNo;
+-(NSArray *)getAnswers;
+-(int)getCorrect:(int)quizNo;
+-(NSArray *)getCorrects;
 @end

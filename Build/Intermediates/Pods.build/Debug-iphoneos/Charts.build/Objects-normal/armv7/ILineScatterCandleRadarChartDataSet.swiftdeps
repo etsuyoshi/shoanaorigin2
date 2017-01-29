@@ -6,14 +6,14 @@ provides-nominal:
 provides-member:
 - ["P6Charts35ILineScatterCandleRadarChartDataSet", ""]
 provides-dynamic-lookup:
-- "setDrawHighlightIndicators"
-- "drawVerticalHighlightIndicatorEnabled"
 - "isHorizontalHighlightIndicatorEnabled"
 - "isVerticalHighlightIndicatorEnabled"
 - "drawHorizontalHighlightIndicatorEnabled"
+- "setDrawHighlightIndicators"
+- "drawVerticalHighlightIndicatorEnabled"
 depends-top-level:
-- "ILineScatterCandleRadarChartDataSet"
 - "IBarLineScatterCandleBubbleChartDataSet"
+- "ILineScatterCandleRadarChartDataSet"
 - "Bool"
 depends-member:
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "Bool"]

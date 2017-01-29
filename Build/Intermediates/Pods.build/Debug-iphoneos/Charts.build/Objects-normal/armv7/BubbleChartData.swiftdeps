@@ -10,11 +10,11 @@ provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
 - "CastingPrecedence"
-- "BubbleChartData"
 - "CGFloat"
-- "IChartDataSet"
-- "BarLineScatterCandleBubbleChartData"
 - !private "IBubbleChartDataSet"
+- "IChartDataSet"
+- "BubbleChartData"
+- "BarLineScatterCandleBubbleChartData"
 depends-member:
 - !private ["Ps9AnyObject", "_dataSets"]
 - ["Ps9AnyObject", "init"]

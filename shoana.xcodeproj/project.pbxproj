@@ -53,7 +53,7 @@
 		2AE9C85A1E32439900FDF995 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE9C8581E32439900FDF995 /* cross.png */; };
 		2AFB72611E23444B00A3E999 /* QuizSector.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB72601E23444B00A3E999 /* QuizSector.m */; };
 		2AFE2C0A1E3087BB00D30F37 /* ResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFE2C091E3087BB00D30F37 /* ResultModel.m */; };
-		5FD5179D7445E4BB40617463 /* Pods_shoana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE85A851D5B9F558596553C2 /* Pods_shoana.framework */; };
+		62E32E202CCC48550CAC3217 /* Pods_shoana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A75A86DD0B045CEDF0904B /* Pods_shoana.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,7 +102,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		041C820118BF2C745AE4321A /* Pods-shoana.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shoana.release.xcconfig"; path = "Pods/Target Support Files/Pods-shoana/Pods-shoana.release.xcconfig"; sourceTree = "<group>"; };
+		03A75A86DD0B045CEDF0904B /* Pods_shoana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_shoana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B6B951D484BA36EF74AE465 /* Pods-shoana.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shoana.debug.xcconfig"; path = "Pods/Target Support Files/Pods-shoana/Pods-shoana.debug.xcconfig"; sourceTree = "<group>"; };
 		2A3E65F21E350DCB001C17DE /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigViewController.h; sourceTree = "<group>"; };
 		2A3E65F31E350DCB001C17DE /* ConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigViewController.m; sourceTree = "<group>"; };
 		2A66EA131E1A5968009B5637 /* shoana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shoana.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,8 +164,7 @@
 		2AFB7EEF1E30EF4000647605 /* Shoana-Prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Shoana-Prefix.h"; sourceTree = "<group>"; };
 		2AFE2C081E3087BB00D30F37 /* ResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultModel.h; sourceTree = "<group>"; };
 		2AFE2C091E3087BB00D30F37 /* ResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultModel.m; sourceTree = "<group>"; };
-		904106E1659843334BD7EC63 /* Pods-shoana.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shoana.debug.xcconfig"; path = "Pods/Target Support Files/Pods-shoana/Pods-shoana.debug.xcconfig"; sourceTree = "<group>"; };
-		EE85A851D5B9F558596553C2 /* Pods_shoana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_shoana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44EBAF795055A4785E1B5C93 /* Pods-shoana.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shoana.release.xcconfig"; path = "Pods/Target Support Files/Pods-shoana/Pods-shoana.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,21 +172,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FD5179D7445E4BB40617463 /* Pods_shoana.framework in Frameworks */,
 				2A7005881E2C6D8700780D58 /* Charts.framework in Frameworks */,
+				62E32E202CCC48550CAC3217 /* Pods_shoana.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20131A39C8359FE10E562CD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03A75A86DD0B045CEDF0904B /* Pods_shoana.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2A66EA0A1E1A5968009B5637 = {
 			isa = PBXGroup;
 			children = (
 				2A66EA151E1A5968009B5637 /* shoana */,
 				2A66EA141E1A5968009B5637 /* Products */,
-				84D4582EA8B90E52DB431236 /* Pods */,
-				EA4E415955B4FB91D3C36115 /* Frameworks */,
+				AE20AA291EF4CCB39C23628F /* Pods */,
+				20131A39C8359FE10E562CD0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -306,21 +314,13 @@
 			path = image;
 			sourceTree = "<group>";
 		};
-		84D4582EA8B90E52DB431236 /* Pods */ = {
+		AE20AA291EF4CCB39C23628F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				904106E1659843334BD7EC63 /* Pods-shoana.debug.xcconfig */,
-				041C820118BF2C745AE4321A /* Pods-shoana.release.xcconfig */,
+				0B6B951D484BA36EF74AE465 /* Pods-shoana.debug.xcconfig */,
+				44EBAF795055A4785E1B5C93 /* Pods-shoana.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		EA4E415955B4FB91D3C36115 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				EE85A851D5B9F558596553C2 /* Pods_shoana.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,13 +330,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A66EA2D1E1A5968009B5637 /* Build configuration list for PBXNativeTarget "shoana" */;
 			buildPhases = (
-				7C0A2BC5FB6D3FEC2C2697E9 /* [CP] Check Pods Manifest.lock */,
+				708DBB28B504E6ECB1A70115 /* [CP] Check Pods Manifest.lock */,
 				2A66EA0F1E1A5968009B5637 /* Sources */,
 				2A66EA101E1A5968009B5637 /* Frameworks */,
 				2A66EA111E1A5968009B5637 /* Resources */,
-				F33DAC699020094C5F1C79C1 /* [CP] Embed Pods Frameworks */,
-				6C84409EB7E562D8CC5ADCC1 /* [CP] Copy Pods Resources */,
 				2A70058C1E2C6D8700780D58 /* Embed Frameworks */,
+				27D360C491BB24703B8D87BC /* [CP] Embed Pods Frameworks */,
+				BC91AB0476595878A76122F8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -455,22 +455,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6C84409EB7E562D8CC5ADCC1 /* [CP] Copy Pods Resources */ = {
+		27D360C491BB24703B8D87BC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-shoana/Pods-shoana-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-shoana/Pods-shoana-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7C0A2BC5FB6D3FEC2C2697E9 /* [CP] Check Pods Manifest.lock */ = {
+		708DBB28B504E6ECB1A70115 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -485,19 +485,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		F33DAC699020094C5F1C79C1 /* [CP] Embed Pods Frameworks */ = {
+		BC91AB0476595878A76122F8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-shoana/Pods-shoana-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-shoana/Pods-shoana-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -645,7 +645,7 @@
 		};
 		2A66EA2E1E1A5968009B5637 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 904106E1659843334BD7EC63 /* Pods-shoana.debug.xcconfig */;
+			baseConfigurationReference = 0B6B951D484BA36EF74AE465 /* Pods-shoana.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -662,7 +662,7 @@
 		};
 		2A66EA2F1E1A5968009B5637 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 041C820118BF2C745AE4321A /* Pods-shoana.release.xcconfig */;
+			baseConfigurationReference = 44EBAF795055A4785E1B5C93 /* Pods-shoana.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

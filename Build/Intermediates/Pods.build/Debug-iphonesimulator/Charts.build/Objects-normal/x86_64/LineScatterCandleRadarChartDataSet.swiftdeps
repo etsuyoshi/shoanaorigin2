@@ -7,21 +7,21 @@ provides-member:
 - ["C6Charts34LineScatterCandleRadarChartDataSet", ""]
 provides-dynamic-lookup:
 - "drawVerticalHighlightIndicatorEnabled"
-- "isVerticalHighlightIndicatorEnabled"
 - "drawHorizontalHighlightIndicatorEnabled"
+- "setDrawHighlightIndicators"
 - "copyWithZone"
 - "isHorizontalHighlightIndicatorEnabled"
-- "setDrawHighlightIndicators"
+- "isVerticalHighlightIndicatorEnabled"
 depends-top-level:
 - "AssignmentPrecedence"
-- "ILineScatterCandleRadarChartDataSet"
-- "NSZone"
 - "CastingPrecedence"
 - "LineScatterCandleRadarChartDataSet"
+- "NSZone"
 - "AnyObject"
-- "Bool"
+- "ILineScatterCandleRadarChartDataSet"
 - "BarLineScatterCandleBubbleChartDataSet"
 - "BooleanLiteralType"
+- "Bool"
 depends-member:
 - ["Ps9AnyObject", "copyWithZone"]
 - ["Ps9AnyObject", "deinit"]

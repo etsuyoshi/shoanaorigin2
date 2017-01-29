@@ -11,6 +11,7 @@
 
 @interface DetailViewController : UIViewController
 
+@property (weak, nonatomic) NSString *strConfigKey;//ConfigViewControllerで設定する問題モード
 //@property (strong, nonatomic) NSDate *detailItem;
 @property (strong, nonatomic) Quiz *quiz;//章番号はquiz.
 @property int quizNo;//何番目の問題か（章番号ではなく章の中の問題番号)

@@ -9,12 +9,12 @@ provides-dynamic-lookup:
 - "initialize"
 - "bubbleData"
 depends-top-level:
-- "AssignmentPrecedence"
+- "BarLineChartViewBase"
+- "BubbleChartDataProvider"
 - "BubbleChartData"
 - "CastingPrecedence"
+- "AssignmentPrecedence"
 - !private "BubbleChartRenderer"
-- "BubbleChartDataProvider"
-- "BarLineChartViewBase"
 - "BubbleChartView"
 depends-member:
 - !private ["P6Charts16AnimatorDelegate", "BubbleChartRenderer"]

@@ -10,10 +10,10 @@ provides-dynamic-lookup:
 depends-top-level:
 - "ViewPortHandler"
 - "Animator"
-- "ILineScatterCandleRadarChartDataSet"
 - "CGContext"
 - "LineScatterCandleRadarRenderer"
 - "CGPoint"
+- "ILineScatterCandleRadarChartDataSet"
 - "BarLineScatterCandleBubbleRenderer"
 depends-member:
 - !private ["Ps9AnyObject", "CGPoint"]

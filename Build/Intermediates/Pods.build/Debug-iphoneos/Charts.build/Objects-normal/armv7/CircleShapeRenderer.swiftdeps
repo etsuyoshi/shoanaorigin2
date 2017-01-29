@@ -8,21 +8,21 @@ provides-member:
 provides-dynamic-lookup:
 - "renderShape"
 depends-top-level:
+- !private "CGRect"
 - "AssignmentPrecedence"
-- !private "+"
+- "NSObject"
 - "ViewPortHandler"
+- "CGContext"
+- !private "*"
+- "IScatterChartDataSet"
 - !private ">"
+- !private "-"
+- "IShapeRenderer"
+- !private "/"
+- !private "+"
 - "CircleShapeRenderer"
 - "CGPoint"
-- "IScatterChartDataSet"
 - "NSUIColor"
-- "IShapeRenderer"
-- "NSObject"
-- !private "*"
-- !private "CGRect"
-- !private "/"
-- !private "-"
-- "CGContext"
 depends-member:
 - !private ["Ps9AnyObject", "CGRect"]
 - !private ["Ps9AnyObject", "cgColor"]

@@ -6,10 +6,10 @@ provides-nominal:
 provides-member:
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", ""]
 provides-dynamic-lookup:
-- "highlightLineWidth"
 - "highlightLineDashLengths"
-- "highlightLineDashPhase"
+- "highlightLineWidth"
 - "highlightColor"
+- "highlightLineDashPhase"
 depends-top-level:
 - "IChartDataSet"
 - "IBarLineScatterCandleBubbleChartDataSet"

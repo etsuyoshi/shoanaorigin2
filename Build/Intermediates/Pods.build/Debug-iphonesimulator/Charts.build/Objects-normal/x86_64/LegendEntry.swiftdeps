@@ -6,21 +6,21 @@ provides-nominal:
 provides-member:
 - ["C6Charts11LegendEntry", ""]
 provides-dynamic-lookup:
-- "formLineDashLengths"
-- "form"
-- "formLineWidth"
-- "formLineDashPhase"
 - "formColor"
-- "label"
 - "formSize"
+- "label"
+- "formLineDashPhase"
+- "formLineDashLengths"
+- "formLineWidth"
+- "form"
 depends-top-level:
 - "AssignmentPrecedence"
+- "LegendEntry"
+- "NSObject"
+- "Legend"
+- "NSUIColor"
 - "CGFloat"
 - "String"
-- "NSUIColor"
-- "NSObject"
-- "LegendEntry"
-- "Legend"
 depends-member:
 - ["Ps16AbsoluteValuable", "nan"]
 - ["Ps9AnyObject", "CGFloat"]

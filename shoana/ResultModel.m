@@ -17,7 +17,7 @@
     if (self) {
         self.section = myQuiz.section;
         
-        
+        self.allQuizCount = (int)myQuiz.quizItemsArray.count;
 
         //NSUserDefaultから過去のデータを取得して配列に格納する：なければ全部ぜろの要素数を取得する
         NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
@@ -37,6 +37,7 @@
             //何もしない
         }else{
             
+            //一度でもResultModelを初期化した際、過去データが存在しなければ全部ゼロとして格納する
             self.arrAnswerInSection = [NSMutableArray array];
             self.arrCorrectInSection = [NSMutableArray array];
             
@@ -44,6 +45,15 @@
                 [self.arrAnswerInSection addObject:[NSNumber numberWithInteger:0]];
                 [self.arrCorrectInSection addObject:[NSNumber numberWithInteger:0]];
             }
+            
+            [userDefaults
+             setObject:self.arrAnswerInSection
+             forKey:[NSString stringWithFormat:@"%@%d", USER_DEFAULTS_ANSWER, self.section]];
+            [userDefaults
+             setObject:self.arrCorrectInSection
+             forKey:[NSString stringWithFormat:@"%@%d", USER_DEFAULTS_CORRECT, self.section]];
+            [userDefaults synchronize];
+            
         }
         
         userDefaults = nil;
@@ -67,8 +77,20 @@
     //未回答の場合
     return 0;
 }
+
+//問題番号を指定せずにセクション内のすべての回答数配列を取得する
+-(NSArray *)getAnswers{
+    NSUserDefaults *userDef = [NSUserDefaults standardUserDefaults];
+    
+    NSArray *arrAnswers =
+    [userDef arrayForKey:
+     [NSString stringWithFormat:@"%@%d", USER_DEFAULTS_ANSWER, self.section]];
+    userDef = nil;
+    
+    return arrAnswers;
+}
 //正答数取得
--(int)getCorrects:(int)quizNo{
+-(int)getCorrect:(int)quizNo{
     NSUserDefaults *userDef = [NSUserDefaults standardUserDefaults];
     NSArray *arrCorrects = [userDef arrayForKey:[NSString stringWithFormat:@"%@%d", USER_DEFAULTS_CORRECT, self.section]];
     if(arrCorrects){
@@ -78,6 +100,16 @@
     }
     //正解したことがない（正解したデータが存在しない）場合は0を明示的に返す
     return 0;
+}
+
+//問題番号を指定せずにセクション内のすべての正解数配列を取得する
+-(NSArray *)getCorrects{
+    NSUserDefaults *userDef = [NSUserDefaults standardUserDefaults];
+    NSArray *arrCorrects =
+    [userDef arrayForKey:
+     [NSString stringWithFormat:@"%@%d", USER_DEFAULTS_CORRECT, self.section]];
+    userDef = nil;
+    return arrCorrects;
 }
 
 -(BOOL)setResult:(int)quizNo isCorrect:(BOOL)isCorrect{

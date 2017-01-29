@@ -6,16 +6,16 @@ provides-nominal:
 provides-member:
 - ["C6Charts13ComponentBase", ""]
 provides-dynamic-lookup:
-- "yOffset"
-- "isEnabled"
 - "xOffset"
+- "yOffset"
 - "enabled"
+- "isEnabled"
 depends-top-level:
-- "ComponentBase"
-- "NSObject"
 - "Bool"
 - "CGFloat"
+- "NSObject"
 - "BooleanLiteralType"
+- "ComponentBase"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]

@@ -9,8 +9,8 @@
 // プロパティに対応するインスタンス変数とアクセッサメソッドの生成
 @synthesize quizItemsArray = _quizItemsArray;
 @synthesize usedQuizItems = _usedQuizItems;
-@synthesize isKokuhukuMode = _isKokuhukuMode;
-@synthesize jakutenNo = _jakutenNo;
+//@synthesize isKokuhukuMode = _isKokuhukuMode;
+//@synthesize jakutenNo = _jakutenNo;
 @synthesize arrCategory = _arrCategory;
 @synthesize strSeikaisu = _strSeikaisu;
 @synthesize strKaitoukaisu = _strKaitoukaisu;
@@ -24,13 +24,13 @@
         // インスタンス変数の初期化
         _quizItemsArray = nil;
         _usedQuizItems = [[NSMutableArray alloc] init];
-        _isKokuhukuMode = false;
+        //_isKokuhukuMode = false;
         _arrCategory = nil;
         _strKaitoukaisu = nil;
         _strSeikaisu = nil;
         _section  = 0;
         
-        self.isOrdered = YES;
+//        self.isOrdered = YES;
     }
     return self;
 }
@@ -45,10 +45,10 @@
         _usedQuizItems = [[NSMutableArray alloc] init];
         
         //弱点克服モード
-        _isKokuhukuMode = isKokuhuku;
+        //_isKokuhukuMode = isKokuhuku;
         
         arrWrongNo = [NSMutableArray array];
-        ResultModel *myResultModel = [[ResultModel alloc]initWithSection:nil];//代入必要！
+        //ResultModel *myResultModel = [[ResultModel alloc]initWithSection:nil];//代入必要！
         
         
     }
@@ -58,23 +58,47 @@
 
 -(int)nextQuiz:(int)nowNo{
     int returnValue = -1;
-    if(self.isOrdered){
+    
+    if([self.strConfigKey isEqualToString:QUIZ_CONFIG_KEY_STANDARD] ||
+       [self.strConfigKey isEqualToString:QUIZ_CONFIG_KEY_NO_EXP] ||
+       [self.strConfigKey isEqualToString:QUIZ_CONFIG_KEY_TEST]){
         returnValue = nowNo + 1;
-    }else if(self.isRandom){
-        
+    }else if([self.strConfigKey isEqualToString:QUIZ_CONFIG_KEY_JAKUTEN]){
         //既出問題の格納
         NSMutableArray *arrNew = [NSMutableArray arrayWithArray:self.quizItemsArray];
         [arrNew removeObjectsInArray:self.usedQuizItems];
         int noInNew = (int)random() % [arrNew count];
         returnValue = (int)[arrNew[noInNew] integerValue];
         arrNew = nil;
-    }else if(self.isKokuhukuMode){
-        
-    
+    }else if([self.strConfigKey isEqualToString:QUIZ_CONFIG_KEY_TEST_RANDOM]){
+        //未実装
+        //弱点克服モードの場合、過去に誤った問題が一個もない場合があるので、その場合はDetialViewCon側で通常モードにしてあげて、このクラスで一個もない状態にならないようにしてあげる必要がある
+        //最初にself.quizItemsArrayの中に過去誤った問題だけを設定する
     }else{
-        //フラグの立て忘れの場合はisOrderedとする
+        //フラグなしの場合（万が一）
         returnValue = nowNo + 1;
     }
+    
+    
+    
+//    //以下でやっていることを上記に実現して行く（途中）
+//    if(self.isOrdered){
+//        returnValue = nowNo + 1;
+//    }else if(self.isRandom){
+//        
+//        //既出問題の格納
+//        NSMutableArray *arrNew = [NSMutableArray arrayWithArray:self.quizItemsArray];
+//        [arrNew removeObjectsInArray:self.usedQuizItems];
+//        int noInNew = (int)random() % [arrNew count];
+//        returnValue = (int)[arrNew[noInNew] integerValue];
+//        arrNew = nil;
+//    }else if(self.isKokuhukuMode){
+//        
+//    
+//    }else{
+//        //フラグの立て忘れの場合はisOrderedとする
+//        returnValue = nowNo + 1;
+//    }
     
     
     [self.usedQuizItems addObject:[NSNumber numberWithInt:returnValue]];
@@ -87,47 +111,7 @@
     return returnValue;
 }
 
-// 次の問題を返すメソッド:instanceではなくint型の整数を返す
-- (int)nextQuizPast:(int)nowNo{
-    // 使用していない問題の配列を作成する
-    NSMutableArray *tempArray;
-    tempArray = [NSMutableArray arrayWithArray:self.quizItemsArray];
-    [tempArray removeObjectsInArray:self.usedQuizItems];
-    
-    // すでに全て出題済みのときは「nil」を返して終了
-    if ([tempArray count] == 0)
-        return -1;
-    
-    // 返す問題を決定する
-    NSInteger ind = 0;
-    if(!self.isOrdered){
-        ind = nowNo+1;
-    }else if(!self.isRandom){
-        for(;;){
-            ind = random() % [tempArray count];
-            if(ind != nowNo){
-                break;
-            }
-        }
-    }
-//    意味不明
-//    if(!_isKokuhukuMode){
-//        ind = random() % [tempArray count];
-//        NSLog(@"%ld@Quiz:nextQuiz_%d", ind, _isKokuhukuMode);
-//    }else{
-//        ind = _jakutenNo - 1;//ind=0がNo001に相当する
-//        NSLog(@"%ld@Quiz:nextQuiz_%d", ind, _isKokuhukuMode);
-//    }
-    
-    // 返す問題を取得する:instanceが必要な場合
-//    QuizItem *item = [tempArray objectAtIndex:ind];
-//    
-//    // 使用済みの配列に追加する
-//    [_usedQuizItems addObject:item];
-    // 取得した問題を返す
-    //return item;
-    return (int)ind;
-}
+
 //
 //- (QuizItem *)indicatedQuiz:(int)indicatedNo
 //{
@@ -321,30 +305,16 @@
                     
                     
                     NSString *sectionNo = [eachInLine objectAtIndex:0];//SECT001
-                    //                NSString *questionNo_temp = [eachInLine objectAtIndex:1];
-                    //                NSString *questionNo = [questionNo_temp substringWithRange:NSMakeRange(1,3)];
-                    //                NSString *questionNo_temp = [@"abcdefgh" substringWithRange:NSMakeRange(1,3)];
-                    //                NSString *questionNo = [questionNo_temp substringWithRange:NSMakeRange(1, 3)];
-                    //                NSString *questionNo = [eachInLine objectAtIndex:1];
-                    //                NSString *questionNo = [@"Q0010" substringWithRange:NSMakeRange(1,3)];
-                    NSString *questionNo = [eachInLine objectAtIndex:1];
+                    NSString *questionNo = [eachInLine objectAtIndex:1];//Q0010
                     int intQuestionNo = (int)[[questionNo substringWithRange:NSMakeRange(1, 3)] integerValue];
-                    //                    NSLog(@"%@", questionNo);
                     NSString *questionStr = [eachInLine objectAtIndex:2];
                     NSString *sentence =[eachInLine objectAtIndex:3];
-                    //カンマで区切られた各項目eachを個別に分割
-                    //                curItem.question = [NSString stringWithFormat:@"【%@】No%@ 〜 %@ 〜\n %@",
-                    //                                    sectionNo,
-                    //                                    questionNo,
-                    //                                    questionStr,
-                    //                                    sentence];
                     curItem.sectorName = sectionNo;
                     if(self.section == 0){
                         self.section = (int)[[sectionNo substringFromIndex:((NSString *)sectionNo).length-3] integerValue];
                         NSLog(@"section ======== %d", self.section);
                     }
-                    curItem.questionNo = questionNo;
-                    curItem.intQuestionNo = intQuestionNo;
+                    
                     
                     
                     NSLog(@"question(%d) = %@", [arrMCategory containsObject:questionStr], questionStr);
@@ -352,35 +322,19 @@
                         [arrMCategory addObject:questionStr];
                     }
                     
+                    NSString *strQuestionNo = [questionNo substringWithRange:NSMakeRange(1,3)];//"Q0010"->"001"
+                    questionNo = [NSString stringWithFormat:@"%@",
+                                  [NSString stringWithFormat:@"%d",[strQuestionNo intValue]]];//="001"->"1"
+                    curItem.questionNo = questionNo;
+                    curItem.intQuestionNo = intQuestionNo;
                     
-                    //過去の回答履歴を取得
-                    NSUserDefaults* eachQuestionDefaults = [NSUserDefaults standardUserDefaults];
-                    NSInteger answering = [eachQuestionDefaults stringForKey:[NSString stringWithFormat:@"Answer%@%@", sectionNo, questionNo]].integerValue;
-                    NSInteger UncorrectAns = [eachQuestionDefaults stringForKey:[NSString stringWithFormat:@"UncorrectAns%@%@", sectionNo, questionNo]].integerValue;
-                    NSLog(@"%@", [NSString stringWithFormat:@"UncorrectAns%@%@", sectionNo, questionNo]);
-                    NSString* seikairitu = @"0";
+                    ResultModel *myResultModel = [[ResultModel alloc] initWithSection:self];
+                    curItem.kaitou = [NSString stringWithFormat:@"%d", [myResultModel getAnswer:[questionNo intValue]]];
+                    curItem.seikai = [NSString stringWithFormat:@"%d", [myResultModel getCorrect:[questionNo intValue]]];
                     
-                    if(answering != 0){
-                        seikairitu = [NSString stringWithFormat:@"%d",
-                                      (int)(((double)answering - (double)UncorrectAns)/(double)answering * 100.0f)];
-                    }
-                    //                    NSLog(@"%@", seikairitu);
-                    questionNo = [questionNo substringWithRange:NSMakeRange(1,3)];//="XXX"
-                    questionNo = [NSString stringWithFormat:@"No%@",
-                                  [NSString stringWithFormat:@"%d",[questionNo intValue]]];//="NoX"
-//                    curItem.question = [NSString stringWithFormat:@"【%@】%@:解答回数:%ld回, 正解率%@%%\n %@",
-//                                        questionStr,
-//                                        questionNo,
-//                                        answering,
-//                                        seikairitu,
-//                                        sentence];
+                    
                     curItem.category = questionStr;
                     curItem.question = sentence;
-                    curItem.seikai = [NSString stringWithFormat:@"%d", (int)answering - (int)UncorrectAns];
-                    curItem.kaitou = [NSString stringWithFormat:@"%d", (int)answering];
-                    NSLog(@"seikai = %@", curItem.seikai);
-                    NSLog(@"kaitou = %@", curItem.kaitou);
-                    
                     curItem.rightNo = (int)[[eachInLine objectAtIndex:9] integerValue];//right answer No;
                     curItem.rightAnswer = [eachInLine objectAtIndex:10];//right answer string
                     curItem.explanation = [eachInLine objectAtIndex:11];//kaisetu
@@ -388,10 +342,6 @@
                     // 選択肢の配列に追加
                     for(int selectionIndex = 4;selectionIndex < 9;selectionIndex ++){
                         [curChoices addObject:[eachInLine objectAtIndex:selectionIndex]];
-                        
-                        //                        [curChoices addObject:[NSString stringWithFormat:@"(%d)%@",
-                        //                                               selectionIndex - 3,
-                        //                                               [eachInLine objectAtIndex:selectionIndex]]];
                     }
                     
                     //空白行である場合、txtファイルであれば選択肢を決定させる必要があるが、
@@ -405,22 +355,15 @@
                         [newItemsArray addObject:curItem];
                     }
                     
-                    NSLog(@"aaaaaaaa");
                 }
                 
                 // クリア
                 curItem = nil;
                 curChoices = nil;
-                NSLog(@"bbbbbbb");
             }
-            
-            NSLog(@"ccccc");
         }
-        
-        NSLog(@"dddd");
     }
     
-    NSLog(@"exit");
     
     // 最後のクイズデータを登録する
     if (curItem && curChoices)
@@ -441,5 +384,25 @@
     return YES;
 }
 
+//self.quizItemsArrayがMutableではないため全部入れ替える
+-(BOOL)updateAllResult{
+    ResultModel *myResultModel = [[ResultModel alloc] initWithSection:self];
+    NSMutableArray *arrQuizItems_tmp = [NSMutableArray array];
+    for(int i = 0;i < self.quizItemsArray.count;i++){
+        
+        @autoreleasepool {
+            
+            QuizItem *tmpQuizItem = self.quizItemsArray[i];
+            tmpQuizItem.seikai = [NSString stringWithFormat:@"%d", [myResultModel getCorrect:i]];
+            tmpQuizItem.kaitou = [NSString stringWithFormat:@"%d", [myResultModel getAnswer:i]];
+            [arrQuizItems_tmp addObject:tmpQuizItem];
+            tmpQuizItem = nil;
+        }
+    }
+    
+    self.quizItemsArray = (NSArray *)arrQuizItems_tmp;
+    
+    return YES;
+}
 
 @end

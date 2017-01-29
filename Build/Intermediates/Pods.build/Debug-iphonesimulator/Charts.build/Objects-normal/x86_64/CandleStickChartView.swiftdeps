@@ -10,9 +10,9 @@ provides-dynamic-lookup:
 - "candleData"
 depends-top-level:
 - "AssignmentPrecedence"
-- "CandleChartDataProvider"
 - "CandleChartData"
 - "CastingPrecedence"
+- "CandleChartDataProvider"
 - "CandleStickChartView"
 - !private "CandleStickChartRenderer"
 - "BarLineChartViewBase"

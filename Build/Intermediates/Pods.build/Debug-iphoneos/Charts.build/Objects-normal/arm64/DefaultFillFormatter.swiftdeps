@@ -7,23 +7,23 @@ provides-member:
 - ["C6Charts20DefaultFillFormatter", ""]
 provides-dynamic-lookup:
 - "with"
-- "block"
 - "getFillLinePosition"
+- "block"
 depends-top-level:
 - "AssignmentPrecedence"
-- !private "&&"
-- "NSObject"
-- !private "Double"
-- !private "<"
+- !private ">="
 - "ILineChartDataSet"
+- !private ">"
 - "LineChartDataProvider"
-- !private "!="
 - "TernaryPrecedence"
 - "CGFloat"
-- !private ">"
+- !private "Double"
+- !private "!="
 - "IFillFormatter"
 - "DefaultFillFormatter"
-- !private ">="
+- !private "&&"
+- !private "<"
+- "NSObject"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]

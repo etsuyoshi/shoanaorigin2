@@ -6,26 +6,26 @@ provides-nominal:
 provides-member:
 - ["C6Charts24HorizontalBarHighlighter", ""]
 provides-dynamic-lookup:
-- "buildHighlights"
 - "getHighlight"
 - "getDistance"
+- "buildHighlights"
 depends-top-level:
-- !private "BarChartData"
-- !private "-"
-- "HorizontalBarHighlighter"
-- "IChartDataSet"
-- !private "abs"
-- !private "BarLineScatterCandleBubbleChartDataProvider"
-- !private "IBarChartDataSet"
-- "CGFloat"
-- "ChartDataSetRounding"
-- "BarHighlighter"
-- "CastingPrecedence"
 - !private "=="
 - "AssignmentPrecedence"
-- "Double"
-- "Int"
 - "Highlight"
+- "CastingPrecedence"
+- "ChartDataSetRounding"
+- "Int"
+- !private "IBarChartDataSet"
+- !private "-"
+- "CGFloat"
+- !private "BarLineScatterCandleBubbleChartDataProvider"
+- !private "abs"
+- "IChartDataSet"
+- "Double"
+- "BarHighlighter"
+- "HorizontalBarHighlighter"
+- !private "BarChartData"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps16AbsoluteValuable", "nan"]

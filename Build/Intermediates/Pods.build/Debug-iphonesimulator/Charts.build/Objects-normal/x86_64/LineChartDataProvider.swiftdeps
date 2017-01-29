@@ -6,13 +6,13 @@ provides-nominal:
 provides-member:
 - ["P6Charts21LineChartDataProvider", ""]
 provides-dynamic-lookup:
-- "lineData"
 - "getAxis"
+- "lineData"
 depends-top-level:
-- "BarLineScatterCandleBubbleChartDataProvider"
 - "LineChartData"
 - "YAxis"
 - "LineChartDataProvider"
+- "BarLineScatterCandleBubbleChartDataProvider"
 depends-member:
 - ["Ps9AnyObject", "AxisDependency"]
 - ["C6Charts8AxisBase", "AxisDependency"]

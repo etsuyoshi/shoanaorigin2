@@ -8,13 +8,13 @@ provides-member:
 provides-dynamic-lookup:
 - "stringForValue"
 depends-top-level:
-- "String"
-- "ViewPortHandler"
-- "Double"
 - "Int"
-- "IValueFormatter"
-- "NSObjectProtocol"
+- "String"
 - "ChartDataEntry"
+- "Double"
+- "ViewPortHandler"
+- "NSObjectProtocol"
+- "IValueFormatter"
 depends-member:
 - ["P6Charts15IValueFormatter", "ChartDataEntry"]
 - ["P6Charts15IValueFormatter", "Double"]

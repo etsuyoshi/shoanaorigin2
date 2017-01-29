@@ -6,25 +6,25 @@ provides-nominal:
 provides-member:
 - ["P6Charts19ICandleChartDataSet", ""]
 provides-dynamic-lookup:
-- "showCandleBar"
-- "increasingFilled"
-- "neutralColor"
-- "barSpace"
-- "isShadowColorSameAsCandle"
-- "isDecreasingFilled"
-- "shadowColor"
-- "decreasingColor"
-- "decreasingFilled"
+- "shadowColorSameAsCandle"
 - "isIncreasingFilled"
+- "decreasingFilled"
 - "shadowWidth"
 - "increasingColor"
-- "shadowColorSameAsCandle"
+- "decreasingColor"
+- "shadowColor"
+- "barSpace"
+- "neutralColor"
+- "isShadowColorSameAsCandle"
+- "showCandleBar"
+- "increasingFilled"
+- "isDecreasingFilled"
 depends-top-level:
-- "ICandleChartDataSet"
-- "ILineScatterCandleRadarChartDataSet"
-- "CGFloat"
 - "NSUIColor"
+- "CGFloat"
 - "Bool"
+- "ILineScatterCandleRadarChartDataSet"
+- "ICandleChartDataSet"
 depends-member:
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "Bool"]
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "CGFloat"]

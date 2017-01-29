@@ -6,20 +6,20 @@ provides-nominal:
 provides-member:
 - ["P6Charts16IBarChartDataSet", ""]
 provides-dynamic-lookup:
-- "barBorderColor"
 - "barShadowColor"
+- "barBorderColor"
+- "stackSize"
 - "isStacked"
+- "barBorderWidth"
 - "highlightAlpha"
 - "stackLabels"
-- "stackSize"
-- "barBorderWidth"
 depends-top-level:
-- "Bool"
-- "IBarChartDataSet"
-- "String"
+- "Int"
 - "CGFloat"
 - "IBarLineScatterCandleBubbleChartDataSet"
-- "Int"
+- "Bool"
+- "String"
+- "IBarChartDataSet"
 - "NSUIColor"
 depends-member:
 - ["P6Charts16IBarChartDataSet", "Bool"]

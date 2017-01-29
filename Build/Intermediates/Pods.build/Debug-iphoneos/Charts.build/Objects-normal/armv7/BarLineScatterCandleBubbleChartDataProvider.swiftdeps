@@ -8,15 +8,15 @@ provides-member:
 provides-dynamic-lookup:
 - "highestVisibleX"
 - "getTransformer"
-- "lowestVisibleX"
 - "isInverted"
+- "lowestVisibleX"
 depends-top-level:
-- "ChartDataProvider"
-- "Transformer"
 - "BarLineScatterCandleBubbleChartDataProvider"
-- "YAxis"
-- "Double"
+- "Transformer"
 - "Bool"
+- "Double"
+- "YAxis"
+- "ChartDataProvider"
 depends-member:
 - ["Ps9AnyObject", "AxisDependency"]
 - ["C6Charts8AxisBase", "AxisDependency"]

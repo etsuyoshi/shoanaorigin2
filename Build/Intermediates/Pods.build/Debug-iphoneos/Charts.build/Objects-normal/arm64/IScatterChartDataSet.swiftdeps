@@ -6,16 +6,16 @@ provides-nominal:
 provides-member:
 - ["P6Charts20IScatterChartDataSet", ""]
 provides-dynamic-lookup:
-- "scatterShapeHoleColor"
 - "shapeRenderer"
-- "scatterShapeSize"
 - "scatterShapeHoleRadius"
+- "scatterShapeHoleColor"
+- "scatterShapeSize"
 depends-top-level:
-- "IShapeRenderer"
-- "ILineScatterCandleRadarChartDataSet"
+- "NSUIColor"
 - "CGFloat"
 - "IScatterChartDataSet"
-- "NSUIColor"
+- "ILineScatterCandleRadarChartDataSet"
+- "IShapeRenderer"
 depends-member:
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "CGFloat"]
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "IShapeRenderer"]
