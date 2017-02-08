@@ -49,19 +49,57 @@
     [pieChartView animateWithXAxisDuration:1.4 easingOption:ChartEasingOptionEaseOutBack];
     
     
+    
+    //問題を全て解答した直後の成績画面であればルートに戻る終了ボタンを追加する
+    if(self.isAfterQuiz){
+        [self setNavigationBar];
+    }
    
     
+
+}
+
+-(void)setNavigationBar{
+    
+    UIBarButtonItem *btnRight = [[UIBarButtonItem alloc]
+                                 initWithTitle:@"終了"
+                                 style:UIBarButtonItemStylePlain
+                                 target:self
+                                 action:@selector(tappedQuit)];
+    // ナビゲーションバーの左側に追加する。
+    self.navigationItem.rightBarButtonItem = btnRight;
+    //self.navigationItem.leftBarButtonItem = btnLeft;
     
     
+}
+
+-(void)tappedQuit{
+    //ダイアログを開いてイェスならばチェックマークをつける
+    UIAlertController * alertController =
+    [UIAlertController
+     alertControllerWithTitle:@"お疲れ様でした！"
+     message:@"全て終了しますか？"
+     preferredStyle:UIAlertControllerStyleActionSheet];
+    [alertController addAction:
+     [UIAlertAction
+      actionWithTitle:@"終了する"
+      style:UIAlertActionStyleDefault
+      handler:^(UIAlertAction *alert){
+          
+          [self.navigationController popToRootViewControllerAnimated:YES];
+      }]];
+    
+    [alertController addAction:
+     [UIAlertAction
+      actionWithTitle:@"キャンセル"
+      style:UIAlertActionStyleCancel
+      handler:^(UIAlertAction *alert){
+          //何もしない
+      }]];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
     
     
-//    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-//    btn.frame = CGRectMake(100, 100, 100, 100);
-//    btn.center  = self.view.center;
-//    btn.backgroundColor = [UIColor blueColor];
-//    [self.view addSubview:btn];
-//    
-//    [btn addTarget:self action:@selector(tappedBtn) forControlEvents:UIControlEventTouchUpInside];
 }
 
 -(void)updateChartData{

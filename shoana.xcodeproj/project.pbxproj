@@ -54,6 +54,15 @@
 		2AC8E3571E3DB084003859E1 /* water2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AC8E3551E3DB084003859E1 /* water2.png */; };
 		2AE9C8591E32439900FDF995 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE9C8571E32439900FDF995 /* circle.png */; };
 		2AE9C85A1E32439900FDF995 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AE9C8581E32439900FDF995 /* cross.png */; };
+		2AEBE67F1E4B4C1300EB2963 /* shoanaportfolio001.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2AEBE6771E4B4C1300EB2963 /* shoanaportfolio001.csv */; };
+		2AEBE6801E4B4C1300EB2963 /* shoanaportfolio002.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2AEBE6781E4B4C1300EB2963 /* shoanaportfolio002.csv */; };
+		2AEBE6811E4B4C1300EB2963 /* shoanaportfolio003.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2AEBE6791E4B4C1300EB2963 /* shoanaportfolio003.csv */; };
+		2AEBE6821E4B4C1300EB2963 /* shoanaportfolio004.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2AEBE67A1E4B4C1300EB2963 /* shoanaportfolio004.csv */; };
+		2AEBE6831E4B4C1300EB2963 /* shoanaportfolio005.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2AEBE67B1E4B4C1300EB2963 /* shoanaportfolio005.csv */; };
+		2AEBE6841E4B4C1300EB2963 /* shoanazaimu001.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2AEBE67C1E4B4C1300EB2963 /* shoanazaimu001.csv */; };
+		2AEBE6851E4B4C1300EB2963 /* shoanazaimu002.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2AEBE67D1E4B4C1300EB2963 /* shoanazaimu002.csv */; };
+		2AEBE6861E4B4C1300EB2963 /* shoanazaimu003.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2AEBE67E1E4B4C1300EB2963 /* shoanazaimu003.csv */; };
+		2AEBE68C1E4B5B5300EB2963 /* UILabel+FontSizeToFit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AEBE68B1E4B5B5300EB2963 /* UILabel+FontSizeToFit.m */; };
 		2AFB72611E23444B00A3E999 /* QuizSector.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFB72601E23444B00A3E999 /* QuizSector.m */; };
 		2AFE2C0A1E3087BB00D30F37 /* ResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFE2C091E3087BB00D30F37 /* ResultModel.m */; };
 		62E32E202CCC48550CAC3217 /* Pods_shoana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A75A86DD0B045CEDF0904B /* Pods_shoana.framework */; };
@@ -166,6 +175,16 @@
 		2AC8E3551E3DB084003859E1 /* water2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = water2.png; sourceTree = "<group>"; };
 		2AE9C8571E32439900FDF995 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
 		2AE9C8581E32439900FDF995 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
+		2AEBE6771E4B4C1300EB2963 /* shoanaportfolio001.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shoanaportfolio001.csv; sourceTree = "<group>"; };
+		2AEBE6781E4B4C1300EB2963 /* shoanaportfolio002.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shoanaportfolio002.csv; sourceTree = "<group>"; };
+		2AEBE6791E4B4C1300EB2963 /* shoanaportfolio003.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shoanaportfolio003.csv; sourceTree = "<group>"; };
+		2AEBE67A1E4B4C1300EB2963 /* shoanaportfolio004.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shoanaportfolio004.csv; sourceTree = "<group>"; };
+		2AEBE67B1E4B4C1300EB2963 /* shoanaportfolio005.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shoanaportfolio005.csv; sourceTree = "<group>"; };
+		2AEBE67C1E4B4C1300EB2963 /* shoanazaimu001.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shoanazaimu001.csv; sourceTree = "<group>"; };
+		2AEBE67D1E4B4C1300EB2963 /* shoanazaimu002.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shoanazaimu002.csv; sourceTree = "<group>"; };
+		2AEBE67E1E4B4C1300EB2963 /* shoanazaimu003.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shoanazaimu003.csv; sourceTree = "<group>"; };
+		2AEBE68A1E4B5B5300EB2963 /* UILabel+FontSizeToFit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+FontSizeToFit.h"; sourceTree = "<group>"; };
+		2AEBE68B1E4B5B5300EB2963 /* UILabel+FontSizeToFit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+FontSizeToFit.m"; sourceTree = "<group>"; };
 		2AFB725F1E23444B00A3E999 /* QuizSector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuizSector.h; path = Quiz/QuizSector.h; sourceTree = "<group>"; };
 		2AFB72601E23444B00A3E999 /* QuizSector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuizSector.m; path = Quiz/QuizSector.m; sourceTree = "<group>"; };
 		2AFB7EEF1E30EF4000647605 /* Shoana-Prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Shoana-Prefix.h"; sourceTree = "<group>"; };
@@ -245,6 +264,8 @@
 				2A66EA161E1A5968009B5637 /* Supporting Files */,
 				2AC8E3411E3DA477003859E1 /* GradientWhiteView.h */,
 				2AC8E3421E3DA477003859E1 /* GradientWhiteView.m */,
+				2AEBE68A1E4B5B5300EB2963 /* UILabel+FontSizeToFit.h */,
+				2AEBE68B1E4B5B5300EB2963 /* UILabel+FontSizeToFit.m */,
 			);
 			path = shoana;
 			sourceTree = "<group>";
@@ -261,6 +282,14 @@
 		2A66EA301E1A59F4009B5637 /* res */ = {
 			isa = PBXGroup;
 			children = (
+				2AEBE6771E4B4C1300EB2963 /* shoanaportfolio001.csv */,
+				2AEBE6781E4B4C1300EB2963 /* shoanaportfolio002.csv */,
+				2AEBE6791E4B4C1300EB2963 /* shoanaportfolio003.csv */,
+				2AEBE67A1E4B4C1300EB2963 /* shoanaportfolio004.csv */,
+				2AEBE67B1E4B4C1300EB2963 /* shoanaportfolio005.csv */,
+				2AEBE67C1E4B4C1300EB2963 /* shoanazaimu001.csv */,
+				2AEBE67D1E4B4C1300EB2963 /* shoanazaimu002.csv */,
+				2AEBE67E1E4B4C1300EB2963 /* shoanazaimu003.csv */,
 				2A9F1EA41E1BA483009BB352 /* image */,
 				2A66EA311E1A5A14009B5637 /* _homu1.csv */,
 				2A66EA321E1A5A14009B5637 /* _homu2.csv */,
@@ -430,10 +459,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A66EA441E1A5A14009B5637 /* _homu4.csv in Resources */,
+				2AEBE67F1E4B4C1300EB2963 /* shoanaportfolio001.csv in Resources */,
 				2A66EA461E1A5A14009B5637 /* _homu6.csv in Resources */,
 				2A9F1EB21E1BA4D6009BB352 /* desk.png in Resources */,
 				2A66EA491E1A5A14009B5637 /* shoanakeizai002.csv in Resources */,
 				2A66EA451E1A5A14009B5637 /* _homu5.csv in Resources */,
+				2AEBE6851E4B4C1300EB2963 /* shoanazaimu002.csv in Resources */,
 				2A9F1EB31E1BA4D6009BB352 /* light.png in Resources */,
 				2A66EA421E1A5A14009B5637 /* _homu2.csv in Resources */,
 				2A9F1EAF1E1BA4D6009BB352 /* bird.png in Resources */,
@@ -443,6 +474,7 @@
 				2AE9C85A1E32439900FDF995 /* cross.png in Resources */,
 				2A66EA411E1A5A14009B5637 /* _homu1.csv in Resources */,
 				2A66EA4D1E1A5A14009B5637 /* shoanakeizai004.csv in Resources */,
+				2AEBE6801E4B4C1300EB2963 /* shoanaportfolio002.csv in Resources */,
 				2AC8E3571E3DB084003859E1 /* water2.png in Resources */,
 				2A9F1EB01E1BA4D6009BB352 /* building.png in Resources */,
 				2A66EA471E1A5A14009B5637 /* shoanakeizai001.csv in Resources */,
@@ -453,15 +485,20 @@
 				2A66EA4A1E1A5A14009B5637 /* shoanakeizai00002.csv in Resources */,
 				2A9F1EC31E1BABD9009BB352 /* MasterTableViewCell.xib in Resources */,
 				2A9F1EB61E1BA4D6009BB352 /* wood.png in Resources */,
+				2AEBE6821E4B4C1300EB2963 /* shoanaportfolio004.csv in Resources */,
+				2AEBE6831E4B4C1300EB2963 /* shoanaportfolio005.csv in Resources */,
+				2AEBE6861E4B4C1300EB2963 /* shoanazaimu003.csv in Resources */,
 				2A66EA241E1A5968009B5637 /* Main.storyboard in Resources */,
 				2A9F1EAE1E1BA4D6009BB352 /* aman.png in Resources */,
 				2A9F1EB41E1BA4D6009BB352 /* street.png in Resources */,
 				2A66EA481E1A5A14009B5637 /* shoanakeizai00001.csv in Resources */,
 				2AC8E3561E3DB084003859E1 /* tokyo_tower2.png in Resources */,
+				2AEBE6841E4B4C1300EB2963 /* shoanazaimu001.csv in Resources */,
 				2A66EA4B1E1A5A14009B5637 /* shoanakeizai003.csv in Resources */,
 				2AE9C8591E32439900FDF995 /* circle.png in Resources */,
 				2A9F1EB51E1BA4D6009BB352 /* sunset.png in Resources */,
 				2A66EA4E1E1A5A14009B5637 /* shoanakeizai00004.csv in Resources */,
+				2AEBE6811E4B4C1300EB2963 /* shoanaportfolio003.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +565,7 @@
 				2A3E65F41E350DCB001C17DE /* ConfigViewController.m in Sources */,
 				2A66EA1B1E1A5968009B5637 /* AppDelegate.m in Sources */,
 				2A66EA1E1E1A5968009B5637 /* MasterViewController.m in Sources */,
+				2AEBE68C1E4B5B5300EB2963 /* UILabel+FontSizeToFit.m in Sources */,
 				2A66EA181E1A5968009B5637 /* main.m in Sources */,
 				2A9F1EC21E1BABD9009BB352 /* MasterTableViewCell.m in Sources */,
 				2A66EA541E1A5A68009B5637 /* Quiz.m in Sources */,

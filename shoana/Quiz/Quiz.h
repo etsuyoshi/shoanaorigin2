@@ -5,6 +5,7 @@
 
 @interface Quiz : NSObject
 
+@property (strong, nonatomic) NSString *sectionName;
 @property int section;
 @property (strong, nonatomic) NSString *strSeikaisu;
 @property (strong, nonatomic) NSString *strKaitoukaisu;

@@ -17,6 +17,6 @@
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
 
-
+@property (strong, nonatomic) NSString *strConfigKey;
 @end
 

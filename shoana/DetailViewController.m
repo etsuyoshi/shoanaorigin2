@@ -4,8 +4,9 @@
 //
 //  Created by EndoTsuyoshi on 2017/01/02.
 //  Copyright © 2017年 com.endo. All rights reserved.
-//
+//  http://tea-leaves.jp/home/ja/article/1374929836
 
+#import "UILabel+FontSizeToFit.h"
 #import "DetailViewController.h"
 #import "ResultViewController.h"
 #import "ResultModel.h"
@@ -24,7 +25,7 @@
 - (void)configureView {
     // Update the user interface for the detail item.
     //if (self.detailItem) {
-    NSLog(@"%s, quiz = %@", __func__, _quiz);
+    NSLog(@"%s, quiz.sect = %d", __func__, (int)_quiz.section);
     if (_quiz) {
         
         self.title = [NSString stringWithFormat:@"第%d章", self.quiz.section];
@@ -43,31 +44,46 @@
         
         
         self.questionContentLabel.text = myQuizItem.question;
-        [self.answer1Btn setTitle:((NSString *)myQuizItem.randomChoicesArray[0]) forState:UIControlStateNormal];
-        [self.answer2Btn setTitle:((NSString *)myQuizItem.randomChoicesArray[1]) forState:UIControlStateNormal];
-        [self.answer3Btn setTitle:((NSString *)myQuizItem.randomChoicesArray[2]) forState:UIControlStateNormal];
-        [self.answer4Btn setTitle:((NSString *)myQuizItem.randomChoicesArray[3]) forState:UIControlStateNormal];
+//        [self.answer1Btn setTitle:((NSString *)myQuizItem.randomChoicesArray[0]) forState:UIControlStateNormal];
+//        [self.answer2Btn setTitle:((NSString *)myQuizItem.randomChoicesArray[1]) forState:UIControlStateNormal];
+//        [self.answer3Btn setTitle:((NSString *)myQuizItem.randomChoicesArray[2]) forState:UIControlStateNormal];
+//        [self.answer4Btn setTitle:((NSString *)myQuizItem.randomChoicesArray[3]) forState:UIControlStateNormal];
+        
+        
+//        NSMutableParagraphStyle *style = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
+//        [style setAlignment:NSTextAlignmentCenter];
+//        NSAttributedString *str =
+//        [[NSAttributedString alloc]
+//         initWithString:((NSString *)myQuizItem.randomChoicesArray[0])
+//         attributes:@{NSParagraphStyleAttributeName:style}];
+//        [str drawInRect:CGRectMake(0, 0, self.answer1Btn.bounds.size.width, self.answer1Btn.bounds.size.height)];
+//        [self.answer1Btn setAttributedTitle:str forState:UIControlStateNormal];
+        
+        
+        
+        
+        
+//        [self.answer1Btn
+//         setAttributedTitle:[self getAttriutedStringForSelectBtn:
+//                             ((NSString *)myQuizItem.randomChoicesArray[0])]
+//         forState:UIControlStateNormal];
+        
+        
         
         
         //改行
-        self.answer1Btn.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
-        self.answer2Btn.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
-        self.answer3Btn.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
-        self.answer4Btn.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
-        self.answer1Btn.titleLabel.numberOfLines = 0;
-        self.answer2Btn.titleLabel.numberOfLines = 0;
-        self.answer3Btn.titleLabel.numberOfLines = 0;
-        self.answer4Btn.titleLabel.numberOfLines = 0;
-//
-//        [self.answer1Btn sizeToFit];
-//        [self.answer2Btn sizeToFit];
-//        [self.answer3Btn sizeToFit];
-//        [self.answer4Btn sizeToFit];
-//        
-//        [self.answer1Btn layoutIfNeeded];
-//        [self.answer2Btn layoutIfNeeded];
-//        [self.answer3Btn layoutIfNeeded];
-//        [self.answer4Btn layoutIfNeeded];
+//        self.answer1Btn.titleLabel.numberOfLines = 0;
+//        self.answer1Btn.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+        
+        
+        
+        [self.answer1Btn addSubview:[self getAnswerLabel:0]];
+        [self.answer2Btn addSubview:[self getAnswerLabel:1]];
+        [self.answer3Btn addSubview:[self getAnswerLabel:2]];
+        [self.answer4Btn addSubview:[self getAnswerLabel:3]];
+        
+        
+        
         
         
         self.answer1Btn.tag = 0;
@@ -123,12 +139,15 @@
     
     
     
+    NSLog(@"isdispexplain = %d", isDispExplain);
     if(isDispExplain){
+        NSLog(@"解説表示");
         [self displayExplanation];
         //正解、不正解の描画(説明文の上に表示)
         [self drawIsCorrect:isCorrect];
         
     }else{//解説を表示しないですぐに次のページに行く場合
+        NSLog(@"解説表示なしで次の問題へ");
         //正解、不正解の描画
         [self drawIsCorrect:isCorrect];
         
@@ -158,15 +177,25 @@
     
     
     
-    UILabel *lblExp = [[UILabel alloc]init];
-    lblExp.frame = CGRectMake(10, 10, viewExp.bounds.size.width-20,
-                              viewExp.bounds.size.height-20);
-    lblExp.text = myQuizItem.explanation;
-    lblExp.numberOfLines = 0;
-    [lblExp sizeToFit];
-    lblExp.lineBreakMode = NSLineBreakByWordWrapping;
-    lblExp.textColor = [UIColor blackColor];
-    [viewExp addSubview:lblExp];
+//    UILabel *lblExp = [[UILabel alloc]init];
+//    lblExp.frame = CGRectMake(10, 10, viewExp.bounds.size.width-20,
+//                              viewExp.bounds.size.height-20);
+//    lblExp.text = myQuizItem.explanation;
+//    lblExp.numberOfLines = 0;
+//    [lblExp sizeToFit];
+//    lblExp.lineBreakMode = NSLineBreakByWordWrapping;
+//    lblExp.textColor = [UIColor blackColor];
+//    [viewExp addSubview:lblExp];
+    UITextView *textExp = [[UITextView alloc]init];
+    textExp.frame = CGRectMake(10, 10, viewExp.bounds.size.width-20, viewExp.bounds.size.height-20);
+    textExp.text = myQuizItem.explanation;
+    textExp.editable = NO;
+    [textExp sizeToFit];
+    textExp.textColor = [UIColor blackColor];
+    [viewExp addSubview:textExp];
+    
+    
+    
     
     
     //全画面のどこかを押すと消えるようにする
@@ -298,20 +327,42 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self configureView];
-    //[self.questionContentLabel sizeToFit];
-    
-    
     //isDispExplain = false;//defaultでは解説
-    if([self.strConfigKey isEqualToString:QUIZ_CONFIG_KEY_TEST] ||
-       [self.strConfigKey isEqualToString:QUIZ_CONFIG_KEY_TEST_RANDOM]){
+    NSUserDefaults *userdef = [NSUserDefaults standardUserDefaults];
+    self.strConfigKey = [userdef objectForKey:QUIZ_CONFIG_KEY];
+    userdef = nil;
+    if([self.strConfigKey isEqualToString:QUIZ_CONFIG_KEY_TEST] ||//test mode(in order)
+       [self.strConfigKey isEqualToString:QUIZ_CONFIG_KEY_TEST_RANDOM] ||//test mode(random order)
+       [self.strConfigKey isEqualToString:QUIZ_CONFIG_KEY_NO_EXP]){
         isDispExplain = NO;
-        
-        
     }else{
         isDispExplain = YES;
     }
     
+    [self configureView];
+    //[self.questionContentLabel sizeToFit];
+    
+    
+    [self setNavigationBar];
+}
+
+-(void)setNavigationBar{
+    NSLog(@"%s", __func__);
+    
+    UIBarButtonItem *btnRight = [[UIBarButtonItem alloc]
+                                 initWithTitle:@"途中終了"
+                                 style:UIBarButtonItemStylePlain
+                                 target:self
+                                 action:@selector(tappedStop)];
+//    UIBarButtonItem *btnLeft = [[UIBarButtonItem alloc]
+//                                initWithTitle:@"設定"
+//                                style:UIBarButtonItemStylePlain
+//                                target:self
+//                                action:@selector(goConfig)];
+    
+    // ナビゲーションバーの左側に追加する。
+    self.navigationItem.rightBarButtonItem = btnRight;
+    //self.navigationItem.leftBarButtonItem = btnLeft;
     
     
 }
@@ -337,6 +388,7 @@
         //成績表示
         ResultViewController *controller = [[ResultViewController alloc]init];
         controller.myQuiz = self.quiz;
+        controller.isAfterQuiz = YES;
         [self.navigationController pushViewController:controller animated:YES];
         
         //ルートに戻る(仮)
@@ -396,5 +448,40 @@
     resultModel = nil;
 }
 
+
+//-(NSAttributedString *)getAttriutedStringForSelectBtn:(NSString *)strParam{
+//    NSMutableParagraphStyle *style = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
+//    [style setAlignment:NSTextAlignmentCenter];
+//    NSAttributedString *str =
+//    [[NSAttributedString alloc]
+//     initWithString:strParam
+//     attributes:@{NSParagraphStyleAttributeName:style}];
+//    
+//    [str drawInRect:CGRectMake(0, 0, self.answer1Btn.bounds.size.width-10,
+//                               self.answer1Btn.bounds.size.height-10)];
+//    [str drawAtPoint:CGPointMake(self.answer1Btn.bounds.size.width/2,
+//                                 self.answer1Btn.bounds.size.height/2)];
+//    
+//    return str;
+//    
+//}
+
+-(UILabel *)getAnswerLabel:(int)questionNo{
+    UILabel *lbl = [[UILabel alloc]init];
+    lbl.text = ((NSString *)myQuizItem.randomChoicesArray[questionNo]);
+    lbl.frame = CGRectMake(0,0,self.answer1Btn.bounds.size.width-20,
+                           self.answer1Btn.bounds.size.height-20);
+    lbl.center = CGPointMake(self.answer1Btn.bounds.size.width/2,
+                             self.answer1Btn.bounds.size.height/2);
+    lbl.textColor= [UIColor blackColor];
+    lbl.backgroundColor = [UIColor clearColor];
+    lbl.minimumScaleFactor = 0.3;
+    lbl.adjustsFontSizeToFitWidth = true;
+    lbl.numberOfLines = 0;
+    [lbl fontSizeToFit];
+    
+    
+    return lbl;
+}
 
 @end

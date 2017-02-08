@@ -4,6 +4,38 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AppIcon20x20@2x.png</key>
+		<data>
+		lg37gRJPVUqoaunQQyX45rYB068=
+		</data>
+		<key>AppIcon20x20@3x.png</key>
+		<data>
+		7FAAMgLGwvJMYicQUs5A50YmXiQ=
+		</data>
+		<key>AppIcon29x29@2x.png</key>
+		<data>
+		lcA1oorHkFK9gQFlbso1y/3KEkM=
+		</data>
+		<key>AppIcon29x29@3x.png</key>
+		<data>
+		wQxoGfNZWtOm3939DB62KS4U/9Q=
+		</data>
+		<key>AppIcon40x40@2x.png</key>
+		<data>
+		2PFo0hwAyVsBQQkDt8+yU6MFdtc=
+		</data>
+		<key>AppIcon40x40@3x.png</key>
+		<data>
+		dwYjUI6cGRZYmT3mgbSg0EB+GDk=
+		</data>
+		<key>AppIcon60x60@2x.png</key>
+		<data>
+		dwYjUI6cGRZYmT3mgbSg0EB+GDk=
+		</data>
+		<key>AppIcon60x60@3x.png</key>
+		<data>
+		sn3ejtcWXocddnGyCU4PGCLiOw4=
+		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
 		pKCwKlPO3RmCx7+6flUyuKnTAfI=
@@ -18,7 +50,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/7bK-jq-Zjz-view-r7i-6Z-zg0.nib</key>
 		<data>
-		J3/dJck7R0TqdbHU9ggc0xcc7YM=
+		cAoz/BCd97e/P+VIb5blxx5wzqA=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -26,19 +58,19 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/JEX-9P-axG-view-svH-Pt-448.nib</key>
 		<data>
-		ZmjDQpMjvNSNpnLubOSJ27nMpA4=
+		aklWyknJgE0FUdBzOs2h5k25mvo=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UISplitViewController-H1p-Uh-vWS.nib</key>
 		<data>
-		LeTwGzTMgLer3R7SgqSaZB2QMAM=
+		tZ61JE8ACInfTCrZV9GtTuxQqFk=
 		</data>
 		<key>Base.lproj/Main.storyboardc/detail.nib</key>
 		<data>
-		z2eWelx9prGhns6BDyYir77wrt4=
+		fepqWisb9pkZPbjcQOvAuVrLmlU=
 		</data>
 		<key>Frameworks/Charts.framework/Charts</key>
 		<data>
-		8LHpdiQzmCAvXj9fufwRP3oTkwA=
+		IOUVH5uFkcOew82fKEEHXFWYFnI=
 		</data>
 		<key>Frameworks/Charts.framework/Info.plist</key>
 		<data>
@@ -54,7 +86,7 @@
 		</data>
 		<key>Frameworks/Realm.framework/Realm</key>
 		<data>
-		0tYfZQU+cGs86fNqTJboIggZUUI=
+		vI+vXZjK5fB3UF0mCYhy0sMMP2s=
 		</data>
 		<key>Frameworks/Realm.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -102,7 +134,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hi28pf7ntD/jTfqNPyVPuUU3L5c=
+		9IynNb3puEjKzGxhiOfz8JiM5+A=
 		</data>
 		<key>LaunchImage-800-667h@2x.png</key>
 		<data>
@@ -224,6 +256,14 @@
 		<data>
 		iYs9wbycg+QWmTCk4H5iI/MsYgk=
 		</data>
+		<key>shoanaportfolio001.csv</key>
+		<data>
+		ZcKuqg+zJYeiAq21lfDSEYkZv0Q=
+		</data>
+		<key>shoanazaimu001.csv</key>
+		<data>
+		UtY8wStJQft76q/nabzz5nyldho=
+		</data>
 		<key>street.png</key>
 		<data>
 		8C1nju9CIsnVmOv0tdG35i+hXuI=
@@ -247,6 +287,94 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AppIcon20x20@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lg37gRJPVUqoaunQQyX45rYB068=
+			</data>
+			<key>hash2</key>
+			<data>
+			hddl+MY9ySyEj4l0ITWl1fekTyulL+M/vJHbjQCVTKY=
+			</data>
+		</dict>
+		<key>AppIcon20x20@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7FAAMgLGwvJMYicQUs5A50YmXiQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			9Bz7j76HhYbR6iSmv0wxM7ZFacsAFmGt/ks4ITe+8jw=
+			</data>
+		</dict>
+		<key>AppIcon29x29@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lcA1oorHkFK9gQFlbso1y/3KEkM=
+			</data>
+			<key>hash2</key>
+			<data>
+			Kp2jWEy/mnlkvUcQU1zAKTsnjMl7JfSuGY7+ttLxBQY=
+			</data>
+		</dict>
+		<key>AppIcon29x29@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wQxoGfNZWtOm3939DB62KS4U/9Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			eJjzCEe9S8VrtBg8G+pbZX2EEyStDJaAr2Dnfwz+DO0=
+			</data>
+		</dict>
+		<key>AppIcon40x40@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2PFo0hwAyVsBQQkDt8+yU6MFdtc=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZfHrAKKm0jiUwx5FMYZr/b3yjT1AD91HezO15EiWm/g=
+			</data>
+		</dict>
+		<key>AppIcon40x40@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dwYjUI6cGRZYmT3mgbSg0EB+GDk=
+			</data>
+			<key>hash2</key>
+			<data>
+			xH/DMjW2nozmhUtyNJ92pRw3hkAv0+Oag0A8SjtshOw=
+			</data>
+		</dict>
+		<key>AppIcon60x60@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dwYjUI6cGRZYmT3mgbSg0EB+GDk=
+			</data>
+			<key>hash2</key>
+			<data>
+			xH/DMjW2nozmhUtyNJ92pRw3hkAv0+Oag0A8SjtshOw=
+			</data>
+		</dict>
+		<key>AppIcon60x60@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sn3ejtcWXocddnGyCU4PGCLiOw4=
+			</data>
+			<key>hash2</key>
+			<data>
+			PRUTCJKzkrfsuH7PR43gqAuuX+eLZWTWPg9vKJhBYrU=
+			</data>
+		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
@@ -284,11 +412,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			J3/dJck7R0TqdbHU9ggc0xcc7YM=
+			cAoz/BCd97e/P+VIb5blxx5wzqA=
 			</data>
 			<key>hash2</key>
 			<data>
-			VksLPfgweqSpxHlNblgZjsIj/poaZ8VbOU96vNda8Vc=
+			ghyHntWjtLatx9tu+LTkrDX31sEY/KsDWYpvrn0c3qc=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -306,44 +434,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZmjDQpMjvNSNpnLubOSJ27nMpA4=
+			aklWyknJgE0FUdBzOs2h5k25mvo=
 			</data>
 			<key>hash2</key>
 			<data>
-			fP78C88v+zPorBILVM+iSPqlapmEiAeTW7zF8EaJ4O8=
+			/YeFWSXmjaJfEbCAs7nziFKAZfmsTJx+NvUihEf6EXA=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UISplitViewController-H1p-Uh-vWS.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LeTwGzTMgLer3R7SgqSaZB2QMAM=
+			tZ61JE8ACInfTCrZV9GtTuxQqFk=
 			</data>
 			<key>hash2</key>
 			<data>
-			i8OuYX8zXUbR5shoNGIXj0auHy9iROX0QgJ08ZUIoTw=
+			mMwQNa6iHKJUZN/LTKwpd8t9Y9j58DhXH2P2y76SMKM=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/detail.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			z2eWelx9prGhns6BDyYir77wrt4=
+			fepqWisb9pkZPbjcQOvAuVrLmlU=
 			</data>
 			<key>hash2</key>
 			<data>
-			aISki9i7RPSiamJR0bOVI+cREvtTfWZbT7BfAseQrPM=
+			x5i6p+LNcIK9SLJwO+7v1OwkD0M+LBjOI/SDsrvancU=
 			</data>
 		</dict>
 		<key>Frameworks/Charts.framework/Charts</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8LHpdiQzmCAvXj9fufwRP3oTkwA=
+			IOUVH5uFkcOew82fKEEHXFWYFnI=
 			</data>
 			<key>hash2</key>
 			<data>
-			zgdQGw5T5rWv+nI4Zwu9dPq6SZE4i1a7I9IWa7xmjzA=
+			Z1JA2xVlfy6PeyPtUgoRqEYfgFcu1GEyGI+EUW9eAyU=
 			</data>
 		</dict>
 		<key>Frameworks/Charts.framework/Info.plist</key>
@@ -383,11 +511,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0tYfZQU+cGs86fNqTJboIggZUUI=
+			vI+vXZjK5fB3UF0mCYhy0sMMP2s=
 			</data>
 			<key>hash2</key>
 			<data>
-			GFx21eFPuX08NTLv41M0oJ8faneuhwU3DdNIri+lnP8=
+			hd5sfjlpSVqfP++4pIyu3tTDy7Hn3OdB1XCBbE7D0ns=
 			</data>
 		</dict>
 		<key>Frameworks/Realm.framework/_CodeSignature/CodeResources</key>
@@ -828,6 +956,28 @@
 			<key>hash2</key>
 			<data>
 			RSiVZv01bbP4S3ZNTQ6QMpo8l1A9ZfPqOh8LblAayKc=
+			</data>
+		</dict>
+		<key>shoanaportfolio001.csv</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZcKuqg+zJYeiAq21lfDSEYkZv0Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			pFPYQXP5gznjvZKZB7T+x0F3f182ii1gzWoayZJHBjc=
+			</data>
+		</dict>
+		<key>shoanazaimu001.csv</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UtY8wStJQft76q/nabzz5nyldho=
+			</data>
+			<key>hash2</key>
+			<data>
+			BzijNu43dyxJMKk1qbmLsyjnv6s5MbSpgbNyLE+qbFo=
 			</data>
 		</dict>
 		<key>street.png</key>

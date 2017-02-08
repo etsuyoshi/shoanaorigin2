@@ -63,44 +63,51 @@
        [self.strConfigKey isEqualToString:QUIZ_CONFIG_KEY_NO_EXP] ||
        [self.strConfigKey isEqualToString:QUIZ_CONFIG_KEY_TEST]){
         returnValue = nowNo + 1;
-    }else if([self.strConfigKey isEqualToString:QUIZ_CONFIG_KEY_JAKUTEN]){
-        //既出問題の格納
+    }else if([self.strConfigKey isEqualToString:QUIZ_CONFIG_KEY_JAKUTEN]){//現状弱点克服モードはConfigViewControllerで選択できないようになっている
+        //弱点克服モードの場合、最初にself.quizItemsArrayの中に過去誤った問題だけを設定する
+        //また過去に誤った問題が一個もない場合があるので、
+        //その場合はDetialViewCon側で通常モードにしてあげて、このクラスで一個もない状態にならないようにしてあげる必要がある
+        //既出問題の格納:実際に既に終了した問題はインスタンス生成時に実施すべき（以下はWIP)
         NSMutableArray *arrNew = [NSMutableArray arrayWithArray:self.quizItemsArray];
         [arrNew removeObjectsInArray:self.usedQuizItems];
-        int noInNew = (int)random() % [arrNew count];
+        //int noInNew = (int)random() % [arrNew count];
+        int noInNew = (int)arc4random_uniform((int)[arrNew count]);
+        //NSLog(@"arc = %d", arc4random_uniform(100));
         returnValue = (int)[arrNew[noInNew] integerValue];
         arrNew = nil;
     }else if([self.strConfigKey isEqualToString:QUIZ_CONFIG_KEY_TEST_RANDOM]){
-        //未実装
-        //弱点克服モードの場合、過去に誤った問題が一個もない場合があるので、その場合はDetialViewCon側で通常モードにしてあげて、このクラスで一個もない状態にならないようにしてあげる必要がある
-        //最初にself.quizItemsArrayの中に過去誤った問題だけを設定する
+        
+        //まだ解いてない問題配列usedQuizItemsからランダムに選む（乱数生成のシードは時間で変更するようにする）
+        if(!self.usedQuizItems){//もし(万が一)既問配列がnullなら初期化
+            self.usedQuizItems = [NSMutableArray array];
+            
+            //returnValue = (int)(random() % [self.quizItemsArray count]);//全体の中から選ぶ
+            returnValue = (int)arc4random_uniform((int)[self.quizItemsArray count]);
+        }else{
+            //usedではない番号を取得
+            //returnValue = (int)[self.usedQuizItems[(int)(random() % [self.usedQuizItems count])] integerValue];
+            //returnValue = (int)arc4random_uniform((int)[self.usedQuizItems count]);
+            
+            //未解決問題配列を生成
+            NSMutableArray *arrNew = [NSMutableArray array];
+            for(int i = 0 ;i < self.quizItemsArray.count;i++){
+                //usedになければ追加する
+                if([self.usedQuizItems indexOfObject:[NSNumber numberWithInt:i]]==NSNotFound){
+                    [arrNew addObject:[NSNumber numberWithInt:i]];
+                }
+            }
+            
+            //arrNewの中からランダムに番号を生成する
+            returnValue = (int)arc4random_uniform(((int)[arrNew count]));
+            arrNew = nil;
+        }
+        
     }else{
         //フラグなしの場合（万が一）
         returnValue = nowNo + 1;
     }
     
-    
-    
-//    //以下でやっていることを上記に実現して行く（途中）
-//    if(self.isOrdered){
-//        returnValue = nowNo + 1;
-//    }else if(self.isRandom){
-//        
-//        //既出問題の格納
-//        NSMutableArray *arrNew = [NSMutableArray arrayWithArray:self.quizItemsArray];
-//        [arrNew removeObjectsInArray:self.usedQuizItems];
-//        int noInNew = (int)random() % [arrNew count];
-//        returnValue = (int)[arrNew[noInNew] integerValue];
-//        arrNew = nil;
-//    }else if(self.isKokuhukuMode){
-//        
-//    
-//    }else{
-//        //フラグの立て忘れの場合はisOrderedとする
-//        returnValue = nowNo + 1;
-//    }
-    
-    
+    //過去問の追加
     [self.usedQuizItems addObject:[NSNumber numberWithInt:returnValue]];
     
     for(int i = 0;i<self.usedQuizItems.count;i++){
@@ -312,7 +319,6 @@
                     curItem.sectorName = sectionNo;
                     if(self.section == 0){
                         self.section = (int)[[sectionNo substringFromIndex:((NSString *)sectionNo).length-3] integerValue];
-                        NSLog(@"section ======== %d", self.section);
                     }
                     
                     
@@ -337,7 +343,10 @@
                     curItem.question = sentence;
                     curItem.rightNo = (int)[[eachInLine objectAtIndex:9] integerValue];//right answer No;
                     curItem.rightAnswer = [eachInLine objectAtIndex:10];//right answer string
-                    curItem.explanation = [eachInLine objectAtIndex:11];//kaisetu
+                    //curItem.explanation = [eachInLine objectAtIndex:11];//kaisetu
+                    //getExplanation
+                    curItem.explanation = [self getExplanation:eachInLine[11]];
+                    
                     
                     // 選択肢の配列に追加
                     for(int selectionIndex = 4;selectionIndex < 9;selectionIndex ++){
@@ -403,6 +412,19 @@
     self.quizItemsArray = (NSArray *)arrQuizItems_tmp;
     
     return YES;
+}
+
+-(NSString *)getExplanation:(NSString *)strParam{
+    @autoreleasepool {
+        
+        NSArray *arrExp = [strParam componentsSeparatedByString:@"#"];
+        
+        NSString *strReturn = [arrExp componentsJoinedByString:@"\n"];
+        
+        arrExp = nil;
+        
+        return strReturn;
+    }
 }
 
 @end

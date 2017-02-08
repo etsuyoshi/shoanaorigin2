@@ -28,18 +28,25 @@
  * 全csvファイルを読み込む（連番で存在するまで）
  */
 -(BOOL)readAll{
+    NSArray *arrKamoku = @[@"shoanakeizai", @"shoanazaimu", @"shoanaportfolio"];
+    //NSArray *arrKamoku = @[@"shoanakeizai"];
+    //NSArray *arrKamoku = @[@"shoanazaimu"];
     
-    for(int sect = 1;sect < 100;sect++){
-        @autoreleasepool {
-            BOOL isSuccess = [self readData:sect];
-            if(!isSuccess){//when failure
-                NSLog(@"all file reading finsihed!!");
-                break;
-            }else{
-                NSLog(@"shoanakeizai%03d reading... success!", sect);
+    for(int kamoku = 0;kamoku < arrKamoku.count;kamoku++){
+        for(int sect = 1;sect < 100;sect++){
+            @autoreleasepool {
+                NSString *strKamoku = arrKamoku[kamoku];
+                BOOL isSuccess = [self readData:sect kamoku:strKamoku];
+                if(!isSuccess){//when failure
+                    NSLog(@"all file reading finsihed!!");
+                    break;
+                }else{
+                    NSLog(@"shoanakeizai%03d reading... success!", sect);
+                }
+                strKamoku = nil;
             }
+            
         }
-        
     }
     
     
@@ -52,14 +59,24 @@
 }
 
 
--(BOOL)readData:(int)noQuiz{
+-(BOOL)readData:(int)noSection kamoku:(NSString *)strKamoku{
     // クイズ出題画面用のビューコントローラを取得するための入れ物
     //QuizRunningViewController *vc;
-    NSString *fileName = [NSString stringWithFormat:@"shoanakeizai%03d", noQuiz];
+    //NSString *fileName = [NSString stringWithFormat:@"shoanakeizai%03d", noSection];
+    NSString *fileName = [NSString stringWithFormat:@"%@%03d", strKamoku, noSection];
     
     
     // クイズデータを読み込む
     Quiz *quiz = [[Quiz alloc] init];
+    //quiz.sectionName = strKamoku;
+    //@[@"shoanakeizai", @"shoanazaimu", @"shoanaportfolio"];
+    if([strKamoku isEqualToString:@"shoanakeizai"]){
+        quiz.sectionName = @"経済";
+    }else if([strKamoku isEqualToString:@"shoanazaimu"]){
+        quiz.sectionName = @"財務";
+    }else if([strKamoku isEqualToString:@"shoanaportfolio"]){
+        quiz.sectionName = @"ポートフォリオ";
+    }
     //self.quiz = [[Quiz alloc] init];
     
     // クイズデータのファイルパスを取得する

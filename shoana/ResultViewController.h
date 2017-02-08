@@ -14,5 +14,6 @@
 
 @property (strong, nonatomic) Quiz *myQuiz;//one section
 @property (strong, nonatomic) NSArray *arrQuiz;//all section
+@property BOOL isAfterQuiz;//問題解答直後の成績画面かどうか→トップに戻るボタンを追加
 
 @end

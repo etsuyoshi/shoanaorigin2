@@ -4,6 +4,38 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AppIcon20x20@2x.png</key>
+		<data>
+		uF6ORiAG2Whp4zZ9LmU2v3Jt4rw=
+		</data>
+		<key>AppIcon20x20@3x.png</key>
+		<data>
+		D7QScKF8ug725WVRe8RGBP86I6E=
+		</data>
+		<key>AppIcon29x29@2x.png</key>
+		<data>
+		FKvgdUUW8mrKGiY8nBgX7WSTq0o=
+		</data>
+		<key>AppIcon29x29@3x.png</key>
+		<data>
+		YqIDvgcCQu7tX3M4zH26gmZI6VQ=
+		</data>
+		<key>AppIcon40x40@2x.png</key>
+		<data>
+		5L53Y3jkgd5uGAO8tNBC23QkI0w=
+		</data>
+		<key>AppIcon40x40@3x.png</key>
+		<data>
+		LG8f8QqCvztHQ6i2A16S7QphSBI=
+		</data>
+		<key>AppIcon60x60@2x.png</key>
+		<data>
+		LG8f8QqCvztHQ6i2A16S7QphSBI=
+		</data>
+		<key>AppIcon60x60@3x.png</key>
+		<data>
+		/B4U+LSfqx9Ukr7p41h6u053+Rs=
+		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
 		AoSK0D7CpjPdiMYSEkvdvXs2zFY=
@@ -18,7 +50,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/7bK-jq-Zjz-view-r7i-6Z-zg0.nib</key>
 		<data>
-		mMxjDDkdPydyfEsOJbz0UN1PaoY=
+		z96orABZg/qU9q6pihV3ynxEPd8=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -26,15 +58,15 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/JEX-9P-axG-view-svH-Pt-448.nib</key>
 		<data>
-		H4jJEI1YvM+hxo/CmfAdEShJVtQ=
+		sPCkXA14e41P+AbkzJGVPv6UVcM=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UISplitViewController-H1p-Uh-vWS.nib</key>
 		<data>
-		YSX+gfTzCtHzNE+nls4jQhO4nsI=
+		lHGQchocrBZgfrOZ6pM1wLHaPqk=
 		</data>
 		<key>Base.lproj/Main.storyboardc/detail.nib</key>
 		<data>
-		xKr4utqMvbAqlHUL/8uYiT2rZrY=
+		nGyKX9ZPWQoISQE4ixwscnGFbok=
 		</data>
 		<key>Frameworks/Charts.framework/Charts</key>
 		<data>
@@ -102,7 +134,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		NKaM3zJDp7F9aSj7t0DtQQMaohI=
+		/TVFWTlLenofzwCfCT7PzdBzkpc=
 		</data>
 		<key>LaunchImage-800-667h@2x.png</key>
 		<data>
@@ -114,7 +146,7 @@
 		</data>
 		<key>MasterTableViewCell.nib</key>
 		<data>
-		392c0BwhviGqt4bzZhHwWIJtAEI=
+		vDbYSW3ClQnh3BrkGGP0AoBVLeg=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -220,6 +252,38 @@
 		<data>
 		iYs9wbycg+QWmTCk4H5iI/MsYgk=
 		</data>
+		<key>shoanaportfolio001.csv</key>
+		<data>
+		P7LXJUmaVsMt5Suk5HOEgsxIqmw=
+		</data>
+		<key>shoanaportfolio002.csv</key>
+		<data>
+		zS/Cx3SF09UokOv0axTqcZgj3yE=
+		</data>
+		<key>shoanaportfolio003.csv</key>
+		<data>
+		81P7D2v7fXtIzWcZb/6b/3ZBxDs=
+		</data>
+		<key>shoanaportfolio004.csv</key>
+		<data>
+		9Yy7dLAPzVg/I2itRVBhZxnTmJU=
+		</data>
+		<key>shoanaportfolio005.csv</key>
+		<data>
+		1rrL7sS4MAU2eIJJNKiOdFZyrWw=
+		</data>
+		<key>shoanazaimu001.csv</key>
+		<data>
+		q+Xr1qa8zLaHsybVBr3rKlHxXIM=
+		</data>
+		<key>shoanazaimu002.csv</key>
+		<data>
+		i7WrmXxck7UiVU8YJrnJF5n4FsE=
+		</data>
+		<key>shoanazaimu003.csv</key>
+		<data>
+		AynhjH1TKINvYfTw/N46bS1ZB6E=
+		</data>
 		<key>street.png</key>
 		<data>
 		8C1nju9CIsnVmOv0tdG35i+hXuI=
@@ -228,6 +292,14 @@
 		<data>
 		IgU5azkLuo18WNAVpRqfn30ySYQ=
 		</data>
+		<key>tokyo_tower2.png</key>
+		<data>
+		5wi3mJiVV/11up07B39ab0elscw=
+		</data>
+		<key>water2.png</key>
+		<data>
+		XqE0ewkK51mBYPIGc/GLm1N0YQU=
+		</data>
 		<key>wood.png</key>
 		<data>
 		Vev5IjC5E2HhjIluqkNTMM8nBi8=
@@ -235,6 +307,94 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AppIcon20x20@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uF6ORiAG2Whp4zZ9LmU2v3Jt4rw=
+			</data>
+			<key>hash2</key>
+			<data>
+			RbfE+KJIN5VnbSFZxcczjtsy3RUshb4jcX4ZJO+LVqg=
+			</data>
+		</dict>
+		<key>AppIcon20x20@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D7QScKF8ug725WVRe8RGBP86I6E=
+			</data>
+			<key>hash2</key>
+			<data>
+			Nh5HsQpOmPq7aiAvWG6x3TqDMtNJdFIidoxMW3G77hg=
+			</data>
+		</dict>
+		<key>AppIcon29x29@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FKvgdUUW8mrKGiY8nBgX7WSTq0o=
+			</data>
+			<key>hash2</key>
+			<data>
+			yZK/LfJJV+hlYKIRHCSzNF3bvdNcKZmf7pYR91i/0To=
+			</data>
+		</dict>
+		<key>AppIcon29x29@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YqIDvgcCQu7tX3M4zH26gmZI6VQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			ANwZ8tFV0gwk4rWmdZ/GH6bFUJNWbN7v/Bwe+Xkdxp4=
+			</data>
+		</dict>
+		<key>AppIcon40x40@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5L53Y3jkgd5uGAO8tNBC23QkI0w=
+			</data>
+			<key>hash2</key>
+			<data>
+			Wxs6fqHOFuLeXe3IFu70d6/oAZ/y9XMtXxggb9ywS+k=
+			</data>
+		</dict>
+		<key>AppIcon40x40@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LG8f8QqCvztHQ6i2A16S7QphSBI=
+			</data>
+			<key>hash2</key>
+			<data>
+			wkriJb6PjODPkdrmLftmbPeIUrjddaUtr0YkUy4bbDo=
+			</data>
+		</dict>
+		<key>AppIcon60x60@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LG8f8QqCvztHQ6i2A16S7QphSBI=
+			</data>
+			<key>hash2</key>
+			<data>
+			wkriJb6PjODPkdrmLftmbPeIUrjddaUtr0YkUy4bbDo=
+			</data>
+		</dict>
+		<key>AppIcon60x60@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/B4U+LSfqx9Ukr7p41h6u053+Rs=
+			</data>
+			<key>hash2</key>
+			<data>
+			kWK0cFU6uPZX5nUksmtooUNaU2NatwHymgNZtTYpElE=
+			</data>
+		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
@@ -272,11 +432,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mMxjDDkdPydyfEsOJbz0UN1PaoY=
+			z96orABZg/qU9q6pihV3ynxEPd8=
 			</data>
 			<key>hash2</key>
 			<data>
-			nPHeWlN2B+KbGnoa/+dcOgLNKpITv7ospKgTdTuNKqU=
+			YyZi8Sxpr+dLTngWgZpSE3sf5W8JLLQ8UJBL6lvrShg=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -294,33 +454,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			H4jJEI1YvM+hxo/CmfAdEShJVtQ=
+			sPCkXA14e41P+AbkzJGVPv6UVcM=
 			</data>
 			<key>hash2</key>
 			<data>
-			1AhANbIos0Ak213xHm6DqsTLn0/zfJF0JBB+K1P1j8s=
+			j/PX3gOK9mglsd4thcy9pjtNfk5ywgqXugMLvn5QWZM=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UISplitViewController-H1p-Uh-vWS.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YSX+gfTzCtHzNE+nls4jQhO4nsI=
+			lHGQchocrBZgfrOZ6pM1wLHaPqk=
 			</data>
 			<key>hash2</key>
 			<data>
-			udv/MeyI2BIVq+5xlIoszxm4TH6xKENSiGWXRQsVy2E=
+			le5rqC/p5cddZPZeApLwyz9oNdfKskTXdXhUSm+Mjp8=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/detail.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xKr4utqMvbAqlHUL/8uYiT2rZrY=
+			nGyKX9ZPWQoISQE4ixwscnGFbok=
 			</data>
 			<key>hash2</key>
 			<data>
-			q0nO9uHGUAsF1/LX03xE2b4+4ykQpTLdC6AJV/IB/Xg=
+			I7WAM+MrY/iDaHaSSvdZvq/BkvvAfDZHOjzUxm37dTc=
 			</data>
 		</dict>
 		<key>Frameworks/Charts.framework/Charts</key>
@@ -525,11 +685,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			392c0BwhviGqt4bzZhHwWIJtAEI=
+			vDbYSW3ClQnh3BrkGGP0AoBVLeg=
 			</data>
 			<key>hash2</key>
 			<data>
-			SeBVowq0Onyt/9DaHTiHyl+3d6o/uQiESN4du1919jc=
+			863aP71kdWvNgsCHf1yDsZQ441DEARpEwJYRsqjUxD8=
 			</data>
 		</dict>
 		<key>_homu1.csv</key>
@@ -807,6 +967,94 @@
 			RSiVZv01bbP4S3ZNTQ6QMpo8l1A9ZfPqOh8LblAayKc=
 			</data>
 		</dict>
+		<key>shoanaportfolio001.csv</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			P7LXJUmaVsMt5Suk5HOEgsxIqmw=
+			</data>
+			<key>hash2</key>
+			<data>
+			ySN5AX3+nIn/6sPsvAVCBUIm/HF59pGfQDLlJP5ivF8=
+			</data>
+		</dict>
+		<key>shoanaportfolio002.csv</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zS/Cx3SF09UokOv0axTqcZgj3yE=
+			</data>
+			<key>hash2</key>
+			<data>
+			isN/xxlmOUDm2C5JI6/Z/tkSE/j556JK8UAfqZHnxyo=
+			</data>
+		</dict>
+		<key>shoanaportfolio003.csv</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			81P7D2v7fXtIzWcZb/6b/3ZBxDs=
+			</data>
+			<key>hash2</key>
+			<data>
+			OricUFxHGGOW/Xfxgfg3Rg8dMhwmS2HjZAdGKr8ENc4=
+			</data>
+		</dict>
+		<key>shoanaportfolio004.csv</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9Yy7dLAPzVg/I2itRVBhZxnTmJU=
+			</data>
+			<key>hash2</key>
+			<data>
+			7Zg8/+/iigFC6gaNXJnZ3tPeddcm8xEUS8pi93NrKMw=
+			</data>
+		</dict>
+		<key>shoanaportfolio005.csv</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1rrL7sS4MAU2eIJJNKiOdFZyrWw=
+			</data>
+			<key>hash2</key>
+			<data>
+			9TgeP5yRHBPq1fJrWIw0ZMD+PV8FFeq57MrYZJIVHE4=
+			</data>
+		</dict>
+		<key>shoanazaimu001.csv</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			q+Xr1qa8zLaHsybVBr3rKlHxXIM=
+			</data>
+			<key>hash2</key>
+			<data>
+			2z6EIxDYFiAzCTwqdYk6x++kb2Ndkas77G7rVkIoZX0=
+			</data>
+		</dict>
+		<key>shoanazaimu002.csv</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			i7WrmXxck7UiVU8YJrnJF5n4FsE=
+			</data>
+			<key>hash2</key>
+			<data>
+			rAIgZxOMILNMCJMyTMqcN7csyr36gcKtxxWJge5pqNo=
+			</data>
+		</dict>
+		<key>shoanazaimu003.csv</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AynhjH1TKINvYfTw/N46bS1ZB6E=
+			</data>
+			<key>hash2</key>
+			<data>
+			5pB4+utWSU9yjV+S2MToscVAAyeGZH4B5fbzLhWEzTY=
+			</data>
+		</dict>
 		<key>street.png</key>
 		<dict>
 			<key>hash</key>
@@ -827,6 +1075,28 @@
 			<key>hash2</key>
 			<data>
 			jRAD7ChRyPhwNKpru9ZK6EFlovXlUNoQ23kIEgkvpJo=
+			</data>
+		</dict>
+		<key>tokyo_tower2.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5wi3mJiVV/11up07B39ab0elscw=
+			</data>
+			<key>hash2</key>
+			<data>
+			r+vjSkFsGF3D3dbQEWeOv9Lv9FtzEc7CUtEh5ytgdGg=
+			</data>
+		</dict>
+		<key>water2.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XqE0ewkK51mBYPIGc/GLm1N0YQU=
+			</data>
+			<key>hash2</key>
+			<data>
+			UiFEvEfUe/xL4GIPNZwu3yqBzCsMydPYV8cUQ3G2mMc=
 			</data>
 		</dict>
 		<key>wood.png</key>

@@ -16,11 +16,12 @@
 /*
  * to do :全部終わったら戻る(done)、正誤表示(done)、成績表（done:回答数、誤答数を表示したテーブルビュー→タップしたら間違えたカテゴリ分布＠パイチャート）
  * to do (done):Quizインスタンスを生成する際にQuizResultから過去の成績を取得して属性にセットする（detailviewconで使用しているため）
- * to do :masterviewconを再描画する際の回答したかどうかのフラグを作成→viewDidAppear内で設定
+ * to do :(done)masterviewconを再描画する際の回答したかどうかのフラグを作成→viewDidAppear内で設定
+ * to do :(done)モード選択が正しく反映されない（解説非表示モードなど）
+ * to do :(done)ポートフォリオ、財務などの他科目(Quiz.sectorName)の問題の読み込み＆科目名をセルに表示する
  * to do（次回ver） :弱点克服モードの設定(configviewconで設定＠２箇所、Quizインスタンスの設定、detailviewconでも設定不要？)
  */
 
-//#import "Quiz.h"
 #import "QuizSector.h"
 #import "MasterTableViewCell.h"
 #import "MasterViewController.h"
@@ -52,6 +53,8 @@ QuizSector *quizSector;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.title = @"";
     
     // Do any additional setup after loading the view, typically from a nib.
     
@@ -86,6 +89,8 @@ QuizSector *quizSector;
     self.navigationItem.rightBarButtonItem = btnRight;
     self.navigationItem.leftBarButtonItem = btnLeft;
     
+    //諸々の情報を更新する（成績表の更新がしたいのではなく、self.strConfigKeyの更新)
+    [self updateInfo];
     
 }
 
@@ -155,19 +160,29 @@ QuizSector *quizSector;
     
     //ステータスが変わったかどうかのフラグ
     if(didUpdate){//成績表を更新した場合に限って更新する
-        for(int i = 0;i < quizSector.quizSectsArray.count;i++){
-            @autoreleasepool {
-                Quiz *tmpQuiz = quizSector.quizSectsArray[i];
-                [tmpQuiz updateAllResult];
-                quizSector.quizSectsArray[i] = tmpQuiz;
-            }
-        }
-        [self setAnswerAndCorrect];
-        
-        [self.tableView reloadData];
-        didUpdate = NO;//次回以降更新しないように最新状態であるようにする
+        [self updateInfo];
     }
     
+}
+
+-(void)updateInfo{
+    for(int i = 0;i < quizSector.quizSectsArray.count;i++){
+        @autoreleasepool {
+            Quiz *tmpQuiz = quizSector.quizSectsArray[i];
+            [tmpQuiz updateAllResult];
+            quizSector.quizSectsArray[i] = tmpQuiz;
+        }
+    }
+    [self setAnswerAndCorrect];
+    [self.tableView reloadData];
+    
+    
+    //問題を選択した時に、どの問題（１問目）を選択するのか
+    NSUserDefaults *userDef = [NSUserDefaults standardUserDefaults];
+    self.strConfigKey = [userDef objectForKey:QUIZ_CONFIG_KEY];
+    userDef = nil;
+    
+    didUpdate = NO;//次回以降更新しないように最新状態であるようにする
 }
 
 
@@ -230,17 +245,6 @@ QuizSector *quizSector;
     MasterTableViewCell *cell = (MasterTableViewCell *)
     [tableView dequeueReusableCellWithIdentifier:@"masterCell" forIndexPath:indexPath];
     
-//    MasterTableViewCell *cell =
-//    (MasterTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"masterCell"];
-//    if(!cell){
-//        cell = [[MasterTableViewCell alloc]
-//        initWithStyle:UITableViewCellStyleDefault
-//                reuseIdentifier:@"masterCell"];
-////        [[UITableViewCell alloc]
-////                initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"masterCell"];
-//    }
-    
-        
     //背景画像の設定
     cell.img_back.image = [UIImage imageNamed:arrImgCells[indexPath.row % (int)arrImgCells.count]];
     NSLog(@"%s, indexpath.row = %d, %@",
@@ -251,9 +255,13 @@ QuizSector *quizSector;
     //セル上の表示文言の設定
     @autoreleasepool {
         Quiz *quiz = (Quiz *)quizSector.quizSectsArray[indexPath.row];
-        QuizItem *quizItem = quiz.quizItemsArray[0];
+        //QuizItem *quizItem = quiz.quizItemsArray[0];
         
-        cell.lbl_sector.text = quizItem.sectorName;
+        //cell.lbl_sector.text = quizItem.sectorName;
+        cell.lbl_sector.text =
+        [NSString stringWithFormat:@"第%d章 %@", (int)indexPath.row+1, quiz.sectionName];
+        //[NSString stringWithFormat:@"第%d章 %@", quiz.section, quiz.sectionName];
+        
         //cell.lbl_name.text = [NSString stringWithFormat:@"概要%ld", indexPath.row];
         cell.lbl_name.text = [[quiz.arrCategory subarrayWithRange:NSMakeRange(0, 2)] componentsJoinedByString:@","];//先頭の上位要素のみ取得
         
@@ -324,14 +332,25 @@ QuizSector *quizSector;
 //    DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
     DetailViewController *controller = [[self storyboard] instantiateViewControllerWithIdentifier:@"detail"];
     //NSLog(@"sending quiz = %@", quizSector.quizSectsArray[indexPath.row]);
-    [controller setQuiz:quizSector.quizSectsArray[indexPath.row]];
-    controller.quizNo = (int)indexPath.row;
+    Quiz *tmpQuiz = quizSector.quizSectsArray[indexPath.row];
+    [controller setQuiz:tmpQuiz];
+    //最初の1問目の選択
+    if([self.strConfigKey isEqualToString:QUIZ_CONFIG_KEY_TEST] ||
+       [self.strConfigKey isEqualToString:QUIZ_CONFIG_KEY_NO_EXP] ||
+       [self.strConfigKey isEqualToString:QUIZ_CONFIG_KEY_STANDARD]){
+        controller.quizNo = 0;
+    }else{
+        controller.quizNo = (int)arc4random_uniform((int)tmpQuiz.quizItemsArray.count);
+    }
     controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
     controller.navigationItem.leftItemsSupplementBackButton = YES;
     [self.navigationController pushViewController:controller animated:YES];
     
     controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
     controller.navigationItem.leftItemsSupplementBackButton = YES;
+    
+    
+    tmpQuiz = nil;
 }
 
 @end
