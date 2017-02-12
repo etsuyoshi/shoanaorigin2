@@ -1,0 +1,454 @@
+BCSymbolMap Version: 2.0
+-[GradientWhiteView init]
+_OBJC_METACLASS_$_GradientWhiteView
+_OBJC_CLASS_$_GradientWhiteView
+Apple LLVM version 8.0.0 (clang-800.0.42.1)
+/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/GradientWhiteView.m
+/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana
+-[ResultModel initWithSection:]
+-[ResultModel getAnswer:]
+-[ResultModel getAnswers]
+-[ResultModel getCorrect:]
+-[ResultModel getCorrects]
+-[ResultModel setResult:isCorrect:]
+-[ResultModel resetAllData]
+-[ResultModel section]
+-[ResultModel setSection:]
+-[ResultModel allQuizCount]
+-[ResultModel setAllQuizCount:]
+-[ResultModel arrAnswerInSection]
+-[ResultModel setArrAnswerInSection:]
+-[ResultModel arrCorrectInSection]
+-[ResultModel setArrCorrectInSection:]
+-[ResultModel .cxx_destruct]
+_OBJC_CLASS_$_ResultModel
+_OBJC_IVAR_$_ResultModel._section
+_OBJC_IVAR_$_ResultModel._allQuizCount
+_OBJC_IVAR_$_ResultModel._arrAnswerInSection
+_OBJC_IVAR_$_ResultModel._arrCorrectInSection
+_OBJC_METACLASS_$_ResultModel
+/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/ResultModel.m
+/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/ResultModel.h
+-[PieChartViewController viewDidLoad]
+-[PieChartViewController didReceiveMemoryWarning]
+-[PieChartViewController updateChartData]
+-[PieChartViewController setDataCount:range:]
+-[PieChartViewController optionTapped:]
+-[PieChartViewController chartValueSelected:entry:highlight:]
+-[PieChartViewController chartValueNothingSelected:]
+-[PieChartViewController chartView]
+-[PieChartViewController setChartView:]
+-[PieChartViewController sliderX]
+-[PieChartViewController setSliderX:]
+-[PieChartViewController sliderY]
+-[PieChartViewController setSliderY:]
+-[PieChartViewController sliderTextX]
+-[PieChartViewController setSliderTextX:]
+-[PieChartViewController sliderTextY]
+-[PieChartViewController setSliderTextY:]
+-[PieChartViewController .cxx_destruct]
+_OBJC_CLASS_$_PieChartViewController
+_OBJC_IVAR_$_PieChartViewController._chartView
+_OBJC_IVAR_$_PieChartViewController._sliderX
+_OBJC_IVAR_$_PieChartViewController._sliderY
+_OBJC_IVAR_$_DemoBaseViewController.parties
+_OBJC_IVAR_$_PieChartViewController._sliderTextX
+_OBJC_IVAR_$_PieChartViewController._sliderTextY
+_OBJC_METACLASS_$_DemoBaseViewController
+l_OBJC_PROTOCOL_$__TtP6Charts17ChartViewDelegate_
+l_OBJC_LABEL_PROTOCOL_$__TtP6Charts17ChartViewDelegate_
+_OBJC_METACLASS_$_PieChartViewController
+_OBJC_CLASS_$_DemoBaseViewController
+/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/PieChartViewController.m
+-[QuizSector init]
+-[QuizSector readAll]
+-[QuizSector readData:kamoku:]
+-[QuizSector quizSectsArray]
+-[QuizSector setQuizSectsArray:]
+-[QuizSector .cxx_destruct]
+_OBJC_CLASS_$_QuizSector
+_OBJC_CLASS_$_Quiz
+_OBJC_IVAR_$_QuizSector._quizSectsArray
+_OBJC_METACLASS_$_QuizSector
+/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/Quiz/QuizSector.m
+/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/Quiz/QuizSector.h
+-[QuizItem init]
+-[QuizItem randomChoicesArray]
+-[QuizItem checkIsRightAnswer:]
+-[QuizItem checkIsRightNo:]
+-[QuizItem sectorName]
+-[QuizItem setSectorName:]
+-[QuizItem category]
+-[QuizItem setCategory:]
+-[QuizItem questionNo]
+-[QuizItem setQuestionNo:]
+-[QuizItem question]
+-[QuizItem setQuestion:]
+-[QuizItem rightAnswer]
+-[QuizItem setRightAnswer:]
+-[QuizItem choicesArray]
+-[QuizItem setChoicesArray:]
+-[QuizItem explanation]
+-[QuizItem setExplanation:]
+-[QuizItem kaitou]
+-[QuizItem setKaitou:]
+-[QuizItem seikai]
+-[QuizItem setSeikai:]
+-[QuizItem intQuestionNo]
+-[QuizItem setIntQuestionNo:]
+-[QuizItem rightNo]
+-[QuizItem setRightNo:]
+-[QuizItem .cxx_destruct]
+_OBJC_CLASS_$_QuizItem
+_OBJC_IVAR_$_QuizItem._sectorName
+_OBJC_IVAR_$_QuizItem._category
+_OBJC_IVAR_$_QuizItem._questionNo
+_OBJC_IVAR_$_QuizItem._question
+_OBJC_IVAR_$_QuizItem._rightAnswer
+_OBJC_IVAR_$_QuizItem._choicesArray
+_OBJC_IVAR_$_QuizItem._explanation
+_OBJC_IVAR_$_QuizItem._kaitou
+_OBJC_IVAR_$_QuizItem._seikai
+_OBJC_IVAR_$_QuizItem._intQuestionNo
+_OBJC_IVAR_$_QuizItem._rightNo
+_OBJC_METACLASS_$_QuizItem
+/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/Quiz/QuizItem.m
+/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/Quiz/QuizItem.h
+-[ConfigViewController viewDidLoad]
+-[ConfigViewController didReceiveMemoryWarning]
+-[ConfigViewController setConfig:]
+-[ConfigViewController tableView:didSelectRowAtIndexPath:]
+___58-[ConfigViewController tableView:didSelectRowAtIndexPath:]_block_invoke
+___58-[ConfigViewController tableView:didSelectRowAtIndexPath:]_block_invoke_2
+___copy_helper_block_
+___destroy_helper_block_
+___58-[ConfigViewController tableView:didSelectRowAtIndexPath:]_block_invoke.93
+___copy_helper_block_.94
+___destroy_helper_block_.95
+-[ConfigViewController removeResult]
+-[ConfigViewController setUpPicker]
+-[ConfigViewController pickerMoveIn]
+___36-[ConfigViewController pickerMoveIn]_block_invoke
+___copy_helper_block_.158
+___destroy_helper_block_.159
+___36-[ConfigViewController pickerMoveIn]_block_invoke.162
+-[ConfigViewController changeDataFromPicker:]
+___45-[ConfigViewController changeDataFromPicker:]_block_invoke
+___copy_helper_block_.172
+___destroy_helper_block_.173
+___45-[ConfigViewController changeDataFromPicker:]_block_invoke.175
+___copy_helper_block_.178
+___destroy_helper_block_.179
+-[ConfigViewController tableView:cellForRowAtIndexPath:]
+-[ConfigViewController tableView:numberOfRowsInSection:]
+-[ConfigViewController numberOfSectionsInTableView:]
+-[ConfigViewController numberOfComponentsInPickerView:]
+-[ConfigViewController pickerView:numberOfRowsInComponent:]
+-[ConfigViewController pickerView:titleForRow:forComponent:]
+-[ConfigViewController pickerView:didSelectRow:inComponent:]
+-[ConfigViewController .cxx_destruct]
+_OBJC_CLASS_$_ConfigViewController
+_OBJC_IVAR_$_ConfigViewController.myTableView
+_OBJC_IVAR_$_ConfigViewController.arrPicker
+_OBJC_IVAR_$_ConfigViewController.dictConfigKey
+___block_descriptor_tmp
+___block_literal_global
+___block_descriptor_tmp.92
+___block_descriptor_tmp.96
+_OBJC_IVAR_$_ConfigViewController.picker
+_OBJC_IVAR_$_ConfigViewController.viewBasePicker
+___block_descriptor_tmp.161
+___block_descriptor_tmp.164
+___block_literal_global.165
+___block_descriptor_tmp.174
+___block_descriptor_tmp.180
+l_OBJC_PROTOCOL_$_NSObject
+l_OBJC_LABEL_PROTOCOL_$_NSObject
+l_OBJC_PROTOCOL_$_UIScrollViewDelegate
+l_OBJC_LABEL_PROTOCOL_$_UIScrollViewDelegate
+l_OBJC_PROTOCOL_$_UITableViewDelegate
+l_OBJC_LABEL_PROTOCOL_$_UITableViewDelegate
+l_OBJC_PROTOCOL_$_UITableViewDataSource
+l_OBJC_LABEL_PROTOCOL_$_UITableViewDataSource
+l_OBJC_PROTOCOL_$_UIPickerViewDelegate
+l_OBJC_LABEL_PROTOCOL_$_UIPickerViewDelegate
+l_OBJC_PROTOCOL_$_UIPickerViewDataSource
+l_OBJC_LABEL_PROTOCOL_$_UIPickerViewDataSource
+_OBJC_METACLASS_$_ConfigViewController
+/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/ConfigViewController.m
+__destroy_helper_block_
+__copy_helper_block_
+__45-[ConfigViewController changeDataFromPicker:]_block_invoke.175
+__45-[ConfigViewController changeDataFromPicker:]_block_invoke
+__36-[ConfigViewController pickerMoveIn]_block_invoke.162
+__36-[ConfigViewController pickerMoveIn]_block_invoke
+__58-[ConfigViewController tableView:didSelectRowAtIndexPath:]_block_invoke.93
+__58-[ConfigViewController tableView:didSelectRowAtIndexPath:]_block_invoke_2
+__58-[ConfigViewController tableView:didSelectRowAtIndexPath:]_block_invoke
+-[AppDelegate application:didFinishLaunchingWithOptions:]
+-[AppDelegate applicationWillResignActive:]
+-[AppDelegate applicationDidEnterBackground:]
+-[AppDelegate applicationWillEnterForeground:]
+-[AppDelegate applicationDidBecomeActive:]
+-[AppDelegate applicationWillTerminate:]
+-[AppDelegate splitViewController:collapseSecondaryViewController:ontoPrimaryViewController:]
+-[AppDelegate window]
+-[AppDelegate setWindow:]
+-[AppDelegate .cxx_destruct]
+_OBJC_CLASS_$_DetailViewController
+_OBJC_IVAR_$_AppDelegate._window
+l_OBJC_PROTOCOL_$_UISplitViewControllerDelegate
+l_OBJC_LABEL_PROTOCOL_$_UISplitViewControllerDelegate
+l_OBJC_PROTOCOL_$_UIApplicationDelegate
+l_OBJC_LABEL_PROTOCOL_$_UIApplicationDelegate
+_OBJC_METACLASS_$_AppDelegate
+_OBJC_CLASS_$_AppDelegate
+/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/AppDelegate.m
+/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/AppDelegate.h
+-[MasterViewController viewDidLoad]
+-[MasterViewController setAnswerAndCorrect]
+-[MasterViewController goConfig]
+-[MasterViewController goResult]
+-[MasterViewController viewWillAppear:]
+-[MasterViewController viewDidAppear:]
+-[MasterViewController updateInfo]
+-[MasterViewController didReceiveMemoryWarning]
+-[MasterViewController insertNewObject:]
+-[MasterViewController prepareForSegue:sender:]
+-[MasterViewController numberOfSectionsInTableView:]
+-[MasterViewController tableView:numberOfRowsInSection:]
+-[MasterViewController tableView:heightForRowAtIndexPath:]
+-[MasterViewController tableView:cellForRowAtIndexPath:]
+-[MasterViewController tableView:canEditRowAtIndexPath:]
+-[MasterViewController tableView:didSelectRowAtIndexPath:]
+-[MasterViewController quiz]
+-[MasterViewController setQuiz:]
+-[MasterViewController detailViewController]
+-[MasterViewController setDetailViewController:]
+-[MasterViewController strConfigKey]
+-[MasterViewController setStrConfigKey:]
+-[MasterViewController objects]
+-[MasterViewController setObjects:]
+-[MasterViewController .cxx_destruct]
+_OBJC_CLASS_$_MasterViewController
+_OBJC_IVAR_$_MasterViewController.arrImgCells
+_quizSector
+_OBJC_IVAR_$_MasterViewController.didUpdate
+_OBJC_IVAR_$_MasterViewController.arrMAnswers
+_OBJC_IVAR_$_MasterViewController.arrMCorrects
+_OBJC_CLASS_$_ResultViewController
+_OBJC_IVAR_$_MasterViewController._quiz
+_OBJC_IVAR_$_MasterViewController._detailViewController
+_OBJC_IVAR_$_MasterViewController._strConfigKey
+_OBJC_IVAR_$_MasterViewController._objects
+_OBJC_METACLASS_$_MasterViewController
+/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/MasterViewController.m
+/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/MasterViewController.h
+-[UILabel(FontSizeToFit) fontSizeToFit]
+-[UILabel(FontSizeToFit) fontSizeToFitWithMinimumFontScale:diminishRate:]
+___Block_byref_object_copy_
+___Block_byref_object_dispose_
+___73-[UILabel(FontSizeToFit) fontSizeToFitWithMinimumFontScale:diminishRate:]_block_invoke
+/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/UILabel+FontSizeToFit.m
+__73-[UILabel(FontSizeToFit) fontSizeToFitWithMinimumFontScale:diminishRate:]_block_invoke
+__Block_byref_object_dispose_
+__Block_byref_object_copy_
+NSMakeRange
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
+/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/main.m
+main
+-[MasterTableViewCell awakeFromNib]
+-[MasterTableViewCell setSelected:animated:]
+-[MasterTableViewCell img_back]
+-[MasterTableViewCell setImg_back:]
+-[MasterTableViewCell lbl_sector]
+-[MasterTableViewCell setLbl_sector:]
+-[MasterTableViewCell lbl_name]
+-[MasterTableViewCell setLbl_name:]
+-[MasterTableViewCell lbl_seitouritu]
+-[MasterTableViewCell setLbl_seitouritu:]
+-[MasterTableViewCell .cxx_destruct]
+_OBJC_CLASS_$_MasterTableViewCell
+_OBJC_IVAR_$_MasterTableViewCell._img_back
+_OBJC_IVAR_$_MasterTableViewCell._lbl_sector
+_OBJC_IVAR_$_MasterTableViewCell._lbl_name
+_OBJC_IVAR_$_MasterTableViewCell._lbl_seitouritu
+_OBJC_METACLASS_$_MasterTableViewCell
+/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/MasterTableViewCell.m
+/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/MasterTableViewCell.h
+-[Quiz init]
+-[Quiz initWithKokuhuku:]
+-[Quiz nextQuiz:]
+-[Quiz clear]
+-[Quiz readFromCSV:]
+-[Quiz updateAllResult]
+-[Quiz getExplanation:]
+-[Quiz quizItemsArray]
+-[Quiz setQuizItemsArray:]
+-[Quiz usedQuizItems]
+-[Quiz setUsedQuizItems:]
+-[Quiz arrCategory]
+-[Quiz setArrCategory:]
+-[Quiz strSeikaisu]
+-[Quiz setStrSeikaisu:]
+-[Quiz strKaitoukaisu]
+-[Quiz setStrKaitoukaisu:]
+-[Quiz sectionName]
+-[Quiz setSectionName:]
+-[Quiz section]
+-[Quiz setSection:]
+-[Quiz strConfigKey]
+-[Quiz setStrConfigKey:]
+-[Quiz .cxx_destruct]
+_OBJC_IVAR_$_Quiz._quizItemsArray
+_OBJC_IVAR_$_Quiz._usedQuizItems
+_OBJC_IVAR_$_Quiz._arrCategory
+_OBJC_IVAR_$_Quiz._strKaitoukaisu
+_OBJC_IVAR_$_Quiz._strSeikaisu
+_OBJC_IVAR_$_Quiz._section
+_OBJC_IVAR_$_Quiz.arrWrongNo
+_OBJC_IVAR_$_Quiz._sectionName
+_OBJC_IVAR_$_Quiz._strConfigKey
+_OBJC_METACLASS_$_Quiz
+/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/Quiz/Quiz.m
+/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/Quiz/Quiz.h
+-[DetailViewController configureView]
+-[DetailViewController viewWillLayoutSubviews]
+-[DetailViewController viewDidLayoutSubviews]
+-[DetailViewController tappedAnswer:]
+-[DetailViewController displayExplanation]
+-[DetailViewController tappedNext]
+-[DetailViewController tappedStop]
+___34-[DetailViewController tappedStop]_block_invoke
+___34-[DetailViewController tappedStop]_block_invoke.177
+-[DetailViewController disappearExp:]
+-[DetailViewController drawIsCorrect:]
+___38-[DetailViewController drawIsCorrect:]_block_invoke
+___copy_helper_block_.193
+___destroy_helper_block_.194
+___38-[DetailViewController drawIsCorrect:]_block_invoke.197
+___copy_helper_block_.198
+___destroy_helper_block_.199
+-[DetailViewController viewDidLoad]
+-[DetailViewController viewWillAppear:]
+-[DetailViewController viewDidAppear:]
+-[DetailViewController setNavigationBar]
+-[DetailViewController goNext]
+-[DetailViewController getNextQuizNo]
+-[DetailViewController didReceiveMemoryWarning]
+-[DetailViewController setQuiz:]
+-[DetailViewController updateResult:]
+-[DetailViewController getAnswerLabel:]
+-[DetailViewController strConfigKey]
+-[DetailViewController setStrConfigKey:]
+-[DetailViewController quiz]
+-[DetailViewController quizNo]
+-[DetailViewController setQuizNo:]
+-[DetailViewController detailDescriptionLabel]
+-[DetailViewController setDetailDescriptionLabel:]
+-[DetailViewController questionContentLabel]
+-[DetailViewController setQuestionContentLabel:]
+-[DetailViewController answer1Btn]
+-[DetailViewController setAnswer1Btn:]
+-[DetailViewController answer2Btn]
+-[DetailViewController setAnswer2Btn:]
+-[DetailViewController answer3Btn]
+-[DetailViewController setAnswer3Btn:]
+-[DetailViewController answer4Btn]
+-[DetailViewController setAnswer4Btn:]
+-[DetailViewController .cxx_destruct]
+_OBJC_IVAR_$_DetailViewController._quiz
+_OBJC_IVAR_$_DetailViewController.myQuizItem
+_OBJC_IVAR_$_DetailViewController.isAnswerable
+_OBJC_IVAR_$_DetailViewController.isDispExplain
+_OBJC_IVAR_$_DetailViewController.viewExp
+___block_descriptor_tmp.178
+___block_descriptor_tmp.196
+___block_descriptor_tmp.201
+_OBJC_IVAR_$_DetailViewController._strConfigKey
+_OBJC_IVAR_$_DetailViewController._quizNo
+_OBJC_IVAR_$_DetailViewController._detailDescriptionLabel
+_OBJC_IVAR_$_DetailViewController._questionContentLabel
+_OBJC_IVAR_$_DetailViewController._answer1Btn
+_OBJC_IVAR_$_DetailViewController._answer2Btn
+_OBJC_IVAR_$_DetailViewController._answer3Btn
+_OBJC_IVAR_$_DetailViewController._answer4Btn
+_OBJC_METACLASS_$_DetailViewController
+/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/DetailViewController.m
+/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/DetailViewController.h
+__38-[DetailViewController drawIsCorrect:]_block_invoke.197
+__38-[DetailViewController drawIsCorrect:]_block_invoke
+__34-[DetailViewController tappedStop]_block_invoke.177
+__34-[DetailViewController tappedStop]_block_invoke
+-[DemoBaseViewController initWithCoder:]
+-[DemoBaseViewController initWithNibName:bundle:]
+-[DemoBaseViewController initialize]
+-[DemoBaseViewController viewDidLoad]
+-[DemoBaseViewController didReceiveMemoryWarning]
+-[DemoBaseViewController optionTapped:]
+-[DemoBaseViewController handleOption:forChartView:]
+-[DemoBaseViewController optionsButtonTapped:]
+-[DemoBaseViewController numberOfSectionsInTableView:]
+-[DemoBaseViewController tableView:numberOfRowsInSection:]
+-[DemoBaseViewController tableView:heightForRowAtIndexPath:]
+-[DemoBaseViewController tableView:cellForRowAtIndexPath:]
+-[DemoBaseViewController tableView:didSelectRowAtIndexPath:]
+-[DemoBaseViewController updateChartData]
+-[DemoBaseViewController setupPieChartView:]
+-[DemoBaseViewController setupRadarChartView:]
+-[DemoBaseViewController setupBarLineChartView:]
+-[DemoBaseViewController optionsButton]
+-[DemoBaseViewController setOptionsButton:]
+-[DemoBaseViewController options]
+-[DemoBaseViewController setOptions:]
+-[DemoBaseViewController shouldHideData]
+-[DemoBaseViewController setShouldHideData:]
+-[DemoBaseViewController optionsTableView]
+-[DemoBaseViewController setOptionsTableView:]
+-[DemoBaseViewController .cxx_destruct]
+_OBJC_IVAR_$_DemoBaseViewController._shouldHideData
+l_OBJC_PROTOCOL_$__TtP6Charts13IChartDataSet_
+l_OBJC_LABEL_PROTOCOL_$__TtP6Charts13IChartDataSet_
+l_OBJC_PROTOCOL_$__TtP6Charts39IBarLineScatterCandleBubbleChartDataSet_
+l_OBJC_LABEL_PROTOCOL_$__TtP6Charts39IBarLineScatterCandleBubbleChartDataSet_
+l_OBJC_PROTOCOL_$__TtP6Charts16IBarChartDataSet_
+l_OBJC_LABEL_PROTOCOL_$__TtP6Charts16IBarChartDataSet_
+l_OBJC_PROTOCOL_REFERENCE_$__TtP6Charts16IBarChartDataSet_
+_OBJC_IVAR_$_DemoBaseViewController._optionsTableView
+_OBJC_IVAR_$_DemoBaseViewController._optionsButton
+_OBJC_IVAR_$_DemoBaseViewController._options
+/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/DemoBaseViewController.m
+/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/DemoBaseViewController.h
+-[ResultViewController viewDidLoad]
+-[ResultViewController setNavigationBar]
+-[ResultViewController tappedQuit]
+___34-[ResultViewController tappedQuit]_block_invoke
+___34-[ResultViewController tappedQuit]_block_invoke.75
+-[ResultViewController updateChartData]
+-[ResultViewController tappedBtn]
+-[ResultViewController didReceiveMemoryWarning]
+-[ResultViewController setupPieChartView:]
+-[ResultViewController chartValueSelected:entry:highlight:]
+-[ResultViewController chartValueNothingSelected:]
+-[ResultViewController myQuiz]
+-[ResultViewController setMyQuiz:]
+-[ResultViewController arrQuiz]
+-[ResultViewController setArrQuiz:]
+-[ResultViewController isAfterQuiz]
+-[ResultViewController setIsAfterQuiz:]
+-[ResultViewController .cxx_destruct]
+_OBJC_IVAR_$_ResultViewController.pieChartView
+___block_descriptor_tmp.76
+_OBJC_IVAR_$_ResultViewController.section
+_OBJC_IVAR_$_ResultViewController._myQuiz
+_OBJC_IVAR_$_ResultViewController._arrQuiz
+_OBJC_IVAR_$_ResultViewController._isAfterQuiz
+_OBJC_METACLASS_$_ResultViewController
+/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/ResultViewController.m
+/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/ResultViewController.h
+__34-[ResultViewController tappedQuit]_block_invoke.75
+__34-[ResultViewController tappedQuit]_block_invoke
+_OBJC_METACLASS_$_PodsDummy_Pods_shoana
+_OBJC_CLASS_$_PodsDummy_Pods_shoana
+/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Target Support Files/Pods-shoana/Pods-shoana-dummy.m
+/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods

@@ -31,6 +31,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    
     self.view.backgroundColor = [UIColor whiteColor];
     
     //問題モードの設定(順番設定、ランダムモード、解説非表示(テストモード)、弱点克服など）on picker

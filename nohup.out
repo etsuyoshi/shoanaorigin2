@@ -80,3 +80,53 @@ debug1: Offering RSA public key: /Users/endotsuyoshi/.ssh/base_dev
 debug1: Server accepts key: pkalg ssh-rsa blen 279
 debug1: No more authentication methods to try.
 Permission denied (publickey,gssapi-keyex,gssapi-with-mic).
+OpenSSH_7.3p1, LibreSSL 2.4.1
+debug1: Reading configuration data /Users/endotsuyoshi/.ssh/config
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 20: Applying options for *
+debug1: /etc/ssh/ssh_config line 56: Applying options for *
+debug1: Connecting to 54.199.62.61 [54.199.62.61] port 22.
+debug1: fd 3 clearing O_NONBLOCK
+debug1: Connection established.
+debug1: identity file /Users/endotsuyoshi/.ssh/base_dev type 1
+debug1: key_load_public: No such file or directory
+debug1: identity file /Users/endotsuyoshi/.ssh/base_dev-cert type -1
+debug1: Enabling compatibility mode for protocol 2.0
+debug1: Local version string SSH-2.0-OpenSSH_7.3
+debug1: Remote protocol version 2.0, remote software version OpenSSH_5.3
+debug1: match: OpenSSH_5.3 pat OpenSSH_5* compat 0x0c000000
+debug1: Authenticating to 54.199.62.61:22 as 'base-devs'
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug1: kex: algorithm: diffie-hellman-group-exchange-sha256
+debug1: kex: host key algorithm: ssh-rsa
+debug1: kex: server->client cipher: aes128-ctr MAC: umac-64@openssh.com compression: none
+debug1: kex: client->server cipher: aes128-ctr MAC: umac-64@openssh.com compression: none
+debug1: SSH2_MSG_KEX_DH_GEX_REQUEST(2048<3072<8192) sent
+debug1: got SSH2_MSG_KEX_DH_GEX_GROUP
+debug1: SSH2_MSG_KEX_DH_GEX_INIT sent
+debug1: got SSH2_MSG_KEX_DH_GEX_REPLY
+debug1: Server host key: ssh-rsa SHA256:Eww0wOZGlqNP8yUT2M2/OqAwd3cbKtBGtuxWm31v5k8
+debug1: Host '54.199.62.61' is known and matches the RSA host key.
+debug1: Found key in /Users/endotsuyoshi/.ssh/known_hosts:30
+debug1: rekey after 4294967296 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: rekey after 4294967296 blocks
+debug1: SSH2_MSG_NEWKEYS received
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: Authentications that can continue: publickey,gssapi-keyex,gssapi-with-mic
+debug1: Next authentication method: publickey
+debug1: Offering RSA public key: /Users/endotsuyoshi/.ssh/base_dev
+debug1: Server accepts key: pkalg ssh-rsa blen 279
+debug1: Authentication succeeded (publickey).
+Authenticated to 54.199.62.61 ([54.199.62.61]:22).
+debug1: Local connections to localhost:13307 forwarded to remote address baseproglog-bk-rp.ci68ysav1weq.ap-northeast-1.rds.amazonaws.com:3306
+debug1: Local forwarding listening on ::1 port 13307.
+debug1: channel 0: new [port listener]
+debug1: Local forwarding listening on 127.0.0.1 port 13307.
+debug1: channel 1: new [port listener]
+debug1: Requesting no-more-sessions@openssh.com
+debug1: Entering interactive session.
+debug1: pledge: network
+Timeout, server 54.199.62.61 not responding.

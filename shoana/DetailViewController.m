@@ -15,6 +15,7 @@
 @interface DetailViewController (){
     QuizItem *myQuizItem;
     BOOL isDispExplain;
+    BOOL isAnswerable;
     UIView *viewExp;//解説などを表示するビュー
 }
 
@@ -44,43 +45,20 @@
         
         
         self.questionContentLabel.text = myQuizItem.question;
-//        [self.answer1Btn setTitle:((NSString *)myQuizItem.randomChoicesArray[0]) forState:UIControlStateNormal];
-//        [self.answer2Btn setTitle:((NSString *)myQuizItem.randomChoicesArray[1]) forState:UIControlStateNormal];
-//        [self.answer3Btn setTitle:((NSString *)myQuizItem.randomChoicesArray[2]) forState:UIControlStateNormal];
-//        [self.answer4Btn setTitle:((NSString *)myQuizItem.randomChoicesArray[3]) forState:UIControlStateNormal];
         
         
-//        NSMutableParagraphStyle *style = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
-//        [style setAlignment:NSTextAlignmentCenter];
-//        NSAttributedString *str =
-//        [[NSAttributedString alloc]
-//         initWithString:((NSString *)myQuizItem.randomChoicesArray[0])
-//         attributes:@{NSParagraphStyleAttributeName:style}];
-//        [str drawInRect:CGRectMake(0, 0, self.answer1Btn.bounds.size.width, self.answer1Btn.bounds.size.height)];
-//        [self.answer1Btn setAttributedTitle:str forState:UIControlStateNormal];
-        
-        
-        
-        
-        
-//        [self.answer1Btn
-//         setAttributedTitle:[self getAttriutedStringForSelectBtn:
-//                             ((NSString *)myQuizItem.randomChoicesArray[0])]
-//         forState:UIControlStateNormal];
-        
-        
-        
-        
-        //改行
-//        self.answer1Btn.titleLabel.numberOfLines = 0;
-//        self.answer1Btn.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
-        
-        
+        //viewDidLoadで実行するとインスタン変数(self.quizNo)などが初期化されないため、viewWillAppearで実行する→labelが前問が表示されたままになってしまうため削除する必要
+        for(UIView *subview in self.answer1Btn.subviews)[subview removeFromSuperview];
+        for(UIView *subview in self.answer2Btn.subviews)[subview removeFromSuperview];
+        for(UIView *subview in self.answer3Btn.subviews)[subview removeFromSuperview];
+        for(UIView *subview in self.answer4Btn.subviews)[subview removeFromSuperview];
         
         [self.answer1Btn addSubview:[self getAnswerLabel:0]];
         [self.answer2Btn addSubview:[self getAnswerLabel:1]];
         [self.answer3Btn addSubview:[self getAnswerLabel:2]];
         [self.answer4Btn addSubview:[self getAnswerLabel:3]];
+        
+        //[self.view addSubview:[self getAnswerLabel:0]];
         
         
         
@@ -117,16 +95,73 @@
 -(void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
     
-    //auto layout でサイズを変える場合にはここでテキスト内容を修正する
-     
+    
 }
 
 -(void)viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];
     
+    int margin = 10;
+    //auto layout でサイズを変える場合にはここでテキスト内容を修正する
+    for(UIView *view in self.answer1Btn.subviews){
+        if([view isKindOfClass:[UILabel class]]){
+            view.frame = CGRectMake(0, 0, self.answer1Btn.bounds.size.width-margin,
+                                    self.answer1Btn.bounds.size.height-margin);
+            view.center = CGPointMake(self.answer1Btn.bounds.size.width/2,
+                                      self.answer1Btn.bounds.size.height/2);
+            [(UILabel *)view fontSizeToFit];
+            //view.backgroundColor = [UIColor redColor];
+            //break;
+        }
+    }
+    
+    for(UIView *view in self.answer2Btn.subviews){
+        if([view isKindOfClass:[UILabel class]]){
+            NSLog(@"hit");
+            view.frame = CGRectMake(0, 0, self.answer2Btn.bounds.size.width-margin,
+                                    self.answer2Btn.bounds.size.height-margin);
+            view.center = CGPointMake(self.answer2Btn.bounds.size.width/2,
+                                      self.answer2Btn.bounds.size.height/2);
+            [(UILabel *)view fontSizeToFit];
+            //view.backgroundColor = [UIColor yellowColor];
+            //break;
+        }
+    }
+    
+    
+    for(UIView *view in self.answer3Btn.subviews){
+        if([view isKindOfClass:[UILabel class]]){
+            view.frame = CGRectMake(0, 0, self.answer3Btn.bounds.size.width-margin,
+                                    self.answer3Btn.bounds.size.height-margin);
+            view.center = CGPointMake(self.answer3Btn.bounds.size.width/2,
+                                      self.answer3Btn.bounds.size.height/2);
+            [(UILabel *)view fontSizeToFit];
+            //view.backgroundColor = [UIColor greenColor];
+            //break;
+        }
+    }
+    
+    
+    for(UIView *view in self.answer4Btn.subviews){
+        if([view isKindOfClass:[UILabel class]]){
+            view.frame = CGRectMake(0, 0, self.answer4Btn.bounds.size.width-margin,
+                                    self.answer4Btn.bounds.size.height-margin);
+            view.center = CGPointMake(self.answer4Btn.bounds.size.width/2,
+                                      self.answer4Btn.bounds.size.height/2);
+            [(UILabel *)view fontSizeToFit];
+            //view.backgroundColor = [UIColor purpleColor];
+            //break;
+        }
+    }
+    
+    
 }
 
 -(void)tappedAnswer:(UIButton *)sender{
+    if(!isAnswerable){
+        return;
+    }
+    isAnswerable = NO;
     NSLog(@"%s answer = %ld", __func__, sender.tag);
     
     NSLog(@"tapped: %ld, correctAnswer = %d", sender.tag, myQuizItem.rightNo);
@@ -321,10 +356,10 @@
 
 
 - (void)viewDidLoad {
-    NSLog(@"%s", __func__);
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    isAnswerable = TRUE;
     self.view.backgroundColor = [UIColor whiteColor];
     
     //isDispExplain = false;//defaultでは解説
@@ -339,11 +374,24 @@
         isDispExplain = YES;
     }
     
-    [self configureView];
-    //[self.questionContentLabel sizeToFit];
     
     
     [self setNavigationBar];
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    NSLog(@"%s, %d", __func__, self.quizNo);
+    
+    [self configureView];
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    
+    NSLog(@"%s, %d", __func__, self.quizNo);
 }
 
 -(void)setNavigationBar{
@@ -368,13 +416,11 @@
 }
 
 -(void)goNext{
-    //NSDate *object = self.objects[indexPath.row];
-    //DetailViewController *controller = [[DetailViewController alloc] init];
-    //int nextQuizNo = [self getNextQuestionNo];
-    //QuizItem *nextQuizItem = [self getNextQuizItem];
+    NSLog(@"%s, nextquizno = %d", __func__, self.quizNo);
     int nextQuizNo = [self getNextQuizNo];
+    NSLog(@"%s, nextquizno = %d", __func__, nextQuizNo);
     //if(nextQuizItem){
-    if(nextQuizNo > 0){
+    if(nextQuizNo >= 0){
         DetailViewController *controller =
         [[self storyboard] instantiateViewControllerWithIdentifier:@"detail"];
         [controller setQuiz:(Quiz *)(self.quiz)];
@@ -383,6 +429,7 @@
         controller.quizNo = nextQuizNo;
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
         controller.navigationItem.leftItemsSupplementBackButton = YES;
+        NSLog(@"next quiz no = %d", controller.quizNo);
         [self.navigationController pushViewController:controller animated:YES];
     }else{
         //成績表示
@@ -403,6 +450,7 @@
         int nextNo = [self.quiz nextQuiz:(int)self.quizNo];
         
         if(nextNo < self.quiz.quizItemsArray.count){
+            NSLog(@"nextNo = %d", nextNo);
             return nextNo;
         }else{
             return -1;
@@ -466,21 +514,23 @@
 //    
 //}
 
+//回答ボタンに載せるラベルを生成する
 -(UILabel *)getAnswerLabel:(int)questionNo{
-    UILabel *lbl = [[UILabel alloc]init];
+    
+    int margin = 32;
+    UILabel *lbl = [[UILabel alloc]initWithFrame:CGRectZero];
     lbl.text = ((NSString *)myQuizItem.randomChoicesArray[questionNo]);
-    lbl.frame = CGRectMake(0,0,self.answer1Btn.bounds.size.width-20,
-                           self.answer1Btn.bounds.size.height-20);
-    lbl.center = CGPointMake(self.answer1Btn.bounds.size.width/2,
-                             self.answer1Btn.bounds.size.height/2);
+    lbl.frame = CGRectMake(0,0,self.view.bounds.size.width-margin,
+                           self.view.bounds.size.height-margin);
     lbl.textColor= [UIColor blackColor];
     lbl.backgroundColor = [UIColor clearColor];
     lbl.minimumScaleFactor = 0.3;
     lbl.adjustsFontSizeToFitWidth = true;
     lbl.numberOfLines = 0;
-    [lbl fontSizeToFit];
-    
-    
+    lbl.frame = CGRectMake(0,0,self.view.bounds.size.width-margin,
+                           self.view.bounds.size.height-margin);
+    lbl.center = CGPointMake((self.view.bounds.size.width-margin)/2,
+                             (self.view.bounds.size.height-margin)/2);
     return lbl;
 }
 

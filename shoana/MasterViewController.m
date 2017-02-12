@@ -150,7 +150,10 @@ QuizSector *quizSector;
     self.clearsSelectionOnViewWillAppear = self.splitViewController.isCollapsed;
     [super viewWillAppear:animated];
     
-    
+    //ステータスが変わったかどうかのフラグ
+    if(didUpdate){//成績表を更新した場合に限って更新する
+        [self updateInfo];
+    }
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -158,10 +161,7 @@ QuizSector *quizSector;
     NSLog(@"%s", __func__);
     
     
-    //ステータスが変わったかどうかのフラグ
-    if(didUpdate){//成績表を更新した場合に限って更新する
-        [self updateInfo];
-    }
+    
     
 }
 
@@ -342,6 +342,7 @@ QuizSector *quizSector;
     }else{
         controller.quizNo = (int)arc4random_uniform((int)tmpQuiz.quizItemsArray.count);
     }
+    NSLog(@"quizNo @master = %d", controller.quizNo);
     controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
     controller.navigationItem.leftItemsSupplementBackButton = YES;
     [self.navigationController pushViewController:controller animated:YES];
