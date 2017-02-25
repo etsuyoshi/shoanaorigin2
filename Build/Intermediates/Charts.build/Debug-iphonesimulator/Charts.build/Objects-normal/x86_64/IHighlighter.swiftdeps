@@ -8,8 +8,8 @@ provides-member:
 provides-dynamic-lookup:
 - "getHighlight"
 depends-top-level:
-- "CGFloat"
 - "Highlight"
+- "CGFloat"
 - "NSObjectProtocol"
 - "IHighlighter"
 depends-member:

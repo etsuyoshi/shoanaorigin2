@@ -6,28 +6,28 @@ provides-nominal:
 provides-member:
 - ["C6Charts16RadarHighlighter", ""]
 provides-dynamic-lookup:
-- "getHighlights"
 - "closestHighlight"
+- "getHighlights"
 depends-top-level:
-- !private "..<"
-- !private "+"
-- !private "Double"
-- !private "ChartUtils"
-- "Int"
-- "CGFloat"
-- "RadarHighlighter"
-- "CastingPrecedence"
-- !private "-"
-- "AssignmentPrecedence"
-- "Highlight"
 - !private "DBL_MAX"
+- !private "ChartUtils"
 - "PieRadarHighlighter"
-- !private "<"
-- !private "RadarChartView"
-- !private "abs"
 - !private "??"
+- !private "..<"
+- !private "Double"
+- !private "+"
+- "Int"
+- !private "-"
+- !private "abs"
 - !private "/"
+- !private "RadarChartView"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
+- "CGFloat"
 - !private "*"
+- "RadarHighlighter"
+- "Highlight"
+- !private "<"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "RawValue"]
 - !private ["Ps16AbsoluteValuable", "Stride"]

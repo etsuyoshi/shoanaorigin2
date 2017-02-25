@@ -6,10 +6,10 @@ provides-nominal:
 provides-member:
 - ["C6Charts21LineRadarChartDataSet", ""]
 provides-dynamic-lookup:
+- "fill"
 - "isDrawFilledEnabled"
 - "lineWidth"
 - "drawFilledEnabled"
-- "fill"
 - "copyWithZone"
 - "fillAlpha"
 - "fillColor"
@@ -17,18 +17,18 @@ depends-top-level:
 - "AssignmentPrecedence"
 - !private "<"
 - "CastingPrecedence"
+- "/"
 - "ILineRadarChartDataSet"
+- "LineRadarChartDataSet"
 - "NSZone"
-- "AnyObject"
 - "CGFloat"
-- "Fill"
 - !private ">"
 - "BooleanLiteralType"
 - "LineScatterCandleRadarChartDataSet"
+- "Fill"
 - "NSUIColor"
-- "/"
 - "Bool"
-- "LineRadarChartDataSet"
+- "AnyObject"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]

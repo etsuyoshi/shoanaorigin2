@@ -6,18 +6,18 @@ provides-nominal:
 provides-member:
 - ["C6Charts20BubbleChartDataEntry", ""]
 provides-dynamic-lookup:
-- "size"
 - "copyWithZone"
+- "size"
 depends-top-level:
 - "AssignmentPrecedence"
-- "NSZone"
+- "ChartDataEntry"
 - "CastingPrecedence"
 - "AnyObject"
 - "CGFloat"
 - !private "StringLiteralType"
-- "ChartDataEntry"
-- "BubbleChartDataEntry"
+- "NSZone"
 - "Double"
+- "BubbleChartDataEntry"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]

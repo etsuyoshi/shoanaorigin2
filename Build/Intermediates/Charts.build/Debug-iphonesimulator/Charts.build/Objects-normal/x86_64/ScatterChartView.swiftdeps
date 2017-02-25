@@ -9,13 +9,13 @@ provides-dynamic-lookup:
 - "scatterData"
 - "initialize"
 depends-top-level:
-- "AssignmentPrecedence"
-- "CastingPrecedence"
-- "ScatterChartData"
 - "BarLineChartViewBase"
-- "ScatterChartView"
+- "ScatterChartData"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
 - "ScatterChartDataProvider"
 - !private "ScatterChartRenderer"
+- "ScatterChartView"
 depends-member:
 - !private ["P6Charts16AnimatorDelegate", "ScatterChartRenderer"]
 - !private ["P6Charts16AnimatorDelegate", "_animator"]

@@ -10,17 +10,17 @@ provides-dynamic-lookup:
 - "stackLabels"
 - "barBorderWidth"
 - "stackSize"
-- "barBorderColor"
 - "barShadowColor"
+- "barBorderColor"
 - "highlightAlpha"
 depends-top-level:
 - "IBarChartDataSet"
 - "Bool"
 - "Int"
 - "String"
+- "NSUIColor"
 - "CGFloat"
 - "IBarLineScatterCandleBubbleChartDataSet"
-- "NSUIColor"
 depends-member:
 - ["P6Charts16IBarChartDataSet", "Bool"]
 - ["P6Charts16IBarChartDataSet", "CGFloat"]

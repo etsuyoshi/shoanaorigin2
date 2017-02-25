@@ -9,9 +9,9 @@ provides-dynamic-lookup:
 - "viewPortHandler"
 depends-top-level:
 - "AssignmentPrecedence"
-- "NSObject"
 - "ViewPortHandler"
 - "Renderer"
+- "NSObject"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "viewPortHandler"]

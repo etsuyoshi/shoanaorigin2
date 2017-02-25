@@ -8,12 +8,12 @@ provides-member:
 provides-dynamic-lookup:
 - "doJob"
 depends-top-level:
-- "ViewPortHandler"
-- "Double"
-- "MoveViewJob"
 - "ViewPortJob"
-- !private "CGFloat"
+- "MoveViewJob"
 - !private "CGPoint"
+- "Double"
+- "ViewPortHandler"
+- !private "CGFloat"
 - "Transformer"
 - "ChartViewBase"
 depends-member:

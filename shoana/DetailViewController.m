@@ -313,7 +313,8 @@
       actionWithTitle:@"キャンセル"
       style:UIAlertActionStyleCancel
       handler:^(UIAlertAction *alert){
-          //何もしない
+          //終了ボタンを押した瞬間に回答できないようになっているので、キャンセルしたら再度回答できるようにする
+          isAnswerable = YES;
       }]];
     
     [self presentViewController:alertController animated:YES completion:nil];
@@ -361,6 +362,8 @@
     
     isAnswerable = TRUE;
     self.view.backgroundColor = [UIColor whiteColor];
+    self.questionContentLabel.editable=NO;
+    
     
     //isDispExplain = false;//defaultでは解説
     NSUserDefaults *userdef = [NSUserDefaults standardUserDefaults];

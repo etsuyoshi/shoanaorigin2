@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
 options: "ef6a2f8d9dda92b13b11eb5bde9d2947"
-build_time: [540051702, 268486000]
+build_time: [540773994, 658168000]
 inputs:
   "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Source/Charts/Jobs/AnimatedMoveViewJob.swift": [9223372036854775807, 0]
   "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Source/Charts/Jobs/AnimatedViewPortJob.swift": [9223372036854775807, 0]

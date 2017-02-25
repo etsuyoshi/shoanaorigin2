@@ -5,7 +5,7 @@
 		<key>CFBundleDevelopmentRegion</key>
 		<string>English</string>
 		<key>CFBundleIdentifier</key>
-		<string>com.apple.xcode.dsym.com.dcg.Charts</string>
+		<string>com.apple.xcode.dsym.org.cocoapods.Charts</string>
 		<key>CFBundleInfoDictionaryVersion</key>
 		<string>6.0</string>
 		<key>CFBundlePackageType</key>
@@ -15,6 +15,6 @@
 		<key>CFBundleShortVersionString</key>
 		<string>3.0.1</string>
 		<key>CFBundleVersion</key>
-		<string>23</string>
+		<string>1</string>
 	</dict>
 </plist>

@@ -8,8 +8,8 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "CandleChartData"
-- "IChartDataSet"
 - "BarLineScatterCandleBubbleChartData"
+- "IChartDataSet"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", ""]

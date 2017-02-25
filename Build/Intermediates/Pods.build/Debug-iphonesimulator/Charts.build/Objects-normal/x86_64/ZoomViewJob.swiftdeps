@@ -6,28 +6,28 @@ provides-nominal:
 provides-member:
 - ["C6Charts11ZoomViewJob", ""]
 provides-dynamic-lookup:
+- "axisDependency"
 - "scaleX"
 - "doJob"
-- "axisDependency"
 - "scaleY"
 depends-top-level:
+- "ZoomViewJob"
+- !private "StringLiteralType"
+- !private "/"
+- "Double"
+- !private "BooleanLiteralType"
+- "ViewPortHandler"
+- "ChartViewBase"
+- "Transformer"
+- "ViewPortJob"
+- !private "BarLineChartViewBase"
+- "CGFloat"
+- "CastingPrecedence"
+- !private "+"
+- "YAxis"
 - "AssignmentPrecedence"
 - !private "CGPoint"
-- "CastingPrecedence"
-- "Transformer"
-- !private "+"
-- "ViewPortJob"
 - !private "-"
-- "ChartViewBase"
-- !private "/"
-- "CGFloat"
-- !private "BooleanLiteralType"
-- "ZoomViewJob"
-- "YAxis"
-- "ViewPortHandler"
-- !private "StringLiteralType"
-- "Double"
-- !private "BarLineChartViewBase"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["P6Charts16AnimatorDelegate", "calculateOffsets"]

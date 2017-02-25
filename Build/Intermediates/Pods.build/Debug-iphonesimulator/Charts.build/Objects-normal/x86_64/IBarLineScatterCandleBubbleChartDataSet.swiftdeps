@@ -7,12 +7,12 @@ provides-member:
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", ""]
 provides-dynamic-lookup:
 - "highlightColor"
+- "highlightLineDashPhase"
 - "highlightLineWidth"
 - "highlightLineDashLengths"
-- "highlightLineDashPhase"
 depends-top-level:
-- "NSUIColor"
 - "IChartDataSet"
+- "NSUIColor"
 - "IBarLineScatterCandleBubbleChartDataSet"
 - "CGFloat"
 depends-member:

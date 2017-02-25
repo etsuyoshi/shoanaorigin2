@@ -8,21 +8,21 @@ provides-member:
 provides-dynamic-lookup:
 - "isLarger"
 - "to"
-- "from"
 - "contains"
 - "isSmaller"
+- "from"
 depends-top-level:
 - "AssignmentPrecedence"
 - "Double"
-- "Bool"
-- !private "&&"
-- !private "BooleanLiteralType"
 - "NSObject"
-- "Range"
-- !private ">"
+- !private "BooleanLiteralType"
+- "Bool"
 - !private "<="
-- !private "StringLiteralType"
 - !private "<"
+- !private "StringLiteralType"
+- "Range"
+- !private "&&"
+- !private ">"
 depends-member:
 - ["Ps9AnyObject", "contains"]
 - ["Ps9AnyObject", "from"]

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A11A2E71E611120001C4740 /* SiwakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A11A2E61E611120001C4740 /* SiwakeViewController.m */; };
 		2A3E65F41E350DCB001C17DE /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E65F31E350DCB001C17DE /* ConfigViewController.m */; };
 		2A66EA181E1A5968009B5637 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A66EA171E1A5968009B5637 /* main.m */; };
 		2A66EA1B1E1A5968009B5637 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A66EA1A1E1A5968009B5637 /* AppDelegate.m */; };
@@ -116,6 +117,8 @@
 /* Begin PBXFileReference section */
 		03A75A86DD0B045CEDF0904B /* Pods_shoana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_shoana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B6B951D484BA36EF74AE465 /* Pods-shoana.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shoana.debug.xcconfig"; path = "Pods/Target Support Files/Pods-shoana/Pods-shoana.debug.xcconfig"; sourceTree = "<group>"; };
+		2A11A2E51E611120001C4740 /* SiwakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiwakeViewController.h; sourceTree = "<group>"; };
+		2A11A2E61E611120001C4740 /* SiwakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiwakeViewController.m; sourceTree = "<group>"; };
 		2A3E65F21E350DCB001C17DE /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigViewController.h; sourceTree = "<group>"; };
 		2A3E65F31E350DCB001C17DE /* ConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigViewController.m; sourceTree = "<group>"; };
 		2A66EA131E1A5968009B5637 /* shoana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shoana.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -242,6 +245,8 @@
 				2A66EA1A1E1A5968009B5637 /* AppDelegate.m */,
 				2AC85D601E27D02600524962 /* ResultViewController.h */,
 				2AC85D611E27D02600524962 /* ResultViewController.m */,
+				2A11A2E51E611120001C4740 /* SiwakeViewController.h */,
+				2A11A2E61E611120001C4740 /* SiwakeViewController.m */,
 				2AA4DA561E2E76A400A8D6DD /* DemoBaseViewController.h */,
 				2AA4DA571E2E76A400A8D6DD /* DemoBaseViewController.m */,
 				2AA4DA5B1E2E774300A8D6DD /* PieChartViewController.h */,
@@ -561,6 +566,7 @@
 				2AFE2C0A1E3087BB00D30F37 /* ResultModel.m in Sources */,
 				2AA4DA5D1E2E774300A8D6DD /* PieChartViewController.m in Sources */,
 				2AFB72611E23444B00A3E999 /* QuizSector.m in Sources */,
+				2A11A2E71E611120001C4740 /* SiwakeViewController.m in Sources */,
 				2A66EA571E1A5A7A009B5637 /* QuizItem.m in Sources */,
 				2A3E65F41E350DCB001C17DE /* ConfigViewController.m in Sources */,
 				2A66EA1B1E1A5968009B5637 /* AppDelegate.m in Sources */,

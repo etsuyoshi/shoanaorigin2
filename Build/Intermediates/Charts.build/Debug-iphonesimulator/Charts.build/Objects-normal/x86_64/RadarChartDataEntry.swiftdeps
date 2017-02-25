@@ -6,17 +6,17 @@ provides-nominal:
 provides-member:
 - ["C6Charts19RadarChartDataEntry", ""]
 provides-dynamic-lookup:
-- "value"
 - "copyWithZone"
+- "value"
 depends-top-level:
-- "ChartDataEntry"
-- "AssignmentPrecedence"
-- "RadarChartDataEntry"
-- "CastingPrecedence"
-- "AnyObject"
-- "Double"
 - !private "StringLiteralType"
+- "RadarChartDataEntry"
+- "ChartDataEntry"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
 - "NSZone"
+- "Double"
+- "AnyObject"
 depends-member:
 - ["Ps9AnyObject", "copyWithZone"]
 - ["Ps9AnyObject", "deinit"]

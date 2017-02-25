@@ -8,15 +8,15 @@ provides-member:
 provides-dynamic-lookup:
 - "offset"
 - "offsetForDrawing"
-- "draw"
 - "refreshContent"
+- "draw"
 depends-top-level:
+- "IMarker"
+- "NSObjectProtocol"
 - "CGContext"
 - "ChartDataEntry"
-- "NSObjectProtocol"
-- "CGPoint"
-- "IMarker"
 - "Highlight"
+- "CGPoint"
 depends-member:
 - ["P6Charts7IMarker", "CGContext"]
 - ["P6Charts7IMarker", "CGPoint"]

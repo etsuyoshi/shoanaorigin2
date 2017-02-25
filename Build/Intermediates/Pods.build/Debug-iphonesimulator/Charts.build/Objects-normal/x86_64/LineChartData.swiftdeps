@@ -7,8 +7,8 @@ provides-member:
 - ["C6Charts13LineChartData", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "ChartData"
 - "LineChartData"
+- "ChartData"
 - "IChartDataSet"
 depends-member:
 - ["Ps9AnyObject", "init"]

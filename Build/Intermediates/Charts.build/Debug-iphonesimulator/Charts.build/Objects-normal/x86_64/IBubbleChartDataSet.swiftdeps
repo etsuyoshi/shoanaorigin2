@@ -10,10 +10,10 @@ provides-dynamic-lookup:
 - "isNormalizeSizeEnabled"
 - "highlightCircleWidth"
 depends-top-level:
-- "IBarLineScatterCandleBubbleChartDataSet"
-- "IBubbleChartDataSet"
-- "CGFloat"
 - "Bool"
+- "CGFloat"
+- "IBubbleChartDataSet"
+- "IBarLineScatterCandleBubbleChartDataSet"
 depends-member:
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "Bool"]
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "CGFloat"]

@@ -129,12 +129,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS_NAMED("ViewPortJob")
 @interface ChartViewPortJob : NSObject
-@property (nonatomic) CGPoint point;
-@property (nonatomic, weak) ChartViewPortHandler * _Nullable viewPortHandler;
-@property (nonatomic) double xValue;
-@property (nonatomic) double yValue;
-@property (nonatomic, weak) ChartTransformer * _Nullable transformer;
-@property (nonatomic, weak) ChartViewBase * _Nullable view;
 - (nonnull instancetype)initWithViewPortHandler:(ChartViewPortHandler * _Nonnull)viewPortHandler xValue:(double)xValue yValue:(double)yValue transformer:(ChartTransformer * _Nonnull)transformer view:(ChartViewBase * _Nonnull)view OBJC_DESIGNATED_INITIALIZER;
 - (void)doJob;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -143,15 +137,10 @@ SWIFT_CLASS_NAMED("ViewPortJob")
 
 SWIFT_CLASS("_TtC6Charts19AnimatedViewPortJob")
 @interface AnimatedViewPortJob : ChartViewPortJob
-@property (nonatomic) CGFloat phase;
-@property (nonatomic) CGFloat xOrigin;
-@property (nonatomic) CGFloat yOrigin;
 - (nonnull instancetype)initWithViewPortHandler:(ChartViewPortHandler * _Nonnull)viewPortHandler xValue:(double)xValue yValue:(double)yValue transformer:(ChartTransformer * _Nonnull)transformer view:(ChartViewBase * _Nonnull)view xOrigin:(CGFloat)xOrigin yOrigin:(CGFloat)yOrigin duration:(NSTimeInterval)duration easing:(double (^ _Nullable)(NSTimeInterval, NSTimeInterval))easing OBJC_DESIGNATED_INITIALIZER;
 - (void)doJob;
 - (void)start;
 - (void)stopWithFinish:(BOOL)finish;
-- (void)animationUpdate;
-- (void)animationEnd;
 - (nonnull instancetype)initWithViewPortHandler:(ChartViewPortHandler * _Nonnull)viewPortHandler xValue:(double)xValue yValue:(double)yValue transformer:(ChartTransformer * _Nonnull)transformer view:(ChartViewBase * _Nonnull)view SWIFT_UNAVAILABLE;
 @end
 
@@ -159,7 +148,6 @@ SWIFT_CLASS("_TtC6Charts19AnimatedViewPortJob")
 SWIFT_CLASS("_TtC6Charts19AnimatedMoveViewJob")
 @interface AnimatedMoveViewJob : AnimatedViewPortJob
 - (nonnull instancetype)initWithViewPortHandler:(ChartViewPortHandler * _Nonnull)viewPortHandler xValue:(double)xValue yValue:(double)yValue transformer:(ChartTransformer * _Nonnull)transformer view:(ChartViewBase * _Nonnull)view xOrigin:(CGFloat)xOrigin yOrigin:(CGFloat)yOrigin duration:(NSTimeInterval)duration easing:(double (^ _Nullable)(NSTimeInterval, NSTimeInterval))easing OBJC_DESIGNATED_INITIALIZER;
-- (void)animationUpdate;
 @end
 
 
@@ -167,17 +155,7 @@ SWIFT_CLASS("_TtC6Charts19AnimatedMoveViewJob")
 
 SWIFT_CLASS("_TtC6Charts19AnimatedZoomViewJob")
 @interface AnimatedZoomViewJob : AnimatedViewPortJob
-@property (nonatomic, strong) ChartYAxis * _Nullable yAxis;
-@property (nonatomic) double xAxisRange;
-@property (nonatomic) CGFloat scaleX;
-@property (nonatomic) CGFloat scaleY;
-@property (nonatomic) CGFloat zoomOriginX;
-@property (nonatomic) CGFloat zoomOriginY;
-@property (nonatomic) CGFloat zoomCenterX;
-@property (nonatomic) CGFloat zoomCenterY;
 - (nonnull instancetype)initWithViewPortHandler:(ChartViewPortHandler * _Nonnull)viewPortHandler transformer:(ChartTransformer * _Nonnull)transformer view:(ChartViewBase * _Nonnull)view yAxis:(ChartYAxis * _Nonnull)yAxis xAxisRange:(double)xAxisRange scaleX:(CGFloat)scaleX scaleY:(CGFloat)scaleY xOrigin:(CGFloat)xOrigin yOrigin:(CGFloat)yOrigin zoomCenterX:(CGFloat)zoomCenterX zoomCenterY:(CGFloat)zoomCenterY zoomOriginX:(CGFloat)zoomOriginX zoomOriginY:(CGFloat)zoomOriginY duration:(NSTimeInterval)duration easing:(double (^ _Nullable)(NSTimeInterval, NSTimeInterval))easing OBJC_DESIGNATED_INITIALIZER;
-- (void)animationUpdate;
-- (void)animationEnd;
 - (nonnull instancetype)initWithViewPortHandler:(ChartViewPortHandler * _Nonnull)viewPortHandler xValue:(double)xValue yValue:(double)yValue transformer:(ChartTransformer * _Nonnull)transformer view:(ChartViewBase * _Nonnull)view xOrigin:(CGFloat)xOrigin yOrigin:(CGFloat)yOrigin duration:(NSTimeInterval)duration easing:(double (^ _Nullable)(NSTimeInterval, NSTimeInterval))easing SWIFT_UNAVAILABLE;
 @end
 
@@ -511,26 +489,6 @@ SWIFT_CLASS_NAMED("AxisBase")
 */
 @property (nonatomic) double spaceMax;
 /**
-  Flag indicating that the axis-min value has been customized
-*/
-@property (nonatomic) BOOL _customAxisMin;
-/**
-  Flag indicating that the axis-max value has been customized
-*/
-@property (nonatomic) BOOL _customAxisMax;
-/**
-  Do not touch this directly, instead, use axisMinimum.
-  This is automatically calculated to represent the real min value,
-  and is used when calculating the effective minimum.
-*/
-@property (nonatomic) double _axisMinimum;
-/**
-  Do not touch this directly, instead, use axisMaximum.
-  This is automatically calculated to represent the real max value,
-  and is used when calculating the effective maximum.
-*/
-@property (nonatomic) double _axisMaximum;
-/**
   the total range of values this axis covers
 */
 @property (nonatomic) double axisRange;
@@ -680,19 +638,9 @@ enum AxisDependency : NSInteger;
 
 SWIFT_CLASS("_TtC6Charts9ChartData")
 @interface ChartData : NSObject
-@property (nonatomic) double _yMax;
-@property (nonatomic) double _yMin;
-@property (nonatomic) double _xMax;
-@property (nonatomic) double _xMin;
-@property (nonatomic) double _leftAxisMax;
-@property (nonatomic) double _leftAxisMin;
-@property (nonatomic) double _rightAxisMax;
-@property (nonatomic) double _rightAxisMin;
-@property (nonatomic, copy) NSArray<id <IChartDataSet>> * _Nonnull _dataSets;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithDataSets:(NSArray<id <IChartDataSet>> * _Nullable)dataSets OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithDataSet:(id <IChartDataSet> _Nullable)dataSet;
-- (void)initializeWithDataSets:(NSArray<id <IChartDataSet>> * _Nonnull)dataSets SWIFT_METHOD_FAMILY(none);
 /**
   Call this method to let the ChartData know that the underlying data has changed.
   Calling this performs all necessary recalculations needed when the contained data has changed.
@@ -749,26 +697,6 @@ SWIFT_CLASS("_TtC6Charts9ChartData")
   All DataSet objects this ChartData object holds.
 */
 @property (nonatomic, copy) NSArray<id <IChartDataSet>> * _Nonnull dataSets;
-/**
-  Retrieve the index of a ChartDataSet with a specific label from the ChartData. Search can be case sensitive or not.
-  <em>IMPORTANT: This method does calculations at runtime, do not over-use in performance critical situations.</em>
-  \param dataSets the DataSet array to search
-
-  \param type 
-
-  \param ignorecase if true, the search is not case-sensitive
-
-
-  returns:
-  The index of the DataSet Object with the given label. Sensitive or not.
-*/
-- (NSInteger)getDataSetIndexByLabel:(NSString * _Nonnull)label ignorecase:(BOOL)ignorecase;
-/**
-
-  returns:
-  The labels of all DataSets as a string array.
-*/
-- (NSArray<NSString *> * _Nonnull)dataSetLabels;
 /**
   Get the Entry for a corresponding highlight object
   \param highlight 
@@ -1661,10 +1589,6 @@ SWIFT_CLASS("_TtC6Charts16ChartBaseDataSet")
 /**
   Custom formatter that is used instead of the auto-formatter if set
 */
-@property (nonatomic, strong) id <IChartValueFormatter> _Nullable _valueFormatter;
-/**
-  Custom formatter that is used instead of the auto-formatter if set
-*/
 @property (nonatomic, strong) id <IChartValueFormatter> _Nullable valueFormatter;
 @property (nonatomic, readonly) BOOL needsFormatter;
 /**
@@ -1758,26 +1682,6 @@ SWIFT_CLASS("_TtC6Charts12ChartDataSet")
 - (nonnull instancetype)initWithValues:(NSArray<ChartDataEntry *> * _Nullable)values label:(NSString * _Nullable)label OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithValues:(NSArray<ChartDataEntry *> * _Nullable)values;
 /**
-  the entries that this dataset represents / holds together
-*/
-@property (nonatomic, copy) NSArray<ChartDataEntry *> * _Null_unspecified _values;
-/**
-  maximum y-value in the value array
-*/
-@property (nonatomic) double _yMax;
-/**
-  minimum y-value in the value array
-*/
-@property (nonatomic) double _yMin;
-/**
-  maximum x-value in the value array
-*/
-@property (nonatomic) double _xMax;
-/**
-  minimum x-value in the value array
-*/
-@property (nonatomic) double _xMin;
-/**
   <ul>
     <li>
     </li>
@@ -1799,12 +1703,6 @@ SWIFT_CLASS("_TtC6Charts12ChartDataSet")
 - (void)calcMinMaxYFromX:(double)fromX toX:(double)toX;
 - (void)calcMinMaxXWithEntry:(ChartDataEntry * _Nonnull)e;
 - (void)calcMinMaxYWithEntry:(ChartDataEntry * _Nonnull)e;
-/**
-  Updates the min and max x and y value of this DataSet based on the given Entry.
-  \param e 
-
-*/
-- (void)calcMinMaxWithEntry:(ChartDataEntry * _Nonnull)e;
 /**
 
   returns:
@@ -2066,20 +1964,6 @@ SWIFT_CLASS_NAMED("DataRenderer")
 SWIFT_CLASS_NAMED("BarLineScatterCandleBubbleRenderer")
 @interface BarLineScatterCandleBubbleChartRenderer : ChartDataRendererBase
 - (nonnull instancetype)initWithAnimator:(ChartAnimator * _Nullable)animator viewPortHandler:(ChartViewPortHandler * _Nullable)viewPortHandler OBJC_DESIGNATED_INITIALIZER;
-/**
-  Checks if the provided entry object is in bounds for drawing considering the current animation phase.
-*/
-- (BOOL)isInBoundsXWithEntry:(ChartDataEntry * _Nonnull)e dataSet:(id <IBarLineScatterCandleBubbleChartDataSet> _Nonnull)dataSet;
-/**
-
-  returns:
-  \code
-  true
-  \endcode if the DataSet values should be drawn, \code
-  false
-  \endcode if not.
-*/
-- (BOOL)shouldDrawValuesForDataSet:(id <IChartDataSet> _Nonnull)set;
 @end
 
 
@@ -2097,16 +1981,11 @@ SWIFT_CLASS("_TtC6Charts16BarChartRenderer")
 - (void)drawValueWithContext:(CGContextRef _Nonnull)context value:(NSString * _Nonnull)value xPos:(CGFloat)xPos yPos:(CGFloat)yPos font:(UIFont * _Nonnull)font align:(NSTextAlignment)align color:(UIColor * _Nonnull)color;
 - (void)drawExtrasWithContext:(CGContextRef _Nonnull)context;
 - (void)drawHighlightedWithContext:(CGContextRef _Nonnull)context indices:(NSArray<ChartHighlight *> * _Nonnull)indices;
-/**
-  Sets the drawing position of the highlight object based on the riven bar-rect.
-*/
-- (void)setHighlightDrawPosWithHighlight:(ChartHighlight * _Nonnull)high barRect:(CGRect)barRect;
 - (nonnull instancetype)initWithAnimator:(ChartAnimator * _Nullable)animator viewPortHandler:(ChartViewPortHandler * _Nullable)viewPortHandler SWIFT_UNAVAILABLE;
 @end
 
 @class UITouch;
 @class UIEvent;
-@class CALayer;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC6Charts8NSUIView")
@@ -2119,22 +1998,21 @@ SWIFT_CLASS("_TtC6Charts8NSUIView")
 - (void)nsuiTouchesMoved:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (void)nsuiTouchesEnded:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (void)nsuiTouchesCancelled:(NSSet<UITouch *> * _Nullable)touches withEvent:(UIEvent * _Nullable)event;
-@property (nonatomic, readonly, strong) CALayer * _Nullable nsuiLayer;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class ChartXAxis;
 @class ChartDescription;
-@class ChartLegend;
-@class ChartLegendRenderer;
 @protocol IChartHighlighter;
 @protocol IChartMarker;
+@class ChartLegend;
+@class ChartLegendRenderer;
 @class UIImage;
 @protocol ChartViewDelegate;
 
 SWIFT_CLASS("_TtC6Charts13ChartViewBase")
-@interface ChartViewBase : NSUIView <ChartDataProvider, ChartAnimatorDelegate>
+@interface ChartViewBase : NSUIView <ChartAnimatorDelegate, ChartDataProvider>
 /**
 
   returns:
@@ -2144,25 +2022,9 @@ SWIFT_CLASS("_TtC6Charts13ChartViewBase")
 */
 @property (nonatomic, readonly, strong) ChartXAxis * _Nonnull xAxis;
 /**
-  The default IValueFormatter that has been determined by the chart considering the provided minimum and maximum values.
-*/
-@property (nonatomic, strong) id <IChartValueFormatter> _Nullable _defaultValueFormatter;
-/**
-  object that holds all data that was originally set for the chart, before it was modified or any filtering algorithms had been applied
-*/
-@property (nonatomic, strong) ChartData * _Nullable _data;
-/**
   If set to true, chart continues to scroll after touch up
 */
 @property (nonatomic) BOOL dragDecelerationEnabled;
-/**
-  if true, units are drawn next to the values in the chart
-*/
-@property (nonatomic) BOOL _drawUnitInChart;
-/**
-  The object representing the labels on the x-axis
-*/
-@property (nonatomic, strong) ChartXAxis * _Null_unspecified _xAxis;
 /**
   The \code
   Description
@@ -2195,10 +2057,6 @@ SWIFT_CLASS("_TtC6Charts13ChartViewBase")
 */
 @property (nonatomic) NSTextAlignment descriptionTextAlign;
 /**
-  The legend object containing all data associated with the legend
-*/
-@property (nonatomic, strong) ChartLegend * _Null_unspecified _legend;
-/**
   delegate to receive chart events
 */
 @property (nonatomic, weak) id <ChartViewDelegate> _Nullable delegate;
@@ -2214,24 +2072,11 @@ SWIFT_CLASS("_TtC6Charts13ChartViewBase")
   color of the no data text
 */
 @property (nonatomic, strong) UIColor * _Nonnull noDataTextColor;
-@property (nonatomic, strong) ChartLegendRenderer * _Null_unspecified _legendRenderer;
 /**
   object responsible for rendering the data
 */
 @property (nonatomic, strong) ChartDataRendererBase * _Nullable renderer;
 @property (nonatomic, strong) id <IChartHighlighter> _Nullable highlighter;
-/**
-  object that manages the bounds and drawing constraints of the chart
-*/
-@property (nonatomic, strong) ChartViewPortHandler * _Null_unspecified _viewPortHandler;
-/**
-  object responsible for animations
-*/
-@property (nonatomic, strong) ChartAnimator * _Null_unspecified _animator;
-/**
-  array of Highlight objects that reference the highlighted slices in the chart
-*/
-@property (nonatomic, copy) NSArray<ChartHighlight *> * _Nonnull _indicesToHighlight;
 /**
   \code
   true
@@ -2275,7 +2120,6 @@ SWIFT_CLASS("_TtC6Charts13ChartViewBase")
 - (void)setExtraOffsetsWithLeft:(CGFloat)left top:(CGFloat)top right:(CGFloat)right bottom:(CGFloat)bottom;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (void)initialize SWIFT_METHOD_FAMILY(none);
 /**
   The data for the chart
 */
@@ -2301,23 +2145,7 @@ SWIFT_CLASS("_TtC6Charts13ChartViewBase")
   It is crucial that this method is called everytime data is changed dynamically. Not calling this method can lead to crashes or unexpected behaviour.
 */
 - (void)notifyDataSetChanged;
-/**
-  Calculates the offsets of the chart to the border depending on the position of an eventual legend or depending on the length of the y-axis and x-axis labels and their position
-*/
-- (void)calculateOffsets;
-/**
-  calcualtes the y-min and y-max value and the y-delta and x-delta value
-*/
-- (void)calcMinMax;
-/**
-  calculates the required number of digits for the values that might be drawn in the chart (if enabled), and creates the default value formatter
-*/
-- (void)setupDefaultFormatterWithMin:(double)min max:(double)max;
 - (void)drawRect:(CGRect)rect;
-/**
-  Draws the description text in the bottom right corner of the chart (per default)
-*/
-- (void)drawDescriptionWithContext:(CGContextRef _Nonnull)context;
 /**
 
   returns:
@@ -2431,10 +2259,6 @@ SWIFT_CLASS("_TtC6Charts13ChartViewBase")
   The last value that was highlighted via touch.
 */
 @property (nonatomic, strong) ChartHighlight * _Nullable lastHighlighted;
-/**
-  draws all MarkerViews on the highlighted positions
-*/
-- (void)drawMarkersWithContext:(CGContextRef _Nonnull)context;
 /**
 
   returns:
@@ -2662,7 +2486,6 @@ SWIFT_CLASS("_TtC6Charts13ChartViewBase")
   The bitmap that represents the chart.
 */
 - (UIImage * _Nullable)getChartImageWithTransparent:(BOOL)transparent;
-@property (nonatomic, copy) NSArray<ChartViewPortJob *> * _Nonnull _viewportJobs;
 - (void)observeValueForKeyPath:(NSString * _Nullable)keyPath ofObject:(id _Nullable)object change:(NSDictionary<NSKeyValueChangeKey, id> * _Nullable)change context:(void * _Nullable)context;
 - (void)removeViewportJob:(ChartViewPortJob * _Nonnull)job;
 - (void)clearAllViewportJobs;
@@ -2703,23 +2526,15 @@ SWIFT_CLASS("_TtC6Charts13ChartViewBase")
 - (void)nsuiTouchesCancelled:(NSSet<UITouch *> * _Nullable)touches withEvent:(UIEvent * _Nullable)event;
 @end
 
-@class ChartYAxisRenderer;
-@class ChartXAxisRenderer;
-@class UITapGestureRecognizer;
-@class UIPinchGestureRecognizer;
-@class UIPanGestureRecognizer;
 @class UIGestureRecognizer;
+@class ChartXAxisRenderer;
+@class ChartYAxisRenderer;
 
 /**
   Base-class of LineChart, BarChart, ScatterChart and CandleStickChart.
 */
 SWIFT_CLASS("_TtC6Charts20BarLineChartViewBase")
 @interface BarLineChartViewBase : ChartViewBase <BarLineScatterCandleBubbleChartDataProvider, UIGestureRecognizerDelegate>
-/**
-  the maximum number of entries to which values will be drawn
-  (entry numbers greater than this value will cause value-labels to disappear)
-*/
-@property (nonatomic) NSInteger _maxVisibleCount;
 /**
   the color for the background of the chart-drawing area (everything behind the grid lines).
 */
@@ -2748,57 +2563,23 @@ SWIFT_CLASS("_TtC6Charts20BarLineChartViewBase")
   <em>default</em>: false
 */
 @property (nonatomic) BOOL keepPositionOnRotation;
-/**
-  the object representing the left y-axis
-*/
-@property (nonatomic, strong) ChartYAxis * _Null_unspecified _leftAxis;
-/**
-  the object representing the right y-axis
-*/
-@property (nonatomic, strong) ChartYAxis * _Null_unspecified _rightAxis;
-@property (nonatomic, strong) ChartYAxisRenderer * _Null_unspecified _leftYAxisRenderer;
-@property (nonatomic, strong) ChartYAxisRenderer * _Null_unspecified _rightYAxisRenderer;
-@property (nonatomic, strong) ChartTransformer * _Null_unspecified _leftAxisTransformer;
-@property (nonatomic, strong) ChartTransformer * _Null_unspecified _rightAxisTransformer;
-@property (nonatomic, strong) ChartXAxisRenderer * _Null_unspecified _xAxisRenderer;
-@property (nonatomic, strong) UITapGestureRecognizer * _Null_unspecified _tapGestureRecognizer;
-@property (nonatomic, strong) UITapGestureRecognizer * _Null_unspecified _doubleTapGestureRecognizer;
-@property (nonatomic, strong) UIPinchGestureRecognizer * _Null_unspecified _pinchGestureRecognizer;
-@property (nonatomic, strong) UIPanGestureRecognizer * _Null_unspecified _panGestureRecognizer;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (void)initialize SWIFT_METHOD_FAMILY(none);
 - (void)observeValueForKeyPath:(NSString * _Nullable)keyPath ofObject:(id _Nullable)object change:(NSDictionary<NSKeyValueChangeKey, id> * _Nullable)change context:(void * _Nullable)context;
 - (void)drawRect:(CGRect)rect;
-/**
-  Performs auto scaling of the axis by recalculating the minimum and maximum y-values based on the entries currently in view.
-*/
-- (void)autoScale;
-- (void)prepareValuePxMatrix;
-- (void)prepareOffsetMatrix;
 - (void)notifyDataSetChanged;
-- (void)calcMinMax;
-- (void)calculateOffsets;
-/**
-  draws the grid background
-*/
-- (void)drawGridBackgroundWithContext:(CGContextRef _Nonnull)context;
 - (void)stopDeceleration;
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer * _Nonnull)gestureRecognizer;
 - (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)otherGestureRecognizer;
 /**
   MARK: Viewport modifiers
-  Zooms in by 1.4, into the charts center.
+  Zooms in by 1.4, into the charts center. center.
 */
 - (void)zoomIn;
 /**
-  Zooms out by 0.7, from the charts center.
+  Zooms out by 0.7, from the charts center. center.
 */
 - (void)zoomOut;
-/**
-  Zooms out to original size.
-*/
-- (void)resetZoom;
 /**
   Zooms in or out by the given scale factor. x and y are the coordinates
   (in pixels) of the zoom center.
@@ -3383,8 +3164,6 @@ SWIFT_CLASS("_TtC6Charts20BarLineChartViewBase")
 */
 SWIFT_CLASS("_TtC6Charts12BarChartView")
 @interface BarChartView : BarLineChartViewBase <BarChartDataProvider>
-- (void)initialize SWIFT_METHOD_FAMILY(none);
-- (void)calcMinMax;
 /**
 
   returns:
@@ -3534,23 +3313,6 @@ SWIFT_CLASS("_TtC6Charts16ChartHighlighter")
 
 */
 - (NSArray<ChartHighlight *> * _Nonnull)getHighlightsWithXValue:(double)xValue x:(CGFloat)x y:(CGFloat)y;
-/**
-
-  returns:
-  An array of \code
-  Highlight
-  \endcode objects corresponding to the selected xValue and dataSetIndex.
-*/
-- (NSArray<ChartHighlight *> * _Nonnull)buildHighlightsWithDataSet:(id <IChartDataSet> _Nonnull)set dataSetIndex:(NSInteger)dataSetIndex xValue:(double)xValue rounding:(enum ChartDataSetRounding)rounding;
-/**
-
-  returns:
-  The minimum distance from a touch-y-value (in pixels) to the closest y-value (in pixels) that is displayed in the chart.
-*/
-- (CGFloat)getMinimumDistanceWithClosestValues:(NSArray<ChartHighlight *> * _Nonnull)closestValues y:(CGFloat)y axis:(enum AxisDependency)axis;
-- (CGFloat)getHighlightPosWithHigh:(ChartHighlight * _Nonnull)high;
-- (CGFloat)getDistanceWithX1:(CGFloat)x1 y1:(CGFloat)y1 x2:(CGFloat)x2 y2:(CGFloat)y2;
-@property (nonatomic, readonly, strong) ChartData * _Nullable data;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 @end
 
@@ -3558,8 +3320,6 @@ SWIFT_CLASS("_TtC6Charts16ChartHighlighter")
 SWIFT_CLASS_NAMED("BarHighlighter")
 @interface BarChartHighlighter : ChartHighlighter
 - (ChartHighlight * _Nullable)getHighlightWithX:(CGFloat)x y:(CGFloat)y;
-- (CGFloat)getDistanceWithX1:(CGFloat)x1 y1:(CGFloat)y1 x2:(CGFloat)x2 y2:(CGFloat)y2;
-@property (nonatomic, readonly, strong) ChartData * _Nullable data;
 /**
   This method creates the Highlight object that also indicates which value of a stacked BarEntry has been selected.
   \param high the Highlight to work with looking for stacked values
@@ -3657,7 +3417,6 @@ SWIFT_PROTOCOL("_TtP6Charts19IBubbleChartDataSet_")
 
 SWIFT_CLASS("_TtC6Charts18BubbleChartDataSet")
 @interface BubbleChartDataSet : BarLineScatterCandleBubbleChartDataSet <IBubbleChartDataSet>
-@property (nonatomic) CGFloat _maxSize;
 @property (nonatomic, readonly) CGFloat maxSize;
 @property (nonatomic) BOOL normalizeSizeEnabled;
 @property (nonatomic, readonly) BOOL isNormalizeSizeEnabled;
@@ -3984,7 +3743,6 @@ SWIFT_CLASS("_TtC6Charts24CandleStickChartRenderer")
 */
 SWIFT_CLASS("_TtC6Charts20CandleStickChartView")
 @interface CandleStickChartView : BarLineChartViewBase <CandleChartDataProvider>
-- (void)initialize SWIFT_METHOD_FAMILY(none);
 @property (nonatomic, readonly, strong) CandleChartData * _Nullable candleData;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -4218,12 +3976,7 @@ SWIFT_CLASS("_TtC6Charts21CombinedChartRenderer")
   if set to true, a grey area is drawn behind each bar that indicates the maximum value
 */
 @property (nonatomic) BOOL drawBarShadowEnabled;
-@property (nonatomic, copy) NSArray<ChartDataRendererBase *> * _Nonnull _renderers;
 - (nonnull instancetype)initWithChart:(CombinedChartView * _Nullable)chart animator:(ChartAnimator * _Nonnull)animator viewPortHandler:(ChartViewPortHandler * _Nullable)viewPortHandler OBJC_DESIGNATED_INITIALIZER;
-/**
-  Creates the renderers needed for this combined-renderer in the required order. Also takes the DrawOrder into consideration.
-*/
-- (void)createRenderers;
 - (void)initBuffers SWIFT_METHOD_FAMILY(none);
 - (void)drawDataWithContext:(CGContextRef _Nonnull)context;
 - (void)drawValuesWithContext:(CGContextRef _Nonnull)context;
@@ -4270,11 +4023,7 @@ SWIFT_CLASS("_TtC6Charts21CombinedChartRenderer")
   This chart class allows the combination of lines, bars, scatter and candle data all displayed in one chart area.
 */
 SWIFT_CLASS("_TtC6Charts17CombinedChartView")
-@interface CombinedChartView : BarLineChartViewBase <CombinedChartDataProvider>
-/**
-  the fill-formatter used for determining the position of the fill-line
-*/
-@property (nonatomic, strong) id <IChartFillFormatter> _Null_unspecified _fillFormatter;
+@interface CombinedChartView : BarLineChartViewBase <CombinedChartDataProvider, BarChartDataProvider, BubbleChartDataProvider, CandleChartDataProvider, LineChartDataProvider, ScatterChartDataProvider>
 - (void)initialize SWIFT_METHOD_FAMILY(none);
 @property (nonatomic, strong) ChartData * _Nullable data;
 @property (nonatomic, strong) id <IChartFillFormatter> _Nonnull fillFormatter;
@@ -4677,10 +4426,6 @@ SWIFT_CLASS("_TtC6Charts26HorizontalBarChartRenderer")
 - (void)drawDataSetWithContext:(CGContextRef _Nonnull)context dataSet:(id <IBarChartDataSet> _Nonnull)dataSet index:(NSInteger)index;
 - (void)drawValuesWithContext:(CGContextRef _Nonnull)context;
 - (BOOL)isDrawingValuesAllowedWithDataProvider:(id <ChartDataProvider> _Nullable)dataProvider;
-/**
-  Sets the drawing position of the highlight object based on the riven bar-rect.
-*/
-- (void)setHighlightDrawPosWithHighlight:(ChartHighlight * _Nonnull)high barRect:(CGRect)barRect;
 @end
 
 
@@ -4689,9 +4434,6 @@ SWIFT_CLASS("_TtC6Charts26HorizontalBarChartRenderer")
 */
 SWIFT_CLASS("_TtC6Charts22HorizontalBarChartView")
 @interface HorizontalBarChartView : BarChartView
-- (void)initialize SWIFT_METHOD_FAMILY(none);
-- (void)calculateOffsets;
-- (void)prepareValuePxMatrix;
 - (CGPoint)getMarkerPositionWithHighlight:(ChartHighlight * _Nonnull)highlight;
 - (CGRect)getBarBoundsWithEntry:(BarChartDataEntry * _Nonnull)e;
 - (CGPoint)getPositionWithEntry:(ChartDataEntry * _Nonnull)e axis:(enum AxisDependency)axis;
@@ -4722,8 +4464,6 @@ SWIFT_CLASS("_TtC6Charts22HorizontalBarChartView")
 SWIFT_CLASS_NAMED("HorizontalBarHighlighter")
 @interface HorizontalBarChartHighlighter : BarChartHighlighter
 - (ChartHighlight * _Nullable)getHighlightWithX:(CGFloat)x y:(CGFloat)y;
-- (NSArray<ChartHighlight *> * _Nonnull)buildHighlightsWithDataSet:(id <IChartDataSet> _Nonnull)set dataSetIndex:(NSInteger)dataSetIndex xValue:(double)xValue rounding:(enum ChartDataSetRounding)rounding;
-- (CGFloat)getDistanceWithX1:(CGFloat)x1 y1:(CGFloat)y1 x2:(CGFloat)x2 y2:(CGFloat)y2;
 - (nonnull instancetype)initWithChart:(id <ChartDataProvider> _Nonnull)chart OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -5144,7 +4884,7 @@ SWIFT_CLASS_NAMED("Legend")
   orientation == Horizontal
   \endcode.
   you may want to set maxSizePercent when word wrapping, to set the point where the text wraps.
-  <em>default</em>: true
+  <em>default</em>: false
 */
 @property (nonatomic) BOOL wordWrapEnabled;
 /**
@@ -5621,7 +5361,6 @@ SWIFT_CLASS("_TtC6Charts17LineChartRenderer")
 */
 SWIFT_CLASS("_TtC6Charts13LineChartView")
 @interface LineChartView : BarLineChartViewBase <LineChartDataProvider>
-- (void)initialize SWIFT_METHOD_FAMILY(none);
 @property (nonatomic, readonly, strong) LineChartData * _Nullable lineData;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -5676,7 +5415,6 @@ SWIFT_CLASS("_TtC6Charts12PieChartData")
 @interface PieChartData : ChartData
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithDataSets:(NSArray<id <IChartDataSet>> * _Nullable)dataSets OBJC_DESIGNATED_INITIALIZER;
-@property (nonatomic, strong) id <IPieChartDataSet> _Nullable dataSet;
 - (id <IChartDataSet> _Nullable)getDataSetByIndex:(NSInteger)index;
 - (id <IChartDataSet> _Nullable)getDataSetByLabel:(NSString * _Nonnull)label ignorecase:(BOOL)ignorecase;
 - (ChartDataEntry * _Nullable)entryForHighlight:(ChartHighlight * _Nonnull)highlight;
@@ -5746,7 +5484,6 @@ SWIFT_CLASS("_TtC6Charts15PieChartDataSet")
 @interface PieChartDataSet : ChartDataSet <IPieChartDataSet>
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithValues:(NSArray<ChartDataEntry *> * _Nullable)values label:(NSString * _Nullable)label OBJC_DESIGNATED_INITIALIZER;
-- (void)calcMinMaxWithEntry:(ChartDataEntry * _Nonnull)e;
 /**
   the space in pixels between the pie-slices
   <em>default</em>: 0
@@ -5839,11 +5576,8 @@ SWIFT_CLASS("_TtC6Charts21PieRadarChartViewBase")
 @property (nonatomic) CGFloat minOffset;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (void)initialize SWIFT_METHOD_FAMILY(none);
-- (void)calcMinMax;
 @property (nonatomic, readonly) NSInteger maxVisibleCount;
 - (void)notifyDataSetChanged;
-- (void)calculateOffsets;
 /**
 
   returns:
@@ -5894,19 +5628,6 @@ SWIFT_CLASS("_TtC6Charts21PieRadarChartViewBase")
   The radius of the chart in pixels.
 */
 @property (nonatomic, readonly) CGFloat radius;
-/**
-
-  returns:
-  The required offset for the chart legend.
-*/
-@property (nonatomic, readonly) CGFloat requiredLegendOffset;
-/**
-
-  returns:
-  The base offset needed for the chart without calculating the
-  legend size.
-*/
-@property (nonatomic, readonly) CGFloat requiredBaseOffset;
 @property (nonatomic, readonly) double chartYMax;
 @property (nonatomic, readonly) double chartYMin;
 @property (nonatomic, readonly) BOOL isRotationEnabled;
@@ -5933,10 +5654,6 @@ SWIFT_CLASS("_TtC6Charts21PieRadarChartViewBase")
 - (void)spinWithDuration:(NSTimeInterval)duration fromAngle:(CGFloat)fromAngle toAngle:(CGFloat)toAngle easingOption:(enum ChartEasingOption)easingOption;
 - (void)spinWithDuration:(NSTimeInterval)duration fromAngle:(CGFloat)fromAngle toAngle:(CGFloat)toAngle;
 - (void)stopSpinAnimation;
-- (void)processRotationGestureBeganWithLocation:(CGPoint)location;
-- (void)processRotationGestureMovedWithLocation:(CGPoint)location;
-- (void)processRotationGestureEndedWithLocation:(CGPoint)location;
-- (void)processRotationGestureCancelled;
 - (void)nsuiTouchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (void)nsuiTouchesMoved:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (void)nsuiTouchesEnded:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
@@ -5953,10 +5670,7 @@ SWIFT_CLASS("_TtC6Charts12PieChartView")
 @interface PieChartView : PieRadarChartViewBase
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (void)initialize SWIFT_METHOD_FAMILY(none);
 - (void)drawRect:(CGRect)rect;
-- (void)calculateOffsets;
-- (void)calcMinMax;
 - (CGPoint)getMarkerPositionWithHighlight:(ChartHighlight * _Nonnull)highlight;
 /**
   Checks if the given index is set to be highlighted.
@@ -6055,8 +5769,6 @@ SWIFT_CLASS("_TtC6Charts12PieChartView")
   \endcode if drawing the center text is enabled
 */
 @property (nonatomic, readonly) BOOL isDrawCenterTextEnabled;
-@property (nonatomic, readonly) CGFloat requiredLegendOffset;
-@property (nonatomic, readonly) CGFloat requiredBaseOffset;
 @property (nonatomic, readonly) CGFloat radius;
 /**
 
@@ -6257,26 +5969,13 @@ SWIFT_CLASS("_TtC6Charts18RadarChartRenderer")
 @property (nonatomic, weak) RadarChartView * _Nullable chart;
 - (nonnull instancetype)initWithChart:(RadarChartView * _Nullable)chart animator:(ChartAnimator * _Nullable)animator viewPortHandler:(ChartViewPortHandler * _Nullable)viewPortHandler OBJC_DESIGNATED_INITIALIZER;
 - (void)drawDataWithContext:(CGContextRef _Nonnull)context;
-/**
-  Draws the RadarDataSet
-  \param context 
-
-  \param dataSet 
-
-  \param mostEntries the entry count of the dataset with the most entries
-
-*/
-- (void)drawDataSetWithContext:(CGContextRef _Nonnull)context dataSet:(id <IRadarChartDataSet> _Nonnull)dataSet mostEntries:(NSInteger)mostEntries;
 - (void)drawValuesWithContext:(CGContextRef _Nonnull)context;
 - (void)drawExtrasWithContext:(CGContextRef _Nonnull)context;
 - (void)drawWebWithContext:(CGContextRef _Nonnull)context;
 - (void)drawHighlightedWithContext:(CGContextRef _Nonnull)context indices:(NSArray<ChartHighlight *> * _Nonnull)indices;
-- (void)drawHighlightCircleWithContext:(CGContextRef _Nonnull)context atPoint:(CGPoint)point innerRadius:(CGFloat)innerRadius outerRadius:(CGFloat)outerRadius fillColor:(UIColor * _Nullable)fillColor strokeColor:(UIColor * _Nullable)strokeColor strokeWidth:(CGFloat)strokeWidth;
 - (nonnull instancetype)initWithAnimator:(ChartAnimator * _Nullable)animator viewPortHandler:(ChartViewPortHandler * _Nullable)viewPortHandler SWIFT_UNAVAILABLE;
 @end
 
-@class YAxisRendererRadarChart;
-@class XAxisRendererRadarChart;
 
 /**
   Implementation of the RadarChart, a “spidernet”-like chart. It works best
@@ -6308,12 +6007,8 @@ SWIFT_CLASS("_TtC6Charts14RadarChartView")
   flag indicating if the web lines should be drawn or not
 */
 @property (nonatomic) BOOL drawWeb;
-@property (nonatomic, strong) YAxisRendererRadarChart * _Null_unspecified _yAxisRenderer;
-@property (nonatomic, strong) XAxisRendererRadarChart * _Null_unspecified _xAxisRenderer;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (void)initialize SWIFT_METHOD_FAMILY(none);
-- (void)calcMinMax;
 - (void)notifyDataSetChanged;
 - (void)drawRect:(CGRect)rect;
 /**
@@ -6340,8 +6035,6 @@ SWIFT_CLASS("_TtC6Charts14RadarChartView")
   if count = 1 -> 1 line is skipped in between
 */
 @property (nonatomic) NSInteger skipWebLineCount;
-@property (nonatomic, readonly) CGFloat requiredLegendOffset;
-@property (nonatomic, readonly) CGFloat requiredBaseOffset;
 @property (nonatomic, readonly) CGFloat radius;
 /**
 
@@ -6367,15 +6060,6 @@ SWIFT_CLASS("_TtC6Charts14RadarChartView")
 SWIFT_CLASS_NAMED("RadarHighlighter")
 @interface RadarChartHighlighter : PieRadarChartHighlighter
 - (ChartHighlight * _Nullable)closestHighlightWithIndex:(NSInteger)index x:(CGFloat)x y:(CGFloat)y;
-/**
-  \param index 
-
-
-  returns:
-  An array of Highlight objects for the given index.
-  The Highlight objects give information about the value at the selected index and DataSet it belongs to.
-*/
-- (NSArray<ChartHighlight *> * _Nonnull)getHighlightsForIndex:(NSInteger)index;
 - (nonnull instancetype)initWithChart:(id <ChartDataProvider> _Nonnull)chart OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -6505,15 +6189,6 @@ SWIFT_CLASS("_TtC6Charts19SquareShapeRenderer")
 */
 SWIFT_CLASS_NAMED("Transformer")
 @interface ChartTransformer : NSObject
-/**
-  matrix to map the values to the screen pixels
-*/
-@property (nonatomic) CGAffineTransform _matrixValueToPx;
-/**
-  matrix for handling the different offsets of the chart
-*/
-@property (nonatomic) CGAffineTransform _matrixOffset;
-@property (nonatomic, strong) ChartViewPortHandler * _Nonnull _viewPortHandler;
 - (nonnull instancetype)initWithViewPortHandler:(ChartViewPortHandler * _Nonnull)viewPortHandler OBJC_DESIGNATED_INITIALIZER;
 /**
   Prepares the matrix that transforms values to pixels. Calculates the scale factors from the charts size and offsets.
@@ -6564,40 +6239,30 @@ SWIFT_CLASS("_TtC6Charts21TriangleShapeRenderer")
 
 
 @interface UIPanGestureRecognizer (SWIFT_EXTENSION(Charts))
-- (NSInteger)nsuiNumberOfTouches;
-- (CGPoint)nsuiLocationOfTouch:(NSInteger)touch inView:(UIView * _Nullable)inView;
 @end
 
 
 @interface UIPinchGestureRecognizer (SWIFT_EXTENSION(Charts))
-@property (nonatomic) CGFloat nsuiScale;
-- (CGPoint)nsuiLocationOfTouch:(NSInteger)touch inView:(UIView * _Nullable)inView;
 @end
 
 
 @interface UIRotationGestureRecognizer (SWIFT_EXTENSION(Charts))
-@property (nonatomic) CGFloat nsuiRotation;
 @end
 
 
 @interface UIScreen (SWIFT_EXTENSION(Charts))
-@property (nonatomic, readonly) CGFloat nsuiScale;
 @end
 
 
 @interface UIScrollView (SWIFT_EXTENSION(Charts))
-@property (nonatomic) BOOL nsuiIsScrollEnabled;
 @end
 
 
 @interface UITapGestureRecognizer (SWIFT_EXTENSION(Charts))
-- (NSInteger)nsuiNumberOfTouches;
-@property (nonatomic) NSInteger nsuiNumberOfTapsRequired;
 @end
 
 
 @interface UIView (SWIFT_EXTENSION(Charts))
-@property (nonatomic, readonly, copy) NSArray<UIGestureRecognizer *> * _Nullable nsuiGestureRecognizers;
 @end
 
 
@@ -6644,10 +6309,6 @@ SWIFT_CLASS_NAMED("ViewPortHandler")
   Zooms out by 0.7, x and y are the coordinates (in pixels) of the zoom center.
 */
 - (CGAffineTransform)zoomOutWithX:(CGFloat)x y:(CGFloat)y;
-/**
-  Zooms out to original size.
-*/
-- (CGAffineTransform)resetZoom;
 /**
   Sets the scale factor to the specified values.
 */
@@ -6924,7 +6585,6 @@ SWIFT_CLASS_NAMED("XAxisRenderer")
 
 SWIFT_CLASS("_TtC6Charts31XAxisRendererHorizontalBarChart")
 @interface XAxisRendererHorizontalBarChart : ChartXAxisRenderer
-@property (nonatomic, strong) BarChartView * _Nullable chart;
 - (nonnull instancetype)initWithViewPortHandler:(ChartViewPortHandler * _Nullable)viewPortHandler xAxis:(ChartXAxis * _Nullable)xAxis transformer:(ChartTransformer * _Nullable)transformer chart:(BarChartView * _Nullable)chart OBJC_DESIGNATED_INITIALIZER;
 - (void)computeAxisWithMin:(double)min max:(double)max inverted:(BOOL)inverted;
 - (void)computeSize;
@@ -6968,10 +6628,6 @@ enum YAxisLabelPosition : NSInteger;
 */
 SWIFT_CLASS_NAMED("YAxis")
 @interface ChartYAxis : ChartAxisBase
-/**
-  indicates if the bottom y-label entry is drawn or not
-*/
-@property (nonatomic) BOOL drawBottomYLabelEntryEnabled;
 /**
   indicates if the top y-label entry is drawn or not
 */
@@ -7042,7 +6698,6 @@ SWIFT_CLASS_NAMED("YAxis")
 @property (nonatomic, readonly) BOOL needsOffset;
 @property (nonatomic, readonly) BOOL isInverted;
 - (void)calculateWithMin:(double)dataMin max:(double)dataMax;
-@property (nonatomic, readonly) BOOL isDrawBottomYLabelEntryEnabled;
 @property (nonatomic, readonly) BOOL isDrawTopYLabelEntryEnabled;
 @end
 
@@ -7068,10 +6723,6 @@ SWIFT_CLASS_NAMED("YAxisRenderer")
 */
 - (void)renderAxisLabelsWithContext:(CGContextRef _Nonnull)context;
 - (void)renderAxisLineWithContext:(CGContextRef _Nonnull)context;
-/**
-  draws the y-labels on the specified x-position
-*/
-- (void)drawYLabelsWithContext:(CGContextRef _Nonnull)context fixedPosition:(CGFloat)fixedPosition positions:(NSArray<NSValue *> * _Nonnull)positions offset:(CGFloat)offset textAlign:(NSTextAlignment)textAlign;
 - (void)renderGridLinesWithContext:(CGContextRef _Nonnull)context;
 @property (nonatomic, readonly) CGRect gridClippingRect;
 - (void)drawGridLineWithContext:(CGContextRef _Nonnull)context position:(CGPoint)position;
@@ -7125,9 +6776,6 @@ SWIFT_CLASS("_TtC6Charts23YAxisRendererRadarChart")
 
 SWIFT_CLASS_NAMED("ZoomViewJob")
 @interface ZoomChartViewJob : ChartViewPortJob
-@property (nonatomic) CGFloat scaleX;
-@property (nonatomic) CGFloat scaleY;
-@property (nonatomic) enum AxisDependency axisDependency;
 - (nonnull instancetype)initWithViewPortHandler:(ChartViewPortHandler * _Nonnull)viewPortHandler scaleX:(CGFloat)scaleX scaleY:(CGFloat)scaleY xValue:(double)xValue yValue:(double)yValue transformer:(ChartTransformer * _Nonnull)transformer axis:(enum AxisDependency)axis view:(ChartViewBase * _Nonnull)view OBJC_DESIGNATED_INITIALIZER;
 - (void)doJob;
 - (nonnull instancetype)initWithViewPortHandler:(ChartViewPortHandler * _Nonnull)viewPortHandler xValue:(double)xValue yValue:(double)yValue transformer:(ChartTransformer * _Nonnull)transformer view:(ChartViewBase * _Nonnull)view SWIFT_UNAVAILABLE;

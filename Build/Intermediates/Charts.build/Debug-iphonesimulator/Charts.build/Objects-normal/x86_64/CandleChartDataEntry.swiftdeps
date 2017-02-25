@@ -6,27 +6,27 @@ provides-nominal:
 provides-member:
 - ["C6Charts20CandleChartDataEntry", ""]
 provides-dynamic-lookup:
-- "high"
 - "close"
-- "bodyRange"
-- "y"
-- "copyWithZone"
 - "shadowRange"
-- "low"
+- "copyWithZone"
+- "bodyRange"
 - "open"
+- "y"
+- "high"
+- "low"
 depends-top-level:
 - "AssignmentPrecedence"
-- "CastingPrecedence"
-- "AnyObject"
-- !private "/"
 - !private "-"
+- "CastingPrecedence"
+- !private "/"
+- "AnyObject"
 - !private "abs"
-- "NSZone"
+- "ChartDataEntry"
 - "Double"
 - !private "StringLiteralType"
 - "CandleChartDataEntry"
-- "ChartDataEntry"
 - !private "+"
+- "NSZone"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "Double"]

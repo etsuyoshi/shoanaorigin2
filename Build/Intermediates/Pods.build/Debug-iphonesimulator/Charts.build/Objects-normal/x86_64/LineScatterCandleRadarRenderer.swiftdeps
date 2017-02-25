@@ -9,12 +9,12 @@ provides-dynamic-lookup:
 - "drawHighlightLines"
 depends-top-level:
 - "CGContext"
-- "BarLineScatterCandleBubbleRenderer"
-- "CGPoint"
-- "LineScatterCandleRadarRenderer"
 - "ILineScatterCandleRadarChartDataSet"
-- "ViewPortHandler"
 - "Animator"
+- "BarLineScatterCandleBubbleRenderer"
+- "LineScatterCandleRadarRenderer"
+- "CGPoint"
+- "ViewPortHandler"
 depends-member:
 - !private ["Ps9AnyObject", "CGPoint"]
 - !private ["Ps9AnyObject", "addLine"]
