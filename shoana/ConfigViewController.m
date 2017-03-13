@@ -12,6 +12,7 @@
 #import "ConfigViewController.h"
 #import "ResultModel.h"
 #import "QuizSector.h"
+#import "SiwakeSector.h"
 
 
 @interface ConfigViewController (){
@@ -168,6 +169,7 @@
     
     NSLog(@"%s", __func__);
     
+#ifdef QUIZ_FLAG
     QuizSector *quizSector = [[QuizSector alloc]init];
     [quizSector readAll];//全csvデータ読み込み
     
@@ -184,6 +186,24 @@
         }
     }
     quizSector = nil;
+#else
+    SiwakeSector *siwakeSector = [[SiwakeSector alloc]init];
+    [siwakeSector readAll];
+    
+    for(int i =0; i < siwakeSector.quizSectsArray.count;i++){
+        @autoreleasepool {
+            Siwake *tmpSiwake = (Siwake *)siwakeSector.quizSectsArray[i];
+            
+            ResultModel *resultModel = [[ResultModel alloc] initWithSection:tmpSiwake];
+            [resultModel resetAllData];
+            
+            tmpSiwake = nil;
+            resultModel = nil;
+        }
+    }
+    siwakeSector = nil;
+    
+#endif
 }
 
 -(void)setUpPicker{

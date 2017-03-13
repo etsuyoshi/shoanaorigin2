@@ -11,9 +11,9 @@ provides-dynamic-lookup:
 - "maxSize"
 depends-top-level:
 - "IBarLineScatterCandleBubbleChartDataSet"
-- "IBubbleChartDataSet"
-- "Bool"
 - "CGFloat"
+- "Bool"
+- "IBubbleChartDataSet"
 depends-member:
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "Bool"]
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "CGFloat"]

@@ -153,8 +153,6 @@
             //break;
         }
     }
-    
-    
 }
 
 -(void)tappedAnswer:(UIButton *)sender{
@@ -171,8 +169,6 @@
     
     //成績の更新
     [self updateResult:isCorrect];
-    
-    
     
     NSLog(@"isdispexplain = %d", isDispExplain);
     if(isDispExplain){
@@ -197,9 +193,12 @@
     NSLog(@"%s", __func__);
     
     int margin = 30;
+    int marginBtn = 10;
+    
+    
     viewExp = [[UIView alloc]initWithFrame:
-                       CGRectMake(0, 0, self.view.bounds.size.width-margin,
-                                  self.view.bounds.size.height - margin - self.navigationController.navigationBar.bounds.size.height)];
+               CGRectMake(0, 0, self.view.bounds.size.width-margin,
+                          self.view.bounds.size.height - margin - self.navigationController.navigationBar.bounds.size.height)];
     viewExp.center =
     CGPointMake(self.view.center.x,
                 self.navigationController.navigationBar.bounds.size.height + [[UIApplication sharedApplication] statusBarFrame].size.height +
@@ -210,23 +209,18 @@
     viewExp.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:viewExp];
     
+    int widthBtn = (viewExp.bounds.size.width-marginBtn*3) / 2;
+    int heightBtn = 64;
     
-    
-//    UILabel *lblExp = [[UILabel alloc]init];
-//    lblExp.frame = CGRectMake(10, 10, viewExp.bounds.size.width-20,
-//                              viewExp.bounds.size.height-20);
-//    lblExp.text = myQuizItem.explanation;
-//    lblExp.numberOfLines = 0;
-//    [lblExp sizeToFit];
-//    lblExp.lineBreakMode = NSLineBreakByWordWrapping;
-//    lblExp.textColor = [UIColor blackColor];
-//    [viewExp addSubview:lblExp];
+    //表示ビューの長さのうち、ボタンのぶんだけ短くする
     UITextView *textExp = [[UITextView alloc]init];
-    textExp.frame = CGRectMake(10, 10, viewExp.bounds.size.width-20, viewExp.bounds.size.height-20);
+//    textExp.frame = CGRectMake(marginBtn, marginBtn, viewExp.bounds.size.width-2*marginBtn,
+//                               viewExp.bounds.size.height-marginBtn*3 - heightBtn);
     textExp.text = myQuizItem.explanation;
     textExp.editable = NO;
-    [textExp sizeToFit];
-    textExp.textColor = [UIColor blackColor];
+    [textExp sizeToFit];//不要？
+    textExp.frame = CGRectMake(marginBtn, marginBtn, viewExp.bounds.size.width-2*marginBtn,
+                               viewExp.bounds.size.height-marginBtn*3 - heightBtn);
     [viewExp addSubview:textExp];
     
     
@@ -245,10 +239,6 @@
 //     action:@selector(disappearExp:)];
 //    [allView addGestureRecognizer:gesture];
     
-    
-    int marginBtn = 10;
-    int widthBtn = (viewExp.bounds.size.width-marginBtn*3) / 2;
-    int heightBtn = 64;
     //次へ進むボタン
     UIButton *btnNext = [UIButton buttonWithType:UIButtonTypeCustom];
     btnNext.frame = CGRectMake(0, 0, widthBtn, heightBtn);

@@ -12,16 +12,16 @@ provides-dynamic-lookup:
 - "highlightLineDashLengths"
 - "highlightLineWidth"
 depends-top-level:
-- "BarLineScatterCandleBubbleChartDataSet"
-- "ChartDataSet"
-- "AnyObject"
-- "NSUIColor"
-- "NSZone"
-- "CGFloat"
-- "/"
-- "IBarLineScatterCandleBubbleChartDataSet"
 - "AssignmentPrecedence"
+- "ChartDataSet"
+- "NSZone"
 - "CastingPrecedence"
+- "AnyObject"
+- "BarLineScatterCandleBubbleChartDataSet"
+- "/"
+- "NSUIColor"
+- "CGFloat"
+- "IBarLineScatterCandleBubbleChartDataSet"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]

@@ -8,14 +8,14 @@ provides-member:
 provides-dynamic-lookup:
 - "isEnabled"
 - "xOffset"
-- "enabled"
 - "yOffset"
+- "enabled"
 depends-top-level:
 - "ComponentBase"
-- "NSObject"
-- "Bool"
 - "CGFloat"
+- "NSObject"
 - "BooleanLiteralType"
+- "Bool"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]

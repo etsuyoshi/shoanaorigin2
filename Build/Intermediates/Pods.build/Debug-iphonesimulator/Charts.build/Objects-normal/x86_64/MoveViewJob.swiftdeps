@@ -8,14 +8,14 @@ provides-member:
 provides-dynamic-lookup:
 - "doJob"
 depends-top-level:
-- "ViewPortJob"
-- "MoveViewJob"
-- !private "CGPoint"
 - "Double"
+- "MoveViewJob"
 - "ViewPortHandler"
+- !private "CGPoint"
+- "ViewPortJob"
 - !private "CGFloat"
-- "Transformer"
 - "ChartViewBase"
+- "Transformer"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]

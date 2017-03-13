@@ -1,3 +1,6 @@
+//章ごとの問題の集まり
+
+
 #import <Foundation/Foundation.h>
 // クラスが存在することを宣言
 //@class QuizItem;
@@ -7,8 +10,6 @@
 
 @property (strong, nonatomic) NSString *sectionName;
 @property int section;
-@property (strong, nonatomic) NSString *strSeikaisu;
-@property (strong, nonatomic) NSString *strKaitoukaisu;
 
 // クイズのカテゴリ名称
 @property (retain, nonatomic) NSArray *arrCategory;
@@ -43,5 +44,5 @@
 
 //CSVファイルからクイズデータを読み込むメソッド
 - (BOOL)readFromCSV:(NSString *)filePath;
--(BOOL)updateAllResult;
+- (BOOL)updateAllResult;
 @end

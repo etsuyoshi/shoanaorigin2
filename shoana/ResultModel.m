@@ -17,7 +17,11 @@
     if (self) {
         self.section = myQuiz.section;
         
+#ifdef QUIZ_FLAG
         self.allQuizCount = (int)myQuiz.quizItemsArray.count;
+#else
+        self.allQuizCount = (int)((Siwake *)myQuiz).siwakeItemsArray.count;
+#endif
 
         //NSUserDefaultから過去のデータを取得して配列に格納する：なければ全部ぜろの要素数を取得する
         NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
@@ -41,7 +45,11 @@
             self.arrAnswerInSection = [NSMutableArray array];
             self.arrCorrectInSection = [NSMutableArray array];
             
+#ifdef QUIZ_FLAG
             for(int i = 0;i < myQuiz.quizItemsArray.count;i++){
+#else
+            for(int i = 0;i < ((Siwake *)myQuiz).siwakeItemsArray.count;i++){
+#endif
                 [self.arrAnswerInSection addObject:[NSNumber numberWithInteger:0]];
                 [self.arrCorrectInSection addObject:[NSNumber numberWithInteger:0]];
             }

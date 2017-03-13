@@ -8,18 +8,18 @@ provides-member:
 provides-dynamic-lookup:
 - "renderShape"
 depends-top-level:
-- "ChevronUpShapeRenderer"
-- !private "-"
-- "IShapeRenderer"
-- !private "/"
-- "NSUIColor"
-- "CGContext"
-- !private "*"
-- "NSObject"
-- "ViewPortHandler"
 - "IScatterChartDataSet"
-- "CGPoint"
+- "NSObject"
 - !private "+"
+- "ViewPortHandler"
+- "CGPoint"
+- !private "/"
+- !private "*"
+- "ChevronUpShapeRenderer"
+- "CGContext"
+- "NSUIColor"
+- "IShapeRenderer"
+- !private "-"
 depends-member:
 - !private ["Ps9AnyObject", "CGPoint"]
 - !private ["Ps9AnyObject", "addLine"]

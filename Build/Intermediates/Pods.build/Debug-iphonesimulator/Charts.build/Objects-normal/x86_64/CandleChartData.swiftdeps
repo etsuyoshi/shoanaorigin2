@@ -7,8 +7,8 @@ provides-member:
 - ["C6Charts15CandleChartData", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "CandleChartData"
 - "BarLineScatterCandleBubbleChartData"
+- "CandleChartData"
 - "IChartDataSet"
 depends-member:
 - ["Ps9AnyObject", "init"]

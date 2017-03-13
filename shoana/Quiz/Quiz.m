@@ -9,11 +9,7 @@
 // プロパティに対応するインスタンス変数とアクセッサメソッドの生成
 @synthesize quizItemsArray = _quizItemsArray;
 @synthesize usedQuizItems = _usedQuizItems;
-//@synthesize isKokuhukuMode = _isKokuhukuMode;
-//@synthesize jakutenNo = _jakutenNo;
 @synthesize arrCategory = _arrCategory;
-@synthesize strSeikaisu = _strSeikaisu;
-@synthesize strKaitoukaisu = _strKaitoukaisu;
 
 // 初期化処理
 - (id)init
@@ -24,10 +20,7 @@
         // インスタンス変数の初期化
         _quizItemsArray = nil;
         _usedQuizItems = [[NSMutableArray alloc] init];
-        //_isKokuhukuMode = false;
         _arrCategory = nil;
-        _strKaitoukaisu = nil;
-        _strSeikaisu = nil;
         _section  = 0;
         
 //        self.isOrdered = YES;
@@ -294,7 +287,6 @@
             if([line rangeOfString:@"[EOF]"].location != NSNotFound){
                 break;//for-loopの終了条件がlineArrayの個数だけなのでこの終了判定は不要だけど念のため！
             }else{
-                NSLog(@"curItem = %@", curItem);
                 // 作成中の「QuizItem」クラスのインスタンスがなければ確保する
                 if (!curItem){
                     //alloc(allocation)で生成して、initで初期化する

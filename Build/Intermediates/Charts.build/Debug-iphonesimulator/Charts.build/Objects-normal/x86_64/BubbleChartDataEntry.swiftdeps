@@ -10,14 +10,14 @@ provides-dynamic-lookup:
 - "size"
 depends-top-level:
 - "AssignmentPrecedence"
-- "ChartDataEntry"
 - "CastingPrecedence"
 - "AnyObject"
-- "CGFloat"
-- !private "StringLiteralType"
-- "NSZone"
 - "Double"
 - "BubbleChartDataEntry"
+- "CGFloat"
+- "ChartDataEntry"
+- !private "StringLiteralType"
+- "NSZone"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]

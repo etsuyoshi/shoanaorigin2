@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Charts/Charts.h>
 #import "Quiz.h"
+#import "Siwake.h"
 
 @interface ResultViewController : UIViewController
 

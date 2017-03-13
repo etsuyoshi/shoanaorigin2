@@ -11,9 +11,9 @@ provides-dynamic-lookup:
 - "isInverted"
 - "lowestVisibleX"
 depends-top-level:
-- "BarLineScatterCandleBubbleChartDataProvider"
 - "Transformer"
 - "Bool"
+- "BarLineScatterCandleBubbleChartDataProvider"
 - "Double"
 - "YAxis"
 - "ChartDataProvider"

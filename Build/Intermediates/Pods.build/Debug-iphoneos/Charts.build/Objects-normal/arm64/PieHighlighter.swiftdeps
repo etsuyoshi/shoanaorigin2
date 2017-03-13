@@ -8,12 +8,12 @@ provides-member:
 provides-dynamic-lookup:
 - "closestHighlight"
 depends-top-level:
-- "PieHighlighter"
-- "CGFloat"
-- !private "Double"
-- "PieRadarHighlighter"
-- "Int"
 - "Highlight"
+- !private "Double"
+- "CGFloat"
+- "PieRadarHighlighter"
+- "PieHighlighter"
+- "Int"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "Double"]

@@ -11,15 +11,15 @@ depends-top-level:
 - !private "=="
 - "AssignmentPrecedence"
 - "CastingPrecedence"
-- "ScatterChartData"
 - "IChartDataSet"
 - "BarLineScatterCandleBubbleChartData"
+- !private "print"
 - "CGFloat"
-- !private "IScatterChartDataSet"
-- !private "StringLiteralType"
+- "ScatterChartData"
 - !private ">"
 - !private "UnicodeScalarType"
-- !private "print"
+- !private "StringLiteralType"
+- !private "IScatterChartDataSet"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]

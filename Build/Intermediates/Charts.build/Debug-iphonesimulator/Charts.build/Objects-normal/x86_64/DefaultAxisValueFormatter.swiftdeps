@@ -6,27 +6,27 @@ provides-nominal:
 provides-member:
 - ["C6Charts25DefaultAxisValueFormatter", ""]
 provides-dynamic-lookup:
-- "hasAutoDecimals"
 - "with"
-- "stringForValue"
 - "formatter"
+- "hasAutoDecimals"
 - "block"
+- "stringForValue"
 depends-top-level:
 - "AssignmentPrecedence"
-- !private "!="
-- "Bool"
-- "Int"
-- "IAxisValueFormatter"
-- !private "NSNumber"
-- "NSObject"
-- "Double"
 - "String"
-- "DefaultAxisValueFormatter"
-- "BooleanLiteralType"
-- !private "??"
-- !private "StringLiteralType"
-- "AxisBase"
+- "IAxisValueFormatter"
 - "NumberFormatter"
+- "DefaultAxisValueFormatter"
+- !private "??"
+- "NSObject"
+- !private "NSNumber"
+- "AxisBase"
+- "BooleanLiteralType"
+- "Bool"
+- !private "!="
+- !private "StringLiteralType"
+- "Int"
+- "Double"
 depends-member:
 - !private ["Ps9AnyObject", "DefaultAxisValueFormatter"]
 - !private ["Ps9AnyObject", "NSNumber"]

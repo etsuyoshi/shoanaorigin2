@@ -12,6 +12,16 @@
 
 #endif /* Shoana_Prefix_h */
 
+
+
+//QUIZ_FLAGを宣言するいないで判定する
+//#define QUIZ_FLAG
+
+#ifndef QUIZ_FLAG
+#define SIWAKE_FLAG
+#endif
+
+
 // userdefaults
 #define USER_DEFAULTS_ANSWER                   @"answer"
 #define USER_DEFAULTS_CORRECT                  @"correct"
@@ -25,7 +35,7 @@
 
 
 
-//hん版でnslogを出力しない
+//release版でnslogを出力しない
 #if !defined(NS_BLOCK_ASSERTIONS)
 #if !defined(NSLog)
 #define NSLog( args... ) NSLog( args, 0 )

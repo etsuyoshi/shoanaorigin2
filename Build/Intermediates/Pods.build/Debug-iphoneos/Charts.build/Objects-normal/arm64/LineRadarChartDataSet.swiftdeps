@@ -7,28 +7,28 @@ provides-member:
 - ["C6Charts21LineRadarChartDataSet", ""]
 provides-dynamic-lookup:
 - "fillAlpha"
-- "drawFilledEnabled"
-- "fill"
 - "isDrawFilledEnabled"
-- "copyWithZone"
 - "lineWidth"
+- "copyWithZone"
+- "fill"
 - "fillColor"
+- "drawFilledEnabled"
 depends-top-level:
 - "AssignmentPrecedence"
+- "LineRadarChartDataSet"
 - "CastingPrecedence"
+- "NSZone"
 - !private ">"
 - !private "<"
 - "Bool"
-- "CGFloat"
-- "NSZone"
-- "BooleanLiteralType"
-- "ILineRadarChartDataSet"
 - "Fill"
-- "NSUIColor"
 - "AnyObject"
-- "LineRadarChartDataSet"
+- "CGFloat"
+- "NSUIColor"
 - "/"
 - "LineScatterCandleRadarChartDataSet"
+- "BooleanLiteralType"
+- "ILineRadarChartDataSet"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Quiz.h"
+#import "Siwake.h"
 
 @interface ResultModel : NSObject
 

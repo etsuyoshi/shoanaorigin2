@@ -6,16 +6,16 @@ provides-nominal:
 provides-member:
 - ["C6Charts13LineChartView", ""]
 provides-dynamic-lookup:
-- "initialize"
 - "lineData"
+- "initialize"
 depends-top-level:
-- "AssignmentPrecedence"
+- "LineChartData"
 - "BarLineChartViewBase"
+- !private "LineChartRenderer"
 - "CastingPrecedence"
+- "AssignmentPrecedence"
 - "LineChartView"
 - "LineChartDataProvider"
-- !private "LineChartRenderer"
-- "LineChartData"
 depends-member:
 - !private ["P6Charts16AnimatorDelegate", "LineChartRenderer"]
 - !private ["P6Charts16AnimatorDelegate", "_animator"]

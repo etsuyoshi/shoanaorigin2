@@ -6,17 +6,17 @@ provides-nominal:
 provides-member:
 - ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", ""]
 provides-dynamic-lookup:
-- "getTransformer"
 - "isInverted"
 - "lowestVisibleX"
 - "highestVisibleX"
+- "getTransformer"
 depends-top-level:
-- "Bool"
 - "ChartDataProvider"
-- "YAxis"
 - "BarLineScatterCandleBubbleChartDataProvider"
 - "Transformer"
+- "YAxis"
 - "Double"
+- "Bool"
 depends-member:
 - ["Ps9AnyObject", "AxisDependency"]
 - ["C6Charts8AxisBase", "AxisDependency"]

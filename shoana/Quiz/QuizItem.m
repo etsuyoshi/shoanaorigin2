@@ -65,14 +65,6 @@
 }
 
 // 答えが合っているかチェックするメソッド
-- (BOOL)checkIsRightAnswer:(NSString *)answer
-{
-    // プロパティ「rightAnswer」と文字列を比較して一致すれば正解
-    NSLog(@"%@", self.rightAnswer);
-    NSLog(@"%@", answer);
-    return [self.rightAnswer isEqualToString:answer];
-}
-
 -(BOOL)checkIsRightNo:(int)answerNo{
     return answerNo == self.rightNo;
 }

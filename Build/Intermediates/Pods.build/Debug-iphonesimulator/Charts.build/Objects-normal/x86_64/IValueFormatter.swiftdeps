@@ -9,10 +9,10 @@ provides-dynamic-lookup:
 - "stringForValue"
 depends-top-level:
 - "Int"
-- "NSObjectProtocol"
-- "ChartDataEntry"
 - "IValueFormatter"
 - "String"
+- "ChartDataEntry"
+- "NSObjectProtocol"
 - "Double"
 - "ViewPortHandler"
 depends-member:

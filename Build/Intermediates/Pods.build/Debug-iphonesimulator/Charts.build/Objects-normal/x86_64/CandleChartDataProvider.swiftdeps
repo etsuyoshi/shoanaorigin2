@@ -8,9 +8,9 @@ provides-member:
 provides-dynamic-lookup:
 - "candleData"
 depends-top-level:
-- "BarLineScatterCandleBubbleChartDataProvider"
 - "CandleChartData"
 - "CandleChartDataProvider"
+- "BarLineScatterCandleBubbleChartDataProvider"
 depends-member:
 - ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "CandleChartData"]
 - ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "candleData"]

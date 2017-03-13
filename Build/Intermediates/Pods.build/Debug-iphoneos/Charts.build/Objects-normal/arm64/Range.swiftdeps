@@ -6,23 +6,23 @@ provides-nominal:
 provides-member:
 - ["C6Charts5Range", ""]
 provides-dynamic-lookup:
-- "isLarger"
+- "to"
 - "isSmaller"
 - "contains"
-- "to"
+- "isLarger"
 - "from"
 depends-top-level:
-- !private "<"
-- !private "BooleanLiteralType"
-- "Range"
-- !private "StringLiteralType"
-- !private "<="
 - "AssignmentPrecedence"
-- !private ">"
-- "NSObject"
+- !private "<"
 - "Double"
-- "Bool"
+- "Range"
 - !private "&&"
+- !private "BooleanLiteralType"
+- !private "<="
+- !private ">"
+- !private "StringLiteralType"
+- "Bool"
+- "NSObject"
 depends-member:
 - ["Ps9AnyObject", "contains"]
 - ["Ps9AnyObject", "from"]

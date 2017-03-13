@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Siwake.h"
 
-@interface SiwakeViewController : UIViewController
+@interface SiwakeViewController : UIViewController<UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate>
+
+@property (strong, nonatomic) Siwake *siwake;
+@property int quizNo;
 
 @end

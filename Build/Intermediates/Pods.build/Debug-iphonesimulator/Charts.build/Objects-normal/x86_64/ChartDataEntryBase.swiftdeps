@@ -7,8 +7,8 @@ provides-nominal:
 provides-member:
 - ["C6Charts18ChartDataEntryBase", ""]
 provides-dynamic-lookup:
-- "y"
 - "data"
+- "y"
 - "isEqual"
 - "description"
 depends-top-level:
@@ -17,20 +17,20 @@ depends-top-level:
 - "CastingPrecedence"
 - "ChartDataEntryBase"
 - !private "==="
-- "NSObject"
-- !private "&&"
-- !private ">"
-- "AnyObject"
+- "String"
 - !private "!=="
-- !private "BooleanLiteralType"
 - "Double"
+- !private "&&"
 - "Bool"
 - !private "!"
+- "AnyObject"
+- !private ">"
+- !private "BooleanLiteralType"
 - !private "fabs"
+- "NSObject"
 - !private "StringLiteralType"
-- "String"
-- !private "-"
 - !private "DBL_EPSILON"
+- !private "-"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "RawValue"]
 - !private ["Ps16AbsoluteValuable", "Stride"]
@@ -345,8 +345,8 @@ depends-nominal:
 - "Vs26_OptionalNilComparisonType"
 - "Ps11_Strideable"
 depends-dynamic-lookup:
-- !private "y"
 - !private "data"
+- !private "y"
 - !private "isKind"
 - !private "isEqual"
 depends-external:

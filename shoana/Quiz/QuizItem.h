@@ -36,6 +36,5 @@
 @property (readonly, nonatomic) NSArray *randomChoicesArray;
 
 // 答えが合っているかチェックするメソッド
-- (BOOL)checkIsRightAnswer:(NSString *)answer;
 -(BOOL)checkIsRightNo:(int)answerNo;
 @end

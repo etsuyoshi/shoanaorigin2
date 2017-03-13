@@ -12,8 +12,8 @@ provides-dynamic-lookup:
 - "isDrawBarShadowEnabled"
 depends-top-level:
 - "BarChartData"
-- "BarChartDataProvider"
 - "Bool"
+- "BarChartDataProvider"
 - "BarLineScatterCandleBubbleChartDataProvider"
 depends-member:
 - ["P6Charts20BarChartDataProvider", "BarChartData"]

@@ -9,8 +9,8 @@ provides-dynamic-lookup:
 - "doJob"
 depends-top-level:
 - "MoveViewJob"
-- !private "CGPoint"
 - !private "CGFloat"
+- !private "CGPoint"
 - "Double"
 - "ViewPortHandler"
 - "ChartViewBase"

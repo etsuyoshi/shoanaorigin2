@@ -6,21 +6,21 @@ provides-nominal:
 provides-member:
 - ["C6Charts17PieChartDataEntry", ""]
 provides-dynamic-lookup:
+- "value"
 - "label"
 - "copyWithZone"
 - "x"
-- "value"
 depends-top-level:
-- "Double"
-- "AnyObject"
-- !private "StringLiteralType"
-- !private "print"
-- "ChartDataEntry"
 - "AssignmentPrecedence"
-- "NSZone"
+- "Double"
 - "CastingPrecedence"
 - "PieChartDataEntry"
+- "AnyObject"
+- !private "print"
+- "NSZone"
 - "String"
+- !private "StringLiteralType"
+- "ChartDataEntry"
 depends-member:
 - ["Ps9AnyObject", "copyWithZone"]
 - ["Ps9AnyObject", "deinit"]

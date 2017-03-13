@@ -9,10 +9,10 @@ provides-dynamic-lookup:
 - "value"
 - "copyWithZone"
 depends-top-level:
-- "Double"
 - "AssignmentPrecedence"
 - "CastingPrecedence"
 - "AnyObject"
+- "Double"
 - "RadarChartDataEntry"
 - "NSZone"
 - !private "StringLiteralType"

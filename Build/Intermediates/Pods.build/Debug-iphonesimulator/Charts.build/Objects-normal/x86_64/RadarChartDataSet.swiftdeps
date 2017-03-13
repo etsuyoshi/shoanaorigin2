@@ -6,27 +6,27 @@ provides-nominal:
 provides-member:
 - ["C6Charts17RadarChartDataSet", ""]
 provides-dynamic-lookup:
-- "highlightCircleFillColor"
-- "highlightCircleOuterRadius"
-- "isDrawHighlightCircleEnabled"
-- "highlightCircleStrokeColor"
-- "highlightCircleInnerRadius"
-- "drawHighlightCircleEnabled"
-- "highlightCircleStrokeWidth"
 - "highlightCircleStrokeAlpha"
+- "highlightCircleStrokeColor"
+- "highlightCircleOuterRadius"
+- "drawHighlightCircleEnabled"
+- "highlightCircleFillColor"
+- "highlightCircleInnerRadius"
+- "isDrawHighlightCircleEnabled"
+- "highlightCircleStrokeWidth"
 depends-top-level:
-- !private "AssignmentPrecedence"
-- "IRadarChartDataSet"
-- "String"
-- "CGFloat"
-- !private "NSUIFont"
-- "LineRadarChartDataSet"
-- "BooleanLiteralType"
-- "RadarChartDataSet"
 - "ChartDataEntry"
-- !private "StringLiteralType"
+- !private "AssignmentPrecedence"
+- "LineRadarChartDataSet"
+- "CGFloat"
+- "String"
 - "Bool"
+- "BooleanLiteralType"
 - "NSUIColor"
+- !private "NSUIFont"
+- !private "StringLiteralType"
+- "RadarChartDataSet"
+- "IRadarChartDataSet"
 depends-member:
 - ["Ps9AnyObject", "NSUIColor"]
 - !private ["Ps9AnyObject", "NSUIFont"]

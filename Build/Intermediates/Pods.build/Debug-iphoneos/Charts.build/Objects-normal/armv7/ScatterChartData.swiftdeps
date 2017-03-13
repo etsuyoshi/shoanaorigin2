@@ -9,17 +9,17 @@ provides-dynamic-lookup:
 - "getGreatestShapeSize"
 depends-top-level:
 - !private "=="
-- "AssignmentPrecedence"
-- "IChartDataSet"
-- "CastingPrecedence"
-- "BarLineScatterCandleBubbleChartData"
-- "ScatterChartData"
-- !private "UnicodeScalarType"
-- "CGFloat"
 - !private ">"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- "CGFloat"
 - !private "IScatterChartDataSet"
+- "BarLineScatterCandleBubbleChartData"
+- "IChartDataSet"
 - !private "print"
 - !private "StringLiteralType"
+- "ScatterChartData"
+- !private "UnicodeScalarType"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]

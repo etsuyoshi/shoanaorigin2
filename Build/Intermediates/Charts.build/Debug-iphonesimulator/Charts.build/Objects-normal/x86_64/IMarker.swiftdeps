@@ -6,17 +6,17 @@ provides-nominal:
 provides-member:
 - ["P6Charts7IMarker", ""]
 provides-dynamic-lookup:
-- "offset"
 - "offsetForDrawing"
+- "offset"
 - "refreshContent"
 - "draw"
 depends-top-level:
-- "IMarker"
 - "NSObjectProtocol"
-- "CGContext"
-- "ChartDataEntry"
 - "Highlight"
 - "CGPoint"
+- "CGContext"
+- "IMarker"
+- "ChartDataEntry"
 depends-member:
 - ["P6Charts7IMarker", "CGContext"]
 - ["P6Charts7IMarker", "CGPoint"]

@@ -7,22 +7,22 @@ provides-member:
 - ["C6Charts23IndexAxisValueFormatter", ""]
 provides-dynamic-lookup:
 - "with"
-- "stringForValue"
 - "values"
+- "stringForValue"
 depends-top-level:
-- "Double"
-- !private ">="
-- !private "StringLiteralType"
-- "String"
-- !private "<"
+- "AssignmentPrecedence"
 - "NSObject"
 - "AxisBase"
-- "Int"
-- "AssignmentPrecedence"
-- !private "||"
 - "IAxisValueFormatter"
+- "Int"
+- "Double"
 - !private "!="
+- !private "||"
+- "String"
 - "IndexAxisValueFormatter"
+- !private "StringLiteralType"
+- !private "<"
+- !private ">="
 depends-member:
 - !private ["Ps16AbsoluteValuable", "rounded"]
 - !private ["Ps9AnyObject", "IndexAxisValueFormatter"]

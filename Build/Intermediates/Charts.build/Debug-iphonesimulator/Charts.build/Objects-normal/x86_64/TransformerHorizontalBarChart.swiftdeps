@@ -8,13 +8,13 @@ provides-member:
 provides-dynamic-lookup:
 - "prepareMatrixOffset"
 depends-top-level:
-- !private "-"
-- "TransformerHorizontalBarChart"
-- "Bool"
-- "Transformer"
-- !private "CGAffineTransform"
-- !private "!"
 - "AssignmentPrecedence"
+- "Transformer"
+- !private "!"
+- !private "CGAffineTransform"
+- !private "-"
+- "Bool"
+- "TransformerHorizontalBarChart"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
 - !private ["Ps9AnyObject", "CGAffineTransform"]

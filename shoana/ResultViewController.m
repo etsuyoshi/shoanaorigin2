@@ -11,6 +11,7 @@
 @import Charts;
 #import "ResultModel.h"
 
+
 /*
  * 間違えた問題のみ表示→誤回答のシェアを表示
  */
@@ -40,12 +41,12 @@
     pieChartView.entryLabelColor = UIColor.whiteColor;
     pieChartView.entryLabelFont = [UIFont fontWithName:@"HelveticaNeue-Light" size:12.f];
     pieChartView.descriptionText = @"チャートの説明";
-    
     [self.view addSubview:pieChartView];
     
+    [self updateChartData];
     
     [self setupPieChartView:pieChartView];
-    [self updateChartData];
+    
     [pieChartView animateWithXAxisDuration:1.4 easingOption:ChartEasingOptionEaseOutBack];
     
     
@@ -112,49 +113,53 @@
     NSMutableArray *arrLabelForGraph = [NSMutableArray array];
     
     
+    NSLog(@"%s", __func__);
+    NSLog(@"count = %ld", self.arrQuiz.count);
+    
+    
     /*
      * セクション指定があれば当該セクションにおける誤った問題番号を、なければ全セクションの誤った回数を表示する
      */
+
     if(self.myQuiz){//Quizインスタンスの指定があれば該当セクションのみラベルでの集計結果を表示する
+#ifdef QUIZ_FLAG
         ResultModel *myResult = [[ResultModel alloc]initWithSection:self.myQuiz];
-        
+#else
+        ResultModel *myResult = [[ResultModel alloc]initWithSection:(Siwake *)self.myQuiz];
+#endif
         section = self.myQuiz.section;
-        
-        
         NSArray *arrAnswer = [myResult getAnswers];
         NSArray *arrCorrect = [myResult getCorrects];
-        //        NSMutableArray *arrWrongs = [NSMutableArray array];
+        
+        NSLog(@"arrAnswer.count = %ld", [arrAnswer count]);
+        NSLog(@"arrCorrect.count = %ld", [arrCorrect count]);
         
         //問題番号別に過去に誤った回数を格納する
         if(arrAnswer){
             for(int i = 0;i < arrAnswer.count;i++){
                 int numOfWrong = (int)[arrAnswer[i] integerValue] - (int)[arrCorrect[i] integerValue];
-                //                [arrWrongs addObject:[NSNumber numberWithInt:numOfWrong]];
                 [arrDataForGraph addObject:[NSNumber numberWithInt:numOfWrong]];
                 [arrLabelForGraph addObject:[NSString stringWithFormat:@"NO.%d", i]];
             }
         }
         
-        
-        
-//        NSUserDefaults *userDef = [NSUserDefaults standardUserDefaults];
-//        NSArray *arrAnswer =
-//        [userDef arrayForKey:
-//         [NSString stringWithFormat:@"%@%d", USER_DEFAULTS_ANSWER, section]];
-//        NSArray *arrCorrect =
-//        [userDef arrayForKey:
-//         [NSString stringWithFormat:@"%@%d", USER_DEFAULTS_CORRECT, section]];
-        
         self.title = @"苦手問題";
         
-    }else if(self.arrQuiz){
+    }else if(self.arrQuiz){//MasterViewConrollerから遷移した場合はこちら
         section = -1;
         
+        NSLog(@"all sector mode");
+        
         //セクション指定がなければi=0から100くらいまでのセクションで存在するセクションに対して集計して、誤った回数のみ集計
+#ifdef QUIZ_FLAG
         for(Quiz *myQuiz in self.arrQuiz){
             @autoreleasepool {
                 ResultModel *myResult = [[ResultModel alloc]initWithSection:myQuiz];
-                
+#else
+        for(Siwake *myQuiz in self.arrQuiz){
+            @autoreleasepool {
+                ResultModel *myResult = [[ResultModel alloc]initWithSection:(Siwake *)myQuiz];
+#endif
                 
                 
                 NSArray *arrAnswer = [myResult getAnswers];
@@ -176,7 +181,15 @@
                 }
                 
                 [arrDataForGraph addObject:[NSNumber numberWithInt:sumAnswer-sumCorrect]];
+                
+#ifdef QUIZ_FLAG
                 [arrLabelForGraph addObject:[NSString stringWithFormat:@"SECT.%d", myQuiz.section]];
+#else
+                [arrLabelForGraph addObject:[NSString stringWithFormat:@"SECT.%d", ((Siwake *)myQuiz).section]];
+                
+                NSLog(@"add section = %@",
+                      [NSString stringWithFormat:@"SECT.%d", ((Siwake *)myQuiz).section]);
+#endif
                 
                 self.title = @"苦手セクション";
                 
@@ -184,14 +197,19 @@
         }
         
     }
+            
+    int sumAllAnswer = 0;//全回答数
+    for(int i = 0;i < arrDataForGraph.count;i++){
+        sumAllAnswer += (int)[arrDataForGraph[i] integerValue];
+    }
+    NSLog(@"sumAllAnswer = %d", sumAllAnswer);
     
-    
-    if(!arrDataForGraph){
+    if(sumAllAnswer == 0){
         //まだ一度も解答したことがない人
         arrDataForGraph = [NSMutableArray arrayWithObjects:
                            @10,@10,@10,@10,@10, nil];
         arrLabelForGraph = [NSMutableArray arrayWithObjects:
-                            @"demo1", "demo2", @"demo3", @"demo4", @"demo5", nil];
+                            @"demo1", @"demo2", @"demo3", @"demo4", @"demo5", nil];
         
     }
 //    NSArray *arrChartLabels =
@@ -278,38 +296,84 @@
 
 - (void)setupPieChartView:(PieChartView *)chartView
 {
+    NSLog(@"%s", __func__);
     chartView.usePercentValuesEnabled = YES;
     chartView.drawSlicesUnderHoleEnabled = NO;
     chartView.holeRadiusPercent = 0.58;
     chartView.transparentCircleRadiusPercent = 0.61;
     chartView.chartDescription.enabled = NO;
     [chartView setExtraOffsetsWithLeft:5.f top:10.f right:5.f bottom:5.f];
-    
     chartView.drawCenterTextEnabled = YES;
     
     NSMutableParagraphStyle *paragraphStyle = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
     paragraphStyle.lineBreakMode = NSLineBreakByTruncatingTail;
     paragraphStyle.alignment = NSTextAlignmentCenter;
     
-    NSMutableAttributedString *centerText = [[NSMutableAttributedString alloc] initWithString:@"第１章成績\n100回回答中"];
+    //円グラフの中心に文字列を配布するならここに格納する
+    NSMutableAttributedString *centerText = nil;
+    
+    if(self.arrQuiz){
+        int countAllQuiz = 0;
+        
+#ifdef QUIZ_FLAG
+        for(int i = 0;i < self.arrQuiz.count;i++){
+            countAllQuiz += self.myQuiz.quizItemsArray.count;
+        }
+#else
+        for(int i =0;i < self.arrQuiz.count;i++){
+            countAllQuiz += ((Siwake *)self.myQuiz).siwakeItemsArray.count;
+        }
+#endif
+        
+        NSString *strPlain =
+        [NSString stringWithFormat:
+         @"全問題成績\n%d回回答中", countAllQuiz];
+        
+        centerText =
+        [[NSMutableAttributedString alloc] initWithString:strPlain];
+    }else if(self.myQuiz){
+        
+#ifdef QUIZ_FLAG
+        NSString *strPlain =
+        [NSString stringWithFormat:
+         @"第%d章成績\n%ld回回答中", self.myQuiz.section,self.myQuiz.quizItemsArray.count];
+#else
+        NSString *strPlain =
+        [NSString stringWithFormat:
+         @"第%d章成績\n%ld回回答中", ((Siwake *)self.myQuiz).section,((Siwake *)self.myQuiz).siwakeItemsArray.count];
+        
+#endif
+        
+        centerText =
+        [[NSMutableAttributedString alloc] initWithString:strPlain];
+    }else{
+        centerText =
+        [[NSMutableAttributedString alloc] initWithString:@"第１章成績\n100回回答中"];
+    }
+    //NSMutableAttributedString *centerText = [[NSMutableAttributedString alloc] initWithString:@"\n"];
+    
     [centerText setAttributes:@{
                                 NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue-Light" size:13.f],
                                 NSParagraphStyleAttributeName: paragraphStyle
                                 } range:NSMakeRange(0, centerText.length)];
+    
     [centerText addAttributes:@{
                                 NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue-Light" size:11.f],
                                 NSForegroundColorAttributeName: UIColor.grayColor
                                 } range:NSMakeRange(1, centerText.length - 1)];
+    
     [centerText addAttributes:@{
                                 NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue-LightItalic" size:11.f],
                                 NSForegroundColorAttributeName: [UIColor colorWithRed:51/255.f green:181/255.f blue:229/255.f alpha:1.f]
                                 } range:NSMakeRange(centerText.length - 3, 3)];
+    
     chartView.centerAttributedText = centerText;
     
     chartView.drawHoleEnabled = YES;
     chartView.rotationAngle = 0.0;
     chartView.rotationEnabled = YES;
     chartView.highlightPerTapEnabled = YES;
+    
     
     ChartLegend *l = chartView.legend;
     l.horizontalAlignment = ChartLegendHorizontalAlignmentRight;

@@ -1,0 +1,8 @@
+dependencies: \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/Siwake.m \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/Shoana-Prefix.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/Siwake.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/SiwakeItem.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/Quiz/QuizItem.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/Quiz/Quiz.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/ResultModel.h

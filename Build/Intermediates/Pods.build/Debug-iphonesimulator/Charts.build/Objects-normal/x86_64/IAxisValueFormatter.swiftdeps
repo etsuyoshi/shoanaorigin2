@@ -8,11 +8,11 @@ provides-member:
 provides-dynamic-lookup:
 - "stringForValue"
 depends-top-level:
+- "String"
 - "NSObjectProtocol"
+- "AxisBase"
 - "IAxisValueFormatter"
 - "Double"
-- "AxisBase"
-- "String"
 depends-member:
 - ["P6Charts19IAxisValueFormatter", "AxisBase"]
 - ["P6Charts19IAxisValueFormatter", "Double"]

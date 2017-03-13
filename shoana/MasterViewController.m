@@ -4,7 +4,9 @@
 //
 //  Created by EndoTsuyoshi on 2017/01/02.
 //  Copyright © 2017年 com.endo. All rights reserved.
-//
+//  Icon : ~/書類/workspace/学習アプリ/question
+//  プロジェクト名（画面上表示名）変更方法
+//  http://tech.librastudio.co.jp/index.php/2016/10/05/post-1038/
 
 /*
  * 問題：節=QuizSector(Quiz配列を保有)
@@ -23,12 +25,19 @@
  */
 
 #import "QuizSector.h"
+#import "SiwakeSector.h"
 #import "MasterTableViewCell.h"
 #import "MasterViewController.h"
 #import "DetailViewController.h"
+#import "SiwakeViewController.h"//in case: siwake
 #import "ResultViewController.h"
 #import "ResultModel.h"
 #import "ConfigViewController.h"
+
+
+
+#import "Siwake.h"
+
 
 //test
 #import "PieChartViewController.h"
@@ -48,7 +57,11 @@
 @implementation MasterViewController
 
 @synthesize quiz = _quiz;
-QuizSector *quizSector;
+#ifdef QUIZ_FLAG
+    QuizSector *quizSector;
+#else
+    SiwakeSector *siwakeSector;
+#endif
 
 
 - (void)viewDidLoad {
@@ -65,9 +78,16 @@ QuizSector *quizSector;
                    @"tokyo_tower2", @"water2", @"light", @"bird", @"building", @"desk", @"sunset", @"wood", @"aman", nil];
     //streetは暗すぎて表示に適さない
     
+#ifdef QUIZ_FLAG
     //全ファイル読み込み実行
     quizSector = [[QuizSector alloc]init];
     [quizSector readAll];//全csvデータ読み込み
+#else
+    siwakeSector = [[SiwakeSector alloc]init];
+    [siwakeSector readAll];
+    
+    NSLog(@"siwake count = %ld", ((Siwake *)siwakeSector.quizSectsArray[0]).siwakeItemsArray.count);
+#endif
     
     //回答と正解数の配列セットアップ
     [self setAnswerAndCorrect];
@@ -97,6 +117,7 @@ QuizSector *quizSector;
 -(void)setAnswerAndCorrect{
     arrMAnswers = [NSMutableArray array];
     arrMCorrects = [NSMutableArray array];
+#ifdef QUIZ_FLAG
     for(int i = 0;i < quizSector.quizSectsArray.count;i++){
         @autoreleasepool {
             Quiz *tmpQuiz = (Quiz *)quizSector.quizSectsArray[i];
@@ -121,6 +142,34 @@ QuizSector *quizSector;
             
         }
     }
+#else
+    for(int i = 0;i < siwakeSector.quizSectsArray.count;i++){
+        @autoreleasepool {
+            Siwake *tmpSiwake = (Siwake *)siwakeSector.quizSectsArray[i];
+            ResultModel *myResultModel = [[ResultModel alloc] initWithSection:tmpSiwake];
+            int sumAnswer = 0;
+            int sumCorrect = 0;
+            NSLog(@"tmpSiwake.quizItemsArray.count = %ld",
+                  tmpSiwake.siwakeItemsArray.count);
+            
+            for(int j = 0;j < tmpSiwake.siwakeItemsArray.count;j++){
+                //セクションごとに回答率をarrMRatioCorrectsに格納する(未回答なら-1とする)
+                NSLog(@"get answer = %d", [myResultModel getAnswer:j]);
+                NSLog(@"get correct = %d", [myResultModel getCorrect:j]);
+                sumAnswer += [myResultModel getAnswer:j];
+                sumCorrect += [myResultModel getCorrect:j];
+                
+            }
+            //[arrMRatioCorrects addObject:[NSNumber numberWithInteger:sum]];
+            [arrMAnswers addObject:[NSNumber numberWithInteger:sumAnswer]];
+            [arrMCorrects addObject:[NSNumber numberWithInteger:sumCorrect]];
+            
+            tmpSiwake = nil;
+            myResultModel = nil;
+        }
+    }
+    
+#endif
     
 }
 
@@ -134,9 +183,15 @@ QuizSector *quizSector;
 -(void)goResult{
     NSLog(@"%s", __func__);
     
+#ifdef QUIZ_FLAG
     if(quizSector.quizSectsArray.count > 0){
         ResultViewController *resultViewCon = [[ResultViewController alloc] init];
         resultViewCon.arrQuiz = quizSector.quizSectsArray;
+#else
+    if(siwakeSector.quizSectsArray.count > 0){
+        ResultViewController *resultViewCon = [[ResultViewController alloc] init];
+        resultViewCon.arrQuiz = siwakeSector.quizSectsArray;
+#endif
 //      PieChartViewController *resultViewCon = [[PieChartViewController alloc]init];
         [self.navigationController pushViewController:resultViewCon animated:YES];
     }
@@ -166,6 +221,7 @@ QuizSector *quizSector;
 }
 
 -(void)updateInfo{
+#ifdef QUIZ_FLAG
     for(int i = 0;i < quizSector.quizSectsArray.count;i++){
         @autoreleasepool {
             Quiz *tmpQuiz = quizSector.quizSectsArray[i];
@@ -173,8 +229,21 @@ QuizSector *quizSector;
             quizSector.quizSectsArray[i] = tmpQuiz;
         }
     }
+#else
+    for(int i = 0;i < siwakeSector.quizSectsArray.count;i++){
+        @autoreleasepool {
+            Siwake *tmpSiwake = siwakeSector.quizSectsArray[i];
+            [tmpSiwake updateAllResult];
+            siwakeSector.quizSectsArray[i] = tmpSiwake;
+        }
+    }
+#endif
+
+    
+    
     [self setAnswerAndCorrect];
     [self.tableView reloadData];
+    
     
     
     //問題を選択した時に、どの問題（１問目）を選択するのか
@@ -189,16 +258,6 @@ QuizSector *quizSector;
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-
-- (void)insertNewObject:(id)sender {
-    if (!self.objects) {
-        self.objects = [[NSMutableArray alloc] init];
-    }
-    [self.objects insertObject:[NSDate date] atIndex:0];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 
@@ -229,11 +288,13 @@ QuizSector *quizSector;
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    //return self.objects.count;
-    NSLog(@"count = %ld", quizSector.quizSectsArray.count);
-    //return _quiz.quizItemsArray.count;
+#ifdef QUIZ_FLAG
+    NSLog(@"quiz sector count = %ld", quizSector.quizSectsArray.count);
     return quizSector.quizSectsArray.count;
-    //return ((Quiz *)quizSector.quizSectsArray[section]).quizItemsArray.count;
+#else
+    NSLog(@"siwake sector count = %ld", siwakeSector.quizSectsArray.count);
+    return siwakeSector.quizSectsArray.count;
+#endif
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -245,6 +306,7 @@ QuizSector *quizSector;
     MasterTableViewCell *cell = (MasterTableViewCell *)
     [tableView dequeueReusableCellWithIdentifier:@"masterCell" forIndexPath:indexPath];
     
+    NSLog(@"arrImgCells.count = %ld", arrImgCells.count);
     //背景画像の設定
     cell.img_back.image = [UIImage imageNamed:arrImgCells[indexPath.row % (int)arrImgCells.count]];
     NSLog(@"%s, indexpath.row = %d, %@",
@@ -254,16 +316,21 @@ QuizSector *quizSector;
     
     //セル上の表示文言の設定
     @autoreleasepool {
+#ifdef QUIZ_FLAG
         Quiz *quiz = (Quiz *)quizSector.quizSectsArray[indexPath.row];
-        //QuizItem *quizItem = quiz.quizItemsArray[0];
-        
-        //cell.lbl_sector.text = quizItem.sectorName;
+#else
+        Siwake *quiz = (Siwake *)siwakeSector.quizSectsArray[indexPath.row];
+#endif
         cell.lbl_sector.text =
         [NSString stringWithFormat:@"第%d章 %@", (int)indexPath.row+1, quiz.sectionName];
-        //[NSString stringWithFormat:@"第%d章 %@", quiz.section, quiz.sectionName];
+        
         
         //cell.lbl_name.text = [NSString stringWithFormat:@"概要%ld", indexPath.row];
-        cell.lbl_name.text = [[quiz.arrCategory subarrayWithRange:NSMakeRange(0, 2)] componentsJoinedByString:@","];//先頭の上位要素のみ取得
+        cell.lbl_name.text =
+        [[quiz.arrCategory
+          subarrayWithRange:
+          NSMakeRange(0, quiz.arrCategory.count>=2?2:(quiz.arrCategory.count))]//最大値２
+         componentsJoinedByString:@","];//先頭の上位要素のみ取得
         
         //cell.lbl_seitouritu.text = [NSString stringWithFormat:@"%@", arrMRatioCorrects[indexPath.row]];
         NSString *strSeitouritu = nil;
@@ -327,20 +394,33 @@ QuizSector *quizSector;
 //}
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
     didUpdate = YES;//問題を解いた（解こうとした）場合に更新したことにする
-    //NSDate *object = self.objects[indexPath.row];
-//    DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
+    
+#ifdef QUIZ_FLAG
     DetailViewController *controller = [[self storyboard] instantiateViewControllerWithIdentifier:@"detail"];
-    //NSLog(@"sending quiz = %@", quizSector.quizSectsArray[indexPath.row]);
     Quiz *tmpQuiz = quizSector.quizSectsArray[indexPath.row];
     [controller setQuiz:tmpQuiz];
+#else
+    SiwakeViewController *controller = [[SiwakeViewController alloc]init];
+    //本来的にはここでインスタンス作成せずにviewdidloadで作成したグローバル変数から選択されたセル番号に応じたsiwakeセクションを返す
+    Siwake *tmpSiwake = siwakeSector.quizSectsArray[indexPath.row];
+    controller.siwake = tmpSiwake;
+//    siwakeViewCon.quizNo = 0;//テスト：最初の番号を指定
+//    [self.navigationController pushViewController:siwakeViewCon animated:YES];
+#endif
+    
     //最初の1問目の選択
     if([self.strConfigKey isEqualToString:QUIZ_CONFIG_KEY_TEST] ||
        [self.strConfigKey isEqualToString:QUIZ_CONFIG_KEY_NO_EXP] ||
        [self.strConfigKey isEqualToString:QUIZ_CONFIG_KEY_STANDARD]){
         controller.quizNo = 0;
     }else{
+#ifdef QUIZ_FLAG
         controller.quizNo = (int)arc4random_uniform((int)tmpQuiz.quizItemsArray.count);
+#else
+        controller.quizNo = (int)arc4random_uniform((int)tmpSiwake.siwakeItemsArray.count);
+#endif
     }
     NSLog(@"quizNo @master = %d", controller.quizNo);
     controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
@@ -350,8 +430,11 @@ QuizSector *quizSector;
     controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
     controller.navigationItem.leftItemsSupplementBackButton = YES;
     
-    
+#ifdef QUIZ_FLAG
     tmpQuiz = nil;
+#else
+    tmpSiwake = nil;
+#endif
 }
 
 @end

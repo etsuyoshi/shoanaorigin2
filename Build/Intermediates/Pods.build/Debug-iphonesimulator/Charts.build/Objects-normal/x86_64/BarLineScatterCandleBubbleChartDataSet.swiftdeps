@@ -14,14 +14,14 @@ provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
 - "CastingPrecedence"
-- "NSUIColor"
-- "CGFloat"
-- "NSZone"
 - "AnyObject"
+- "NSUIColor"
+- "NSZone"
+- "CGFloat"
 - "IBarLineScatterCandleBubbleChartDataSet"
-- "/"
-- "BarLineScatterCandleBubbleChartDataSet"
 - "ChartDataSet"
+- "BarLineScatterCandleBubbleChartDataSet"
+- "/"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]
