@@ -6,27 +6,27 @@ provides-nominal:
 provides-member:
 - ["C6Charts17RadarChartDataSet", ""]
 provides-dynamic-lookup:
-- "highlightCircleStrokeWidth"
+- "drawHighlightCircleEnabled"
+- "highlightCircleFillColor"
+- "highlightCircleInnerRadius"
 - "highlightCircleOuterRadius"
 - "highlightCircleStrokeAlpha"
-- "isDrawHighlightCircleEnabled"
-- "highlightCircleFillColor"
 - "highlightCircleStrokeColor"
-- "highlightCircleInnerRadius"
-- "drawHighlightCircleEnabled"
+- "highlightCircleStrokeWidth"
+- "isDrawHighlightCircleEnabled"
 depends-top-level:
-- "String"
-- "ChartDataEntry"
-- "BooleanLiteralType"
-- "NSUIColor"
-- !private "StringLiteralType"
-- !private "NSUIFont"
 - !private "AssignmentPrecedence"
-- "IRadarChartDataSet"
 - "Bool"
-- "LineRadarChartDataSet"
-- "RadarChartDataSet"
+- "BooleanLiteralType"
 - "CGFloat"
+- "ChartDataEntry"
+- "IRadarChartDataSet"
+- "LineRadarChartDataSet"
+- "NSUIColor"
+- !private "NSUIFont"
+- "RadarChartDataSet"
+- "String"
+- !private "StringLiteralType"
 depends-member:
 - ["Ps9AnyObject", "NSUIColor"]
 - !private ["Ps9AnyObject", "NSUIFont"]
@@ -37,8 +37,8 @@ depends-member:
 - ["Ps9AnyObject", "highlightCircleStrokeAlpha"]
 - ["Ps9AnyObject", "highlightCircleStrokeColor"]
 - ["Ps9AnyObject", "highlightCircleStrokeWidth"]
-- ["Ps9AnyObject", "init"]
-- ["Ps9AnyObject", "initialize"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "initialize"]
 - ["Ps9AnyObject", "isDrawHighlightCircleEnabled"]
 - !private ["Ps9AnyObject", "systemFont"]
 - !private ["Ps9AnyObject", "valueFont"]
@@ -61,8 +61,6 @@ depends-member:
 - ["C6Charts38BarLineScatterCandleBubbleChartDataSet", "initialize"]
 - ["C6Charts38BarLineScatterCandleBubbleChartDataSet", "isDrawHighlightCircleEnabled"]
 - !private ["C6Charts38BarLineScatterCandleBubbleChartDataSet", "valueFont"]
-- ["Sb", "deinit"]
-- ["V12CoreGraphics7CGFloat", "deinit"]
 - ["Ps7CVarArg", "NSUIColor"]
 - !private ["Ps7CVarArg", "NSUIFont"]
 - ["Ps7CVarArg", "drawHighlightCircleEnabled"]
@@ -72,8 +70,8 @@ depends-member:
 - ["Ps7CVarArg", "highlightCircleStrokeAlpha"]
 - ["Ps7CVarArg", "highlightCircleStrokeColor"]
 - ["Ps7CVarArg", "highlightCircleStrokeWidth"]
-- ["Ps7CVarArg", "init"]
-- ["Ps7CVarArg", "initialize"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "initialize"]
 - ["Ps7CVarArg", "isDrawHighlightCircleEnabled"]
 - !private ["Ps7CVarArg", "systemFont"]
 - !private ["Ps7CVarArg", "valueFont"]
@@ -122,8 +120,8 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "highlightCircleStrokeAlpha"]
 - ["Ps28CustomDebugStringConvertible", "highlightCircleStrokeColor"]
 - ["Ps28CustomDebugStringConvertible", "highlightCircleStrokeWidth"]
-- ["Ps28CustomDebugStringConvertible", "init"]
-- ["Ps28CustomDebugStringConvertible", "initialize"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "initialize"]
 - ["Ps28CustomDebugStringConvertible", "isDrawHighlightCircleEnabled"]
 - !private ["Ps28CustomDebugStringConvertible", "systemFont"]
 - !private ["Ps28CustomDebugStringConvertible", "valueFont"]
@@ -139,8 +137,8 @@ depends-member:
 - ["Ps23CustomStringConvertible", "highlightCircleStrokeAlpha"]
 - ["Ps23CustomStringConvertible", "highlightCircleStrokeColor"]
 - ["Ps23CustomStringConvertible", "highlightCircleStrokeWidth"]
-- ["Ps23CustomStringConvertible", "init"]
-- ["Ps23CustomStringConvertible", "initialize"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "initialize"]
 - ["Ps23CustomStringConvertible", "isDrawHighlightCircleEnabled"]
 - !private ["Ps23CustomStringConvertible", "systemFont"]
 - !private ["Ps23CustomStringConvertible", "valueFont"]
@@ -155,8 +153,8 @@ depends-member:
 - ["Ps9Equatable", "highlightCircleStrokeAlpha"]
 - ["Ps9Equatable", "highlightCircleStrokeColor"]
 - ["Ps9Equatable", "highlightCircleStrokeWidth"]
-- ["Ps9Equatable", "init"]
-- ["Ps9Equatable", "initialize"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "initialize"]
 - ["Ps9Equatable", "isDrawHighlightCircleEnabled"]
 - !private ["Ps9Equatable", "systemFont"]
 - !private ["Ps9Equatable", "valueFont"]
@@ -174,8 +172,8 @@ depends-member:
 - ["Ps8Hashable", "highlightCircleStrokeAlpha"]
 - ["Ps8Hashable", "highlightCircleStrokeColor"]
 - ["Ps8Hashable", "highlightCircleStrokeWidth"]
-- ["Ps8Hashable", "init"]
-- ["Ps8Hashable", "initialize"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "initialize"]
 - ["Ps8Hashable", "isDrawHighlightCircleEnabled"]
 - !private ["Ps8Hashable", "systemFont"]
 - !private ["Ps8Hashable", "valueFont"]
@@ -190,8 +188,8 @@ depends-member:
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "highlightCircleStrokeAlpha"]
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "highlightCircleStrokeColor"]
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "highlightCircleStrokeWidth"]
-- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "init"]
-- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "initialize"]
+- !private ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "init"]
+- !private ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "initialize"]
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "isDrawHighlightCircleEnabled"]
 - !private ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "valueFont"]
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", ""]
@@ -204,8 +202,8 @@ depends-member:
 - ["P6Charts13IChartDataSet", "highlightCircleStrokeAlpha"]
 - ["P6Charts13IChartDataSet", "highlightCircleStrokeColor"]
 - ["P6Charts13IChartDataSet", "highlightCircleStrokeWidth"]
-- ["P6Charts13IChartDataSet", "init"]
-- ["P6Charts13IChartDataSet", "initialize"]
+- !private ["P6Charts13IChartDataSet", "init"]
+- !private ["P6Charts13IChartDataSet", "initialize"]
 - ["P6Charts13IChartDataSet", "isDrawHighlightCircleEnabled"]
 - !private ["P6Charts13IChartDataSet", "valueFont"]
 - ["P6Charts13IChartDataSet", ""]
@@ -218,8 +216,8 @@ depends-member:
 - ["P6Charts22ILineRadarChartDataSet", "highlightCircleStrokeAlpha"]
 - ["P6Charts22ILineRadarChartDataSet", "highlightCircleStrokeColor"]
 - ["P6Charts22ILineRadarChartDataSet", "highlightCircleStrokeWidth"]
-- ["P6Charts22ILineRadarChartDataSet", "init"]
-- ["P6Charts22ILineRadarChartDataSet", "initialize"]
+- !private ["P6Charts22ILineRadarChartDataSet", "init"]
+- !private ["P6Charts22ILineRadarChartDataSet", "initialize"]
 - ["P6Charts22ILineRadarChartDataSet", "isDrawHighlightCircleEnabled"]
 - !private ["P6Charts22ILineRadarChartDataSet", "valueFont"]
 - ["P6Charts22ILineRadarChartDataSet", ""]
@@ -232,8 +230,8 @@ depends-member:
 - ["P6Charts35ILineScatterCandleRadarChartDataSet", "highlightCircleStrokeAlpha"]
 - ["P6Charts35ILineScatterCandleRadarChartDataSet", "highlightCircleStrokeColor"]
 - ["P6Charts35ILineScatterCandleRadarChartDataSet", "highlightCircleStrokeWidth"]
-- ["P6Charts35ILineScatterCandleRadarChartDataSet", "init"]
-- ["P6Charts35ILineScatterCandleRadarChartDataSet", "initialize"]
+- !private ["P6Charts35ILineScatterCandleRadarChartDataSet", "init"]
+- !private ["P6Charts35ILineScatterCandleRadarChartDataSet", "initialize"]
 - ["P6Charts35ILineScatterCandleRadarChartDataSet", "isDrawHighlightCircleEnabled"]
 - !private ["P6Charts35ILineScatterCandleRadarChartDataSet", "valueFont"]
 - ["P6Charts35ILineScatterCandleRadarChartDataSet", ""]
@@ -256,7 +254,6 @@ depends-member:
 - ["C6Charts21LineRadarChartDataSet", "NSUIColor"]
 - !private ["C6Charts21LineRadarChartDataSet", "NSUIFont"]
 - ["C6Charts21LineRadarChartDataSet", "String"]
-- ["C6Charts21LineRadarChartDataSet", "deinit"]
 - ["C6Charts21LineRadarChartDataSet", "drawHighlightCircleEnabled"]
 - ["C6Charts21LineRadarChartDataSet", "highlightCircleFillColor"]
 - ["C6Charts21LineRadarChartDataSet", "highlightCircleInnerRadius"]
@@ -288,11 +285,9 @@ depends-member:
 - !private ["C6Charts34LineScatterCandleRadarChartDataSet", "valueFont"]
 - !private ["PSo8NSCoding", "systemFont"]
 - ["PSo8NSCoding", "white"]
-- ["CSo7NSColor", "deinit"]
 - ["CSo7NSColor", "white"]
 - !private ["PSo9NSCopying", "systemFont"]
 - ["PSo9NSCopying", "white"]
-- !private ["CSo6NSFont", "deinit"]
 - !private ["CSo6NSFont", "systemFont"]
 - ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "CGFloat"]
@@ -322,8 +317,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "highlightCircleStrokeAlpha"]
 - ["PSo16NSObjectProtocol", "highlightCircleStrokeColor"]
 - ["PSo16NSObjectProtocol", "highlightCircleStrokeWidth"]
-- ["PSo16NSObjectProtocol", "init"]
-- ["PSo16NSObjectProtocol", "initialize"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "initialize"]
 - ["PSo16NSObjectProtocol", "isDrawHighlightCircleEnabled"]
 - !private ["PSo16NSObjectProtocol", "systemFont"]
 - !private ["PSo16NSObjectProtocol", "valueFont"]
@@ -333,8 +328,6 @@ depends-member:
 - ["PSo19NSPasteboardWriting", "white"]
 - !private ["PSo14NSSecureCoding", "systemFont"]
 - ["PSo14NSSecureCoding", "white"]
-- ["Os5Never", "deinit"]
-- ["Sq", "deinit"]
 - ["C6Charts17RadarChartDataSet", "Bool"]
 - ["C6Charts17RadarChartDataSet", "CGFloat"]
 - ["C6Charts17RadarChartDataSet", "ChartDataEntry"]
@@ -353,9 +346,7 @@ depends-member:
 - !private ["C6Charts17RadarChartDataSet", "initialize"]
 - ["C6Charts17RadarChartDataSet", "isDrawHighlightCircleEnabled"]
 - !private ["C6Charts17RadarChartDataSet", "valueFont"]
-- ["Vs12StaticString", "deinit"]
 - !private ["Vs12StaticString", "init"]
-- ["Su", "deinit"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
@@ -369,8 +360,8 @@ depends-member:
 - ["Ps9_Hashable", "highlightCircleStrokeAlpha"]
 - ["Ps9_Hashable", "highlightCircleStrokeColor"]
 - ["Ps9_Hashable", "highlightCircleStrokeWidth"]
-- ["Ps9_Hashable", "init"]
-- ["Ps9_Hashable", "initialize"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "initialize"]
 - ["Ps9_Hashable", "isDrawHighlightCircleEnabled"]
 - !private ["Ps9_Hashable", "systemFont"]
 - !private ["Ps9_Hashable", "valueFont"]
@@ -379,8 +370,6 @@ depends-member:
 depends-nominal:
 - "Ps9AnyObject"
 - "C6Charts38BarLineScatterCandleBubbleChartDataSet"
-- "Sb"
-- "V12CoreGraphics7CGFloat"
 - "Ps7CVarArg"
 - "C6Charts16ChartBaseDataSet"
 - "C6Charts12ChartDataSet"
@@ -408,11 +397,8 @@ depends-nominal:
 - "PSo19NSPasteboardReading"
 - "PSo19NSPasteboardWriting"
 - "PSo14NSSecureCoding"
-- "Os5Never"
-- "Sq"
 - "C6Charts17RadarChartDataSet"
-- "Vs12StaticString"
-- "Su"
+- !private "Vs12StaticString"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
@@ -421,6 +407,15 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.apinotesc"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/Charts/Source/Supporting Files/Charts.h"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Charts.build/Debug/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
@@ -435,4 +430,5 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuickLook.apinotesc"
 interface-hash: "583974c106d53ddd9726d1c82476476c"

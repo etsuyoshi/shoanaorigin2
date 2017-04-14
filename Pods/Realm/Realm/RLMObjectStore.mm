@@ -301,10 +301,6 @@ void RLMAddObjectToRealm(__unsafe_unretained RLMObjectBase *const object,
 
     // populate all properties
     for (RLMProperty *prop in info.rlmObjectSchema.properties) {
-        // skip primary key when updating since it doesn't change
-        if (prop.isPrimary)
-            continue;
-
         // get object from ivar using key value coding
         id value = nil;
         if (prop.swiftIvar) {
@@ -334,6 +330,10 @@ void RLMAddObjectToRealm(__unsafe_unretained RLMObjectBase *const object,
                 ((void(*)(id, SEL, id))objc_msgSend)(object, prop.setterSel, nil);
             }
         }
+
+        // skip primary key when updating since it doesn't change
+        if (prop.isPrimary)
+            continue;
 
         // set in table with out validation
         RLMDynamicSet(object, prop, RLMCoerceToNil(value), creationOptions);
@@ -389,11 +389,9 @@ RLMObjectBase *RLMCreateObjectInRealmWithValue(RLMRealm *realm, NSString *classN
     else {
         __block bool foundExisting = false;
         __block NSDictionary *defaultValues = nil;
-        __block bool usedDefault = false;
         auto getValue = ^(RLMProperty *prop) {
             id propValue = RLMValidatedValueForProperty(value, prop.name, info.rlmObjectSchema.className);
-            usedDefault = !propValue && !foundExisting;
-            if (usedDefault) {
+            if (!propValue && !foundExisting) {
                 if (!defaultValues) {
                     defaultValues = RLMDefaultValuesForObjectSchema(info.rlmObjectSchema);
                 }
@@ -415,12 +413,7 @@ RLMObjectBase *RLMCreateObjectInRealmWithValue(RLMRealm *realm, NSString *classN
 
             if (id propValue = getValue(prop)) {
                 validateValueForProperty(propValue, prop);
-                // add SetDefault to creationoptions
-                RLMCreationOptions propertyCreationOptions = creationOptions;
-                if (usedDefault) {
-                    propertyCreationOptions |= RLMCreationOptionsSetDefault;
-                }
-                RLMDynamicSet(object, prop, RLMCoerceToNil(propValue), propertyCreationOptions);
+                RLMDynamicSet(object, prop, RLMCoerceToNil(propValue), creationOptions);
             }
             else if (!foundExisting && !prop.optional) {
                 @throw RLMException(@"Property '%@' of object of type '%@' cannot be nil.", prop.name, info.rlmObjectSchema.className);

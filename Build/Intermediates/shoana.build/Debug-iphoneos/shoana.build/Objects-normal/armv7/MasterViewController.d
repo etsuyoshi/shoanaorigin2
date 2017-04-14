@@ -4,9 +4,13 @@ dependencies: \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/Quiz/QuizSector.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/Quiz/Quiz.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/Quiz/QuizItem.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/SiwakeSector.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/MasterTableViewCell.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/MasterViewController.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/DetailViewController.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/SiwakeViewController.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/Siwake.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/SiwakeItem.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/ResultViewController.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Charts.framework/Modules/module.modulemap \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Charts.framework/Headers/Charts-Swift.h \

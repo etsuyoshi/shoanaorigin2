@@ -8,33 +8,33 @@ provides-member:
 - ["C6Charts14ChartLimitLine", ""]
 - ["OC6Charts14ChartLimitLine13LabelPosition", ""]
 provides-dynamic-lookup:
-- "label"
-- "lineDashPhase"
-- "lineDashLengths"
-- "lineWidth"
 - "drawLabelEnabled"
+- "label"
+- "labelPosition"
 - "limit"
 - "lineColor"
-- "valueTextColor"
+- "lineDashLengths"
+- "lineDashPhase"
+- "lineWidth"
 - "valueFont"
-- "labelPosition"
+- "valueTextColor"
 depends-top-level:
 - "/"
-- "Double"
-- "BooleanLiteralType"
-- "ComponentBase"
-- "NSUIColor"
-- "StringLiteralType"
-- !private ">"
-- "ChartLimitLine"
-- !private "~="
-- "=="
-- "AssignmentPrecedence"
-- "NSUIFont"
-- "Int"
 - !private "<"
+- "=="
+- !private ">"
+- "AssignmentPrecedence"
+- "BooleanLiteralType"
 - "CGFloat"
+- "ChartLimitLine"
+- "ComponentBase"
+- "Double"
+- "Int"
+- "NSUIColor"
+- "NSUIFont"
 - "String"
+- "StringLiteralType"
+- !private "~="
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]
@@ -42,49 +42,29 @@ depends-member:
 - ["Ps9AnyObject", "LabelPosition"]
 - ["Ps9AnyObject", "NSUIColor"]
 - ["Ps9AnyObject", "NSUIFont"]
-- ["Ps9AnyObject", "_lineWidth"]
+- !private ["Ps9AnyObject", "_lineWidth"]
 - ["Ps9AnyObject", "black"]
-- ["Ps9AnyObject", "drawLabelEnabled"]
 - ["Ps9AnyObject", "init"]
-- ["Ps9AnyObject", "label"]
-- ["Ps9AnyObject", "labelPosition"]
-- ["Ps9AnyObject", "limit"]
-- ["Ps9AnyObject", "lineColor"]
-- ["Ps9AnyObject", "lineDashLengths"]
-- ["Ps9AnyObject", "lineDashPhase"]
-- ["Ps9AnyObject", "lineWidth"]
+- !private ["Ps9AnyObject", "label"]
+- !private ["Ps9AnyObject", "limit"]
 - ["Ps9AnyObject", "systemFont"]
-- ["Ps9AnyObject", "valueFont"]
-- ["Ps9AnyObject", "valueTextColor"]
 - ["Ps9AnyObject", ""]
 - ["Ps19BinaryFloatingPoint", "init"]
-- !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "hashValue"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- ["Sb", "deinit"]
-- ["V12CoreGraphics7CGFloat", "deinit"]
 - ["V12CoreGraphics7CGFloat", "init"]
 - ["Ps7CVarArg", "CGFloat"]
 - ["Ps7CVarArg", "Double"]
 - ["Ps7CVarArg", "LabelPosition"]
 - ["Ps7CVarArg", "NSUIColor"]
 - ["Ps7CVarArg", "NSUIFont"]
-- !private ["Ps7CVarArg", "Stride"]
-- ["Ps7CVarArg", "_lineWidth"]
+- !private ["Ps7CVarArg", "_lineWidth"]
 - ["Ps7CVarArg", "black"]
-- ["Ps7CVarArg", "drawLabelEnabled"]
 - !private ["Ps7CVarArg", "hashValue"]
 - ["Ps7CVarArg", "init"]
-- ["Ps7CVarArg", "label"]
-- ["Ps7CVarArg", "labelPosition"]
-- ["Ps7CVarArg", "limit"]
-- ["Ps7CVarArg", "lineColor"]
-- ["Ps7CVarArg", "lineDashLengths"]
-- ["Ps7CVarArg", "lineDashPhase"]
-- ["Ps7CVarArg", "lineWidth"]
+- !private ["Ps7CVarArg", "label"]
+- !private ["Ps7CVarArg", "limit"]
 - ["Ps7CVarArg", "systemFont"]
-- ["Ps7CVarArg", "valueFont"]
-- ["Ps7CVarArg", "valueTextColor"]
 - ["Ps7CVarArg", ""]
 - ["C6Charts14ChartLimitLine", "CGFloat"]
 - ["C6Charts14ChartLimitLine", "Double"]
@@ -106,8 +86,6 @@ depends-member:
 - ["C6Charts14ChartLimitLine", "lineWidth"]
 - ["C6Charts14ChartLimitLine", "valueFont"]
 - ["C6Charts14ChartLimitLine", "valueTextColor"]
-- !private ["Vs11ClosedRange", "deinit"]
-- !private ["Ps10Comparable", "Stride"]
 - !private ["Ps10Comparable", "hashValue"]
 - ["Ps10Comparable", "init"]
 - ["C6Charts13ComponentBase", "CGFloat"]
@@ -118,7 +96,6 @@ depends-member:
 - ["C6Charts13ComponentBase", "NSUIFont"]
 - ["C6Charts13ComponentBase", "String"]
 - ["C6Charts13ComponentBase", "_lineWidth"]
-- ["C6Charts13ComponentBase", "deinit"]
 - ["C6Charts13ComponentBase", "drawLabelEnabled"]
 - ["C6Charts13ComponentBase", "init"]
 - ["C6Charts13ComponentBase", "label"]
@@ -131,33 +108,21 @@ depends-member:
 - ["C6Charts13ComponentBase", "valueFont"]
 - ["C6Charts13ComponentBase", "valueTextColor"]
 - ["C6Charts13ComponentBase", ""]
-- !private ["Vs20CountableClosedRange", "deinit"]
-- !private ["Vs14CountableRange", "deinit"]
 - ["Ps28CustomDebugStringConvertible", "CGFloat"]
 - ["Ps28CustomDebugStringConvertible", "Double"]
 - ["Ps28CustomDebugStringConvertible", "LabelPosition"]
 - ["Ps28CustomDebugStringConvertible", "NSUIColor"]
 - ["Ps28CustomDebugStringConvertible", "NSUIFont"]
-- ["Ps28CustomDebugStringConvertible", "_lineWidth"]
+- !private ["Ps28CustomDebugStringConvertible", "_lineWidth"]
 - ["Ps28CustomDebugStringConvertible", "black"]
-- ["Ps28CustomDebugStringConvertible", "drawLabelEnabled"]
 - ["Ps28CustomDebugStringConvertible", "init"]
-- ["Ps28CustomDebugStringConvertible", "label"]
-- ["Ps28CustomDebugStringConvertible", "labelPosition"]
-- ["Ps28CustomDebugStringConvertible", "limit"]
-- ["Ps28CustomDebugStringConvertible", "lineColor"]
-- ["Ps28CustomDebugStringConvertible", "lineDashLengths"]
-- ["Ps28CustomDebugStringConvertible", "lineDashPhase"]
-- ["Ps28CustomDebugStringConvertible", "lineWidth"]
+- !private ["Ps28CustomDebugStringConvertible", "label"]
+- !private ["Ps28CustomDebugStringConvertible", "limit"]
 - ["Ps28CustomDebugStringConvertible", "systemFont"]
-- ["Ps28CustomDebugStringConvertible", "valueFont"]
-- ["Ps28CustomDebugStringConvertible", "valueTextColor"]
 - ["Ps28CustomDebugStringConvertible", ""]
-- !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "hashValue"]
 - ["Ps29CustomPlaygroundQuickLookable", "init"]
-- !private ["Ps17CustomReflectable", "Stride"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "hashValue"]
 - ["Ps17CustomReflectable", "init"]
@@ -166,60 +131,38 @@ depends-member:
 - ["Ps23CustomStringConvertible", "LabelPosition"]
 - ["Ps23CustomStringConvertible", "NSUIColor"]
 - ["Ps23CustomStringConvertible", "NSUIFont"]
-- !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
-- ["Ps23CustomStringConvertible", "_lineWidth"]
+- !private ["Ps23CustomStringConvertible", "_lineWidth"]
 - ["Ps23CustomStringConvertible", "black"]
-- ["Ps23CustomStringConvertible", "drawLabelEnabled"]
 - !private ["Ps23CustomStringConvertible", "hashValue"]
 - ["Ps23CustomStringConvertible", "init"]
-- ["Ps23CustomStringConvertible", "label"]
-- ["Ps23CustomStringConvertible", "labelPosition"]
-- ["Ps23CustomStringConvertible", "limit"]
-- ["Ps23CustomStringConvertible", "lineColor"]
-- ["Ps23CustomStringConvertible", "lineDashLengths"]
-- ["Ps23CustomStringConvertible", "lineDashPhase"]
-- ["Ps23CustomStringConvertible", "lineWidth"]
+- !private ["Ps23CustomStringConvertible", "label"]
+- !private ["Ps23CustomStringConvertible", "limit"]
 - ["Ps23CustomStringConvertible", "systemFont"]
-- ["Ps23CustomStringConvertible", "valueFont"]
-- ["Ps23CustomStringConvertible", "valueTextColor"]
 - ["Ps23CustomStringConvertible", ""]
-- ["Sd", "deinit"]
 - ["Sd", "init"]
 - ["Ps9Equatable", "CGFloat"]
 - ["Ps9Equatable", "Double"]
 - ["Ps9Equatable", "LabelPosition"]
 - ["Ps9Equatable", "NSUIColor"]
 - ["Ps9Equatable", "NSUIFont"]
-- ["Ps9Equatable", "RawValue"]
-- !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
-- ["Ps9Equatable", "_lineWidth"]
+- !private ["Ps9Equatable", "_lineWidth"]
 - ["Ps9Equatable", "_toAnyHashable"]
 - ["Ps9Equatable", "black"]
-- ["Ps9Equatable", "drawLabelEnabled"]
 - ["Ps9Equatable", "hashValue"]
 - ["Ps9Equatable", "init"]
-- ["Ps9Equatable", "label"]
-- ["Ps9Equatable", "labelPosition"]
-- ["Ps9Equatable", "limit"]
-- ["Ps9Equatable", "lineColor"]
-- ["Ps9Equatable", "lineDashLengths"]
-- ["Ps9Equatable", "lineDashPhase"]
-- ["Ps9Equatable", "lineWidth"]
+- !private ["Ps9Equatable", "label"]
+- !private ["Ps9Equatable", "limit"]
 - ["Ps9Equatable", "rawValue"]
 - ["Ps9Equatable", "rightTop"]
 - ["Ps9Equatable", "systemFont"]
-- ["Ps9Equatable", "valueFont"]
-- ["Ps9Equatable", "valueTextColor"]
 - ["Ps9Equatable", ""]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - ["Ps25ExpressibleByFloatLiteral", "init"]
-- !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
 - ["Ps27ExpressibleByIntegerLiteral", "init"]
-- ["Ps32ExpressibleByStringInterpolation", "init"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - ["Ps13FloatingPoint", "init"]
@@ -228,34 +171,20 @@ depends-member:
 - ["Ps8Hashable", "LabelPosition"]
 - ["Ps8Hashable", "NSUIColor"]
 - ["Ps8Hashable", "NSUIFont"]
-- ["Ps8Hashable", "RawValue"]
-- !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
-- ["Ps8Hashable", "_lineWidth"]
+- !private ["Ps8Hashable", "_lineWidth"]
 - ["Ps8Hashable", "_toAnyHashable"]
 - ["Ps8Hashable", "black"]
-- ["Ps8Hashable", "drawLabelEnabled"]
 - ["Ps8Hashable", "hashValue"]
 - ["Ps8Hashable", "init"]
-- ["Ps8Hashable", "label"]
-- ["Ps8Hashable", "labelPosition"]
-- ["Ps8Hashable", "limit"]
-- ["Ps8Hashable", "lineColor"]
-- ["Ps8Hashable", "lineDashLengths"]
-- ["Ps8Hashable", "lineDashPhase"]
-- ["Ps8Hashable", "lineWidth"]
+- !private ["Ps8Hashable", "label"]
+- !private ["Ps8Hashable", "limit"]
 - ["Ps8Hashable", "rawValue"]
 - ["Ps8Hashable", "rightTop"]
 - ["Ps8Hashable", "systemFont"]
-- ["Ps8Hashable", "valueFont"]
-- ["Ps8Hashable", "valueTextColor"]
 - ["Ps8Hashable", ""]
-- !private ["Si", "Stride"]
-- ["Si", "deinit"]
 - !private ["Si", "hashValue"]
-- !private ["Ps7Integer", "Stride"]
 - !private ["Ps7Integer", "hashValue"]
-- !private ["Ps17IntegerArithmetic", "Stride"]
 - !private ["Ps17IntegerArithmetic", "hashValue"]
 - ["OC6Charts14ChartLimitLine13LabelPosition", "RawValue"]
 - ["OC6Charts14ChartLimitLine13LabelPosition", "_toAnyHashable"]
@@ -269,19 +198,16 @@ depends-member:
 - ["OC6Charts14ChartLimitLine13LabelPosition", "rightTop"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - ["Ps25LosslessStringConvertible", "init"]
-- !private ["Ps10MirrorPath", "Stride"]
 - !private ["Ps10MirrorPath", "hashValue"]
 - ["Ps10MirrorPath", "init"]
 - ["PSo8NSCoding", "black"]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "systemFont"]
 - ["CSo7NSColor", "black"]
-- ["CSo7NSColor", "deinit"]
 - ["CSo7NSColor", "init"]
 - ["PSo9NSCopying", "black"]
 - ["PSo9NSCopying", "init"]
 - ["PSo9NSCopying", "systemFont"]
-- ["CSo6NSFont", "deinit"]
 - ["CSo6NSFont", "systemFont"]
 - ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "CGFloat"]
@@ -310,20 +236,12 @@ depends-member:
 - ["PSo16NSObjectProtocol", "LabelPosition"]
 - ["PSo16NSObjectProtocol", "NSUIColor"]
 - ["PSo16NSObjectProtocol", "NSUIFont"]
-- ["PSo16NSObjectProtocol", "_lineWidth"]
+- !private ["PSo16NSObjectProtocol", "_lineWidth"]
 - ["PSo16NSObjectProtocol", "black"]
-- ["PSo16NSObjectProtocol", "drawLabelEnabled"]
 - ["PSo16NSObjectProtocol", "init"]
-- ["PSo16NSObjectProtocol", "label"]
-- ["PSo16NSObjectProtocol", "labelPosition"]
-- ["PSo16NSObjectProtocol", "limit"]
-- ["PSo16NSObjectProtocol", "lineColor"]
-- ["PSo16NSObjectProtocol", "lineDashLengths"]
-- ["PSo16NSObjectProtocol", "lineDashPhase"]
-- ["PSo16NSObjectProtocol", "lineWidth"]
+- !private ["PSo16NSObjectProtocol", "label"]
+- !private ["PSo16NSObjectProtocol", "limit"]
 - ["PSo16NSObjectProtocol", "systemFont"]
-- ["PSo16NSObjectProtocol", "valueFont"]
-- ["PSo16NSObjectProtocol", "valueTextColor"]
 - ["PSo16NSObjectProtocol", ""]
 - ["PSo19NSPasteboardReading", "black"]
 - ["PSo19NSPasteboardReading", "init"]
@@ -333,24 +251,17 @@ depends-member:
 - ["PSo14NSSecureCoding", "init"]
 - ["PSo14NSSecureCoding", "systemFont"]
 - ["CSo8NSString", "init"]
-- ["Sq", "deinit"]
-- !private ["Vs5Range", "deinit"]
-- ["Ps16RawRepresentable", "RawValue"]
 - ["Ps16RawRepresentable", "_toAnyHashable"]
 - ["Ps16RawRepresentable", "hashValue"]
 - ["Ps16RawRepresentable", "init"]
 - ["Ps16RawRepresentable", "rawValue"]
 - ["Ps16RawRepresentable", "rightTop"]
 - ["Ps16RawRepresentable", ""]
-- !private ["Ps13SignedInteger", "Stride"]
 - !private ["Ps13SignedInteger", "hashValue"]
-- !private ["Ps12SignedNumber", "Stride"]
 - !private ["Ps12SignedNumber", "hashValue"]
 - ["Ps12SignedNumber", "init"]
-- !private ["Ps10Strideable", "Stride"]
 - !private ["Ps10Strideable", "hashValue"]
 - ["Ps10Strideable", "init"]
-- ["SS", "deinit"]
 - ["SS", "init"]
 - ["Ps16TextOutputStream", "init"]
 - ["Ps20TextOutputStreamable", "init"]
@@ -359,7 +270,6 @@ depends-member:
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - ["Ps33_ExpressibleByBuiltinFloatLiteral", "init"]
-- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hashValue"]
 - ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
 - ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
@@ -367,48 +277,32 @@ depends-member:
 - ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - ["Ps26_ExpressibleByColorLiteral", "black"]
 - ["Ps26_ExpressibleByColorLiteral", "init"]
+- ["Ps33_ExpressibleByStringInterpolation", "init"]
 - ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - ["Ps9_Hashable", "CGFloat"]
 - ["Ps9_Hashable", "Double"]
 - ["Ps9_Hashable", "LabelPosition"]
 - ["Ps9_Hashable", "NSUIColor"]
 - ["Ps9_Hashable", "NSUIFont"]
-- ["Ps9_Hashable", "RawValue"]
-- !private ["Ps9_Hashable", "Stride"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
-- ["Ps9_Hashable", "_lineWidth"]
+- !private ["Ps9_Hashable", "_lineWidth"]
 - ["Ps9_Hashable", "_toAnyHashable"]
 - ["Ps9_Hashable", "black"]
-- ["Ps9_Hashable", "drawLabelEnabled"]
 - ["Ps9_Hashable", "hashValue"]
 - ["Ps9_Hashable", "init"]
-- ["Ps9_Hashable", "label"]
-- ["Ps9_Hashable", "labelPosition"]
-- ["Ps9_Hashable", "limit"]
-- ["Ps9_Hashable", "lineColor"]
-- ["Ps9_Hashable", "lineDashLengths"]
-- ["Ps9_Hashable", "lineDashPhase"]
-- ["Ps9_Hashable", "lineWidth"]
+- !private ["Ps9_Hashable", "label"]
+- !private ["Ps9_Hashable", "limit"]
 - ["Ps9_Hashable", "rawValue"]
 - ["Ps9_Hashable", "rightTop"]
 - ["Ps9_Hashable", "systemFont"]
-- ["Ps9_Hashable", "valueFont"]
-- ["Ps9_Hashable", "valueTextColor"]
 - ["Ps9_Hashable", ""]
-- !private ["Ps14_Incrementable", "Stride"]
 - !private ["Ps14_Incrementable", "hashValue"]
-- !private ["Ps8_Integer", "Stride"]
 - !private ["Ps8_Integer", "hashValue"]
-- !private ["Ps18_IntegerArithmetic", "Stride"]
 - !private ["Ps18_IntegerArithmetic", "hashValue"]
-- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
-- !private ["Vs26_OptionalNilComparisonType", "deinit"]
-- !private ["Ps14_SignedInteger", "Stride"]
 - !private ["Ps14_SignedInteger", "hashValue"]
-- !private ["Ps11_Strideable", "Stride"]
 - !private ["Ps11_Strideable", "hashValue"]
 - ["Ps11_Strideable", "init"]
 depends-nominal:
@@ -416,15 +310,12 @@ depends-nominal:
 - "Ps9AnyObject"
 - "Ps19BinaryFloatingPoint"
 - !private "Ps17BitwiseOperations"
-- "Sb"
+- !private "Sb"
 - "V12CoreGraphics7CGFloat"
 - "Ps7CVarArg"
 - "C6Charts14ChartLimitLine"
-- !private "Vs11ClosedRange"
 - "Ps10Comparable"
 - "C6Charts13ComponentBase"
-- !private "Vs20CountableClosedRange"
-- !private "Vs14CountableRange"
 - "Ps28CustomDebugStringConvertible"
 - "Ps29CustomPlaygroundQuickLookable"
 - "Ps17CustomReflectable"
@@ -435,12 +326,11 @@ depends-nominal:
 - "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - "Ps25ExpressibleByFloatLiteral"
 - "Ps27ExpressibleByIntegerLiteral"
-- "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Ps13FloatingPoint"
 - "Ps8Hashable"
-- "Si"
+- !private "Si"
 - !private "Ps7Integer"
 - !private "Ps17IntegerArithmetic"
 - "OC6Charts14ChartLimitLine13LabelPosition"
@@ -457,8 +347,6 @@ depends-nominal:
 - "PSo19NSPasteboardWriting"
 - "PSo14NSSecureCoding"
 - "CSo8NSString"
-- "Sq"
-- !private "Vs5Range"
 - "Ps16RawRepresentable"
 - !private "Ps13SignedInteger"
 - "Ps12SignedNumber"
@@ -476,18 +364,27 @@ depends-nominal:
 - "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
 - "Ps26_ExpressibleByColorLiteral"
+- "Ps33_ExpressibleByStringInterpolation"
 - "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - !private "Ps14_Incrementable"
 - !private "Ps8_Integer"
 - !private "Ps18_IntegerArithmetic"
 - "Ps21_ObjectiveCBridgeable"
-- !private "Vs26_OptionalNilComparisonType"
 - !private "Ps14_SignedInteger"
 - "Ps11_Strideable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.apinotesc"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/Charts/Source/Supporting Files/Charts.h"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Charts.build/Debug/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
@@ -502,4 +399,5 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuickLook.apinotesc"
 interface-hash: "c71064aad01896592eadfcf7c65adc8a"

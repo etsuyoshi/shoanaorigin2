@@ -6,31 +6,29 @@ provides-nominal:
 provides-member:
 - ["C6Charts16RadarHighlighter", ""]
 provides-dynamic-lookup:
-- "getHighlights"
 - "closestHighlight"
+- "getHighlights"
 depends-top-level:
-- !private "-"
-- !private "+"
-- "RadarHighlighter"
-- !private "DBL_MAX"
-- !private "ChartUtils"
-- "PieRadarHighlighter"
-- !private "abs"
-- "AssignmentPrecedence"
-- !private "..<"
-- "Highlight"
-- !private "??"
-- "CastingPrecedence"
-- !private "<"
-- "CGFloat"
-- !private "Double"
-- !private "/"
 - !private "*"
-- !private "RadarChartView"
+- !private "+"
+- !private "-"
+- !private "..<"
+- !private "/"
+- !private "<"
+- !private "??"
+- "AssignmentPrecedence"
+- "CGFloat"
+- "CastingPrecedence"
+- !private "ChartUtils"
+- !private "DBL_MAX"
+- !private "Double"
+- "Highlight"
 - "Int"
+- "PieRadarHighlighter"
+- !private "RadarChartView"
+- "RadarHighlighter"
+- !private "abs"
 depends-member:
-- !private ["Ps16AbsoluteValuable", "RawValue"]
-- !private ["Ps16AbsoluteValuable", "Stride"]
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["C6Charts8Animator", "phaseX"]
 - !private ["C6Charts8Animator", "phaseY"]
@@ -52,13 +50,12 @@ depends-member:
 - !private ["Ps9AnyObject", "chart"]
 - !private ["Ps9AnyObject", "chartAnimator"]
 - !private ["Ps9AnyObject", "chartYMin"]
-- ["Ps9AnyObject", "closestHighlight"]
 - !private ["Ps9AnyObject", "data"]
 - !private ["Ps9AnyObject", "dataSetCount"]
 - !private ["Ps9AnyObject", "distanceToCenter"]
 - !private ["Ps9AnyObject", "factor"]
 - !private ["Ps9AnyObject", "getDataSetByIndex"]
-- ["Ps9AnyObject", "getHighlights"]
+- !private ["Ps9AnyObject", "getHighlights"]
 - !private ["Ps9AnyObject", "getPosition"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "phaseX"]
@@ -67,31 +64,13 @@ depends-member:
 - !private ["Ps9AnyObject", "sliceAngle"]
 - !private ["Ps9AnyObject", "y"]
 - ["Ps9AnyObject", ""]
-- !private ["Sa", "Iterator"]
-- !private ["Sa", "_Element"]
 - !private ["Sa", "append"]
-- ["Sa", "deinit"]
 - !private ["Sa", "init"]
-- ["OC6Charts5YAxis14AxisDependency", "deinit"]
-- !private ["Ps23BidirectionalCollection", "Iterator"]
-- !private ["Ps23BidirectionalCollection", "_Element"]
 - !private ["Ps23BidirectionalCollection", "append"]
 - !private ["Ps23BidirectionalCollection", "init"]
-- !private ["Ps22BidirectionalIndexable", "Iterator"]
-- !private ["Ps22BidirectionalIndexable", "_Element"]
-- !private ["Ps22BidirectionalIndexable", "append"]
-- !private ["Ps22BidirectionalIndexable", "init"]
-- !private ["Ps19BinaryFloatingPoint", "RawValue"]
-- !private ["Ps19BinaryFloatingPoint", "Stride"]
 - !private ["Ps19BinaryFloatingPoint", "init"]
-- !private ["Ps17BitwiseOperations", "IntegerLiteralType"]
-- !private ["Ps17BitwiseOperations", "Stride"]
-- !private ["Ps17BitwiseOperations", "_DisabledRangeIndex"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- ["Sb", "deinit"]
-- ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["V12CoreGraphics7CGFloat", "init"]
-- ["VSC7CGPoint", "deinit"]
 - !private ["VSC7CGPoint", "x"]
 - !private ["VSC7CGPoint", "y"]
 - !private ["Ps7CVarArg", "CGFloat"]
@@ -99,25 +78,18 @@ depends-member:
 - !private ["Ps7CVarArg", "DBL_MAX"]
 - !private ["Ps7CVarArg", "Double"]
 - !private ["Ps7CVarArg", "Highlight"]
-- !private ["Ps7CVarArg", "IntegerLiteralType"]
-- !private ["Ps7CVarArg", "Iterator"]
-- !private ["Ps7CVarArg", "RawValue"]
-- !private ["Ps7CVarArg", "Stride"]
-- !private ["Ps7CVarArg", "_DisabledRangeIndex"]
-- !private ["Ps7CVarArg", "_Element"]
 - !private ["Ps7CVarArg", "abs"]
 - !private ["Ps7CVarArg", "append"]
 - !private ["Ps7CVarArg", "centerOffsets"]
 - !private ["Ps7CVarArg", "chart"]
 - !private ["Ps7CVarArg", "chartAnimator"]
 - !private ["Ps7CVarArg", "chartYMin"]
-- ["Ps7CVarArg", "closestHighlight"]
 - !private ["Ps7CVarArg", "data"]
 - !private ["Ps7CVarArg", "dataSetCount"]
 - !private ["Ps7CVarArg", "distanceToCenter"]
 - !private ["Ps7CVarArg", "factor"]
 - !private ["Ps7CVarArg", "getDataSetByIndex"]
-- ["Ps7CVarArg", "getHighlights"]
+- !private ["Ps7CVarArg", "getHighlights"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "phaseX"]
 - !private ["Ps7CVarArg", "phaseY"]
@@ -127,14 +99,12 @@ depends-member:
 - ["Ps7CVarArg", ""]
 - !private ["C6Charts9ChartData", "dataSetCount"]
 - !private ["C6Charts9ChartData", "getDataSetByIndex"]
-- ["C6Charts14ChartDataEntry", "deinit"]
 - !private ["C6Charts14ChartDataEntry", "y"]
 - !private ["C6Charts18ChartDataEntryBase", "y"]
 - !private ["P6Charts17ChartDataProvider", "centerOffsets"]
 - !private ["P6Charts17ChartDataProvider", "chartAnimator"]
 - !private ["P6Charts17ChartDataProvider", "chartYMin"]
 - !private ["P6Charts17ChartDataProvider", "data"]
-- ["P6Charts17ChartDataProvider", "deinit"]
 - !private ["P6Charts17ChartDataProvider", "distanceToCenter"]
 - !private ["P6Charts17ChartDataProvider", "factor"]
 - !private ["P6Charts17ChartDataProvider", "rotationAngle"]
@@ -160,40 +130,26 @@ depends-member:
 - !private ["C6Charts13ChartViewBase", "factor"]
 - !private ["C6Charts13ChartViewBase", "rotationAngle"]
 - !private ["C6Charts13ChartViewBase", "sliceAngle"]
-- !private ["Ps10Collection", "Iterator"]
-- !private ["Ps10Collection", "_Element"]
 - !private ["Ps10Collection", "append"]
 - !private ["Ps10Collection", "init"]
-- !private ["Ps10Comparable", "IntegerLiteralType"]
-- !private ["Ps10Comparable", "RawValue"]
-- !private ["Ps10Comparable", "Stride"]
-- !private ["Ps10Comparable", "_DisabledRangeIndex"]
 - !private ["Ps10Comparable", "init"]
-- !private ["Vs14CountableRange", "Iterator"]
-- !private ["Vs14CountableRange", "_Element"]
-- ["Vs14CountableRange", "deinit"]
 - !private ["Ps28CustomDebugStringConvertible", "CGFloat"]
 - !private ["Ps28CustomDebugStringConvertible", "ChartUtils"]
 - !private ["Ps28CustomDebugStringConvertible", "DBL_MAX"]
 - !private ["Ps28CustomDebugStringConvertible", "Double"]
 - !private ["Ps28CustomDebugStringConvertible", "Highlight"]
-- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
-- !private ["Ps28CustomDebugStringConvertible", "RawValue"]
-- !private ["Ps28CustomDebugStringConvertible", "Stride"]
-- !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "abs"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
 - !private ["Ps28CustomDebugStringConvertible", "centerOffsets"]
 - !private ["Ps28CustomDebugStringConvertible", "chart"]
 - !private ["Ps28CustomDebugStringConvertible", "chartAnimator"]
 - !private ["Ps28CustomDebugStringConvertible", "chartYMin"]
-- ["Ps28CustomDebugStringConvertible", "closestHighlight"]
 - !private ["Ps28CustomDebugStringConvertible", "data"]
 - !private ["Ps28CustomDebugStringConvertible", "dataSetCount"]
 - !private ["Ps28CustomDebugStringConvertible", "distanceToCenter"]
 - !private ["Ps28CustomDebugStringConvertible", "factor"]
 - !private ["Ps28CustomDebugStringConvertible", "getDataSetByIndex"]
-- ["Ps28CustomDebugStringConvertible", "getHighlights"]
+- !private ["Ps28CustomDebugStringConvertible", "getHighlights"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "phaseX"]
 - !private ["Ps28CustomDebugStringConvertible", "phaseY"]
@@ -202,20 +158,10 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "x"]
 - !private ["Ps28CustomDebugStringConvertible", "y"]
 - ["Ps28CustomDebugStringConvertible", ""]
-- !private ["Ps29CustomPlaygroundQuickLookable", "IntegerLiteralType"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "RawValue"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "_DisabledRangeIndex"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "x"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "y"]
-- !private ["Ps17CustomReflectable", "IntegerLiteralType"]
-- !private ["Ps17CustomReflectable", "Iterator"]
-- !private ["Ps17CustomReflectable", "RawValue"]
-- !private ["Ps17CustomReflectable", "Stride"]
-- !private ["Ps17CustomReflectable", "_DisabledRangeIndex"]
-- !private ["Ps17CustomReflectable", "_Element"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "append"]
 - !private ["Ps17CustomReflectable", "init"]
@@ -226,12 +172,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "DBL_MAX"]
 - !private ["Ps23CustomStringConvertible", "Double"]
 - !private ["Ps23CustomStringConvertible", "Highlight"]
-- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
-- !private ["Ps23CustomStringConvertible", "Iterator"]
-- !private ["Ps23CustomStringConvertible", "RawValue"]
-- !private ["Ps23CustomStringConvertible", "Stride"]
-- !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
-- !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "abs"]
 - !private ["Ps23CustomStringConvertible", "append"]
@@ -239,13 +179,12 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "chart"]
 - !private ["Ps23CustomStringConvertible", "chartAnimator"]
 - !private ["Ps23CustomStringConvertible", "chartYMin"]
-- ["Ps23CustomStringConvertible", "closestHighlight"]
 - !private ["Ps23CustomStringConvertible", "data"]
 - !private ["Ps23CustomStringConvertible", "dataSetCount"]
 - !private ["Ps23CustomStringConvertible", "distanceToCenter"]
 - !private ["Ps23CustomStringConvertible", "factor"]
 - !private ["Ps23CustomStringConvertible", "getDataSetByIndex"]
-- ["Ps23CustomStringConvertible", "getHighlights"]
+- !private ["Ps23CustomStringConvertible", "getHighlights"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "phaseX"]
 - !private ["Ps23CustomStringConvertible", "phaseY"]
@@ -253,34 +192,24 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "sliceAngle"]
 - !private ["Ps23CustomStringConvertible", "y"]
 - ["Ps23CustomStringConvertible", ""]
-- !private ["Sd", "RawValue"]
-- !private ["Sd", "Stride"]
-- ["Sd", "deinit"]
 - !private ["Sd", "init"]
 - !private ["Ps9Equatable", "CGFloat"]
 - !private ["Ps9Equatable", "ChartUtils"]
 - !private ["Ps9Equatable", "DBL_MAX"]
 - !private ["Ps9Equatable", "Double"]
 - !private ["Ps9Equatable", "Highlight"]
-- !private ["Ps9Equatable", "IntegerLiteralType"]
-- !private ["Ps9Equatable", "Iterator"]
-- !private ["Ps9Equatable", "RawValue"]
-- !private ["Ps9Equatable", "Stride"]
-- !private ["Ps9Equatable", "_DisabledRangeIndex"]
-- !private ["Ps9Equatable", "_Element"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "abs"]
 - !private ["Ps9Equatable", "centerOffsets"]
 - !private ["Ps9Equatable", "chart"]
 - !private ["Ps9Equatable", "chartAnimator"]
 - !private ["Ps9Equatable", "chartYMin"]
-- ["Ps9Equatable", "closestHighlight"]
 - !private ["Ps9Equatable", "data"]
 - !private ["Ps9Equatable", "dataSetCount"]
 - !private ["Ps9Equatable", "distanceToCenter"]
 - !private ["Ps9Equatable", "factor"]
 - !private ["Ps9Equatable", "getDataSetByIndex"]
-- ["Ps9Equatable", "getHighlights"]
+- !private ["Ps9Equatable", "getHighlights"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "phaseX"]
 - !private ["Ps9Equatable", "phaseY"]
@@ -289,44 +218,29 @@ depends-member:
 - !private ["Ps9Equatable", "x"]
 - !private ["Ps9Equatable", "y"]
 - ["Ps9Equatable", ""]
-- !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
-- !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
 - !private ["Ps25ExpressibleByArrayLiteral", "append"]
 - !private ["Ps25ExpressibleByArrayLiteral", "init"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
-- !private ["Ps25ExpressibleByFloatLiteral", "RawValue"]
-- !private ["Ps25ExpressibleByFloatLiteral", "Stride"]
 - !private ["Ps25ExpressibleByFloatLiteral", "init"]
-- !private ["Ps27ExpressibleByIntegerLiteral", "IntegerLiteralType"]
-- !private ["Ps27ExpressibleByIntegerLiteral", "RawValue"]
-- !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
-- !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "init"]
-- !private ["Ps13FloatingPoint", "RawValue"]
-- !private ["Ps13FloatingPoint", "Stride"]
 - !private ["Ps13FloatingPoint", "init"]
 - !private ["Ps8Hashable", "CGFloat"]
 - !private ["Ps8Hashable", "ChartUtils"]
 - !private ["Ps8Hashable", "DBL_MAX"]
 - !private ["Ps8Hashable", "Double"]
 - !private ["Ps8Hashable", "Highlight"]
-- !private ["Ps8Hashable", "IntegerLiteralType"]
-- !private ["Ps8Hashable", "RawValue"]
-- !private ["Ps8Hashable", "Stride"]
-- !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "abs"]
 - !private ["Ps8Hashable", "centerOffsets"]
 - !private ["Ps8Hashable", "chart"]
 - !private ["Ps8Hashable", "chartAnimator"]
 - !private ["Ps8Hashable", "chartYMin"]
-- ["Ps8Hashable", "closestHighlight"]
 - !private ["Ps8Hashable", "data"]
 - !private ["Ps8Hashable", "dataSetCount"]
 - !private ["Ps8Hashable", "distanceToCenter"]
 - !private ["Ps8Hashable", "factor"]
 - !private ["Ps8Hashable", "getDataSetByIndex"]
-- ["Ps8Hashable", "getHighlights"]
+- !private ["Ps8Hashable", "getHighlights"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "phaseX"]
 - !private ["Ps8Hashable", "phaseY"]
@@ -334,11 +248,9 @@ depends-member:
 - !private ["Ps8Hashable", "sliceAngle"]
 - !private ["Ps8Hashable", "y"]
 - ["Ps8Hashable", ""]
-- ["C6Charts9Highlight", "deinit"]
 - !private ["C6Charts9Highlight", "init"]
 - !private ["C6Charts9Highlight", "y"]
 - !private ["P6Charts13IChartDataSet", "axisDependency"]
-- ["P6Charts13IChartDataSet", "deinit"]
 - !private ["P6Charts13IChartDataSet", "entryForIndex"]
 - !private ["P6Charts12IHighlighter", "CGFloat"]
 - !private ["P6Charts12IHighlighter", "ChartUtils"]
@@ -347,48 +259,13 @@ depends-member:
 - !private ["P6Charts12IHighlighter", "Highlight"]
 - !private ["P6Charts12IHighlighter", "abs"]
 - !private ["P6Charts12IHighlighter", "chart"]
-- ["P6Charts12IHighlighter", "closestHighlight"]
-- ["P6Charts12IHighlighter", "getHighlights"]
+- !private ["P6Charts12IHighlighter", "getHighlights"]
 - !private ["P6Charts12IHighlighter", "init"]
 - ["P6Charts12IHighlighter", ""]
-- ["SQ", "deinit"]
-- !private ["Ps9Indexable", "Iterator"]
-- !private ["Ps9Indexable", "_Element"]
-- !private ["Ps9Indexable", "append"]
-- !private ["Ps9Indexable", "init"]
-- !private ["Ps13IndexableBase", "Iterator"]
-- !private ["Ps13IndexableBase", "_Element"]
-- !private ["Ps13IndexableBase", "append"]
-- !private ["Ps13IndexableBase", "init"]
-- !private ["Vs16IndexingIterator", "Element"]
-- !private ["Si", "IntegerLiteralType"]
-- !private ["Si", "Stride"]
-- !private ["Si", "_DisabledRangeIndex"]
-- ["Si", "deinit"]
-- !private ["Vs5Int32", "Stride"]
-- !private ["Vs5Int32", "deinit"]
-- !private ["Ps7Integer", "IntegerLiteralType"]
-- !private ["Ps7Integer", "Stride"]
-- !private ["Ps7Integer", "_DisabledRangeIndex"]
-- !private ["Ps17IntegerArithmetic", "IntegerLiteralType"]
-- !private ["Ps17IntegerArithmetic", "Stride"]
-- !private ["Ps17IntegerArithmetic", "_DisabledRangeIndex"]
-- !private ["Ps16IteratorProtocol", "Element"]
-- !private ["Ps25LosslessStringConvertible", "RawValue"]
-- !private ["Ps25LosslessStringConvertible", "Stride"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
-- !private ["Ps10MirrorPath", "IntegerLiteralType"]
-- !private ["Ps10MirrorPath", "Stride"]
-- !private ["Ps10MirrorPath", "_DisabledRangeIndex"]
-- !private ["Ps17MutableCollection", "Iterator"]
-- !private ["Ps17MutableCollection", "_Element"]
 - !private ["Ps17MutableCollection", "append"]
 - !private ["Ps17MutableCollection", "init"]
-- !private ["Ps16MutableIndexable", "Iterator"]
-- !private ["Ps16MutableIndexable", "_Element"]
-- !private ["Ps16MutableIndexable", "append"]
-- !private ["Ps16MutableIndexable", "init"]
 - !private ["PSo15NSAccessibility", "centerOffsets"]
 - !private ["PSo15NSAccessibility", "chartAnimator"]
 - !private ["PSo15NSAccessibility", "chartYMin"]
@@ -472,13 +349,12 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "chart"]
 - !private ["PSo16NSObjectProtocol", "chartAnimator"]
 - !private ["PSo16NSObjectProtocol", "chartYMin"]
-- ["PSo16NSObjectProtocol", "closestHighlight"]
 - !private ["PSo16NSObjectProtocol", "data"]
 - !private ["PSo16NSObjectProtocol", "dataSetCount"]
 - !private ["PSo16NSObjectProtocol", "distanceToCenter"]
 - !private ["PSo16NSObjectProtocol", "factor"]
 - !private ["PSo16NSObjectProtocol", "getDataSetByIndex"]
-- ["PSo16NSObjectProtocol", "getHighlights"]
+- !private ["PSo16NSObjectProtocol", "getHighlights"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "phaseX"]
 - !private ["PSo16NSObjectProtocol", "phaseY"]
@@ -526,7 +402,6 @@ depends-member:
 - !private ["CSo6NSView", "factor"]
 - !private ["CSo6NSView", "rotationAngle"]
 - !private ["CSo6NSView", "sliceAngle"]
-- ["Sq", "deinit"]
 - !private ["C6Charts21PieRadarChartViewBase", "centerOffsets"]
 - !private ["C6Charts21PieRadarChartViewBase", "chartAnimator"]
 - !private ["C6Charts21PieRadarChartViewBase", "chartYMin"]
@@ -545,7 +420,6 @@ depends-member:
 - !private ["C6Charts19PieRadarHighlighter", "abs"]
 - !private ["C6Charts19PieRadarHighlighter", "chart"]
 - ["C6Charts19PieRadarHighlighter", "closestHighlight"]
-- ["C6Charts19PieRadarHighlighter", "deinit"]
 - ["C6Charts19PieRadarHighlighter", "getHighlights"]
 - ["C6Charts19PieRadarHighlighter", "init"]
 - ["C6Charts19PieRadarHighlighter", ""]
@@ -553,7 +427,7 @@ depends-member:
 - !private ["C6Charts14RadarChartView", "chartAnimator"]
 - !private ["C6Charts14RadarChartView", "chartYMin"]
 - !private ["C6Charts14RadarChartView", "data"]
-- ["C6Charts14RadarChartView", "deinit"]
+- !private ["C6Charts14RadarChartView", "deinit"]
 - !private ["C6Charts14RadarChartView", "distanceToCenter"]
 - !private ["C6Charts14RadarChartView", "factor"]
 - !private ["C6Charts14RadarChartView", "rotationAngle"]
@@ -571,51 +445,19 @@ depends-member:
 - ["C6Charts16RadarHighlighter", "deinit"]
 - ["C6Charts16RadarHighlighter", "getHighlights"]
 - ["C6Charts16RadarHighlighter", "init"]
-- !private ["Ps22RandomAccessCollection", "Iterator"]
-- !private ["Ps22RandomAccessCollection", "_Element"]
 - !private ["Ps22RandomAccessCollection", "append"]
 - !private ["Ps22RandomAccessCollection", "init"]
-- !private ["Ps21RandomAccessIndexable", "Iterator"]
-- !private ["Ps21RandomAccessIndexable", "_Element"]
-- !private ["Ps21RandomAccessIndexable", "append"]
-- !private ["Ps21RandomAccessIndexable", "init"]
-- !private ["Vs5Range", "Iterator"]
-- !private ["Vs5Range", "deinit"]
-- !private ["Ps26RangeReplaceableCollection", "Iterator"]
-- !private ["Ps26RangeReplaceableCollection", "_Element"]
 - !private ["Ps26RangeReplaceableCollection", "append"]
 - !private ["Ps26RangeReplaceableCollection", "init"]
-- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
-- !private ["Ps25RangeReplaceableIndexable", "_Element"]
-- !private ["Ps25RangeReplaceableIndexable", "append"]
-- !private ["Ps25RangeReplaceableIndexable", "init"]
-- !private ["Ps8Sequence", "Element"]
-- !private ["Ps8Sequence", "Iterator"]
-- !private ["Ps8Sequence", "_Element"]
 - !private ["Ps8Sequence", "append"]
 - !private ["Ps8Sequence", "init"]
-- !private ["Ps13SignedInteger", "IntegerLiteralType"]
-- !private ["Ps13SignedInteger", "Stride"]
-- !private ["Ps13SignedInteger", "_DisabledRangeIndex"]
-- !private ["Ps12SignedNumber", "IntegerLiteralType"]
-- !private ["Ps12SignedNumber", "RawValue"]
-- !private ["Ps12SignedNumber", "Stride"]
-- !private ["Ps12SignedNumber", "_DisabledRangeIndex"]
 - !private ["Ps12SignedNumber", "init"]
-- !private ["Ps10Strideable", "IntegerLiteralType"]
-- !private ["Ps10Strideable", "RawValue"]
-- !private ["Ps10Strideable", "Stride"]
-- !private ["Ps10Strideable", "_DisabledRangeIndex"]
 - !private ["Ps10Strideable", "init"]
-- !private ["Ps14_ArrayProtocol", "Iterator"]
-- !private ["Ps14_ArrayProtocol", "_Element"]
 - !private ["Ps14_ArrayProtocol", "append"]
 - !private ["Ps14_ArrayProtocol", "init"]
-- !private ["Ps15_CVarArgAligned", "RawValue"]
-- !private ["Ps15_CVarArgAligned", "Stride"]
+- !private ["Ps23_BidirectionalIndexable", "append"]
+- !private ["Ps23_BidirectionalIndexable", "init"]
 - !private ["Ps15_CVarArgAligned", "init"]
-- !private ["Ps22_CVarArgPassedAsDouble", "RawValue"]
-- !private ["Ps22_CVarArgPassedAsDouble", "Stride"]
 - !private ["Ps22_CVarArgPassedAsDouble", "init"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "centerOffsets"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "chartAnimator"]
@@ -625,41 +467,28 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "factor"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "rotationAngle"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "sliceAngle"]
-- !private ["Ps24_DestructorSafeContainer", "Iterator"]
-- !private ["Ps24_DestructorSafeContainer", "_Element"]
 - !private ["Ps24_DestructorSafeContainer", "append"]
 - !private ["Ps24_DestructorSafeContainer", "init"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
-- !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "RawValue"]
-- !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "Stride"]
 - !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "init"]
-- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "IntegerLiteralType"]
-- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "RawValue"]
-- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
-- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "_DisabledRangeIndex"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
 - !private ["Ps9_Hashable", "CGFloat"]
 - !private ["Ps9_Hashable", "ChartUtils"]
 - !private ["Ps9_Hashable", "DBL_MAX"]
 - !private ["Ps9_Hashable", "Double"]
 - !private ["Ps9_Hashable", "Highlight"]
-- !private ["Ps9_Hashable", "IntegerLiteralType"]
-- !private ["Ps9_Hashable", "RawValue"]
-- !private ["Ps9_Hashable", "Stride"]
-- !private ["Ps9_Hashable", "_DisabledRangeIndex"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "abs"]
 - !private ["Ps9_Hashable", "centerOffsets"]
 - !private ["Ps9_Hashable", "chart"]
 - !private ["Ps9_Hashable", "chartAnimator"]
 - !private ["Ps9_Hashable", "chartYMin"]
-- ["Ps9_Hashable", "closestHighlight"]
 - !private ["Ps9_Hashable", "data"]
 - !private ["Ps9_Hashable", "dataSetCount"]
 - !private ["Ps9_Hashable", "distanceToCenter"]
 - !private ["Ps9_Hashable", "factor"]
 - !private ["Ps9_Hashable", "getDataSetByIndex"]
-- ["Ps9_Hashable", "getHighlights"]
+- !private ["Ps9_Hashable", "getHighlights"]
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "phaseX"]
 - !private ["Ps9_Hashable", "phaseY"]
@@ -667,64 +496,48 @@ depends-member:
 - !private ["Ps9_Hashable", "sliceAngle"]
 - !private ["Ps9_Hashable", "y"]
 - ["Ps9_Hashable", ""]
-- !private ["Ps14_Incrementable", "IntegerLiteralType"]
-- !private ["Ps14_Incrementable", "Stride"]
-- !private ["Ps14_Incrementable", "_DisabledRangeIndex"]
-- !private ["Ps8_Integer", "IntegerLiteralType"]
-- !private ["Ps8_Integer", "Stride"]
-- !private ["Ps8_Integer", "_DisabledRangeIndex"]
-- !private ["Ps18_IntegerArithmetic", "IntegerLiteralType"]
-- !private ["Ps18_IntegerArithmetic", "Stride"]
-- !private ["Ps18_IntegerArithmetic", "_DisabledRangeIndex"]
-- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
-- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
-- !private ["Ps21_ObjectiveCBridgeable", "RawValue"]
-- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
-- !private ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
-- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps10_Indexable", "append"]
+- !private ["Ps10_Indexable", "init"]
+- !private ["Ps14_IndexableBase", "append"]
+- !private ["Ps14_IndexableBase", "init"]
+- !private ["Ps17_MutableIndexable", "append"]
+- !private ["Ps17_MutableIndexable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "append"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "x"]
 - !private ["Ps21_ObjectiveCBridgeable", "y"]
-- !private ["Ps14_SignedInteger", "IntegerLiteralType"]
-- !private ["Ps14_SignedInteger", "Stride"]
-- !private ["Ps14_SignedInteger", "_DisabledRangeIndex"]
-- !private ["Ps11_Strideable", "IntegerLiteralType"]
-- !private ["Ps11_Strideable", "RawValue"]
-- !private ["Ps11_Strideable", "Stride"]
-- !private ["Ps11_Strideable", "_DisabledRangeIndex"]
+- !private ["Ps22_RandomAccessIndexable", "append"]
+- !private ["Ps22_RandomAccessIndexable", "init"]
+- !private ["Ps26_RangeReplaceableIndexable", "append"]
+- !private ["Ps26_RangeReplaceableIndexable", "init"]
 - !private ["Ps11_Strideable", "init"]
 depends-nominal:
 - !private "Ps16AbsoluteValuable"
 - !private "C6Charts8Animator"
 - !private "P6Charts16AnimatorDelegate"
 - "Ps9AnyObject"
-- "Sa"
-- "OC6Charts5YAxis14AxisDependency"
+- !private "Sa"
 - !private "Ps23BidirectionalCollection"
-- !private "Ps22BidirectionalIndexable"
 - !private "Ps19BinaryFloatingPoint"
-- !private "Ps17BitwiseOperations"
-- "Sb"
-- "V12CoreGraphics7CGFloat"
-- "VSC7CGPoint"
+- !private "Sb"
+- !private "V12CoreGraphics7CGFloat"
+- !private "VSC7CGPoint"
 - "Ps7CVarArg"
 - !private "C6Charts9ChartData"
-- "C6Charts14ChartDataEntry"
+- !private "C6Charts14ChartDataEntry"
 - !private "C6Charts18ChartDataEntryBase"
-- "P6Charts17ChartDataProvider"
+- !private "P6Charts17ChartDataProvider"
 - "C6Charts16ChartHighlighter"
 - !private "C6Charts10ChartUtils"
 - !private "C6Charts13ChartViewBase"
 - !private "Ps10Collection"
 - !private "Ps10Comparable"
-- "Vs14CountableRange"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
-- "Sd"
+- !private "Sd"
 - "Ps9Equatable"
 - !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
@@ -732,22 +545,11 @@ depends-nominal:
 - !private "Ps27ExpressibleByIntegerLiteral"
 - !private "Ps13FloatingPoint"
 - "Ps8Hashable"
-- "C6Charts9Highlight"
-- "P6Charts13IChartDataSet"
+- !private "C6Charts9Highlight"
+- !private "P6Charts13IChartDataSet"
 - "P6Charts12IHighlighter"
-- "SQ"
-- !private "Ps9Indexable"
-- !private "Ps13IndexableBase"
-- !private "Vs16IndexingIterator"
-- "Si"
-- !private "Vs5Int32"
-- !private "Ps7Integer"
-- !private "Ps17IntegerArithmetic"
-- !private "Ps16IteratorProtocol"
 - !private "Ps25LosslessStringConvertible"
-- !private "Ps10MirrorPath"
 - !private "Ps17MutableCollection"
-- !private "Ps16MutableIndexable"
 - !private "PSo15NSAccessibility"
 - !private "PSo30NSAccessibilityElementProtocol"
 - !private "PSo29NSAnimatablePropertyContainer"
@@ -761,21 +563,17 @@ depends-nominal:
 - !private "C6Charts8NSUIView"
 - !private "PSo33NSUserInterfaceItemIdentification"
 - !private "CSo6NSView"
-- "Sq"
 - !private "C6Charts21PieRadarChartViewBase"
 - "C6Charts19PieRadarHighlighter"
-- "C6Charts14RadarChartView"
+- !private "C6Charts14RadarChartView"
 - "C6Charts16RadarHighlighter"
 - !private "Ps22RandomAccessCollection"
-- !private "Ps21RandomAccessIndexable"
-- !private "Vs5Range"
 - !private "Ps26RangeReplaceableCollection"
-- !private "Ps25RangeReplaceableIndexable"
 - !private "Ps8Sequence"
-- !private "Ps13SignedInteger"
 - !private "Ps12SignedNumber"
 - !private "Ps10Strideable"
 - !private "Ps14_ArrayProtocol"
+- !private "Ps23_BidirectionalIndexable"
 - !private "Ps15_CVarArgAligned"
 - !private "Ps22_CVarArgPassedAsDouble"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
@@ -784,15 +582,25 @@ depends-nominal:
 - !private "Ps33_ExpressibleByBuiltinFloatLiteral"
 - !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
 - "Ps9_Hashable"
-- !private "Ps14_Incrementable"
-- !private "Ps8_Integer"
-- !private "Ps18_IntegerArithmetic"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
+- !private "Ps17_MutableIndexable"
 - !private "Ps21_ObjectiveCBridgeable"
-- !private "Ps14_SignedInteger"
+- !private "Ps22_RandomAccessIndexable"
+- !private "Ps26_RangeReplaceableIndexable"
 - !private "Ps11_Strideable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.apinotesc"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/Charts/Source/Supporting Files/Charts.h"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Charts.build/Debug/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
@@ -807,4 +615,5 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "46cf6c0aa7e992eb197e8eee3a556160"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuickLook.apinotesc"
+interface-hash: "db254e24043ce4eccf344dbfa9f800f5"

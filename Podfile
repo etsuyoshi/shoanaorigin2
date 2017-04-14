@@ -26,17 +26,21 @@
 
 
 platform :ios, '10.0'
+#target 'boki3' do
+#  pod 'Charts', '3.0.1'
+#  pod 'Realm'#, '~> 2.2'
+#end
+#use_frameworks!
+
+
 target 'shoana' do
-  pod 'Charts', '3.0.1'
-  pod 'Realm', '~> 2.2'
+  use_frameworks!
+  pod 'Charts/Realm'
+  pod 'Firebase/Core'#analytics
+  pod 'Firebase/Messaging'#push
+  pod 'Firebase/Database'#database
 end
 use_frameworks!
-
-
-# target 'shoana' do
-#   use_frameworks!
-#   pod 'Charts/Realm'
-# end
 
 
 post_install do |installer|

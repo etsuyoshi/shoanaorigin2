@@ -8,16 +8,16 @@ provides-member:
 provides-dynamic-lookup:
 - "renderShape"
 depends-top-level:
-- "CGPoint"
-- "NSUIColor"
-- !private "/"
-- "NSObject"
-- "CrossShapeRenderer"
-- !private "-"
 - !private "+"
+- !private "-"
+- !private "/"
 - "CGContext"
-- "IShapeRenderer"
+- "CGPoint"
+- "CrossShapeRenderer"
 - "IScatterChartDataSet"
+- "IShapeRenderer"
+- "NSObject"
+- "NSUIColor"
 - "ViewPortHandler"
 depends-member:
 - !private ["Ps9AnyObject", "CGPoint"]
@@ -31,16 +31,12 @@ depends-member:
 - !private ["Ps9AnyObject", "setStrokeColor"]
 - !private ["Ps9AnyObject", "strokePath"]
 - ["Ps9AnyObject", ""]
-- ["CSo7CGColor", "deinit"]
 - !private ["CSo9CGContext", "addLine"]
 - !private ["CSo9CGContext", "beginPath"]
-- ["CSo9CGContext", "deinit"]
 - !private ["CSo9CGContext", "move"]
 - !private ["CSo9CGContext", "setLineWidth"]
 - !private ["CSo9CGContext", "setStrokeColor"]
 - !private ["CSo9CGContext", "strokePath"]
-- ["V12CoreGraphics7CGFloat", "deinit"]
-- ["VSC7CGPoint", "deinit"]
 - !private ["VSC7CGPoint", "init"]
 - !private ["VSC7CGPoint", "x"]
 - !private ["VSC7CGPoint", "y"]
@@ -90,14 +86,12 @@ depends-member:
 - !private ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "scatterShapeSize"]
 - !private ["P6Charts13IChartDataSet", "scatterShapeSize"]
 - !private ["P6Charts35ILineScatterCandleRadarChartDataSet", "scatterShapeSize"]
-- ["P6Charts20IScatterChartDataSet", "deinit"]
 - !private ["P6Charts20IScatterChartDataSet", "scatterShapeSize"]
 - !private ["P6Charts14IShapeRenderer", "CGPoint"]
 - ["P6Charts14IShapeRenderer", "renderShape"]
 - ["P6Charts14IShapeRenderer", ""]
 - !private ["PSo8NSCoding", "cgColor"]
 - !private ["CSo7NSColor", "cgColor"]
-- ["CSo7NSColor", "deinit"]
 - !private ["PSo9NSCopying", "cgColor"]
 - ["CSo8NSObject", "CGContext"]
 - ["CSo8NSObject", "CGPoint"]
@@ -105,7 +99,6 @@ depends-member:
 - ["CSo8NSObject", "NSUIColor"]
 - ["CSo8NSObject", "ViewPortHandler"]
 - !private ["CSo8NSObject", "cgColor"]
-- ["CSo8NSObject", "deinit"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "renderShape"]
 - ["CSo8NSObject", ""]
@@ -128,10 +121,8 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "y"]
 depends-nominal:
 - "Ps9AnyObject"
-- "CSo7CGColor"
-- "CSo9CGContext"
-- "V12CoreGraphics7CGFloat"
-- "VSC7CGPoint"
+- !private "CSo9CGContext"
+- !private "VSC7CGPoint"
 - "Ps7CVarArg"
 - "C6Charts18CrossShapeRenderer"
 - "Ps28CustomDebugStringConvertible"
@@ -143,10 +134,10 @@ depends-nominal:
 - !private "P6Charts39IBarLineScatterCandleBubbleChartDataSet"
 - !private "P6Charts13IChartDataSet"
 - !private "P6Charts35ILineScatterCandleRadarChartDataSet"
-- "P6Charts20IScatterChartDataSet"
+- !private "P6Charts20IScatterChartDataSet"
 - "P6Charts14IShapeRenderer"
 - !private "PSo8NSCoding"
-- "CSo7NSColor"
+- !private "CSo7NSColor"
 - !private "PSo9NSCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
@@ -159,6 +150,15 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.apinotesc"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/Charts/Source/Supporting Files/Charts.h"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Charts.build/Debug/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
@@ -173,4 +173,5 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuickLook.apinotesc"
 interface-hash: "ee37a361dd060548a160b41db82b0f90"

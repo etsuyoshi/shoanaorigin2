@@ -32,5 +32,4 @@ dependencies: \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/unicode.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/binary_data.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/column_fwd.hpp \
-  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/array_direct.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/timestamp.hpp

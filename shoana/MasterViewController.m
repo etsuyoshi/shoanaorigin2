@@ -14,7 +14,6 @@
  *      問=QuizItem
  */
 
-
 /*
  * to do :全部終わったら戻る(done)、正誤表示(done)、成績表（done:回答数、誤答数を表示したテーブルビュー→タップしたら間違えたカテゴリ分布＠パイチャート）
  * to do (done):Quizインスタンスを生成する際にQuizResultから過去の成績を取得して属性にセットする（detailviewconで使用しているため）
@@ -33,8 +32,6 @@
 #import "ResultViewController.h"
 #import "ResultModel.h"
 #import "ConfigViewController.h"
-
-
 
 #import "Siwake.h"
 
@@ -67,8 +64,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"";
-    
+#ifdef QUIZ_FLAG
+    self.title = @"証券アナリスト問題集";
+#else
+    self.title = @"簿記３級仕訳問題集";
+#endif
     // Do any additional setup after loading the view, typically from a nib.
     
     UINib *nib = [UINib nibWithNibName:@"MasterTableViewCell" bundle:nil];
@@ -268,11 +268,28 @@
         //NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         //NSDate *object = self.objects[indexPath.row];
         DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
+        
+        controller.quizNo = 0;
+        //弱点モードの場合には最初の番号もすでに間違えた問題にする
+        NSUserDefaults *userdef = [NSUserDefaults standardUserDefaults];
+        NSString *strConfigKey = [userdef objectForKey:QUIZ_CONFIG_KEY];
+        if([strConfigKey isEqualToString:QUIZ_CONFIG_KEY_JAKUTEN]){
+            
+            int mistake_threahold = (int)[userdef integerForKey:USER_DEFAULTS_MISTAKE_THREASHOLD];
+            
+            ResultModel *resultModel = [[ResultModel alloc] initWithSection:self.quiz];
+            
+            //メニューボタンで選択した（できる）誤回答数の選定もできるようにする
+            controller.quizNo = (int)[resultModel
+                         getInCorrectWithoutNo:-1//without指定は何もない
+                         withThreashold:mistake_threahold==0?1:mistake_threahold];//現在の番号以外で、過去に誤った問題番号を返す
+            
+        }
         //controller.quiz = self.quiz;
         //[controller setDetailItem:object];
         [self.quiz updateAllResult];//解答状況を最新にする
         [controller setQuiz:(Quiz *)(self.quiz)];
-        controller.quizNo = 0;
+        
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
         controller.navigationItem.leftItemsSupplementBackButton = YES;
     }
@@ -309,6 +326,10 @@
     NSLog(@"arrImgCells.count = %ld", arrImgCells.count);
     //背景画像の設定
     cell.img_back.image = [UIImage imageNamed:arrImgCells[indexPath.row % (int)arrImgCells.count]];
+    
+    cell.viewBlur.backgroundColor = [UIColor whiteColor];
+    cell.viewBlur.alpha = 0.5f;
+    
     NSLog(@"%s, indexpath.row = %d, %@",
           __func__, (int)indexPath.row,
           (NSString *)arrImgCells[indexPath.row % (int)arrImgCells.count]);
@@ -397,10 +418,18 @@
     
     didUpdate = YES;//問題を解いた（解こうとした）場合に更新したことにする
     
+    
 #ifdef QUIZ_FLAG
     DetailViewController *controller = [[self storyboard] instantiateViewControllerWithIdentifier:@"detail"];
     Quiz *tmpQuiz = quizSector.quizSectsArray[indexPath.row];
     [controller setQuiz:tmpQuiz];
+    
+    
+    [FIRAnalytics logEventWithName:@"tap:quiz:top"
+                        parameters:@{@"row":[NSNumber numberWithInt:(int)indexPath.row],
+                                     @"section":tmpQuiz.sectionName}];
+    
+    
 #else
     SiwakeViewController *controller = [[SiwakeViewController alloc]init];
     //本来的にはここでインスタンス作成せずにviewdidloadで作成したグローバル変数から選択されたセル番号に応じたsiwakeセクションを返す

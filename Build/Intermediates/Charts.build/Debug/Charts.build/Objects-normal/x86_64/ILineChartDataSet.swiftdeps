@@ -6,37 +6,37 @@ provides-nominal:
 provides-member:
 - ["P6Charts17ILineChartDataSet", ""]
 provides-dynamic-lookup:
-- "circleHoleRadius"
-- "getCircleColor"
-- "setCircleColor"
-- "drawCubicEnabled"
-- "isDrawCircleHoleEnabled"
-- "drawSteppedEnabled"
-- "resetCircleColors"
-- "drawCircleHoleEnabled"
-- "mode"
-- "cubicIntensity"
-- "circleRadius"
 - "circleColors"
-- "drawCirclesEnabled"
-- "isDrawCubicEnabled"
 - "circleHoleColor"
-- "lineCapType"
-- "lineDashPhase"
-- "isDrawCirclesEnabled"
-- "lineDashLengths"
+- "circleHoleRadius"
+- "circleRadius"
+- "cubicIntensity"
+- "drawCircleHoleEnabled"
+- "drawCirclesEnabled"
+- "drawCubicEnabled"
+- "drawSteppedEnabled"
 - "fillFormatter"
+- "getCircleColor"
+- "isDrawCircleHoleEnabled"
+- "isDrawCirclesEnabled"
+- "isDrawCubicEnabled"
 - "isDrawSteppedEnabled"
+- "lineCapType"
+- "lineDashLengths"
+- "lineDashPhase"
+- "mode"
+- "resetCircleColors"
+- "setCircleColor"
 depends-top-level:
-- "LineChartDataSet"
 - "Bool"
-- "NSUIColor"
+- "CGFloat"
+- "CGLineCap"
 - "IFillFormatter"
+- "ILineChartDataSet"
 - "ILineRadarChartDataSet"
 - "Int"
-- "ILineChartDataSet"
-- "CGLineCap"
-- "CGFloat"
+- "LineChartDataSet"
+- "NSUIColor"
 depends-member:
 - ["Ps9AnyObject", "Mode"]
 - ["C6Charts38BarLineScatterCandleBubbleChartDataSet", "Mode"]
@@ -76,7 +76,6 @@ depends-member:
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "mode"]
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "resetCircleColors"]
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "setCircleColor"]
-- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", ""]
 - ["P6Charts13IChartDataSet", "Bool"]
 - ["P6Charts13IChartDataSet", "CGFloat"]
 - ["P6Charts13IChartDataSet", "CGLineCap"]
@@ -106,7 +105,6 @@ depends-member:
 - ["P6Charts13IChartDataSet", "mode"]
 - ["P6Charts13IChartDataSet", "resetCircleColors"]
 - ["P6Charts13IChartDataSet", "setCircleColor"]
-- ["P6Charts13IChartDataSet", ""]
 - ["P6Charts17ILineChartDataSet", "Bool"]
 - ["P6Charts17ILineChartDataSet", "CGFloat"]
 - ["P6Charts17ILineChartDataSet", "CGLineCap"]
@@ -136,7 +134,6 @@ depends-member:
 - ["P6Charts17ILineChartDataSet", "mode"]
 - ["P6Charts17ILineChartDataSet", "resetCircleColors"]
 - ["P6Charts17ILineChartDataSet", "setCircleColor"]
-- ["P6Charts17ILineChartDataSet", ""]
 - ["P6Charts22ILineRadarChartDataSet", "Bool"]
 - ["P6Charts22ILineRadarChartDataSet", "CGFloat"]
 - ["P6Charts22ILineRadarChartDataSet", "CGLineCap"]
@@ -196,7 +193,6 @@ depends-member:
 - ["P6Charts35ILineScatterCandleRadarChartDataSet", "mode"]
 - ["P6Charts35ILineScatterCandleRadarChartDataSet", "resetCircleColors"]
 - ["P6Charts35ILineScatterCandleRadarChartDataSet", "setCircleColor"]
-- ["P6Charts35ILineScatterCandleRadarChartDataSet", ""]
 - ["C6Charts16LineChartDataSet", "Mode"]
 - ["C6Charts21LineRadarChartDataSet", "Mode"]
 - ["C6Charts34LineScatterCandleRadarChartDataSet", "Mode"]
@@ -227,6 +223,15 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.apinotesc"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/Charts/Source/Supporting Files/Charts.h"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Charts.build/Debug/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
@@ -241,4 +246,5 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "a0125c9b4dfd23d204adb4a00946c865"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuickLook.apinotesc"
+interface-hash: "636dec45923c725820fecb3d62b21252"

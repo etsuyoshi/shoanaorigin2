@@ -31,6 +31,48 @@
     },
     {
       'type': 'directory',
+      'name': "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "GTMDefines.h",
+          'external-contents': "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/GoogleToolboxForMac/GTMDefines.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMLogger.h",
+          'external-contents': "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/GoogleToolboxForMac/Foundation/GTMLogger.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMNSData+zlib.h",
+          'external-contents': "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/GoogleToolboxForMac/Foundation/GTMNSData+zlib.h"
+        },
+        {
+          'type': 'file',
+          'name': "GoogleToolboxForMac-Swift.h",
+          'external-contents': "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers/GoogleToolboxForMac-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "GoogleToolboxForMac-umbrella.h",
+          'external-contents': "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/GoogleToolboxForMac.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
       'name': "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Pods_shoana.framework/Headers",
       'contents': [
         {
@@ -75,6 +117,33 @@
           'type': 'file',
           'name': "module.modulemap",
           'external-contents': "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/Realm.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/RealmSwift/RealmSwift.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "RealmSwift-Swift.h",
+          'external-contents': "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/RealmSwift/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "RealmSwift-umbrella.h",
+          'external-contents': "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Target Support Files/RealmSwift/RealmSwift-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/RealmSwift/RealmSwift.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/RealmSwift.build/module.modulemap"
         }
       ]
     }

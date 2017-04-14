@@ -6,7 +6,6 @@ dependencies: \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/RLMRealm_Private.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/RLMRealm.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/RLMConstants.h \
-  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/RLMObjectSchema_Private.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/RLMObjectSchema.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/RLMSchema.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/RLMProperty_Private.h \
@@ -40,13 +39,11 @@ dependencies: \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/unicode.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/binary_data.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/column_fwd.hpp \
-  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/array_direct.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/realm_nmmintrin.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/timestamp.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/object_schema.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/object_store.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/property.hpp \
-  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/util/compiler.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/table_ref.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/util/bind_ptr.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/schema.hpp \

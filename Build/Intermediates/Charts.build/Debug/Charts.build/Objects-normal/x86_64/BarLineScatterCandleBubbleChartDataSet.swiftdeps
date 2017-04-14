@@ -6,28 +6,27 @@ provides-nominal:
 provides-member:
 - ["C6Charts38BarLineScatterCandleBubbleChartDataSet", ""]
 provides-dynamic-lookup:
-- "highlightLineDashPhase"
-- "highlightColor"
-- "highlightLineWidth"
-- "highlightLineDashLengths"
 - "copyWithZone"
+- "highlightColor"
+- "highlightLineDashLengths"
+- "highlightLineDashPhase"
+- "highlightLineWidth"
 depends-top-level:
-- "AnyObject"
-- "NSZone"
-- "AssignmentPrecedence"
 - "/"
-- "NSUIColor"
-- "CastingPrecedence"
+- "AnyObject"
+- "AssignmentPrecedence"
 - "BarLineScatterCandleBubbleChartDataSet"
-- "ChartDataSet"
 - "CGFloat"
+- "CastingPrecedence"
+- "ChartDataSet"
 - "IBarLineScatterCandleBubbleChartDataSet"
+- "NSUIColor"
+- "NSZone"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]
 - ["Ps9AnyObject", "NSUIColor"]
-- ["Ps9AnyObject", "copyWithZone"]
-- ["Ps9AnyObject", "deinit"]
+- !private ["Ps9AnyObject", "copyWithZone"]
 - ["Ps9AnyObject", "highlightColor"]
 - ["Ps9AnyObject", "highlightLineDashLengths"]
 - ["Ps9AnyObject", "highlightLineDashPhase"]
@@ -47,11 +46,10 @@ depends-member:
 - ["C6Charts38BarLineScatterCandleBubbleChartDataSet", "highlightLineWidth"]
 - ["C6Charts38BarLineScatterCandleBubbleChartDataSet", "init"]
 - ["Ps19BinaryFloatingPoint", "init"]
-- ["V12CoreGraphics7CGFloat", "deinit"]
 - ["V12CoreGraphics7CGFloat", "init"]
 - ["Ps7CVarArg", "CGFloat"]
 - ["Ps7CVarArg", "NSUIColor"]
-- ["Ps7CVarArg", "copyWithZone"]
+- !private ["Ps7CVarArg", "copyWithZone"]
 - ["Ps7CVarArg", "highlightColor"]
 - ["Ps7CVarArg", "highlightLineDashLengths"]
 - ["Ps7CVarArg", "highlightLineDashPhase"]
@@ -75,7 +73,6 @@ depends-member:
 - ["C6Charts12ChartDataSet", "NSUIColor"]
 - ["C6Charts12ChartDataSet", "NSZone"]
 - ["C6Charts12ChartDataSet", "copyWithZone"]
-- ["C6Charts12ChartDataSet", "deinit"]
 - ["C6Charts12ChartDataSet", "highlightColor"]
 - ["C6Charts12ChartDataSet", "highlightLineDashLengths"]
 - ["C6Charts12ChartDataSet", "highlightLineDashPhase"]
@@ -85,7 +82,7 @@ depends-member:
 - ["Ps10Comparable", "init"]
 - ["Ps28CustomDebugStringConvertible", "CGFloat"]
 - ["Ps28CustomDebugStringConvertible", "NSUIColor"]
-- ["Ps28CustomDebugStringConvertible", "copyWithZone"]
+- !private ["Ps28CustomDebugStringConvertible", "copyWithZone"]
 - ["Ps28CustomDebugStringConvertible", "highlightColor"]
 - ["Ps28CustomDebugStringConvertible", "highlightLineDashLengths"]
 - ["Ps28CustomDebugStringConvertible", "highlightLineDashPhase"]
@@ -95,17 +92,16 @@ depends-member:
 - ["Ps17CustomReflectable", "init"]
 - ["Ps23CustomStringConvertible", "CGFloat"]
 - ["Ps23CustomStringConvertible", "NSUIColor"]
-- ["Ps23CustomStringConvertible", "copyWithZone"]
+- !private ["Ps23CustomStringConvertible", "copyWithZone"]
 - ["Ps23CustomStringConvertible", "highlightColor"]
 - ["Ps23CustomStringConvertible", "highlightLineDashLengths"]
 - ["Ps23CustomStringConvertible", "highlightLineDashPhase"]
 - ["Ps23CustomStringConvertible", "highlightLineWidth"]
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", ""]
-- ["Sd", "deinit"]
 - ["Ps9Equatable", "CGFloat"]
 - ["Ps9Equatable", "NSUIColor"]
-- ["Ps9Equatable", "copyWithZone"]
+- !private ["Ps9Equatable", "copyWithZone"]
 - ["Ps9Equatable", "highlightColor"]
 - ["Ps9Equatable", "highlightLineDashLengths"]
 - ["Ps9Equatable", "highlightLineDashPhase"]
@@ -117,7 +113,7 @@ depends-member:
 - ["Ps13FloatingPoint", "init"]
 - ["Ps8Hashable", "CGFloat"]
 - ["Ps8Hashable", "NSUIColor"]
-- ["Ps8Hashable", "copyWithZone"]
+- !private ["Ps8Hashable", "copyWithZone"]
 - ["Ps8Hashable", "highlightColor"]
 - ["Ps8Hashable", "highlightLineDashLengths"]
 - ["Ps8Hashable", "highlightLineDashPhase"]
@@ -133,7 +129,7 @@ depends-member:
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", ""]
 - ["P6Charts13IChartDataSet", "CGFloat"]
 - ["P6Charts13IChartDataSet", "NSUIColor"]
-- ["P6Charts13IChartDataSet", "copyWithZone"]
+- !private ["P6Charts13IChartDataSet", "copyWithZone"]
 - ["P6Charts13IChartDataSet", "highlightColor"]
 - ["P6Charts13IChartDataSet", "highlightLineDashLengths"]
 - ["P6Charts13IChartDataSet", "highlightLineDashPhase"]
@@ -141,7 +137,6 @@ depends-member:
 - !private ["P6Charts13IChartDataSet", "init"]
 - ["P6Charts13IChartDataSet", ""]
 - ["PSo8NSCoding", "init"]
-- ["CSo7NSColor", "deinit"]
 - ["CSo7NSColor", "init"]
 - ["PSo9NSCopying", "init"]
 - ["CSo8NSObject", "AnyObject"]
@@ -157,7 +152,7 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - ["PSo16NSObjectProtocol", "CGFloat"]
 - ["PSo16NSObjectProtocol", "NSUIColor"]
-- ["PSo16NSObjectProtocol", "copyWithZone"]
+- !private ["PSo16NSObjectProtocol", "copyWithZone"]
 - ["PSo16NSObjectProtocol", "highlightColor"]
 - ["PSo16NSObjectProtocol", "highlightLineDashLengths"]
 - ["PSo16NSObjectProtocol", "highlightLineDashPhase"]
@@ -167,7 +162,6 @@ depends-member:
 - ["PSo19NSPasteboardReading", "init"]
 - ["PSo19NSPasteboardWriting", "init"]
 - ["PSo14NSSecureCoding", "init"]
-- ["Sq", "deinit"]
 - ["Ps12SignedNumber", "init"]
 - ["Ps10Strideable", "init"]
 - ["Ps15_CVarArgAligned", "init"]
@@ -175,7 +169,7 @@ depends-member:
 - ["Ps26_ExpressibleByColorLiteral", "init"]
 - ["Ps9_Hashable", "CGFloat"]
 - ["Ps9_Hashable", "NSUIColor"]
-- ["Ps9_Hashable", "copyWithZone"]
+- !private ["Ps9_Hashable", "copyWithZone"]
 - ["Ps9_Hashable", "highlightColor"]
 - ["Ps9_Hashable", "highlightLineDashLengths"]
 - ["Ps9_Hashable", "highlightLineDashPhase"]
@@ -197,7 +191,6 @@ depends-nominal:
 - "Ps28CustomDebugStringConvertible"
 - "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
-- "Sd"
 - "Ps9Equatable"
 - "Ps25ExpressibleByFloatLiteral"
 - "Ps27ExpressibleByIntegerLiteral"
@@ -213,7 +206,6 @@ depends-nominal:
 - "PSo19NSPasteboardReading"
 - "PSo19NSPasteboardWriting"
 - "PSo14NSSecureCoding"
-- "Sq"
 - "Ps12SignedNumber"
 - "Ps10Strideable"
 - "Ps15_CVarArgAligned"
@@ -225,6 +217,15 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.apinotesc"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/Charts/Source/Supporting Files/Charts.h"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Charts.build/Debug/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
@@ -239,4 +240,5 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuickLook.apinotesc"
 interface-hash: "de9aab7e43831d6c2fa93267a1e2513e"

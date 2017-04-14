@@ -8,52 +8,52 @@ provides-member:
 - ["C6Charts17CombinedChartView", ""]
 - ["OC6Charts17CombinedChartView9DrawOrder", ""]
 provides-dynamic-lookup:
-- "lineData"
+- "_fillFormatter"
 - "barData"
 - "bubbleData"
-- "isHighlightFullBarEnabled"
-- "highlightFullBarEnabled"
 - "candleData"
-- "getHighlightByTouchPoint"
-- "scatterData"
 - "combinedData"
-- "isDrawValueAboveBarEnabled"
 - "data"
-- "fillFormatter"
 - "drawBarShadowEnabled"
 - "drawOrder"
+- "drawValueAboveBarEnabled"
+- "fillFormatter"
+- "getHighlightByTouchPoint"
+- "highlightFullBarEnabled"
 - "initialize"
 - "isDrawBarShadowEnabled"
-- "_fillFormatter"
-- "drawValueAboveBarEnabled"
+- "isDrawValueAboveBarEnabled"
+- "isHighlightFullBarEnabled"
+- "lineData"
+- "scatterData"
 depends-top-level:
-- "CastingPrecedence"
-- !private "==="
-- "BarChartData"
-- "CombinedChartData"
-- "=="
-- !private "~="
-- "BarLineChartViewBase"
-- "AssignmentPrecedence"
-- "Int"
-- "CombinedChartDataProvider"
-- "BubbleChartData"
-- "ScatterChartData"
-- "Bool"
-- "CombinedChartView"
-- "CandleChartData"
-- "IFillFormatter"
-- "BooleanLiteralType"
-- !private "CombinedChartRenderer"
-- !private "CombinedHighlighter"
-- "LineChartData"
-- !private "StringLiteralType"
-- "ChartData"
-- "Highlight"
 - !private "!"
-- !private "DefaultFillFormatter"
-- !private "Swift"
+- "=="
+- !private "==="
+- "AssignmentPrecedence"
+- "BarChartData"
+- "BarLineChartViewBase"
+- "Bool"
+- "BooleanLiteralType"
+- "BubbleChartData"
 - "CGPoint"
+- "CandleChartData"
+- "CastingPrecedence"
+- "ChartData"
+- "CombinedChartData"
+- "CombinedChartDataProvider"
+- !private "CombinedChartRenderer"
+- "CombinedChartView"
+- !private "CombinedHighlighter"
+- !private "DefaultFillFormatter"
+- "Highlight"
+- "IFillFormatter"
+- "Int"
+- "LineChartData"
+- "ScatterChartData"
+- !private "StringLiteralType"
+- !private "Swift"
+- !private "~="
 depends-member:
 - !private ["P6Charts16AnimatorDelegate", "CombinedChartRenderer"]
 - !private ["P6Charts16AnimatorDelegate", "CombinedHighlighter"]
@@ -63,23 +63,18 @@ depends-member:
 - !private ["P6Charts16AnimatorDelegate", "Swift"]
 - !private ["P6Charts16AnimatorDelegate", "_animator"]
 - !private ["P6Charts16AnimatorDelegate", "_data"]
-- ["P6Charts16AnimatorDelegate", "_fillFormatter"]
+- !private ["P6Charts16AnimatorDelegate", "_fillFormatter"]
 - !private ["P6Charts16AnimatorDelegate", "_viewPortHandler"]
 - ["P6Charts16AnimatorDelegate", "barData"]
 - ["P6Charts16AnimatorDelegate", "bubbleData"]
 - ["P6Charts16AnimatorDelegate", "candleData"]
 - ["P6Charts16AnimatorDelegate", "combinedData"]
-- ["P6Charts16AnimatorDelegate", "data"]
-- ["P6Charts16AnimatorDelegate", "drawBarShadowEnabled"]
-- ["P6Charts16AnimatorDelegate", "drawOrder"]
-- ["P6Charts16AnimatorDelegate", "drawValueAboveBarEnabled"]
-- ["P6Charts16AnimatorDelegate", "fillFormatter"]
+- !private ["P6Charts16AnimatorDelegate", "data"]
 - ["P6Charts16AnimatorDelegate", "getAxis"]
-- ["P6Charts16AnimatorDelegate", "getHighlightByTouchPoint"]
-- ["P6Charts16AnimatorDelegate", "highlightFullBarEnabled"]
+- !private ["P6Charts16AnimatorDelegate", "highlightFullBarEnabled"]
 - !private ["P6Charts16AnimatorDelegate", "highlighter"]
 - !private ["P6Charts16AnimatorDelegate", "init"]
-- ["P6Charts16AnimatorDelegate", "initialize"]
+- !private ["P6Charts16AnimatorDelegate", "initialize"]
 - ["P6Charts16AnimatorDelegate", "isDrawBarShadowEnabled"]
 - ["P6Charts16AnimatorDelegate", "isDrawValueAboveBarEnabled"]
 - ["P6Charts16AnimatorDelegate", "isHighlightFullBarEnabled"]
@@ -95,7 +90,7 @@ depends-member:
 - !private ["Ps9AnyObject", "Swift"]
 - !private ["Ps9AnyObject", "_animator"]
 - !private ["Ps9AnyObject", "_data"]
-- ["Ps9AnyObject", "_fillFormatter"]
+- !private ["Ps9AnyObject", "_fillFormatter"]
 - !private ["Ps9AnyObject", "_viewPortHandler"]
 - !private ["Ps9AnyObject", "axis"]
 - ["Ps9AnyObject", "barData"]
@@ -103,20 +98,18 @@ depends-member:
 - ["Ps9AnyObject", "candleData"]
 - ["Ps9AnyObject", "combinedData"]
 - !private ["Ps9AnyObject", "createRenderers"]
-- ["Ps9AnyObject", "data"]
+- !private ["Ps9AnyObject", "data"]
 - !private ["Ps9AnyObject", "dataIndex"]
 - !private ["Ps9AnyObject", "dataSetIndex"]
-- ["Ps9AnyObject", "drawBarShadowEnabled"]
-- ["Ps9AnyObject", "drawOrder"]
-- ["Ps9AnyObject", "drawValueAboveBarEnabled"]
-- ["Ps9AnyObject", "fillFormatter"]
+- !private ["Ps9AnyObject", "drawBarShadowEnabled"]
+- !private ["Ps9AnyObject", "drawOrder"]
+- !private ["Ps9AnyObject", "drawValueAboveBarEnabled"]
 - ["Ps9AnyObject", "getAxis"]
-- ["Ps9AnyObject", "getHighlightByTouchPoint"]
-- ["Ps9AnyObject", "highlightFullBarEnabled"]
+- !private ["Ps9AnyObject", "highlightFullBarEnabled"]
 - !private ["Ps9AnyObject", "highlighter"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "initBuffers"]
-- ["Ps9AnyObject", "initialize"]
+- !private ["Ps9AnyObject", "initialize"]
 - ["Ps9AnyObject", "isDrawBarShadowEnabled"]
 - ["Ps9AnyObject", "isDrawValueAboveBarEnabled"]
 - ["Ps9AnyObject", "isHighlightFullBarEnabled"]
@@ -128,11 +121,7 @@ depends-member:
 - !private ["Ps9AnyObject", "y"]
 - !private ["Ps9AnyObject", "yPx"]
 - ["Ps9AnyObject", ""]
-- !private ["Sa", "Iterator"]
-- !private ["Sa", "_Element"]
-- ["Sa", "deinit"]
 - !private ["Sa", "map"]
-- ["OC6Charts5YAxis14AxisDependency", "deinit"]
 - !private ["P6Charts20BarChartDataProvider", "CombinedChartRenderer"]
 - !private ["P6Charts20BarChartDataProvider", "CombinedHighlighter"]
 - !private ["P6Charts20BarChartDataProvider", "DefaultFillFormatter"]
@@ -183,7 +172,7 @@ depends-member:
 - ["C6Charts20BarLineChartViewBase", "candleData"]
 - ["C6Charts20BarLineChartViewBase", "combinedData"]
 - ["C6Charts20BarLineChartViewBase", "data"]
-- ["C6Charts20BarLineChartViewBase", "deinit"]
+- !private ["C6Charts20BarLineChartViewBase", "deinit"]
 - ["C6Charts20BarLineChartViewBase", "drawBarShadowEnabled"]
 - ["C6Charts20BarLineChartViewBase", "drawOrder"]
 - ["C6Charts20BarLineChartViewBase", "drawValueAboveBarEnabled"]
@@ -214,23 +203,18 @@ depends-member:
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "Swift"]
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "_animator"]
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "_data"]
-- ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "_fillFormatter"]
+- !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "_fillFormatter"]
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "_viewPortHandler"]
 - ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "barData"]
 - ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "bubbleData"]
 - ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "candleData"]
 - ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "combinedData"]
-- ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "data"]
-- ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "drawBarShadowEnabled"]
-- ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "drawOrder"]
-- ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "drawValueAboveBarEnabled"]
-- ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "fillFormatter"]
+- !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "data"]
 - ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "getAxis"]
-- ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "getHighlightByTouchPoint"]
-- ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "highlightFullBarEnabled"]
+- !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "highlightFullBarEnabled"]
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "highlighter"]
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "init"]
-- ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "initialize"]
+- !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "initialize"]
 - ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "isDrawBarShadowEnabled"]
 - ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "isDrawValueAboveBarEnabled"]
 - ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "isHighlightFullBarEnabled"]
@@ -238,16 +222,9 @@ depends-member:
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "renderer"]
 - ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "scatterData"]
 - ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", ""]
-- !private ["Ps23BidirectionalCollection", "Iterator"]
-- !private ["Ps23BidirectionalCollection", "_Element"]
 - !private ["Ps23BidirectionalCollection", "map"]
-- !private ["Ps22BidirectionalIndexable", "Iterator"]
-- !private ["Ps22BidirectionalIndexable", "_Element"]
-- !private ["Ps22BidirectionalIndexable", "map"]
-- !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "hashValue"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- ["Sb", "deinit"]
 - !private ["P6Charts23BubbleChartDataProvider", "CombinedChartRenderer"]
 - !private ["P6Charts23BubbleChartDataProvider", "CombinedHighlighter"]
 - !private ["P6Charts23BubbleChartDataProvider", "DefaultFillFormatter"]
@@ -272,23 +249,17 @@ depends-member:
 - !private ["P6Charts23BubbleChartDataProvider", "renderer"]
 - ["P6Charts23BubbleChartDataProvider", "scatterData"]
 - ["P6Charts23BubbleChartDataProvider", ""]
-- ["V12CoreGraphics7CGFloat", "deinit"]
-- ["VSC7CGPoint", "deinit"]
 - !private ["VSC7CGPoint", "x"]
 - !private ["VSC7CGPoint", "y"]
-- ["VSC6CGRect", "deinit"]
 - !private ["Ps7CVarArg", "CombinedChartRenderer"]
 - !private ["Ps7CVarArg", "CombinedHighlighter"]
 - !private ["Ps7CVarArg", "DefaultFillFormatter"]
 - !private ["Ps7CVarArg", "DrawOrder"]
 - !private ["Ps7CVarArg", "Highlight"]
-- !private ["Ps7CVarArg", "Iterator"]
-- !private ["Ps7CVarArg", "Stride"]
 - !private ["Ps7CVarArg", "Swift"]
-- !private ["Ps7CVarArg", "_Element"]
 - !private ["Ps7CVarArg", "_animator"]
 - !private ["Ps7CVarArg", "_data"]
-- ["Ps7CVarArg", "_fillFormatter"]
+- !private ["Ps7CVarArg", "_fillFormatter"]
 - !private ["Ps7CVarArg", "_viewPortHandler"]
 - !private ["Ps7CVarArg", "axis"]
 - ["Ps7CVarArg", "barData"]
@@ -296,21 +267,19 @@ depends-member:
 - ["Ps7CVarArg", "candleData"]
 - ["Ps7CVarArg", "combinedData"]
 - !private ["Ps7CVarArg", "createRenderers"]
-- ["Ps7CVarArg", "data"]
+- !private ["Ps7CVarArg", "data"]
 - !private ["Ps7CVarArg", "dataIndex"]
 - !private ["Ps7CVarArg", "dataSetIndex"]
-- ["Ps7CVarArg", "drawBarShadowEnabled"]
-- ["Ps7CVarArg", "drawOrder"]
-- ["Ps7CVarArg", "drawValueAboveBarEnabled"]
-- ["Ps7CVarArg", "fillFormatter"]
+- !private ["Ps7CVarArg", "drawBarShadowEnabled"]
+- !private ["Ps7CVarArg", "drawOrder"]
+- !private ["Ps7CVarArg", "drawValueAboveBarEnabled"]
 - ["Ps7CVarArg", "getAxis"]
-- ["Ps7CVarArg", "getHighlightByTouchPoint"]
 - !private ["Ps7CVarArg", "hashValue"]
-- ["Ps7CVarArg", "highlightFullBarEnabled"]
+- !private ["Ps7CVarArg", "highlightFullBarEnabled"]
 - !private ["Ps7CVarArg", "highlighter"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "initBuffers"]
-- ["Ps7CVarArg", "initialize"]
+- !private ["Ps7CVarArg", "initialize"]
 - ["Ps7CVarArg", "isDrawBarShadowEnabled"]
 - ["Ps7CVarArg", "isDrawValueAboveBarEnabled"]
 - ["Ps7CVarArg", "isHighlightFullBarEnabled"]
@@ -361,23 +330,18 @@ depends-member:
 - !private ["P6Charts17ChartDataProvider", "Swift"]
 - !private ["P6Charts17ChartDataProvider", "_animator"]
 - !private ["P6Charts17ChartDataProvider", "_data"]
-- ["P6Charts17ChartDataProvider", "_fillFormatter"]
+- !private ["P6Charts17ChartDataProvider", "_fillFormatter"]
 - !private ["P6Charts17ChartDataProvider", "_viewPortHandler"]
 - ["P6Charts17ChartDataProvider", "barData"]
 - ["P6Charts17ChartDataProvider", "bubbleData"]
 - ["P6Charts17ChartDataProvider", "candleData"]
 - ["P6Charts17ChartDataProvider", "combinedData"]
-- ["P6Charts17ChartDataProvider", "data"]
-- ["P6Charts17ChartDataProvider", "drawBarShadowEnabled"]
-- ["P6Charts17ChartDataProvider", "drawOrder"]
-- ["P6Charts17ChartDataProvider", "drawValueAboveBarEnabled"]
-- ["P6Charts17ChartDataProvider", "fillFormatter"]
+- !private ["P6Charts17ChartDataProvider", "data"]
 - ["P6Charts17ChartDataProvider", "getAxis"]
-- ["P6Charts17ChartDataProvider", "getHighlightByTouchPoint"]
-- ["P6Charts17ChartDataProvider", "highlightFullBarEnabled"]
+- !private ["P6Charts17ChartDataProvider", "highlightFullBarEnabled"]
 - !private ["P6Charts17ChartDataProvider", "highlighter"]
 - !private ["P6Charts17ChartDataProvider", "init"]
-- ["P6Charts17ChartDataProvider", "initialize"]
+- !private ["P6Charts17ChartDataProvider", "initialize"]
 - ["P6Charts17ChartDataProvider", "isDrawBarShadowEnabled"]
 - ["P6Charts17ChartDataProvider", "isDrawValueAboveBarEnabled"]
 - ["P6Charts17ChartDataProvider", "isHighlightFullBarEnabled"]
@@ -427,14 +391,10 @@ depends-member:
 - ["C6Charts13ChartViewBase", "lineData"]
 - !private ["C6Charts13ChartViewBase", "renderer"]
 - ["C6Charts13ChartViewBase", "scatterData"]
-- !private ["Vs11ClosedRange", "deinit"]
-- !private ["Ps10Collection", "Iterator"]
-- !private ["Ps10Collection", "_Element"]
 - !private ["Ps10Collection", "map"]
 - !private ["C6Charts17CombinedChartData", "barData"]
 - !private ["C6Charts17CombinedChartData", "bubbleData"]
 - !private ["C6Charts17CombinedChartData", "candleData"]
-- ["C6Charts17CombinedChartData", "deinit"]
 - !private ["C6Charts17CombinedChartData", "lineData"]
 - !private ["C6Charts17CombinedChartData", "scatterData"]
 - !private ["P6Charts25CombinedChartDataProvider", "CombinedChartRenderer"]
@@ -462,7 +422,6 @@ depends-member:
 - ["P6Charts25CombinedChartDataProvider", "scatterData"]
 - ["P6Charts25CombinedChartDataProvider", ""]
 - !private ["C6Charts21CombinedChartRenderer", "createRenderers"]
-- ["C6Charts21CombinedChartRenderer", "deinit"]
 - !private ["C6Charts21CombinedChartRenderer", "drawBarShadowEnabled"]
 - !private ["C6Charts21CombinedChartRenderer", "drawOrder"]
 - !private ["C6Charts21CombinedChartRenderer", "drawValueAboveBarEnabled"]
@@ -510,24 +469,19 @@ depends-member:
 - ["C6Charts17CombinedChartView", "lineData"]
 - !private ["C6Charts17CombinedChartView", "renderer"]
 - ["C6Charts17CombinedChartView", "scatterData"]
-- ["C6Charts19CombinedHighlighter", "deinit"]
+- !private ["C6Charts19CombinedHighlighter", "deinit"]
 - !private ["C6Charts19CombinedHighlighter", "init"]
-- !private ["Ps10Comparable", "Stride"]
 - !private ["Ps10Comparable", "hashValue"]
 - !private ["Ps10Comparable", "init"]
-- !private ["Vs20CountableClosedRange", "deinit"]
-- !private ["Vs14CountableRange", "deinit"]
 - !private ["Ps28CustomDebugStringConvertible", "CombinedChartRenderer"]
 - !private ["Ps28CustomDebugStringConvertible", "CombinedHighlighter"]
 - !private ["Ps28CustomDebugStringConvertible", "DefaultFillFormatter"]
 - !private ["Ps28CustomDebugStringConvertible", "DrawOrder"]
 - !private ["Ps28CustomDebugStringConvertible", "Highlight"]
-- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
 - !private ["Ps28CustomDebugStringConvertible", "Swift"]
-- !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "_animator"]
 - !private ["Ps28CustomDebugStringConvertible", "_data"]
-- ["Ps28CustomDebugStringConvertible", "_fillFormatter"]
+- !private ["Ps28CustomDebugStringConvertible", "_fillFormatter"]
 - !private ["Ps28CustomDebugStringConvertible", "_viewPortHandler"]
 - !private ["Ps28CustomDebugStringConvertible", "axis"]
 - ["Ps28CustomDebugStringConvertible", "barData"]
@@ -535,20 +489,18 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "candleData"]
 - ["Ps28CustomDebugStringConvertible", "combinedData"]
 - !private ["Ps28CustomDebugStringConvertible", "createRenderers"]
-- ["Ps28CustomDebugStringConvertible", "data"]
+- !private ["Ps28CustomDebugStringConvertible", "data"]
 - !private ["Ps28CustomDebugStringConvertible", "dataIndex"]
 - !private ["Ps28CustomDebugStringConvertible", "dataSetIndex"]
-- ["Ps28CustomDebugStringConvertible", "drawBarShadowEnabled"]
-- ["Ps28CustomDebugStringConvertible", "drawOrder"]
-- ["Ps28CustomDebugStringConvertible", "drawValueAboveBarEnabled"]
-- ["Ps28CustomDebugStringConvertible", "fillFormatter"]
+- !private ["Ps28CustomDebugStringConvertible", "drawBarShadowEnabled"]
+- !private ["Ps28CustomDebugStringConvertible", "drawOrder"]
+- !private ["Ps28CustomDebugStringConvertible", "drawValueAboveBarEnabled"]
 - ["Ps28CustomDebugStringConvertible", "getAxis"]
-- ["Ps28CustomDebugStringConvertible", "getHighlightByTouchPoint"]
-- ["Ps28CustomDebugStringConvertible", "highlightFullBarEnabled"]
+- !private ["Ps28CustomDebugStringConvertible", "highlightFullBarEnabled"]
 - !private ["Ps28CustomDebugStringConvertible", "highlighter"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "initBuffers"]
-- ["Ps28CustomDebugStringConvertible", "initialize"]
+- !private ["Ps28CustomDebugStringConvertible", "initialize"]
 - ["Ps28CustomDebugStringConvertible", "isDrawBarShadowEnabled"]
 - ["Ps28CustomDebugStringConvertible", "isDrawValueAboveBarEnabled"]
 - ["Ps28CustomDebugStringConvertible", "isHighlightFullBarEnabled"]
@@ -561,15 +513,11 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "y"]
 - !private ["Ps28CustomDebugStringConvertible", "yPx"]
 - ["Ps28CustomDebugStringConvertible", ""]
-- !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "hashValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "x"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "y"]
-- !private ["Ps17CustomReflectable", "Iterator"]
-- !private ["Ps17CustomReflectable", "Stride"]
-- !private ["Ps17CustomReflectable", "_Element"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "hashValue"]
 - !private ["Ps17CustomReflectable", "init"]
@@ -581,13 +529,10 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "DefaultFillFormatter"]
 - !private ["Ps23CustomStringConvertible", "DrawOrder"]
 - !private ["Ps23CustomStringConvertible", "Highlight"]
-- !private ["Ps23CustomStringConvertible", "Iterator"]
-- !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "Swift"]
-- !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_animator"]
 - !private ["Ps23CustomStringConvertible", "_data"]
-- ["Ps23CustomStringConvertible", "_fillFormatter"]
+- !private ["Ps23CustomStringConvertible", "_fillFormatter"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "_viewPortHandler"]
 - !private ["Ps23CustomStringConvertible", "axis"]
@@ -596,21 +541,19 @@ depends-member:
 - ["Ps23CustomStringConvertible", "candleData"]
 - ["Ps23CustomStringConvertible", "combinedData"]
 - !private ["Ps23CustomStringConvertible", "createRenderers"]
-- ["Ps23CustomStringConvertible", "data"]
+- !private ["Ps23CustomStringConvertible", "data"]
 - !private ["Ps23CustomStringConvertible", "dataIndex"]
 - !private ["Ps23CustomStringConvertible", "dataSetIndex"]
-- ["Ps23CustomStringConvertible", "drawBarShadowEnabled"]
-- ["Ps23CustomStringConvertible", "drawOrder"]
-- ["Ps23CustomStringConvertible", "drawValueAboveBarEnabled"]
-- ["Ps23CustomStringConvertible", "fillFormatter"]
+- !private ["Ps23CustomStringConvertible", "drawBarShadowEnabled"]
+- !private ["Ps23CustomStringConvertible", "drawOrder"]
+- !private ["Ps23CustomStringConvertible", "drawValueAboveBarEnabled"]
 - ["Ps23CustomStringConvertible", "getAxis"]
-- ["Ps23CustomStringConvertible", "getHighlightByTouchPoint"]
 - !private ["Ps23CustomStringConvertible", "hashValue"]
-- ["Ps23CustomStringConvertible", "highlightFullBarEnabled"]
+- !private ["Ps23CustomStringConvertible", "highlightFullBarEnabled"]
 - !private ["Ps23CustomStringConvertible", "highlighter"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "initBuffers"]
-- ["Ps23CustomStringConvertible", "initialize"]
+- !private ["Ps23CustomStringConvertible", "initialize"]
 - ["Ps23CustomStringConvertible", "isDrawBarShadowEnabled"]
 - ["Ps23CustomStringConvertible", "isDrawValueAboveBarEnabled"]
 - ["Ps23CustomStringConvertible", "isHighlightFullBarEnabled"]
@@ -628,9 +571,8 @@ depends-member:
 - !private ["C6Charts12DataRenderer", "drawOrder"]
 - !private ["C6Charts12DataRenderer", "drawValueAboveBarEnabled"]
 - !private ["C6Charts12DataRenderer", "initBuffers"]
-- ["C6Charts20DefaultFillFormatter", "deinit"]
+- !private ["C6Charts20DefaultFillFormatter", "deinit"]
 - !private ["C6Charts20DefaultFillFormatter", "init"]
-- ["Sd", "deinit"]
 - ["OC6Charts17CombinedChartView9DrawOrder", "RawValue"]
 - ["OC6Charts17CombinedChartView9DrawOrder", "_toAnyHashable"]
 - ["OC6Charts17CombinedChartView9DrawOrder", "bar"]
@@ -647,12 +589,10 @@ depends-member:
 - !private ["Ps9Equatable", "DefaultFillFormatter"]
 - !private ["Ps9Equatable", "DrawOrder"]
 - !private ["Ps9Equatable", "Highlight"]
-- ["Ps9Equatable", "RawValue"]
-- !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "Swift"]
 - !private ["Ps9Equatable", "_animator"]
 - !private ["Ps9Equatable", "_data"]
-- ["Ps9Equatable", "_fillFormatter"]
+- !private ["Ps9Equatable", "_fillFormatter"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "_toAnyHashable"]
 - !private ["Ps9Equatable", "_viewPortHandler"]
@@ -662,21 +602,19 @@ depends-member:
 - ["Ps9Equatable", "candleData"]
 - ["Ps9Equatable", "combinedData"]
 - !private ["Ps9Equatable", "createRenderers"]
-- ["Ps9Equatable", "data"]
+- !private ["Ps9Equatable", "data"]
 - !private ["Ps9Equatable", "dataIndex"]
 - !private ["Ps9Equatable", "dataSetIndex"]
-- ["Ps9Equatable", "drawBarShadowEnabled"]
-- ["Ps9Equatable", "drawOrder"]
-- ["Ps9Equatable", "drawValueAboveBarEnabled"]
-- ["Ps9Equatable", "fillFormatter"]
+- !private ["Ps9Equatable", "drawBarShadowEnabled"]
+- !private ["Ps9Equatable", "drawOrder"]
+- !private ["Ps9Equatable", "drawValueAboveBarEnabled"]
 - ["Ps9Equatable", "getAxis"]
-- ["Ps9Equatable", "getHighlightByTouchPoint"]
 - ["Ps9Equatable", "hashValue"]
-- ["Ps9Equatable", "highlightFullBarEnabled"]
+- !private ["Ps9Equatable", "highlightFullBarEnabled"]
 - !private ["Ps9Equatable", "highlighter"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "initBuffers"]
-- ["Ps9Equatable", "initialize"]
+- !private ["Ps9Equatable", "initialize"]
 - ["Ps9Equatable", "isDrawBarShadowEnabled"]
 - ["Ps9Equatable", "isDrawValueAboveBarEnabled"]
 - ["Ps9Equatable", "isHighlightFullBarEnabled"]
@@ -689,14 +627,10 @@ depends-member:
 - !private ["Ps9Equatable", "y"]
 - !private ["Ps9Equatable", "yPx"]
 - ["Ps9Equatable", ""]
-- !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
-- !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
 - !private ["Ps25ExpressibleByArrayLiteral", "map"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
-- !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
-- !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Ps8Hashable", "CombinedChartRenderer"]
@@ -704,12 +638,10 @@ depends-member:
 - !private ["Ps8Hashable", "DefaultFillFormatter"]
 - !private ["Ps8Hashable", "DrawOrder"]
 - !private ["Ps8Hashable", "Highlight"]
-- ["Ps8Hashable", "RawValue"]
-- !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "Swift"]
 - !private ["Ps8Hashable", "_animator"]
 - !private ["Ps8Hashable", "_data"]
-- ["Ps8Hashable", "_fillFormatter"]
+- !private ["Ps8Hashable", "_fillFormatter"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "_toAnyHashable"]
 - !private ["Ps8Hashable", "_viewPortHandler"]
@@ -719,21 +651,19 @@ depends-member:
 - ["Ps8Hashable", "candleData"]
 - ["Ps8Hashable", "combinedData"]
 - !private ["Ps8Hashable", "createRenderers"]
-- ["Ps8Hashable", "data"]
+- !private ["Ps8Hashable", "data"]
 - !private ["Ps8Hashable", "dataIndex"]
 - !private ["Ps8Hashable", "dataSetIndex"]
-- ["Ps8Hashable", "drawBarShadowEnabled"]
-- ["Ps8Hashable", "drawOrder"]
-- ["Ps8Hashable", "drawValueAboveBarEnabled"]
-- ["Ps8Hashable", "fillFormatter"]
+- !private ["Ps8Hashable", "drawBarShadowEnabled"]
+- !private ["Ps8Hashable", "drawOrder"]
+- !private ["Ps8Hashable", "drawValueAboveBarEnabled"]
 - ["Ps8Hashable", "getAxis"]
-- ["Ps8Hashable", "getHighlightByTouchPoint"]
 - ["Ps8Hashable", "hashValue"]
-- ["Ps8Hashable", "highlightFullBarEnabled"]
+- !private ["Ps8Hashable", "highlightFullBarEnabled"]
 - !private ["Ps8Hashable", "highlighter"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "initBuffers"]
-- ["Ps8Hashable", "initialize"]
+- !private ["Ps8Hashable", "initialize"]
 - ["Ps8Hashable", "isDrawBarShadowEnabled"]
 - ["Ps8Hashable", "isDrawValueAboveBarEnabled"]
 - ["Ps8Hashable", "isHighlightFullBarEnabled"]
@@ -749,32 +679,17 @@ depends-member:
 - !private ["C6Charts9Highlight", "axis"]
 - !private ["C6Charts9Highlight", "dataIndex"]
 - !private ["C6Charts9Highlight", "dataSetIndex"]
-- ["C6Charts9Highlight", "deinit"]
 - !private ["C6Charts9Highlight", "init"]
 - !private ["C6Charts9Highlight", "x"]
 - !private ["C6Charts9Highlight", "xPx"]
 - !private ["C6Charts9Highlight", "y"]
 - !private ["C6Charts9Highlight", "yPx"]
-- ["P6Charts14IFillFormatter", "deinit"]
 - !private ["P6Charts14IFillFormatter", "init"]
 - !private ["P6Charts12IHighlighter", "getHighlight"]
 - !private ["P6Charts12IHighlighter", "init"]
-- ["SQ", "deinit"]
-- !private ["Ps9Indexable", "Iterator"]
-- !private ["Ps9Indexable", "_Element"]
-- !private ["Ps9Indexable", "map"]
-- !private ["Ps13IndexableBase", "Iterator"]
-- !private ["Ps13IndexableBase", "_Element"]
-- !private ["Ps13IndexableBase", "map"]
-- !private ["Vs16IndexingIterator", "Element"]
-- !private ["Si", "Stride"]
-- ["Si", "deinit"]
 - !private ["Si", "hashValue"]
-- !private ["Ps7Integer", "Stride"]
 - !private ["Ps7Integer", "hashValue"]
-- !private ["Ps17IntegerArithmetic", "Stride"]
 - !private ["Ps17IntegerArithmetic", "hashValue"]
-- !private ["Ps16IteratorProtocol", "Element"]
 - !private ["P6Charts21LineChartDataProvider", "CombinedChartRenderer"]
 - !private ["P6Charts21LineChartDataProvider", "CombinedHighlighter"]
 - !private ["P6Charts21LineChartDataProvider", "DefaultFillFormatter"]
@@ -801,15 +716,9 @@ depends-member:
 - ["P6Charts21LineChartDataProvider", ""]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
-- !private ["Ps10MirrorPath", "Stride"]
 - !private ["Ps10MirrorPath", "hashValue"]
 - !private ["Ps10MirrorPath", "init"]
-- !private ["Ps17MutableCollection", "Iterator"]
-- !private ["Ps17MutableCollection", "_Element"]
 - !private ["Ps17MutableCollection", "map"]
-- !private ["Ps16MutableIndexable", "Iterator"]
-- !private ["Ps16MutableIndexable", "_Element"]
-- !private ["Ps16MutableIndexable", "map"]
 - !private ["PSo15NSAccessibility", "CombinedChartRenderer"]
 - !private ["PSo15NSAccessibility", "CombinedHighlighter"]
 - !private ["PSo15NSAccessibility", "DefaultFillFormatter"]
@@ -818,23 +727,18 @@ depends-member:
 - !private ["PSo15NSAccessibility", "Swift"]
 - !private ["PSo15NSAccessibility", "_animator"]
 - !private ["PSo15NSAccessibility", "_data"]
-- ["PSo15NSAccessibility", "_fillFormatter"]
+- !private ["PSo15NSAccessibility", "_fillFormatter"]
 - !private ["PSo15NSAccessibility", "_viewPortHandler"]
 - ["PSo15NSAccessibility", "barData"]
 - ["PSo15NSAccessibility", "bubbleData"]
 - ["PSo15NSAccessibility", "candleData"]
 - ["PSo15NSAccessibility", "combinedData"]
-- ["PSo15NSAccessibility", "data"]
-- ["PSo15NSAccessibility", "drawBarShadowEnabled"]
-- ["PSo15NSAccessibility", "drawOrder"]
-- ["PSo15NSAccessibility", "drawValueAboveBarEnabled"]
-- ["PSo15NSAccessibility", "fillFormatter"]
+- !private ["PSo15NSAccessibility", "data"]
 - ["PSo15NSAccessibility", "getAxis"]
-- ["PSo15NSAccessibility", "getHighlightByTouchPoint"]
-- ["PSo15NSAccessibility", "highlightFullBarEnabled"]
+- !private ["PSo15NSAccessibility", "highlightFullBarEnabled"]
 - !private ["PSo15NSAccessibility", "highlighter"]
 - !private ["PSo15NSAccessibility", "init"]
-- ["PSo15NSAccessibility", "initialize"]
+- !private ["PSo15NSAccessibility", "initialize"]
 - ["PSo15NSAccessibility", "isDrawBarShadowEnabled"]
 - ["PSo15NSAccessibility", "isDrawValueAboveBarEnabled"]
 - ["PSo15NSAccessibility", "isHighlightFullBarEnabled"]
@@ -850,23 +754,18 @@ depends-member:
 - !private ["PSo30NSAccessibilityElementProtocol", "Swift"]
 - !private ["PSo30NSAccessibilityElementProtocol", "_animator"]
 - !private ["PSo30NSAccessibilityElementProtocol", "_data"]
-- ["PSo30NSAccessibilityElementProtocol", "_fillFormatter"]
+- !private ["PSo30NSAccessibilityElementProtocol", "_fillFormatter"]
 - !private ["PSo30NSAccessibilityElementProtocol", "_viewPortHandler"]
 - ["PSo30NSAccessibilityElementProtocol", "barData"]
 - ["PSo30NSAccessibilityElementProtocol", "bubbleData"]
 - ["PSo30NSAccessibilityElementProtocol", "candleData"]
 - ["PSo30NSAccessibilityElementProtocol", "combinedData"]
-- ["PSo30NSAccessibilityElementProtocol", "data"]
-- ["PSo30NSAccessibilityElementProtocol", "drawBarShadowEnabled"]
-- ["PSo30NSAccessibilityElementProtocol", "drawOrder"]
-- ["PSo30NSAccessibilityElementProtocol", "drawValueAboveBarEnabled"]
-- ["PSo30NSAccessibilityElementProtocol", "fillFormatter"]
+- !private ["PSo30NSAccessibilityElementProtocol", "data"]
 - ["PSo30NSAccessibilityElementProtocol", "getAxis"]
-- ["PSo30NSAccessibilityElementProtocol", "getHighlightByTouchPoint"]
-- ["PSo30NSAccessibilityElementProtocol", "highlightFullBarEnabled"]
+- !private ["PSo30NSAccessibilityElementProtocol", "highlightFullBarEnabled"]
 - !private ["PSo30NSAccessibilityElementProtocol", "highlighter"]
 - !private ["PSo30NSAccessibilityElementProtocol", "init"]
-- ["PSo30NSAccessibilityElementProtocol", "initialize"]
+- !private ["PSo30NSAccessibilityElementProtocol", "initialize"]
 - ["PSo30NSAccessibilityElementProtocol", "isDrawBarShadowEnabled"]
 - ["PSo30NSAccessibilityElementProtocol", "isDrawValueAboveBarEnabled"]
 - ["PSo30NSAccessibilityElementProtocol", "isHighlightFullBarEnabled"]
@@ -882,23 +781,18 @@ depends-member:
 - !private ["PSo29NSAnimatablePropertyContainer", "Swift"]
 - !private ["PSo29NSAnimatablePropertyContainer", "_animator"]
 - !private ["PSo29NSAnimatablePropertyContainer", "_data"]
-- ["PSo29NSAnimatablePropertyContainer", "_fillFormatter"]
+- !private ["PSo29NSAnimatablePropertyContainer", "_fillFormatter"]
 - !private ["PSo29NSAnimatablePropertyContainer", "_viewPortHandler"]
 - ["PSo29NSAnimatablePropertyContainer", "barData"]
 - ["PSo29NSAnimatablePropertyContainer", "bubbleData"]
 - ["PSo29NSAnimatablePropertyContainer", "candleData"]
 - ["PSo29NSAnimatablePropertyContainer", "combinedData"]
-- ["PSo29NSAnimatablePropertyContainer", "data"]
-- ["PSo29NSAnimatablePropertyContainer", "drawBarShadowEnabled"]
-- ["PSo29NSAnimatablePropertyContainer", "drawOrder"]
-- ["PSo29NSAnimatablePropertyContainer", "drawValueAboveBarEnabled"]
-- ["PSo29NSAnimatablePropertyContainer", "fillFormatter"]
+- !private ["PSo29NSAnimatablePropertyContainer", "data"]
 - ["PSo29NSAnimatablePropertyContainer", "getAxis"]
-- ["PSo29NSAnimatablePropertyContainer", "getHighlightByTouchPoint"]
-- ["PSo29NSAnimatablePropertyContainer", "highlightFullBarEnabled"]
+- !private ["PSo29NSAnimatablePropertyContainer", "highlightFullBarEnabled"]
 - !private ["PSo29NSAnimatablePropertyContainer", "highlighter"]
 - !private ["PSo29NSAnimatablePropertyContainer", "init"]
-- ["PSo29NSAnimatablePropertyContainer", "initialize"]
+- !private ["PSo29NSAnimatablePropertyContainer", "initialize"]
 - ["PSo29NSAnimatablePropertyContainer", "isDrawBarShadowEnabled"]
 - ["PSo29NSAnimatablePropertyContainer", "isDrawValueAboveBarEnabled"]
 - ["PSo29NSAnimatablePropertyContainer", "isHighlightFullBarEnabled"]
@@ -914,23 +808,18 @@ depends-member:
 - !private ["PSo25NSAppearanceCustomization", "Swift"]
 - !private ["PSo25NSAppearanceCustomization", "_animator"]
 - !private ["PSo25NSAppearanceCustomization", "_data"]
-- ["PSo25NSAppearanceCustomization", "_fillFormatter"]
+- !private ["PSo25NSAppearanceCustomization", "_fillFormatter"]
 - !private ["PSo25NSAppearanceCustomization", "_viewPortHandler"]
 - ["PSo25NSAppearanceCustomization", "barData"]
 - ["PSo25NSAppearanceCustomization", "bubbleData"]
 - ["PSo25NSAppearanceCustomization", "candleData"]
 - ["PSo25NSAppearanceCustomization", "combinedData"]
-- ["PSo25NSAppearanceCustomization", "data"]
-- ["PSo25NSAppearanceCustomization", "drawBarShadowEnabled"]
-- ["PSo25NSAppearanceCustomization", "drawOrder"]
-- ["PSo25NSAppearanceCustomization", "drawValueAboveBarEnabled"]
-- ["PSo25NSAppearanceCustomization", "fillFormatter"]
+- !private ["PSo25NSAppearanceCustomization", "data"]
 - ["PSo25NSAppearanceCustomization", "getAxis"]
-- ["PSo25NSAppearanceCustomization", "getHighlightByTouchPoint"]
-- ["PSo25NSAppearanceCustomization", "highlightFullBarEnabled"]
+- !private ["PSo25NSAppearanceCustomization", "highlightFullBarEnabled"]
 - !private ["PSo25NSAppearanceCustomization", "highlighter"]
 - !private ["PSo25NSAppearanceCustomization", "init"]
-- ["PSo25NSAppearanceCustomization", "initialize"]
+- !private ["PSo25NSAppearanceCustomization", "initialize"]
 - ["PSo25NSAppearanceCustomization", "isDrawBarShadowEnabled"]
 - ["PSo25NSAppearanceCustomization", "isDrawValueAboveBarEnabled"]
 - ["PSo25NSAppearanceCustomization", "isHighlightFullBarEnabled"]
@@ -938,7 +827,6 @@ depends-member:
 - !private ["PSo25NSAppearanceCustomization", "renderer"]
 - ["PSo25NSAppearanceCustomization", "scatterData"]
 - ["PSo25NSAppearanceCustomization", ""]
-- ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "CombinedChartRenderer"]
 - !private ["PSo8NSCoding", "CombinedHighlighter"]
 - !private ["PSo8NSCoding", "DefaultFillFormatter"]
@@ -947,23 +835,18 @@ depends-member:
 - !private ["PSo8NSCoding", "Swift"]
 - !private ["PSo8NSCoding", "_animator"]
 - !private ["PSo8NSCoding", "_data"]
-- ["PSo8NSCoding", "_fillFormatter"]
+- !private ["PSo8NSCoding", "_fillFormatter"]
 - !private ["PSo8NSCoding", "_viewPortHandler"]
 - ["PSo8NSCoding", "barData"]
 - ["PSo8NSCoding", "bubbleData"]
 - ["PSo8NSCoding", "candleData"]
 - ["PSo8NSCoding", "combinedData"]
-- ["PSo8NSCoding", "data"]
-- ["PSo8NSCoding", "drawBarShadowEnabled"]
-- ["PSo8NSCoding", "drawOrder"]
-- ["PSo8NSCoding", "drawValueAboveBarEnabled"]
-- ["PSo8NSCoding", "fillFormatter"]
+- !private ["PSo8NSCoding", "data"]
 - ["PSo8NSCoding", "getAxis"]
-- ["PSo8NSCoding", "getHighlightByTouchPoint"]
-- ["PSo8NSCoding", "highlightFullBarEnabled"]
+- !private ["PSo8NSCoding", "highlightFullBarEnabled"]
 - !private ["PSo8NSCoding", "highlighter"]
 - !private ["PSo8NSCoding", "init"]
-- ["PSo8NSCoding", "initialize"]
+- !private ["PSo8NSCoding", "initialize"]
 - ["PSo8NSCoding", "isDrawBarShadowEnabled"]
 - ["PSo8NSCoding", "isDrawValueAboveBarEnabled"]
 - ["PSo8NSCoding", "isHighlightFullBarEnabled"]
@@ -980,23 +863,18 @@ depends-member:
 - !private ["PSo21NSDraggingDestination", "Swift"]
 - !private ["PSo21NSDraggingDestination", "_animator"]
 - !private ["PSo21NSDraggingDestination", "_data"]
-- ["PSo21NSDraggingDestination", "_fillFormatter"]
+- !private ["PSo21NSDraggingDestination", "_fillFormatter"]
 - !private ["PSo21NSDraggingDestination", "_viewPortHandler"]
 - ["PSo21NSDraggingDestination", "barData"]
 - ["PSo21NSDraggingDestination", "bubbleData"]
 - ["PSo21NSDraggingDestination", "candleData"]
 - ["PSo21NSDraggingDestination", "combinedData"]
-- ["PSo21NSDraggingDestination", "data"]
-- ["PSo21NSDraggingDestination", "drawBarShadowEnabled"]
-- ["PSo21NSDraggingDestination", "drawOrder"]
-- ["PSo21NSDraggingDestination", "drawValueAboveBarEnabled"]
-- ["PSo21NSDraggingDestination", "fillFormatter"]
+- !private ["PSo21NSDraggingDestination", "data"]
 - ["PSo21NSDraggingDestination", "getAxis"]
-- ["PSo21NSDraggingDestination", "getHighlightByTouchPoint"]
-- ["PSo21NSDraggingDestination", "highlightFullBarEnabled"]
+- !private ["PSo21NSDraggingDestination", "highlightFullBarEnabled"]
 - !private ["PSo21NSDraggingDestination", "highlighter"]
 - !private ["PSo21NSDraggingDestination", "init"]
-- ["PSo21NSDraggingDestination", "initialize"]
+- !private ["PSo21NSDraggingDestination", "initialize"]
 - ["PSo21NSDraggingDestination", "isDrawBarShadowEnabled"]
 - ["PSo21NSDraggingDestination", "isDrawValueAboveBarEnabled"]
 - ["PSo21NSDraggingDestination", "isHighlightFullBarEnabled"]
@@ -1012,23 +890,18 @@ depends-member:
 - !private ["PSo27NSGestureRecognizerDelegate", "Swift"]
 - !private ["PSo27NSGestureRecognizerDelegate", "_animator"]
 - !private ["PSo27NSGestureRecognizerDelegate", "_data"]
-- ["PSo27NSGestureRecognizerDelegate", "_fillFormatter"]
+- !private ["PSo27NSGestureRecognizerDelegate", "_fillFormatter"]
 - !private ["PSo27NSGestureRecognizerDelegate", "_viewPortHandler"]
 - ["PSo27NSGestureRecognizerDelegate", "barData"]
 - ["PSo27NSGestureRecognizerDelegate", "bubbleData"]
 - ["PSo27NSGestureRecognizerDelegate", "candleData"]
 - ["PSo27NSGestureRecognizerDelegate", "combinedData"]
-- ["PSo27NSGestureRecognizerDelegate", "data"]
-- ["PSo27NSGestureRecognizerDelegate", "drawBarShadowEnabled"]
-- ["PSo27NSGestureRecognizerDelegate", "drawOrder"]
-- ["PSo27NSGestureRecognizerDelegate", "drawValueAboveBarEnabled"]
-- ["PSo27NSGestureRecognizerDelegate", "fillFormatter"]
+- !private ["PSo27NSGestureRecognizerDelegate", "data"]
 - ["PSo27NSGestureRecognizerDelegate", "getAxis"]
-- ["PSo27NSGestureRecognizerDelegate", "getHighlightByTouchPoint"]
-- ["PSo27NSGestureRecognizerDelegate", "highlightFullBarEnabled"]
+- !private ["PSo27NSGestureRecognizerDelegate", "highlightFullBarEnabled"]
 - !private ["PSo27NSGestureRecognizerDelegate", "highlighter"]
 - !private ["PSo27NSGestureRecognizerDelegate", "init"]
-- ["PSo27NSGestureRecognizerDelegate", "initialize"]
+- !private ["PSo27NSGestureRecognizerDelegate", "initialize"]
 - ["PSo27NSGestureRecognizerDelegate", "isDrawBarShadowEnabled"]
 - ["PSo27NSGestureRecognizerDelegate", "isDrawValueAboveBarEnabled"]
 - ["PSo27NSGestureRecognizerDelegate", "isHighlightFullBarEnabled"]
@@ -1096,7 +969,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "Swift"]
 - !private ["PSo16NSObjectProtocol", "_animator"]
 - !private ["PSo16NSObjectProtocol", "_data"]
-- ["PSo16NSObjectProtocol", "_fillFormatter"]
+- !private ["PSo16NSObjectProtocol", "_fillFormatter"]
 - !private ["PSo16NSObjectProtocol", "_viewPortHandler"]
 - !private ["PSo16NSObjectProtocol", "axis"]
 - ["PSo16NSObjectProtocol", "barData"]
@@ -1104,21 +977,19 @@ depends-member:
 - ["PSo16NSObjectProtocol", "candleData"]
 - ["PSo16NSObjectProtocol", "combinedData"]
 - !private ["PSo16NSObjectProtocol", "createRenderers"]
-- ["PSo16NSObjectProtocol", "data"]
+- !private ["PSo16NSObjectProtocol", "data"]
 - !private ["PSo16NSObjectProtocol", "dataIndex"]
 - !private ["PSo16NSObjectProtocol", "dataSetIndex"]
-- ["PSo16NSObjectProtocol", "drawBarShadowEnabled"]
-- ["PSo16NSObjectProtocol", "drawOrder"]
-- ["PSo16NSObjectProtocol", "drawValueAboveBarEnabled"]
-- ["PSo16NSObjectProtocol", "fillFormatter"]
+- !private ["PSo16NSObjectProtocol", "drawBarShadowEnabled"]
+- !private ["PSo16NSObjectProtocol", "drawOrder"]
+- !private ["PSo16NSObjectProtocol", "drawValueAboveBarEnabled"]
 - ["PSo16NSObjectProtocol", "getAxis"]
 - !private ["PSo16NSObjectProtocol", "getHighlight"]
-- ["PSo16NSObjectProtocol", "getHighlightByTouchPoint"]
-- ["PSo16NSObjectProtocol", "highlightFullBarEnabled"]
+- !private ["PSo16NSObjectProtocol", "highlightFullBarEnabled"]
 - !private ["PSo16NSObjectProtocol", "highlighter"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "initBuffers"]
-- ["PSo16NSObjectProtocol", "initialize"]
+- !private ["PSo16NSObjectProtocol", "initialize"]
 - ["PSo16NSObjectProtocol", "isDrawBarShadowEnabled"]
 - ["PSo16NSObjectProtocol", "isDrawValueAboveBarEnabled"]
 - ["PSo16NSObjectProtocol", "isHighlightFullBarEnabled"]
@@ -1184,23 +1055,18 @@ depends-member:
 - !private ["PSo18NSTouchBarProvider", "Swift"]
 - !private ["PSo18NSTouchBarProvider", "_animator"]
 - !private ["PSo18NSTouchBarProvider", "_data"]
-- ["PSo18NSTouchBarProvider", "_fillFormatter"]
+- !private ["PSo18NSTouchBarProvider", "_fillFormatter"]
 - !private ["PSo18NSTouchBarProvider", "_viewPortHandler"]
 - ["PSo18NSTouchBarProvider", "barData"]
 - ["PSo18NSTouchBarProvider", "bubbleData"]
 - ["PSo18NSTouchBarProvider", "candleData"]
 - ["PSo18NSTouchBarProvider", "combinedData"]
-- ["PSo18NSTouchBarProvider", "data"]
-- ["PSo18NSTouchBarProvider", "drawBarShadowEnabled"]
-- ["PSo18NSTouchBarProvider", "drawOrder"]
-- ["PSo18NSTouchBarProvider", "drawValueAboveBarEnabled"]
-- ["PSo18NSTouchBarProvider", "fillFormatter"]
+- !private ["PSo18NSTouchBarProvider", "data"]
 - ["PSo18NSTouchBarProvider", "getAxis"]
-- ["PSo18NSTouchBarProvider", "getHighlightByTouchPoint"]
-- ["PSo18NSTouchBarProvider", "highlightFullBarEnabled"]
+- !private ["PSo18NSTouchBarProvider", "highlightFullBarEnabled"]
 - !private ["PSo18NSTouchBarProvider", "highlighter"]
 - !private ["PSo18NSTouchBarProvider", "init"]
-- ["PSo18NSTouchBarProvider", "initialize"]
+- !private ["PSo18NSTouchBarProvider", "initialize"]
 - ["PSo18NSTouchBarProvider", "isDrawBarShadowEnabled"]
 - ["PSo18NSTouchBarProvider", "isDrawValueAboveBarEnabled"]
 - ["PSo18NSTouchBarProvider", "isHighlightFullBarEnabled"]
@@ -1258,23 +1124,18 @@ depends-member:
 - !private ["PSo33NSUserInterfaceItemIdentification", "Swift"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "_animator"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "_data"]
-- ["PSo33NSUserInterfaceItemIdentification", "_fillFormatter"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "_fillFormatter"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "_viewPortHandler"]
 - ["PSo33NSUserInterfaceItemIdentification", "barData"]
 - ["PSo33NSUserInterfaceItemIdentification", "bubbleData"]
 - ["PSo33NSUserInterfaceItemIdentification", "candleData"]
 - ["PSo33NSUserInterfaceItemIdentification", "combinedData"]
-- ["PSo33NSUserInterfaceItemIdentification", "data"]
-- ["PSo33NSUserInterfaceItemIdentification", "drawBarShadowEnabled"]
-- ["PSo33NSUserInterfaceItemIdentification", "drawOrder"]
-- ["PSo33NSUserInterfaceItemIdentification", "drawValueAboveBarEnabled"]
-- ["PSo33NSUserInterfaceItemIdentification", "fillFormatter"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "data"]
 - ["PSo33NSUserInterfaceItemIdentification", "getAxis"]
-- ["PSo33NSUserInterfaceItemIdentification", "getHighlightByTouchPoint"]
-- ["PSo33NSUserInterfaceItemIdentification", "highlightFullBarEnabled"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "highlightFullBarEnabled"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "highlighter"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "init"]
-- ["PSo33NSUserInterfaceItemIdentification", "initialize"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "initialize"]
 - ["PSo33NSUserInterfaceItemIdentification", "isDrawBarShadowEnabled"]
 - ["PSo33NSUserInterfaceItemIdentification", "isDrawValueAboveBarEnabled"]
 - ["PSo33NSUserInterfaceItemIdentification", "isHighlightFullBarEnabled"]
@@ -1324,21 +1185,8 @@ depends-member:
 - ["CSo6NSView", "lineData"]
 - !private ["CSo6NSView", "renderer"]
 - ["CSo6NSView", "scatterData"]
-- ["Sq", "deinit"]
-- !private ["Ps22RandomAccessCollection", "Iterator"]
-- !private ["Ps22RandomAccessCollection", "_Element"]
 - !private ["Ps22RandomAccessCollection", "map"]
-- !private ["Ps21RandomAccessIndexable", "Iterator"]
-- !private ["Ps21RandomAccessIndexable", "_Element"]
-- !private ["Ps21RandomAccessIndexable", "map"]
-- !private ["Vs5Range", "deinit"]
-- !private ["Ps26RangeReplaceableCollection", "Iterator"]
-- !private ["Ps26RangeReplaceableCollection", "_Element"]
 - !private ["Ps26RangeReplaceableCollection", "map"]
-- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
-- !private ["Ps25RangeReplaceableIndexable", "_Element"]
-- !private ["Ps25RangeReplaceableIndexable", "map"]
-- ["Ps16RawRepresentable", "RawValue"]
 - ["Ps16RawRepresentable", "_toAnyHashable"]
 - ["Ps16RawRepresentable", "hashValue"]
 - ["Ps16RawRepresentable", "init"]
@@ -1373,23 +1221,15 @@ depends-member:
 - !private ["P6Charts24ScatterChartDataProvider", "renderer"]
 - ["P6Charts24ScatterChartDataProvider", "scatterData"]
 - ["P6Charts24ScatterChartDataProvider", ""]
-- !private ["Ps8Sequence", "Element"]
-- !private ["Ps8Sequence", "Iterator"]
-- !private ["Ps8Sequence", "_Element"]
 - !private ["Ps8Sequence", "map"]
-- !private ["Ps13SignedInteger", "Stride"]
 - !private ["Ps13SignedInteger", "hashValue"]
-- !private ["Ps12SignedNumber", "Stride"]
 - !private ["Ps12SignedNumber", "hashValue"]
-- !private ["Ps10Strideable", "Stride"]
 - !private ["Ps10Strideable", "hashValue"]
-- ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
-- !private ["Ps14_ArrayProtocol", "Iterator"]
-- !private ["Ps14_ArrayProtocol", "_Element"]
 - !private ["Ps14_ArrayProtocol", "map"]
+- !private ["Ps23_BidirectionalIndexable", "map"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "CombinedChartRenderer"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "CombinedHighlighter"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "DefaultFillFormatter"]
@@ -1398,23 +1238,18 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "Swift"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "_animator"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "_data"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "_fillFormatter"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "_fillFormatter"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "_viewPortHandler"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "barData"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "bubbleData"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "candleData"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "combinedData"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "data"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "drawBarShadowEnabled"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "drawOrder"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "drawValueAboveBarEnabled"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "fillFormatter"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "data"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "getAxis"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "getHighlightByTouchPoint"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "highlightFullBarEnabled"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "highlightFullBarEnabled"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "highlighter"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "initialize"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "initialize"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "isDrawBarShadowEnabled"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "isDrawValueAboveBarEnabled"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "isHighlightFullBarEnabled"]
@@ -1422,28 +1257,24 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "renderer"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "scatterData"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
-- !private ["Ps24_DestructorSafeContainer", "Iterator"]
-- !private ["Ps24_DestructorSafeContainer", "_Element"]
 - !private ["Ps24_DestructorSafeContainer", "map"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
-- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hashValue"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "CombinedChartRenderer"]
 - !private ["Ps9_Hashable", "CombinedHighlighter"]
 - !private ["Ps9_Hashable", "DefaultFillFormatter"]
 - !private ["Ps9_Hashable", "DrawOrder"]
 - !private ["Ps9_Hashable", "Highlight"]
-- ["Ps9_Hashable", "RawValue"]
-- !private ["Ps9_Hashable", "Stride"]
 - !private ["Ps9_Hashable", "Swift"]
 - !private ["Ps9_Hashable", "_animator"]
 - !private ["Ps9_Hashable", "_data"]
-- ["Ps9_Hashable", "_fillFormatter"]
+- !private ["Ps9_Hashable", "_fillFormatter"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - ["Ps9_Hashable", "_toAnyHashable"]
 - !private ["Ps9_Hashable", "_viewPortHandler"]
@@ -1453,21 +1284,19 @@ depends-member:
 - ["Ps9_Hashable", "candleData"]
 - ["Ps9_Hashable", "combinedData"]
 - !private ["Ps9_Hashable", "createRenderers"]
-- ["Ps9_Hashable", "data"]
+- !private ["Ps9_Hashable", "data"]
 - !private ["Ps9_Hashable", "dataIndex"]
 - !private ["Ps9_Hashable", "dataSetIndex"]
-- ["Ps9_Hashable", "drawBarShadowEnabled"]
-- ["Ps9_Hashable", "drawOrder"]
-- ["Ps9_Hashable", "drawValueAboveBarEnabled"]
-- ["Ps9_Hashable", "fillFormatter"]
+- !private ["Ps9_Hashable", "drawBarShadowEnabled"]
+- !private ["Ps9_Hashable", "drawOrder"]
+- !private ["Ps9_Hashable", "drawValueAboveBarEnabled"]
 - ["Ps9_Hashable", "getAxis"]
-- ["Ps9_Hashable", "getHighlightByTouchPoint"]
 - ["Ps9_Hashable", "hashValue"]
-- ["Ps9_Hashable", "highlightFullBarEnabled"]
+- !private ["Ps9_Hashable", "highlightFullBarEnabled"]
 - !private ["Ps9_Hashable", "highlighter"]
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "initBuffers"]
-- ["Ps9_Hashable", "initialize"]
+- !private ["Ps9_Hashable", "initialize"]
 - ["Ps9_Hashable", "isDrawBarShadowEnabled"]
 - ["Ps9_Hashable", "isDrawValueAboveBarEnabled"]
 - ["Ps9_Hashable", "isHighlightFullBarEnabled"]
@@ -1480,96 +1309,76 @@ depends-member:
 - !private ["Ps9_Hashable", "y"]
 - !private ["Ps9_Hashable", "yPx"]
 - ["Ps9_Hashable", ""]
-- !private ["Ps14_Incrementable", "Stride"]
 - !private ["Ps14_Incrementable", "hashValue"]
-- !private ["Ps8_Integer", "Stride"]
+- !private ["Ps10_Indexable", "map"]
+- !private ["Ps14_IndexableBase", "map"]
 - !private ["Ps8_Integer", "hashValue"]
-- !private ["Ps18_IntegerArithmetic", "Stride"]
 - !private ["Ps18_IntegerArithmetic", "hashValue"]
-- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
-- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
-- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps17_MutableIndexable", "map"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "map"]
 - !private ["Ps21_ObjectiveCBridgeable", "x"]
 - !private ["Ps21_ObjectiveCBridgeable", "y"]
-- ["Vs26_OptionalNilComparisonType", "deinit"]
-- !private ["Ps14_SignedInteger", "Stride"]
+- !private ["Ps22_RandomAccessIndexable", "map"]
+- !private ["Ps26_RangeReplaceableIndexable", "map"]
 - !private ["Ps14_SignedInteger", "hashValue"]
-- !private ["Ps11_Strideable", "Stride"]
 - !private ["Ps11_Strideable", "hashValue"]
 depends-nominal:
 - "P6Charts16AnimatorDelegate"
 - "Ps9AnyObject"
-- "Sa"
-- "OC6Charts5YAxis14AxisDependency"
+- !private "Sa"
 - "P6Charts20BarChartDataProvider"
 - "C6Charts20BarLineChartViewBase"
 - !private "C6Charts35BarLineScatterCandleBubbleChartData"
 - "P6Charts43BarLineScatterCandleBubbleChartDataProvider"
 - !private "Ps23BidirectionalCollection"
-- !private "Ps22BidirectionalIndexable"
 - !private "Ps17BitwiseOperations"
-- "Sb"
+- !private "Sb"
 - "P6Charts23BubbleChartDataProvider"
-- "V12CoreGraphics7CGFloat"
-- "VSC7CGPoint"
-- "VSC6CGRect"
+- !private "VSC7CGPoint"
 - "Ps7CVarArg"
 - "P6Charts23CandleChartDataProvider"
 - !private "C6Charts9ChartData"
 - "P6Charts17ChartDataProvider"
 - "C6Charts13ChartViewBase"
-- !private "Vs11ClosedRange"
 - !private "Ps10Collection"
-- "C6Charts17CombinedChartData"
+- !private "C6Charts17CombinedChartData"
 - "P6Charts25CombinedChartDataProvider"
-- "C6Charts21CombinedChartRenderer"
+- !private "C6Charts21CombinedChartRenderer"
 - "C6Charts17CombinedChartView"
-- "C6Charts19CombinedHighlighter"
+- !private "C6Charts19CombinedHighlighter"
 - !private "Ps10Comparable"
-- !private "Vs20CountableClosedRange"
-- !private "Vs14CountableRange"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - !private "C6Charts12DataRenderer"
-- "C6Charts20DefaultFillFormatter"
-- "Sd"
+- !private "C6Charts20DefaultFillFormatter"
 - "OC6Charts17CombinedChartView9DrawOrder"
 - "Ps9Equatable"
 - !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
-- !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Ps8Hashable"
-- "C6Charts9Highlight"
-- "P6Charts14IFillFormatter"
+- !private "C6Charts9Highlight"
+- !private "P6Charts14IFillFormatter"
 - !private "P6Charts12IHighlighter"
-- "SQ"
-- !private "Ps9Indexable"
-- !private "Ps13IndexableBase"
-- !private "Vs16IndexingIterator"
-- "Si"
+- !private "Si"
 - !private "Ps7Integer"
 - !private "Ps17IntegerArithmetic"
-- !private "Ps16IteratorProtocol"
 - "P6Charts21LineChartDataProvider"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
 - !private "Ps17MutableCollection"
-- !private "Ps16MutableIndexable"
 - "PSo15NSAccessibility"
 - "PSo30NSAccessibilityElementProtocol"
 - "PSo29NSAnimatablePropertyContainer"
 - "PSo25NSAppearanceCustomization"
-- "CSo7NSCoder"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - "PSo21NSDraggingDestination"
@@ -1586,12 +1395,8 @@ depends-nominal:
 - "C6Charts8NSUIView"
 - "PSo33NSUserInterfaceItemIdentification"
 - "CSo6NSView"
-- "Sq"
 - !private "Ps22RandomAccessCollection"
-- !private "Ps21RandomAccessIndexable"
-- !private "Vs5Range"
 - !private "Ps26RangeReplaceableCollection"
-- !private "Ps25RangeReplaceableIndexable"
 - "Ps16RawRepresentable"
 - !private "C6Charts8Renderer"
 - "P6Charts24ScatterChartDataProvider"
@@ -1599,10 +1404,11 @@ depends-nominal:
 - !private "Ps13SignedInteger"
 - !private "Ps12SignedNumber"
 - !private "Ps10Strideable"
-- "SS"
+- !private "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
 - !private "Ps14_ArrayProtocol"
+- !private "Ps23_BidirectionalIndexable"
 - "Ps37_DefaultCustomPlaygroundQuickLookable"
 - !private "Ps24_DestructorSafeContainer"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
@@ -1611,18 +1417,32 @@ depends-nominal:
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - !private "Ps14_Incrementable"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
 - !private "Ps8_Integer"
 - !private "Ps18_IntegerArithmetic"
+- !private "Ps17_MutableIndexable"
 - !private "Ps21_ObjectiveCBridgeable"
-- "Vs26_OptionalNilComparisonType"
+- !private "Ps22_RandomAccessIndexable"
+- !private "Ps26_RangeReplaceableIndexable"
 - !private "Ps14_SignedInteger"
 - !private "Ps11_Strideable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.apinotesc"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/Charts/Source/Supporting Files/Charts.h"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Charts.build/Debug/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
@@ -1637,4 +1457,5 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuickLook.apinotesc"
 interface-hash: "638a0eadf7b95727df544dadc0421b83"

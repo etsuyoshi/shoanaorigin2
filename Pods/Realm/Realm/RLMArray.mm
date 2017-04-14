@@ -23,7 +23,6 @@
 #import "RLMObjectSchema.h"
 #import "RLMQueryUtil.hpp"
 #import "RLMSwiftSupport.h"
-#import "RLMThreadSafeReference_Private.hpp"
 #import "RLMUtil.hpp"
 
 #import <realm/link_view.hpp>
@@ -35,9 +34,6 @@
 }
 @end
 @implementation RLMArrayHolder
-@end
-
-@interface RLMArray () <RLMThreadConfined_Private>
 @end
 
 @implementation RLMArray {
@@ -377,17 +373,12 @@ static void RLMValidateArrayBounds(__unsafe_unretained RLMArray *const ar,
     @throw RLMException(@"This method may only be called on RLMArray instances retrieved from an RLMRealm");
 }
 
-- (RLMResults *)sortedResultsUsingKeyPath:(NSString *)keyPath ascending:(BOOL)ascending
-{
-    return [self sortedResultsUsingDescriptors:@[[RLMSortDescriptor sortDescriptorWithKeyPath:keyPath ascending:ascending]]];
-}
-
 - (RLMResults *)sortedResultsUsingProperty:(NSString *)property ascending:(BOOL)ascending
 {
-    return [self sortedResultsUsingKeyPath:property ascending:ascending];
+    return [self sortedResultsUsingDescriptors:@[[RLMSortDescriptor sortDescriptorWithProperty:property ascending:ascending]]];
 }
 
-- (RLMResults *)sortedResultsUsingDescriptors:(NSArray<RLMSortDescriptor *> *)properties
+- (RLMResults *)sortedResultsUsingDescriptors:(NSArray *)properties
 {
     @throw RLMException(@"This method may only be called on RLMArray instances retrieved from an RLMRealm");
 }
@@ -426,44 +417,23 @@ static void RLMValidateArrayBounds(__unsafe_unretained RLMArray *const ar,
 - (NSString *)descriptionWithMaxDepth:(NSUInteger)depth {
     return RLMDescriptionWithMaxDepth(@"RLMArray", self, depth);
 }
+@end
 
-#pragma mark - Thread Confined Protocol Conformance
-
-- (std::unique_ptr<realm::ThreadSafeReferenceBase>)makeThreadSafeReference {
-    REALM_TERMINATE("Unexpected handover of unmanaged `RLMArray`");
-}
-
-- (id)objectiveCMetadata {
-    REALM_TERMINATE("Unexpected handover of unmanaged `RLMArray`");
-}
-
-+ (instancetype)objectWithThreadSafeReference:(__unused std::unique_ptr<realm::ThreadSafeReferenceBase>)reference
-                                     metadata:(__unused id)metadata
-                                        realm:(__unused RLMRealm *)realm {
-    REALM_TERMINATE("Unexpected handover of unmanaged `RLMArray`");
-}
-
+@interface RLMSortDescriptor ()
+@property (nonatomic, strong) NSString *property;
+@property (nonatomic, assign) BOOL ascending;
 @end
 
 @implementation RLMSortDescriptor
-
-+ (instancetype)sortDescriptorWithKeyPath:(NSString *)keyPath ascending:(BOOL)ascending {
++ (instancetype)sortDescriptorWithProperty:(NSString *)propertyName ascending:(BOOL)ascending {
     RLMSortDescriptor *desc = [[RLMSortDescriptor alloc] init];
-    desc->_keyPath = keyPath;
+    desc->_property = propertyName;
     desc->_ascending = ascending;
     return desc;
 }
 
-+ (instancetype)sortDescriptorWithProperty:(NSString *)propertyName ascending:(BOOL)ascending {
-    return [RLMSortDescriptor sortDescriptorWithKeyPath:propertyName ascending:ascending];
-}
-
 - (instancetype)reversedSortDescriptor {
-    return [self.class sortDescriptorWithKeyPath:_keyPath ascending:!_ascending];
-}
-
-- (NSString *)property {
-    return _keyPath;
+    return [self.class sortDescriptorWithProperty:_property ascending:!_ascending];
 }
 
 @end

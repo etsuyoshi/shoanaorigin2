@@ -15,7 +15,7 @@
 
 
 //QUIZ_FLAGを宣言するいないで判定する
-//#define QUIZ_FLAG
+#define QUIZ_FLAG
 
 #ifndef QUIZ_FLAG
 #define SIWAKE_FLAG
@@ -25,6 +25,7 @@
 // userdefaults
 #define USER_DEFAULTS_ANSWER                   @"answer"
 #define USER_DEFAULTS_CORRECT                  @"correct"
+#define USER_DEFAULTS_MISTAKE_THREASHOLD       @"threashold_mistake"
 
 #define QUIZ_CONFIG_KEY @"quizKey"
 #define QUIZ_CONFIG_KEY_STANDARD @"quizStandard"

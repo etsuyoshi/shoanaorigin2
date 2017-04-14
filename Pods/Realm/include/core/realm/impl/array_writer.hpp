@@ -26,9 +26,7 @@ namespace _impl {
 
 class ArrayWriterBase {
 public:
-    virtual ~ArrayWriterBase()
-    {
-    }
+    virtual ~ArrayWriterBase() {}
 
     /// Write the specified array data and its checksum into free
     /// space.

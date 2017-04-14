@@ -110,6 +110,7 @@
     return 0;
 }
 
+
 //問題番号を指定せずにセクション内のすべての正解数配列を取得する
 -(NSArray *)getCorrects{
     NSUserDefaults *userDef = [NSUserDefaults standardUserDefaults];
@@ -119,6 +120,43 @@
     userDef = nil;
     return arrCorrects;
 }
+    
+
+//弱点克服モードのため、指定した番号以外で誤った番号を返す
+-(int)getInCorrectWithoutNo:(int)withoutNo withThreashold:(int)threashold{
+    NSLog(@"%s, withoutNo = %d, threashold=%d",__func__, withoutNo, threashold);
+    NSArray *arrAnswers = [self getAnswers];
+    NSArray *arrCorrects = [self getCorrects];
+    
+    NSMutableArray *arrMistakePast = [NSMutableArray array];
+    //int returnValue = -1;
+    for(int i = 0;i < arrAnswers.count;i++){
+        if(withoutNo == i){
+            //[arrMistakePast addObject:[NSNumber numberWithInteger:0]];
+            //何もしない
+        }else{
+            NSLog(@"i=%d,answer = %ld, correct=%ld, left = %ld, right = %d",i,
+                  [arrAnswers[i] integerValue], [arrCorrects[i] integerValue],
+                  (int)[arrAnswers[i] integerValue] - (int)[arrCorrects[i] integerValue],
+                  threashold);
+            if([arrAnswers[i] integerValue] - [arrCorrects[i] integerValue]>=threashold){
+                //過去、最低基準の回数以上に誤った場合、格納
+                [arrMistakePast addObject:[NSNumber numberWithInteger:i]];
+                
+                NSLog(@"add");
+            }
+        }
+    }
+    
+    if([arrMistakePast count]==0){
+        return -1;
+    }
+    
+    int returnValue = (int)[arrMistakePast[(int)(((double)(arc4random() % 100) /100) * [arrMistakePast count])] integerValue];
+    NSLog(@"returnValue = %d", returnValue);
+    return returnValue;
+}
+
 
 -(BOOL)setResult:(int)quizNo isCorrect:(BOOL)isCorrect{
     NSLog(@"%s, %d, %d", __func__, quizNo, isCorrect);

@@ -76,37 +76,37 @@ static NSNumber *getBoxed(__unsafe_unretained RLMObjectBase *const obj, NSUInteg
 
 
 // long getter/setter
-static inline void RLMSetValue(__unsafe_unretained RLMObjectBase *const obj, NSUInteger colIndex, long long val, bool setDefault) {
+static inline void RLMSetValue(__unsafe_unretained RLMObjectBase *const obj, NSUInteger colIndex, long long val) {
     RLMVerifyInWriteTransaction(obj);
-    obj->_row.get_table()->set_int(colIndex, obj->_row.get_index(), val, setDefault);
+    obj->_row.set_int(colIndex, val);
 }
 
 // float getter/setter
-static inline void RLMSetValue(__unsafe_unretained RLMObjectBase *const obj, NSUInteger colIndex, float val, bool setDefault) {
+static inline void RLMSetValue(__unsafe_unretained RLMObjectBase *const obj, NSUInteger colIndex, float val) {
     RLMVerifyInWriteTransaction(obj);
-    obj->_row.get_table()->set_float(colIndex, obj->_row.get_index(), val, setDefault);
+    obj->_row.set_float(colIndex, val);
 }
 
 // double getter/setter
-static inline void RLMSetValue(__unsafe_unretained RLMObjectBase *const obj, NSUInteger colIndex, double val, bool setDefault) {
+static inline void RLMSetValue(__unsafe_unretained RLMObjectBase *const obj, NSUInteger colIndex, double val) {
     RLMVerifyInWriteTransaction(obj);
-    obj->_row.get_table()->set_double(colIndex, obj->_row.get_index(), val, setDefault);
+    obj->_row.set_double(colIndex, val);
 }
 
 // bool getter/setter
-static inline void RLMSetValue(__unsafe_unretained RLMObjectBase *const obj, NSUInteger colIndex, BOOL val, bool setDefault) {
+static inline void RLMSetValue(__unsafe_unretained RLMObjectBase *const obj, NSUInteger colIndex, BOOL val) {
     RLMVerifyInWriteTransaction(obj);
-    obj->_row.get_table()->set_bool(colIndex, obj->_row.get_index(), val, setDefault);
+    obj->_row.set_bool(colIndex, val);
 }
 
 // string getter/setter
 static inline NSString *RLMGetString(__unsafe_unretained RLMObjectBase *const obj, NSUInteger colIndex) {
     return RLMStringDataToNSString(get<realm::StringData>(obj, colIndex));
 }
-static inline void RLMSetValue(__unsafe_unretained RLMObjectBase *const obj, NSUInteger colIndex, __unsafe_unretained NSString *const val, bool setDefault) {
+static inline void RLMSetValue(__unsafe_unretained RLMObjectBase *const obj, NSUInteger colIndex, __unsafe_unretained NSString *const val) {
     RLMVerifyInWriteTransaction(obj);
     try {
-        obj->_row.get_table()->set_string(colIndex, obj->_row.get_index(), RLMStringDataWithNSString(val), setDefault);
+        obj->_row.set_string(colIndex, RLMStringDataWithNSString(val));
     }
     catch (std::exception const& e) {
         @throw RLMException(e);
@@ -117,10 +117,10 @@ static inline void RLMSetValue(__unsafe_unretained RLMObjectBase *const obj, NSU
 static inline NSDate *RLMGetDate(__unsafe_unretained RLMObjectBase *const obj, NSUInteger colIndex) {
     return RLMTimestampToNSDate(get<realm::Timestamp>(obj, colIndex));
 }
-static inline void RLMSetValue(__unsafe_unretained RLMObjectBase *const obj, NSUInteger colIndex, __unsafe_unretained NSDate *const date, bool setDefault) {
+static inline void RLMSetValue(__unsafe_unretained RLMObjectBase *const obj, NSUInteger colIndex, __unsafe_unretained NSDate *const date) {
     RLMVerifyInWriteTransaction(obj);
     if (date) {
-        obj->_row.get_table()->set_timestamp(colIndex, obj->_row.get_index(), RLMTimestampForNSDate(date), setDefault);
+        obj->_row.set_timestamp(colIndex, RLMTimestampForNSDate(date));
     }
     else {
         obj->_row.set_null(colIndex);
@@ -131,11 +131,11 @@ static inline void RLMSetValue(__unsafe_unretained RLMObjectBase *const obj, NSU
 static inline NSData *RLMGetData(__unsafe_unretained RLMObjectBase *const obj, NSUInteger colIndex) {
     return RLMBinaryDataToNSData(get<realm::BinaryData>(obj, colIndex));
 }
-static inline void RLMSetValue(__unsafe_unretained RLMObjectBase *const obj, NSUInteger colIndex, __unsafe_unretained NSData *const data, bool setDefault) {
+static inline void RLMSetValue(__unsafe_unretained RLMObjectBase *const obj, NSUInteger colIndex, __unsafe_unretained NSData *const data) {
     RLMVerifyInWriteTransaction(obj);
 
     try {
-        obj->_row.get_table()->set_binary(colIndex, obj->_row.get_index(), RLMBinaryDataForNSData(data), setDefault);
+        obj->_row.set_binary(colIndex, RLMBinaryDataForNSData(data));
     }
     catch (std::exception const& e) {
         @throw RLMException(e);
@@ -189,7 +189,7 @@ static inline RLMObjectBase *RLMGetLink(__unsafe_unretained RLMObjectBase *const
 }
 
 static inline void RLMSetValue(__unsafe_unretained RLMObjectBase *const obj, NSUInteger colIndex,
-                               __unsafe_unretained RLMObjectBase *const val, bool setDefault) {
+                               __unsafe_unretained RLMObjectBase *const val) {
     RLMVerifyInWriteTransaction(obj);
     if (!val) {
         obj->_row.nullify_link(colIndex);
@@ -205,7 +205,7 @@ static inline void RLMSetValue(__unsafe_unretained RLMObjectBase *const obj, NSU
                             val->_objectSchema.className,
                             obj->_info->propertyForTableColumn(colIndex).objectClassName);
     }
-    obj->_row.get_table()->set_link(colIndex, obj->_row.get_index(), link->_row.get_index(), setDefault);
+    obj->_row.set_link(colIndex, link->_row.get_index());
 }
 
 // array getter/setter
@@ -216,7 +216,7 @@ static inline RLMArray *RLMGetArray(__unsafe_unretained RLMObjectBase *const obj
 }
 
 static inline void RLMSetValue(__unsafe_unretained RLMObjectBase *const obj, NSUInteger colIndex,
-                               __unsafe_unretained id<NSFastEnumeration> const array, __unused bool setDefault) {
+                               __unsafe_unretained id<NSFastEnumeration> const array) {
     RLMVerifyInWriteTransaction(obj);
 
     realm::LinkViewRef linkView = obj->_row.get_linklist(colIndex);
@@ -230,50 +230,50 @@ static inline void RLMSetValue(__unsafe_unretained RLMObjectBase *const obj, NSU
 }
 
 static inline void RLMSetValue(__unsafe_unretained RLMObjectBase *const obj, NSUInteger colIndex,
-                               __unsafe_unretained NSNumber<RLMInt> *const intObject, bool setDefault) {
+                               __unsafe_unretained NSNumber<RLMInt> *const intObject) {
     RLMVerifyInWriteTransaction(obj);
 
     if (intObject) {
-        obj->_row.get_table()->set_int(colIndex, obj->_row.get_index(), intObject.longLongValue, setDefault);
+        obj->_row.set_int(colIndex, intObject.longLongValue);
     }
     else {
-        obj->_row.get_table()->set_null(colIndex, obj->_row.get_index(), setDefault);
+        obj->_row.set_null(colIndex);
     }
 }
 
 static inline void RLMSetValue(__unsafe_unretained RLMObjectBase *const obj, NSUInteger colIndex,
-                               __unsafe_unretained NSNumber<RLMFloat> *const floatObject, bool setDefault) {
+                               __unsafe_unretained NSNumber<RLMFloat> *const floatObject) {
     RLMVerifyInWriteTransaction(obj);
 
     if (floatObject) {
-        obj->_row.get_table()->set_float(colIndex, obj->_row.get_index(), floatObject.floatValue, setDefault);
+        obj->_row.set_float(colIndex, floatObject.floatValue);
     }
     else {
-        obj->_row.get_table()->set_null(colIndex, obj->_row.get_index(), setDefault);
+        obj->_row.set_null(colIndex);
     }
 }
 
 static inline void RLMSetValue(__unsafe_unretained RLMObjectBase *const obj, NSUInteger colIndex,
-                               __unsafe_unretained NSNumber<RLMDouble> *const doubleObject, bool setDefault) {
+                               __unsafe_unretained NSNumber<RLMDouble> *const doubleObject) {
     RLMVerifyInWriteTransaction(obj);
 
     if (doubleObject) {
-        obj->_row.get_table()->set_double(colIndex, obj->_row.get_index(), doubleObject.doubleValue, setDefault);
+        obj->_row.set_double(colIndex, doubleObject.doubleValue);
     }
     else {
-        obj->_row.get_table()->set_null(colIndex, obj->_row.get_index(), setDefault);
+        obj->_row.set_null(colIndex);
     }
 }
 
 static inline void RLMSetValue(__unsafe_unretained RLMObjectBase *const obj, NSUInteger colIndex,
-                               __unsafe_unretained NSNumber<RLMBool> *const boolObject, bool setDefault) {
+                               __unsafe_unretained NSNumber<RLMBool> *const boolObject) {
     RLMVerifyInWriteTransaction(obj);
 
     if (boolObject) {
-        obj->_row.get_table()->set_bool(colIndex, obj->_row.get_index(), boolObject.boolValue, setDefault);
+        obj->_row.set_bool(colIndex, boolObject.boolValue);
     }
     else {
-        obj->_row.get_table()->set_null(colIndex, obj->_row.get_index(), setDefault);
+        obj->_row.set_null(colIndex);
     }
 }
 
@@ -291,7 +291,7 @@ static inline id RLMGetAnyProperty(__unsafe_unretained RLMObjectBase *const obj,
     RLMVerifyAttached(obj);
     return RLMMixedToObjc(obj->_row.get_mixed(col_ndx));
 }
-static inline void RLMSetValue(__unsafe_unretained RLMObjectBase *const obj, NSUInteger, __unsafe_unretained id, bool) {
+static inline void RLMSetValue(__unsafe_unretained RLMObjectBase *const obj, NSUInteger, __unsafe_unretained id) {
     RLMVerifyInWriteTransaction(obj);
     @throw RLMException(@"Modifying Mixed properties is not supported");
 }
@@ -400,7 +400,7 @@ static IMP RLMMakeSetter(RLMProperty *prop) {
     }
     return imp_implementationWithBlock(^(__unsafe_unretained RLMObjectBase *const obj, ArgType val) {
         RLMWrapSetter(obj, name, [&] {
-            RLMSetValue(obj, obj->_info->objectSchema->persisted_properties[index].table_column, static_cast<StorageType>(val), false);
+            RLMSetValue(obj, obj->_info->objectSchema->persisted_properties[index].table_column, static_cast<StorageType>(val));
         });
     });
 }
@@ -687,7 +687,6 @@ void RLMDynamicValidatedSet(RLMObjectBase *obj, NSString *propName, id val) {
 void RLMDynamicSet(__unsafe_unretained RLMObjectBase *const obj, __unsafe_unretained RLMProperty *const prop,
                    __unsafe_unretained id const val, RLMCreationOptions creationOptions) {
     REALM_ASSERT_DEBUG(!prop.isPrimary);
-    bool setDefault = creationOptions & RLMCreationOptionsSetDefault;
 
     auto col = obj->_info->tableColumn(prop);
     RLMWrapSetter(obj, prop.name, [&] {
@@ -697,50 +696,50 @@ void RLMDynamicSet(__unsafe_unretained RLMObjectBase *const obj, __unsafe_unreta
             case RLMAccessorCodeInt:
             case RLMAccessorCodeLong:
             case RLMAccessorCodeLongLong:
-                RLMSetValue(obj, col, [val longLongValue], setDefault);
+                RLMSetValue(obj, col, [val longLongValue]);
                 break;
             case RLMAccessorCodeFloat:
-                RLMSetValue(obj, col, [val floatValue], setDefault);
+                RLMSetValue(obj, col, [val floatValue]);
                 break;
             case RLMAccessorCodeDouble:
-                RLMSetValue(obj, col, [val doubleValue], setDefault);
+                RLMSetValue(obj, col, [val doubleValue]);
                 break;
             case RLMAccessorCodeBool:
-                RLMSetValue(obj, col, [val boolValue], setDefault);
+                RLMSetValue(obj, col, [val boolValue]);
                 break;
             case RLMAccessorCodeIntObject:
-                RLMSetValue(obj, col, (NSNumber<RLMInt> *)val, setDefault);
+                RLMSetValue(obj, col, (NSNumber<RLMInt> *)val);
                 break;
             case RLMAccessorCodeFloatObject:
-                RLMSetValue(obj, col, (NSNumber<RLMFloat> *)val, setDefault);
+                RLMSetValue(obj, col, (NSNumber<RLMFloat> *)val);
                 break;
             case RLMAccessorCodeDoubleObject:
-                RLMSetValue(obj, col, (NSNumber<RLMDouble> *)val, setDefault);
+                RLMSetValue(obj, col, (NSNumber<RLMDouble> *)val);
                 break;
             case RLMAccessorCodeBoolObject:
-                RLMSetValue(obj, col, (NSNumber<RLMBool> *)val, setDefault);
+                RLMSetValue(obj, col, (NSNumber<RLMBool> *)val);
                 break;
             case RLMAccessorCodeString:
-                RLMSetValue(obj, col, (NSString *)val, setDefault);
+                RLMSetValue(obj, col, (NSString *)val);
                 break;
             case RLMAccessorCodeDate:
-                RLMSetValue(obj, col, (NSDate *)val, setDefault);
+                RLMSetValue(obj, col, (NSDate *)val);
                 break;
             case RLMAccessorCodeData:
-                RLMSetValue(obj, col, (NSData *)val, setDefault);
+                RLMSetValue(obj, col, (NSData *)val);
                 break;
             case RLMAccessorCodeLink: {
                 if (!val || val == NSNull.null) {
-                    RLMSetValue(obj, col, (RLMObjectBase *)nil, setDefault);
+                    RLMSetValue(obj, col, (RLMObjectBase *)nil);
                 }
                 else {
-                    RLMSetValue(obj, col, RLMGetLinkedObjectForValue(obj->_realm, prop.objectClassName, val, creationOptions), setDefault);
+                    RLMSetValue(obj, col, RLMGetLinkedObjectForValue(obj->_realm, prop.objectClassName, val, creationOptions));
                 }
                 break;
             }
             case RLMAccessorCodeArray:
                 if (!val || val == NSNull.null) {
-                    RLMSetValue(obj, col, (id<NSFastEnumeration>)nil, setDefault);
+                    RLMSetValue(obj, col, (id<NSFastEnumeration>)nil);
                 }
                 else {
                     id<NSFastEnumeration> rawLinks = val;
@@ -748,11 +747,11 @@ void RLMDynamicSet(__unsafe_unretained RLMObjectBase *const obj, __unsafe_unreta
                     for (id rawLink in rawLinks) {
                         [links addObject:RLMGetLinkedObjectForValue(obj->_realm, prop.objectClassName, rawLink, creationOptions)];
                     }
-                    RLMSetValue(obj, col, links, setDefault);
+                    RLMSetValue(obj, col, links);
                 }
                 break;
             case RLMAccessorCodeAny:
-                RLMSetValue(obj, col, val, setDefault);
+                RLMSetValue(obj, col, val);
                 break;
             case RLMAccessorCodeLinkingObjects:
                 @throw RLMException(@"Linking objects properties are read-only");

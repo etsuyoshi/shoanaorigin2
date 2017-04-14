@@ -6,10 +6,8 @@ dependencies: \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/RLMProperty.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/RLMConstants.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/property.hpp \
-  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/util/compiler.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/RLMArray.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/RLMCollection.h \
-  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/RLMThreadSafeReference.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/RLMListBase.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/RLMObject.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/RLMObjectBase.h \
@@ -46,5 +44,4 @@ dependencies: \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/unicode.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/binary_data.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/column_fwd.hpp \
-  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/array_direct.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/timestamp.hpp

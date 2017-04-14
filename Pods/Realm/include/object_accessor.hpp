@@ -214,10 +214,7 @@ namespace realm {
                 m_row.set_bool(column, Accessor::to_bool(ctx, value));
                 break;
             case PropertyType::Int:
-                if (property.is_primary)
-                    m_row.set_int_unique(column, Accessor::to_long(ctx, value));
-                else
-                    m_row.set_int(column, Accessor::to_long(ctx, value));
+                m_row.set_int(column, Accessor::to_long(ctx, value));
                 break;
             case PropertyType::Float:
                 m_row.set_float(column, Accessor::to_float(ctx, value));
@@ -227,10 +224,7 @@ namespace realm {
                 break;
             case PropertyType::String: {
                 auto string_value = Accessor::to_string(ctx, value);
-                if (property.is_primary)
-                    m_row.set_string_unique(column, string_value);
-                else
-                    m_row.set_string(column, string_value);
+                m_row.set_string(column, string_value);
                 break;
             }
             case PropertyType::Data:
@@ -330,7 +324,7 @@ namespace realm {
         }
 
         // get or create our accessor
-        bool created = false;
+        bool created;
 
         // try to get existing row if updating
         size_t row_index = realm::not_found;
@@ -342,17 +336,14 @@ namespace realm {
             ValueType primary_value = Accessor::dict_value_for_key(ctx, value, object_schema.primary_key);
             row_index = get_for_primary_key_impl(ctx, table, *primary_prop, primary_value);
 
-            if (row_index == realm::not_found) {
-                row_index = table->add_empty_row();
-                created = true;
-                Object object(realm, object_schema, table->get(row_index));
-                object.set_property_value_impl(ctx, *primary_prop, primary_value, try_update);
-            }
-            else if (!try_update) {
+            if (!try_update && row_index != realm::not_found) {
                 throw std::logic_error(util::format("Attempting to create an object of type '%1' with an existing primary key value.", object_schema.name));
             }
         }
-        else {
+
+        // if no existing, create row
+        created = false;
+        if (row_index == realm::not_found) {
             row_index = table->add_empty_row();
             created = true;
         }
@@ -360,7 +351,7 @@ namespace realm {
         // populate
         Object object(realm, object_schema, table->get(row_index));
         for (const Property& prop : object_schema.persisted_properties) {
-            if (!prop.is_primary) {
+            if (created || !prop.is_primary) {
                 if (Accessor::dict_has_value_for_key(ctx, value, prop.name)) {
                     object.set_property_value_impl(ctx, prop, Accessor::dict_value_for_key(ctx, value, prop.name), try_update);
                 }

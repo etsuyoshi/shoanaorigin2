@@ -6,32 +6,31 @@ provides-nominal:
 provides-member:
 - ["C6Charts20DefaultFillFormatter", ""]
 provides-dynamic-lookup:
+- "block"
 - "getFillLinePosition"
 - "with"
-- "block"
 depends-top-level:
-- "NSObject"
-- !private "<"
-- !private ">="
-- "ILineChartDataSet"
-- !private "&&"
 - !private "!="
-- "LineChartDataProvider"
+- !private "&&"
+- !private "<"
 - !private ">"
+- !private ">="
 - "AssignmentPrecedence"
-- !private "Double"
-- "DefaultFillFormatter"
-- "TernaryPrecedence"
 - "CGFloat"
+- "DefaultFillFormatter"
+- !private "Double"
 - "IFillFormatter"
+- "ILineChartDataSet"
+- "LineChartDataProvider"
+- "NSObject"
+- "TernaryPrecedence"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
 - !private ["Ps9AnyObject", "DefaultFillFormatter"]
-- ["Ps9AnyObject", "block"]
+- !private ["Ps9AnyObject", "block"]
 - ["Ps9AnyObject", "getFillLinePosition"]
-- ["Ps9AnyObject", "init"]
-- ["Ps9AnyObject", "with"]
+- !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "yMax"]
 - !private ["Ps9AnyObject", "yMin"]
 - ["Ps9AnyObject", ""]
@@ -40,19 +39,15 @@ depends-member:
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "data"]
 - !private ["Ps19BinaryFloatingPoint", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- ["Sb", "deinit"]
-- ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["V12CoreGraphics7CGFloat", "init"]
 - !private ["Ps7CVarArg", "CGFloat"]
 - !private ["Ps7CVarArg", "DefaultFillFormatter"]
-- ["Ps7CVarArg", "block"]
+- !private ["Ps7CVarArg", "block"]
 - ["Ps7CVarArg", "getFillLinePosition"]
-- ["Ps7CVarArg", "init"]
-- ["Ps7CVarArg", "with"]
+- !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "yMax"]
 - !private ["Ps7CVarArg", "yMin"]
 - ["Ps7CVarArg", ""]
-- ["C6Charts9ChartData", "deinit"]
 - !private ["C6Charts9ChartData", "yMax"]
 - !private ["C6Charts9ChartData", "yMin"]
 - !private ["P6Charts17ChartDataProvider", "chartYMax"]
@@ -61,10 +56,9 @@ depends-member:
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "CGFloat"]
 - !private ["Ps28CustomDebugStringConvertible", "DefaultFillFormatter"]
-- ["Ps28CustomDebugStringConvertible", "block"]
+- !private ["Ps28CustomDebugStringConvertible", "block"]
 - ["Ps28CustomDebugStringConvertible", "getFillLinePosition"]
-- ["Ps28CustomDebugStringConvertible", "init"]
-- ["Ps28CustomDebugStringConvertible", "with"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "yMax"]
 - !private ["Ps28CustomDebugStringConvertible", "yMin"]
 - ["Ps28CustomDebugStringConvertible", ""]
@@ -74,10 +68,9 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "CGFloat"]
 - !private ["Ps23CustomStringConvertible", "DefaultFillFormatter"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
-- ["Ps23CustomStringConvertible", "block"]
+- !private ["Ps23CustomStringConvertible", "block"]
 - ["Ps23CustomStringConvertible", "getFillLinePosition"]
-- ["Ps23CustomStringConvertible", "init"]
-- ["Ps23CustomStringConvertible", "with"]
+- !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "yMax"]
 - !private ["Ps23CustomStringConvertible", "yMin"]
 - ["Ps23CustomStringConvertible", ""]
@@ -92,14 +85,12 @@ depends-member:
 - ["C6Charts20DefaultFillFormatter", "getFillLinePosition"]
 - ["C6Charts20DefaultFillFormatter", "init"]
 - ["C6Charts20DefaultFillFormatter", "with"]
-- ["Sd", "deinit"]
 - !private ["Ps9Equatable", "CGFloat"]
 - !private ["Ps9Equatable", "DefaultFillFormatter"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
-- ["Ps9Equatable", "block"]
+- !private ["Ps9Equatable", "block"]
 - ["Ps9Equatable", "getFillLinePosition"]
-- ["Ps9Equatable", "init"]
-- ["Ps9Equatable", "with"]
+- !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "yMax"]
 - !private ["Ps9Equatable", "yMin"]
 - ["Ps9Equatable", ""]
@@ -110,10 +101,9 @@ depends-member:
 - !private ["Ps8Hashable", "CGFloat"]
 - !private ["Ps8Hashable", "DefaultFillFormatter"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
-- ["Ps8Hashable", "block"]
+- !private ["Ps8Hashable", "block"]
 - ["Ps8Hashable", "getFillLinePosition"]
-- ["Ps8Hashable", "init"]
-- ["Ps8Hashable", "with"]
+- !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "yMax"]
 - !private ["Ps8Hashable", "yMin"]
 - ["Ps8Hashable", ""]
@@ -127,7 +117,6 @@ depends-member:
 - ["P6Charts14IFillFormatter", "getFillLinePosition"]
 - !private ["P6Charts14IFillFormatter", "init"]
 - ["P6Charts14IFillFormatter", ""]
-- ["P6Charts17ILineChartDataSet", "deinit"]
 - !private ["P6Charts17ILineChartDataSet", "yMax"]
 - !private ["P6Charts17ILineChartDataSet", "yMin"]
 - !private ["P6Charts22ILineRadarChartDataSet", "yMax"]
@@ -137,7 +126,6 @@ depends-member:
 - !private ["P6Charts21LineChartDataProvider", "chartYMax"]
 - !private ["P6Charts21LineChartDataProvider", "chartYMin"]
 - !private ["P6Charts21LineChartDataProvider", "data"]
-- ["P6Charts21LineChartDataProvider", "deinit"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - ["CSo8NSObject", "Block"]
 - ["CSo8NSObject", "CGFloat"]
@@ -146,7 +134,6 @@ depends-member:
 - ["CSo8NSObject", "ILineChartDataSet"]
 - ["CSo8NSObject", "LineChartDataProvider"]
 - ["CSo8NSObject", "block"]
-- ["CSo8NSObject", "deinit"]
 - ["CSo8NSObject", "getFillLinePosition"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "with"]
@@ -155,14 +142,12 @@ depends-member:
 - ["CSo8NSObject", ""]
 - !private ["PSo16NSObjectProtocol", "CGFloat"]
 - !private ["PSo16NSObjectProtocol", "DefaultFillFormatter"]
-- ["PSo16NSObjectProtocol", "block"]
+- !private ["PSo16NSObjectProtocol", "block"]
 - ["PSo16NSObjectProtocol", "getFillLinePosition"]
-- ["PSo16NSObjectProtocol", "init"]
-- ["PSo16NSObjectProtocol", "with"]
+- !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "yMax"]
 - !private ["PSo16NSObjectProtocol", "yMin"]
 - ["PSo16NSObjectProtocol", ""]
-- ["Sq", "deinit"]
 - !private ["Ps12SignedNumber", "init"]
 - !private ["Ps10Strideable", "init"]
 - !private ["Ps15_CVarArgAligned", "init"]
@@ -171,26 +156,24 @@ depends-member:
 - !private ["Ps9_Hashable", "CGFloat"]
 - !private ["Ps9_Hashable", "DefaultFillFormatter"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
-- ["Ps9_Hashable", "block"]
+- !private ["Ps9_Hashable", "block"]
 - ["Ps9_Hashable", "getFillLinePosition"]
-- ["Ps9_Hashable", "init"]
-- ["Ps9_Hashable", "with"]
+- !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "yMax"]
 - !private ["Ps9_Hashable", "yMin"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
-- ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps11_Strideable", "init"]
 depends-nominal:
 - !private "Ps16AbsoluteValuable"
 - "Ps9AnyObject"
 - !private "P6Charts43BarLineScatterCandleBubbleChartDataProvider"
 - !private "Ps19BinaryFloatingPoint"
-- "Sb"
-- "V12CoreGraphics7CGFloat"
+- !private "Sb"
+- !private "V12CoreGraphics7CGFloat"
 - "Ps7CVarArg"
-- "C6Charts9ChartData"
+- !private "C6Charts9ChartData"
 - !private "P6Charts17ChartDataProvider"
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
@@ -198,7 +181,6 @@ depends-nominal:
 - !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "C6Charts20DefaultFillFormatter"
-- "Sd"
 - "Ps9Equatable"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps25ExpressibleByFloatLiteral"
@@ -208,14 +190,13 @@ depends-nominal:
 - !private "P6Charts39IBarLineScatterCandleBubbleChartDataSet"
 - !private "P6Charts13IChartDataSet"
 - "P6Charts14IFillFormatter"
-- "P6Charts17ILineChartDataSet"
+- !private "P6Charts17ILineChartDataSet"
 - !private "P6Charts22ILineRadarChartDataSet"
 - !private "P6Charts35ILineScatterCandleRadarChartDataSet"
-- "P6Charts21LineChartDataProvider"
+- !private "P6Charts21LineChartDataProvider"
 - !private "Ps25LosslessStringConvertible"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- "Sq"
 - !private "Ps12SignedNumber"
 - !private "Ps10Strideable"
 - !private "Ps15_CVarArgAligned"
@@ -223,11 +204,19 @@ depends-nominal:
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - "Ps9_Hashable"
 - !private "Ps21_ObjectiveCBridgeable"
-- "Vs26_OptionalNilComparisonType"
 - !private "Ps11_Strideable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.apinotesc"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/Charts/Source/Supporting Files/Charts.h"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Charts.build/Debug/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
@@ -242,4 +231,5 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "ea6b781e980a4b28af669d3913ec448a"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuickLook.apinotesc"
+interface-hash: "911fa16cc4b1f6047e7c897f411ba7d6"

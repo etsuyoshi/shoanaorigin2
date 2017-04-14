@@ -7,120 +7,91 @@ provides-nominal:
 provides-member:
 - ["C6Charts9Highlight", ""]
 provides-dynamic-lookup:
-- "stackIndex"
-- "x"
-- "drawY"
-- "setDraw"
-- "setDraw"
 - "axis"
 - "dataIndex"
-- "y"
 - "dataSetIndex"
-- "isStacked"
-- "yPx"
 - "description"
 - "drawX"
+- "drawY"
 - "isEqual"
+- "isStacked"
+- "setDraw"
+- "stackIndex"
+- "x"
 - "xPx"
+- "y"
+- "yPx"
 depends-top-level:
+- !private "!"
+- !private "!="
+- "=="
 - !private "==="
+- !private ">="
+- !private "AnyObject"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "CGFloat"
 - "CGPoint"
+- "CastingPrecedence"
+- "Double"
+- "Highlight"
 - "Int"
 - "NSObject"
-- !private "BooleanLiteralType"
-- "YAxis"
-- !private "!="
 - "String"
 - !private "StringLiteralType"
-- !private ">="
-- "Bool"
-- "=="
-- "AssignmentPrecedence"
-- "Double"
-- "CastingPrecedence"
-- !private "AnyObject"
-- "CGFloat"
-- !private "!"
-- "Highlight"
+- "YAxis"
 depends-member:
-- !private ["Ps16AbsoluteValuable", "RawValue"]
 - ["Ps16AbsoluteValuable", "nan"]
 - ["Ps9AnyObject", "AxisDependency"]
 - ["Ps9AnyObject", "CGFloat"]
 - ["Ps9AnyObject", "Double"]
 - ["Ps9AnyObject", "Int"]
 - ["Ps9AnyObject", "YAxis"]
-- ["Ps9AnyObject", "_axis"]
-- ["Ps9AnyObject", "_dataSetIndex"]
-- ["Ps9AnyObject", "_stackIndex"]
-- ["Ps9AnyObject", "_x"]
-- ["Ps9AnyObject", "_xPx"]
-- ["Ps9AnyObject", "_y"]
-- ["Ps9AnyObject", "_yPx"]
-- ["Ps9AnyObject", "axis"]
-- ["Ps9AnyObject", "dataIndex"]
-- ["Ps9AnyObject", "dataSetIndex"]
-- ["Ps9AnyObject", "deinit"]
-- ["Ps9AnyObject", "description"]
-- ["Ps9AnyObject", "drawX"]
-- ["Ps9AnyObject", "drawY"]
-- ["Ps9AnyObject", "init"]
-- ["Ps9AnyObject", "isEqual"]
+- !private ["Ps9AnyObject", "_axis"]
+- !private ["Ps9AnyObject", "_dataSetIndex"]
+- !private ["Ps9AnyObject", "_stackIndex"]
+- !private ["Ps9AnyObject", "_x"]
+- !private ["Ps9AnyObject", "_xPx"]
+- !private ["Ps9AnyObject", "_y"]
+- !private ["Ps9AnyObject", "_yPx"]
+- !private ["Ps9AnyObject", "dataIndex"]
+- !private ["Ps9AnyObject", "dataSetIndex"]
+- !private ["Ps9AnyObject", "drawX"]
+- !private ["Ps9AnyObject", "drawY"]
+- !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "isKind"]
-- ["Ps9AnyObject", "isStacked"]
-- ["Ps9AnyObject", "setDraw"]
-- ["Ps9AnyObject", "stackIndex"]
-- ["Ps9AnyObject", "x"]
-- ["Ps9AnyObject", "xPx"]
-- ["Ps9AnyObject", "y"]
-- ["Ps9AnyObject", "yPx"]
+- !private ["Ps9AnyObject", "stackIndex"]
+- !private ["Ps9AnyObject", "x"]
+- !private ["Ps9AnyObject", "y"]
 - ["Ps9AnyObject", ""]
 - ["C6Charts8AxisBase", "AxisDependency"]
-- ["OC6Charts5YAxis14AxisDependency", "deinit"]
 - ["OC6Charts5YAxis14AxisDependency", "left"]
-- !private ["Ps19BinaryFloatingPoint", "RawValue"]
 - ["Ps19BinaryFloatingPoint", "nan"]
 - ["Ps17BitwiseOperations", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- ["Sb", "deinit"]
-- ["V12CoreGraphics7CGFloat", "deinit"]
 - ["V12CoreGraphics7CGFloat", "nan"]
-- ["VSC7CGPoint", "deinit"]
 - !private ["VSC7CGPoint", "x"]
 - !private ["VSC7CGPoint", "y"]
 - ["Ps7CVarArg", "AxisDependency"]
 - ["Ps7CVarArg", "CGFloat"]
 - ["Ps7CVarArg", "Double"]
 - ["Ps7CVarArg", "Int"]
-- !private ["Ps7CVarArg", "RawValue"]
 - ["Ps7CVarArg", "YAxis"]
-- ["Ps7CVarArg", "_axis"]
-- ["Ps7CVarArg", "_dataSetIndex"]
-- ["Ps7CVarArg", "_stackIndex"]
-- ["Ps7CVarArg", "_x"]
-- ["Ps7CVarArg", "_xPx"]
-- ["Ps7CVarArg", "_y"]
-- ["Ps7CVarArg", "_yPx"]
-- ["Ps7CVarArg", "axis"]
-- ["Ps7CVarArg", "dataIndex"]
-- ["Ps7CVarArg", "dataSetIndex"]
-- ["Ps7CVarArg", "description"]
-- ["Ps7CVarArg", "drawX"]
-- ["Ps7CVarArg", "drawY"]
+- !private ["Ps7CVarArg", "_axis"]
+- !private ["Ps7CVarArg", "_dataSetIndex"]
+- !private ["Ps7CVarArg", "_stackIndex"]
+- !private ["Ps7CVarArg", "_x"]
+- !private ["Ps7CVarArg", "_xPx"]
+- !private ["Ps7CVarArg", "_y"]
+- !private ["Ps7CVarArg", "_yPx"]
+- !private ["Ps7CVarArg", "dataIndex"]
+- !private ["Ps7CVarArg", "drawX"]
+- !private ["Ps7CVarArg", "drawY"]
 - ["Ps7CVarArg", "init"]
-- ["Ps7CVarArg", "isEqual"]
 - !private ["Ps7CVarArg", "isKind"]
-- ["Ps7CVarArg", "isStacked"]
 - ["Ps7CVarArg", "nan"]
-- ["Ps7CVarArg", "setDraw"]
-- ["Ps7CVarArg", "stackIndex"]
-- ["Ps7CVarArg", "x"]
-- ["Ps7CVarArg", "xPx"]
-- ["Ps7CVarArg", "y"]
-- ["Ps7CVarArg", "yPx"]
 - ["Ps7CVarArg", ""]
-- !private ["Vs9Character", "deinit"]
-- !private ["Ps10Comparable", "RawValue"]
 - ["Ps10Comparable", "init"]
 - ["Ps10Comparable", "nan"]
 - ["C6Charts13ComponentBase", "AxisDependency"]
@@ -128,40 +99,28 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "CGFloat"]
 - ["Ps28CustomDebugStringConvertible", "Double"]
 - ["Ps28CustomDebugStringConvertible", "Int"]
-- !private ["Ps28CustomDebugStringConvertible", "RawValue"]
 - ["Ps28CustomDebugStringConvertible", "YAxis"]
-- ["Ps28CustomDebugStringConvertible", "_axis"]
-- ["Ps28CustomDebugStringConvertible", "_dataSetIndex"]
-- ["Ps28CustomDebugStringConvertible", "_stackIndex"]
-- ["Ps28CustomDebugStringConvertible", "_x"]
-- ["Ps28CustomDebugStringConvertible", "_xPx"]
-- ["Ps28CustomDebugStringConvertible", "_y"]
-- ["Ps28CustomDebugStringConvertible", "_yPx"]
-- ["Ps28CustomDebugStringConvertible", "axis"]
-- ["Ps28CustomDebugStringConvertible", "dataIndex"]
-- ["Ps28CustomDebugStringConvertible", "dataSetIndex"]
-- ["Ps28CustomDebugStringConvertible", "description"]
-- ["Ps28CustomDebugStringConvertible", "drawX"]
-- ["Ps28CustomDebugStringConvertible", "drawY"]
-- ["Ps28CustomDebugStringConvertible", "init"]
-- ["Ps28CustomDebugStringConvertible", "isEqual"]
+- !private ["Ps28CustomDebugStringConvertible", "_axis"]
+- !private ["Ps28CustomDebugStringConvertible", "_dataSetIndex"]
+- !private ["Ps28CustomDebugStringConvertible", "_stackIndex"]
+- !private ["Ps28CustomDebugStringConvertible", "_x"]
+- !private ["Ps28CustomDebugStringConvertible", "_xPx"]
+- !private ["Ps28CustomDebugStringConvertible", "_y"]
+- !private ["Ps28CustomDebugStringConvertible", "_yPx"]
+- !private ["Ps28CustomDebugStringConvertible", "dataIndex"]
+- !private ["Ps28CustomDebugStringConvertible", "drawX"]
+- !private ["Ps28CustomDebugStringConvertible", "drawY"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "isKind"]
-- ["Ps28CustomDebugStringConvertible", "isStacked"]
 - ["Ps28CustomDebugStringConvertible", "nan"]
-- ["Ps28CustomDebugStringConvertible", "setDraw"]
-- ["Ps28CustomDebugStringConvertible", "stackIndex"]
-- ["Ps28CustomDebugStringConvertible", "x"]
-- ["Ps28CustomDebugStringConvertible", "xPx"]
-- ["Ps28CustomDebugStringConvertible", "y"]
-- ["Ps28CustomDebugStringConvertible", "yPx"]
+- !private ["Ps28CustomDebugStringConvertible", "x"]
+- !private ["Ps28CustomDebugStringConvertible", "y"]
 - ["Ps28CustomDebugStringConvertible", ""]
-- !private ["Ps29CustomPlaygroundQuickLookable", "RawValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - ["Ps29CustomPlaygroundQuickLookable", "init"]
 - ["Ps29CustomPlaygroundQuickLookable", "nan"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "x"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "y"]
-- !private ["Ps17CustomReflectable", "RawValue"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - ["Ps17CustomReflectable", "init"]
 - ["Ps17CustomReflectable", "nan"]
@@ -171,115 +130,74 @@ depends-member:
 - ["Ps23CustomStringConvertible", "CGFloat"]
 - ["Ps23CustomStringConvertible", "Double"]
 - ["Ps23CustomStringConvertible", "Int"]
-- !private ["Ps23CustomStringConvertible", "RawValue"]
 - ["Ps23CustomStringConvertible", "YAxis"]
-- ["Ps23CustomStringConvertible", "_axis"]
-- ["Ps23CustomStringConvertible", "_dataSetIndex"]
+- !private ["Ps23CustomStringConvertible", "_axis"]
+- !private ["Ps23CustomStringConvertible", "_dataSetIndex"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
-- ["Ps23CustomStringConvertible", "_stackIndex"]
-- ["Ps23CustomStringConvertible", "_x"]
-- ["Ps23CustomStringConvertible", "_xPx"]
-- ["Ps23CustomStringConvertible", "_y"]
-- ["Ps23CustomStringConvertible", "_yPx"]
-- ["Ps23CustomStringConvertible", "axis"]
-- ["Ps23CustomStringConvertible", "dataIndex"]
-- ["Ps23CustomStringConvertible", "dataSetIndex"]
-- ["Ps23CustomStringConvertible", "description"]
-- ["Ps23CustomStringConvertible", "drawX"]
-- ["Ps23CustomStringConvertible", "drawY"]
+- !private ["Ps23CustomStringConvertible", "_stackIndex"]
+- !private ["Ps23CustomStringConvertible", "_x"]
+- !private ["Ps23CustomStringConvertible", "_xPx"]
+- !private ["Ps23CustomStringConvertible", "_y"]
+- !private ["Ps23CustomStringConvertible", "_yPx"]
+- !private ["Ps23CustomStringConvertible", "dataIndex"]
+- !private ["Ps23CustomStringConvertible", "drawX"]
+- !private ["Ps23CustomStringConvertible", "drawY"]
 - ["Ps23CustomStringConvertible", "init"]
-- ["Ps23CustomStringConvertible", "isEqual"]
 - !private ["Ps23CustomStringConvertible", "isKind"]
-- ["Ps23CustomStringConvertible", "isStacked"]
 - ["Ps23CustomStringConvertible", "nan"]
-- ["Ps23CustomStringConvertible", "setDraw"]
-- ["Ps23CustomStringConvertible", "stackIndex"]
-- ["Ps23CustomStringConvertible", "x"]
-- ["Ps23CustomStringConvertible", "xPx"]
-- ["Ps23CustomStringConvertible", "y"]
-- ["Ps23CustomStringConvertible", "yPx"]
 - ["Ps23CustomStringConvertible", ""]
-- !private ["Sd", "RawValue"]
-- ["Sd", "deinit"]
 - ["Sd", "nan"]
 - ["Ps9Equatable", "AxisDependency"]
 - ["Ps9Equatable", "CGFloat"]
 - ["Ps9Equatable", "Double"]
 - ["Ps9Equatable", "Int"]
-- !private ["Ps9Equatable", "RawValue"]
 - ["Ps9Equatable", "YAxis"]
-- ["Ps9Equatable", "_axis"]
-- ["Ps9Equatable", "_dataSetIndex"]
+- !private ["Ps9Equatable", "_axis"]
+- !private ["Ps9Equatable", "_dataSetIndex"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
-- ["Ps9Equatable", "_stackIndex"]
-- ["Ps9Equatable", "_x"]
-- ["Ps9Equatable", "_xPx"]
-- ["Ps9Equatable", "_y"]
-- ["Ps9Equatable", "_yPx"]
-- ["Ps9Equatable", "axis"]
-- ["Ps9Equatable", "dataIndex"]
-- ["Ps9Equatable", "dataSetIndex"]
-- ["Ps9Equatable", "description"]
-- ["Ps9Equatable", "drawX"]
-- ["Ps9Equatable", "drawY"]
+- !private ["Ps9Equatable", "_stackIndex"]
+- !private ["Ps9Equatable", "_x"]
+- !private ["Ps9Equatable", "_xPx"]
+- !private ["Ps9Equatable", "_y"]
+- !private ["Ps9Equatable", "_yPx"]
+- !private ["Ps9Equatable", "dataIndex"]
+- !private ["Ps9Equatable", "drawX"]
+- !private ["Ps9Equatable", "drawY"]
 - ["Ps9Equatable", "init"]
-- ["Ps9Equatable", "isEqual"]
 - !private ["Ps9Equatable", "isKind"]
-- ["Ps9Equatable", "isStacked"]
 - ["Ps9Equatable", "left"]
 - ["Ps9Equatable", "nan"]
-- ["Ps9Equatable", "setDraw"]
-- ["Ps9Equatable", "stackIndex"]
-- ["Ps9Equatable", "x"]
-- ["Ps9Equatable", "xPx"]
-- ["Ps9Equatable", "y"]
-- ["Ps9Equatable", "yPx"]
+- !private ["Ps9Equatable", "x"]
+- !private ["Ps9Equatable", "y"]
 - ["Ps9Equatable", ""]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
-- !private ["Ps25ExpressibleByFloatLiteral", "RawValue"]
 - ["Ps25ExpressibleByFloatLiteral", "nan"]
-- !private ["Ps27ExpressibleByIntegerLiteral", "RawValue"]
 - ["Ps27ExpressibleByIntegerLiteral", "init"]
 - ["Ps27ExpressibleByIntegerLiteral", "nan"]
-- !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
-- !private ["Sf", "deinit"]
-- !private ["Ps13FloatingPoint", "RawValue"]
 - ["Ps13FloatingPoint", "nan"]
 - ["Ps8Hashable", "AxisDependency"]
 - ["Ps8Hashable", "CGFloat"]
 - ["Ps8Hashable", "Double"]
 - ["Ps8Hashable", "Int"]
-- !private ["Ps8Hashable", "RawValue"]
 - ["Ps8Hashable", "YAxis"]
-- ["Ps8Hashable", "_axis"]
-- ["Ps8Hashable", "_dataSetIndex"]
+- !private ["Ps8Hashable", "_axis"]
+- !private ["Ps8Hashable", "_dataSetIndex"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
-- ["Ps8Hashable", "_stackIndex"]
-- ["Ps8Hashable", "_x"]
-- ["Ps8Hashable", "_xPx"]
-- ["Ps8Hashable", "_y"]
-- ["Ps8Hashable", "_yPx"]
-- ["Ps8Hashable", "axis"]
-- ["Ps8Hashable", "dataIndex"]
-- ["Ps8Hashable", "dataSetIndex"]
-- ["Ps8Hashable", "description"]
-- ["Ps8Hashable", "drawX"]
-- ["Ps8Hashable", "drawY"]
+- !private ["Ps8Hashable", "_stackIndex"]
+- !private ["Ps8Hashable", "_x"]
+- !private ["Ps8Hashable", "_xPx"]
+- !private ["Ps8Hashable", "_y"]
+- !private ["Ps8Hashable", "_yPx"]
+- !private ["Ps8Hashable", "dataIndex"]
+- !private ["Ps8Hashable", "drawX"]
+- !private ["Ps8Hashable", "drawY"]
 - ["Ps8Hashable", "init"]
-- ["Ps8Hashable", "isEqual"]
 - !private ["Ps8Hashable", "isKind"]
-- ["Ps8Hashable", "isStacked"]
 - ["Ps8Hashable", "left"]
 - ["Ps8Hashable", "nan"]
-- ["Ps8Hashable", "setDraw"]
-- ["Ps8Hashable", "stackIndex"]
-- ["Ps8Hashable", "x"]
-- ["Ps8Hashable", "xPx"]
-- ["Ps8Hashable", "y"]
-- ["Ps8Hashable", "yPx"]
 - ["Ps8Hashable", ""]
 - !private ["C6Charts9Highlight", "AnyObject"]
 - ["C6Charts9Highlight", "Bool"]
@@ -313,16 +231,9 @@ depends-member:
 - ["C6Charts9Highlight", "xPx"]
 - ["C6Charts9Highlight", "y"]
 - ["C6Charts9Highlight", "yPx"]
-- ["SQ", "deinit"]
-- ["Si", "deinit"]
 - ["Si", "init"]
-- !private ["Vs5Int16", "deinit"]
-- !private ["Vs5Int32", "deinit"]
-- !private ["Vs5Int64", "deinit"]
-- !private ["Vs4Int8", "deinit"]
 - ["Ps7Integer", "init"]
 - ["Ps17IntegerArithmetic", "init"]
-- !private ["Ps25LosslessStringConvertible", "RawValue"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - ["Ps25LosslessStringConvertible", "nan"]
@@ -349,7 +260,6 @@ depends-member:
 - ["CSo8NSObject", "axis"]
 - ["CSo8NSObject", "dataIndex"]
 - ["CSo8NSObject", "dataSetIndex"]
-- ["CSo8NSObject", "deinit"]
 - ["CSo8NSObject", "description"]
 - ["CSo8NSObject", "drawX"]
 - ["CSo8NSObject", "drawY"]
@@ -369,114 +279,75 @@ depends-member:
 - ["PSo16NSObjectProtocol", "Double"]
 - ["PSo16NSObjectProtocol", "Int"]
 - ["PSo16NSObjectProtocol", "YAxis"]
-- ["PSo16NSObjectProtocol", "_axis"]
-- ["PSo16NSObjectProtocol", "_dataSetIndex"]
-- ["PSo16NSObjectProtocol", "_stackIndex"]
-- ["PSo16NSObjectProtocol", "_x"]
-- ["PSo16NSObjectProtocol", "_xPx"]
-- ["PSo16NSObjectProtocol", "_y"]
-- ["PSo16NSObjectProtocol", "_yPx"]
-- ["PSo16NSObjectProtocol", "axis"]
-- ["PSo16NSObjectProtocol", "dataIndex"]
-- ["PSo16NSObjectProtocol", "dataSetIndex"]
-- ["PSo16NSObjectProtocol", "description"]
-- ["PSo16NSObjectProtocol", "drawX"]
-- ["PSo16NSObjectProtocol", "drawY"]
-- ["PSo16NSObjectProtocol", "init"]
-- ["PSo16NSObjectProtocol", "isEqual"]
+- !private ["PSo16NSObjectProtocol", "_axis"]
+- !private ["PSo16NSObjectProtocol", "_dataSetIndex"]
+- !private ["PSo16NSObjectProtocol", "_stackIndex"]
+- !private ["PSo16NSObjectProtocol", "_x"]
+- !private ["PSo16NSObjectProtocol", "_xPx"]
+- !private ["PSo16NSObjectProtocol", "_y"]
+- !private ["PSo16NSObjectProtocol", "_yPx"]
+- !private ["PSo16NSObjectProtocol", "dataIndex"]
+- !private ["PSo16NSObjectProtocol", "drawX"]
+- !private ["PSo16NSObjectProtocol", "drawY"]
+- !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "isKind"]
-- ["PSo16NSObjectProtocol", "isStacked"]
-- ["PSo16NSObjectProtocol", "setDraw"]
-- ["PSo16NSObjectProtocol", "stackIndex"]
-- ["PSo16NSObjectProtocol", "x"]
-- ["PSo16NSObjectProtocol", "xPx"]
-- ["PSo16NSObjectProtocol", "y"]
-- ["PSo16NSObjectProtocol", "yPx"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo19NSPasteboardReading", "init"]
 - !private ["PSo19NSPasteboardWriting", "init"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
-- ["Sq", "deinit"]
 - ["Ps16RawRepresentable", "left"]
 - ["Ps13SignedInteger", "init"]
-- !private ["Ps12SignedNumber", "RawValue"]
 - ["Ps12SignedNumber", "init"]
 - ["Ps12SignedNumber", "nan"]
-- !private ["Ps10Strideable", "RawValue"]
 - ["Ps10Strideable", "init"]
 - ["Ps10Strideable", "nan"]
-- ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
-- !private ["Su", "deinit"]
-- !private ["Vs6UInt16", "deinit"]
-- !private ["Vs6UInt32", "deinit"]
-- !private ["Vs6UInt64", "deinit"]
-- !private ["Vs5UInt8", "deinit"]
-- !private ["Sc", "deinit"]
 - ["C6Charts5YAxis", "AxisDependency"]
-- !private ["Ps15_CVarArgAligned", "RawValue"]
 - ["Ps15_CVarArgAligned", "nan"]
-- !private ["Ps22_CVarArgPassedAsDouble", "RawValue"]
 - ["Ps22_CVarArgPassedAsDouble", "nan"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
-- !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "RawValue"]
 - ["Ps33_ExpressibleByBuiltinFloatLiteral", "nan"]
-- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "RawValue"]
 - ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
 - ["Ps35_ExpressibleByBuiltinIntegerLiteral", "nan"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - ["Ps9_Hashable", "AxisDependency"]
 - ["Ps9_Hashable", "CGFloat"]
 - ["Ps9_Hashable", "Double"]
 - ["Ps9_Hashable", "Int"]
-- !private ["Ps9_Hashable", "RawValue"]
 - ["Ps9_Hashable", "YAxis"]
-- ["Ps9_Hashable", "_axis"]
-- ["Ps9_Hashable", "_dataSetIndex"]
+- !private ["Ps9_Hashable", "_axis"]
+- !private ["Ps9_Hashable", "_dataSetIndex"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
-- ["Ps9_Hashable", "_stackIndex"]
-- ["Ps9_Hashable", "_x"]
-- ["Ps9_Hashable", "_xPx"]
-- ["Ps9_Hashable", "_y"]
-- ["Ps9_Hashable", "_yPx"]
-- ["Ps9_Hashable", "axis"]
-- ["Ps9_Hashable", "dataIndex"]
-- ["Ps9_Hashable", "dataSetIndex"]
-- ["Ps9_Hashable", "description"]
-- ["Ps9_Hashable", "drawX"]
-- ["Ps9_Hashable", "drawY"]
+- !private ["Ps9_Hashable", "_stackIndex"]
+- !private ["Ps9_Hashable", "_x"]
+- !private ["Ps9_Hashable", "_xPx"]
+- !private ["Ps9_Hashable", "_y"]
+- !private ["Ps9_Hashable", "_yPx"]
+- !private ["Ps9_Hashable", "dataIndex"]
+- !private ["Ps9_Hashable", "drawX"]
+- !private ["Ps9_Hashable", "drawY"]
 - ["Ps9_Hashable", "init"]
-- ["Ps9_Hashable", "isEqual"]
 - !private ["Ps9_Hashable", "isKind"]
-- ["Ps9_Hashable", "isStacked"]
 - ["Ps9_Hashable", "left"]
 - ["Ps9_Hashable", "nan"]
-- ["Ps9_Hashable", "setDraw"]
-- ["Ps9_Hashable", "stackIndex"]
-- ["Ps9_Hashable", "x"]
-- ["Ps9_Hashable", "xPx"]
-- ["Ps9_Hashable", "y"]
-- ["Ps9_Hashable", "yPx"]
 - ["Ps9_Hashable", ""]
 - ["Ps14_Incrementable", "init"]
 - ["Ps8_Integer", "init"]
 - ["Ps18_IntegerArithmetic", "init"]
-- !private ["Ps21_ObjectiveCBridgeable", "RawValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
 - ["Ps21_ObjectiveCBridgeable", "nan"]
 - !private ["Ps21_ObjectiveCBridgeable", "x"]
 - !private ["Ps21_ObjectiveCBridgeable", "y"]
-- ["Vs26_OptionalNilComparisonType", "deinit"]
 - ["Ps14_SignedInteger", "init"]
-- !private ["Ps11_Strideable", "RawValue"]
 - ["Ps11_Strideable", "init"]
 - ["Ps11_Strideable", "nan"]
 depends-nominal:
@@ -486,11 +357,10 @@ depends-nominal:
 - "OC6Charts5YAxis14AxisDependency"
 - "Ps19BinaryFloatingPoint"
 - "Ps17BitwiseOperations"
-- "Sb"
+- !private "Sb"
 - "V12CoreGraphics7CGFloat"
-- "VSC7CGPoint"
+- !private "VSC7CGPoint"
 - "Ps7CVarArg"
-- !private "Vs9Character"
 - "Ps10Comparable"
 - "C6Charts13ComponentBase"
 - "Ps28CustomDebugStringConvertible"
@@ -503,19 +373,12 @@ depends-nominal:
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - "Ps25ExpressibleByFloatLiteral"
 - "Ps27ExpressibleByIntegerLiteral"
-- !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
-- !private "Sf"
 - "Ps13FloatingPoint"
 - "Ps8Hashable"
 - "C6Charts9Highlight"
-- "SQ"
 - "Si"
-- !private "Vs5Int16"
-- !private "Vs5Int32"
-- !private "Vs5Int64"
-- !private "Vs4Int8"
 - "Ps7Integer"
 - "Ps17IntegerArithmetic"
 - "Ps25LosslessStringConvertible"
@@ -529,20 +392,13 @@ depends-nominal:
 - !private "PSo19NSPasteboardWriting"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
-- "Sq"
 - "Ps16RawRepresentable"
 - "Ps13SignedInteger"
 - "Ps12SignedNumber"
 - "Ps10Strideable"
-- "SS"
+- !private "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
-- !private "Su"
-- !private "Vs6UInt16"
-- !private "Vs6UInt32"
-- !private "Vs6UInt64"
-- !private "Vs5UInt8"
-- !private "Sc"
 - "C6Charts5YAxis"
 - "Ps15_CVarArgAligned"
 - "Ps22_CVarArgPassedAsDouble"
@@ -553,24 +409,33 @@ depends-nominal:
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - "Ps14_Incrementable"
 - "Ps8_Integer"
 - "Ps18_IntegerArithmetic"
 - "Ps21_ObjectiveCBridgeable"
-- "Vs26_OptionalNilComparisonType"
 - "Ps14_SignedInteger"
 - "Ps11_Strideable"
 depends-dynamic-lookup:
-- !private "stackIndex"
-- !private "x"
 - !private "dataIndex"
-- !private "y"
 - !private "dataSetIndex"
 - !private "isKind"
+- !private "stackIndex"
+- !private "x"
+- !private "y"
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.apinotesc"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/Charts/Source/Supporting Files/Charts.h"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Charts.build/Debug/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
@@ -585,4 +450,5 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "269fc68147858fa1203f56840f52b9ca"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuickLook.apinotesc"
+interface-hash: "e5735808dceb2a20e5fde651b5c862eb"

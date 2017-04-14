@@ -8,7 +8,6 @@ dependencies: \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/RLMObjectBase_Dynamic.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/RLMObject.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/RLMObjectBase.h \
-  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/RLMThreadSafeReference.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/RLMObjectStore.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/RLMProperty_Private.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/RLMProperty.h \
@@ -39,6 +38,5 @@ dependencies: \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/unicode.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/binary_data.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/column_fwd.hpp \
-  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/array_direct.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/realm_nmmintrin.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/timestamp.hpp

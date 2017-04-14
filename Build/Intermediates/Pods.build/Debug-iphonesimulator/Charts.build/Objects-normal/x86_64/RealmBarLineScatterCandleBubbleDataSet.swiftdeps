@@ -1,0 +1,262 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "RealmBarLineScatterCandleBubbleDataSet"
+provides-nominal:
+- "C6Charts38RealmBarLineScatterCandleBubbleDataSet"
+provides-member:
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", ""]
+provides-dynamic-lookup:
+- "copyWithZone"
+- "highlightColor"
+- "highlightLineDashLengths"
+- "highlightLineDashPhase"
+- "highlightLineWidth"
+depends-top-level:
+- "/"
+- "AnyObject"
+- "AssignmentPrecedence"
+- "CGFloat"
+- "CastingPrecedence"
+- "IBarLineScatterCandleBubbleChartDataSet"
+- "NSUIColor"
+- "NSZone"
+- "RealmBarLineScatterCandleBubbleDataSet"
+- "RealmBaseDataSet"
+depends-member:
+- ["Ps16AbsoluteValuable", "init"]
+- ["Ps9AnyObject", "CGFloat"]
+- ["Ps9AnyObject", "NSUIColor"]
+- !private ["Ps9AnyObject", "copyWithZone"]
+- ["Ps9AnyObject", "highlightColor"]
+- ["Ps9AnyObject", "highlightLineDashLengths"]
+- ["Ps9AnyObject", "highlightLineDashPhase"]
+- ["Ps9AnyObject", "highlightLineWidth"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", ""]
+- ["Ps19BinaryFloatingPoint", "init"]
+- ["V12CoreGraphics7CGFloat", "init"]
+- ["Ps7CVarArg", "CGFloat"]
+- ["Ps7CVarArg", "NSUIColor"]
+- !private ["Ps7CVarArg", "copyWithZone"]
+- ["Ps7CVarArg", "highlightColor"]
+- ["Ps7CVarArg", "highlightLineDashLengths"]
+- ["Ps7CVarArg", "highlightLineDashPhase"]
+- ["Ps7CVarArg", "highlightLineWidth"]
+- ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", ""]
+- ["C6Charts16ChartBaseDataSet", "AnyObject"]
+- ["C6Charts16ChartBaseDataSet", "CGFloat"]
+- ["C6Charts16ChartBaseDataSet", "NSUIColor"]
+- ["C6Charts16ChartBaseDataSet", "NSZone"]
+- !private ["C6Charts16ChartBaseDataSet", "RealmBarLineScatterCandleBubbleDataSet"]
+- ["C6Charts16ChartBaseDataSet", "copyWithZone"]
+- ["C6Charts16ChartBaseDataSet", "highlightColor"]
+- ["C6Charts16ChartBaseDataSet", "highlightLineDashLengths"]
+- ["C6Charts16ChartBaseDataSet", "highlightLineDashPhase"]
+- ["C6Charts16ChartBaseDataSet", "highlightLineWidth"]
+- ["C6Charts16ChartBaseDataSet", "init"]
+- ["Ps10Comparable", "init"]
+- ["Ps28CustomDebugStringConvertible", "CGFloat"]
+- ["Ps28CustomDebugStringConvertible", "NSUIColor"]
+- !private ["Ps28CustomDebugStringConvertible", "copyWithZone"]
+- ["Ps28CustomDebugStringConvertible", "highlightColor"]
+- ["Ps28CustomDebugStringConvertible", "highlightLineDashLengths"]
+- ["Ps28CustomDebugStringConvertible", "highlightLineDashPhase"]
+- ["Ps28CustomDebugStringConvertible", "highlightLineWidth"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps17CustomReflectable", "init"]
+- ["Ps23CustomStringConvertible", "CGFloat"]
+- ["Ps23CustomStringConvertible", "NSUIColor"]
+- !private ["Ps23CustomStringConvertible", "copyWithZone"]
+- ["Ps23CustomStringConvertible", "highlightColor"]
+- ["Ps23CustomStringConvertible", "highlightLineDashLengths"]
+- ["Ps23CustomStringConvertible", "highlightLineDashPhase"]
+- ["Ps23CustomStringConvertible", "highlightLineWidth"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "CGFloat"]
+- ["Ps9Equatable", "NSUIColor"]
+- !private ["Ps9Equatable", "copyWithZone"]
+- ["Ps9Equatable", "highlightColor"]
+- ["Ps9Equatable", "highlightLineDashLengths"]
+- ["Ps9Equatable", "highlightLineDashPhase"]
+- ["Ps9Equatable", "highlightLineWidth"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", ""]
+- ["Ps25ExpressibleByFloatLiteral", "init"]
+- ["Ps27ExpressibleByIntegerLiteral", "init"]
+- ["Ps13FloatingPoint", "init"]
+- ["Ps8Hashable", "CGFloat"]
+- ["Ps8Hashable", "NSUIColor"]
+- !private ["Ps8Hashable", "copyWithZone"]
+- ["Ps8Hashable", "highlightColor"]
+- ["Ps8Hashable", "highlightLineDashLengths"]
+- ["Ps8Hashable", "highlightLineDashPhase"]
+- ["Ps8Hashable", "highlightLineWidth"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", ""]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "CGFloat"]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "NSUIColor"]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "highlightColor"]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "highlightLineDashLengths"]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "highlightLineDashPhase"]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "highlightLineWidth"]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", ""]
+- ["P6Charts13IChartDataSet", "CGFloat"]
+- ["P6Charts13IChartDataSet", "NSUIColor"]
+- !private ["P6Charts13IChartDataSet", "copyWithZone"]
+- ["P6Charts13IChartDataSet", "highlightColor"]
+- ["P6Charts13IChartDataSet", "highlightLineDashLengths"]
+- ["P6Charts13IChartDataSet", "highlightLineDashPhase"]
+- ["P6Charts13IChartDataSet", "highlightLineWidth"]
+- !private ["P6Charts13IChartDataSet", "init"]
+- ["P6Charts13IChartDataSet", ""]
+- ["PSo8NSCoding", "init"]
+- ["PSo9NSCopying", "init"]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "CGFloat"]
+- ["CSo8NSObject", "NSUIColor"]
+- ["CSo8NSObject", "NSZone"]
+- !private ["CSo8NSObject", "RealmBarLineScatterCandleBubbleDataSet"]
+- ["CSo8NSObject", "copyWithZone"]
+- ["CSo8NSObject", "highlightColor"]
+- ["CSo8NSObject", "highlightLineDashLengths"]
+- ["CSo8NSObject", "highlightLineDashPhase"]
+- ["CSo8NSObject", "highlightLineWidth"]
+- ["CSo8NSObject", "init"]
+- ["PSo16NSObjectProtocol", "CGFloat"]
+- ["PSo16NSObjectProtocol", "NSUIColor"]
+- !private ["PSo16NSObjectProtocol", "copyWithZone"]
+- ["PSo16NSObjectProtocol", "highlightColor"]
+- ["PSo16NSObjectProtocol", "highlightLineDashLengths"]
+- ["PSo16NSObjectProtocol", "highlightLineDashPhase"]
+- ["PSo16NSObjectProtocol", "highlightLineWidth"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", ""]
+- ["PSo14NSSecureCoding", "init"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "AnyObject"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "CGFloat"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "NSUIColor"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "NSZone"]
+- !private ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "RealmBarLineScatterCandleBubbleDataSet"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "copyWithZone"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "deinit"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "highlightColor"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "highlightLineDashLengths"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "highlightLineDashPhase"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "highlightLineWidth"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "init"]
+- ["C6Charts16RealmBaseDataSet", "AnyObject"]
+- ["C6Charts16RealmBaseDataSet", "CGFloat"]
+- ["C6Charts16RealmBaseDataSet", "NSUIColor"]
+- ["C6Charts16RealmBaseDataSet", "NSZone"]
+- !private ["C6Charts16RealmBaseDataSet", "RealmBarLineScatterCandleBubbleDataSet"]
+- ["C6Charts16RealmBaseDataSet", "copyWithZone"]
+- ["C6Charts16RealmBaseDataSet", "highlightColor"]
+- ["C6Charts16RealmBaseDataSet", "highlightLineDashLengths"]
+- ["C6Charts16RealmBaseDataSet", "highlightLineDashPhase"]
+- ["C6Charts16RealmBaseDataSet", "highlightLineWidth"]
+- ["C6Charts16RealmBaseDataSet", "init"]
+- ["C6Charts16RealmBaseDataSet", ""]
+- ["Ps12SignedNumber", "init"]
+- ["Ps10Strideable", "init"]
+- ["CSo7UIColor", "init"]
+- ["Ps15_CVarArgAligned", "init"]
+- ["Ps22_CVarArgPassedAsDouble", "init"]
+- ["Ps26_ExpressibleByColorLiteral", "init"]
+- ["Ps9_Hashable", "CGFloat"]
+- ["Ps9_Hashable", "NSUIColor"]
+- !private ["Ps9_Hashable", "copyWithZone"]
+- ["Ps9_Hashable", "highlightColor"]
+- ["Ps9_Hashable", "highlightLineDashLengths"]
+- ["Ps9_Hashable", "highlightLineDashPhase"]
+- ["Ps9_Hashable", "highlightLineWidth"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", ""]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- ["Ps11_Strideable", "init"]
+depends-nominal:
+- "Ps16AbsoluteValuable"
+- "Ps9AnyObject"
+- "Ps19BinaryFloatingPoint"
+- "V12CoreGraphics7CGFloat"
+- "Ps7CVarArg"
+- "C6Charts16ChartBaseDataSet"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps25ExpressibleByFloatLiteral"
+- "Ps27ExpressibleByIntegerLiteral"
+- "Ps13FloatingPoint"
+- "Ps8Hashable"
+- "P6Charts39IBarLineScatterCandleBubbleChartDataSet"
+- "P6Charts13IChartDataSet"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "C6Charts38RealmBarLineScatterCandleBubbleDataSet"
+- "C6Charts16RealmBaseDataSet"
+- "Ps12SignedNumber"
+- "Ps10Strideable"
+- "CSo7UIColor"
+- "Ps15_CVarArgAligned"
+- "Ps22_CVarArgPassedAsDouble"
+- "Ps26_ExpressibleByColorLiteral"
+- "Ps9_Hashable"
+- "Ps21_ObjectiveCBridgeable"
+- "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Target Support Files/Charts/Charts-umbrella.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Pods.build/Debug-iphonesimulator/Charts.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMOptionalBase.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMListBase.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMSchema.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMResults.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMRealm.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMConstants.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMProperty.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMObject.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMMigration.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMCollection.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/RLMArray.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphonesimulator/Realm/Realm.framework/Headers/Realm.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Pods.build/Debug-iphonesimulator/Realm.build/module.modulemap"
+interface-hash: "e048c43d5f2770bbeb5780b097e9b3e2"

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Quiz.h"
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : UIViewController<UIPickerViewDelegate, UIPickerViewDataSource>
 
 @property (weak, nonatomic) NSString *strConfigKey;//ConfigViewControllerで設定する問題モード
 //@property (strong, nonatomic) NSDate *detailItem;
@@ -24,6 +24,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *answer2Btn;
 @property (weak, nonatomic) IBOutlet UIButton *answer3Btn;
 @property (weak, nonatomic) IBOutlet UIButton *answer4Btn;
+
+
+@property int threasholdMistake;
 
 @end
 

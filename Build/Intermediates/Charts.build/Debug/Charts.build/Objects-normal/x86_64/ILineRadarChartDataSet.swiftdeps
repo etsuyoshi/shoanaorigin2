@@ -6,19 +6,19 @@ provides-nominal:
 provides-member:
 - ["P6Charts22ILineRadarChartDataSet", ""]
 provides-dynamic-lookup:
-- "lineWidth"
-- "fillAlpha"
-- "fill"
-- "isDrawFilledEnabled"
-- "fillColor"
 - "drawFilledEnabled"
+- "fill"
+- "fillAlpha"
+- "fillColor"
+- "isDrawFilledEnabled"
+- "lineWidth"
 depends-top-level:
-- "ILineScatterCandleRadarChartDataSet"
-- "ILineRadarChartDataSet"
 - "Bool"
-- "NSUIColor"
-- "Fill"
 - "CGFloat"
+- "Fill"
+- "ILineRadarChartDataSet"
+- "ILineScatterCandleRadarChartDataSet"
+- "NSUIColor"
 depends-member:
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "Bool"]
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "CGFloat"]
@@ -30,7 +30,6 @@ depends-member:
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "fillColor"]
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "isDrawFilledEnabled"]
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "lineWidth"]
-- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", ""]
 - ["P6Charts13IChartDataSet", "Bool"]
 - ["P6Charts13IChartDataSet", "CGFloat"]
 - ["P6Charts13IChartDataSet", "Fill"]
@@ -41,7 +40,6 @@ depends-member:
 - ["P6Charts13IChartDataSet", "fillColor"]
 - ["P6Charts13IChartDataSet", "isDrawFilledEnabled"]
 - ["P6Charts13IChartDataSet", "lineWidth"]
-- ["P6Charts13IChartDataSet", ""]
 - ["P6Charts22ILineRadarChartDataSet", "Bool"]
 - ["P6Charts22ILineRadarChartDataSet", "CGFloat"]
 - ["P6Charts22ILineRadarChartDataSet", "Fill"]
@@ -52,7 +50,6 @@ depends-member:
 - ["P6Charts22ILineRadarChartDataSet", "fillColor"]
 - ["P6Charts22ILineRadarChartDataSet", "isDrawFilledEnabled"]
 - ["P6Charts22ILineRadarChartDataSet", "lineWidth"]
-- ["P6Charts22ILineRadarChartDataSet", ""]
 - ["P6Charts35ILineScatterCandleRadarChartDataSet", "Bool"]
 - ["P6Charts35ILineScatterCandleRadarChartDataSet", "CGFloat"]
 - ["P6Charts35ILineScatterCandleRadarChartDataSet", "Fill"]
@@ -72,6 +69,15 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.apinotesc"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/Charts/Source/Supporting Files/Charts.h"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Charts.build/Debug/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
@@ -86,4 +92,5 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "60466a5fa89a00647488b7c9d6ab859a"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuickLook.apinotesc"
+interface-hash: "acc21b9cdcfa87676c7402745761b053"

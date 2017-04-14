@@ -8,33 +8,33 @@ provides-member:
 provides-dynamic-lookup:
 - "chartView"
 - "draw"
-- "refreshContent"
 - "offset"
-- "viewFromXib"
 - "offsetForDrawing"
+- "refreshContent"
+- "viewFromXib"
 depends-top-level:
+- !private "!="
+- !private "&&"
+- !private "+"
+- !private "-"
+- !private "<"
+- !private ">"
+- "AssignmentPrecedence"
+- !private "AutoreleasingUnsafeMutablePointer"
+- !private "Bundle"
+- "CGContext"
+- "CGPoint"
+- "CastingPrecedence"
+- "ChartDataEntry"
+- "ChartViewBase"
+- "Highlight"
+- "IMarker"
 - "MarkerView"
 - !private "NSArray"
-- !private ">"
-- !private "NSUIGraphicsPushContext"
-- !private "-"
-- "IMarker"
-- !private "AutoreleasingUnsafeMutablePointer"
-- !private "&&"
-- !private "String"
-- "ChartDataEntry"
-- "AssignmentPrecedence"
-- !private "Bundle"
-- "CastingPrecedence"
-- "Highlight"
-- "NSUIView"
-- !private "!="
-- "CGContext"
-- !private "+"
 - !private "NSUIGraphicsPopContext"
-- !private "<"
-- "CGPoint"
-- "ChartViewBase"
+- !private "NSUIGraphicsPushContext"
+- "NSUIView"
+- !private "String"
 depends-member:
 - !private ["P6Charts16AnimatorDelegate", "bounds"]
 - !private ["Ps9AnyObject", "AutoreleasingUnsafeMutablePointer"]
@@ -45,7 +45,7 @@ depends-member:
 - !private ["Ps9AnyObject", "NSUIGraphicsPushContext"]
 - !private ["Ps9AnyObject", "String"]
 - !private ["Ps9AnyObject", "bounds"]
-- ["Ps9AnyObject", "chartView"]
+- !private ["Ps9AnyObject", "chartView"]
 - ["Ps9AnyObject", "draw"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "loadNibNamed"]
@@ -59,28 +59,19 @@ depends-member:
 - !private ["Ps9AnyObject", "saveGState"]
 - !private ["Ps9AnyObject", "subscript"]
 - !private ["Ps9AnyObject", "translateBy"]
-- ["Ps9AnyObject", "viewFromXib"]
 - ["Ps9AnyObject", ""]
-- ["Vs33AutoreleasingUnsafeMutablePointer", "deinit"]
 - !private ["Vs33AutoreleasingUnsafeMutablePointer", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- ["Sb", "deinit"]
-- ["CSo6Bundle", "deinit"]
 - !private ["CSo6Bundle", "loadNibNamed"]
 - !private ["CSo6Bundle", "main"]
-- ["CSo7CALayer", "deinit"]
 - !private ["CSo7CALayer", "render"]
 - !private ["PSo13CAMediaTiming", "render"]
-- ["CSo9CGContext", "deinit"]
 - !private ["CSo9CGContext", "restoreGState"]
 - !private ["CSo9CGContext", "saveGState"]
 - !private ["CSo9CGContext", "translateBy"]
-- ["V12CoreGraphics7CGFloat", "deinit"]
-- ["VSC7CGPoint", "deinit"]
 - ["VSC7CGPoint", "init"]
 - !private ["VSC7CGPoint", "x"]
 - !private ["VSC7CGPoint", "y"]
-- ["VSC6CGRect", "deinit"]
 - !private ["VSC6CGRect", "size"]
 - !private ["VSC6CGSize", "height"]
 - !private ["VSC6CGSize", "width"]
@@ -92,7 +83,7 @@ depends-member:
 - !private ["Ps7CVarArg", "NSUIGraphicsPushContext"]
 - !private ["Ps7CVarArg", "String"]
 - !private ["Ps7CVarArg", "bounds"]
-- ["Ps7CVarArg", "chartView"]
+- !private ["Ps7CVarArg", "chartView"]
 - ["Ps7CVarArg", "draw"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "loadNibNamed"]
@@ -103,11 +94,10 @@ depends-member:
 - ["Ps7CVarArg", "refreshContent"]
 - !private ["Ps7CVarArg", "render"]
 - !private ["Ps7CVarArg", "subscript"]
-- ["Ps7CVarArg", "viewFromXib"]
 - ["Ps7CVarArg", ""]
 - !private ["P6Charts17ChartDataProvider", "bounds"]
 - !private ["C6Charts13ChartViewBase", "bounds"]
-- ["C6Charts13ChartViewBase", "deinit"]
+- !private ["C6Charts13ChartViewBase", "deinit"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "AutoreleasingUnsafeMutablePointer"]
 - !private ["Ps28CustomDebugStringConvertible", "Bundle"]
@@ -117,7 +107,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "NSUIGraphicsPushContext"]
 - !private ["Ps28CustomDebugStringConvertible", "String"]
 - !private ["Ps28CustomDebugStringConvertible", "bounds"]
-- ["Ps28CustomDebugStringConvertible", "chartView"]
+- !private ["Ps28CustomDebugStringConvertible", "chartView"]
 - ["Ps28CustomDebugStringConvertible", "draw"]
 - !private ["Ps28CustomDebugStringConvertible", "height"]
 - ["Ps28CustomDebugStringConvertible", "init"]
@@ -130,7 +120,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "render"]
 - !private ["Ps28CustomDebugStringConvertible", "size"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
-- ["Ps28CustomDebugStringConvertible", "viewFromXib"]
 - !private ["Ps28CustomDebugStringConvertible", "width"]
 - !private ["Ps28CustomDebugStringConvertible", "x"]
 - !private ["Ps28CustomDebugStringConvertible", "y"]
@@ -159,7 +148,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "String"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "bounds"]
-- ["Ps23CustomStringConvertible", "chartView"]
+- !private ["Ps23CustomStringConvertible", "chartView"]
 - ["Ps23CustomStringConvertible", "draw"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "loadNibNamed"]
@@ -170,7 +159,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "refreshContent"]
 - !private ["Ps23CustomStringConvertible", "render"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
-- ["Ps23CustomStringConvertible", "viewFromXib"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Ps9Equatable", "AutoreleasingUnsafeMutablePointer"]
 - !private ["Ps9Equatable", "Bundle"]
@@ -181,7 +169,7 @@ depends-member:
 - !private ["Ps9Equatable", "String"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "bounds"]
-- ["Ps9Equatable", "chartView"]
+- !private ["Ps9Equatable", "chartView"]
 - ["Ps9Equatable", "draw"]
 - !private ["Ps9Equatable", "height"]
 - ["Ps9Equatable", "init"]
@@ -194,7 +182,6 @@ depends-member:
 - !private ["Ps9Equatable", "render"]
 - !private ["Ps9Equatable", "size"]
 - !private ["Ps9Equatable", "subscript"]
-- ["Ps9Equatable", "viewFromXib"]
 - !private ["Ps9Equatable", "width"]
 - !private ["Ps9Equatable", "x"]
 - !private ["Ps9Equatable", "y"]
@@ -203,7 +190,6 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
-- !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Ps8Hashable", "AutoreleasingUnsafeMutablePointer"]
@@ -215,7 +201,7 @@ depends-member:
 - !private ["Ps8Hashable", "String"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "bounds"]
-- ["Ps8Hashable", "chartView"]
+- !private ["Ps8Hashable", "chartView"]
 - ["Ps8Hashable", "draw"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "loadNibNamed"]
@@ -226,7 +212,6 @@ depends-member:
 - ["Ps8Hashable", "refreshContent"]
 - !private ["Ps8Hashable", "render"]
 - !private ["Ps8Hashable", "subscript"]
-- ["Ps8Hashable", "viewFromXib"]
 - ["Ps8Hashable", ""]
 - !private ["P6Charts7IMarker", "AutoreleasingUnsafeMutablePointer"]
 - !private ["P6Charts7IMarker", "Bundle"]
@@ -243,7 +228,6 @@ depends-member:
 - ["P6Charts7IMarker", "offsetForDrawing"]
 - ["P6Charts7IMarker", "refreshContent"]
 - ["P6Charts7IMarker", ""]
-- ["Si", "deinit"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["C6Charts10MarkerView", "AutoreleasingUnsafeMutablePointer"]
@@ -277,14 +261,13 @@ depends-member:
 - !private ["PSo15NSAccessibility", "NSUIGraphicsPushContext"]
 - !private ["PSo15NSAccessibility", "String"]
 - !private ["PSo15NSAccessibility", "bounds"]
-- ["PSo15NSAccessibility", "chartView"]
+- !private ["PSo15NSAccessibility", "chartView"]
 - ["PSo15NSAccessibility", "draw"]
 - !private ["PSo15NSAccessibility", "init"]
 - !private ["PSo15NSAccessibility", "nsuiLayer"]
 - ["PSo15NSAccessibility", "offset"]
 - ["PSo15NSAccessibility", "offsetForDrawing"]
 - ["PSo15NSAccessibility", "refreshContent"]
-- ["PSo15NSAccessibility", "viewFromXib"]
 - ["PSo15NSAccessibility", ""]
 - !private ["PSo30NSAccessibilityElementProtocol", "AutoreleasingUnsafeMutablePointer"]
 - !private ["PSo30NSAccessibilityElementProtocol", "Bundle"]
@@ -294,14 +277,13 @@ depends-member:
 - !private ["PSo30NSAccessibilityElementProtocol", "NSUIGraphicsPushContext"]
 - !private ["PSo30NSAccessibilityElementProtocol", "String"]
 - !private ["PSo30NSAccessibilityElementProtocol", "bounds"]
-- ["PSo30NSAccessibilityElementProtocol", "chartView"]
+- !private ["PSo30NSAccessibilityElementProtocol", "chartView"]
 - ["PSo30NSAccessibilityElementProtocol", "draw"]
 - !private ["PSo30NSAccessibilityElementProtocol", "init"]
 - !private ["PSo30NSAccessibilityElementProtocol", "nsuiLayer"]
 - ["PSo30NSAccessibilityElementProtocol", "offset"]
 - ["PSo30NSAccessibilityElementProtocol", "offsetForDrawing"]
 - ["PSo30NSAccessibilityElementProtocol", "refreshContent"]
-- ["PSo30NSAccessibilityElementProtocol", "viewFromXib"]
 - ["PSo30NSAccessibilityElementProtocol", ""]
 - !private ["PSo29NSAnimatablePropertyContainer", "AutoreleasingUnsafeMutablePointer"]
 - !private ["PSo29NSAnimatablePropertyContainer", "Bundle"]
@@ -311,14 +293,13 @@ depends-member:
 - !private ["PSo29NSAnimatablePropertyContainer", "NSUIGraphicsPushContext"]
 - !private ["PSo29NSAnimatablePropertyContainer", "String"]
 - !private ["PSo29NSAnimatablePropertyContainer", "bounds"]
-- ["PSo29NSAnimatablePropertyContainer", "chartView"]
+- !private ["PSo29NSAnimatablePropertyContainer", "chartView"]
 - ["PSo29NSAnimatablePropertyContainer", "draw"]
 - !private ["PSo29NSAnimatablePropertyContainer", "init"]
 - !private ["PSo29NSAnimatablePropertyContainer", "nsuiLayer"]
 - ["PSo29NSAnimatablePropertyContainer", "offset"]
 - ["PSo29NSAnimatablePropertyContainer", "offsetForDrawing"]
 - ["PSo29NSAnimatablePropertyContainer", "refreshContent"]
-- ["PSo29NSAnimatablePropertyContainer", "viewFromXib"]
 - ["PSo29NSAnimatablePropertyContainer", ""]
 - !private ["PSo25NSAppearanceCustomization", "AutoreleasingUnsafeMutablePointer"]
 - !private ["PSo25NSAppearanceCustomization", "Bundle"]
@@ -328,19 +309,16 @@ depends-member:
 - !private ["PSo25NSAppearanceCustomization", "NSUIGraphicsPushContext"]
 - !private ["PSo25NSAppearanceCustomization", "String"]
 - !private ["PSo25NSAppearanceCustomization", "bounds"]
-- ["PSo25NSAppearanceCustomization", "chartView"]
+- !private ["PSo25NSAppearanceCustomization", "chartView"]
 - ["PSo25NSAppearanceCustomization", "draw"]
 - !private ["PSo25NSAppearanceCustomization", "init"]
 - !private ["PSo25NSAppearanceCustomization", "nsuiLayer"]
 - ["PSo25NSAppearanceCustomization", "offset"]
 - ["PSo25NSAppearanceCustomization", "offsetForDrawing"]
 - ["PSo25NSAppearanceCustomization", "refreshContent"]
-- ["PSo25NSAppearanceCustomization", "viewFromXib"]
 - ["PSo25NSAppearanceCustomization", ""]
-- ["CSo7NSArray", "deinit"]
 - !private ["CSo7NSArray", "init"]
 - !private ["CSo7NSArray", "subscript"]
-- ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "AutoreleasingUnsafeMutablePointer"]
 - !private ["PSo8NSCoding", "Bundle"]
 - ["PSo8NSCoding", "CGPoint"]
@@ -349,7 +327,7 @@ depends-member:
 - !private ["PSo8NSCoding", "NSUIGraphicsPushContext"]
 - !private ["PSo8NSCoding", "String"]
 - !private ["PSo8NSCoding", "bounds"]
-- ["PSo8NSCoding", "chartView"]
+- !private ["PSo8NSCoding", "chartView"]
 - ["PSo8NSCoding", "draw"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "nsuiLayer"]
@@ -358,7 +336,6 @@ depends-member:
 - ["PSo8NSCoding", "refreshContent"]
 - !private ["PSo8NSCoding", "render"]
 - !private ["PSo8NSCoding", "subscript"]
-- ["PSo8NSCoding", "viewFromXib"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "subscript"]
@@ -370,14 +347,13 @@ depends-member:
 - !private ["PSo21NSDraggingDestination", "NSUIGraphicsPushContext"]
 - !private ["PSo21NSDraggingDestination", "String"]
 - !private ["PSo21NSDraggingDestination", "bounds"]
-- ["PSo21NSDraggingDestination", "chartView"]
+- !private ["PSo21NSDraggingDestination", "chartView"]
 - ["PSo21NSDraggingDestination", "draw"]
 - !private ["PSo21NSDraggingDestination", "init"]
 - !private ["PSo21NSDraggingDestination", "nsuiLayer"]
 - ["PSo21NSDraggingDestination", "offset"]
 - ["PSo21NSDraggingDestination", "offsetForDrawing"]
 - ["PSo21NSDraggingDestination", "refreshContent"]
-- ["PSo21NSDraggingDestination", "viewFromXib"]
 - ["PSo21NSDraggingDestination", ""]
 - !private ["PSo17NSFastEnumeration", "init"]
 - !private ["PSo17NSFastEnumeration", "subscript"]
@@ -416,7 +392,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSUIGraphicsPushContext"]
 - !private ["PSo16NSObjectProtocol", "String"]
 - !private ["PSo16NSObjectProtocol", "bounds"]
-- ["PSo16NSObjectProtocol", "chartView"]
+- !private ["PSo16NSObjectProtocol", "chartView"]
 - ["PSo16NSObjectProtocol", "draw"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "loadNibNamed"]
@@ -427,7 +403,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "refreshContent"]
 - !private ["PSo16NSObjectProtocol", "render"]
 - !private ["PSo16NSObjectProtocol", "subscript"]
-- ["PSo16NSObjectProtocol", "viewFromXib"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["CSo11NSResponder", "AutoreleasingUnsafeMutablePointer"]
 - !private ["CSo11NSResponder", "Bundle"]
@@ -460,14 +435,13 @@ depends-member:
 - !private ["PSo18NSTouchBarProvider", "NSUIGraphicsPushContext"]
 - !private ["PSo18NSTouchBarProvider", "String"]
 - !private ["PSo18NSTouchBarProvider", "bounds"]
-- ["PSo18NSTouchBarProvider", "chartView"]
+- !private ["PSo18NSTouchBarProvider", "chartView"]
 - ["PSo18NSTouchBarProvider", "draw"]
 - !private ["PSo18NSTouchBarProvider", "init"]
 - !private ["PSo18NSTouchBarProvider", "nsuiLayer"]
 - ["PSo18NSTouchBarProvider", "offset"]
 - ["PSo18NSTouchBarProvider", "offsetForDrawing"]
 - ["PSo18NSTouchBarProvider", "refreshContent"]
-- ["PSo18NSTouchBarProvider", "viewFromXib"]
 - ["PSo18NSTouchBarProvider", ""]
 - !private ["C6Charts8NSUIView", "AutoreleasingUnsafeMutablePointer"]
 - !private ["C6Charts8NSUIView", "Bundle"]
@@ -483,7 +457,6 @@ depends-member:
 - !private ["C6Charts8NSUIView", "String"]
 - !private ["C6Charts8NSUIView", "bounds"]
 - ["C6Charts8NSUIView", "chartView"]
-- ["C6Charts8NSUIView", "deinit"]
 - ["C6Charts8NSUIView", "draw"]
 - ["C6Charts8NSUIView", "init"]
 - !private ["C6Charts8NSUIView", "nsuiLayer"]
@@ -500,14 +473,13 @@ depends-member:
 - !private ["PSo33NSUserInterfaceItemIdentification", "NSUIGraphicsPushContext"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "String"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "bounds"]
-- ["PSo33NSUserInterfaceItemIdentification", "chartView"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "chartView"]
 - ["PSo33NSUserInterfaceItemIdentification", "draw"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "init"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "nsuiLayer"]
 - ["PSo33NSUserInterfaceItemIdentification", "offset"]
 - ["PSo33NSUserInterfaceItemIdentification", "offsetForDrawing"]
 - ["PSo33NSUserInterfaceItemIdentification", "refreshContent"]
-- ["PSo33NSUserInterfaceItemIdentification", "viewFromXib"]
 - ["PSo33NSUserInterfaceItemIdentification", ""]
 - !private ["CSo6NSView", "AutoreleasingUnsafeMutablePointer"]
 - !private ["CSo6NSView", "Bundle"]
@@ -530,10 +502,8 @@ depends-member:
 - ["CSo6NSView", "offsetForDrawing"]
 - ["CSo6NSView", "refreshContent"]
 - ["CSo6NSView", "viewFromXib"]
-- ["Sq", "deinit"]
 - !private ["Ps8Sequence", "init"]
 - !private ["Ps8Sequence", "subscript"]
-- ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
@@ -545,20 +515,20 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "NSUIGraphicsPushContext"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "String"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "bounds"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "chartView"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "chartView"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "draw"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "nsuiLayer"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "offset"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "offsetForDrawing"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "refreshContent"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "viewFromXib"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
 - !private ["Ps9_Hashable", "AutoreleasingUnsafeMutablePointer"]
 - !private ["Ps9_Hashable", "Bundle"]
 - ["Ps9_Hashable", "CGPoint"]
@@ -568,7 +538,7 @@ depends-member:
 - !private ["Ps9_Hashable", "String"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "bounds"]
-- ["Ps9_Hashable", "chartView"]
+- !private ["Ps9_Hashable", "chartView"]
 - ["Ps9_Hashable", "draw"]
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "loadNibNamed"]
@@ -579,7 +549,6 @@ depends-member:
 - ["Ps9_Hashable", "refreshContent"]
 - !private ["Ps9_Hashable", "render"]
 - !private ["Ps9_Hashable", "subscript"]
-- ["Ps9_Hashable", "viewFromXib"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "height"]
@@ -588,24 +557,22 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "width"]
 - !private ["Ps21_ObjectiveCBridgeable", "x"]
 - !private ["Ps21_ObjectiveCBridgeable", "y"]
-- !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps8_Pointer", "init"]
 depends-nominal:
 - !private "P6Charts16AnimatorDelegate"
 - "Ps9AnyObject"
-- "Vs33AutoreleasingUnsafeMutablePointer"
-- "Sb"
-- "CSo6Bundle"
-- "CSo7CALayer"
+- !private "Vs33AutoreleasingUnsafeMutablePointer"
+- !private "Sb"
+- !private "CSo6Bundle"
+- !private "CSo7CALayer"
 - !private "PSo13CAMediaTiming"
-- "CSo9CGContext"
-- "V12CoreGraphics7CGFloat"
+- !private "CSo9CGContext"
 - "VSC7CGPoint"
-- "VSC6CGRect"
+- !private "VSC6CGRect"
 - !private "VSC6CGSize"
 - "Ps7CVarArg"
 - !private "P6Charts17ChartDataProvider"
-- "C6Charts13ChartViewBase"
+- !private "C6Charts13ChartViewBase"
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps29CustomPlaygroundQuickLookable"
@@ -615,12 +582,10 @@ depends-nominal:
 - !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
-- !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Ps8Hashable"
 - "P6Charts7IMarker"
-- "Si"
 - !private "Ps25LosslessStringConvertible"
 - "C6Charts10MarkerView"
 - !private "Ps10MirrorPath"
@@ -628,8 +593,7 @@ depends-nominal:
 - "PSo30NSAccessibilityElementProtocol"
 - "PSo29NSAnimatablePropertyContainer"
 - "PSo25NSAppearanceCustomization"
-- "CSo7NSArray"
-- "CSo7NSCoder"
+- !private "CSo7NSArray"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - "PSo21NSDraggingDestination"
@@ -643,9 +607,8 @@ depends-nominal:
 - "C6Charts8NSUIView"
 - "PSo33NSUserInterfaceItemIdentification"
 - "CSo6NSView"
-- "Sq"
 - !private "Ps8Sequence"
-- "SS"
+- !private "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
 - "Ps37_DefaultCustomPlaygroundQuickLookable"
@@ -654,13 +617,22 @@ depends-nominal:
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
 - "Ps9_Hashable"
 - "Ps21_ObjectiveCBridgeable"
-- !private "Vs26_OptionalNilComparisonType"
 - !private "Ps8_Pointer"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.apinotesc"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/Charts/Source/Supporting Files/Charts.h"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Charts.build/Debug/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
@@ -675,4 +647,5 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "6ffeab7a1f8e17b4e2bbdc9d05245fc6"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuickLook.apinotesc"
+interface-hash: "eb5b073850b1379be41d57e5ac379366"

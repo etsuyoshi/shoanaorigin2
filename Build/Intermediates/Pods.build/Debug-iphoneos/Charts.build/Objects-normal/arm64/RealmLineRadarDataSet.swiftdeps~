@@ -1,0 +1,414 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "RealmLineRadarDataSet"
+provides-nominal:
+- "C6Charts21RealmLineRadarDataSet"
+provides-member:
+- ["C6Charts21RealmLineRadarDataSet", ""]
+provides-dynamic-lookup:
+- "copyWithZone"
+- "drawFilledEnabled"
+- "fill"
+- "fillAlpha"
+- "fillColor"
+- "isDrawFilledEnabled"
+- "lineWidth"
+depends-top-level:
+- "/"
+- !private "<"
+- !private ">"
+- "AnyObject"
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- "CGFloat"
+- "CastingPrecedence"
+- "Fill"
+- "ILineRadarChartDataSet"
+- "NSUIColor"
+- "NSZone"
+- "RealmLineRadarDataSet"
+- "RealmLineScatterCandleRadarDataSet"
+depends-member:
+- ["Ps16AbsoluteValuable", "init"]
+- ["Ps9AnyObject", "CGFloat"]
+- ["Ps9AnyObject", "NSUIColor"]
+- !private ["Ps9AnyObject", "_fillColor"]
+- !private ["Ps9AnyObject", "_lineWidth"]
+- !private ["Ps9AnyObject", "copyWithZone"]
+- ["Ps9AnyObject", "drawFilledEnabled"]
+- ["Ps9AnyObject", "fill"]
+- ["Ps9AnyObject", "fillAlpha"]
+- ["Ps9AnyObject", "fillColor"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "isDrawFilledEnabled"]
+- ["Ps9AnyObject", "lineWidth"]
+- ["Ps9AnyObject", ""]
+- ["Ps19BinaryFloatingPoint", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["V12CoreGraphics7CGFloat", "init"]
+- ["Ps7CVarArg", "CGFloat"]
+- ["Ps7CVarArg", "NSUIColor"]
+- !private ["Ps7CVarArg", "_fillColor"]
+- !private ["Ps7CVarArg", "_lineWidth"]
+- !private ["Ps7CVarArg", "copyWithZone"]
+- ["Ps7CVarArg", "drawFilledEnabled"]
+- ["Ps7CVarArg", "fill"]
+- ["Ps7CVarArg", "fillAlpha"]
+- ["Ps7CVarArg", "fillColor"]
+- ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "isDrawFilledEnabled"]
+- ["Ps7CVarArg", "lineWidth"]
+- ["Ps7CVarArg", ""]
+- ["C6Charts16ChartBaseDataSet", "AnyObject"]
+- ["C6Charts16ChartBaseDataSet", "Bool"]
+- ["C6Charts16ChartBaseDataSet", "CGFloat"]
+- ["C6Charts16ChartBaseDataSet", "Fill"]
+- ["C6Charts16ChartBaseDataSet", "NSUIColor"]
+- ["C6Charts16ChartBaseDataSet", "NSZone"]
+- !private ["C6Charts16ChartBaseDataSet", "RealmLineRadarDataSet"]
+- ["C6Charts16ChartBaseDataSet", "_fillColor"]
+- ["C6Charts16ChartBaseDataSet", "_lineWidth"]
+- ["C6Charts16ChartBaseDataSet", "copyWithZone"]
+- ["C6Charts16ChartBaseDataSet", "drawFilledEnabled"]
+- ["C6Charts16ChartBaseDataSet", "fill"]
+- ["C6Charts16ChartBaseDataSet", "fillAlpha"]
+- ["C6Charts16ChartBaseDataSet", "fillColor"]
+- ["C6Charts16ChartBaseDataSet", "init"]
+- ["C6Charts16ChartBaseDataSet", "isDrawFilledEnabled"]
+- ["C6Charts16ChartBaseDataSet", "lineWidth"]
+- ["Ps10Comparable", "init"]
+- ["Ps28CustomDebugStringConvertible", "CGFloat"]
+- ["Ps28CustomDebugStringConvertible", "NSUIColor"]
+- !private ["Ps28CustomDebugStringConvertible", "_fillColor"]
+- !private ["Ps28CustomDebugStringConvertible", "_lineWidth"]
+- !private ["Ps28CustomDebugStringConvertible", "copyWithZone"]
+- ["Ps28CustomDebugStringConvertible", "drawFilledEnabled"]
+- ["Ps28CustomDebugStringConvertible", "fill"]
+- ["Ps28CustomDebugStringConvertible", "fillAlpha"]
+- ["Ps28CustomDebugStringConvertible", "fillColor"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "isDrawFilledEnabled"]
+- ["Ps28CustomDebugStringConvertible", "lineWidth"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- ["Ps17CustomReflectable", "init"]
+- ["Ps23CustomStringConvertible", "CGFloat"]
+- ["Ps23CustomStringConvertible", "NSUIColor"]
+- !private ["Ps23CustomStringConvertible", "_fillColor"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "_lineWidth"]
+- !private ["Ps23CustomStringConvertible", "copyWithZone"]
+- ["Ps23CustomStringConvertible", "drawFilledEnabled"]
+- ["Ps23CustomStringConvertible", "fill"]
+- ["Ps23CustomStringConvertible", "fillAlpha"]
+- ["Ps23CustomStringConvertible", "fillColor"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "isDrawFilledEnabled"]
+- ["Ps23CustomStringConvertible", "lineWidth"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "CGFloat"]
+- ["Ps9Equatable", "NSUIColor"]
+- !private ["Ps9Equatable", "_fillColor"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "_lineWidth"]
+- !private ["Ps9Equatable", "copyWithZone"]
+- ["Ps9Equatable", "drawFilledEnabled"]
+- ["Ps9Equatable", "fill"]
+- ["Ps9Equatable", "fillAlpha"]
+- ["Ps9Equatable", "fillColor"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "isDrawFilledEnabled"]
+- ["Ps9Equatable", "lineWidth"]
+- ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps25ExpressibleByFloatLiteral", "init"]
+- ["Ps27ExpressibleByIntegerLiteral", "init"]
+- ["Ps13FloatingPoint", "init"]
+- ["Ps8Hashable", "CGFloat"]
+- ["Ps8Hashable", "NSUIColor"]
+- !private ["Ps8Hashable", "_fillColor"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "_lineWidth"]
+- !private ["Ps8Hashable", "copyWithZone"]
+- ["Ps8Hashable", "drawFilledEnabled"]
+- ["Ps8Hashable", "fill"]
+- ["Ps8Hashable", "fillAlpha"]
+- ["Ps8Hashable", "fillColor"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "isDrawFilledEnabled"]
+- ["Ps8Hashable", "lineWidth"]
+- ["Ps8Hashable", ""]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "CGFloat"]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "NSUIColor"]
+- !private ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "_fillColor"]
+- !private ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "_lineWidth"]
+- !private ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "copyWithZone"]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "drawFilledEnabled"]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "fill"]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "fillAlpha"]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "fillColor"]
+- !private ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "init"]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "isDrawFilledEnabled"]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "lineWidth"]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", ""]
+- ["P6Charts13IChartDataSet", "CGFloat"]
+- ["P6Charts13IChartDataSet", "NSUIColor"]
+- !private ["P6Charts13IChartDataSet", "_fillColor"]
+- !private ["P6Charts13IChartDataSet", "_lineWidth"]
+- !private ["P6Charts13IChartDataSet", "copyWithZone"]
+- ["P6Charts13IChartDataSet", "drawFilledEnabled"]
+- ["P6Charts13IChartDataSet", "fill"]
+- ["P6Charts13IChartDataSet", "fillAlpha"]
+- ["P6Charts13IChartDataSet", "fillColor"]
+- !private ["P6Charts13IChartDataSet", "init"]
+- ["P6Charts13IChartDataSet", "isDrawFilledEnabled"]
+- ["P6Charts13IChartDataSet", "lineWidth"]
+- ["P6Charts13IChartDataSet", ""]
+- ["P6Charts22ILineRadarChartDataSet", "CGFloat"]
+- ["P6Charts22ILineRadarChartDataSet", "NSUIColor"]
+- !private ["P6Charts22ILineRadarChartDataSet", "_fillColor"]
+- !private ["P6Charts22ILineRadarChartDataSet", "_lineWidth"]
+- ["P6Charts22ILineRadarChartDataSet", "drawFilledEnabled"]
+- ["P6Charts22ILineRadarChartDataSet", "fill"]
+- ["P6Charts22ILineRadarChartDataSet", "fillAlpha"]
+- ["P6Charts22ILineRadarChartDataSet", "fillColor"]
+- ["P6Charts22ILineRadarChartDataSet", "isDrawFilledEnabled"]
+- ["P6Charts22ILineRadarChartDataSet", "lineWidth"]
+- ["P6Charts22ILineRadarChartDataSet", ""]
+- ["P6Charts35ILineScatterCandleRadarChartDataSet", "CGFloat"]
+- ["P6Charts35ILineScatterCandleRadarChartDataSet", "NSUIColor"]
+- !private ["P6Charts35ILineScatterCandleRadarChartDataSet", "_fillColor"]
+- !private ["P6Charts35ILineScatterCandleRadarChartDataSet", "_lineWidth"]
+- !private ["P6Charts35ILineScatterCandleRadarChartDataSet", "copyWithZone"]
+- ["P6Charts35ILineScatterCandleRadarChartDataSet", "drawFilledEnabled"]
+- ["P6Charts35ILineScatterCandleRadarChartDataSet", "fill"]
+- ["P6Charts35ILineScatterCandleRadarChartDataSet", "fillAlpha"]
+- ["P6Charts35ILineScatterCandleRadarChartDataSet", "fillColor"]
+- !private ["P6Charts35ILineScatterCandleRadarChartDataSet", "init"]
+- ["P6Charts35ILineScatterCandleRadarChartDataSet", "isDrawFilledEnabled"]
+- ["P6Charts35ILineScatterCandleRadarChartDataSet", "lineWidth"]
+- ["P6Charts35ILineScatterCandleRadarChartDataSet", ""]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- ["PSo8NSCoding", "init"]
+- ["PSo9NSCopying", "init"]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "CGFloat"]
+- ["CSo8NSObject", "Fill"]
+- ["CSo8NSObject", "NSUIColor"]
+- ["CSo8NSObject", "NSZone"]
+- !private ["CSo8NSObject", "RealmLineRadarDataSet"]
+- ["CSo8NSObject", "_fillColor"]
+- ["CSo8NSObject", "_lineWidth"]
+- ["CSo8NSObject", "copyWithZone"]
+- ["CSo8NSObject", "drawFilledEnabled"]
+- ["CSo8NSObject", "fill"]
+- ["CSo8NSObject", "fillAlpha"]
+- ["CSo8NSObject", "fillColor"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "isDrawFilledEnabled"]
+- ["CSo8NSObject", "lineWidth"]
+- ["PSo16NSObjectProtocol", "CGFloat"]
+- ["PSo16NSObjectProtocol", "NSUIColor"]
+- !private ["PSo16NSObjectProtocol", "_fillColor"]
+- !private ["PSo16NSObjectProtocol", "_lineWidth"]
+- !private ["PSo16NSObjectProtocol", "copyWithZone"]
+- ["PSo16NSObjectProtocol", "drawFilledEnabled"]
+- ["PSo16NSObjectProtocol", "fill"]
+- ["PSo16NSObjectProtocol", "fillAlpha"]
+- ["PSo16NSObjectProtocol", "fillColor"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "isDrawFilledEnabled"]
+- ["PSo16NSObjectProtocol", "lineWidth"]
+- ["PSo16NSObjectProtocol", ""]
+- ["PSo14NSSecureCoding", "init"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "AnyObject"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "Bool"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "CGFloat"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "Fill"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "NSUIColor"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "NSZone"]
+- !private ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "RealmLineRadarDataSet"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "_fillColor"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "_lineWidth"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "copyWithZone"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "drawFilledEnabled"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "fill"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "fillAlpha"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "fillColor"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "init"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "isDrawFilledEnabled"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "lineWidth"]
+- ["C6Charts16RealmBaseDataSet", "AnyObject"]
+- ["C6Charts16RealmBaseDataSet", "Bool"]
+- ["C6Charts16RealmBaseDataSet", "CGFloat"]
+- ["C6Charts16RealmBaseDataSet", "Fill"]
+- ["C6Charts16RealmBaseDataSet", "NSUIColor"]
+- ["C6Charts16RealmBaseDataSet", "NSZone"]
+- !private ["C6Charts16RealmBaseDataSet", "RealmLineRadarDataSet"]
+- ["C6Charts16RealmBaseDataSet", "_fillColor"]
+- ["C6Charts16RealmBaseDataSet", "_lineWidth"]
+- ["C6Charts16RealmBaseDataSet", "copyWithZone"]
+- ["C6Charts16RealmBaseDataSet", "drawFilledEnabled"]
+- ["C6Charts16RealmBaseDataSet", "fill"]
+- ["C6Charts16RealmBaseDataSet", "fillAlpha"]
+- ["C6Charts16RealmBaseDataSet", "fillColor"]
+- ["C6Charts16RealmBaseDataSet", "init"]
+- ["C6Charts16RealmBaseDataSet", "isDrawFilledEnabled"]
+- ["C6Charts16RealmBaseDataSet", "lineWidth"]
+- ["C6Charts21RealmLineRadarDataSet", "AnyObject"]
+- ["C6Charts21RealmLineRadarDataSet", "Bool"]
+- ["C6Charts21RealmLineRadarDataSet", "CGFloat"]
+- ["C6Charts21RealmLineRadarDataSet", "Fill"]
+- ["C6Charts21RealmLineRadarDataSet", "NSUIColor"]
+- ["C6Charts21RealmLineRadarDataSet", "NSZone"]
+- !private ["C6Charts21RealmLineRadarDataSet", "RealmLineRadarDataSet"]
+- !private ["C6Charts21RealmLineRadarDataSet", "_fillColor"]
+- !private ["C6Charts21RealmLineRadarDataSet", "_lineWidth"]
+- ["C6Charts21RealmLineRadarDataSet", "copyWithZone"]
+- ["C6Charts21RealmLineRadarDataSet", "deinit"]
+- ["C6Charts21RealmLineRadarDataSet", "drawFilledEnabled"]
+- ["C6Charts21RealmLineRadarDataSet", "fill"]
+- ["C6Charts21RealmLineRadarDataSet", "fillAlpha"]
+- ["C6Charts21RealmLineRadarDataSet", "fillColor"]
+- ["C6Charts21RealmLineRadarDataSet", "init"]
+- ["C6Charts21RealmLineRadarDataSet", "isDrawFilledEnabled"]
+- ["C6Charts21RealmLineRadarDataSet", "lineWidth"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "AnyObject"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "Bool"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "CGFloat"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "Fill"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "NSUIColor"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "NSZone"]
+- !private ["C6Charts34RealmLineScatterCandleRadarDataSet", "RealmLineRadarDataSet"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "_fillColor"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "_lineWidth"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "copyWithZone"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "drawFilledEnabled"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "fill"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "fillAlpha"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "fillColor"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "init"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "isDrawFilledEnabled"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "lineWidth"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", ""]
+- ["Ps12SignedNumber", "init"]
+- ["Ps10Strideable", "init"]
+- ["CSo7UIColor", "init"]
+- ["Ps15_CVarArgAligned", "init"]
+- ["Ps22_CVarArgPassedAsDouble", "init"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps26_ExpressibleByColorLiteral", "init"]
+- ["Ps9_Hashable", "CGFloat"]
+- ["Ps9_Hashable", "NSUIColor"]
+- !private ["Ps9_Hashable", "_fillColor"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "_lineWidth"]
+- !private ["Ps9_Hashable", "copyWithZone"]
+- ["Ps9_Hashable", "drawFilledEnabled"]
+- ["Ps9_Hashable", "fill"]
+- ["Ps9_Hashable", "fillAlpha"]
+- ["Ps9_Hashable", "fillColor"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "isDrawFilledEnabled"]
+- ["Ps9_Hashable", "lineWidth"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- ["Ps11_Strideable", "init"]
+depends-nominal:
+- "Ps16AbsoluteValuable"
+- "Ps9AnyObject"
+- "Ps19BinaryFloatingPoint"
+- !private "Sb"
+- "V12CoreGraphics7CGFloat"
+- "Ps7CVarArg"
+- "C6Charts16ChartBaseDataSet"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- "Ps25ExpressibleByFloatLiteral"
+- "Ps27ExpressibleByIntegerLiteral"
+- "Ps13FloatingPoint"
+- "Ps8Hashable"
+- "P6Charts39IBarLineScatterCandleBubbleChartDataSet"
+- "P6Charts13IChartDataSet"
+- "P6Charts22ILineRadarChartDataSet"
+- "P6Charts35ILineScatterCandleRadarChartDataSet"
+- !private "Ps25LosslessStringConvertible"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "C6Charts38RealmBarLineScatterCandleBubbleDataSet"
+- "C6Charts16RealmBaseDataSet"
+- "C6Charts21RealmLineRadarDataSet"
+- "C6Charts34RealmLineScatterCandleRadarDataSet"
+- "Ps12SignedNumber"
+- "Ps10Strideable"
+- "CSo7UIColor"
+- "Ps15_CVarArgAligned"
+- "Ps22_CVarArgPassedAsDouble"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- "Ps26_ExpressibleByColorLiteral"
+- "Ps9_Hashable"
+- "Ps21_ObjectiveCBridgeable"
+- "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Target Support Files/Charts/Charts-umbrella.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMOptionalBase.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMListBase.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSchema.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMResults.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMConstants.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMProperty.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObject.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMMigration.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMCollection.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMArray.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/Realm.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Pods.build/Debug-iphoneos/Realm.build/module.modulemap"
+interface-hash: "3a28d59169239c5852b760fe81c8e438"

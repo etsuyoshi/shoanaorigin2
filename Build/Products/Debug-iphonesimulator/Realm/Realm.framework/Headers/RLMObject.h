@@ -19,7 +19,6 @@
 #import <Foundation/Foundation.h>
 
 #import <Realm/RLMObjectBase.h>
-#import <Realm/RLMThreadSafeReference.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -92,7 +91,7 @@ NS_ASSUME_NONNULL_BEGIN
     times when you *cannot* begin a write transaction.
  */
 
-@interface RLMObject : RLMObjectBase <RLMThreadConfined>
+@interface RLMObject : RLMObjectBase
 
 #pragma mark - Creating & Initializing Objects
 

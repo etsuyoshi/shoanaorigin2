@@ -53,7 +53,7 @@
      @"テストモード(順番)",
      @"テストモード(ランダム)",
      @"解説表示なしモード",
-     //@"弱点克服モード",//未実装
+     @"弱点克服モード",//未実装
      nil];
     
     
@@ -63,10 +63,9 @@
      arrPicker[1], QUIZ_CONFIG_KEY_TEST,
      arrPicker[2], QUIZ_CONFIG_KEY_TEST_RANDOM,
      arrPicker[3], QUIZ_CONFIG_KEY_NO_EXP,
+     arrPicker[4], QUIZ_CONFIG_KEY_JAKUTEN,
      //必要があれば追加して行く必要がある
      nil];
-
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -362,7 +361,7 @@
 }
 
 
-#pragma mark - Table View
+#pragma mark - Picker View
 //表示列数
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
     

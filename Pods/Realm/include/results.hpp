@@ -43,8 +43,8 @@ public:
     // the tableview as needed
     Results();
     Results(SharedRealm r, Table& table);
-    Results(SharedRealm r, Query q, SortDescriptor s = {}, SortDescriptor d = {});
-    Results(SharedRealm r, TableView tv, SortDescriptor s = {}, SortDescriptor d = {});
+    Results(SharedRealm r, Query q, SortDescriptor s = {});
+    Results(SharedRealm r, TableView tv, SortDescriptor s = {});
     Results(SharedRealm r, LinkViewRef lv, util::Optional<Query> q = {}, SortDescriptor s = {});
     ~Results();
 
@@ -67,9 +67,6 @@ public:
     // Get the currently applied sort order for this Results
     SortDescriptor const& get_sort() const noexcept { return m_sort; }
 
-    // Get the currently applied distinct condition for this Results
-    SortDescriptor const& get_distinct() const noexcept { return m_distinct; }
-    
     // Get a tableview containing the same rows as this Results
     TableView get_tableview();
 
@@ -107,13 +104,6 @@ public:
     Results filter(Query&& q) const;
     Results sort(SortDescriptor&& sort) const;
 
-    // Create a new Results by removing duplicates
-    // FIXME: The current implementation of distinct() breaks the Results API.
-    // This is tracked by the following issues:
-    // - https://github.com/realm/realm-object-store/issues/266
-    // - https://github.com/realm/realm-core/issues/2332
-    Results distinct(SortDescriptor&& uniqueness);
-    
     // Return a snapshot of this Results that never updates to reflect changes in the underlying data.
     Results snapshot() const &;
     Results snapshot() &&;
@@ -208,7 +198,6 @@ private:
     LinkViewRef m_link_view;
     Table* m_table = nullptr;
     SortDescriptor m_sort;
-    SortDescriptor m_distinct;
 
     _impl::CollectionNotifier::Handle<_impl::ResultsNotifier> m_notifier;
 
@@ -226,7 +215,7 @@ private:
     void prepare_async();
 
     template<typename Int, typename Float, typename Double, typename Timestamp>
-    util::Optional<Mixed> aggregate(size_t column,
+    util::Optional<Mixed> aggregate(size_t column, bool return_none_for_empty,
                                     const char* name,
                                     Int agg_int, Float agg_float,
                                     Double agg_double, Timestamp agg_timestamp);

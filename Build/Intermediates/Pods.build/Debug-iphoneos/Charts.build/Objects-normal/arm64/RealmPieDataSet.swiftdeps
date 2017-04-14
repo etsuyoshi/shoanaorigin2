@@ -1,0 +1,651 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "RealmPieDataSet"
+provides-nominal:
+- "C6Charts15RealmPieDataSet"
+provides-member:
+- ["C6Charts15RealmPieDataSet", ""]
+provides-dynamic-lookup:
+- "_labelField"
+- "automaticallyDisableSliceSpacing"
+- "buildEntryFromResultObject"
+- "copyWithZone"
+- "entryLabelColor"
+- "entryLabelFont"
+- "initialize"
+- "selectionShift"
+- "sliceSpace"
+- "valueLineColor"
+- "valueLinePart1Length"
+- "valueLinePart1OffsetPercentage"
+- "valueLinePart2Length"
+- "valueLineVariableLength"
+- "valueLineWidth"
+- "xValuePosition"
+- "yValuePosition"
+depends-top-level:
+- !private "<"
+- !private "=="
+- !private ">"
+- "AnyObject"
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- "CGFloat"
+- "CastingPrecedence"
+- "ChartDataEntry"
+- "Double"
+- "IPieChartDataSet"
+- "NSUIColor"
+- "NSUIFont"
+- "NSZone"
+- !private "PieChartDataEntry"
+- "PieChartDataSet"
+- "RLMObject"
+- "RLMResults"
+- "RealmBaseDataSet"
+- "RealmPieDataSet"
+- "String"
+- !private "StringLiteralType"
+depends-member:
+- ["Ps16AbsoluteValuable", "init"]
+- ["Ps9AnyObject", "CGFloat"]
+- ["Ps9AnyObject", "NSUIColor"]
+- !private ["Ps9AnyObject", "NSUIFont"]
+- !private ["Ps9AnyObject", "PieChartDataEntry"]
+- ["Ps9AnyObject", "ValuePosition"]
+- !private ["Ps9AnyObject", "_labelField"]
+- !private ["Ps9AnyObject", "_sliceSpace"]
+- !private ["Ps9AnyObject", "_yValueField"]
+- ["Ps9AnyObject", "automaticallyDisableSliceSpacing"]
+- ["Ps9AnyObject", "black"]
+- !private ["Ps9AnyObject", "copyWithZone"]
+- ["Ps9AnyObject", "entryLabelColor"]
+- ["Ps9AnyObject", "entryLabelFont"]
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "selectionShift"]
+- ["Ps9AnyObject", "sliceSpace"]
+- !private ["Ps9AnyObject", "subscript"]
+- !private ["Ps9AnyObject", "systemFont"]
+- !private ["Ps9AnyObject", "valueFont"]
+- ["Ps9AnyObject", "valueLineColor"]
+- ["Ps9AnyObject", "valueLinePart1Length"]
+- ["Ps9AnyObject", "valueLinePart1OffsetPercentage"]
+- ["Ps9AnyObject", "valueLinePart2Length"]
+- ["Ps9AnyObject", "valueLineVariableLength"]
+- ["Ps9AnyObject", "valueLineWidth"]
+- !private ["Ps9AnyObject", "valueTextColor"]
+- !private ["Ps9AnyObject", "white"]
+- ["Ps9AnyObject", "xValuePosition"]
+- ["Ps9AnyObject", "yValuePosition"]
+- ["Ps9AnyObject", ""]
+- ["Ps19BinaryFloatingPoint", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["V12CoreGraphics7CGFloat", "init"]
+- ["Ps7CVarArg", "CGFloat"]
+- ["Ps7CVarArg", "NSUIColor"]
+- !private ["Ps7CVarArg", "NSUIFont"]
+- !private ["Ps7CVarArg", "PieChartDataEntry"]
+- ["Ps7CVarArg", "ValuePosition"]
+- !private ["Ps7CVarArg", "_labelField"]
+- !private ["Ps7CVarArg", "_sliceSpace"]
+- !private ["Ps7CVarArg", "_yValueField"]
+- ["Ps7CVarArg", "automaticallyDisableSliceSpacing"]
+- ["Ps7CVarArg", "black"]
+- !private ["Ps7CVarArg", "copyWithZone"]
+- ["Ps7CVarArg", "entryLabelColor"]
+- ["Ps7CVarArg", "entryLabelFont"]
+- ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "selectionShift"]
+- ["Ps7CVarArg", "sliceSpace"]
+- !private ["Ps7CVarArg", "subscript"]
+- !private ["Ps7CVarArg", "systemFont"]
+- !private ["Ps7CVarArg", "valueFont"]
+- ["Ps7CVarArg", "valueLineColor"]
+- ["Ps7CVarArg", "valueLinePart1Length"]
+- ["Ps7CVarArg", "valueLinePart1OffsetPercentage"]
+- ["Ps7CVarArg", "valueLinePart2Length"]
+- ["Ps7CVarArg", "valueLineVariableLength"]
+- ["Ps7CVarArg", "valueLineWidth"]
+- !private ["Ps7CVarArg", "valueTextColor"]
+- !private ["Ps7CVarArg", "white"]
+- ["Ps7CVarArg", "xValuePosition"]
+- ["Ps7CVarArg", "yValuePosition"]
+- ["Ps7CVarArg", ""]
+- ["C6Charts16ChartBaseDataSet", "AnyObject"]
+- ["C6Charts16ChartBaseDataSet", "Bool"]
+- ["C6Charts16ChartBaseDataSet", "CGFloat"]
+- ["C6Charts16ChartBaseDataSet", "ChartDataEntry"]
+- ["C6Charts16ChartBaseDataSet", "Double"]
+- ["C6Charts16ChartBaseDataSet", "NSUIColor"]
+- ["C6Charts16ChartBaseDataSet", "NSUIFont"]
+- ["C6Charts16ChartBaseDataSet", "NSZone"]
+- !private ["C6Charts16ChartBaseDataSet", "PieChartDataEntry"]
+- ["C6Charts16ChartBaseDataSet", "PieChartDataSet"]
+- ["C6Charts16ChartBaseDataSet", "RLMObject"]
+- ["C6Charts16ChartBaseDataSet", "RLMResults"]
+- !private ["C6Charts16ChartBaseDataSet", "RealmPieDataSet"]
+- ["C6Charts16ChartBaseDataSet", "String"]
+- ["C6Charts16ChartBaseDataSet", "ValuePosition"]
+- ["C6Charts16ChartBaseDataSet", "_labelField"]
+- ["C6Charts16ChartBaseDataSet", "_sliceSpace"]
+- !private ["C6Charts16ChartBaseDataSet", "_yValueField"]
+- ["C6Charts16ChartBaseDataSet", "automaticallyDisableSliceSpacing"]
+- ["C6Charts16ChartBaseDataSet", "buildEntryFromResultObject"]
+- ["C6Charts16ChartBaseDataSet", "copyWithZone"]
+- ["C6Charts16ChartBaseDataSet", "entryLabelColor"]
+- ["C6Charts16ChartBaseDataSet", "entryLabelFont"]
+- ["C6Charts16ChartBaseDataSet", "init"]
+- ["C6Charts16ChartBaseDataSet", "initialize"]
+- ["C6Charts16ChartBaseDataSet", "selectionShift"]
+- ["C6Charts16ChartBaseDataSet", "sliceSpace"]
+- !private ["C6Charts16ChartBaseDataSet", "valueFont"]
+- ["C6Charts16ChartBaseDataSet", "valueLineColor"]
+- ["C6Charts16ChartBaseDataSet", "valueLinePart1Length"]
+- ["C6Charts16ChartBaseDataSet", "valueLinePart1OffsetPercentage"]
+- ["C6Charts16ChartBaseDataSet", "valueLinePart2Length"]
+- ["C6Charts16ChartBaseDataSet", "valueLineVariableLength"]
+- ["C6Charts16ChartBaseDataSet", "valueLineWidth"]
+- !private ["C6Charts16ChartBaseDataSet", "valueTextColor"]
+- ["C6Charts16ChartBaseDataSet", "xValuePosition"]
+- ["C6Charts16ChartBaseDataSet", "yValuePosition"]
+- ["C6Charts12ChartDataSet", "ValuePosition"]
+- ["Ps10Comparable", "init"]
+- ["Ps28CustomDebugStringConvertible", "CGFloat"]
+- ["Ps28CustomDebugStringConvertible", "NSUIColor"]
+- !private ["Ps28CustomDebugStringConvertible", "NSUIFont"]
+- !private ["Ps28CustomDebugStringConvertible", "PieChartDataEntry"]
+- ["Ps28CustomDebugStringConvertible", "ValuePosition"]
+- !private ["Ps28CustomDebugStringConvertible", "_labelField"]
+- !private ["Ps28CustomDebugStringConvertible", "_sliceSpace"]
+- !private ["Ps28CustomDebugStringConvertible", "_yValueField"]
+- ["Ps28CustomDebugStringConvertible", "automaticallyDisableSliceSpacing"]
+- ["Ps28CustomDebugStringConvertible", "black"]
+- !private ["Ps28CustomDebugStringConvertible", "copyWithZone"]
+- ["Ps28CustomDebugStringConvertible", "entryLabelColor"]
+- ["Ps28CustomDebugStringConvertible", "entryLabelFont"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "selectionShift"]
+- ["Ps28CustomDebugStringConvertible", "sliceSpace"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "systemFont"]
+- !private ["Ps28CustomDebugStringConvertible", "valueFont"]
+- ["Ps28CustomDebugStringConvertible", "valueLineColor"]
+- ["Ps28CustomDebugStringConvertible", "valueLinePart1Length"]
+- ["Ps28CustomDebugStringConvertible", "valueLinePart1OffsetPercentage"]
+- ["Ps28CustomDebugStringConvertible", "valueLinePart2Length"]
+- ["Ps28CustomDebugStringConvertible", "valueLineVariableLength"]
+- ["Ps28CustomDebugStringConvertible", "valueLineWidth"]
+- !private ["Ps28CustomDebugStringConvertible", "valueTextColor"]
+- !private ["Ps28CustomDebugStringConvertible", "white"]
+- ["Ps28CustomDebugStringConvertible", "xValuePosition"]
+- ["Ps28CustomDebugStringConvertible", "yValuePosition"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- ["Ps17CustomReflectable", "init"]
+- ["Ps23CustomStringConvertible", "CGFloat"]
+- ["Ps23CustomStringConvertible", "NSUIColor"]
+- !private ["Ps23CustomStringConvertible", "NSUIFont"]
+- !private ["Ps23CustomStringConvertible", "PieChartDataEntry"]
+- ["Ps23CustomStringConvertible", "ValuePosition"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "_labelField"]
+- !private ["Ps23CustomStringConvertible", "_sliceSpace"]
+- !private ["Ps23CustomStringConvertible", "_yValueField"]
+- ["Ps23CustomStringConvertible", "automaticallyDisableSliceSpacing"]
+- ["Ps23CustomStringConvertible", "black"]
+- !private ["Ps23CustomStringConvertible", "copyWithZone"]
+- ["Ps23CustomStringConvertible", "entryLabelColor"]
+- ["Ps23CustomStringConvertible", "entryLabelFont"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "selectionShift"]
+- ["Ps23CustomStringConvertible", "sliceSpace"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "systemFont"]
+- !private ["Ps23CustomStringConvertible", "valueFont"]
+- ["Ps23CustomStringConvertible", "valueLineColor"]
+- ["Ps23CustomStringConvertible", "valueLinePart1Length"]
+- ["Ps23CustomStringConvertible", "valueLinePart1OffsetPercentage"]
+- ["Ps23CustomStringConvertible", "valueLinePart2Length"]
+- ["Ps23CustomStringConvertible", "valueLineVariableLength"]
+- ["Ps23CustomStringConvertible", "valueLineWidth"]
+- !private ["Ps23CustomStringConvertible", "valueTextColor"]
+- !private ["Ps23CustomStringConvertible", "white"]
+- ["Ps23CustomStringConvertible", "xValuePosition"]
+- ["Ps23CustomStringConvertible", "yValuePosition"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "CGFloat"]
+- ["Ps9Equatable", "NSUIColor"]
+- !private ["Ps9Equatable", "NSUIFont"]
+- !private ["Ps9Equatable", "PieChartDataEntry"]
+- ["Ps9Equatable", "ValuePosition"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "_labelField"]
+- !private ["Ps9Equatable", "_sliceSpace"]
+- !private ["Ps9Equatable", "_yValueField"]
+- ["Ps9Equatable", "automaticallyDisableSliceSpacing"]
+- ["Ps9Equatable", "black"]
+- !private ["Ps9Equatable", "copyWithZone"]
+- ["Ps9Equatable", "entryLabelColor"]
+- ["Ps9Equatable", "entryLabelFont"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "insideSlice"]
+- ["Ps9Equatable", "selectionShift"]
+- ["Ps9Equatable", "sliceSpace"]
+- !private ["Ps9Equatable", "subscript"]
+- !private ["Ps9Equatable", "systemFont"]
+- !private ["Ps9Equatable", "valueFont"]
+- ["Ps9Equatable", "valueLineColor"]
+- ["Ps9Equatable", "valueLinePart1Length"]
+- ["Ps9Equatable", "valueLinePart1OffsetPercentage"]
+- ["Ps9Equatable", "valueLinePart2Length"]
+- ["Ps9Equatable", "valueLineVariableLength"]
+- ["Ps9Equatable", "valueLineWidth"]
+- !private ["Ps9Equatable", "valueTextColor"]
+- !private ["Ps9Equatable", "white"]
+- ["Ps9Equatable", "xValuePosition"]
+- ["Ps9Equatable", "yValuePosition"]
+- ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps25ExpressibleByFloatLiteral", "init"]
+- ["Ps27ExpressibleByIntegerLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- ["Ps13FloatingPoint", "init"]
+- ["Ps8Hashable", "CGFloat"]
+- ["Ps8Hashable", "NSUIColor"]
+- !private ["Ps8Hashable", "NSUIFont"]
+- !private ["Ps8Hashable", "PieChartDataEntry"]
+- ["Ps8Hashable", "ValuePosition"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "_labelField"]
+- !private ["Ps8Hashable", "_sliceSpace"]
+- !private ["Ps8Hashable", "_yValueField"]
+- ["Ps8Hashable", "automaticallyDisableSliceSpacing"]
+- ["Ps8Hashable", "black"]
+- !private ["Ps8Hashable", "copyWithZone"]
+- ["Ps8Hashable", "entryLabelColor"]
+- ["Ps8Hashable", "entryLabelFont"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "insideSlice"]
+- ["Ps8Hashable", "selectionShift"]
+- ["Ps8Hashable", "sliceSpace"]
+- !private ["Ps8Hashable", "subscript"]
+- !private ["Ps8Hashable", "systemFont"]
+- !private ["Ps8Hashable", "valueFont"]
+- ["Ps8Hashable", "valueLineColor"]
+- ["Ps8Hashable", "valueLinePart1Length"]
+- ["Ps8Hashable", "valueLinePart1OffsetPercentage"]
+- ["Ps8Hashable", "valueLinePart2Length"]
+- ["Ps8Hashable", "valueLineVariableLength"]
+- ["Ps8Hashable", "valueLineWidth"]
+- !private ["Ps8Hashable", "valueTextColor"]
+- !private ["Ps8Hashable", "white"]
+- ["Ps8Hashable", "xValuePosition"]
+- ["Ps8Hashable", "yValuePosition"]
+- ["Ps8Hashable", ""]
+- ["P6Charts13IChartDataSet", "CGFloat"]
+- ["P6Charts13IChartDataSet", "NSUIColor"]
+- !private ["P6Charts13IChartDataSet", "NSUIFont"]
+- !private ["P6Charts13IChartDataSet", "PieChartDataEntry"]
+- ["P6Charts13IChartDataSet", "ValuePosition"]
+- !private ["P6Charts13IChartDataSet", "_labelField"]
+- !private ["P6Charts13IChartDataSet", "_sliceSpace"]
+- !private ["P6Charts13IChartDataSet", "_yValueField"]
+- ["P6Charts13IChartDataSet", "automaticallyDisableSliceSpacing"]
+- !private ["P6Charts13IChartDataSet", "copyWithZone"]
+- ["P6Charts13IChartDataSet", "entryLabelColor"]
+- ["P6Charts13IChartDataSet", "entryLabelFont"]
+- !private ["P6Charts13IChartDataSet", "init"]
+- ["P6Charts13IChartDataSet", "selectionShift"]
+- ["P6Charts13IChartDataSet", "sliceSpace"]
+- !private ["P6Charts13IChartDataSet", "valueFont"]
+- ["P6Charts13IChartDataSet", "valueLineColor"]
+- ["P6Charts13IChartDataSet", "valueLinePart1Length"]
+- ["P6Charts13IChartDataSet", "valueLinePart1OffsetPercentage"]
+- ["P6Charts13IChartDataSet", "valueLinePart2Length"]
+- ["P6Charts13IChartDataSet", "valueLineVariableLength"]
+- ["P6Charts13IChartDataSet", "valueLineWidth"]
+- !private ["P6Charts13IChartDataSet", "valueTextColor"]
+- ["P6Charts13IChartDataSet", "xValuePosition"]
+- ["P6Charts13IChartDataSet", "yValuePosition"]
+- ["P6Charts13IChartDataSet", ""]
+- ["P6Charts16IPieChartDataSet", "CGFloat"]
+- ["P6Charts16IPieChartDataSet", "NSUIColor"]
+- !private ["P6Charts16IPieChartDataSet", "NSUIFont"]
+- !private ["P6Charts16IPieChartDataSet", "PieChartDataEntry"]
+- ["P6Charts16IPieChartDataSet", "ValuePosition"]
+- !private ["P6Charts16IPieChartDataSet", "_labelField"]
+- !private ["P6Charts16IPieChartDataSet", "_sliceSpace"]
+- !private ["P6Charts16IPieChartDataSet", "_yValueField"]
+- ["P6Charts16IPieChartDataSet", "automaticallyDisableSliceSpacing"]
+- ["P6Charts16IPieChartDataSet", "entryLabelColor"]
+- ["P6Charts16IPieChartDataSet", "entryLabelFont"]
+- ["P6Charts16IPieChartDataSet", "selectionShift"]
+- ["P6Charts16IPieChartDataSet", "sliceSpace"]
+- !private ["P6Charts16IPieChartDataSet", "valueFont"]
+- ["P6Charts16IPieChartDataSet", "valueLineColor"]
+- ["P6Charts16IPieChartDataSet", "valueLinePart1Length"]
+- ["P6Charts16IPieChartDataSet", "valueLinePart1OffsetPercentage"]
+- ["P6Charts16IPieChartDataSet", "valueLinePart2Length"]
+- ["P6Charts16IPieChartDataSet", "valueLineVariableLength"]
+- ["P6Charts16IPieChartDataSet", "valueLineWidth"]
+- !private ["P6Charts16IPieChartDataSet", "valueTextColor"]
+- ["P6Charts16IPieChartDataSet", "xValuePosition"]
+- ["P6Charts16IPieChartDataSet", "yValuePosition"]
+- ["P6Charts16IPieChartDataSet", ""]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- ["PSo8NSCoding", "black"]
+- !private ["PSo8NSCoding", "white"]
+- ["PSo9NSCopying", "black"]
+- !private ["PSo9NSCopying", "systemFont"]
+- !private ["PSo9NSCopying", "white"]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "CGFloat"]
+- ["CSo8NSObject", "ChartDataEntry"]
+- ["CSo8NSObject", "Double"]
+- ["CSo8NSObject", "NSUIColor"]
+- ["CSo8NSObject", "NSUIFont"]
+- ["CSo8NSObject", "NSZone"]
+- !private ["CSo8NSObject", "PieChartDataEntry"]
+- ["CSo8NSObject", "PieChartDataSet"]
+- ["CSo8NSObject", "RLMObject"]
+- ["CSo8NSObject", "RLMResults"]
+- !private ["CSo8NSObject", "RealmPieDataSet"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "ValuePosition"]
+- ["CSo8NSObject", "_labelField"]
+- ["CSo8NSObject", "_sliceSpace"]
+- !private ["CSo8NSObject", "_yValueField"]
+- ["CSo8NSObject", "automaticallyDisableSliceSpacing"]
+- ["CSo8NSObject", "black"]
+- ["CSo8NSObject", "buildEntryFromResultObject"]
+- ["CSo8NSObject", "copyWithZone"]
+- ["CSo8NSObject", "entryLabelColor"]
+- ["CSo8NSObject", "entryLabelFont"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "initialize"]
+- ["CSo8NSObject", "selectionShift"]
+- ["CSo8NSObject", "sliceSpace"]
+- !private ["CSo8NSObject", "subscript"]
+- !private ["CSo8NSObject", "systemFont"]
+- !private ["CSo8NSObject", "valueFont"]
+- ["CSo8NSObject", "valueLineColor"]
+- ["CSo8NSObject", "valueLinePart1Length"]
+- ["CSo8NSObject", "valueLinePart1OffsetPercentage"]
+- ["CSo8NSObject", "valueLinePart2Length"]
+- ["CSo8NSObject", "valueLineVariableLength"]
+- ["CSo8NSObject", "valueLineWidth"]
+- !private ["CSo8NSObject", "valueTextColor"]
+- !private ["CSo8NSObject", "white"]
+- ["CSo8NSObject", "xValuePosition"]
+- ["CSo8NSObject", "yValuePosition"]
+- ["PSo16NSObjectProtocol", "CGFloat"]
+- ["PSo16NSObjectProtocol", "NSUIColor"]
+- !private ["PSo16NSObjectProtocol", "NSUIFont"]
+- !private ["PSo16NSObjectProtocol", "PieChartDataEntry"]
+- ["PSo16NSObjectProtocol", "ValuePosition"]
+- !private ["PSo16NSObjectProtocol", "_labelField"]
+- !private ["PSo16NSObjectProtocol", "_sliceSpace"]
+- !private ["PSo16NSObjectProtocol", "_yValueField"]
+- ["PSo16NSObjectProtocol", "automaticallyDisableSliceSpacing"]
+- ["PSo16NSObjectProtocol", "black"]
+- !private ["PSo16NSObjectProtocol", "copyWithZone"]
+- ["PSo16NSObjectProtocol", "entryLabelColor"]
+- ["PSo16NSObjectProtocol", "entryLabelFont"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "selectionShift"]
+- ["PSo16NSObjectProtocol", "sliceSpace"]
+- !private ["PSo16NSObjectProtocol", "subscript"]
+- !private ["PSo16NSObjectProtocol", "systemFont"]
+- !private ["PSo16NSObjectProtocol", "valueFont"]
+- ["PSo16NSObjectProtocol", "valueLineColor"]
+- ["PSo16NSObjectProtocol", "valueLinePart1Length"]
+- ["PSo16NSObjectProtocol", "valueLinePart1OffsetPercentage"]
+- ["PSo16NSObjectProtocol", "valueLinePart2Length"]
+- ["PSo16NSObjectProtocol", "valueLineVariableLength"]
+- ["PSo16NSObjectProtocol", "valueLineWidth"]
+- !private ["PSo16NSObjectProtocol", "valueTextColor"]
+- !private ["PSo16NSObjectProtocol", "white"]
+- ["PSo16NSObjectProtocol", "xValuePosition"]
+- ["PSo16NSObjectProtocol", "yValuePosition"]
+- ["PSo16NSObjectProtocol", ""]
+- ["PSo14NSSecureCoding", "black"]
+- !private ["PSo14NSSecureCoding", "white"]
+- !private ["C6Charts17PieChartDataEntry", "init"]
+- ["C6Charts15PieChartDataSet", "ValuePosition"]
+- !private ["CSo9RLMObject", "subscript"]
+- !private ["CSo13RLMObjectBase", "subscript"]
+- ["Ps16RawRepresentable", "insideSlice"]
+- ["C6Charts16RealmBaseDataSet", "AnyObject"]
+- ["C6Charts16RealmBaseDataSet", "Bool"]
+- ["C6Charts16RealmBaseDataSet", "CGFloat"]
+- ["C6Charts16RealmBaseDataSet", "ChartDataEntry"]
+- ["C6Charts16RealmBaseDataSet", "Double"]
+- ["C6Charts16RealmBaseDataSet", "NSUIColor"]
+- ["C6Charts16RealmBaseDataSet", "NSUIFont"]
+- ["C6Charts16RealmBaseDataSet", "NSZone"]
+- !private ["C6Charts16RealmBaseDataSet", "PieChartDataEntry"]
+- ["C6Charts16RealmBaseDataSet", "PieChartDataSet"]
+- ["C6Charts16RealmBaseDataSet", "RLMObject"]
+- ["C6Charts16RealmBaseDataSet", "RLMResults"]
+- !private ["C6Charts16RealmBaseDataSet", "RealmPieDataSet"]
+- ["C6Charts16RealmBaseDataSet", "String"]
+- ["C6Charts16RealmBaseDataSet", "_labelField"]
+- ["C6Charts16RealmBaseDataSet", "_sliceSpace"]
+- !private ["C6Charts16RealmBaseDataSet", "_yValueField"]
+- ["C6Charts16RealmBaseDataSet", "automaticallyDisableSliceSpacing"]
+- ["C6Charts16RealmBaseDataSet", "buildEntryFromResultObject"]
+- ["C6Charts16RealmBaseDataSet", "copyWithZone"]
+- ["C6Charts16RealmBaseDataSet", "entryLabelColor"]
+- ["C6Charts16RealmBaseDataSet", "entryLabelFont"]
+- ["C6Charts16RealmBaseDataSet", "init"]
+- ["C6Charts16RealmBaseDataSet", "initialize"]
+- ["C6Charts16RealmBaseDataSet", "selectionShift"]
+- ["C6Charts16RealmBaseDataSet", "sliceSpace"]
+- !private ["C6Charts16RealmBaseDataSet", "valueFont"]
+- ["C6Charts16RealmBaseDataSet", "valueLineColor"]
+- ["C6Charts16RealmBaseDataSet", "valueLinePart1Length"]
+- ["C6Charts16RealmBaseDataSet", "valueLinePart1OffsetPercentage"]
+- ["C6Charts16RealmBaseDataSet", "valueLinePart2Length"]
+- ["C6Charts16RealmBaseDataSet", "valueLineVariableLength"]
+- ["C6Charts16RealmBaseDataSet", "valueLineWidth"]
+- !private ["C6Charts16RealmBaseDataSet", "valueTextColor"]
+- ["C6Charts16RealmBaseDataSet", "xValuePosition"]
+- ["C6Charts16RealmBaseDataSet", "yValuePosition"]
+- ["C6Charts16RealmBaseDataSet", ""]
+- ["C6Charts15RealmPieDataSet", "AnyObject"]
+- ["C6Charts15RealmPieDataSet", "Bool"]
+- ["C6Charts15RealmPieDataSet", "CGFloat"]
+- ["C6Charts15RealmPieDataSet", "ChartDataEntry"]
+- ["C6Charts15RealmPieDataSet", "Double"]
+- ["C6Charts15RealmPieDataSet", "NSUIColor"]
+- ["C6Charts15RealmPieDataSet", "NSUIFont"]
+- ["C6Charts15RealmPieDataSet", "NSZone"]
+- !private ["C6Charts15RealmPieDataSet", "PieChartDataEntry"]
+- ["C6Charts15RealmPieDataSet", "PieChartDataSet"]
+- ["C6Charts15RealmPieDataSet", "RLMObject"]
+- ["C6Charts15RealmPieDataSet", "RLMResults"]
+- !private ["C6Charts15RealmPieDataSet", "RealmPieDataSet"]
+- ["C6Charts15RealmPieDataSet", "String"]
+- ["C6Charts15RealmPieDataSet", "_labelField"]
+- !private ["C6Charts15RealmPieDataSet", "_sliceSpace"]
+- !private ["C6Charts15RealmPieDataSet", "_yValueField"]
+- ["C6Charts15RealmPieDataSet", "automaticallyDisableSliceSpacing"]
+- ["C6Charts15RealmPieDataSet", "buildEntryFromResultObject"]
+- ["C6Charts15RealmPieDataSet", "copyWithZone"]
+- ["C6Charts15RealmPieDataSet", "deinit"]
+- ["C6Charts15RealmPieDataSet", "entryLabelColor"]
+- ["C6Charts15RealmPieDataSet", "entryLabelFont"]
+- ["C6Charts15RealmPieDataSet", "init"]
+- ["C6Charts15RealmPieDataSet", "initialize"]
+- ["C6Charts15RealmPieDataSet", "selectionShift"]
+- ["C6Charts15RealmPieDataSet", "sliceSpace"]
+- !private ["C6Charts15RealmPieDataSet", "valueFont"]
+- ["C6Charts15RealmPieDataSet", "valueLineColor"]
+- ["C6Charts15RealmPieDataSet", "valueLinePart1Length"]
+- ["C6Charts15RealmPieDataSet", "valueLinePart1OffsetPercentage"]
+- ["C6Charts15RealmPieDataSet", "valueLinePart2Length"]
+- ["C6Charts15RealmPieDataSet", "valueLineVariableLength"]
+- ["C6Charts15RealmPieDataSet", "valueLineWidth"]
+- !private ["C6Charts15RealmPieDataSet", "valueTextColor"]
+- ["C6Charts15RealmPieDataSet", "xValuePosition"]
+- ["C6Charts15RealmPieDataSet", "yValuePosition"]
+- ["Ps12SignedNumber", "init"]
+- !private ["Vs12StaticString", "init"]
+- ["Ps10Strideable", "init"]
+- ["CSo7UIColor", "black"]
+- !private ["CSo7UIColor", "white"]
+- !private ["CSo6UIFont", "systemFont"]
+- ["OC6Charts15PieChartDataSet13ValuePosition", "insideSlice"]
+- ["Ps15_CVarArgAligned", "init"]
+- ["Ps22_CVarArgPassedAsDouble", "init"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- ["Ps26_ExpressibleByColorLiteral", "black"]
+- !private ["Ps26_ExpressibleByColorLiteral", "white"]
+- ["Ps9_Hashable", "CGFloat"]
+- ["Ps9_Hashable", "NSUIColor"]
+- !private ["Ps9_Hashable", "NSUIFont"]
+- !private ["Ps9_Hashable", "PieChartDataEntry"]
+- ["Ps9_Hashable", "ValuePosition"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "_labelField"]
+- !private ["Ps9_Hashable", "_sliceSpace"]
+- !private ["Ps9_Hashable", "_yValueField"]
+- ["Ps9_Hashable", "automaticallyDisableSliceSpacing"]
+- ["Ps9_Hashable", "black"]
+- !private ["Ps9_Hashable", "copyWithZone"]
+- ["Ps9_Hashable", "entryLabelColor"]
+- ["Ps9_Hashable", "entryLabelFont"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "insideSlice"]
+- ["Ps9_Hashable", "selectionShift"]
+- ["Ps9_Hashable", "sliceSpace"]
+- !private ["Ps9_Hashable", "subscript"]
+- !private ["Ps9_Hashable", "systemFont"]
+- !private ["Ps9_Hashable", "valueFont"]
+- ["Ps9_Hashable", "valueLineColor"]
+- ["Ps9_Hashable", "valueLinePart1Length"]
+- ["Ps9_Hashable", "valueLinePart1OffsetPercentage"]
+- ["Ps9_Hashable", "valueLinePart2Length"]
+- ["Ps9_Hashable", "valueLineVariableLength"]
+- ["Ps9_Hashable", "valueLineWidth"]
+- !private ["Ps9_Hashable", "valueTextColor"]
+- !private ["Ps9_Hashable", "white"]
+- ["Ps9_Hashable", "xValuePosition"]
+- ["Ps9_Hashable", "yValuePosition"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- ["Ps11_Strideable", "init"]
+depends-nominal:
+- "Ps16AbsoluteValuable"
+- "Ps9AnyObject"
+- "Ps19BinaryFloatingPoint"
+- !private "Sb"
+- "V12CoreGraphics7CGFloat"
+- "Ps7CVarArg"
+- "C6Charts16ChartBaseDataSet"
+- "C6Charts12ChartDataSet"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps25ExpressibleByFloatLiteral"
+- "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps13FloatingPoint"
+- "Ps8Hashable"
+- "P6Charts13IChartDataSet"
+- "P6Charts16IPieChartDataSet"
+- !private "Ps25LosslessStringConvertible"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- !private "C6Charts17PieChartDataEntry"
+- "C6Charts15PieChartDataSet"
+- !private "CSo9RLMObject"
+- !private "CSo13RLMObjectBase"
+- "Ps16RawRepresentable"
+- "C6Charts16RealmBaseDataSet"
+- "C6Charts15RealmPieDataSet"
+- "Ps12SignedNumber"
+- !private "Vs12StaticString"
+- "Ps10Strideable"
+- "CSo7UIColor"
+- !private "CSo6UIFont"
+- "OC6Charts15PieChartDataSet13ValuePosition"
+- "Ps15_CVarArgAligned"
+- "Ps22_CVarArgPassedAsDouble"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps26_ExpressibleByColorLiteral"
+- "Ps9_Hashable"
+- "Ps21_ObjectiveCBridgeable"
+- "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Target Support Files/Charts/Charts-umbrella.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMOptionalBase.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMListBase.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSchema.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMResults.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMConstants.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMProperty.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObject.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMMigration.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMCollection.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMArray.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/Realm.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Pods.build/Debug-iphoneos/Realm.build/module.modulemap"
+interface-hash: "c0105e4ad313600420e1c075e904d8ac"

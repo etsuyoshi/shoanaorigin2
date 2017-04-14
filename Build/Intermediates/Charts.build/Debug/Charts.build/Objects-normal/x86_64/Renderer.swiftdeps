@@ -8,44 +8,42 @@ provides-member:
 provides-dynamic-lookup:
 - "viewPortHandler"
 depends-top-level:
-- "ViewPortHandler"
-- "NSObject"
 - "AssignmentPrecedence"
+- "NSObject"
 - "Renderer"
+- "ViewPortHandler"
 depends-member:
-- ["Ps9AnyObject", "init"]
-- ["Ps9AnyObject", "viewPortHandler"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "viewPortHandler"]
 - ["Ps9AnyObject", ""]
-- ["Ps7CVarArg", "init"]
-- ["Ps7CVarArg", "viewPortHandler"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "viewPortHandler"]
 - ["Ps7CVarArg", ""]
-- ["Ps28CustomDebugStringConvertible", "init"]
-- ["Ps28CustomDebugStringConvertible", "viewPortHandler"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "viewPortHandler"]
 - ["Ps28CustomDebugStringConvertible", ""]
-- ["Ps23CustomStringConvertible", "init"]
-- ["Ps23CustomStringConvertible", "viewPortHandler"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "viewPortHandler"]
 - ["Ps23CustomStringConvertible", ""]
-- ["Ps9Equatable", "init"]
-- ["Ps9Equatable", "viewPortHandler"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "viewPortHandler"]
 - ["Ps9Equatable", ""]
-- ["Ps8Hashable", "init"]
-- ["Ps8Hashable", "viewPortHandler"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "viewPortHandler"]
 - ["Ps8Hashable", ""]
 - ["CSo8NSObject", "ViewPortHandler"]
-- ["CSo8NSObject", "deinit"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "viewPortHandler"]
 - ["CSo8NSObject", ""]
-- ["PSo16NSObjectProtocol", "init"]
-- ["PSo16NSObjectProtocol", "viewPortHandler"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "viewPortHandler"]
 - ["PSo16NSObjectProtocol", ""]
-- ["Sq", "deinit"]
 - ["C6Charts8Renderer", "ViewPortHandler"]
 - ["C6Charts8Renderer", "deinit"]
 - ["C6Charts8Renderer", "init"]
 - ["C6Charts8Renderer", "viewPortHandler"]
-- ["Ps9_Hashable", "init"]
-- ["Ps9_Hashable", "viewPortHandler"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "viewPortHandler"]
 - ["Ps9_Hashable", ""]
 depends-nominal:
 - "Ps9AnyObject"
@@ -56,12 +54,20 @@ depends-nominal:
 - "Ps8Hashable"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- "Sq"
 - "C6Charts8Renderer"
 - "Ps9_Hashable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.apinotesc"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/Charts/Source/Supporting Files/Charts.h"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Charts.build/Debug/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
@@ -76,4 +82,5 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "3ef61ded2756edba188c520e49e27ad7"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuickLook.apinotesc"
+interface-hash: "3e28c146b231046d1d875cb8f2504a7b"

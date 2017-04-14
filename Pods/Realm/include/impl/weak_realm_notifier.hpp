@@ -19,8 +19,6 @@
 #ifndef REALM_WEAK_REALM_NOTIFIER_HPP
 #define REALM_WEAK_REALM_NOTIFIER_HPP
 
-#include "execution_context_id.hpp"
-
 #include <memory>
 #include <thread>
 
@@ -46,10 +44,7 @@ public:
     std::shared_ptr<Realm> realm() const { return m_realm.lock(); }
 
     // Does this WeakRealmNotifier store a Realm instance that should be used on the current thread?
-    bool is_cached_for_execution_context(const AnyExecutionContextID& execution_context) const
-    {
-        return m_cache && m_execution_context == execution_context;
-    }
+    bool is_cached_for_current_thread() const { return m_cache && is_for_current_thread(); }
 
     // Has the Realm instance been destroyed?
     bool expired() const { return m_realm.expired(); }
@@ -57,17 +52,19 @@ public:
     // Is this a WeakRealmNotifier for the given Realm instance?
     bool is_for_realm(Realm* realm) const { return realm == m_realm_key; }
 
+    bool is_for_current_thread() const { return m_thread_id == std::this_thread::get_id(); }
+
     void notify();
 
 private:
     std::weak_ptr<Realm> m_realm;
-    AnyExecutionContextID m_execution_context;
+    std::thread::id m_thread_id = std::this_thread::get_id();
     void* m_realm_key;
     bool m_cache = false;
 
     struct Callback {
-        const std::weak_ptr<Realm> weak_realm;
-        void operator()() const;
+        std::weak_ptr<Realm> weak_realm;
+        void operator()();
     };
     std::shared_ptr<util::EventLoopSignal<Callback>> m_signal;
 };

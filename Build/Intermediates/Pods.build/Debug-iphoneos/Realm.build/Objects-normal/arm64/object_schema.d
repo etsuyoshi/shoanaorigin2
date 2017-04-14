@@ -20,7 +20,6 @@ dependencies: \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/owned_data.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/object_store.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/property.hpp \
-  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/util/compiler.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/table_ref.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/util/bind_ptr.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/schema.hpp \
@@ -42,7 +41,6 @@ dependencies: \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/query_conditions.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/unicode.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/column_fwd.hpp \
-  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/array_direct.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/column_type.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/spec.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/array_string.hpp \
@@ -57,8 +55,6 @@ dependencies: \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/array_binary.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/array_blob.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/array_blobs_big.hpp \
-  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/version_id.hpp \
-  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/util/buffer.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/table.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/link_view_fwd.hpp \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Realm/include/core/realm/row.hpp \

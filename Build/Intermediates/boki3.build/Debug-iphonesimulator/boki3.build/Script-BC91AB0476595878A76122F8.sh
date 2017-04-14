@@ -1,3 +1,3 @@
 #!/bin/sh
-"${SRCROOT}/Pods/Target Support Files/Pods-shoana/Pods-shoana-resources.sh"
+"${SRCROOT}/Pods/Target Support Files/Pods-boki3/Pods-boki3-resources.sh"
 

@@ -2,12 +2,78 @@ dependencies: \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/DetailViewController.m \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/Shoana-Prefix.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/UILabel+FontSizeToFit.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Firebase/Core/Sources/module.modulemap \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/DetailViewController.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/Quiz/Quiz.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/Quiz/QuizItem.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/ResultViewController.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Charts.framework/Modules/module.modulemap \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Realm/Realm.framework/Modules/module.modulemap \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Realm/Realm.framework/Headers/RLMRealm_Dynamic.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSchema_Private.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMResults_Private.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealm_Private.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMProperty_Private.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Realm/Realm.framework/Headers/RLMOptionalBase.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObject_Private.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectStore.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase_Dynamic.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Realm/Realm.framework/Headers/RLMListBase.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMArray_Private.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMAccessor.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Realm/Realm.framework/Headers/RLMSchema.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Realm/Realm.framework/Headers/RLMResults.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Realm/Realm.framework/Headers/RLMRealmConfiguration.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Realm/Realm.framework/Headers/RLMRealm.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Realm/Realm.framework/Headers/RLMConstants.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Realm/Realm.framework/Headers/RLMProperty.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Realm/Realm.framework/Headers/RLMPlatform.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Realm/Realm.framework/Headers/RLMObjectSchema.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Realm/Realm.framework/Headers/RLMObject.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Realm/Realm.framework/Headers/RLMMigration.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Realm/Realm.framework/Headers/RLMCollection.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Realm/Realm.framework/Headers/RLMArray.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Realm/Realm.framework/Headers/Realm.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Charts/Charts.framework/Headers/Charts-Swift.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Charts/Charts.framework/Headers/Charts-umbrella.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/ArchiveIntermediates/shoana/BuildProductsPath/Release-iphoneos/Charts.framework/Headers/Charts.h \
-  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/ResultModel.h
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/Siwake.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/SiwakeItem.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/ResultModel.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Modules/module.modulemap \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Modules/module.modulemap \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIROptions.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRApp.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FirebaseCore.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Modules/module.modulemap \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseMessaging/Frameworks/frameworks/FirebaseMessaging.framework/Modules/module.modulemap \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseMessaging/Frameworks/frameworks/FirebaseMessaging.framework/Headers/FIRMessaging.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseMessaging/Frameworks/frameworks/FirebaseMessaging.framework/Headers/FirebaseMessaging.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Firebase/Core/Sources/Firebase.h

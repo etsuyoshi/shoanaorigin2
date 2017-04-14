@@ -1,0 +1,566 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "RealmRadarDataSet"
+provides-nominal:
+- "C6Charts17RealmRadarDataSet"
+provides-member:
+- ["C6Charts17RealmRadarDataSet", ""]
+provides-dynamic-lookup:
+- "buildEntryFromResultObject"
+- "drawHighlightCircleEnabled"
+- "highlightCircleFillColor"
+- "highlightCircleInnerRadius"
+- "highlightCircleOuterRadius"
+- "highlightCircleStrokeAlpha"
+- "highlightCircleStrokeColor"
+- "highlightCircleStrokeWidth"
+- "initialize"
+- "isDrawHighlightCircleEnabled"
+depends-top-level:
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- "CGFloat"
+- "CastingPrecedence"
+- "ChartDataEntry"
+- "Double"
+- "IRadarChartDataSet"
+- "NSUIColor"
+- !private "NSUIFont"
+- "RLMObject"
+- "RLMRealm"
+- "RLMResults"
+- !private "RadarChartDataEntry"
+- "RealmLineRadarDataSet"
+- "RealmRadarDataSet"
+- "String"
+- !private "StringLiteralType"
+depends-member:
+- ["Ps9AnyObject", "NSUIColor"]
+- !private ["Ps9AnyObject", "NSUIFont"]
+- !private ["Ps9AnyObject", "RadarChartDataEntry"]
+- !private ["Ps9AnyObject", "_yValueField"]
+- ["Ps9AnyObject", "drawHighlightCircleEnabled"]
+- ["Ps9AnyObject", "highlightCircleFillColor"]
+- ["Ps9AnyObject", "highlightCircleInnerRadius"]
+- ["Ps9AnyObject", "highlightCircleOuterRadius"]
+- ["Ps9AnyObject", "highlightCircleStrokeAlpha"]
+- ["Ps9AnyObject", "highlightCircleStrokeColor"]
+- ["Ps9AnyObject", "highlightCircleStrokeWidth"]
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "isDrawHighlightCircleEnabled"]
+- !private ["Ps9AnyObject", "subscript"]
+- !private ["Ps9AnyObject", "systemFont"]
+- !private ["Ps9AnyObject", "valueFont"]
+- ["Ps9AnyObject", "white"]
+- ["Ps9AnyObject", ""]
+- ["Ps7CVarArg", "NSUIColor"]
+- !private ["Ps7CVarArg", "NSUIFont"]
+- !private ["Ps7CVarArg", "RadarChartDataEntry"]
+- !private ["Ps7CVarArg", "_yValueField"]
+- ["Ps7CVarArg", "drawHighlightCircleEnabled"]
+- ["Ps7CVarArg", "highlightCircleFillColor"]
+- ["Ps7CVarArg", "highlightCircleInnerRadius"]
+- ["Ps7CVarArg", "highlightCircleOuterRadius"]
+- ["Ps7CVarArg", "highlightCircleStrokeAlpha"]
+- ["Ps7CVarArg", "highlightCircleStrokeColor"]
+- ["Ps7CVarArg", "highlightCircleStrokeWidth"]
+- !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "isDrawHighlightCircleEnabled"]
+- !private ["Ps7CVarArg", "subscript"]
+- !private ["Ps7CVarArg", "systemFont"]
+- !private ["Ps7CVarArg", "valueFont"]
+- ["Ps7CVarArg", "white"]
+- ["Ps7CVarArg", ""]
+- ["C6Charts16ChartBaseDataSet", "Bool"]
+- ["C6Charts16ChartBaseDataSet", "CGFloat"]
+- ["C6Charts16ChartBaseDataSet", "ChartDataEntry"]
+- ["C6Charts16ChartBaseDataSet", "Double"]
+- ["C6Charts16ChartBaseDataSet", "NSUIColor"]
+- !private ["C6Charts16ChartBaseDataSet", "NSUIFont"]
+- ["C6Charts16ChartBaseDataSet", "RLMObject"]
+- ["C6Charts16ChartBaseDataSet", "RLMRealm"]
+- ["C6Charts16ChartBaseDataSet", "RLMResults"]
+- !private ["C6Charts16ChartBaseDataSet", "RadarChartDataEntry"]
+- ["C6Charts16ChartBaseDataSet", "String"]
+- !private ["C6Charts16ChartBaseDataSet", "_yValueField"]
+- ["C6Charts16ChartBaseDataSet", "buildEntryFromResultObject"]
+- ["C6Charts16ChartBaseDataSet", "drawHighlightCircleEnabled"]
+- ["C6Charts16ChartBaseDataSet", "highlightCircleFillColor"]
+- ["C6Charts16ChartBaseDataSet", "highlightCircleInnerRadius"]
+- ["C6Charts16ChartBaseDataSet", "highlightCircleOuterRadius"]
+- ["C6Charts16ChartBaseDataSet", "highlightCircleStrokeAlpha"]
+- ["C6Charts16ChartBaseDataSet", "highlightCircleStrokeColor"]
+- ["C6Charts16ChartBaseDataSet", "highlightCircleStrokeWidth"]
+- ["C6Charts16ChartBaseDataSet", "init"]
+- ["C6Charts16ChartBaseDataSet", "initialize"]
+- ["C6Charts16ChartBaseDataSet", "isDrawHighlightCircleEnabled"]
+- !private ["C6Charts16ChartBaseDataSet", "valueFont"]
+- !private ["Ps10Comparable", "init"]
+- ["Ps28CustomDebugStringConvertible", "NSUIColor"]
+- !private ["Ps28CustomDebugStringConvertible", "NSUIFont"]
+- !private ["Ps28CustomDebugStringConvertible", "RadarChartDataEntry"]
+- !private ["Ps28CustomDebugStringConvertible", "_yValueField"]
+- ["Ps28CustomDebugStringConvertible", "drawHighlightCircleEnabled"]
+- ["Ps28CustomDebugStringConvertible", "highlightCircleFillColor"]
+- ["Ps28CustomDebugStringConvertible", "highlightCircleInnerRadius"]
+- ["Ps28CustomDebugStringConvertible", "highlightCircleOuterRadius"]
+- ["Ps28CustomDebugStringConvertible", "highlightCircleStrokeAlpha"]
+- ["Ps28CustomDebugStringConvertible", "highlightCircleStrokeColor"]
+- ["Ps28CustomDebugStringConvertible", "highlightCircleStrokeWidth"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "isDrawHighlightCircleEnabled"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "systemFont"]
+- !private ["Ps28CustomDebugStringConvertible", "valueFont"]
+- ["Ps28CustomDebugStringConvertible", "white"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "init"]
+- ["Ps23CustomStringConvertible", "NSUIColor"]
+- !private ["Ps23CustomStringConvertible", "NSUIFont"]
+- !private ["Ps23CustomStringConvertible", "RadarChartDataEntry"]
+- !private ["Ps23CustomStringConvertible", "_yValueField"]
+- ["Ps23CustomStringConvertible", "drawHighlightCircleEnabled"]
+- ["Ps23CustomStringConvertible", "highlightCircleFillColor"]
+- ["Ps23CustomStringConvertible", "highlightCircleInnerRadius"]
+- ["Ps23CustomStringConvertible", "highlightCircleOuterRadius"]
+- ["Ps23CustomStringConvertible", "highlightCircleStrokeAlpha"]
+- ["Ps23CustomStringConvertible", "highlightCircleStrokeColor"]
+- ["Ps23CustomStringConvertible", "highlightCircleStrokeWidth"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "isDrawHighlightCircleEnabled"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "systemFont"]
+- !private ["Ps23CustomStringConvertible", "valueFont"]
+- ["Ps23CustomStringConvertible", "white"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "NSUIColor"]
+- !private ["Ps9Equatable", "NSUIFont"]
+- !private ["Ps9Equatable", "RadarChartDataEntry"]
+- !private ["Ps9Equatable", "_yValueField"]
+- ["Ps9Equatable", "drawHighlightCircleEnabled"]
+- ["Ps9Equatable", "highlightCircleFillColor"]
+- ["Ps9Equatable", "highlightCircleInnerRadius"]
+- ["Ps9Equatable", "highlightCircleOuterRadius"]
+- ["Ps9Equatable", "highlightCircleStrokeAlpha"]
+- ["Ps9Equatable", "highlightCircleStrokeColor"]
+- ["Ps9Equatable", "highlightCircleStrokeWidth"]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "isDrawHighlightCircleEnabled"]
+- !private ["Ps9Equatable", "subscript"]
+- !private ["Ps9Equatable", "systemFont"]
+- !private ["Ps9Equatable", "valueFont"]
+- ["Ps9Equatable", "white"]
+- ["Ps9Equatable", ""]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- ["Ps8Hashable", "NSUIColor"]
+- !private ["Ps8Hashable", "NSUIFont"]
+- !private ["Ps8Hashable", "RadarChartDataEntry"]
+- !private ["Ps8Hashable", "_yValueField"]
+- ["Ps8Hashable", "drawHighlightCircleEnabled"]
+- ["Ps8Hashable", "highlightCircleFillColor"]
+- ["Ps8Hashable", "highlightCircleInnerRadius"]
+- ["Ps8Hashable", "highlightCircleOuterRadius"]
+- ["Ps8Hashable", "highlightCircleStrokeAlpha"]
+- ["Ps8Hashable", "highlightCircleStrokeColor"]
+- ["Ps8Hashable", "highlightCircleStrokeWidth"]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "isDrawHighlightCircleEnabled"]
+- !private ["Ps8Hashable", "subscript"]
+- !private ["Ps8Hashable", "systemFont"]
+- !private ["Ps8Hashable", "valueFont"]
+- ["Ps8Hashable", "white"]
+- ["Ps8Hashable", ""]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "NSUIColor"]
+- !private ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "NSUIFont"]
+- !private ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "RadarChartDataEntry"]
+- !private ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "_yValueField"]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "drawHighlightCircleEnabled"]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "highlightCircleFillColor"]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "highlightCircleInnerRadius"]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "highlightCircleOuterRadius"]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "highlightCircleStrokeAlpha"]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "highlightCircleStrokeColor"]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "highlightCircleStrokeWidth"]
+- !private ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "init"]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "isDrawHighlightCircleEnabled"]
+- !private ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "valueFont"]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", ""]
+- ["P6Charts13IChartDataSet", "NSUIColor"]
+- !private ["P6Charts13IChartDataSet", "NSUIFont"]
+- !private ["P6Charts13IChartDataSet", "RadarChartDataEntry"]
+- !private ["P6Charts13IChartDataSet", "_yValueField"]
+- ["P6Charts13IChartDataSet", "drawHighlightCircleEnabled"]
+- ["P6Charts13IChartDataSet", "highlightCircleFillColor"]
+- ["P6Charts13IChartDataSet", "highlightCircleInnerRadius"]
+- ["P6Charts13IChartDataSet", "highlightCircleOuterRadius"]
+- ["P6Charts13IChartDataSet", "highlightCircleStrokeAlpha"]
+- ["P6Charts13IChartDataSet", "highlightCircleStrokeColor"]
+- ["P6Charts13IChartDataSet", "highlightCircleStrokeWidth"]
+- !private ["P6Charts13IChartDataSet", "init"]
+- ["P6Charts13IChartDataSet", "isDrawHighlightCircleEnabled"]
+- !private ["P6Charts13IChartDataSet", "valueFont"]
+- ["P6Charts13IChartDataSet", ""]
+- ["P6Charts22ILineRadarChartDataSet", "NSUIColor"]
+- !private ["P6Charts22ILineRadarChartDataSet", "NSUIFont"]
+- !private ["P6Charts22ILineRadarChartDataSet", "RadarChartDataEntry"]
+- !private ["P6Charts22ILineRadarChartDataSet", "_yValueField"]
+- ["P6Charts22ILineRadarChartDataSet", "drawHighlightCircleEnabled"]
+- ["P6Charts22ILineRadarChartDataSet", "highlightCircleFillColor"]
+- ["P6Charts22ILineRadarChartDataSet", "highlightCircleInnerRadius"]
+- ["P6Charts22ILineRadarChartDataSet", "highlightCircleOuterRadius"]
+- ["P6Charts22ILineRadarChartDataSet", "highlightCircleStrokeAlpha"]
+- ["P6Charts22ILineRadarChartDataSet", "highlightCircleStrokeColor"]
+- ["P6Charts22ILineRadarChartDataSet", "highlightCircleStrokeWidth"]
+- !private ["P6Charts22ILineRadarChartDataSet", "init"]
+- ["P6Charts22ILineRadarChartDataSet", "isDrawHighlightCircleEnabled"]
+- !private ["P6Charts22ILineRadarChartDataSet", "valueFont"]
+- ["P6Charts22ILineRadarChartDataSet", ""]
+- ["P6Charts35ILineScatterCandleRadarChartDataSet", "NSUIColor"]
+- !private ["P6Charts35ILineScatterCandleRadarChartDataSet", "NSUIFont"]
+- !private ["P6Charts35ILineScatterCandleRadarChartDataSet", "RadarChartDataEntry"]
+- !private ["P6Charts35ILineScatterCandleRadarChartDataSet", "_yValueField"]
+- ["P6Charts35ILineScatterCandleRadarChartDataSet", "drawHighlightCircleEnabled"]
+- ["P6Charts35ILineScatterCandleRadarChartDataSet", "highlightCircleFillColor"]
+- ["P6Charts35ILineScatterCandleRadarChartDataSet", "highlightCircleInnerRadius"]
+- ["P6Charts35ILineScatterCandleRadarChartDataSet", "highlightCircleOuterRadius"]
+- ["P6Charts35ILineScatterCandleRadarChartDataSet", "highlightCircleStrokeAlpha"]
+- ["P6Charts35ILineScatterCandleRadarChartDataSet", "highlightCircleStrokeColor"]
+- ["P6Charts35ILineScatterCandleRadarChartDataSet", "highlightCircleStrokeWidth"]
+- !private ["P6Charts35ILineScatterCandleRadarChartDataSet", "init"]
+- ["P6Charts35ILineScatterCandleRadarChartDataSet", "isDrawHighlightCircleEnabled"]
+- !private ["P6Charts35ILineScatterCandleRadarChartDataSet", "valueFont"]
+- ["P6Charts35ILineScatterCandleRadarChartDataSet", ""]
+- ["P6Charts18IRadarChartDataSet", "NSUIColor"]
+- !private ["P6Charts18IRadarChartDataSet", "NSUIFont"]
+- !private ["P6Charts18IRadarChartDataSet", "RadarChartDataEntry"]
+- !private ["P6Charts18IRadarChartDataSet", "_yValueField"]
+- ["P6Charts18IRadarChartDataSet", "drawHighlightCircleEnabled"]
+- ["P6Charts18IRadarChartDataSet", "highlightCircleFillColor"]
+- ["P6Charts18IRadarChartDataSet", "highlightCircleInnerRadius"]
+- ["P6Charts18IRadarChartDataSet", "highlightCircleOuterRadius"]
+- ["P6Charts18IRadarChartDataSet", "highlightCircleStrokeAlpha"]
+- ["P6Charts18IRadarChartDataSet", "highlightCircleStrokeColor"]
+- ["P6Charts18IRadarChartDataSet", "highlightCircleStrokeWidth"]
+- !private ["P6Charts18IRadarChartDataSet", "init"]
+- ["P6Charts18IRadarChartDataSet", "isDrawHighlightCircleEnabled"]
+- !private ["P6Charts18IRadarChartDataSet", "valueFont"]
+- ["P6Charts18IRadarChartDataSet", ""]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "white"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "systemFont"]
+- ["PSo9NSCopying", "white"]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "CGFloat"]
+- ["CSo8NSObject", "ChartDataEntry"]
+- ["CSo8NSObject", "Double"]
+- ["CSo8NSObject", "NSUIColor"]
+- !private ["CSo8NSObject", "NSUIFont"]
+- ["CSo8NSObject", "RLMObject"]
+- ["CSo8NSObject", "RLMRealm"]
+- ["CSo8NSObject", "RLMResults"]
+- !private ["CSo8NSObject", "RadarChartDataEntry"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "_yValueField"]
+- ["CSo8NSObject", "buildEntryFromResultObject"]
+- ["CSo8NSObject", "drawHighlightCircleEnabled"]
+- ["CSo8NSObject", "highlightCircleFillColor"]
+- ["CSo8NSObject", "highlightCircleInnerRadius"]
+- ["CSo8NSObject", "highlightCircleOuterRadius"]
+- ["CSo8NSObject", "highlightCircleStrokeAlpha"]
+- ["CSo8NSObject", "highlightCircleStrokeColor"]
+- ["CSo8NSObject", "highlightCircleStrokeWidth"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "initialize"]
+- ["CSo8NSObject", "isDrawHighlightCircleEnabled"]
+- !private ["CSo8NSObject", "subscript"]
+- !private ["CSo8NSObject", "systemFont"]
+- !private ["CSo8NSObject", "valueFont"]
+- ["CSo8NSObject", "white"]
+- ["PSo16NSObjectProtocol", "NSUIColor"]
+- !private ["PSo16NSObjectProtocol", "NSUIFont"]
+- !private ["PSo16NSObjectProtocol", "RadarChartDataEntry"]
+- !private ["PSo16NSObjectProtocol", "_yValueField"]
+- ["PSo16NSObjectProtocol", "drawHighlightCircleEnabled"]
+- ["PSo16NSObjectProtocol", "highlightCircleFillColor"]
+- ["PSo16NSObjectProtocol", "highlightCircleInnerRadius"]
+- ["PSo16NSObjectProtocol", "highlightCircleOuterRadius"]
+- ["PSo16NSObjectProtocol", "highlightCircleStrokeAlpha"]
+- ["PSo16NSObjectProtocol", "highlightCircleStrokeColor"]
+- ["PSo16NSObjectProtocol", "highlightCircleStrokeWidth"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "isDrawHighlightCircleEnabled"]
+- !private ["PSo16NSObjectProtocol", "subscript"]
+- !private ["PSo16NSObjectProtocol", "systemFont"]
+- !private ["PSo16NSObjectProtocol", "valueFont"]
+- ["PSo16NSObjectProtocol", "white"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- ["PSo14NSSecureCoding", "white"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo9RLMObject", "subscript"]
+- !private ["CSo13RLMObjectBase", "subscript"]
+- !private ["C6Charts19RadarChartDataEntry", "init"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "Bool"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "CGFloat"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "ChartDataEntry"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "Double"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "NSUIColor"]
+- !private ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "NSUIFont"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "RLMObject"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "RLMRealm"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "RLMResults"]
+- !private ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "RadarChartDataEntry"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "String"]
+- !private ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "_yValueField"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "buildEntryFromResultObject"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "drawHighlightCircleEnabled"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "highlightCircleFillColor"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "highlightCircleInnerRadius"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "highlightCircleOuterRadius"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "highlightCircleStrokeAlpha"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "highlightCircleStrokeColor"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "highlightCircleStrokeWidth"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "init"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "initialize"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "isDrawHighlightCircleEnabled"]
+- !private ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "valueFont"]
+- ["C6Charts16RealmBaseDataSet", "Bool"]
+- ["C6Charts16RealmBaseDataSet", "CGFloat"]
+- ["C6Charts16RealmBaseDataSet", "ChartDataEntry"]
+- ["C6Charts16RealmBaseDataSet", "Double"]
+- ["C6Charts16RealmBaseDataSet", "NSUIColor"]
+- !private ["C6Charts16RealmBaseDataSet", "NSUIFont"]
+- ["C6Charts16RealmBaseDataSet", "RLMObject"]
+- ["C6Charts16RealmBaseDataSet", "RLMRealm"]
+- ["C6Charts16RealmBaseDataSet", "RLMResults"]
+- !private ["C6Charts16RealmBaseDataSet", "RadarChartDataEntry"]
+- ["C6Charts16RealmBaseDataSet", "String"]
+- !private ["C6Charts16RealmBaseDataSet", "_yValueField"]
+- ["C6Charts16RealmBaseDataSet", "buildEntryFromResultObject"]
+- ["C6Charts16RealmBaseDataSet", "drawHighlightCircleEnabled"]
+- ["C6Charts16RealmBaseDataSet", "highlightCircleFillColor"]
+- ["C6Charts16RealmBaseDataSet", "highlightCircleInnerRadius"]
+- ["C6Charts16RealmBaseDataSet", "highlightCircleOuterRadius"]
+- ["C6Charts16RealmBaseDataSet", "highlightCircleStrokeAlpha"]
+- ["C6Charts16RealmBaseDataSet", "highlightCircleStrokeColor"]
+- ["C6Charts16RealmBaseDataSet", "highlightCircleStrokeWidth"]
+- ["C6Charts16RealmBaseDataSet", "init"]
+- ["C6Charts16RealmBaseDataSet", "initialize"]
+- ["C6Charts16RealmBaseDataSet", "isDrawHighlightCircleEnabled"]
+- !private ["C6Charts16RealmBaseDataSet", "valueFont"]
+- ["C6Charts21RealmLineRadarDataSet", "Bool"]
+- ["C6Charts21RealmLineRadarDataSet", "CGFloat"]
+- ["C6Charts21RealmLineRadarDataSet", "ChartDataEntry"]
+- ["C6Charts21RealmLineRadarDataSet", "Double"]
+- ["C6Charts21RealmLineRadarDataSet", "NSUIColor"]
+- !private ["C6Charts21RealmLineRadarDataSet", "NSUIFont"]
+- ["C6Charts21RealmLineRadarDataSet", "RLMObject"]
+- ["C6Charts21RealmLineRadarDataSet", "RLMRealm"]
+- ["C6Charts21RealmLineRadarDataSet", "RLMResults"]
+- !private ["C6Charts21RealmLineRadarDataSet", "RadarChartDataEntry"]
+- ["C6Charts21RealmLineRadarDataSet", "String"]
+- !private ["C6Charts21RealmLineRadarDataSet", "_yValueField"]
+- ["C6Charts21RealmLineRadarDataSet", "buildEntryFromResultObject"]
+- ["C6Charts21RealmLineRadarDataSet", "drawHighlightCircleEnabled"]
+- ["C6Charts21RealmLineRadarDataSet", "highlightCircleFillColor"]
+- ["C6Charts21RealmLineRadarDataSet", "highlightCircleInnerRadius"]
+- ["C6Charts21RealmLineRadarDataSet", "highlightCircleOuterRadius"]
+- ["C6Charts21RealmLineRadarDataSet", "highlightCircleStrokeAlpha"]
+- ["C6Charts21RealmLineRadarDataSet", "highlightCircleStrokeColor"]
+- ["C6Charts21RealmLineRadarDataSet", "highlightCircleStrokeWidth"]
+- ["C6Charts21RealmLineRadarDataSet", "init"]
+- ["C6Charts21RealmLineRadarDataSet", "initialize"]
+- ["C6Charts21RealmLineRadarDataSet", "isDrawHighlightCircleEnabled"]
+- !private ["C6Charts21RealmLineRadarDataSet", "valueFont"]
+- ["C6Charts21RealmLineRadarDataSet", ""]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "Bool"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "CGFloat"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "ChartDataEntry"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "Double"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "NSUIColor"]
+- !private ["C6Charts34RealmLineScatterCandleRadarDataSet", "NSUIFont"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "RLMObject"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "RLMRealm"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "RLMResults"]
+- !private ["C6Charts34RealmLineScatterCandleRadarDataSet", "RadarChartDataEntry"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "String"]
+- !private ["C6Charts34RealmLineScatterCandleRadarDataSet", "_yValueField"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "buildEntryFromResultObject"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "drawHighlightCircleEnabled"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "highlightCircleFillColor"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "highlightCircleInnerRadius"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "highlightCircleOuterRadius"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "highlightCircleStrokeAlpha"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "highlightCircleStrokeColor"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "highlightCircleStrokeWidth"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "init"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "initialize"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "isDrawHighlightCircleEnabled"]
+- !private ["C6Charts34RealmLineScatterCandleRadarDataSet", "valueFont"]
+- ["C6Charts17RealmRadarDataSet", "Bool"]
+- ["C6Charts17RealmRadarDataSet", "CGFloat"]
+- ["C6Charts17RealmRadarDataSet", "ChartDataEntry"]
+- ["C6Charts17RealmRadarDataSet", "Double"]
+- ["C6Charts17RealmRadarDataSet", "NSUIColor"]
+- !private ["C6Charts17RealmRadarDataSet", "NSUIFont"]
+- ["C6Charts17RealmRadarDataSet", "RLMObject"]
+- ["C6Charts17RealmRadarDataSet", "RLMRealm"]
+- ["C6Charts17RealmRadarDataSet", "RLMResults"]
+- !private ["C6Charts17RealmRadarDataSet", "RadarChartDataEntry"]
+- ["C6Charts17RealmRadarDataSet", "String"]
+- !private ["C6Charts17RealmRadarDataSet", "_yValueField"]
+- ["C6Charts17RealmRadarDataSet", "buildEntryFromResultObject"]
+- ["C6Charts17RealmRadarDataSet", "deinit"]
+- ["C6Charts17RealmRadarDataSet", "drawHighlightCircleEnabled"]
+- ["C6Charts17RealmRadarDataSet", "highlightCircleFillColor"]
+- ["C6Charts17RealmRadarDataSet", "highlightCircleInnerRadius"]
+- ["C6Charts17RealmRadarDataSet", "highlightCircleOuterRadius"]
+- ["C6Charts17RealmRadarDataSet", "highlightCircleStrokeAlpha"]
+- ["C6Charts17RealmRadarDataSet", "highlightCircleStrokeColor"]
+- ["C6Charts17RealmRadarDataSet", "highlightCircleStrokeWidth"]
+- ["C6Charts17RealmRadarDataSet", "init"]
+- ["C6Charts17RealmRadarDataSet", "initialize"]
+- ["C6Charts17RealmRadarDataSet", "isDrawHighlightCircleEnabled"]
+- !private ["C6Charts17RealmRadarDataSet", "valueFont"]
+- !private ["Vs12StaticString", "init"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- ["CSo7UIColor", "white"]
+- !private ["CSo6UIFont", "systemFont"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- ["Ps26_ExpressibleByColorLiteral", "white"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- ["Ps9_Hashable", "NSUIColor"]
+- !private ["Ps9_Hashable", "NSUIFont"]
+- !private ["Ps9_Hashable", "RadarChartDataEntry"]
+- !private ["Ps9_Hashable", "_yValueField"]
+- ["Ps9_Hashable", "drawHighlightCircleEnabled"]
+- ["Ps9_Hashable", "highlightCircleFillColor"]
+- ["Ps9_Hashable", "highlightCircleInnerRadius"]
+- ["Ps9_Hashable", "highlightCircleOuterRadius"]
+- ["Ps9_Hashable", "highlightCircleStrokeAlpha"]
+- ["Ps9_Hashable", "highlightCircleStrokeColor"]
+- ["Ps9_Hashable", "highlightCircleStrokeWidth"]
+- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "isDrawHighlightCircleEnabled"]
+- !private ["Ps9_Hashable", "subscript"]
+- !private ["Ps9_Hashable", "systemFont"]
+- !private ["Ps9_Hashable", "valueFont"]
+- ["Ps9_Hashable", "white"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps7CVarArg"
+- "C6Charts16ChartBaseDataSet"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- "P6Charts39IBarLineScatterCandleBubbleChartDataSet"
+- "P6Charts13IChartDataSet"
+- "P6Charts22ILineRadarChartDataSet"
+- "P6Charts35ILineScatterCandleRadarChartDataSet"
+- "P6Charts18IRadarChartDataSet"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "CSo9RLMObject"
+- !private "CSo13RLMObjectBase"
+- !private "C6Charts19RadarChartDataEntry"
+- "C6Charts38RealmBarLineScatterCandleBubbleDataSet"
+- "C6Charts16RealmBaseDataSet"
+- "C6Charts21RealmLineRadarDataSet"
+- "C6Charts34RealmLineScatterCandleRadarDataSet"
+- "C6Charts17RealmRadarDataSet"
+- !private "Vs12StaticString"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- "CSo7UIColor"
+- !private "CSo6UIFont"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps26_ExpressibleByColorLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Target Support Files/Charts/Charts-umbrella.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMOptionalBase.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMListBase.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSchema.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMResults.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMConstants.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMProperty.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObject.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMMigration.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMCollection.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMArray.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/Realm.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Pods.build/Debug-iphoneos/Realm.build/module.modulemap"
+interface-hash: "2eb5d7dc8a291d8a8e5ff685654f8845"

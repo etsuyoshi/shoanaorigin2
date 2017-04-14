@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Charts-Swift.h</key>
 		<data>
-		Cccg83MvhQu+93i3F7wFbKCqYBI=
+		zBbHaBHCZUmFvGag0tBE/i1PVpY=
 		</data>
 		<key>Headers/Charts-umbrella.h</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		WMA/0UmdoRYB/FIhMwf8uDGmqEM=
+		yiYLR+r2GDZHGOy7MwoRq4pfabQ=
 		</data>
 		<key>Modules/Charts.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		tOySnSWIu15T+mlnYJWhxlO8zyg=
+		5y4VMfihG+eq9pJ0mhYs2hr4Nsg=
 		</data>
 		<key>Modules/Charts.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		m3bUW3xZK1CzuHzpbETkZ6yTzM4=
+		XoDuC5s11ZgBqvlwBOH6cTQbofI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -35,11 +35,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Cccg83MvhQu+93i3F7wFbKCqYBI=
+			zBbHaBHCZUmFvGag0tBE/i1PVpY=
 			</data>
 			<key>hash2</key>
 			<data>
-			LQa5a6Ahv+Eo1Xr7lYGk8DjWnkTxvRSgaR2gVXUjTWI=
+			/pvSFtYpQnHHEzCr7tTpSe6w/M/TdDFOJhdzWHPx/wk=
 			</data>
 		</dict>
 		<key>Headers/Charts-umbrella.h</key>
@@ -57,22 +57,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tOySnSWIu15T+mlnYJWhxlO8zyg=
+			5y4VMfihG+eq9pJ0mhYs2hr4Nsg=
 			</data>
 			<key>hash2</key>
 			<data>
-			nwkCfx+DSunR5S4pIp16AzigibotzKc/YRkFJKs3XtA=
+			2HbZvZwR7xJp2mQcOOGcwc+dVTeL1lceftjyWPHd9s8=
 			</data>
 		</dict>
 		<key>Modules/Charts.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			m3bUW3xZK1CzuHzpbETkZ6yTzM4=
+			XoDuC5s11ZgBqvlwBOH6cTQbofI=
 			</data>
 			<key>hash2</key>
 			<data>
-			YzZgej9MuZr+Hg5LqO/eNgYPkE/CD85+te9pmIamtJM=
+			oB985MzY23DGRp088fiDi/RLjX7rqmblb6EHbECvccg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

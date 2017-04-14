@@ -9,20 +9,20 @@ provides-dynamic-lookup:
 - "initialize"
 - "scatterData"
 depends-top-level:
-- "ScatterChartView"
-- "ScatterChartData"
 - "AssignmentPrecedence"
-- "CastingPrecedence"
 - "BarLineChartViewBase"
+- "CastingPrecedence"
+- "ScatterChartData"
 - "ScatterChartDataProvider"
 - !private "ScatterChartRenderer"
+- "ScatterChartView"
 depends-member:
 - !private ["P6Charts16AnimatorDelegate", "ScatterChartRenderer"]
 - !private ["P6Charts16AnimatorDelegate", "_animator"]
 - !private ["P6Charts16AnimatorDelegate", "_data"]
 - !private ["P6Charts16AnimatorDelegate", "_viewPortHandler"]
 - !private ["P6Charts16AnimatorDelegate", "init"]
-- ["P6Charts16AnimatorDelegate", "initialize"]
+- !private ["P6Charts16AnimatorDelegate", "initialize"]
 - !private ["P6Charts16AnimatorDelegate", "renderer"]
 - ["P6Charts16AnimatorDelegate", "scatterData"]
 - ["P6Charts16AnimatorDelegate", ""]
@@ -31,7 +31,7 @@ depends-member:
 - !private ["Ps9AnyObject", "_data"]
 - !private ["Ps9AnyObject", "_viewPortHandler"]
 - !private ["Ps9AnyObject", "init"]
-- ["Ps9AnyObject", "initialize"]
+- !private ["Ps9AnyObject", "initialize"]
 - !private ["Ps9AnyObject", "renderer"]
 - ["Ps9AnyObject", "scatterData"]
 - ["Ps9AnyObject", ""]
@@ -40,7 +40,6 @@ depends-member:
 - !private ["C6Charts20BarLineChartViewBase", "_animator"]
 - !private ["C6Charts20BarLineChartViewBase", "_data"]
 - !private ["C6Charts20BarLineChartViewBase", "_viewPortHandler"]
-- ["C6Charts20BarLineChartViewBase", "deinit"]
 - ["C6Charts20BarLineChartViewBase", "init"]
 - ["C6Charts20BarLineChartViewBase", "initialize"]
 - !private ["C6Charts20BarLineChartViewBase", "renderer"]
@@ -51,17 +50,16 @@ depends-member:
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "_data"]
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "_viewPortHandler"]
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "init"]
-- ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "initialize"]
+- !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "initialize"]
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "renderer"]
 - ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "scatterData"]
 - ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", ""]
-- ["VSC6CGRect", "deinit"]
 - !private ["Ps7CVarArg", "ScatterChartRenderer"]
 - !private ["Ps7CVarArg", "_animator"]
 - !private ["Ps7CVarArg", "_data"]
 - !private ["Ps7CVarArg", "_viewPortHandler"]
 - !private ["Ps7CVarArg", "init"]
-- ["Ps7CVarArg", "initialize"]
+- !private ["Ps7CVarArg", "initialize"]
 - !private ["Ps7CVarArg", "renderer"]
 - ["Ps7CVarArg", "scatterData"]
 - ["Ps7CVarArg", ""]
@@ -70,7 +68,7 @@ depends-member:
 - !private ["P6Charts17ChartDataProvider", "_data"]
 - !private ["P6Charts17ChartDataProvider", "_viewPortHandler"]
 - !private ["P6Charts17ChartDataProvider", "init"]
-- ["P6Charts17ChartDataProvider", "initialize"]
+- !private ["P6Charts17ChartDataProvider", "initialize"]
 - !private ["P6Charts17ChartDataProvider", "renderer"]
 - ["P6Charts17ChartDataProvider", "scatterData"]
 - ["P6Charts17ChartDataProvider", ""]
@@ -88,7 +86,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "_data"]
 - !private ["Ps28CustomDebugStringConvertible", "_viewPortHandler"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
-- ["Ps28CustomDebugStringConvertible", "initialize"]
+- !private ["Ps28CustomDebugStringConvertible", "initialize"]
 - !private ["Ps28CustomDebugStringConvertible", "renderer"]
 - ["Ps28CustomDebugStringConvertible", "scatterData"]
 - ["Ps28CustomDebugStringConvertible", ""]
@@ -97,7 +95,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "_data"]
 - !private ["Ps23CustomStringConvertible", "_viewPortHandler"]
 - !private ["Ps23CustomStringConvertible", "init"]
-- ["Ps23CustomStringConvertible", "initialize"]
+- !private ["Ps23CustomStringConvertible", "initialize"]
 - !private ["Ps23CustomStringConvertible", "renderer"]
 - ["Ps23CustomStringConvertible", "scatterData"]
 - ["Ps23CustomStringConvertible", ""]
@@ -106,7 +104,7 @@ depends-member:
 - !private ["Ps9Equatable", "_data"]
 - !private ["Ps9Equatable", "_viewPortHandler"]
 - !private ["Ps9Equatable", "init"]
-- ["Ps9Equatable", "initialize"]
+- !private ["Ps9Equatable", "initialize"]
 - !private ["Ps9Equatable", "renderer"]
 - ["Ps9Equatable", "scatterData"]
 - ["Ps9Equatable", ""]
@@ -115,7 +113,7 @@ depends-member:
 - !private ["Ps8Hashable", "_data"]
 - !private ["Ps8Hashable", "_viewPortHandler"]
 - !private ["Ps8Hashable", "init"]
-- ["Ps8Hashable", "initialize"]
+- !private ["Ps8Hashable", "initialize"]
 - !private ["Ps8Hashable", "renderer"]
 - ["Ps8Hashable", "scatterData"]
 - ["Ps8Hashable", ""]
@@ -124,7 +122,7 @@ depends-member:
 - !private ["PSo15NSAccessibility", "_data"]
 - !private ["PSo15NSAccessibility", "_viewPortHandler"]
 - !private ["PSo15NSAccessibility", "init"]
-- ["PSo15NSAccessibility", "initialize"]
+- !private ["PSo15NSAccessibility", "initialize"]
 - !private ["PSo15NSAccessibility", "renderer"]
 - ["PSo15NSAccessibility", "scatterData"]
 - ["PSo15NSAccessibility", ""]
@@ -133,7 +131,7 @@ depends-member:
 - !private ["PSo30NSAccessibilityElementProtocol", "_data"]
 - !private ["PSo30NSAccessibilityElementProtocol", "_viewPortHandler"]
 - !private ["PSo30NSAccessibilityElementProtocol", "init"]
-- ["PSo30NSAccessibilityElementProtocol", "initialize"]
+- !private ["PSo30NSAccessibilityElementProtocol", "initialize"]
 - !private ["PSo30NSAccessibilityElementProtocol", "renderer"]
 - ["PSo30NSAccessibilityElementProtocol", "scatterData"]
 - ["PSo30NSAccessibilityElementProtocol", ""]
@@ -142,7 +140,7 @@ depends-member:
 - !private ["PSo29NSAnimatablePropertyContainer", "_data"]
 - !private ["PSo29NSAnimatablePropertyContainer", "_viewPortHandler"]
 - !private ["PSo29NSAnimatablePropertyContainer", "init"]
-- ["PSo29NSAnimatablePropertyContainer", "initialize"]
+- !private ["PSo29NSAnimatablePropertyContainer", "initialize"]
 - !private ["PSo29NSAnimatablePropertyContainer", "renderer"]
 - ["PSo29NSAnimatablePropertyContainer", "scatterData"]
 - ["PSo29NSAnimatablePropertyContainer", ""]
@@ -151,17 +149,16 @@ depends-member:
 - !private ["PSo25NSAppearanceCustomization", "_data"]
 - !private ["PSo25NSAppearanceCustomization", "_viewPortHandler"]
 - !private ["PSo25NSAppearanceCustomization", "init"]
-- ["PSo25NSAppearanceCustomization", "initialize"]
+- !private ["PSo25NSAppearanceCustomization", "initialize"]
 - !private ["PSo25NSAppearanceCustomization", "renderer"]
 - ["PSo25NSAppearanceCustomization", "scatterData"]
 - ["PSo25NSAppearanceCustomization", ""]
-- ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "ScatterChartRenderer"]
 - !private ["PSo8NSCoding", "_animator"]
 - !private ["PSo8NSCoding", "_data"]
 - !private ["PSo8NSCoding", "_viewPortHandler"]
 - !private ["PSo8NSCoding", "init"]
-- ["PSo8NSCoding", "initialize"]
+- !private ["PSo8NSCoding", "initialize"]
 - !private ["PSo8NSCoding", "renderer"]
 - ["PSo8NSCoding", "scatterData"]
 - ["PSo8NSCoding", ""]
@@ -170,7 +167,7 @@ depends-member:
 - !private ["PSo21NSDraggingDestination", "_data"]
 - !private ["PSo21NSDraggingDestination", "_viewPortHandler"]
 - !private ["PSo21NSDraggingDestination", "init"]
-- ["PSo21NSDraggingDestination", "initialize"]
+- !private ["PSo21NSDraggingDestination", "initialize"]
 - !private ["PSo21NSDraggingDestination", "renderer"]
 - ["PSo21NSDraggingDestination", "scatterData"]
 - ["PSo21NSDraggingDestination", ""]
@@ -179,7 +176,7 @@ depends-member:
 - !private ["PSo27NSGestureRecognizerDelegate", "_data"]
 - !private ["PSo27NSGestureRecognizerDelegate", "_viewPortHandler"]
 - !private ["PSo27NSGestureRecognizerDelegate", "init"]
-- ["PSo27NSGestureRecognizerDelegate", "initialize"]
+- !private ["PSo27NSGestureRecognizerDelegate", "initialize"]
 - !private ["PSo27NSGestureRecognizerDelegate", "renderer"]
 - ["PSo27NSGestureRecognizerDelegate", "scatterData"]
 - ["PSo27NSGestureRecognizerDelegate", ""]
@@ -197,7 +194,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "_data"]
 - !private ["PSo16NSObjectProtocol", "_viewPortHandler"]
 - !private ["PSo16NSObjectProtocol", "init"]
-- ["PSo16NSObjectProtocol", "initialize"]
+- !private ["PSo16NSObjectProtocol", "initialize"]
 - !private ["PSo16NSObjectProtocol", "renderer"]
 - ["PSo16NSObjectProtocol", "scatterData"]
 - ["PSo16NSObjectProtocol", ""]
@@ -215,7 +212,7 @@ depends-member:
 - !private ["PSo18NSTouchBarProvider", "_data"]
 - !private ["PSo18NSTouchBarProvider", "_viewPortHandler"]
 - !private ["PSo18NSTouchBarProvider", "init"]
-- ["PSo18NSTouchBarProvider", "initialize"]
+- !private ["PSo18NSTouchBarProvider", "initialize"]
 - !private ["PSo18NSTouchBarProvider", "renderer"]
 - ["PSo18NSTouchBarProvider", "scatterData"]
 - ["PSo18NSTouchBarProvider", ""]
@@ -233,7 +230,7 @@ depends-member:
 - !private ["PSo33NSUserInterfaceItemIdentification", "_data"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "_viewPortHandler"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "init"]
-- ["PSo33NSUserInterfaceItemIdentification", "initialize"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "initialize"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "renderer"]
 - ["PSo33NSUserInterfaceItemIdentification", "scatterData"]
 - ["PSo33NSUserInterfaceItemIdentification", ""]
@@ -246,8 +243,6 @@ depends-member:
 - ["CSo6NSView", "initialize"]
 - !private ["CSo6NSView", "renderer"]
 - ["CSo6NSView", "scatterData"]
-- ["Sq", "deinit"]
-- ["C6Charts16ScatterChartData", "deinit"]
 - !private ["P6Charts24ScatterChartDataProvider", "ScatterChartRenderer"]
 - !private ["P6Charts24ScatterChartDataProvider", "_animator"]
 - !private ["P6Charts24ScatterChartDataProvider", "_data"]
@@ -255,7 +250,6 @@ depends-member:
 - !private ["P6Charts24ScatterChartDataProvider", "renderer"]
 - ["P6Charts24ScatterChartDataProvider", "scatterData"]
 - ["P6Charts24ScatterChartDataProvider", ""]
-- ["C6Charts20ScatterChartRenderer", "deinit"]
 - !private ["C6Charts20ScatterChartRenderer", "init"]
 - ["C6Charts16ScatterChartView", "ScatterChartData"]
 - !private ["C6Charts16ScatterChartView", "ScatterChartRenderer"]
@@ -272,7 +266,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "_data"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "_viewPortHandler"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "initialize"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "initialize"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "renderer"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "scatterData"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
@@ -281,7 +275,7 @@ depends-member:
 - !private ["Ps9_Hashable", "_data"]
 - !private ["Ps9_Hashable", "_viewPortHandler"]
 - !private ["Ps9_Hashable", "init"]
-- ["Ps9_Hashable", "initialize"]
+- !private ["Ps9_Hashable", "initialize"]
 - !private ["Ps9_Hashable", "renderer"]
 - ["Ps9_Hashable", "scatterData"]
 - ["Ps9_Hashable", ""]
@@ -290,7 +284,6 @@ depends-nominal:
 - "Ps9AnyObject"
 - "C6Charts20BarLineChartViewBase"
 - "P6Charts43BarLineScatterCandleBubbleChartDataProvider"
-- "VSC6CGRect"
 - "Ps7CVarArg"
 - "P6Charts17ChartDataProvider"
 - "C6Charts13ChartViewBase"
@@ -302,7 +295,6 @@ depends-nominal:
 - "PSo30NSAccessibilityElementProtocol"
 - "PSo29NSAnimatablePropertyContainer"
 - "PSo25NSAppearanceCustomization"
-- "CSo7NSCoder"
 - "PSo8NSCoding"
 - "PSo21NSDraggingDestination"
 - "PSo27NSGestureRecognizerDelegate"
@@ -313,16 +305,23 @@ depends-nominal:
 - "C6Charts8NSUIView"
 - "PSo33NSUserInterfaceItemIdentification"
 - "CSo6NSView"
-- "Sq"
-- "C6Charts16ScatterChartData"
 - "P6Charts24ScatterChartDataProvider"
-- "C6Charts20ScatterChartRenderer"
+- !private "C6Charts20ScatterChartRenderer"
 - "C6Charts16ScatterChartView"
 - "Ps37_DefaultCustomPlaygroundQuickLookable"
 - "Ps9_Hashable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.apinotesc"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/Charts/Source/Supporting Files/Charts.h"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Charts.build/Debug/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
@@ -337,4 +336,5 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuickLook.apinotesc"
 interface-hash: "688f11baeb641fb11fa3d183a60caf27"

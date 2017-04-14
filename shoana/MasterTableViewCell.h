@@ -10,6 +10,7 @@
 
 @interface MasterTableViewCell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UIImageView *img_back;
+@property (strong, nonatomic) IBOutlet UIView *viewBlur;
 @property (weak, nonatomic) IBOutlet UILabel *lbl_sector;
 @property (weak, nonatomic) IBOutlet UILabel *lbl_name;
 @property (weak, nonatomic) IBOutlet UILabel *lbl_seitouritu;

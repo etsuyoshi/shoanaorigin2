@@ -25,4 +25,6 @@
 -(NSArray *)getAnswers;
 -(int)getCorrect:(int)quizNo;
 -(NSArray *)getCorrects;
+
+-(int)getInCorrectWithoutNo:(int)withoutNo withThreashold:(int)threashold;
 @end

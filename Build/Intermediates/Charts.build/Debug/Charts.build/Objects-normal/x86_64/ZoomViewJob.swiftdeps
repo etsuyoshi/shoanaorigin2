@@ -6,28 +6,28 @@ provides-nominal:
 provides-member:
 - ["C6Charts11ZoomViewJob", ""]
 provides-dynamic-lookup:
-- "doJob"
 - "axisDependency"
-- "scaleY"
+- "doJob"
 - "scaleX"
+- "scaleY"
 depends-top-level:
-- !private "/"
-- !private "BooleanLiteralType"
-- "Transformer"
-- "ZoomViewJob"
-- "YAxis"
-- !private "StringLiteralType"
-- !private "BarLineChartViewBase"
-- "AssignmentPrecedence"
-- "Double"
-- !private "-"
-- "ViewPortJob"
-- "CastingPrecedence"
-- !private "CGPoint"
-- "ChartViewBase"
-- "ViewPortHandler"
-- "CGFloat"
 - !private "+"
+- !private "-"
+- !private "/"
+- "AssignmentPrecedence"
+- !private "BarLineChartViewBase"
+- !private "BooleanLiteralType"
+- "CGFloat"
+- !private "CGPoint"
+- "CastingPrecedence"
+- "ChartViewBase"
+- "Double"
+- !private "StringLiteralType"
+- "Transformer"
+- "ViewPortHandler"
+- "ViewPortJob"
+- "YAxis"
+- "ZoomViewJob"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["P6Charts16AnimatorDelegate", "calculateOffsets"]
@@ -39,16 +39,15 @@ depends-member:
 - !private ["Ps9AnyObject", "CGPoint"]
 - !private ["Ps9AnyObject", "Double"]
 - ["Ps9AnyObject", "YAxis"]
-- ["Ps9AnyObject", "axisDependency"]
+- !private ["Ps9AnyObject", "axisDependency"]
 - !private ["Ps9AnyObject", "axisRange"]
 - !private ["Ps9AnyObject", "calculateOffsets"]
-- ["Ps9AnyObject", "doJob"]
 - !private ["Ps9AnyObject", "getAxis"]
-- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "pointValueToPixel"]
 - !private ["Ps9AnyObject", "refresh"]
-- ["Ps9AnyObject", "scaleX"]
-- ["Ps9AnyObject", "scaleY"]
+- !private ["Ps9AnyObject", "scaleX"]
+- !private ["Ps9AnyObject", "scaleY"]
 - !private ["Ps9AnyObject", "setNeedsDisplay"]
 - !private ["Ps9AnyObject", "setZoom"]
 - !private ["Ps9AnyObject", "transformer"]
@@ -61,37 +60,30 @@ depends-member:
 - ["Ps9AnyObject", ""]
 - ["C6Charts8AxisBase", "AxisDependency"]
 - !private ["C6Charts8AxisBase", "axisRange"]
-- ["OC6Charts5YAxis14AxisDependency", "deinit"]
 - ["OC6Charts5YAxis14AxisDependency", "left"]
 - !private ["C6Charts20BarLineChartViewBase", "calculateOffsets"]
-- ["C6Charts20BarLineChartViewBase", "deinit"]
 - !private ["C6Charts20BarLineChartViewBase", "getAxis"]
 - !private ["C6Charts20BarLineChartViewBase", "xAxis"]
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "calculateOffsets"]
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "getAxis"]
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "xAxis"]
 - !private ["Ps19BinaryFloatingPoint", "init"]
-- ["Sb", "deinit"]
-- ["VSC17CGAffineTransform", "deinit"]
-- ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["V12CoreGraphics7CGFloat", "init"]
-- ["VSC7CGPoint", "deinit"]
 - !private ["VSC7CGPoint", "init"]
 - ["Ps7CVarArg", "AxisDependency"]
 - !private ["Ps7CVarArg", "CGFloat"]
 - !private ["Ps7CVarArg", "CGPoint"]
 - !private ["Ps7CVarArg", "Double"]
 - ["Ps7CVarArg", "YAxis"]
-- ["Ps7CVarArg", "axisDependency"]
+- !private ["Ps7CVarArg", "axisDependency"]
 - !private ["Ps7CVarArg", "axisRange"]
 - !private ["Ps7CVarArg", "calculateOffsets"]
-- ["Ps7CVarArg", "doJob"]
 - !private ["Ps7CVarArg", "getAxis"]
-- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "pointValueToPixel"]
 - !private ["Ps7CVarArg", "refresh"]
-- ["Ps7CVarArg", "scaleX"]
-- ["Ps7CVarArg", "scaleY"]
+- !private ["Ps7CVarArg", "scaleX"]
+- !private ["Ps7CVarArg", "scaleY"]
 - !private ["Ps7CVarArg", "setNeedsDisplay"]
 - !private ["Ps7CVarArg", "setZoom"]
 - !private ["Ps7CVarArg", "transformer"]
@@ -107,7 +99,6 @@ depends-member:
 - !private ["P6Charts17ChartDataProvider", "setNeedsDisplay"]
 - !private ["P6Charts17ChartDataProvider", "xAxis"]
 - !private ["C6Charts13ChartViewBase", "calculateOffsets"]
-- ["C6Charts13ChartViewBase", "deinit"]
 - !private ["C6Charts13ChartViewBase", "getAxis"]
 - !private ["C6Charts13ChartViewBase", "setNeedsDisplay"]
 - !private ["C6Charts13ChartViewBase", "xAxis"]
@@ -119,16 +110,15 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "CGPoint"]
 - !private ["Ps28CustomDebugStringConvertible", "Double"]
 - ["Ps28CustomDebugStringConvertible", "YAxis"]
-- ["Ps28CustomDebugStringConvertible", "axisDependency"]
+- !private ["Ps28CustomDebugStringConvertible", "axisDependency"]
 - !private ["Ps28CustomDebugStringConvertible", "axisRange"]
 - !private ["Ps28CustomDebugStringConvertible", "calculateOffsets"]
-- ["Ps28CustomDebugStringConvertible", "doJob"]
 - !private ["Ps28CustomDebugStringConvertible", "getAxis"]
-- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "pointValueToPixel"]
 - !private ["Ps28CustomDebugStringConvertible", "refresh"]
-- ["Ps28CustomDebugStringConvertible", "scaleX"]
-- ["Ps28CustomDebugStringConvertible", "scaleY"]
+- !private ["Ps28CustomDebugStringConvertible", "scaleX"]
+- !private ["Ps28CustomDebugStringConvertible", "scaleY"]
 - !private ["Ps28CustomDebugStringConvertible", "setNeedsDisplay"]
 - !private ["Ps28CustomDebugStringConvertible", "setZoom"]
 - !private ["Ps28CustomDebugStringConvertible", "transformer"]
@@ -146,16 +136,15 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "CGPoint"]
 - !private ["Ps23CustomStringConvertible", "Double"]
 - ["Ps23CustomStringConvertible", "YAxis"]
-- ["Ps23CustomStringConvertible", "axisDependency"]
+- !private ["Ps23CustomStringConvertible", "axisDependency"]
 - !private ["Ps23CustomStringConvertible", "axisRange"]
 - !private ["Ps23CustomStringConvertible", "calculateOffsets"]
-- ["Ps23CustomStringConvertible", "doJob"]
 - !private ["Ps23CustomStringConvertible", "getAxis"]
-- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "pointValueToPixel"]
 - !private ["Ps23CustomStringConvertible", "refresh"]
-- ["Ps23CustomStringConvertible", "scaleX"]
-- ["Ps23CustomStringConvertible", "scaleY"]
+- !private ["Ps23CustomStringConvertible", "scaleX"]
+- !private ["Ps23CustomStringConvertible", "scaleY"]
 - !private ["Ps23CustomStringConvertible", "setNeedsDisplay"]
 - !private ["Ps23CustomStringConvertible", "setZoom"]
 - !private ["Ps23CustomStringConvertible", "transformer"]
@@ -166,24 +155,22 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "xValue"]
 - !private ["Ps23CustomStringConvertible", "yValue"]
 - ["Ps23CustomStringConvertible", ""]
-- ["Sd", "deinit"]
 - !private ["Sd", "init"]
 - ["Ps9Equatable", "AxisDependency"]
 - !private ["Ps9Equatable", "CGFloat"]
 - !private ["Ps9Equatable", "CGPoint"]
 - !private ["Ps9Equatable", "Double"]
 - ["Ps9Equatable", "YAxis"]
-- ["Ps9Equatable", "axisDependency"]
+- !private ["Ps9Equatable", "axisDependency"]
 - !private ["Ps9Equatable", "axisRange"]
 - !private ["Ps9Equatable", "calculateOffsets"]
-- ["Ps9Equatable", "doJob"]
 - !private ["Ps9Equatable", "getAxis"]
-- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "left"]
 - !private ["Ps9Equatable", "pointValueToPixel"]
 - !private ["Ps9Equatable", "refresh"]
-- ["Ps9Equatable", "scaleX"]
-- ["Ps9Equatable", "scaleY"]
+- !private ["Ps9Equatable", "scaleX"]
+- !private ["Ps9Equatable", "scaleY"]
 - !private ["Ps9Equatable", "setNeedsDisplay"]
 - !private ["Ps9Equatable", "setZoom"]
 - !private ["Ps9Equatable", "transformer"]
@@ -205,17 +192,16 @@ depends-member:
 - !private ["Ps8Hashable", "CGPoint"]
 - !private ["Ps8Hashable", "Double"]
 - ["Ps8Hashable", "YAxis"]
-- ["Ps8Hashable", "axisDependency"]
+- !private ["Ps8Hashable", "axisDependency"]
 - !private ["Ps8Hashable", "axisRange"]
 - !private ["Ps8Hashable", "calculateOffsets"]
-- ["Ps8Hashable", "doJob"]
 - !private ["Ps8Hashable", "getAxis"]
-- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "left"]
 - !private ["Ps8Hashable", "pointValueToPixel"]
 - !private ["Ps8Hashable", "refresh"]
-- ["Ps8Hashable", "scaleX"]
-- ["Ps8Hashable", "scaleY"]
+- !private ["Ps8Hashable", "scaleX"]
+- !private ["Ps8Hashable", "scaleY"]
 - !private ["Ps8Hashable", "setNeedsDisplay"]
 - !private ["Ps8Hashable", "setZoom"]
 - !private ["Ps8Hashable", "transformer"]
@@ -286,16 +272,15 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "CGPoint"]
 - !private ["PSo16NSObjectProtocol", "Double"]
 - ["PSo16NSObjectProtocol", "YAxis"]
-- ["PSo16NSObjectProtocol", "axisDependency"]
+- !private ["PSo16NSObjectProtocol", "axisDependency"]
 - !private ["PSo16NSObjectProtocol", "axisRange"]
 - !private ["PSo16NSObjectProtocol", "calculateOffsets"]
-- ["PSo16NSObjectProtocol", "doJob"]
 - !private ["PSo16NSObjectProtocol", "getAxis"]
-- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "pointValueToPixel"]
 - !private ["PSo16NSObjectProtocol", "refresh"]
-- ["PSo16NSObjectProtocol", "scaleX"]
-- ["PSo16NSObjectProtocol", "scaleY"]
+- !private ["PSo16NSObjectProtocol", "scaleX"]
+- !private ["PSo16NSObjectProtocol", "scaleY"]
 - !private ["PSo16NSObjectProtocol", "setNeedsDisplay"]
 - !private ["PSo16NSObjectProtocol", "setZoom"]
 - !private ["PSo16NSObjectProtocol", "transformer"]
@@ -326,16 +311,11 @@ depends-member:
 - !private ["CSo6NSView", "getAxis"]
 - !private ["CSo6NSView", "setNeedsDisplay"]
 - !private ["CSo6NSView", "xAxis"]
-- ["Os5Never", "deinit"]
 - ["Ps16RawRepresentable", "left"]
 - !private ["Ps12SignedNumber", "init"]
-- ["Vs12StaticString", "deinit"]
 - !private ["Vs12StaticString", "init"]
 - !private ["Ps10Strideable", "init"]
-- ["C6Charts11Transformer", "deinit"]
 - !private ["C6Charts11Transformer", "pointValueToPixel"]
-- ["Su", "deinit"]
-- ["C6Charts15ViewPortHandler", "deinit"]
 - !private ["C6Charts15ViewPortHandler", "refresh"]
 - !private ["C6Charts15ViewPortHandler", "scaleX"]
 - !private ["C6Charts15ViewPortHandler", "scaleY"]
@@ -350,7 +330,6 @@ depends-member:
 - ["C6Charts11ViewPortJob", "ViewPortHandler"]
 - ["C6Charts11ViewPortJob", "YAxis"]
 - ["C6Charts11ViewPortJob", "axisDependency"]
-- ["C6Charts11ViewPortJob", "deinit"]
 - ["C6Charts11ViewPortJob", "doJob"]
 - ["C6Charts11ViewPortJob", "init"]
 - ["C6Charts11ViewPortJob", "scaleX"]
@@ -362,10 +341,8 @@ depends-member:
 - !private ["C6Charts11ViewPortJob", "yValue"]
 - ["C6Charts11ViewPortJob", ""]
 - !private ["C6Charts5XAxis", "axisRange"]
-- ["C6Charts5XAxis", "deinit"]
 - ["C6Charts5YAxis", "AxisDependency"]
 - !private ["C6Charts5YAxis", "axisRange"]
-- ["C6Charts5YAxis", "deinit"]
 - !private ["C6Charts11ZoomViewJob", "BarLineChartViewBase"]
 - ["C6Charts11ZoomViewJob", "CGFloat"]
 - !private ["C6Charts11ZoomViewJob", "CGPoint"]
@@ -401,17 +378,16 @@ depends-member:
 - !private ["Ps9_Hashable", "CGPoint"]
 - !private ["Ps9_Hashable", "Double"]
 - ["Ps9_Hashable", "YAxis"]
-- ["Ps9_Hashable", "axisDependency"]
+- !private ["Ps9_Hashable", "axisDependency"]
 - !private ["Ps9_Hashable", "axisRange"]
 - !private ["Ps9_Hashable", "calculateOffsets"]
-- ["Ps9_Hashable", "doJob"]
 - !private ["Ps9_Hashable", "getAxis"]
-- ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "init"]
 - ["Ps9_Hashable", "left"]
 - !private ["Ps9_Hashable", "pointValueToPixel"]
 - !private ["Ps9_Hashable", "refresh"]
-- ["Ps9_Hashable", "scaleX"]
-- ["Ps9_Hashable", "scaleY"]
+- !private ["Ps9_Hashable", "scaleX"]
+- !private ["Ps9_Hashable", "scaleY"]
 - !private ["Ps9_Hashable", "setNeedsDisplay"]
 - !private ["Ps9_Hashable", "setZoom"]
 - !private ["Ps9_Hashable", "transformer"]
@@ -430,23 +406,21 @@ depends-nominal:
 - "Ps9AnyObject"
 - "C6Charts8AxisBase"
 - "OC6Charts5YAxis14AxisDependency"
-- "C6Charts20BarLineChartViewBase"
+- !private "C6Charts20BarLineChartViewBase"
 - !private "P6Charts43BarLineScatterCandleBubbleChartDataProvider"
 - !private "Ps19BinaryFloatingPoint"
-- "Sb"
-- "VSC17CGAffineTransform"
-- "V12CoreGraphics7CGFloat"
-- "VSC7CGPoint"
+- !private "V12CoreGraphics7CGFloat"
+- !private "VSC7CGPoint"
 - "Ps7CVarArg"
 - !private "P6Charts17ChartDataProvider"
-- "C6Charts13ChartViewBase"
+- !private "C6Charts13ChartViewBase"
 - !private "Ps10Comparable"
 - "C6Charts13ComponentBase"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
-- "Sd"
+- !private "Sd"
 - "Ps9Equatable"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps25ExpressibleByFloatLiteral"
@@ -470,16 +444,14 @@ depends-nominal:
 - !private "C6Charts8NSUIView"
 - !private "PSo33NSUserInterfaceItemIdentification"
 - !private "CSo6NSView"
-- "Os5Never"
 - "Ps16RawRepresentable"
 - !private "Ps12SignedNumber"
-- "Vs12StaticString"
+- !private "Vs12StaticString"
 - !private "Ps10Strideable"
-- "C6Charts11Transformer"
-- "Su"
-- "C6Charts15ViewPortHandler"
+- !private "C6Charts11Transformer"
+- !private "C6Charts15ViewPortHandler"
 - "C6Charts11ViewPortJob"
-- "C6Charts5XAxis"
+- !private "C6Charts5XAxis"
 - "C6Charts5YAxis"
 - "C6Charts11ZoomViewJob"
 - !private "Ps15_CVarArgAligned"
@@ -496,6 +468,15 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.apinotesc"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/Charts/Source/Supporting Files/Charts.h"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Charts.build/Debug/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
@@ -510,4 +491,5 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "54a05b563ff998eb4de57af065abd100"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuickLook.apinotesc"
+interface-hash: "a118d3ae7c1056e1b05d68d94e988c12"

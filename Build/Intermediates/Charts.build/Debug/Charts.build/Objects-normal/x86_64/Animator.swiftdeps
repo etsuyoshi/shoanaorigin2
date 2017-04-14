@@ -9,52 +9,42 @@ provides-member:
 - ["P6Charts16AnimatorDelegate", ""]
 - ["C6Charts8Animator", ""]
 provides-dynamic-lookup:
-- "animatorStopped"
-- "phaseX"
-- "phaseY"
+- "animate"
 - "animationLoop"
-- "animate"
-- "animate"
-- "animate"
-- "animate"
-- "animate"
-- "animate"
-- "animate"
-- "animate"
-- "animate"
-- "animate"
-- "animate"
-- "updateBlock"
-- "stop"
+- "animatorStopped"
 - "animatorUpdated"
 - "delegate"
+- "phaseX"
+- "phaseY"
+- "stop"
 - "stopBlock"
+- "updateBlock"
 depends-top-level:
-- "AnimatorDelegate"
 - !private "!="
-- !private "CACurrentMediaTime"
-- "BooleanLiteralType"
-- "Void"
-- !private "RunLoopMode"
 - !private "+"
-- "NSObject"
-- "TimeInterval"
-- !private "RunLoop"
-- "Double"
-- "NSUIDisplayLink"
-- "ChartEasingFunctionBlock"
-- "AssignmentPrecedence"
-- !private "=="
-- "Bool"
-- !private ">="
 - !private "-"
-- !private ">"
-- "Animator"
-- "ChartEasingOption"
-- !private "||"
-- "TernaryPrecedence"
-- !private "easingFunctionFromOption"
 - !private "/"
+- !private "=="
+- !private ">"
+- !private ">="
+- "Animator"
+- "AnimatorDelegate"
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- !private "CACurrentMediaTime"
+- "ChartEasingFunctionBlock"
+- "ChartEasingOption"
+- "Double"
+- "NSObject"
+- "NSUIDisplayLink"
+- !private "RunLoop"
+- !private "RunLoopMode"
+- "TernaryPrecedence"
+- "TimeInterval"
+- "Void"
+- !private "easingFunctionFromOption"
+- !private "||"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - ["C6Charts8Animator", "AnimatorDelegate"]
@@ -95,74 +85,70 @@ depends-member:
 - ["P6Charts16AnimatorDelegate", "Animator"]
 - ["P6Charts16AnimatorDelegate", "animatorStopped"]
 - ["P6Charts16AnimatorDelegate", "animatorUpdated"]
-- !private ["P6Charts16AnimatorDelegate", "deinit"]
 - !private ["Ps9AnyObject", "CACurrentMediaTime"]
 - !private ["Ps9AnyObject", "Double"]
 - !private ["Ps9AnyObject", "NSUIDisplayLink"]
 - !private ["Ps9AnyObject", "RunLoop"]
 - !private ["Ps9AnyObject", "RunLoopMode"]
-- ["Ps9AnyObject", "_displayLink"]
-- ["Ps9AnyObject", "_durationX"]
-- ["Ps9AnyObject", "_durationY"]
-- ["Ps9AnyObject", "_easingX"]
-- ["Ps9AnyObject", "_easingY"]
-- ["Ps9AnyObject", "_enabledX"]
-- ["Ps9AnyObject", "_enabledY"]
-- ["Ps9AnyObject", "_endTime"]
-- ["Ps9AnyObject", "_endTimeX"]
-- ["Ps9AnyObject", "_endTimeY"]
-- ["Ps9AnyObject", "_startTimeX"]
-- ["Ps9AnyObject", "_startTimeY"]
+- !private ["Ps9AnyObject", "_displayLink"]
+- !private ["Ps9AnyObject", "_durationX"]
+- !private ["Ps9AnyObject", "_durationY"]
+- !private ["Ps9AnyObject", "_easingX"]
+- !private ["Ps9AnyObject", "_easingY"]
+- !private ["Ps9AnyObject", "_enabledX"]
+- !private ["Ps9AnyObject", "_enabledY"]
+- !private ["Ps9AnyObject", "_endTime"]
+- !private ["Ps9AnyObject", "_endTimeX"]
+- !private ["Ps9AnyObject", "_endTimeY"]
+- !private ["Ps9AnyObject", "_startTimeX"]
+- !private ["Ps9AnyObject", "_startTimeY"]
 - !private ["Ps9AnyObject", "add"]
-- ["Ps9AnyObject", "animate"]
-- ["Ps9AnyObject", "animationLoop"]
-- ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "animate"]
+- !private ["Ps9AnyObject", "animationLoop"]
+- !private ["Ps9AnyObject", "delegate"]
 - !private ["Ps9AnyObject", "easingFunctionFromOption"]
-- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "main"]
-- ["Ps9AnyObject", "phaseX"]
-- ["Ps9AnyObject", "phaseY"]
+- !private ["Ps9AnyObject", "phaseX"]
+- !private ["Ps9AnyObject", "phaseY"]
 - !private ["Ps9AnyObject", "remove"]
-- ["Ps9AnyObject", "stop"]
-- ["Ps9AnyObject", "stopBlock"]
-- ["Ps9AnyObject", "updateAnimationPhases"]
-- ["Ps9AnyObject", "updateBlock"]
+- !private ["Ps9AnyObject", "stop"]
+- !private ["Ps9AnyObject", "stopBlock"]
+- !private ["Ps9AnyObject", "updateAnimationPhases"]
+- !private ["Ps9AnyObject", "updateBlock"]
 - ["Ps9AnyObject", ""]
 - !private ["Ps19BinaryFloatingPoint", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- ["Sb", "deinit"]
-- !private ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["Ps7CVarArg", "CACurrentMediaTime"]
 - !private ["Ps7CVarArg", "Double"]
 - !private ["Ps7CVarArg", "NSUIDisplayLink"]
 - !private ["Ps7CVarArg", "RunLoop"]
 - !private ["Ps7CVarArg", "RunLoopMode"]
-- ["Ps7CVarArg", "_displayLink"]
-- ["Ps7CVarArg", "_durationX"]
-- ["Ps7CVarArg", "_durationY"]
-- ["Ps7CVarArg", "_easingX"]
-- ["Ps7CVarArg", "_easingY"]
-- ["Ps7CVarArg", "_enabledX"]
-- ["Ps7CVarArg", "_enabledY"]
-- ["Ps7CVarArg", "_endTime"]
-- ["Ps7CVarArg", "_endTimeX"]
-- ["Ps7CVarArg", "_endTimeY"]
-- ["Ps7CVarArg", "_startTimeX"]
-- ["Ps7CVarArg", "_startTimeY"]
-- ["Ps7CVarArg", "animate"]
-- ["Ps7CVarArg", "animationLoop"]
-- ["Ps7CVarArg", "delegate"]
+- !private ["Ps7CVarArg", "_displayLink"]
+- !private ["Ps7CVarArg", "_durationX"]
+- !private ["Ps7CVarArg", "_durationY"]
+- !private ["Ps7CVarArg", "_easingX"]
+- !private ["Ps7CVarArg", "_easingY"]
+- !private ["Ps7CVarArg", "_enabledX"]
+- !private ["Ps7CVarArg", "_enabledY"]
+- !private ["Ps7CVarArg", "_endTime"]
+- !private ["Ps7CVarArg", "_endTimeX"]
+- !private ["Ps7CVarArg", "_endTimeY"]
+- !private ["Ps7CVarArg", "_startTimeX"]
+- !private ["Ps7CVarArg", "_startTimeY"]
+- !private ["Ps7CVarArg", "animate"]
+- !private ["Ps7CVarArg", "animationLoop"]
+- !private ["Ps7CVarArg", "delegate"]
 - !private ["Ps7CVarArg", "easingFunctionFromOption"]
-- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "main"]
-- ["Ps7CVarArg", "phaseX"]
-- ["Ps7CVarArg", "phaseY"]
-- ["Ps7CVarArg", "stop"]
-- ["Ps7CVarArg", "stopBlock"]
-- ["Ps7CVarArg", "updateAnimationPhases"]
-- ["Ps7CVarArg", "updateBlock"]
+- !private ["Ps7CVarArg", "phaseX"]
+- !private ["Ps7CVarArg", "phaseY"]
+- !private ["Ps7CVarArg", "stop"]
+- !private ["Ps7CVarArg", "stopBlock"]
+- !private ["Ps7CVarArg", "updateAnimationPhases"]
+- !private ["Ps7CVarArg", "updateBlock"]
 - ["Ps7CVarArg", ""]
-- ["O6Charts17ChartEasingOption", "deinit"]
 - !private ["O6Charts17ChartEasingOption", "easeInOutSine"]
 - !private ["Ps10Comparable", "commonModes"]
 - !private ["Ps10Comparable", "init"]
@@ -171,30 +157,30 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "NSUIDisplayLink"]
 - !private ["Ps28CustomDebugStringConvertible", "RunLoop"]
 - !private ["Ps28CustomDebugStringConvertible", "RunLoopMode"]
-- ["Ps28CustomDebugStringConvertible", "_displayLink"]
-- ["Ps28CustomDebugStringConvertible", "_durationX"]
-- ["Ps28CustomDebugStringConvertible", "_durationY"]
-- ["Ps28CustomDebugStringConvertible", "_easingX"]
-- ["Ps28CustomDebugStringConvertible", "_easingY"]
-- ["Ps28CustomDebugStringConvertible", "_enabledX"]
-- ["Ps28CustomDebugStringConvertible", "_enabledY"]
-- ["Ps28CustomDebugStringConvertible", "_endTime"]
-- ["Ps28CustomDebugStringConvertible", "_endTimeX"]
-- ["Ps28CustomDebugStringConvertible", "_endTimeY"]
-- ["Ps28CustomDebugStringConvertible", "_startTimeX"]
-- ["Ps28CustomDebugStringConvertible", "_startTimeY"]
-- ["Ps28CustomDebugStringConvertible", "animate"]
-- ["Ps28CustomDebugStringConvertible", "animationLoop"]
-- ["Ps28CustomDebugStringConvertible", "delegate"]
+- !private ["Ps28CustomDebugStringConvertible", "_displayLink"]
+- !private ["Ps28CustomDebugStringConvertible", "_durationX"]
+- !private ["Ps28CustomDebugStringConvertible", "_durationY"]
+- !private ["Ps28CustomDebugStringConvertible", "_easingX"]
+- !private ["Ps28CustomDebugStringConvertible", "_easingY"]
+- !private ["Ps28CustomDebugStringConvertible", "_enabledX"]
+- !private ["Ps28CustomDebugStringConvertible", "_enabledY"]
+- !private ["Ps28CustomDebugStringConvertible", "_endTime"]
+- !private ["Ps28CustomDebugStringConvertible", "_endTimeX"]
+- !private ["Ps28CustomDebugStringConvertible", "_endTimeY"]
+- !private ["Ps28CustomDebugStringConvertible", "_startTimeX"]
+- !private ["Ps28CustomDebugStringConvertible", "_startTimeY"]
+- !private ["Ps28CustomDebugStringConvertible", "animate"]
+- !private ["Ps28CustomDebugStringConvertible", "animationLoop"]
+- !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - !private ["Ps28CustomDebugStringConvertible", "easingFunctionFromOption"]
-- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "main"]
-- ["Ps28CustomDebugStringConvertible", "phaseX"]
-- ["Ps28CustomDebugStringConvertible", "phaseY"]
-- ["Ps28CustomDebugStringConvertible", "stop"]
-- ["Ps28CustomDebugStringConvertible", "stopBlock"]
-- ["Ps28CustomDebugStringConvertible", "updateAnimationPhases"]
-- ["Ps28CustomDebugStringConvertible", "updateBlock"]
+- !private ["Ps28CustomDebugStringConvertible", "phaseX"]
+- !private ["Ps28CustomDebugStringConvertible", "phaseY"]
+- !private ["Ps28CustomDebugStringConvertible", "stop"]
+- !private ["Ps28CustomDebugStringConvertible", "stopBlock"]
+- !private ["Ps28CustomDebugStringConvertible", "updateAnimationPhases"]
+- !private ["Ps28CustomDebugStringConvertible", "updateBlock"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
@@ -205,114 +191,105 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "NSUIDisplayLink"]
 - !private ["Ps23CustomStringConvertible", "RunLoop"]
 - !private ["Ps23CustomStringConvertible", "RunLoopMode"]
-- ["Ps23CustomStringConvertible", "_displayLink"]
-- ["Ps23CustomStringConvertible", "_durationX"]
-- ["Ps23CustomStringConvertible", "_durationY"]
-- ["Ps23CustomStringConvertible", "_easingX"]
-- ["Ps23CustomStringConvertible", "_easingY"]
-- ["Ps23CustomStringConvertible", "_enabledX"]
-- ["Ps23CustomStringConvertible", "_enabledY"]
-- ["Ps23CustomStringConvertible", "_endTime"]
-- ["Ps23CustomStringConvertible", "_endTimeX"]
-- ["Ps23CustomStringConvertible", "_endTimeY"]
+- !private ["Ps23CustomStringConvertible", "_displayLink"]
+- !private ["Ps23CustomStringConvertible", "_durationX"]
+- !private ["Ps23CustomStringConvertible", "_durationY"]
+- !private ["Ps23CustomStringConvertible", "_easingX"]
+- !private ["Ps23CustomStringConvertible", "_easingY"]
+- !private ["Ps23CustomStringConvertible", "_enabledX"]
+- !private ["Ps23CustomStringConvertible", "_enabledY"]
+- !private ["Ps23CustomStringConvertible", "_endTime"]
+- !private ["Ps23CustomStringConvertible", "_endTimeX"]
+- !private ["Ps23CustomStringConvertible", "_endTimeY"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
-- ["Ps23CustomStringConvertible", "_startTimeX"]
-- ["Ps23CustomStringConvertible", "_startTimeY"]
-- ["Ps23CustomStringConvertible", "animate"]
-- ["Ps23CustomStringConvertible", "animationLoop"]
-- ["Ps23CustomStringConvertible", "delegate"]
+- !private ["Ps23CustomStringConvertible", "_startTimeX"]
+- !private ["Ps23CustomStringConvertible", "_startTimeY"]
+- !private ["Ps23CustomStringConvertible", "animate"]
+- !private ["Ps23CustomStringConvertible", "animationLoop"]
+- !private ["Ps23CustomStringConvertible", "delegate"]
 - !private ["Ps23CustomStringConvertible", "easingFunctionFromOption"]
-- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "main"]
-- ["Ps23CustomStringConvertible", "phaseX"]
-- ["Ps23CustomStringConvertible", "phaseY"]
-- ["Ps23CustomStringConvertible", "stop"]
-- ["Ps23CustomStringConvertible", "stopBlock"]
-- ["Ps23CustomStringConvertible", "updateAnimationPhases"]
-- ["Ps23CustomStringConvertible", "updateBlock"]
+- !private ["Ps23CustomStringConvertible", "phaseX"]
+- !private ["Ps23CustomStringConvertible", "phaseY"]
+- !private ["Ps23CustomStringConvertible", "stop"]
+- !private ["Ps23CustomStringConvertible", "stopBlock"]
+- !private ["Ps23CustomStringConvertible", "updateAnimationPhases"]
+- !private ["Ps23CustomStringConvertible", "updateBlock"]
 - ["Ps23CustomStringConvertible", ""]
-- ["Sd", "deinit"]
 - !private ["Sd", "init"]
 - !private ["Ps9Equatable", "CACurrentMediaTime"]
 - !private ["Ps9Equatable", "Double"]
 - !private ["Ps9Equatable", "NSUIDisplayLink"]
 - !private ["Ps9Equatable", "RunLoop"]
 - !private ["Ps9Equatable", "RunLoopMode"]
-- ["Ps9Equatable", "_displayLink"]
-- ["Ps9Equatable", "_durationX"]
-- ["Ps9Equatable", "_durationY"]
-- ["Ps9Equatable", "_easingX"]
-- ["Ps9Equatable", "_easingY"]
-- ["Ps9Equatable", "_enabledX"]
-- ["Ps9Equatable", "_enabledY"]
-- ["Ps9Equatable", "_endTime"]
-- ["Ps9Equatable", "_endTimeX"]
-- ["Ps9Equatable", "_endTimeY"]
+- !private ["Ps9Equatable", "_displayLink"]
+- !private ["Ps9Equatable", "_durationX"]
+- !private ["Ps9Equatable", "_durationY"]
+- !private ["Ps9Equatable", "_easingX"]
+- !private ["Ps9Equatable", "_easingY"]
+- !private ["Ps9Equatable", "_enabledX"]
+- !private ["Ps9Equatable", "_enabledY"]
+- !private ["Ps9Equatable", "_endTime"]
+- !private ["Ps9Equatable", "_endTimeX"]
+- !private ["Ps9Equatable", "_endTimeY"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
-- ["Ps9Equatable", "_startTimeX"]
-- ["Ps9Equatable", "_startTimeY"]
-- ["Ps9Equatable", "animate"]
-- ["Ps9Equatable", "animationLoop"]
+- !private ["Ps9Equatable", "_startTimeX"]
+- !private ["Ps9Equatable", "_startTimeY"]
+- !private ["Ps9Equatable", "animate"]
+- !private ["Ps9Equatable", "animationLoop"]
 - !private ["Ps9Equatable", "commonModes"]
-- ["Ps9Equatable", "delegate"]
+- !private ["Ps9Equatable", "delegate"]
 - !private ["Ps9Equatable", "easeInOutSine"]
 - !private ["Ps9Equatable", "easingFunctionFromOption"]
-- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "main"]
-- ["Ps9Equatable", "phaseX"]
-- ["Ps9Equatable", "phaseY"]
-- ["Ps9Equatable", "stop"]
-- ["Ps9Equatable", "stopBlock"]
-- ["Ps9Equatable", "updateAnimationPhases"]
-- ["Ps9Equatable", "updateBlock"]
+- !private ["Ps9Equatable", "phaseX"]
+- !private ["Ps9Equatable", "phaseY"]
+- !private ["Ps9Equatable", "stop"]
+- !private ["Ps9Equatable", "stopBlock"]
+- !private ["Ps9Equatable", "updateAnimationPhases"]
+- !private ["Ps9Equatable", "updateBlock"]
 - ["Ps9Equatable", ""]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps25ExpressibleByFloatLiteral", "init"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "init"]
-- !private ["Sf", "deinit"]
-- !private ["Vs7Float80", "deinit"]
 - !private ["Ps13FloatingPoint", "init"]
 - !private ["Ps8Hashable", "CACurrentMediaTime"]
 - !private ["Ps8Hashable", "Double"]
 - !private ["Ps8Hashable", "NSUIDisplayLink"]
 - !private ["Ps8Hashable", "RunLoop"]
 - !private ["Ps8Hashable", "RunLoopMode"]
-- ["Ps8Hashable", "_displayLink"]
-- ["Ps8Hashable", "_durationX"]
-- ["Ps8Hashable", "_durationY"]
-- ["Ps8Hashable", "_easingX"]
-- ["Ps8Hashable", "_easingY"]
-- ["Ps8Hashable", "_enabledX"]
-- ["Ps8Hashable", "_enabledY"]
-- ["Ps8Hashable", "_endTime"]
-- ["Ps8Hashable", "_endTimeX"]
-- ["Ps8Hashable", "_endTimeY"]
+- !private ["Ps8Hashable", "_displayLink"]
+- !private ["Ps8Hashable", "_durationX"]
+- !private ["Ps8Hashable", "_durationY"]
+- !private ["Ps8Hashable", "_easingX"]
+- !private ["Ps8Hashable", "_easingY"]
+- !private ["Ps8Hashable", "_enabledX"]
+- !private ["Ps8Hashable", "_enabledY"]
+- !private ["Ps8Hashable", "_endTime"]
+- !private ["Ps8Hashable", "_endTimeX"]
+- !private ["Ps8Hashable", "_endTimeY"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
-- ["Ps8Hashable", "_startTimeX"]
-- ["Ps8Hashable", "_startTimeY"]
-- ["Ps8Hashable", "animate"]
-- ["Ps8Hashable", "animationLoop"]
+- !private ["Ps8Hashable", "_startTimeX"]
+- !private ["Ps8Hashable", "_startTimeY"]
+- !private ["Ps8Hashable", "animate"]
+- !private ["Ps8Hashable", "animationLoop"]
 - !private ["Ps8Hashable", "commonModes"]
-- ["Ps8Hashable", "delegate"]
+- !private ["Ps8Hashable", "delegate"]
 - !private ["Ps8Hashable", "easeInOutSine"]
 - !private ["Ps8Hashable", "easingFunctionFromOption"]
-- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "main"]
-- ["Ps8Hashable", "phaseX"]
-- ["Ps8Hashable", "phaseY"]
-- ["Ps8Hashable", "stop"]
-- ["Ps8Hashable", "stopBlock"]
-- ["Ps8Hashable", "updateAnimationPhases"]
-- ["Ps8Hashable", "updateBlock"]
+- !private ["Ps8Hashable", "phaseX"]
+- !private ["Ps8Hashable", "phaseY"]
+- !private ["Ps8Hashable", "stop"]
+- !private ["Ps8Hashable", "stopBlock"]
+- !private ["Ps8Hashable", "updateAnimationPhases"]
+- !private ["Ps8Hashable", "updateBlock"]
 - ["Ps8Hashable", ""]
-- !private ["Si", "deinit"]
-- !private ["Vs5Int16", "deinit"]
-- !private ["Vs5Int32", "deinit"]
-- !private ["Vs5Int64", "deinit"]
-- !private ["Vs4Int8", "deinit"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
-- !private ["CSo8NSNumber", "deinit"]
 - ["CSo8NSObject", "AnimatorDelegate"]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "CACurrentMediaTime"]
@@ -338,7 +315,6 @@ depends-member:
 - ["CSo8NSObject", "_startTimeY"]
 - ["CSo8NSObject", "animate"]
 - ["CSo8NSObject", "animationLoop"]
-- ["CSo8NSObject", "deinit"]
 - ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "easingFunctionFromOption"]
 - ["CSo8NSObject", "init"]
@@ -355,50 +331,40 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSUIDisplayLink"]
 - !private ["PSo16NSObjectProtocol", "RunLoop"]
 - !private ["PSo16NSObjectProtocol", "RunLoopMode"]
-- ["PSo16NSObjectProtocol", "_displayLink"]
-- ["PSo16NSObjectProtocol", "_durationX"]
-- ["PSo16NSObjectProtocol", "_durationY"]
-- ["PSo16NSObjectProtocol", "_easingX"]
-- ["PSo16NSObjectProtocol", "_easingY"]
-- ["PSo16NSObjectProtocol", "_enabledX"]
-- ["PSo16NSObjectProtocol", "_enabledY"]
-- ["PSo16NSObjectProtocol", "_endTime"]
-- ["PSo16NSObjectProtocol", "_endTimeX"]
-- ["PSo16NSObjectProtocol", "_endTimeY"]
-- ["PSo16NSObjectProtocol", "_startTimeX"]
-- ["PSo16NSObjectProtocol", "_startTimeY"]
-- ["PSo16NSObjectProtocol", "animate"]
-- ["PSo16NSObjectProtocol", "animationLoop"]
-- ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "_displayLink"]
+- !private ["PSo16NSObjectProtocol", "_durationX"]
+- !private ["PSo16NSObjectProtocol", "_durationY"]
+- !private ["PSo16NSObjectProtocol", "_easingX"]
+- !private ["PSo16NSObjectProtocol", "_easingY"]
+- !private ["PSo16NSObjectProtocol", "_enabledX"]
+- !private ["PSo16NSObjectProtocol", "_enabledY"]
+- !private ["PSo16NSObjectProtocol", "_endTime"]
+- !private ["PSo16NSObjectProtocol", "_endTimeX"]
+- !private ["PSo16NSObjectProtocol", "_endTimeY"]
+- !private ["PSo16NSObjectProtocol", "_startTimeX"]
+- !private ["PSo16NSObjectProtocol", "_startTimeY"]
+- !private ["PSo16NSObjectProtocol", "animate"]
+- !private ["PSo16NSObjectProtocol", "animationLoop"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
 - !private ["PSo16NSObjectProtocol", "easingFunctionFromOption"]
-- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "main"]
-- ["PSo16NSObjectProtocol", "phaseX"]
-- ["PSo16NSObjectProtocol", "phaseY"]
-- ["PSo16NSObjectProtocol", "stop"]
-- ["PSo16NSObjectProtocol", "stopBlock"]
-- ["PSo16NSObjectProtocol", "updateAnimationPhases"]
-- ["PSo16NSObjectProtocol", "updateBlock"]
+- !private ["PSo16NSObjectProtocol", "phaseX"]
+- !private ["PSo16NSObjectProtocol", "phaseY"]
+- !private ["PSo16NSObjectProtocol", "stop"]
+- !private ["PSo16NSObjectProtocol", "stopBlock"]
+- !private ["PSo16NSObjectProtocol", "updateAnimationPhases"]
+- !private ["PSo16NSObjectProtocol", "updateBlock"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["C6Charts15NSUIDisplayLink", "add"]
-- ["C6Charts15NSUIDisplayLink", "deinit"]
 - !private ["C6Charts15NSUIDisplayLink", "init"]
 - !private ["C6Charts15NSUIDisplayLink", "remove"]
-- ["Sq", "deinit"]
 - !private ["Ps16RawRepresentable", "commonModes"]
 - !private ["Ps16RawRepresentable", "easeInOutSine"]
-- ["CSo7RunLoop", "deinit"]
 - !private ["CSo7RunLoop", "main"]
 - !private ["VSC11RunLoopMode", "commonModes"]
-- ["VSC11RunLoopMode", "deinit"]
-- ["V10ObjectiveC8Selector", "deinit"]
 - !private ["Ps12SignedNumber", "init"]
 - !private ["Ps10Strideable", "init"]
-- !private ["Su", "deinit"]
-- !private ["Vs6UInt16", "deinit"]
-- !private ["Vs6UInt32", "deinit"]
-- !private ["Vs6UInt64", "deinit"]
-- !private ["Vs5UInt8", "deinit"]
 - !private ["Ps15_CVarArgAligned", "init"]
 - !private ["Ps22_CVarArgPassedAsDouble", "init"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
@@ -409,38 +375,37 @@ depends-member:
 - !private ["Ps9_Hashable", "NSUIDisplayLink"]
 - !private ["Ps9_Hashable", "RunLoop"]
 - !private ["Ps9_Hashable", "RunLoopMode"]
-- ["Ps9_Hashable", "_displayLink"]
-- ["Ps9_Hashable", "_durationX"]
-- ["Ps9_Hashable", "_durationY"]
-- ["Ps9_Hashable", "_easingX"]
-- ["Ps9_Hashable", "_easingY"]
-- ["Ps9_Hashable", "_enabledX"]
-- ["Ps9_Hashable", "_enabledY"]
-- ["Ps9_Hashable", "_endTime"]
-- ["Ps9_Hashable", "_endTimeX"]
-- ["Ps9_Hashable", "_endTimeY"]
+- !private ["Ps9_Hashable", "_displayLink"]
+- !private ["Ps9_Hashable", "_durationX"]
+- !private ["Ps9_Hashable", "_durationY"]
+- !private ["Ps9_Hashable", "_easingX"]
+- !private ["Ps9_Hashable", "_easingY"]
+- !private ["Ps9_Hashable", "_enabledX"]
+- !private ["Ps9_Hashable", "_enabledY"]
+- !private ["Ps9_Hashable", "_endTime"]
+- !private ["Ps9_Hashable", "_endTimeX"]
+- !private ["Ps9_Hashable", "_endTimeY"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
-- ["Ps9_Hashable", "_startTimeX"]
-- ["Ps9_Hashable", "_startTimeY"]
-- ["Ps9_Hashable", "animate"]
-- ["Ps9_Hashable", "animationLoop"]
+- !private ["Ps9_Hashable", "_startTimeX"]
+- !private ["Ps9_Hashable", "_startTimeY"]
+- !private ["Ps9_Hashable", "animate"]
+- !private ["Ps9_Hashable", "animationLoop"]
 - !private ["Ps9_Hashable", "commonModes"]
-- ["Ps9_Hashable", "delegate"]
+- !private ["Ps9_Hashable", "delegate"]
 - !private ["Ps9_Hashable", "easeInOutSine"]
 - !private ["Ps9_Hashable", "easingFunctionFromOption"]
-- ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "main"]
-- ["Ps9_Hashable", "phaseX"]
-- ["Ps9_Hashable", "phaseY"]
-- ["Ps9_Hashable", "stop"]
-- ["Ps9_Hashable", "stopBlock"]
-- ["Ps9_Hashable", "updateAnimationPhases"]
-- ["Ps9_Hashable", "updateBlock"]
+- !private ["Ps9_Hashable", "phaseX"]
+- !private ["Ps9_Hashable", "phaseY"]
+- !private ["Ps9_Hashable", "stop"]
+- !private ["Ps9_Hashable", "stopBlock"]
+- !private ["Ps9_Hashable", "updateAnimationPhases"]
+- !private ["Ps9_Hashable", "updateBlock"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "commonModes"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
-- ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps11_Strideable", "init"]
 - !private ["Ps20_SwiftNewtypeWrapper", "commonModes"]
 depends-nominal:
@@ -449,46 +414,30 @@ depends-nominal:
 - "P6Charts16AnimatorDelegate"
 - "Ps9AnyObject"
 - !private "Ps19BinaryFloatingPoint"
-- "Sb"
-- !private "V12CoreGraphics7CGFloat"
+- !private "Sb"
 - "Ps7CVarArg"
-- "O6Charts17ChartEasingOption"
+- !private "O6Charts17ChartEasingOption"
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
-- "Sd"
+- !private "Sd"
 - "Ps9Equatable"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps25ExpressibleByFloatLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
-- !private "Sf"
-- !private "Vs7Float80"
 - !private "Ps13FloatingPoint"
 - "Ps8Hashable"
-- !private "Si"
-- !private "Vs5Int16"
-- !private "Vs5Int32"
-- !private "Vs5Int64"
-- !private "Vs4Int8"
 - !private "Ps25LosslessStringConvertible"
-- !private "CSo8NSNumber"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- "C6Charts15NSUIDisplayLink"
-- "Sq"
+- !private "C6Charts15NSUIDisplayLink"
 - !private "Ps16RawRepresentable"
-- "CSo7RunLoop"
-- "VSC11RunLoopMode"
-- "V10ObjectiveC8Selector"
+- !private "CSo7RunLoop"
+- !private "VSC11RunLoopMode"
 - !private "Ps12SignedNumber"
 - !private "Ps10Strideable"
-- !private "Su"
-- !private "Vs6UInt16"
-- !private "Vs6UInt32"
-- !private "Vs6UInt64"
-- !private "Vs5UInt8"
 - !private "Ps15_CVarArgAligned"
 - !private "Ps22_CVarArgPassedAsDouble"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
@@ -496,12 +445,20 @@ depends-nominal:
 - !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
 - "Ps9_Hashable"
 - !private "Ps21_ObjectiveCBridgeable"
-- "Vs26_OptionalNilComparisonType"
 - !private "Ps11_Strideable"
 - !private "Ps20_SwiftNewtypeWrapper"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.apinotesc"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/Charts/Source/Supporting Files/Charts.h"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Charts.build/Debug/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
@@ -516,4 +473,5 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "e54154b7d161d3f089f54a461ad1b13e"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuickLook.apinotesc"
+interface-hash: "3ae6350876853151c0a470bb78bcfd65"

@@ -6,17 +6,29 @@
 //  Copyright © 2017年 com.endo. All rights reserved.
 //  http://tea-leaves.jp/home/ja/article/1374929836
 
+
+//誤った時に問題番号を格納する＜ー章ごとに格納方法（モデル？）を定義@resultmodel
+//次へ遷移する際に誤問題番号の中から順番に選択
+//リセットで消えるようにする->ResultModelで消える
+//右上のメニューボタンで、誤回答数設定か途中終了メニューが選択できるようにする
+//メニューボタンで誤回答数設定では問題選別できるようにする（ぴっかー）
+
 #import "UILabel+FontSizeToFit.h"
 #import "DetailViewController.h"
 #import "ResultViewController.h"
 #import "ResultModel.h"
-
+@import Firebase;
 
 @interface DetailViewController (){
     QuizItem *myQuizItem;
     BOOL isDispExplain;
     BOOL isAnswerable;
     UIView *viewExp;//解説などを表示するビュー
+    
+    //表示する誤答数を選択する
+    UIPickerView *picker;
+    UIView *viewBasePicker;
+    NSArray *arrMistakeSelections;
 }
 
 @end
@@ -28,21 +40,29 @@
     //if (self.detailItem) {
     NSLog(@"%s, quiz.sect = %d", __func__, (int)_quiz.section);
     if (_quiz) {
-        
         self.title = [NSString stringWithFormat:@"第%d章", self.quiz.section];
-        
         //ランダム設定する
         self.quiz.strConfigKey = self.strConfigKey;
-        //self.detailDescriptionLabel.text = [self.detailItem description];
-        myQuizItem = (QuizItem *)self.quiz.quizItemsArray[self.quizNo];
         
-        self.detailDescriptionLabel.text =
+        //self.detailDescriptionLabel.text = [self.detailItem description];
+//        if([self.strConfigKey isEqualToString:QUIZ_CONFIG_KEY_JAKUTEN]){
+//            
+//        }else{
+            //弱点克服モードじゃなかったら通常通り、指名された番号(self.quizNo)を表示する
+            myQuizItem = (QuizItem *)self.quiz.quizItemsArray[self.quizNo];
+//        }
+        
+        
+//        self.detailDescriptionLabel.text =
+//        [NSString stringWithFormat:@"第%d問【%@】過去回答：%@回, 誤回答数%d回",
+        NSString *strDescription =
         [NSString stringWithFormat:@"第%d問【%@】過去回答：%@回, 誤回答数%d回",
          self.quizNo+1, myQuizItem.category,
          myQuizItem.kaitou, [myQuizItem.kaitou intValue] - [myQuizItem.seikai intValue]];
-//            [NSString stringWithFormat:@"%@:%@",
-//             myQuizItem.questionNo,myQuizItem.question];
-        
+        [self.detailDescriptionLabel setText:strDescription];
+        [self.detailDescriptionLabel setTextColor:[UIColor blackColor]];
+        self.detailDescriptionLabel.textColor=[UIColor blackColor];
+        NSLog(@"label text = %@", self.detailDescriptionLabel.text);
         
         self.questionContentLabel.text = myQuizItem.question;
         
@@ -87,8 +107,6 @@
 //            NSLog(@"category%d = %@", i, quiz.arrCategory[i]);
 //        }
 
-        
-        
     }
 }
 
@@ -171,6 +189,8 @@
     [self updateResult:isCorrect];
     
     NSLog(@"isdispexplain = %d", isDispExplain);
+    
+    
     if(isDispExplain){
         NSLog(@"解説表示");
         [self displayExplanation];
@@ -187,6 +207,14 @@
                    withObject:nil
                    afterDelay:1.4f];
     }
+    
+    [FIRAnalytics
+     logEventWithName:@"answer"
+     parameters:@{@"no":[NSNumber numberWithInt:_quizNo],
+                  @"category":myQuizItem.category,
+                  @"sectorName":myQuizItem.sectorName,
+                  @"judge":[NSNumber numberWithBool:isCorrect]}];
+    
 }
 
 -(void)displayExplanation{
@@ -278,6 +306,157 @@
     [self goNext];
 }
 
+-(void)tappedRightNavItem{
+    NSLog(@"tapped right nav item");
+    
+    //ダイアログを開いてイェスならばチェックマークをつける
+    UIAlertController * alertController =
+    [UIAlertController
+     alertControllerWithTitle:@""
+     message:@"メニュー"
+     preferredStyle:UIAlertControllerStyleActionSheet];
+    if([self.strConfigKey isEqualToString:QUIZ_CONFIG_KEY_JAKUTEN]){
+        
+        [alertController addAction:
+         [UIAlertAction
+          actionWithTitle:@"問題の誤回答数を選ぶ"
+          style:UIAlertActionStyleDefault
+          handler:^(UIAlertAction *alert){
+              
+              //pickerを表示する
+              [self setMistakeThreashold];
+          }]];
+    }
+    
+    [alertController addAction:
+     [UIAlertAction
+      actionWithTitle:@"途中で終了する"
+      style:UIAlertActionStyleDefault
+      handler:^(UIAlertAction *alert){
+          [self tappedStop];
+      }]];
+    
+    [alertController addAction:
+     [UIAlertAction
+      actionWithTitle:@"キャンセル"
+      style:UIAlertActionStyleCancel
+      handler:^(UIAlertAction *alert){
+          
+      }]];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
+    
+    
+}
+
+-(void)setMistakeThreashold{
+    NSLog(@"%s", __func__);
+    
+    
+    
+    //実装中
+    picker =
+    [[UIPickerView alloc]initWithFrame:
+     CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height/3)];
+    picker.backgroundColor = [UIColor whiteColor];
+    picker.delegate = self;
+    picker.dataSource = self;
+    picker.showsSelectionIndicator = YES;
+    
+    NSLog(@"picker selected no : %d", self.threasholdMistake);
+    //行番号なので−１する
+    [picker selectRow:self.threasholdMistake-1 inComponent:0 animated:NO];
+    
+    NSLog(@"picker row = %ld", [picker numberOfRowsInComponent:0]);
+    
+    
+    
+    int heightToolbar = 44;
+    UIToolbar *toolBar= [[UIToolbar alloc] initWithFrame:CGRectMake(0,0,self.view.bounds.size.width,heightToolbar)];
+    [toolBar setBarStyle:UIBarStyleBlackOpaque];
+    UIBarButtonItem *barButtonDone =
+    [[UIBarButtonItem alloc]
+     initWithTitle:@"決定"
+     style:UIBarButtonItemStylePlain
+     target:self action:@selector(changeDataFromPicker:)];
+    UIBarButtonItem *flexible = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
+    
+    toolBar.items = @[flexible, barButtonDone];
+    barButtonDone.tintColor=[UIColor whiteColor];
+    
+    viewBasePicker =
+    [[UIView alloc]
+     initWithFrame:
+     CGRectMake(0, 0, self.view.bounds.size.width,heightToolbar+picker.bounds.size.height)];
+    [viewBasePicker addSubview:picker];
+    picker.center =
+    CGPointMake(self.view.center.x,
+                viewBasePicker.bounds.size.height/2);
+    viewBasePicker.backgroundColor = [UIColor whiteColor];
+    [viewBasePicker addSubview:toolBar];
+    viewBasePicker.center = CGPointMake(self.view.center.x,
+                                        self.view.bounds.size.height + viewBasePicker.bounds.size.height/2);
+    [self.view addSubview:viewBasePicker];
+    
+    [self pickerMoveIn];
+
+    
+}
+
+-(void)pickerMoveIn{
+    NSLog(@"%s", __func__);
+    
+    [UIView
+     animateWithDuration:0.15f
+     delay:0
+     options:UIViewAnimationOptionCurveLinear
+     animations:^{
+         //         picker.center =
+         //         CGPointMake(self.view.center.x,
+         //                     self.view.bounds.size.height - picker.bounds.size.height/2);
+         viewBasePicker.center =
+         CGPointMake(self.view.center.x,
+                     self.view.bounds.size.height-viewBasePicker.bounds.size.height/2);
+     }
+     completion:^(BOOL isFinished){
+         NSLog(@"animation finished");
+     }];
+    
+}
+
+
+
+-(void)changeDataFromPicker:(id)sender{
+    NSLog(@"%s", __func__);
+    
+    //設定されたオプションをステータスに反映する（まだやってないだけd）
+    //[self setConfig:(int)[picker selectedRowInComponent:0]];
+    
+    
+    //viewをcloseする
+    [UIView
+     animateWithDuration:0.15f
+     delay:0
+     options:UIViewAnimationOptionCurveEaseIn
+     animations:^{
+         //         picker.center =
+         //         CGPointMake(self.view.center.x,
+         //                     self.view.bounds.size.height + picker.bounds.size.height/2);
+         viewBasePicker.center =
+         CGPointMake(self.view.center.x,
+                     self.view.bounds.size.height + viewBasePicker.bounds.size.height/2);
+     }
+     completion:^(BOOL isFinished){
+         if(isFinished){
+             NSLog(@"animation finished");
+             //[picker removeFromSuperview];
+             [viewBasePicker removeFromSuperview];
+         }
+     }];
+}
+
+
+
 -(void)tappedStop{
     NSLog(@"%s", __func__);
     [viewExp removeFromSuperview];
@@ -288,12 +467,19 @@
     [UIAlertController
      alertControllerWithTitle:@"途中ですが"
      message:@"全て終了しますか？"
-     preferredStyle:UIAlertControllerStyleActionSheet];
+     preferredStyle:UIAlertControllerStyleAlert];
     [alertController addAction:
      [UIAlertAction
       actionWithTitle:@"終了する"
       style:UIAlertActionStyleDefault
       handler:^(UIAlertAction *alert){
+          
+          [FIRAnalytics
+           logEventWithName:@"close:quiz:detail"
+           parameters:@{@"no":[NSNumber numberWithInt:_quizNo],
+                        @"category":myQuizItem.category,
+                        @"sectorName":myQuizItem.sectorName}];
+          
           
           [self.navigationController popToRootViewControllerAnimated:YES];
       }]];
@@ -349,11 +535,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"%s, height = %f", __func__, self.view.bounds.size.height);
+    
+    [FIRAnalytics
+     logEventWithName:@"open:quiz:detail"
+     parameters:@{@"no":[NSNumber numberWithInt:_quizNo],
+                  @"category":myQuizItem.category,
+                  @"sectorName":myQuizItem.sectorName}];
+    
     
     isAnswerable = TRUE;
     self.view.backgroundColor = [UIColor whiteColor];
     self.questionContentLabel.editable=NO;
-    
     
     //isDispExplain = false;//defaultでは解説
     NSUserDefaults *userdef = [NSUserDefaults standardUserDefaults];
@@ -363,11 +556,21 @@
        [self.strConfigKey isEqualToString:QUIZ_CONFIG_KEY_TEST_RANDOM] ||//test mode(random order)
        [self.strConfigKey isEqualToString:QUIZ_CONFIG_KEY_NO_EXP]){
         isDispExplain = NO;
-    }else{
+    }else{//standard ＆ jakutenモードでは解説を表示する
         isDispExplain = YES;
     }
     
-    
+    //誤答数で閾値を設定して
+    if([self.strConfigKey isEqualToString:QUIZ_CONFIG_KEY_JAKUTEN]){
+        arrMistakeSelections =
+        [NSArray arrayWithObjects:@1,@2,@3,@4,@5, nil];
+        
+        //誤答問題の表示基準の設定（ゼロの場合は最低基準の１とする）
+        if(self.threasholdMistake == 0){
+            self.threasholdMistake = 1;
+        }
+        
+    }
     
     [self setNavigationBar];
 }
@@ -391,10 +594,11 @@
     NSLog(@"%s", __func__);
     
     UIBarButtonItem *btnRight = [[UIBarButtonItem alloc]
-                                 initWithTitle:@"途中終了"
+                                 initWithTitle:@"メニュー"
+                                 //initWithTitle:@"途中終了"
                                  style:UIBarButtonItemStylePlain
                                  target:self
-                                 action:@selector(tappedStop)];
+                                 action:@selector(tappedRightNavItem)];
 //    UIBarButtonItem *btnLeft = [[UIBarButtonItem alloc]
 //                                initWithTitle:@"設定"
 //                                style:UIBarButtonItemStylePlain
@@ -412,13 +616,16 @@
     NSLog(@"%s, nextquizno = %d", __func__, self.quizNo);
     int nextQuizNo = [self getNextQuizNo];
     NSLog(@"%s, nextquizno = %d", __func__, nextQuizNo);
-    //if(nextQuizItem){
+    
+    //戻ってきたときに再度回答できるようにする
+    isAnswerable = YES;
     if(nextQuizNo >= 0){
         DetailViewController *controller =
         [[self storyboard] instantiateViewControllerWithIdentifier:@"detail"];
         [controller setQuiz:(Quiz *)(self.quiz)];
         //controller.quizNo = nextQuizNo;
         //controller.quizNo = nextQuizItem.intQuestionNo;
+        controller.threasholdMistake = self.threasholdMistake;
         controller.quizNo = nextQuizNo;
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
         controller.navigationItem.leftItemsSupplementBackButton = YES;
@@ -440,13 +647,22 @@
 -(int)getNextQuizNo{
     NSLog(@"%s, self.quizNo=%d", __func__, self.quizNo);
     if(self.quiz){
-        int nextNo = [self.quiz nextQuiz:(int)self.quizNo];
-        
-        if(nextNo < self.quiz.quizItemsArray.count){
-            NSLog(@"nextNo = %d", nextNo);
-            return nextNo;
+        if([self.strConfigKey isEqualToString:QUIZ_CONFIG_KEY_JAKUTEN]){
+            ResultModel *resultModel = [[ResultModel alloc] initWithSection:self.quiz];
+            
+            //メニューボタンで選択した（できる）誤回答数の選定もできるようにする
+            return (int)[resultModel
+                         getInCorrectWithoutNo:self.quizNo
+                         withThreashold:(self.threasholdMistake==0?1:self.threasholdMistake)];//現在の番号以外で、過去に誤った問題番号を返す
         }else{
-            return -1;
+            int nextNo = [self.quiz nextQuiz:(int)self.quizNo];
+            
+            if(nextNo < self.quiz.quizItemsArray.count){
+                NSLog(@"nextNo = %d", nextNo);
+                return nextNo;
+            }else{
+                return -1;
+            }
         }
     }
     
@@ -487,6 +703,27 @@
     ResultModel *resultModel = [[ResultModel alloc]initWithSection:self.quiz];
     [resultModel setResult:self.quizNo isCorrect:isCorrect];
     resultModel = nil;
+    
+    
+    
+    //誤回答状況の格納->jakuten-modeでなくとも保存だけは実施->ResultModelで巻き取れる？
+//    if(!isCorrect){
+//        NSUserDefaults *userdef = [NSUserDefaults standardUserDefaults];
+//        NSString *strKeyArrMistake =
+//        [NSString stringWithFormat:@"array_mistake_%d",self.quiz.section];
+//        NSMutableArray *arrMistake = [[userdef arrayForKey:strKeyArrMistake] mutableCopy];
+//        if(!arrMistake){
+//            for(int i = 0;i < self.quiz.quizItemsArray.count;i++){
+//                [arrMistake addObject:[NSNumber numberWithInteger:0]];
+//            }
+//        }
+//        arrMistake[self.quizNo] = [NSNumber numberWithInteger:[arrMistake[self.quizNo] integerValue] + 1];
+//        [userdef setObject:arrMistake forKey:strKeyArrMistake];
+//        userdef = nil;
+//    }
+    
+    
+    
 }
 
 
@@ -527,4 +764,42 @@
     return lbl;
 }
 
+
+#pragma mark - Picker View
+//表示列数
+-(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+    
+    return 1;
+}
+
+//表示個数
+-(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
+    
+    return [arrMistakeSelections count];
+}
+
+//表示内容
+-(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
+    
+    
+    return [NSString stringWithFormat:@"%d", (int)[arrMistakeSelections[row] integerValue]];
+}
+
+//選択時
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+    
+    self.threasholdMistake = (int)[arrMistakeSelections[row] integerValue];
+    NSLog(@"%s %d, %d", __func__, (int)row, (int)component);
+    
+    //選択したステータス(誤答回数基準)
+    NSUserDefaults *userDef = [NSUserDefaults standardUserDefaults];
+    [userDef setInteger:self.threasholdMistake forKey:USER_DEFAULTS_MISTAKE_THREASHOLD];
+    userDef = nil;
+    
+}
+
+
+
 @end
+
+

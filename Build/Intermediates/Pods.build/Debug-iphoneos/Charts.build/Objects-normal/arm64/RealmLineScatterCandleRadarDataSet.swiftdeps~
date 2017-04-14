@@ -1,0 +1,236 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "RealmLineScatterCandleRadarDataSet"
+provides-nominal:
+- "C6Charts34RealmLineScatterCandleRadarDataSet"
+provides-member:
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", ""]
+provides-dynamic-lookup:
+- "copyWithZone"
+- "drawHorizontalHighlightIndicatorEnabled"
+- "drawVerticalHighlightIndicatorEnabled"
+- "isHorizontalHighlightIndicatorEnabled"
+- "isVerticalHighlightIndicatorEnabled"
+- "setDrawHighlightIndicators"
+depends-top-level:
+- "AnyObject"
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- "CastingPrecedence"
+- "ILineScatterCandleRadarChartDataSet"
+- "NSZone"
+- "RealmBarLineScatterCandleBubbleDataSet"
+- "RealmLineScatterCandleRadarDataSet"
+depends-member:
+- !private ["Ps9AnyObject", "copyWithZone"]
+- ["Ps9AnyObject", "drawHorizontalHighlightIndicatorEnabled"]
+- ["Ps9AnyObject", "drawVerticalHighlightIndicatorEnabled"]
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "isHorizontalHighlightIndicatorEnabled"]
+- ["Ps9AnyObject", "isVerticalHighlightIndicatorEnabled"]
+- ["Ps9AnyObject", "setDrawHighlightIndicators"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps7CVarArg", "copyWithZone"]
+- ["Ps7CVarArg", "drawHorizontalHighlightIndicatorEnabled"]
+- ["Ps7CVarArg", "drawVerticalHighlightIndicatorEnabled"]
+- !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "isHorizontalHighlightIndicatorEnabled"]
+- ["Ps7CVarArg", "isVerticalHighlightIndicatorEnabled"]
+- ["Ps7CVarArg", "setDrawHighlightIndicators"]
+- ["Ps7CVarArg", ""]
+- ["C6Charts16ChartBaseDataSet", "AnyObject"]
+- ["C6Charts16ChartBaseDataSet", "Bool"]
+- ["C6Charts16ChartBaseDataSet", "NSZone"]
+- !private ["C6Charts16ChartBaseDataSet", "RealmLineScatterCandleRadarDataSet"]
+- ["C6Charts16ChartBaseDataSet", "copyWithZone"]
+- ["C6Charts16ChartBaseDataSet", "drawHorizontalHighlightIndicatorEnabled"]
+- ["C6Charts16ChartBaseDataSet", "drawVerticalHighlightIndicatorEnabled"]
+- ["C6Charts16ChartBaseDataSet", "init"]
+- ["C6Charts16ChartBaseDataSet", "isHorizontalHighlightIndicatorEnabled"]
+- ["C6Charts16ChartBaseDataSet", "isVerticalHighlightIndicatorEnabled"]
+- ["C6Charts16ChartBaseDataSet", "setDrawHighlightIndicators"]
+- !private ["Ps28CustomDebugStringConvertible", "copyWithZone"]
+- ["Ps28CustomDebugStringConvertible", "drawHorizontalHighlightIndicatorEnabled"]
+- ["Ps28CustomDebugStringConvertible", "drawVerticalHighlightIndicatorEnabled"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "isHorizontalHighlightIndicatorEnabled"]
+- ["Ps28CustomDebugStringConvertible", "isVerticalHighlightIndicatorEnabled"]
+- ["Ps28CustomDebugStringConvertible", "setDrawHighlightIndicators"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "copyWithZone"]
+- ["Ps23CustomStringConvertible", "drawHorizontalHighlightIndicatorEnabled"]
+- ["Ps23CustomStringConvertible", "drawVerticalHighlightIndicatorEnabled"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "isHorizontalHighlightIndicatorEnabled"]
+- ["Ps23CustomStringConvertible", "isVerticalHighlightIndicatorEnabled"]
+- ["Ps23CustomStringConvertible", "setDrawHighlightIndicators"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "copyWithZone"]
+- ["Ps9Equatable", "drawHorizontalHighlightIndicatorEnabled"]
+- ["Ps9Equatable", "drawVerticalHighlightIndicatorEnabled"]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "isHorizontalHighlightIndicatorEnabled"]
+- ["Ps9Equatable", "isVerticalHighlightIndicatorEnabled"]
+- ["Ps9Equatable", "setDrawHighlightIndicators"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "copyWithZone"]
+- ["Ps8Hashable", "drawHorizontalHighlightIndicatorEnabled"]
+- ["Ps8Hashable", "drawVerticalHighlightIndicatorEnabled"]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "isHorizontalHighlightIndicatorEnabled"]
+- ["Ps8Hashable", "isVerticalHighlightIndicatorEnabled"]
+- ["Ps8Hashable", "setDrawHighlightIndicators"]
+- ["Ps8Hashable", ""]
+- !private ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "copyWithZone"]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "drawHorizontalHighlightIndicatorEnabled"]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "drawVerticalHighlightIndicatorEnabled"]
+- !private ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "init"]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "isHorizontalHighlightIndicatorEnabled"]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "isVerticalHighlightIndicatorEnabled"]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "setDrawHighlightIndicators"]
+- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", ""]
+- !private ["P6Charts13IChartDataSet", "copyWithZone"]
+- ["P6Charts13IChartDataSet", "drawHorizontalHighlightIndicatorEnabled"]
+- ["P6Charts13IChartDataSet", "drawVerticalHighlightIndicatorEnabled"]
+- !private ["P6Charts13IChartDataSet", "init"]
+- ["P6Charts13IChartDataSet", "isHorizontalHighlightIndicatorEnabled"]
+- ["P6Charts13IChartDataSet", "isVerticalHighlightIndicatorEnabled"]
+- ["P6Charts13IChartDataSet", "setDrawHighlightIndicators"]
+- ["P6Charts13IChartDataSet", ""]
+- ["P6Charts35ILineScatterCandleRadarChartDataSet", "drawHorizontalHighlightIndicatorEnabled"]
+- ["P6Charts35ILineScatterCandleRadarChartDataSet", "drawVerticalHighlightIndicatorEnabled"]
+- ["P6Charts35ILineScatterCandleRadarChartDataSet", "isHorizontalHighlightIndicatorEnabled"]
+- ["P6Charts35ILineScatterCandleRadarChartDataSet", "isVerticalHighlightIndicatorEnabled"]
+- ["P6Charts35ILineScatterCandleRadarChartDataSet", "setDrawHighlightIndicators"]
+- ["P6Charts35ILineScatterCandleRadarChartDataSet", ""]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "NSZone"]
+- !private ["CSo8NSObject", "RealmLineScatterCandleRadarDataSet"]
+- ["CSo8NSObject", "copyWithZone"]
+- ["CSo8NSObject", "drawHorizontalHighlightIndicatorEnabled"]
+- ["CSo8NSObject", "drawVerticalHighlightIndicatorEnabled"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "isHorizontalHighlightIndicatorEnabled"]
+- ["CSo8NSObject", "isVerticalHighlightIndicatorEnabled"]
+- ["CSo8NSObject", "setDrawHighlightIndicators"]
+- !private ["PSo16NSObjectProtocol", "copyWithZone"]
+- ["PSo16NSObjectProtocol", "drawHorizontalHighlightIndicatorEnabled"]
+- ["PSo16NSObjectProtocol", "drawVerticalHighlightIndicatorEnabled"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "isHorizontalHighlightIndicatorEnabled"]
+- ["PSo16NSObjectProtocol", "isVerticalHighlightIndicatorEnabled"]
+- ["PSo16NSObjectProtocol", "setDrawHighlightIndicators"]
+- ["PSo16NSObjectProtocol", ""]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "AnyObject"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "Bool"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "NSZone"]
+- !private ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "RealmLineScatterCandleRadarDataSet"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "copyWithZone"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "drawHorizontalHighlightIndicatorEnabled"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "drawVerticalHighlightIndicatorEnabled"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "init"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "isHorizontalHighlightIndicatorEnabled"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "isVerticalHighlightIndicatorEnabled"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", "setDrawHighlightIndicators"]
+- ["C6Charts38RealmBarLineScatterCandleBubbleDataSet", ""]
+- ["C6Charts16RealmBaseDataSet", "AnyObject"]
+- ["C6Charts16RealmBaseDataSet", "Bool"]
+- ["C6Charts16RealmBaseDataSet", "NSZone"]
+- !private ["C6Charts16RealmBaseDataSet", "RealmLineScatterCandleRadarDataSet"]
+- ["C6Charts16RealmBaseDataSet", "copyWithZone"]
+- ["C6Charts16RealmBaseDataSet", "drawHorizontalHighlightIndicatorEnabled"]
+- ["C6Charts16RealmBaseDataSet", "drawVerticalHighlightIndicatorEnabled"]
+- ["C6Charts16RealmBaseDataSet", "init"]
+- ["C6Charts16RealmBaseDataSet", "isHorizontalHighlightIndicatorEnabled"]
+- ["C6Charts16RealmBaseDataSet", "isVerticalHighlightIndicatorEnabled"]
+- ["C6Charts16RealmBaseDataSet", "setDrawHighlightIndicators"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "AnyObject"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "Bool"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "NSZone"]
+- !private ["C6Charts34RealmLineScatterCandleRadarDataSet", "RealmLineScatterCandleRadarDataSet"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "copyWithZone"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "deinit"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "drawHorizontalHighlightIndicatorEnabled"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "drawVerticalHighlightIndicatorEnabled"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "init"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "isHorizontalHighlightIndicatorEnabled"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "isVerticalHighlightIndicatorEnabled"]
+- ["C6Charts34RealmLineScatterCandleRadarDataSet", "setDrawHighlightIndicators"]
+- !private ["Ps9_Hashable", "copyWithZone"]
+- ["Ps9_Hashable", "drawHorizontalHighlightIndicatorEnabled"]
+- ["Ps9_Hashable", "drawVerticalHighlightIndicatorEnabled"]
+- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "isHorizontalHighlightIndicatorEnabled"]
+- ["Ps9_Hashable", "isVerticalHighlightIndicatorEnabled"]
+- ["Ps9_Hashable", "setDrawHighlightIndicators"]
+- ["Ps9_Hashable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps7CVarArg"
+- "C6Charts16ChartBaseDataSet"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "P6Charts39IBarLineScatterCandleBubbleChartDataSet"
+- "P6Charts13IChartDataSet"
+- "P6Charts35ILineScatterCandleRadarChartDataSet"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "C6Charts38RealmBarLineScatterCandleBubbleDataSet"
+- "C6Charts16RealmBaseDataSet"
+- "C6Charts34RealmLineScatterCandleRadarDataSet"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Target Support Files/Charts/Charts-umbrella.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Pods.build/Debug-iphoneos/Charts.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMOptionalBase.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMListBase.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSchema.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMResults.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMConstants.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMProperty.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObject.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMMigration.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMCollection.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMArray.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/Realm.h"
+- "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Pods.build/Debug-iphoneos/Realm.build/module.modulemap"
+interface-hash: "4dc2b3e9e16a2bc7bf3d8b29a8d7a21c"

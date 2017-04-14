@@ -43,10 +43,10 @@ void RLMCacheRealm(std::string const& path, RLMRealm *realm) {
     std::lock_guard<std::mutex> lock(s_realmCacheMutex);
     NSMapTable *realms = s_realmsPerPath[path];
     if (!realms) {
-        s_realmsPerPath[path] = realms = [NSMapTable mapTableWithKeyOptions:NSPointerFunctionsOpaquePersonality|NSPointerFunctionsOpaqueMemory
+        s_realmsPerPath[path] = realms = [NSMapTable mapTableWithKeyOptions:NSPointerFunctionsObjectPersonality
                                                                valueOptions:NSPointerFunctionsWeakMemory];
     }
-    [realms setObject:realm forKey:(__bridge id)pthread_self()];
+    [realms setObject:realm forKey:@(pthread_mach_thread_np(pthread_self()))];
 }
 
 RLMRealm *RLMGetAnyCachedRealmForPath(std::string const& path) {
@@ -55,8 +55,9 @@ RLMRealm *RLMGetAnyCachedRealmForPath(std::string const& path) {
 }
 
 RLMRealm *RLMGetThreadLocalCachedRealmForPath(std::string const& path) {
+    mach_port_t threadID = pthread_mach_thread_np(pthread_self());
     std::lock_guard<std::mutex> lock(s_realmCacheMutex);
-    return [s_realmsPerPath[path] objectForKey:(__bridge id)pthread_self()];
+    return [s_realmsPerPath[path] objectForKey:@(threadID)];
 }
 
 void RLMClearRealmCache() {
@@ -110,13 +111,11 @@ public:
         }
     }
 
-    void did_change(std::vector<ObserverState> const& observed, std::vector<void*> const& invalidated, bool version_changed) override {
+    void did_change(std::vector<ObserverState> const& observed, std::vector<void*> const& invalidated) override {
         try {
             @autoreleasepool {
                 RLMDidChange(observed, invalidated);
-                if (version_changed) {
-                    [_realm sendNotifications:RLMRealmDidChangeNotification];
-                }
+                [_realm sendNotifications:RLMRealmDidChangeNotification];
             }
         }
         catch (...) {

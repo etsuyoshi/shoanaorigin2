@@ -7,25 +7,23 @@ provides-member:
 - ["C6Charts17LineRadarRenderer", ""]
 provides-dynamic-lookup:
 - "drawFilledPath"
-- "drawFilledPath"
 depends-top-level:
+- "Animator"
 - "CGContext"
-- "LineRadarRenderer"
+- "CGFloat"
 - "CGPath"
 - "Fill"
-- "ViewPortHandler"
-- "Animator"
+- "LineRadarRenderer"
 - "LineScatterCandleRadarRenderer"
-- "CGFloat"
 - "NSUIColor"
+- "ViewPortHandler"
 depends-member:
 - !private ["Ps9AnyObject", "addPath"]
 - !private ["Ps9AnyObject", "beginPath"]
 - !private ["Ps9AnyObject", "cgColor"]
 - !private ["Ps9AnyObject", "contentRect"]
-- ["Ps9AnyObject", "drawFilledPath"]
 - !private ["Ps9AnyObject", "fillPath"]
-- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "restoreGState"]
 - !private ["Ps9AnyObject", "saveGState"]
 - !private ["Ps9AnyObject", "setAlpha"]
@@ -42,37 +40,29 @@ depends-member:
 - ["C6Charts34BarLineScatterCandleBubbleRenderer", "drawFilledPath"]
 - ["C6Charts34BarLineScatterCandleBubbleRenderer", "init"]
 - !private ["C6Charts34BarLineScatterCandleBubbleRenderer", "viewPortHandler"]
-- ["CSo7CGColor", "deinit"]
 - !private ["CSo9CGContext", "addPath"]
 - !private ["CSo9CGContext", "beginPath"]
-- ["CSo9CGContext", "deinit"]
 - !private ["CSo9CGContext", "fillPath"]
 - !private ["CSo9CGContext", "restoreGState"]
 - !private ["CSo9CGContext", "saveGState"]
 - !private ["CSo9CGContext", "setAlpha"]
 - !private ["CSo9CGContext", "setFillColor"]
-- ["V12CoreGraphics7CGFloat", "deinit"]
-- ["CSo6CGPath", "deinit"]
-- ["VSC6CGRect", "deinit"]
 - !private ["Ps7CVarArg", "cgColor"]
 - !private ["Ps7CVarArg", "contentRect"]
-- ["Ps7CVarArg", "drawFilledPath"]
 - !private ["Ps7CVarArg", "fillPath"]
-- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "viewPortHandler"]
 - ["Ps7CVarArg", ""]
 - !private ["Ps28CustomDebugStringConvertible", "cgColor"]
 - !private ["Ps28CustomDebugStringConvertible", "contentRect"]
-- ["Ps28CustomDebugStringConvertible", "drawFilledPath"]
 - !private ["Ps28CustomDebugStringConvertible", "fillPath"]
-- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "viewPortHandler"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "cgColor"]
 - !private ["Ps23CustomStringConvertible", "contentRect"]
-- ["Ps23CustomStringConvertible", "drawFilledPath"]
 - !private ["Ps23CustomStringConvertible", "fillPath"]
-- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "viewPortHandler"]
 - ["Ps23CustomStringConvertible", ""]
 - ["C6Charts12DataRenderer", "Animator"]
@@ -87,18 +77,15 @@ depends-member:
 - !private ["C6Charts12DataRenderer", "viewPortHandler"]
 - !private ["Ps9Equatable", "cgColor"]
 - !private ["Ps9Equatable", "contentRect"]
-- ["Ps9Equatable", "drawFilledPath"]
 - !private ["Ps9Equatable", "fillPath"]
-- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "viewPortHandler"]
 - ["Ps9Equatable", ""]
-- ["C6Charts4Fill", "deinit"]
 - !private ["C6Charts4Fill", "fillPath"]
 - !private ["Ps8Hashable", "cgColor"]
 - !private ["Ps8Hashable", "contentRect"]
-- ["Ps8Hashable", "drawFilledPath"]
 - !private ["Ps8Hashable", "fillPath"]
-- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "viewPortHandler"]
 - ["Ps8Hashable", ""]
 - ["C6Charts17LineRadarRenderer", "Animator"]
@@ -119,14 +106,12 @@ depends-member:
 - ["C6Charts30LineScatterCandleRadarRenderer", "Fill"]
 - ["C6Charts30LineScatterCandleRadarRenderer", "NSUIColor"]
 - ["C6Charts30LineScatterCandleRadarRenderer", "ViewPortHandler"]
-- ["C6Charts30LineScatterCandleRadarRenderer", "deinit"]
 - ["C6Charts30LineScatterCandleRadarRenderer", "drawFilledPath"]
 - ["C6Charts30LineScatterCandleRadarRenderer", "init"]
 - !private ["C6Charts30LineScatterCandleRadarRenderer", "viewPortHandler"]
 - ["C6Charts30LineScatterCandleRadarRenderer", ""]
 - !private ["PSo8NSCoding", "cgColor"]
 - !private ["CSo7NSColor", "cgColor"]
-- ["CSo7NSColor", "deinit"]
 - !private ["PSo9NSCopying", "cgColor"]
 - ["CSo8NSObject", "Animator"]
 - ["CSo8NSObject", "CGContext"]
@@ -142,15 +127,13 @@ depends-member:
 - !private ["CSo8NSObject", "viewPortHandler"]
 - !private ["PSo16NSObjectProtocol", "cgColor"]
 - !private ["PSo16NSObjectProtocol", "contentRect"]
-- ["PSo16NSObjectProtocol", "drawFilledPath"]
 - !private ["PSo16NSObjectProtocol", "fillPath"]
-- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "viewPortHandler"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo19NSPasteboardReading", "cgColor"]
 - !private ["PSo19NSPasteboardWriting", "cgColor"]
 - !private ["PSo14NSSecureCoding", "cgColor"]
-- ["Sq", "deinit"]
 - ["C6Charts8Renderer", "Animator"]
 - ["C6Charts8Renderer", "CGContext"]
 - ["C6Charts8Renderer", "CGFloat"]
@@ -161,48 +144,50 @@ depends-member:
 - ["C6Charts8Renderer", "drawFilledPath"]
 - !private ["C6Charts8Renderer", "viewPortHandler"]
 - !private ["C6Charts15ViewPortHandler", "contentRect"]
-- ["C6Charts15ViewPortHandler", "deinit"]
 - !private ["Ps26_ExpressibleByColorLiteral", "cgColor"]
 - !private ["Ps9_Hashable", "cgColor"]
 - !private ["Ps9_Hashable", "contentRect"]
-- ["Ps9_Hashable", "drawFilledPath"]
 - !private ["Ps9_Hashable", "fillPath"]
-- ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "viewPortHandler"]
 - ["Ps9_Hashable", ""]
 depends-nominal:
 - "Ps9AnyObject"
 - "C6Charts34BarLineScatterCandleBubbleRenderer"
-- "CSo7CGColor"
-- "CSo9CGContext"
-- "V12CoreGraphics7CGFloat"
-- "CSo6CGPath"
-- "VSC6CGRect"
+- !private "CSo9CGContext"
 - "Ps7CVarArg"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
 - "C6Charts12DataRenderer"
 - "Ps9Equatable"
-- "C6Charts4Fill"
+- !private "C6Charts4Fill"
 - "Ps8Hashable"
 - "C6Charts17LineRadarRenderer"
 - "C6Charts30LineScatterCandleRadarRenderer"
 - !private "PSo8NSCoding"
-- "CSo7NSColor"
+- !private "CSo7NSColor"
 - !private "PSo9NSCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "PSo19NSPasteboardReading"
 - !private "PSo19NSPasteboardWriting"
 - !private "PSo14NSSecureCoding"
-- "Sq"
 - "C6Charts8Renderer"
-- "C6Charts15ViewPortHandler"
+- !private "C6Charts15ViewPortHandler"
 - !private "Ps26_ExpressibleByColorLiteral"
 - "Ps9_Hashable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.apinotesc"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/Charts/Source/Supporting Files/Charts.h"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Charts.build/Debug/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
@@ -217,4 +202,5 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "b08aab45b7333335d1b6f823bb23f0b0"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuickLook.apinotesc"
+interface-hash: "d54e4cc94c5adda63a94858c7c906f24"

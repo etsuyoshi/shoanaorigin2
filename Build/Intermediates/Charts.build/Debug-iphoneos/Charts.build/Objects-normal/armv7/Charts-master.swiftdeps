@@ -1,6 +1,6 @@
-version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "151f29665c4522359dd2275036a7b8f7"
-build_time: [539164519, 903339000]
+version: "Apple Swift version 3.1 (swiftlang-802.0.51 clang-802.0.41)"
+options: "f56d5920ae26dd7901770d7eb1c0dac0"
+build_time: [545324748, 100616000]
 inputs:
   "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/Charts/Source/Charts/Renderers/LineScatterCandleRadarRenderer.swift": [537849927, 0]
   "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/Charts/Source/Charts/Utils/TransformerHorizontalBarChart.swift": [537849927, 0]

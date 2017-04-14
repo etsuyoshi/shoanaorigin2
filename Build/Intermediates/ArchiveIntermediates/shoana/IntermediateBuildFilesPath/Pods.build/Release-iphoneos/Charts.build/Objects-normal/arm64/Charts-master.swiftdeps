@@ -1,6 +1,6 @@
-version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "423cb08be0accf0a8c6ea5e5a49bd7a8"
-build_time: [540773928, 948660000]
+version: "Apple Swift version 3.1 (swiftlang-802.0.51 clang-802.0.41)"
+options: "566fe78d217bf96e4cc3e63d27951ef7"
+build_time: [545468370, 51677000]
 inputs:
   "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Source/Charts/Jobs/AnimatedMoveViewJob.swift": [9223372036854775807, 0]
   "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Source/Charts/Jobs/AnimatedViewPortJob.swift": [9223372036854775807, 0]
@@ -114,6 +114,17 @@ inputs:
   "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Source/Charts/Charts/RadarChartView.swift": [9223372036854775807, 0]
   "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Source/Charts/Highlight/RadarHighlighter.swift": [9223372036854775807, 0]
   "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Source/Charts/Highlight/Range.swift": [9223372036854775807, 0]
+  "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Source/ChartsRealm/Data/RealmBarDataSet.swift": [9223372036854775807, 0]
+  "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Source/ChartsRealm/Data/RealmBarLineScatterCandleBubbleDataSet.swift": [9223372036854775807, 0]
+  "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Source/ChartsRealm/Data/RealmBaseDataSet.swift": [9223372036854775807, 0]
+  "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Source/ChartsRealm/Data/RealmBubbleDataSet.swift": [9223372036854775807, 0]
+  "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Source/ChartsRealm/Data/RealmCandleDataSet.swift": [9223372036854775807, 0]
+  "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Source/ChartsRealm/Data/RealmLineDataSet.swift": [9223372036854775807, 0]
+  "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Source/ChartsRealm/Data/RealmLineRadarDataSet.swift": [9223372036854775807, 0]
+  "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Source/ChartsRealm/Data/RealmLineScatterCandleRadarDataSet.swift": [9223372036854775807, 0]
+  "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Source/ChartsRealm/Data/RealmPieDataSet.swift": [9223372036854775807, 0]
+  "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Source/ChartsRealm/Data/RealmRadarDataSet.swift": [9223372036854775807, 0]
+  "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Source/ChartsRealm/Data/RealmScatterDataSet.swift": [9223372036854775807, 0]
   "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Source/Charts/Renderers/Renderer.swift": [9223372036854775807, 0]
   "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Source/Charts/Data/Implementations/Standard/ScatterChartData.swift": [9223372036854775807, 0]
   "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Charts/Source/Charts/Interfaces/ScatterChartDataProvider.swift": [9223372036854775807, 0]

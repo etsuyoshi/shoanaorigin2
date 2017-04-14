@@ -6,35 +6,27 @@ provides-nominal:
 provides-member:
 - ["C6Charts13ComponentBase", ""]
 provides-dynamic-lookup:
-- "xOffset"
 - "enabled"
 - "isEnabled"
+- "xOffset"
 - "yOffset"
 depends-top-level:
-- "ComponentBase"
-- "CGFloat"
-- "BooleanLiteralType"
-- "NSObject"
 - "Bool"
+- "BooleanLiteralType"
+- "CGFloat"
+- "ComponentBase"
+- "NSObject"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]
-- ["Ps9AnyObject", "enabled"]
-- ["Ps9AnyObject", "init"]
-- ["Ps9AnyObject", "isEnabled"]
-- ["Ps9AnyObject", "xOffset"]
-- ["Ps9AnyObject", "yOffset"]
+- !private ["Ps9AnyObject", "enabled"]
+- !private ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", ""]
 - ["Ps19BinaryFloatingPoint", "init"]
-- ["Sb", "deinit"]
-- ["V12CoreGraphics7CGFloat", "deinit"]
 - ["V12CoreGraphics7CGFloat", "init"]
 - ["Ps7CVarArg", "CGFloat"]
-- ["Ps7CVarArg", "enabled"]
+- !private ["Ps7CVarArg", "enabled"]
 - ["Ps7CVarArg", "init"]
-- ["Ps7CVarArg", "isEnabled"]
-- ["Ps7CVarArg", "xOffset"]
-- ["Ps7CVarArg", "yOffset"]
 - ["Ps7CVarArg", ""]
 - ["Ps10Comparable", "init"]
 - ["C6Charts13ComponentBase", "Bool"]
@@ -46,41 +38,27 @@ depends-member:
 - ["C6Charts13ComponentBase", "xOffset"]
 - ["C6Charts13ComponentBase", "yOffset"]
 - ["Ps28CustomDebugStringConvertible", "CGFloat"]
-- ["Ps28CustomDebugStringConvertible", "enabled"]
-- ["Ps28CustomDebugStringConvertible", "init"]
-- ["Ps28CustomDebugStringConvertible", "isEnabled"]
-- ["Ps28CustomDebugStringConvertible", "xOffset"]
-- ["Ps28CustomDebugStringConvertible", "yOffset"]
+- !private ["Ps28CustomDebugStringConvertible", "enabled"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - ["Ps17CustomReflectable", "init"]
 - ["Ps23CustomStringConvertible", "CGFloat"]
-- ["Ps23CustomStringConvertible", "enabled"]
+- !private ["Ps23CustomStringConvertible", "enabled"]
 - ["Ps23CustomStringConvertible", "init"]
-- ["Ps23CustomStringConvertible", "isEnabled"]
-- ["Ps23CustomStringConvertible", "xOffset"]
-- ["Ps23CustomStringConvertible", "yOffset"]
 - ["Ps23CustomStringConvertible", ""]
-- ["Sd", "deinit"]
 - ["Ps9Equatable", "CGFloat"]
-- ["Ps9Equatable", "enabled"]
+- !private ["Ps9Equatable", "enabled"]
 - ["Ps9Equatable", "init"]
-- ["Ps9Equatable", "isEnabled"]
-- ["Ps9Equatable", "xOffset"]
-- ["Ps9Equatable", "yOffset"]
 - ["Ps9Equatable", ""]
 - ["Ps25ExpressibleByFloatLiteral", "init"]
 - ["Ps27ExpressibleByIntegerLiteral", "init"]
 - ["Ps13FloatingPoint", "init"]
 - ["Ps8Hashable", "CGFloat"]
-- ["Ps8Hashable", "enabled"]
+- !private ["Ps8Hashable", "enabled"]
 - ["Ps8Hashable", "init"]
-- ["Ps8Hashable", "isEnabled"]
-- ["Ps8Hashable", "xOffset"]
-- ["Ps8Hashable", "yOffset"]
 - ["Ps8Hashable", ""]
 - ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "CGFloat"]
-- ["CSo8NSObject", "deinit"]
 - ["CSo8NSObject", "enabled"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "isEnabled"]
@@ -88,22 +66,16 @@ depends-member:
 - ["CSo8NSObject", "yOffset"]
 - ["CSo8NSObject", ""]
 - ["PSo16NSObjectProtocol", "CGFloat"]
-- ["PSo16NSObjectProtocol", "enabled"]
-- ["PSo16NSObjectProtocol", "init"]
-- ["PSo16NSObjectProtocol", "isEnabled"]
-- ["PSo16NSObjectProtocol", "xOffset"]
-- ["PSo16NSObjectProtocol", "yOffset"]
+- !private ["PSo16NSObjectProtocol", "enabled"]
+- !private ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", ""]
 - ["Ps12SignedNumber", "init"]
 - ["Ps10Strideable", "init"]
 - ["Ps15_CVarArgAligned", "init"]
 - ["Ps22_CVarArgPassedAsDouble", "init"]
 - ["Ps9_Hashable", "CGFloat"]
-- ["Ps9_Hashable", "enabled"]
+- !private ["Ps9_Hashable", "enabled"]
 - ["Ps9_Hashable", "init"]
-- ["Ps9_Hashable", "isEnabled"]
-- ["Ps9_Hashable", "xOffset"]
-- ["Ps9_Hashable", "yOffset"]
 - ["Ps9_Hashable", ""]
 - ["Ps21_ObjectiveCBridgeable", "init"]
 - ["Ps11_Strideable", "init"]
@@ -111,7 +83,6 @@ depends-nominal:
 - "Ps16AbsoluteValuable"
 - "Ps9AnyObject"
 - "Ps19BinaryFloatingPoint"
-- "Sb"
 - "V12CoreGraphics7CGFloat"
 - "Ps7CVarArg"
 - "Ps10Comparable"
@@ -119,7 +90,6 @@ depends-nominal:
 - "Ps28CustomDebugStringConvertible"
 - "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
-- "Sd"
 - "Ps9Equatable"
 - "Ps25ExpressibleByFloatLiteral"
 - "Ps27ExpressibleByIntegerLiteral"
@@ -137,6 +107,12 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/Charts/Source/Supporting Files/Charts.h"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Charts.build/Debug-iphonesimulator/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
@@ -148,4 +124,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "85ef2db243f56f94a905bef8fa5c99fb"
+interface-hash: "adb3ebf1417a90354b402ea85606db3f"

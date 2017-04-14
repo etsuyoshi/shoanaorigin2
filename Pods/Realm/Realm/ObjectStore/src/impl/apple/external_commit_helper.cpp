@@ -158,8 +158,6 @@ ExternalCommitHelper::ExternalCommitHelper(RealmCoordinator& parent)
         try {
             listen();
         }
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
         catch (std::exception const& e) {
             fprintf(stderr, "uncaught exception in notifier thread: %s: %s\n", typeid(e).name(), e.what());
             asl_log(nullptr, nullptr, ASL_LEVEL_ERR, "uncaught exception in notifier thread: %s: %s", typeid(e).name(), e.what());
@@ -170,7 +168,6 @@ ExternalCommitHelper::ExternalCommitHelper(RealmCoordinator& parent)
             asl_log(nullptr, nullptr, ASL_LEVEL_ERR, "uncaught exception in notifier thread");
             throw;
         }
-#pragma clang diagnostic pop
     });
 }
 

@@ -6,37 +6,36 @@ provides-nominal:
 provides-member:
 - ["C6Charts17PieChartDataEntry", ""]
 provides-dynamic-lookup:
-- "label"
-- "x"
 - "copyWithZone"
+- "label"
 - "value"
+- "x"
 depends-top-level:
-- "String"
 - "AnyObject"
-- !private "StringLiteralType"
-- "ChartDataEntry"
-- "PieChartDataEntry"
-- "Double"
 - "AssignmentPrecedence"
 - "CastingPrecedence"
+- "ChartDataEntry"
+- "Double"
 - "NSZone"
+- "PieChartDataEntry"
+- "String"
+- !private "StringLiteralType"
 - !private "print"
 depends-member:
-- ["Ps9AnyObject", "copyWithZone"]
-- ["Ps9AnyObject", "deinit"]
-- ["Ps9AnyObject", "init"]
-- ["Ps9AnyObject", "label"]
+- !private ["Ps9AnyObject", "copyWithZone"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "label"]
 - !private ["Ps9AnyObject", "print"]
-- ["Ps9AnyObject", "value"]
-- ["Ps9AnyObject", "x"]
+- !private ["Ps9AnyObject", "value"]
+- !private ["Ps9AnyObject", "x"]
 - !private ["Ps9AnyObject", "y"]
 - ["Ps9AnyObject", ""]
-- ["Ps7CVarArg", "copyWithZone"]
-- ["Ps7CVarArg", "init"]
-- ["Ps7CVarArg", "label"]
+- !private ["Ps7CVarArg", "copyWithZone"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "label"]
 - !private ["Ps7CVarArg", "print"]
-- ["Ps7CVarArg", "value"]
-- ["Ps7CVarArg", "x"]
+- !private ["Ps7CVarArg", "value"]
+- !private ["Ps7CVarArg", "x"]
 - !private ["Ps7CVarArg", "y"]
 - ["Ps7CVarArg", ""]
 - ["C6Charts14ChartDataEntry", "AnyObject"]
@@ -45,7 +44,6 @@ depends-member:
 - !private ["C6Charts14ChartDataEntry", "PieChartDataEntry"]
 - ["C6Charts14ChartDataEntry", "String"]
 - ["C6Charts14ChartDataEntry", "copyWithZone"]
-- ["C6Charts14ChartDataEntry", "deinit"]
 - ["C6Charts14ChartDataEntry", "init"]
 - ["C6Charts14ChartDataEntry", "label"]
 - !private ["C6Charts14ChartDataEntry", "print"]
@@ -65,43 +63,41 @@ depends-member:
 - ["C6Charts18ChartDataEntryBase", "x"]
 - !private ["C6Charts18ChartDataEntryBase", "y"]
 - !private ["Ps10Comparable", "init"]
-- ["Ps28CustomDebugStringConvertible", "copyWithZone"]
-- ["Ps28CustomDebugStringConvertible", "init"]
-- ["Ps28CustomDebugStringConvertible", "label"]
+- !private ["Ps28CustomDebugStringConvertible", "copyWithZone"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "label"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
-- ["Ps28CustomDebugStringConvertible", "value"]
-- ["Ps28CustomDebugStringConvertible", "x"]
+- !private ["Ps28CustomDebugStringConvertible", "value"]
+- !private ["Ps28CustomDebugStringConvertible", "x"]
 - !private ["Ps28CustomDebugStringConvertible", "y"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps17CustomReflectable", "init"]
-- ["Ps23CustomStringConvertible", "copyWithZone"]
-- ["Ps23CustomStringConvertible", "init"]
-- ["Ps23CustomStringConvertible", "label"]
+- !private ["Ps23CustomStringConvertible", "copyWithZone"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "label"]
 - !private ["Ps23CustomStringConvertible", "print"]
-- ["Ps23CustomStringConvertible", "value"]
-- ["Ps23CustomStringConvertible", "x"]
+- !private ["Ps23CustomStringConvertible", "value"]
+- !private ["Ps23CustomStringConvertible", "x"]
 - !private ["Ps23CustomStringConvertible", "y"]
 - ["Ps23CustomStringConvertible", ""]
-- ["Sd", "deinit"]
-- ["Ps9Equatable", "copyWithZone"]
-- ["Ps9Equatable", "init"]
-- ["Ps9Equatable", "label"]
+- !private ["Ps9Equatable", "copyWithZone"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "label"]
 - !private ["Ps9Equatable", "print"]
-- ["Ps9Equatable", "value"]
-- ["Ps9Equatable", "x"]
+- !private ["Ps9Equatable", "value"]
+- !private ["Ps9Equatable", "x"]
 - !private ["Ps9Equatable", "y"]
 - ["Ps9Equatable", ""]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
-- !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
-- ["Ps8Hashable", "copyWithZone"]
-- ["Ps8Hashable", "init"]
-- ["Ps8Hashable", "label"]
+- !private ["Ps8Hashable", "copyWithZone"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "label"]
 - !private ["Ps8Hashable", "print"]
-- ["Ps8Hashable", "value"]
-- ["Ps8Hashable", "x"]
+- !private ["Ps8Hashable", "value"]
+- !private ["Ps8Hashable", "x"]
 - !private ["Ps8Hashable", "y"]
 - ["Ps8Hashable", ""]
 - !private ["Ps25LosslessStringConvertible", "init"]
@@ -115,26 +111,23 @@ depends-member:
 - !private ["CSo8NSObject", "PieChartDataEntry"]
 - ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "copyWithZone"]
-- !private ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "label"]
 - !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "value"]
 - ["CSo8NSObject", "x"]
 - !private ["CSo8NSObject", "y"]
-- ["PSo16NSObjectProtocol", "copyWithZone"]
-- ["PSo16NSObjectProtocol", "init"]
-- ["PSo16NSObjectProtocol", "label"]
+- !private ["PSo16NSObjectProtocol", "copyWithZone"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "label"]
 - !private ["PSo16NSObjectProtocol", "print"]
-- ["PSo16NSObjectProtocol", "value"]
-- ["PSo16NSObjectProtocol", "x"]
+- !private ["PSo16NSObjectProtocol", "value"]
+- !private ["PSo16NSObjectProtocol", "x"]
 - !private ["PSo16NSObjectProtocol", "y"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo19NSPasteboardReading", "init"]
 - !private ["PSo19NSPasteboardWriting", "init"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
-- ["Os5Never", "deinit"]
-- ["Sq", "deinit"]
 - ["C6Charts17PieChartDataEntry", "AnyObject"]
 - ["C6Charts17PieChartDataEntry", "Double"]
 - ["C6Charts17PieChartDataEntry", "NSZone"]
@@ -148,24 +141,22 @@ depends-member:
 - ["C6Charts17PieChartDataEntry", "value"]
 - ["C6Charts17PieChartDataEntry", "x"]
 - !private ["C6Charts17PieChartDataEntry", "y"]
-- ["Vs12StaticString", "deinit"]
 - !private ["Vs12StaticString", "init"]
-- ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
-- ["Su", "deinit"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
-- ["Ps9_Hashable", "copyWithZone"]
-- ["Ps9_Hashable", "init"]
-- ["Ps9_Hashable", "label"]
+- !private ["Ps9_Hashable", "copyWithZone"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "label"]
 - !private ["Ps9_Hashable", "print"]
-- ["Ps9_Hashable", "value"]
-- ["Ps9_Hashable", "x"]
+- !private ["Ps9_Hashable", "value"]
+- !private ["Ps9_Hashable", "x"]
 - !private ["Ps9_Hashable", "y"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
@@ -179,10 +170,8 @@ depends-nominal:
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
-- "Sd"
 - "Ps9Equatable"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
-- !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Ps8Hashable"
@@ -197,24 +186,31 @@ depends-nominal:
 - !private "PSo19NSPasteboardWriting"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
-- "Os5Never"
-- "Sq"
 - "C6Charts17PieChartDataEntry"
-- "Vs12StaticString"
-- "SS"
+- !private "Vs12StaticString"
+- !private "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
-- "Su"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - !private "Ps21_ObjectiveCBridgeable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.apinotesc"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/Charts/Source/Supporting Files/Charts.h"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Charts.build/Debug/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
@@ -229,4 +225,5 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuickLook.apinotesc"
 interface-hash: "323bb8d098e2a02350a9a7604c8eca02"

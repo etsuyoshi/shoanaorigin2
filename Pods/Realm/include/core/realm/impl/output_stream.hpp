@@ -22,7 +22,7 @@
 #include <cstddef>
 #include <ostream>
 
-#include <cstdint>
+#include <stdint.h>
 
 #include <realm/util/features.h>
 
@@ -32,7 +32,7 @@ namespace realm {
 namespace _impl {
 
 
-class OutputStream : public ArrayWriterBase {
+class OutputStream: public ArrayWriterBase {
 public:
     OutputStream(std::ostream&);
     ~OutputStream() noexcept;
@@ -51,11 +51,14 @@ private:
 };
 
 
+
+
+
 // Implementation:
 
-inline OutputStream::OutputStream(std::ostream& out)
-    : m_next_ref(0)
-    , m_out(out)
+inline OutputStream::OutputStream(std::ostream& out):
+    m_next_ref(0),
+    m_out(out)
 {
 }
 

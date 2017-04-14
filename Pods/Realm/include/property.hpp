@@ -21,8 +21,6 @@
 
 #include <string>
 
-#include "util/compiler.hpp"
-
 namespace realm {
     enum class PropertyType : unsigned char {
         Int    = 0,
@@ -141,9 +139,9 @@ namespace realm {
                 return "array";
             case PropertyType::LinkingObjects:
                 return "linking objects";
-#if __GNUC__ || _MSC_VER
+#if __GNUC__
             default:
-                REALM_COMPILER_HINT_UNREACHABLE();
+                __builtin_unreachable();
 #endif
         }
     }

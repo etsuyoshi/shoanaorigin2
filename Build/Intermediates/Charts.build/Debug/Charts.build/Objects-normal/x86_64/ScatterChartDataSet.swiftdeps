@@ -9,33 +9,33 @@ provides-member:
 - ["OC6Charts19ScatterChartDataSet5Shape", ""]
 provides-dynamic-lookup:
 - "copyWithZone"
-- "shapeRenderer"
-- "scatterShapeSize"
+- "renderer"
 - "scatterShapeHoleColor"
 - "scatterShapeHoleRadius"
-- "renderer"
+- "scatterShapeSize"
 - "setScatterShape"
+- "shapeRenderer"
 depends-top-level:
-- "SquareShapeRenderer"
-- !private "ChevronUpShapeRenderer"
-- "LineScatterCandleRadarChartDataSet"
-- "CGFloat"
-- "IScatterChartDataSet"
-- "NSUIColor"
-- !private "CrossShapeRenderer"
-- "Int"
-- !private "CircleShapeRenderer"
-- "ScatterChartDataSet"
-- "NSZone"
-- !private "~="
 - "=="
-- "AssignmentPrecedence"
-- !private "ChevronDownShapeRenderer"
-- "CastingPrecedence"
 - "AnyObject"
+- "AssignmentPrecedence"
+- "CGFloat"
+- "CastingPrecedence"
+- !private "ChevronDownShapeRenderer"
+- !private "ChevronUpShapeRenderer"
+- !private "CircleShapeRenderer"
+- !private "CrossShapeRenderer"
+- "IScatterChartDataSet"
 - "IShapeRenderer"
+- "Int"
+- "LineScatterCandleRadarChartDataSet"
+- "NSUIColor"
+- "NSZone"
+- "ScatterChartDataSet"
+- "SquareShapeRenderer"
 - !private "TriangleShapeRenderer"
 - !private "XShapeRenderer"
+- !private "~="
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]
@@ -47,14 +47,12 @@ depends-member:
 - ["Ps9AnyObject", "SquareShapeRenderer"]
 - !private ["Ps9AnyObject", "TriangleShapeRenderer"]
 - !private ["Ps9AnyObject", "XShapeRenderer"]
-- ["Ps9AnyObject", "copyWithZone"]
-- ["Ps9AnyObject", "deinit"]
+- !private ["Ps9AnyObject", "copyWithZone"]
 - ["Ps9AnyObject", "init"]
-- ["Ps9AnyObject", "renderer"]
+- !private ["Ps9AnyObject", "renderer"]
 - ["Ps9AnyObject", "scatterShapeHoleColor"]
 - ["Ps9AnyObject", "scatterShapeHoleRadius"]
 - ["Ps9AnyObject", "scatterShapeSize"]
-- ["Ps9AnyObject", "setScatterShape"]
 - ["Ps9AnyObject", "shapeRenderer"]
 - ["Ps9AnyObject", ""]
 - ["C6Charts38BarLineScatterCandleBubbleChartDataSet", "AnyObject"]
@@ -81,11 +79,8 @@ depends-member:
 - ["C6Charts38BarLineScatterCandleBubbleChartDataSet", "setScatterShape"]
 - ["C6Charts38BarLineScatterCandleBubbleChartDataSet", "shapeRenderer"]
 - ["Ps19BinaryFloatingPoint", "init"]
-- !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "hashValue"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- ["Sb", "deinit"]
-- ["V12CoreGraphics7CGFloat", "deinit"]
 - ["V12CoreGraphics7CGFloat", "init"]
 - ["Ps7CVarArg", "CGFloat"]
 - !private ["Ps7CVarArg", "ChevronDownShapeRenderer"]
@@ -94,17 +89,15 @@ depends-member:
 - !private ["Ps7CVarArg", "CrossShapeRenderer"]
 - !private ["Ps7CVarArg", "ScatterChartDataSet"]
 - ["Ps7CVarArg", "SquareShapeRenderer"]
-- !private ["Ps7CVarArg", "Stride"]
 - !private ["Ps7CVarArg", "TriangleShapeRenderer"]
 - !private ["Ps7CVarArg", "XShapeRenderer"]
-- ["Ps7CVarArg", "copyWithZone"]
+- !private ["Ps7CVarArg", "copyWithZone"]
 - !private ["Ps7CVarArg", "hashValue"]
 - ["Ps7CVarArg", "init"]
-- ["Ps7CVarArg", "renderer"]
+- !private ["Ps7CVarArg", "renderer"]
 - ["Ps7CVarArg", "scatterShapeHoleColor"]
 - ["Ps7CVarArg", "scatterShapeHoleRadius"]
 - ["Ps7CVarArg", "scatterShapeSize"]
-- ["Ps7CVarArg", "setScatterShape"]
 - ["Ps7CVarArg", "shapeRenderer"]
 - ["Ps7CVarArg", ""]
 - ["C6Charts16ChartBaseDataSet", "AnyObject"]
@@ -153,19 +146,15 @@ depends-member:
 - ["C6Charts12ChartDataSet", "scatterShapeSize"]
 - ["C6Charts12ChartDataSet", "setScatterShape"]
 - ["C6Charts12ChartDataSet", "shapeRenderer"]
-- ["C6Charts24ChevronDownShapeRenderer", "deinit"]
+- !private ["C6Charts24ChevronDownShapeRenderer", "deinit"]
 - !private ["C6Charts24ChevronDownShapeRenderer", "init"]
-- ["C6Charts22ChevronUpShapeRenderer", "deinit"]
+- !private ["C6Charts22ChevronUpShapeRenderer", "deinit"]
 - !private ["C6Charts22ChevronUpShapeRenderer", "init"]
-- ["C6Charts19CircleShapeRenderer", "deinit"]
+- !private ["C6Charts19CircleShapeRenderer", "deinit"]
 - !private ["C6Charts19CircleShapeRenderer", "init"]
-- !private ["Vs11ClosedRange", "deinit"]
-- !private ["Ps10Comparable", "Stride"]
 - !private ["Ps10Comparable", "hashValue"]
 - ["Ps10Comparable", "init"]
-- !private ["Vs20CountableClosedRange", "deinit"]
-- !private ["Vs14CountableRange", "deinit"]
-- ["C6Charts18CrossShapeRenderer", "deinit"]
+- !private ["C6Charts18CrossShapeRenderer", "deinit"]
 - !private ["C6Charts18CrossShapeRenderer", "init"]
 - ["Ps28CustomDebugStringConvertible", "CGFloat"]
 - !private ["Ps28CustomDebugStringConvertible", "ChevronDownShapeRenderer"]
@@ -176,19 +165,16 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "SquareShapeRenderer"]
 - !private ["Ps28CustomDebugStringConvertible", "TriangleShapeRenderer"]
 - !private ["Ps28CustomDebugStringConvertible", "XShapeRenderer"]
-- ["Ps28CustomDebugStringConvertible", "copyWithZone"]
+- !private ["Ps28CustomDebugStringConvertible", "copyWithZone"]
 - ["Ps28CustomDebugStringConvertible", "init"]
-- ["Ps28CustomDebugStringConvertible", "renderer"]
+- !private ["Ps28CustomDebugStringConvertible", "renderer"]
 - ["Ps28CustomDebugStringConvertible", "scatterShapeHoleColor"]
 - ["Ps28CustomDebugStringConvertible", "scatterShapeHoleRadius"]
 - ["Ps28CustomDebugStringConvertible", "scatterShapeSize"]
-- ["Ps28CustomDebugStringConvertible", "setScatterShape"]
 - ["Ps28CustomDebugStringConvertible", "shapeRenderer"]
 - ["Ps28CustomDebugStringConvertible", ""]
-- !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "hashValue"]
-- !private ["Ps17CustomReflectable", "Stride"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "hashValue"]
 - ["Ps17CustomReflectable", "init"]
@@ -199,30 +185,25 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "CrossShapeRenderer"]
 - !private ["Ps23CustomStringConvertible", "ScatterChartDataSet"]
 - ["Ps23CustomStringConvertible", "SquareShapeRenderer"]
-- !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "TriangleShapeRenderer"]
 - !private ["Ps23CustomStringConvertible", "XShapeRenderer"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
-- ["Ps23CustomStringConvertible", "copyWithZone"]
+- !private ["Ps23CustomStringConvertible", "copyWithZone"]
 - !private ["Ps23CustomStringConvertible", "hashValue"]
 - ["Ps23CustomStringConvertible", "init"]
-- ["Ps23CustomStringConvertible", "renderer"]
+- !private ["Ps23CustomStringConvertible", "renderer"]
 - ["Ps23CustomStringConvertible", "scatterShapeHoleColor"]
 - ["Ps23CustomStringConvertible", "scatterShapeHoleRadius"]
 - ["Ps23CustomStringConvertible", "scatterShapeSize"]
-- ["Ps23CustomStringConvertible", "setScatterShape"]
 - ["Ps23CustomStringConvertible", "shapeRenderer"]
 - ["Ps23CustomStringConvertible", ""]
-- ["Sd", "deinit"]
 - ["Ps9Equatable", "CGFloat"]
 - !private ["Ps9Equatable", "ChevronDownShapeRenderer"]
 - !private ["Ps9Equatable", "ChevronUpShapeRenderer"]
 - !private ["Ps9Equatable", "CircleShapeRenderer"]
 - !private ["Ps9Equatable", "CrossShapeRenderer"]
-- ["Ps9Equatable", "RawValue"]
 - !private ["Ps9Equatable", "ScatterChartDataSet"]
 - ["Ps9Equatable", "SquareShapeRenderer"]
-- !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "TriangleShapeRenderer"]
 - !private ["Ps9Equatable", "XShapeRenderer"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
@@ -230,16 +211,15 @@ depends-member:
 - ["Ps9Equatable", "chevronDown"]
 - ["Ps9Equatable", "chevronUp"]
 - ["Ps9Equatable", "circle"]
-- ["Ps9Equatable", "copyWithZone"]
+- !private ["Ps9Equatable", "copyWithZone"]
 - ["Ps9Equatable", "cross"]
 - ["Ps9Equatable", "hashValue"]
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "rawValue"]
-- ["Ps9Equatable", "renderer"]
+- !private ["Ps9Equatable", "renderer"]
 - ["Ps9Equatable", "scatterShapeHoleColor"]
 - ["Ps9Equatable", "scatterShapeHoleRadius"]
 - ["Ps9Equatable", "scatterShapeSize"]
-- ["Ps9Equatable", "setScatterShape"]
 - ["Ps9Equatable", "shapeRenderer"]
 - ["Ps9Equatable", "square"]
 - ["Ps9Equatable", "triangle"]
@@ -247,7 +227,6 @@ depends-member:
 - ["Ps9Equatable", ""]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - ["Ps25ExpressibleByFloatLiteral", "init"]
-- !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
 - ["Ps27ExpressibleByIntegerLiteral", "init"]
 - ["Ps13FloatingPoint", "init"]
@@ -256,10 +235,8 @@ depends-member:
 - !private ["Ps8Hashable", "ChevronUpShapeRenderer"]
 - !private ["Ps8Hashable", "CircleShapeRenderer"]
 - !private ["Ps8Hashable", "CrossShapeRenderer"]
-- ["Ps8Hashable", "RawValue"]
 - !private ["Ps8Hashable", "ScatterChartDataSet"]
 - ["Ps8Hashable", "SquareShapeRenderer"]
-- !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "TriangleShapeRenderer"]
 - !private ["Ps8Hashable", "XShapeRenderer"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
@@ -267,16 +244,15 @@ depends-member:
 - ["Ps8Hashable", "chevronDown"]
 - ["Ps8Hashable", "chevronUp"]
 - ["Ps8Hashable", "circle"]
-- ["Ps8Hashable", "copyWithZone"]
+- !private ["Ps8Hashable", "copyWithZone"]
 - ["Ps8Hashable", "cross"]
 - ["Ps8Hashable", "hashValue"]
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "rawValue"]
-- ["Ps8Hashable", "renderer"]
+- !private ["Ps8Hashable", "renderer"]
 - ["Ps8Hashable", "scatterShapeHoleColor"]
 - ["Ps8Hashable", "scatterShapeHoleRadius"]
 - ["Ps8Hashable", "scatterShapeSize"]
-- ["Ps8Hashable", "setScatterShape"]
 - ["Ps8Hashable", "shapeRenderer"]
 - ["Ps8Hashable", "square"]
 - ["Ps8Hashable", "triangle"]
@@ -291,13 +267,12 @@ depends-member:
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "SquareShapeRenderer"]
 - !private ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "TriangleShapeRenderer"]
 - !private ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "XShapeRenderer"]
-- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "copyWithZone"]
+- !private ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "copyWithZone"]
 - !private ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "init"]
-- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "renderer"]
+- !private ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "renderer"]
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "scatterShapeHoleColor"]
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "scatterShapeHoleRadius"]
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "scatterShapeSize"]
-- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "setScatterShape"]
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "shapeRenderer"]
 - ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", ""]
 - ["P6Charts13IChartDataSet", "CGFloat"]
@@ -309,13 +284,12 @@ depends-member:
 - ["P6Charts13IChartDataSet", "SquareShapeRenderer"]
 - !private ["P6Charts13IChartDataSet", "TriangleShapeRenderer"]
 - !private ["P6Charts13IChartDataSet", "XShapeRenderer"]
-- ["P6Charts13IChartDataSet", "copyWithZone"]
+- !private ["P6Charts13IChartDataSet", "copyWithZone"]
 - !private ["P6Charts13IChartDataSet", "init"]
-- ["P6Charts13IChartDataSet", "renderer"]
+- !private ["P6Charts13IChartDataSet", "renderer"]
 - ["P6Charts13IChartDataSet", "scatterShapeHoleColor"]
 - ["P6Charts13IChartDataSet", "scatterShapeHoleRadius"]
 - ["P6Charts13IChartDataSet", "scatterShapeSize"]
-- ["P6Charts13IChartDataSet", "setScatterShape"]
 - ["P6Charts13IChartDataSet", "shapeRenderer"]
 - ["P6Charts13IChartDataSet", ""]
 - ["P6Charts35ILineScatterCandleRadarChartDataSet", "CGFloat"]
@@ -327,13 +301,12 @@ depends-member:
 - ["P6Charts35ILineScatterCandleRadarChartDataSet", "SquareShapeRenderer"]
 - !private ["P6Charts35ILineScatterCandleRadarChartDataSet", "TriangleShapeRenderer"]
 - !private ["P6Charts35ILineScatterCandleRadarChartDataSet", "XShapeRenderer"]
-- ["P6Charts35ILineScatterCandleRadarChartDataSet", "copyWithZone"]
+- !private ["P6Charts35ILineScatterCandleRadarChartDataSet", "copyWithZone"]
 - !private ["P6Charts35ILineScatterCandleRadarChartDataSet", "init"]
-- ["P6Charts35ILineScatterCandleRadarChartDataSet", "renderer"]
+- !private ["P6Charts35ILineScatterCandleRadarChartDataSet", "renderer"]
 - ["P6Charts35ILineScatterCandleRadarChartDataSet", "scatterShapeHoleColor"]
 - ["P6Charts35ILineScatterCandleRadarChartDataSet", "scatterShapeHoleRadius"]
 - ["P6Charts35ILineScatterCandleRadarChartDataSet", "scatterShapeSize"]
-- ["P6Charts35ILineScatterCandleRadarChartDataSet", "setScatterShape"]
 - ["P6Charts35ILineScatterCandleRadarChartDataSet", "shapeRenderer"]
 - ["P6Charts35ILineScatterCandleRadarChartDataSet", ""]
 - ["P6Charts20IScatterChartDataSet", "CGFloat"]
@@ -351,14 +324,9 @@ depends-member:
 - ["P6Charts20IScatterChartDataSet", "scatterShapeSize"]
 - ["P6Charts20IScatterChartDataSet", "shapeRenderer"]
 - ["P6Charts20IScatterChartDataSet", ""]
-- ["P6Charts14IShapeRenderer", "deinit"]
 - ["P6Charts14IShapeRenderer", "init"]
-- !private ["Si", "Stride"]
-- ["Si", "deinit"]
 - !private ["Si", "hashValue"]
-- !private ["Ps7Integer", "Stride"]
 - !private ["Ps7Integer", "hashValue"]
-- !private ["Ps17IntegerArithmetic", "Stride"]
 - !private ["Ps17IntegerArithmetic", "hashValue"]
 - ["C6Charts34LineScatterCandleRadarChartDataSet", "AnyObject"]
 - ["C6Charts34LineScatterCandleRadarChartDataSet", "CGFloat"]
@@ -376,7 +344,6 @@ depends-member:
 - !private ["C6Charts34LineScatterCandleRadarChartDataSet", "TriangleShapeRenderer"]
 - !private ["C6Charts34LineScatterCandleRadarChartDataSet", "XShapeRenderer"]
 - ["C6Charts34LineScatterCandleRadarChartDataSet", "copyWithZone"]
-- ["C6Charts34LineScatterCandleRadarChartDataSet", "deinit"]
 - ["C6Charts34LineScatterCandleRadarChartDataSet", "init"]
 - ["C6Charts34LineScatterCandleRadarChartDataSet", "renderer"]
 - ["C6Charts34LineScatterCandleRadarChartDataSet", "scatterShapeHoleColor"]
@@ -386,7 +353,6 @@ depends-member:
 - ["C6Charts34LineScatterCandleRadarChartDataSet", "shapeRenderer"]
 - ["C6Charts34LineScatterCandleRadarChartDataSet", ""]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
-- !private ["Ps10MirrorPath", "Stride"]
 - !private ["Ps10MirrorPath", "hashValue"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "CGFloat"]
@@ -420,18 +386,14 @@ depends-member:
 - ["PSo16NSObjectProtocol", "SquareShapeRenderer"]
 - !private ["PSo16NSObjectProtocol", "TriangleShapeRenderer"]
 - !private ["PSo16NSObjectProtocol", "XShapeRenderer"]
-- ["PSo16NSObjectProtocol", "copyWithZone"]
+- !private ["PSo16NSObjectProtocol", "copyWithZone"]
 - ["PSo16NSObjectProtocol", "init"]
-- ["PSo16NSObjectProtocol", "renderer"]
+- !private ["PSo16NSObjectProtocol", "renderer"]
 - ["PSo16NSObjectProtocol", "scatterShapeHoleColor"]
 - ["PSo16NSObjectProtocol", "scatterShapeHoleRadius"]
 - ["PSo16NSObjectProtocol", "scatterShapeSize"]
-- ["PSo16NSObjectProtocol", "setScatterShape"]
 - ["PSo16NSObjectProtocol", "shapeRenderer"]
 - ["PSo16NSObjectProtocol", ""]
-- ["Sq", "deinit"]
-- !private ["Vs5Range", "deinit"]
-- ["Ps16RawRepresentable", "RawValue"]
 - ["Ps16RawRepresentable", "_toAnyHashable"]
 - ["Ps16RawRepresentable", "chevronDown"]
 - ["Ps16RawRepresentable", "chevronUp"]
@@ -481,34 +443,28 @@ depends-member:
 - ["OC6Charts19ScatterChartDataSet5Shape", "square"]
 - ["OC6Charts19ScatterChartDataSet5Shape", "triangle"]
 - ["OC6Charts19ScatterChartDataSet5Shape", "x"]
-- !private ["Ps13SignedInteger", "Stride"]
 - !private ["Ps13SignedInteger", "hashValue"]
-- !private ["Ps12SignedNumber", "Stride"]
 - !private ["Ps12SignedNumber", "hashValue"]
 - ["Ps12SignedNumber", "init"]
 - ["C6Charts19SquareShapeRenderer", "deinit"]
 - ["C6Charts19SquareShapeRenderer", "init"]
-- !private ["Ps10Strideable", "Stride"]
 - !private ["Ps10Strideable", "hashValue"]
 - ["Ps10Strideable", "init"]
-- ["C6Charts21TriangleShapeRenderer", "deinit"]
+- !private ["C6Charts21TriangleShapeRenderer", "deinit"]
 - !private ["C6Charts21TriangleShapeRenderer", "init"]
-- ["C6Charts14XShapeRenderer", "deinit"]
+- !private ["C6Charts14XShapeRenderer", "deinit"]
 - !private ["C6Charts14XShapeRenderer", "init"]
 - ["Ps15_CVarArgAligned", "init"]
 - ["Ps22_CVarArgPassedAsDouble", "init"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
-- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hashValue"]
 - ["Ps9_Hashable", "CGFloat"]
 - !private ["Ps9_Hashable", "ChevronDownShapeRenderer"]
 - !private ["Ps9_Hashable", "ChevronUpShapeRenderer"]
 - !private ["Ps9_Hashable", "CircleShapeRenderer"]
 - !private ["Ps9_Hashable", "CrossShapeRenderer"]
-- ["Ps9_Hashable", "RawValue"]
 - !private ["Ps9_Hashable", "ScatterChartDataSet"]
 - ["Ps9_Hashable", "SquareShapeRenderer"]
-- !private ["Ps9_Hashable", "Stride"]
 - !private ["Ps9_Hashable", "TriangleShapeRenderer"]
 - !private ["Ps9_Hashable", "XShapeRenderer"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
@@ -516,35 +472,27 @@ depends-member:
 - ["Ps9_Hashable", "chevronDown"]
 - ["Ps9_Hashable", "chevronUp"]
 - ["Ps9_Hashable", "circle"]
-- ["Ps9_Hashable", "copyWithZone"]
+- !private ["Ps9_Hashable", "copyWithZone"]
 - ["Ps9_Hashable", "cross"]
 - ["Ps9_Hashable", "hashValue"]
 - ["Ps9_Hashable", "init"]
 - ["Ps9_Hashable", "rawValue"]
-- ["Ps9_Hashable", "renderer"]
+- !private ["Ps9_Hashable", "renderer"]
 - ["Ps9_Hashable", "scatterShapeHoleColor"]
 - ["Ps9_Hashable", "scatterShapeHoleRadius"]
 - ["Ps9_Hashable", "scatterShapeSize"]
-- ["Ps9_Hashable", "setScatterShape"]
 - ["Ps9_Hashable", "shapeRenderer"]
 - ["Ps9_Hashable", "square"]
 - ["Ps9_Hashable", "triangle"]
 - ["Ps9_Hashable", "x"]
 - ["Ps9_Hashable", ""]
-- !private ["Ps14_Incrementable", "Stride"]
 - !private ["Ps14_Incrementable", "hashValue"]
-- !private ["Ps8_Integer", "Stride"]
 - !private ["Ps8_Integer", "hashValue"]
-- !private ["Ps18_IntegerArithmetic", "Stride"]
 - !private ["Ps18_IntegerArithmetic", "hashValue"]
-- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
-- !private ["Vs26_OptionalNilComparisonType", "deinit"]
-- !private ["Ps14_SignedInteger", "Stride"]
 - !private ["Ps14_SignedInteger", "hashValue"]
-- !private ["Ps11_Strideable", "Stride"]
 - !private ["Ps11_Strideable", "hashValue"]
 - ["Ps11_Strideable", "init"]
 depends-nominal:
@@ -553,24 +501,20 @@ depends-nominal:
 - "C6Charts38BarLineScatterCandleBubbleChartDataSet"
 - "Ps19BinaryFloatingPoint"
 - !private "Ps17BitwiseOperations"
-- "Sb"
+- !private "Sb"
 - "V12CoreGraphics7CGFloat"
 - "Ps7CVarArg"
 - "C6Charts16ChartBaseDataSet"
 - "C6Charts12ChartDataSet"
-- "C6Charts24ChevronDownShapeRenderer"
-- "C6Charts22ChevronUpShapeRenderer"
-- "C6Charts19CircleShapeRenderer"
-- !private "Vs11ClosedRange"
+- !private "C6Charts24ChevronDownShapeRenderer"
+- !private "C6Charts22ChevronUpShapeRenderer"
+- !private "C6Charts19CircleShapeRenderer"
 - "Ps10Comparable"
-- !private "Vs20CountableClosedRange"
-- !private "Vs14CountableRange"
-- "C6Charts18CrossShapeRenderer"
+- !private "C6Charts18CrossShapeRenderer"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
 - "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
-- "Sd"
 - "Ps9Equatable"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - "Ps25ExpressibleByFloatLiteral"
@@ -582,7 +526,7 @@ depends-nominal:
 - "P6Charts35ILineScatterCandleRadarChartDataSet"
 - "P6Charts20IScatterChartDataSet"
 - "P6Charts14IShapeRenderer"
-- "Si"
+- !private "Si"
 - !private "Ps7Integer"
 - !private "Ps17IntegerArithmetic"
 - "C6Charts34LineScatterCandleRadarChartDataSet"
@@ -590,8 +534,6 @@ depends-nominal:
 - !private "Ps10MirrorPath"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- "Sq"
-- !private "Vs5Range"
 - "Ps16RawRepresentable"
 - "C6Charts19ScatterChartDataSet"
 - "OC6Charts19ScatterChartDataSet5Shape"
@@ -599,8 +541,8 @@ depends-nominal:
 - "Ps12SignedNumber"
 - "C6Charts19SquareShapeRenderer"
 - "Ps10Strideable"
-- "C6Charts21TriangleShapeRenderer"
-- "C6Charts14XShapeRenderer"
+- !private "C6Charts21TriangleShapeRenderer"
+- !private "C6Charts14XShapeRenderer"
 - "Ps15_CVarArgAligned"
 - "Ps22_CVarArgPassedAsDouble"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
@@ -610,12 +552,20 @@ depends-nominal:
 - !private "Ps8_Integer"
 - !private "Ps18_IntegerArithmetic"
 - "Ps21_ObjectiveCBridgeable"
-- !private "Vs26_OptionalNilComparisonType"
 - !private "Ps14_SignedInteger"
 - "Ps11_Strideable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.apinotesc"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/Charts/Source/Supporting Files/Charts.h"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Charts.build/Debug/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
@@ -630,4 +580,5 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuickLook.apinotesc"
 interface-hash: "9491bcd101ea1677d316164e7f5ed62c"

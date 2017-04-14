@@ -2,6 +2,41 @@ dependencies: \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/AppDelegate.m \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/Shoana-Prefix.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/AppDelegate.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Firebase/Core/Sources/module.modulemap \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Modules/module.modulemap \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Modules/module.modulemap \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIROptions.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRApp.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FirebaseCore.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Modules/module.modulemap \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseMessaging/Frameworks/frameworks/FirebaseMessaging.framework/Modules/module.modulemap \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseMessaging/Frameworks/frameworks/FirebaseMessaging.framework/Headers/FIRMessaging.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/FirebaseMessaging/Frameworks/frameworks/FirebaseMessaging.framework/Headers/FirebaseMessaging.h \
+  /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Pods/Firebase/Core/Sources/Firebase.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/DetailViewController.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/Quiz/Quiz.h \
   /Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/shoana/Quiz/QuizItem.h

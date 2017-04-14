@@ -9,22 +9,22 @@ provides-dynamic-lookup:
 - "closestHighlight"
 - "getHighlight"
 depends-top-level:
-- !private ">"
 - !private "/="
-- !private ">="
-- !private "fatalError"
-- !private "StringLiteralType"
-- !private "PieChartView"
-- !private "||"
-- "ChartHighlighter"
-- !private "PieRadarChartViewBase"
-- "CastingPrecedence"
-- "Highlight"
-- !private "??"
 - !private "<"
-- "Int"
-- "PieRadarHighlighter"
+- !private ">"
+- !private ">="
+- !private "??"
 - "CGFloat"
+- "CastingPrecedence"
+- "ChartHighlighter"
+- "Highlight"
+- "Int"
+- !private "PieChartView"
+- !private "PieRadarChartViewBase"
+- "PieRadarHighlighter"
+- !private "StringLiteralType"
+- !private "fatalError"
+- !private "||"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["C6Charts8Animator", "phaseY"]
@@ -38,11 +38,10 @@ depends-member:
 - !private ["Ps9AnyObject", "angleForPoint"]
 - !private ["Ps9AnyObject", "chart"]
 - !private ["Ps9AnyObject", "chartAnimator"]
-- ["Ps9AnyObject", "closestHighlight"]
+- !private ["Ps9AnyObject", "closestHighlight"]
 - !private ["Ps9AnyObject", "data"]
 - !private ["Ps9AnyObject", "distanceToCenter"]
 - !private ["Ps9AnyObject", "fatalError"]
-- ["Ps9AnyObject", "getHighlight"]
 - !private ["Ps9AnyObject", "indexForAngle"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "maxEntryCountSet"]
@@ -51,18 +50,15 @@ depends-member:
 - ["Ps9AnyObject", ""]
 - !private ["Ps19BinaryFloatingPoint", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- ["Sb", "deinit"]
-- ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["V12CoreGraphics7CGFloat", "init"]
 - !private ["Ps7CVarArg", "CGFloat"]
 - !private ["Ps7CVarArg", "angleForPoint"]
 - !private ["Ps7CVarArg", "chart"]
 - !private ["Ps7CVarArg", "chartAnimator"]
-- ["Ps7CVarArg", "closestHighlight"]
+- !private ["Ps7CVarArg", "closestHighlight"]
 - !private ["Ps7CVarArg", "data"]
 - !private ["Ps7CVarArg", "distanceToCenter"]
 - !private ["Ps7CVarArg", "fatalError"]
-- ["Ps7CVarArg", "getHighlight"]
 - !private ["Ps7CVarArg", "indexForAngle"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "maxEntryCountSet"]
@@ -73,7 +69,6 @@ depends-member:
 - !private ["P6Charts17ChartDataProvider", "angleForPoint"]
 - !private ["P6Charts17ChartDataProvider", "chartAnimator"]
 - !private ["P6Charts17ChartDataProvider", "data"]
-- ["P6Charts17ChartDataProvider", "deinit"]
 - !private ["P6Charts17ChartDataProvider", "distanceToCenter"]
 - !private ["P6Charts17ChartDataProvider", "indexForAngle"]
 - !private ["P6Charts17ChartDataProvider", "radius"]
@@ -84,7 +79,6 @@ depends-member:
 - !private ["C6Charts16ChartHighlighter", "PieRadarChartViewBase"]
 - !private ["C6Charts16ChartHighlighter", "chart"]
 - ["C6Charts16ChartHighlighter", "closestHighlight"]
-- ["C6Charts16ChartHighlighter", "deinit"]
 - !private ["C6Charts16ChartHighlighter", "fatalError"]
 - ["C6Charts16ChartHighlighter", "getHighlight"]
 - ["C6Charts16ChartHighlighter", "init"]
@@ -97,15 +91,13 @@ depends-member:
 - !private ["C6Charts13ChartViewBase", "radius"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "CGFloat"]
-- !private ["Ps28CustomDebugStringConvertible", "RawValue"]
 - !private ["Ps28CustomDebugStringConvertible", "angleForPoint"]
 - !private ["Ps28CustomDebugStringConvertible", "chart"]
 - !private ["Ps28CustomDebugStringConvertible", "chartAnimator"]
-- ["Ps28CustomDebugStringConvertible", "closestHighlight"]
+- !private ["Ps28CustomDebugStringConvertible", "closestHighlight"]
 - !private ["Ps28CustomDebugStringConvertible", "data"]
 - !private ["Ps28CustomDebugStringConvertible", "distanceToCenter"]
 - !private ["Ps28CustomDebugStringConvertible", "fatalError"]
-- ["Ps28CustomDebugStringConvertible", "getHighlight"]
 - !private ["Ps28CustomDebugStringConvertible", "indexForAngle"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "maxEntryCountSet"]
@@ -114,7 +106,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
-- !private ["Ps17CustomReflectable", "RawValue"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "init"]
 - !private ["Ps23CustomStringConvertible", "CGFloat"]
@@ -122,11 +113,10 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "angleForPoint"]
 - !private ["Ps23CustomStringConvertible", "chart"]
 - !private ["Ps23CustomStringConvertible", "chartAnimator"]
-- ["Ps23CustomStringConvertible", "closestHighlight"]
+- !private ["Ps23CustomStringConvertible", "closestHighlight"]
 - !private ["Ps23CustomStringConvertible", "data"]
 - !private ["Ps23CustomStringConvertible", "distanceToCenter"]
 - !private ["Ps23CustomStringConvertible", "fatalError"]
-- ["Ps23CustomStringConvertible", "getHighlight"]
 - !private ["Ps23CustomStringConvertible", "indexForAngle"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "maxEntryCountSet"]
@@ -138,11 +128,10 @@ depends-member:
 - !private ["Ps9Equatable", "angleForPoint"]
 - !private ["Ps9Equatable", "chart"]
 - !private ["Ps9Equatable", "chartAnimator"]
-- ["Ps9Equatable", "closestHighlight"]
+- !private ["Ps9Equatable", "closestHighlight"]
 - !private ["Ps9Equatable", "data"]
 - !private ["Ps9Equatable", "distanceToCenter"]
 - !private ["Ps9Equatable", "fatalError"]
-- ["Ps9Equatable", "getHighlight"]
 - !private ["Ps9Equatable", "indexForAngle"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "maxEntryCountSet"]
@@ -153,8 +142,6 @@ depends-member:
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps25ExpressibleByFloatLiteral", "init"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "init"]
-- !private ["Ps23ExpressibleByNilLiteral", "RawValue"]
-- !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Ps13FloatingPoint", "init"]
@@ -163,28 +150,23 @@ depends-member:
 - !private ["Ps8Hashable", "angleForPoint"]
 - !private ["Ps8Hashable", "chart"]
 - !private ["Ps8Hashable", "chartAnimator"]
-- ["Ps8Hashable", "closestHighlight"]
+- !private ["Ps8Hashable", "closestHighlight"]
 - !private ["Ps8Hashable", "data"]
 - !private ["Ps8Hashable", "distanceToCenter"]
 - !private ["Ps8Hashable", "fatalError"]
-- ["Ps8Hashable", "getHighlight"]
 - !private ["Ps8Hashable", "indexForAngle"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "maxEntryCountSet"]
 - !private ["Ps8Hashable", "phaseY"]
 - !private ["Ps8Hashable", "radius"]
 - ["Ps8Hashable", ""]
-- ["P6Charts13IChartDataSet", "deinit"]
 - !private ["P6Charts13IChartDataSet", "entryCount"]
 - !private ["P6Charts12IHighlighter", "CGFloat"]
 - !private ["P6Charts12IHighlighter", "chart"]
-- ["P6Charts12IHighlighter", "closestHighlight"]
+- !private ["P6Charts12IHighlighter", "closestHighlight"]
 - !private ["P6Charts12IHighlighter", "fatalError"]
-- ["P6Charts12IHighlighter", "getHighlight"]
 - !private ["P6Charts12IHighlighter", "init"]
 - ["P6Charts12IHighlighter", ""]
-- ["SQ", "deinit"]
-- ["Si", "deinit"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "init"]
@@ -241,7 +223,6 @@ depends-member:
 - !private ["CSo8NSObject", "fatalError"]
 - ["CSo8NSObject", "getHighlight"]
 - !private ["CSo8NSObject", "indexForAngle"]
-- !private ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "maxEntryCountSet"]
 - !private ["CSo8NSObject", "phaseY"]
 - !private ["CSo8NSObject", "radius"]
@@ -249,11 +230,10 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "angleForPoint"]
 - !private ["PSo16NSObjectProtocol", "chart"]
 - !private ["PSo16NSObjectProtocol", "chartAnimator"]
-- ["PSo16NSObjectProtocol", "closestHighlight"]
+- !private ["PSo16NSObjectProtocol", "closestHighlight"]
 - !private ["PSo16NSObjectProtocol", "data"]
 - !private ["PSo16NSObjectProtocol", "distanceToCenter"]
 - !private ["PSo16NSObjectProtocol", "fatalError"]
-- ["PSo16NSObjectProtocol", "getHighlight"]
 - !private ["PSo16NSObjectProtocol", "indexForAngle"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "maxEntryCountSet"]
@@ -294,14 +274,10 @@ depends-member:
 - !private ["CSo6NSView", "distanceToCenter"]
 - !private ["CSo6NSView", "indexForAngle"]
 - !private ["CSo6NSView", "radius"]
-- ["Os5Never", "deinit"]
-- !private ["Sq", "RawValue"]
-- ["Sq", "deinit"]
-- ["C6Charts12PieChartView", "deinit"]
 - !private ["C6Charts21PieRadarChartViewBase", "angleForPoint"]
 - !private ["C6Charts21PieRadarChartViewBase", "chartAnimator"]
 - !private ["C6Charts21PieRadarChartViewBase", "data"]
-- ["C6Charts21PieRadarChartViewBase", "deinit"]
+- !private ["C6Charts21PieRadarChartViewBase", "deinit"]
 - !private ["C6Charts21PieRadarChartViewBase", "distanceToCenter"]
 - !private ["C6Charts21PieRadarChartViewBase", "indexForAngle"]
 - !private ["C6Charts21PieRadarChartViewBase", "radius"]
@@ -317,14 +293,11 @@ depends-member:
 - ["C6Charts19PieRadarHighlighter", "getHighlight"]
 - ["C6Charts19PieRadarHighlighter", "init"]
 - !private ["Ps12SignedNumber", "init"]
-- ["Vs12StaticString", "deinit"]
 - !private ["Vs12StaticString", "init"]
 - !private ["Ps10Strideable", "init"]
-- ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
-- ["Su", "deinit"]
 - !private ["Ps15_CVarArgAligned", "init"]
 - !private ["Ps22_CVarArgPassedAsDouble", "init"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "angleForPoint"]
@@ -338,24 +311,23 @@ depends-member:
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "CGFloat"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "angleForPoint"]
 - !private ["Ps9_Hashable", "chart"]
 - !private ["Ps9_Hashable", "chartAnimator"]
-- ["Ps9_Hashable", "closestHighlight"]
+- !private ["Ps9_Hashable", "closestHighlight"]
 - !private ["Ps9_Hashable", "data"]
 - !private ["Ps9_Hashable", "distanceToCenter"]
 - !private ["Ps9_Hashable", "fatalError"]
-- ["Ps9_Hashable", "getHighlight"]
 - !private ["Ps9_Hashable", "indexForAngle"]
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "maxEntryCountSet"]
 - !private ["Ps9_Hashable", "phaseY"]
 - !private ["Ps9_Hashable", "radius"]
 - ["Ps9_Hashable", ""]
-- !private ["Ps21_ObjectiveCBridgeable", "RawValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps11_Strideable", "init"]
@@ -365,11 +337,11 @@ depends-nominal:
 - !private "P6Charts16AnimatorDelegate"
 - "Ps9AnyObject"
 - !private "Ps19BinaryFloatingPoint"
-- "Sb"
-- "V12CoreGraphics7CGFloat"
+- !private "Sb"
+- !private "V12CoreGraphics7CGFloat"
 - "Ps7CVarArg"
 - !private "C6Charts9ChartData"
-- "P6Charts17ChartDataProvider"
+- !private "P6Charts17ChartDataProvider"
 - "C6Charts16ChartHighlighter"
 - !private "C6Charts13ChartViewBase"
 - !private "Ps10Comparable"
@@ -382,16 +354,12 @@ depends-nominal:
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps25ExpressibleByFloatLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
-- !private "Ps23ExpressibleByNilLiteral"
-- !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - !private "Ps13FloatingPoint"
 - "Ps8Hashable"
-- "P6Charts13IChartDataSet"
+- !private "P6Charts13IChartDataSet"
 - "P6Charts12IHighlighter"
-- "SQ"
-- "Si"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
 - !private "PSo15NSAccessibility"
@@ -413,18 +381,14 @@ depends-nominal:
 - !private "C6Charts8NSUIView"
 - !private "PSo33NSUserInterfaceItemIdentification"
 - !private "CSo6NSView"
-- "Os5Never"
-- "Sq"
-- "C6Charts12PieChartView"
-- "C6Charts21PieRadarChartViewBase"
+- !private "C6Charts21PieRadarChartViewBase"
 - "C6Charts19PieRadarHighlighter"
 - !private "Ps12SignedNumber"
-- "Vs12StaticString"
+- !private "Vs12StaticString"
 - !private "Ps10Strideable"
-- "SS"
+- !private "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
-- "Su"
 - !private "Ps15_CVarArgAligned"
 - !private "Ps22_CVarArgPassedAsDouble"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
@@ -433,6 +397,7 @@ depends-nominal:
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - !private "Ps21_ObjectiveCBridgeable"
@@ -440,6 +405,15 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.apinotesc"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/Charts/Source/Supporting Files/Charts.h"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Charts.build/Debug/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
@@ -454,4 +428,5 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "7192949b4a42e3e5d500a5c1e494cd40"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuickLook.apinotesc"
+interface-hash: "e02b4e13ec1f3bf0c025150e7304f7a0"

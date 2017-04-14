@@ -66,11 +66,7 @@ SPTwitterClient *twitterClient;
      CGRectMake(margin_horizon, margin_vertical+heightNav,
                 self.view.bounds.size.width - 2 * margin_horizon,
                 self.view.bounds.size.height - 3 * margin_vertical - numRow * heightBtn - heightAnswer)];
-    labelQuestion.text =
-//    [NSString stringWithFormat:@"%@aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-    mySiwakeItem.question
-//     ]
-    ;
+    labelQuestion.text = mySiwakeItem.question;
     labelQuestion.textColor = [UIColor blackColor];
     labelQuestion.numberOfLines = 0;
     labelQuestion.lineBreakMode = NSLineBreakByWordWrapping;
@@ -114,6 +110,8 @@ SPTwitterClient *twitterClient;
     labelKari.layer.borderColor = [[UIColor blackColor] CGColor];
     labelKari.layer.borderWidth = 1;
     [labelKari setText:@"借方"];
+    [labelKari setTextColor:[UIColor whiteColor]];
+    labelKari.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5f];
     [self.view addSubview:labelKari];
     UILabel *labelKasi = [[UILabel alloc]initWithFrame:
                           CGRectMake(margin_horizon + 2 * widthBtn,
@@ -123,6 +121,8 @@ SPTwitterClient *twitterClient;
     labelKasi.layer.borderColor = [[UIColor blackColor] CGColor];
     labelKasi.layer.borderWidth = 1;
     [labelKasi setText:@"貸方"];
+    [labelKasi setTextColor:[UIColor whiteColor]];
+    labelKasi.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5f];
     [self.view addSubview:labelKasi];
     
     
@@ -140,20 +140,20 @@ SPTwitterClient *twitterClient;
     [btnAnswer addTarget:self action:@selector(tappedAnswer:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btnAnswer];
     
-    
-    //twitter shareボタン
-    int sizeShare = 44;
-    UIButton *btnShare = [UIButton buttonWithType:UIButtonTypeCustom];
-    btnShare.frame = CGRectMake(0, 0, sizeShare, sizeShare);
-    btnShare.center =
-    CGPointMake(self.view.bounds.size.width - margin_horizon - sizeShare/2,
-                self.view.bounds.size.height - 3 * margin_vertical - (numRow + 1) * heightBtn - heightAnswer - sizeShare/2);
-    UIImage *imgShare = [UIImage imageNamed:@"twitter"];
-    [btnShare setImage:imgShare forState:UIControlStateNormal];
-    btnShare.imageView.contentMode = UIViewContentModeScaleAspectFit;
-    [btnShare addTarget:self action:@selector(tappedShare) forControlEvents:UIControlEventTouchUpInside];
-    btnShare.tag = 999;
-    [self.view addSubview:btnShare];
+    //問題文にtwitterシェアボタンを配置する場合
+//    //twitter shareボタン
+//    int sizeShare = 44;
+//    UIButton *btnShare = [UIButton buttonWithType:UIButtonTypeCustom];
+//    btnShare.frame = CGRectMake(0, 0, sizeShare, sizeShare);
+//    btnShare.center =
+//    CGPointMake(self.view.bounds.size.width - margin_horizon - sizeShare/2,
+//                self.view.bounds.size.height - 3 * margin_vertical - (numRow + 1) * heightBtn - heightAnswer - sizeShare/2);
+//    UIImage *imgShare = [UIImage imageNamed:@"twitter"];
+//    [btnShare setImage:imgShare forState:UIControlStateNormal];
+//    btnShare.imageView.contentMode = UIViewContentModeScaleAspectFit;
+//    [btnShare addTarget:self action:@selector(tappedShare) forControlEvents:UIControlEventTouchUpInside];
+//    btnShare.tag = 999;
+//    [self.view addSubview:btnShare];
     
 }
 
@@ -498,6 +498,10 @@ SPTwitterClient *twitterClient;
             if(subview.tag == pickerView.tag){
                 NSLog(@"set(tag:%ld) %@", subview.tag, strSelectedValue);
                 [((UIButton *)subview) setTitle:strSelectedValue forState:UIControlStateNormal];
+                
+                //font調整
+                ((UIButton *)subview).titleLabel.adjustsFontSizeToFitWidth = YES;
+                ((UIButton *)subview).titleLabel.minimumScaleFactor = 0.5f;
                 break;
             }
         }
@@ -587,6 +591,24 @@ SPTwitterClient *twitterClient;
     
     [btnNext addTarget:self action:@selector(tappedNext) forControlEvents:UIControlEventTouchUpInside];
     [btnStop addTarget:self action:@selector(tappedStop) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    
+    //twitter shareボタン
+    int sizeShare = 44;
+    UIButton *btnShare = [UIButton buttonWithType:UIButtonTypeCustom];
+    btnShare.frame = CGRectMake(0, 0, sizeShare, sizeShare);
+    btnShare.center =
+    CGPointMake(viewExp.bounds.size.width-marginBtn - sizeShare/2,
+                viewExp.bounds.size.height-marginBtn*2 - heightBtn - sizeShare/2);
+    UIImage *imgShare = [UIImage imageNamed:@"twitter"];
+    [btnShare setImage:imgShare forState:UIControlStateNormal];
+    btnShare.imageView.contentMode = UIViewContentModeScaleAspectFit;
+    [btnShare addTarget:self action:@selector(tappedShare) forControlEvents:UIControlEventTouchUpInside];
+    btnShare.tag = 999;
+    [viewExp addSubview:btnShare];
+    
+    
 }
 
 -(void)tappedNext{

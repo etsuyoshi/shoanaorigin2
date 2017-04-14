@@ -6,55 +6,55 @@ provides-nominal:
 provides-member:
 - ["C6Charts22HorizontalBarChartView", ""]
 provides-dynamic-lookup:
-- "lowestVisibleX"
-- "setVisibleYRangeMaximum"
+- "calculateOffsets"
 - "getBarBounds"
-- "setVisibleXRange"
+- "getHighlightByTouchPoint"
 - "getMarkerPosition"
+- "getPosition"
+- "highestVisibleX"
+- "initialize"
+- "lowestVisibleX"
+- "prepareValuePxMatrix"
+- "setVisibleXRange"
 - "setVisibleXRangeMaximum"
 - "setVisibleXRangeMinimum"
-- "getHighlightByTouchPoint"
-- "setVisibleYRangeMinimum"
-- "calculateOffsets"
-- "getPosition"
 - "setVisibleYRange"
-- "initialize"
-- "prepareValuePxMatrix"
-- "highestVisibleX"
+- "setVisibleYRangeMaximum"
+- "setVisibleYRangeMinimum"
 depends-top-level:
-- !private "<="
-- !private "XAxisRendererHorizontalBarChart"
-- !private "==="
-- "ChartDataEntry"
-- !private "BarChartData"
-- "YAxis"
-- !private "min"
-- !private "max"
-- !private "-"
-- !private "StringLiteralType"
-- !private "IBarChartDataSet"
-- !private "Swift"
-- "CGRect"
-- "HorizontalBarChartView"
-- "AssignmentPrecedence"
-- "BarChartDataEntry"
-- "Double"
-- !private "YAxisRendererHorizontalBarChart"
-- "BarChartView"
-- !private "=="
-- !private "TransformerHorizontalBarChart"
-- "CastingPrecedence"
 - !private "+"
-- !private "HorizontalBarChartRenderer"
-- "CGPoint"
-- !private ">="
-- !private "/"
 - !private "+="
-- "TernaryPrecedence"
-- "Highlight"
-- !private "HorizontalBarHighlighter"
-- !private "UnicodeScalarType"
+- !private "-"
+- !private "/"
+- !private "<="
+- !private "=="
+- !private "==="
+- !private ">="
+- "AssignmentPrecedence"
+- !private "BarChartData"
+- "BarChartDataEntry"
+- "BarChartView"
 - !private "CGFloat"
+- "CGPoint"
+- "CGRect"
+- "CastingPrecedence"
+- "ChartDataEntry"
+- "Double"
+- "Highlight"
+- !private "HorizontalBarChartRenderer"
+- "HorizontalBarChartView"
+- !private "HorizontalBarHighlighter"
+- !private "IBarChartDataSet"
+- !private "StringLiteralType"
+- !private "Swift"
+- "TernaryPrecedence"
+- !private "TransformerHorizontalBarChart"
+- !private "UnicodeScalarType"
+- !private "XAxisRendererHorizontalBarChart"
+- "YAxis"
+- !private "YAxisRendererHorizontalBarChart"
+- !private "max"
+- !private "min"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["P6Charts16AnimatorDelegate", "CGFloat"]
@@ -79,34 +79,21 @@ depends-member:
 - !private ["P6Charts16AnimatorDelegate", "_xAxis"]
 - !private ["P6Charts16AnimatorDelegate", "_xAxisRenderer"]
 - !private ["P6Charts16AnimatorDelegate", "calculateLegendOffsets"]
-- ["P6Charts16AnimatorDelegate", "calculateOffsets"]
 - !private ["P6Charts16AnimatorDelegate", "extraBottomOffset"]
 - !private ["P6Charts16AnimatorDelegate", "extraLeftOffset"]
 - !private ["P6Charts16AnimatorDelegate", "extraRightOffset"]
 - !private ["P6Charts16AnimatorDelegate", "extraTopOffset"]
 - !private ["P6Charts16AnimatorDelegate", "getAxisRange"]
-- ["P6Charts16AnimatorDelegate", "getBarBounds"]
-- ["P6Charts16AnimatorDelegate", "getHighlightByTouchPoint"]
-- ["P6Charts16AnimatorDelegate", "getMarkerPosition"]
-- ["P6Charts16AnimatorDelegate", "getPosition"]
 - !private ["P6Charts16AnimatorDelegate", "getTransformer"]
-- ["P6Charts16AnimatorDelegate", "highestVisibleX"]
 - !private ["P6Charts16AnimatorDelegate", "highlighter"]
 - !private ["P6Charts16AnimatorDelegate", "init"]
-- ["P6Charts16AnimatorDelegate", "initialize"]
-- ["P6Charts16AnimatorDelegate", "lowestVisibleX"]
+- !private ["P6Charts16AnimatorDelegate", "initialize"]
 - !private ["P6Charts16AnimatorDelegate", "max"]
 - !private ["P6Charts16AnimatorDelegate", "min"]
 - !private ["P6Charts16AnimatorDelegate", "minOffset"]
 - !private ["P6Charts16AnimatorDelegate", "prepareOffsetMatrix"]
-- ["P6Charts16AnimatorDelegate", "prepareValuePxMatrix"]
+- !private ["P6Charts16AnimatorDelegate", "prepareValuePxMatrix"]
 - !private ["P6Charts16AnimatorDelegate", "renderer"]
-- ["P6Charts16AnimatorDelegate", "setVisibleXRange"]
-- ["P6Charts16AnimatorDelegate", "setVisibleXRangeMaximum"]
-- ["P6Charts16AnimatorDelegate", "setVisibleXRangeMinimum"]
-- ["P6Charts16AnimatorDelegate", "setVisibleYRange"]
-- ["P6Charts16AnimatorDelegate", "setVisibleYRangeMaximum"]
-- ["P6Charts16AnimatorDelegate", "setVisibleYRangeMinimum"]
 - !private ["P6Charts16AnimatorDelegate", "viewPortHandler"]
 - !private ["P6Charts16AnimatorDelegate", "xAxis"]
 - ["P6Charts16AnimatorDelegate", ""]
@@ -137,7 +124,6 @@ depends-member:
 - !private ["Ps9AnyObject", "axisRange"]
 - !private ["Ps9AnyObject", "barWidth"]
 - !private ["Ps9AnyObject", "calculateLegendOffsets"]
-- ["Ps9AnyObject", "calculateOffsets"]
 - !private ["Ps9AnyObject", "contentBottom"]
 - !private ["Ps9AnyObject", "contentLeft"]
 - !private ["Ps9AnyObject", "contentTop"]
@@ -148,21 +134,15 @@ depends-member:
 - !private ["Ps9AnyObject", "extraRightOffset"]
 - !private ["Ps9AnyObject", "extraTopOffset"]
 - !private ["Ps9AnyObject", "getAxisRange"]
-- ["Ps9AnyObject", "getBarBounds"]
 - !private ["Ps9AnyObject", "getDataSetForEntry"]
-- ["Ps9AnyObject", "getHighlightByTouchPoint"]
-- ["Ps9AnyObject", "getMarkerPosition"]
-- ["Ps9AnyObject", "getPosition"]
 - !private ["Ps9AnyObject", "getRequiredHeightSpace"]
 - !private ["Ps9AnyObject", "getTransformer"]
-- ["Ps9AnyObject", "highestVisibleX"]
 - !private ["Ps9AnyObject", "highlighter"]
 - !private ["Ps9AnyObject", "init"]
-- ["Ps9AnyObject", "initialize"]
+- !private ["Ps9AnyObject", "initialize"]
 - !private ["Ps9AnyObject", "isEnabled"]
 - !private ["Ps9AnyObject", "labelPosition"]
 - !private ["Ps9AnyObject", "labelRotatedWidth"]
-- ["Ps9AnyObject", "lowestVisibleX"]
 - !private ["Ps9AnyObject", "max"]
 - !private ["Ps9AnyObject", "min"]
 - !private ["Ps9AnyObject", "minOffset"]
@@ -171,7 +151,7 @@ depends-member:
 - !private ["Ps9AnyObject", "pointValueToPixel"]
 - !private ["Ps9AnyObject", "prepareMatrixValuePx"]
 - !private ["Ps9AnyObject", "prepareOffsetMatrix"]
-- ["Ps9AnyObject", "prepareValuePxMatrix"]
+- !private ["Ps9AnyObject", "prepareValuePxMatrix"]
 - !private ["Ps9AnyObject", "rectValueToPixel"]
 - !private ["Ps9AnyObject", "renderer"]
 - !private ["Ps9AnyObject", "restrainViewPort"]
@@ -181,12 +161,6 @@ depends-member:
 - !private ["Ps9AnyObject", "setMinMaxScaleY"]
 - !private ["Ps9AnyObject", "setMinimumScaleX"]
 - !private ["Ps9AnyObject", "setMinimumScaleY"]
-- ["Ps9AnyObject", "setVisibleXRange"]
-- ["Ps9AnyObject", "setVisibleXRangeMaximum"]
-- ["Ps9AnyObject", "setVisibleXRangeMinimum"]
-- ["Ps9AnyObject", "setVisibleYRange"]
-- ["Ps9AnyObject", "setVisibleYRangeMaximum"]
-- ["Ps9AnyObject", "setVisibleYRangeMinimum"]
 - !private ["Ps9AnyObject", "viewPortHandler"]
 - !private ["Ps9AnyObject", "x"]
 - !private ["Ps9AnyObject", "xAxis"]
@@ -201,12 +175,9 @@ depends-member:
 - !private ["C6Charts8AxisBase", "labelPosition"]
 - !private ["C6Charts8AxisBase", "labelRotatedWidth"]
 - !private ["C6Charts8AxisBase", "needsOffset"]
-- ["OC6Charts5YAxis14AxisDependency", "deinit"]
 - !private ["OC6Charts5YAxis14AxisDependency", "left"]
 - !private ["C6Charts12BarChartData", "barWidth"]
-- ["C6Charts12BarChartData", "deinit"]
 - !private ["C6Charts12BarChartData", "getDataSetForEntry"]
-- ["C6Charts17BarChartDataEntry", "deinit"]
 - !private ["C6Charts17BarChartDataEntry", "x"]
 - !private ["C6Charts17BarChartDataEntry", "y"]
 - !private ["P6Charts20BarChartDataProvider", "CGFloat"]
@@ -231,34 +202,21 @@ depends-member:
 - !private ["P6Charts20BarChartDataProvider", "_xAxis"]
 - !private ["P6Charts20BarChartDataProvider", "_xAxisRenderer"]
 - !private ["P6Charts20BarChartDataProvider", "calculateLegendOffsets"]
-- ["P6Charts20BarChartDataProvider", "calculateOffsets"]
 - !private ["P6Charts20BarChartDataProvider", "extraBottomOffset"]
 - !private ["P6Charts20BarChartDataProvider", "extraLeftOffset"]
 - !private ["P6Charts20BarChartDataProvider", "extraRightOffset"]
 - !private ["P6Charts20BarChartDataProvider", "extraTopOffset"]
 - !private ["P6Charts20BarChartDataProvider", "getAxisRange"]
-- ["P6Charts20BarChartDataProvider", "getBarBounds"]
-- ["P6Charts20BarChartDataProvider", "getHighlightByTouchPoint"]
-- ["P6Charts20BarChartDataProvider", "getMarkerPosition"]
-- ["P6Charts20BarChartDataProvider", "getPosition"]
 - !private ["P6Charts20BarChartDataProvider", "getTransformer"]
-- ["P6Charts20BarChartDataProvider", "highestVisibleX"]
 - !private ["P6Charts20BarChartDataProvider", "highlighter"]
 - !private ["P6Charts20BarChartDataProvider", "init"]
-- ["P6Charts20BarChartDataProvider", "initialize"]
-- ["P6Charts20BarChartDataProvider", "lowestVisibleX"]
+- !private ["P6Charts20BarChartDataProvider", "initialize"]
 - !private ["P6Charts20BarChartDataProvider", "max"]
 - !private ["P6Charts20BarChartDataProvider", "min"]
 - !private ["P6Charts20BarChartDataProvider", "minOffset"]
 - !private ["P6Charts20BarChartDataProvider", "prepareOffsetMatrix"]
-- ["P6Charts20BarChartDataProvider", "prepareValuePxMatrix"]
+- !private ["P6Charts20BarChartDataProvider", "prepareValuePxMatrix"]
 - !private ["P6Charts20BarChartDataProvider", "renderer"]
-- ["P6Charts20BarChartDataProvider", "setVisibleXRange"]
-- ["P6Charts20BarChartDataProvider", "setVisibleXRangeMaximum"]
-- ["P6Charts20BarChartDataProvider", "setVisibleXRangeMinimum"]
-- ["P6Charts20BarChartDataProvider", "setVisibleYRange"]
-- ["P6Charts20BarChartDataProvider", "setVisibleYRangeMaximum"]
-- ["P6Charts20BarChartDataProvider", "setVisibleYRangeMinimum"]
 - !private ["P6Charts20BarChartDataProvider", "viewPortHandler"]
 - !private ["P6Charts20BarChartDataProvider", "xAxis"]
 - ["P6Charts20BarChartDataProvider", ""]
@@ -292,7 +250,6 @@ depends-member:
 - !private ["C6Charts12BarChartView", "_xAxisRenderer"]
 - !private ["C6Charts12BarChartView", "calculateLegendOffsets"]
 - ["C6Charts12BarChartView", "calculateOffsets"]
-- ["C6Charts12BarChartView", "deinit"]
 - !private ["C6Charts12BarChartView", "extraBottomOffset"]
 - !private ["C6Charts12BarChartView", "extraLeftOffset"]
 - !private ["C6Charts12BarChartView", "extraRightOffset"]
@@ -406,47 +363,30 @@ depends-member:
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "_xAxis"]
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "_xAxisRenderer"]
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "calculateLegendOffsets"]
-- ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "calculateOffsets"]
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "extraBottomOffset"]
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "extraLeftOffset"]
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "extraRightOffset"]
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "extraTopOffset"]
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "getAxisRange"]
-- ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "getBarBounds"]
-- ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "getHighlightByTouchPoint"]
-- ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "getMarkerPosition"]
-- ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "getPosition"]
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "getTransformer"]
-- ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "highestVisibleX"]
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "highlighter"]
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "init"]
-- ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "initialize"]
-- ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "lowestVisibleX"]
+- !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "initialize"]
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "max"]
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "min"]
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "minOffset"]
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "prepareOffsetMatrix"]
-- ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "prepareValuePxMatrix"]
+- !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "prepareValuePxMatrix"]
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "renderer"]
-- ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "setVisibleXRange"]
-- ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "setVisibleXRangeMaximum"]
-- ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "setVisibleXRangeMinimum"]
-- ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "setVisibleYRange"]
-- ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "setVisibleYRangeMaximum"]
-- ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "setVisibleYRangeMinimum"]
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "viewPortHandler"]
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "xAxis"]
 - ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", ""]
 - !private ["Ps19BinaryFloatingPoint", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- ["Sb", "deinit"]
-- ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["V12CoreGraphics7CGFloat", "init"]
-- ["VSC7CGPoint", "deinit"]
 - !private ["VSC7CGPoint", "init"]
 - !private ["VSC7CGPoint", "x"]
 - !private ["VSC7CGPoint", "y"]
-- ["VSC6CGRect", "deinit"]
 - !private ["VSC6CGRect", "init"]
 - !private ["VSC6CGRect", "null"]
 - ["Ps7CVarArg", "AxisDependency"]
@@ -476,7 +416,6 @@ depends-member:
 - !private ["Ps7CVarArg", "axisRange"]
 - !private ["Ps7CVarArg", "barWidth"]
 - !private ["Ps7CVarArg", "calculateLegendOffsets"]
-- ["Ps7CVarArg", "calculateOffsets"]
 - !private ["Ps7CVarArg", "contentBottom"]
 - !private ["Ps7CVarArg", "contentLeft"]
 - !private ["Ps7CVarArg", "contentTop"]
@@ -487,21 +426,15 @@ depends-member:
 - !private ["Ps7CVarArg", "extraRightOffset"]
 - !private ["Ps7CVarArg", "extraTopOffset"]
 - !private ["Ps7CVarArg", "getAxisRange"]
-- ["Ps7CVarArg", "getBarBounds"]
 - !private ["Ps7CVarArg", "getDataSetForEntry"]
-- ["Ps7CVarArg", "getHighlightByTouchPoint"]
-- ["Ps7CVarArg", "getMarkerPosition"]
-- ["Ps7CVarArg", "getPosition"]
 - !private ["Ps7CVarArg", "getRequiredHeightSpace"]
 - !private ["Ps7CVarArg", "getTransformer"]
-- ["Ps7CVarArg", "highestVisibleX"]
 - !private ["Ps7CVarArg", "highlighter"]
 - !private ["Ps7CVarArg", "init"]
-- ["Ps7CVarArg", "initialize"]
+- !private ["Ps7CVarArg", "initialize"]
 - !private ["Ps7CVarArg", "isEnabled"]
 - !private ["Ps7CVarArg", "labelPosition"]
 - !private ["Ps7CVarArg", "labelRotatedWidth"]
-- ["Ps7CVarArg", "lowestVisibleX"]
 - !private ["Ps7CVarArg", "max"]
 - !private ["Ps7CVarArg", "min"]
 - !private ["Ps7CVarArg", "minOffset"]
@@ -510,7 +443,7 @@ depends-member:
 - !private ["Ps7CVarArg", "pointValueToPixel"]
 - !private ["Ps7CVarArg", "prepareMatrixValuePx"]
 - !private ["Ps7CVarArg", "prepareOffsetMatrix"]
-- ["Ps7CVarArg", "prepareValuePxMatrix"]
+- !private ["Ps7CVarArg", "prepareValuePxMatrix"]
 - !private ["Ps7CVarArg", "rectValueToPixel"]
 - !private ["Ps7CVarArg", "renderer"]
 - !private ["Ps7CVarArg", "restrainViewPort"]
@@ -520,12 +453,6 @@ depends-member:
 - !private ["Ps7CVarArg", "setMinMaxScaleY"]
 - !private ["Ps7CVarArg", "setMinimumScaleX"]
 - !private ["Ps7CVarArg", "setMinimumScaleY"]
-- ["Ps7CVarArg", "setVisibleXRange"]
-- ["Ps7CVarArg", "setVisibleXRangeMaximum"]
-- ["Ps7CVarArg", "setVisibleXRangeMinimum"]
-- ["Ps7CVarArg", "setVisibleYRange"]
-- ["Ps7CVarArg", "setVisibleYRangeMaximum"]
-- ["Ps7CVarArg", "setVisibleYRangeMinimum"]
 - !private ["Ps7CVarArg", "viewPortHandler"]
 - !private ["Ps7CVarArg", "x"]
 - !private ["Ps7CVarArg", "xAxis"]
@@ -534,7 +461,6 @@ depends-member:
 - !private ["C6Charts9ChartData", "barWidth"]
 - !private ["C6Charts9ChartData", "deinit"]
 - !private ["C6Charts9ChartData", "getDataSetForEntry"]
-- ["C6Charts14ChartDataEntry", "deinit"]
 - !private ["C6Charts14ChartDataEntry", "x"]
 - !private ["C6Charts14ChartDataEntry", "y"]
 - !private ["C6Charts18ChartDataEntryBase", "x"]
@@ -561,34 +487,21 @@ depends-member:
 - !private ["P6Charts17ChartDataProvider", "_xAxis"]
 - !private ["P6Charts17ChartDataProvider", "_xAxisRenderer"]
 - !private ["P6Charts17ChartDataProvider", "calculateLegendOffsets"]
-- ["P6Charts17ChartDataProvider", "calculateOffsets"]
 - !private ["P6Charts17ChartDataProvider", "extraBottomOffset"]
 - !private ["P6Charts17ChartDataProvider", "extraLeftOffset"]
 - !private ["P6Charts17ChartDataProvider", "extraRightOffset"]
 - !private ["P6Charts17ChartDataProvider", "extraTopOffset"]
 - !private ["P6Charts17ChartDataProvider", "getAxisRange"]
-- ["P6Charts17ChartDataProvider", "getBarBounds"]
-- ["P6Charts17ChartDataProvider", "getHighlightByTouchPoint"]
-- ["P6Charts17ChartDataProvider", "getMarkerPosition"]
-- ["P6Charts17ChartDataProvider", "getPosition"]
 - !private ["P6Charts17ChartDataProvider", "getTransformer"]
-- ["P6Charts17ChartDataProvider", "highestVisibleX"]
 - !private ["P6Charts17ChartDataProvider", "highlighter"]
 - !private ["P6Charts17ChartDataProvider", "init"]
-- ["P6Charts17ChartDataProvider", "initialize"]
-- ["P6Charts17ChartDataProvider", "lowestVisibleX"]
+- !private ["P6Charts17ChartDataProvider", "initialize"]
 - !private ["P6Charts17ChartDataProvider", "max"]
 - !private ["P6Charts17ChartDataProvider", "min"]
 - !private ["P6Charts17ChartDataProvider", "minOffset"]
 - !private ["P6Charts17ChartDataProvider", "prepareOffsetMatrix"]
-- ["P6Charts17ChartDataProvider", "prepareValuePxMatrix"]
+- !private ["P6Charts17ChartDataProvider", "prepareValuePxMatrix"]
 - !private ["P6Charts17ChartDataProvider", "renderer"]
-- ["P6Charts17ChartDataProvider", "setVisibleXRange"]
-- ["P6Charts17ChartDataProvider", "setVisibleXRangeMaximum"]
-- ["P6Charts17ChartDataProvider", "setVisibleXRangeMinimum"]
-- ["P6Charts17ChartDataProvider", "setVisibleYRange"]
-- ["P6Charts17ChartDataProvider", "setVisibleYRangeMaximum"]
-- ["P6Charts17ChartDataProvider", "setVisibleYRangeMinimum"]
 - !private ["P6Charts17ChartDataProvider", "viewPortHandler"]
 - !private ["P6Charts17ChartDataProvider", "xAxis"]
 - ["P6Charts17ChartDataProvider", ""]
@@ -688,7 +601,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "axisRange"]
 - !private ["Ps28CustomDebugStringConvertible", "barWidth"]
 - !private ["Ps28CustomDebugStringConvertible", "calculateLegendOffsets"]
-- ["Ps28CustomDebugStringConvertible", "calculateOffsets"]
 - !private ["Ps28CustomDebugStringConvertible", "contentBottom"]
 - !private ["Ps28CustomDebugStringConvertible", "contentLeft"]
 - !private ["Ps28CustomDebugStringConvertible", "contentTop"]
@@ -699,21 +611,15 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "extraRightOffset"]
 - !private ["Ps28CustomDebugStringConvertible", "extraTopOffset"]
 - !private ["Ps28CustomDebugStringConvertible", "getAxisRange"]
-- ["Ps28CustomDebugStringConvertible", "getBarBounds"]
 - !private ["Ps28CustomDebugStringConvertible", "getDataSetForEntry"]
-- ["Ps28CustomDebugStringConvertible", "getHighlightByTouchPoint"]
-- ["Ps28CustomDebugStringConvertible", "getMarkerPosition"]
-- ["Ps28CustomDebugStringConvertible", "getPosition"]
 - !private ["Ps28CustomDebugStringConvertible", "getRequiredHeightSpace"]
 - !private ["Ps28CustomDebugStringConvertible", "getTransformer"]
-- ["Ps28CustomDebugStringConvertible", "highestVisibleX"]
 - !private ["Ps28CustomDebugStringConvertible", "highlighter"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
-- ["Ps28CustomDebugStringConvertible", "initialize"]
+- !private ["Ps28CustomDebugStringConvertible", "initialize"]
 - !private ["Ps28CustomDebugStringConvertible", "isEnabled"]
 - !private ["Ps28CustomDebugStringConvertible", "labelPosition"]
 - !private ["Ps28CustomDebugStringConvertible", "labelRotatedWidth"]
-- ["Ps28CustomDebugStringConvertible", "lowestVisibleX"]
 - !private ["Ps28CustomDebugStringConvertible", "max"]
 - !private ["Ps28CustomDebugStringConvertible", "min"]
 - !private ["Ps28CustomDebugStringConvertible", "minOffset"]
@@ -723,7 +629,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "pointValueToPixel"]
 - !private ["Ps28CustomDebugStringConvertible", "prepareMatrixValuePx"]
 - !private ["Ps28CustomDebugStringConvertible", "prepareOffsetMatrix"]
-- ["Ps28CustomDebugStringConvertible", "prepareValuePxMatrix"]
+- !private ["Ps28CustomDebugStringConvertible", "prepareValuePxMatrix"]
 - !private ["Ps28CustomDebugStringConvertible", "rectValueToPixel"]
 - !private ["Ps28CustomDebugStringConvertible", "renderer"]
 - !private ["Ps28CustomDebugStringConvertible", "restrainViewPort"]
@@ -733,12 +639,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "setMinMaxScaleY"]
 - !private ["Ps28CustomDebugStringConvertible", "setMinimumScaleX"]
 - !private ["Ps28CustomDebugStringConvertible", "setMinimumScaleY"]
-- ["Ps28CustomDebugStringConvertible", "setVisibleXRange"]
-- ["Ps28CustomDebugStringConvertible", "setVisibleXRangeMaximum"]
-- ["Ps28CustomDebugStringConvertible", "setVisibleXRangeMinimum"]
-- ["Ps28CustomDebugStringConvertible", "setVisibleYRange"]
-- ["Ps28CustomDebugStringConvertible", "setVisibleYRangeMaximum"]
-- ["Ps28CustomDebugStringConvertible", "setVisibleYRangeMinimum"]
 - !private ["Ps28CustomDebugStringConvertible", "viewPortHandler"]
 - !private ["Ps28CustomDebugStringConvertible", "x"]
 - !private ["Ps28CustomDebugStringConvertible", "xAxis"]
@@ -782,7 +682,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "axisRange"]
 - !private ["Ps23CustomStringConvertible", "barWidth"]
 - !private ["Ps23CustomStringConvertible", "calculateLegendOffsets"]
-- ["Ps23CustomStringConvertible", "calculateOffsets"]
 - !private ["Ps23CustomStringConvertible", "contentBottom"]
 - !private ["Ps23CustomStringConvertible", "contentLeft"]
 - !private ["Ps23CustomStringConvertible", "contentTop"]
@@ -793,21 +692,15 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "extraRightOffset"]
 - !private ["Ps23CustomStringConvertible", "extraTopOffset"]
 - !private ["Ps23CustomStringConvertible", "getAxisRange"]
-- ["Ps23CustomStringConvertible", "getBarBounds"]
 - !private ["Ps23CustomStringConvertible", "getDataSetForEntry"]
-- ["Ps23CustomStringConvertible", "getHighlightByTouchPoint"]
-- ["Ps23CustomStringConvertible", "getMarkerPosition"]
-- ["Ps23CustomStringConvertible", "getPosition"]
 - !private ["Ps23CustomStringConvertible", "getRequiredHeightSpace"]
 - !private ["Ps23CustomStringConvertible", "getTransformer"]
-- ["Ps23CustomStringConvertible", "highestVisibleX"]
 - !private ["Ps23CustomStringConvertible", "highlighter"]
 - !private ["Ps23CustomStringConvertible", "init"]
-- ["Ps23CustomStringConvertible", "initialize"]
+- !private ["Ps23CustomStringConvertible", "initialize"]
 - !private ["Ps23CustomStringConvertible", "isEnabled"]
 - !private ["Ps23CustomStringConvertible", "labelPosition"]
 - !private ["Ps23CustomStringConvertible", "labelRotatedWidth"]
-- ["Ps23CustomStringConvertible", "lowestVisibleX"]
 - !private ["Ps23CustomStringConvertible", "max"]
 - !private ["Ps23CustomStringConvertible", "min"]
 - !private ["Ps23CustomStringConvertible", "minOffset"]
@@ -816,7 +709,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "pointValueToPixel"]
 - !private ["Ps23CustomStringConvertible", "prepareMatrixValuePx"]
 - !private ["Ps23CustomStringConvertible", "prepareOffsetMatrix"]
-- ["Ps23CustomStringConvertible", "prepareValuePxMatrix"]
+- !private ["Ps23CustomStringConvertible", "prepareValuePxMatrix"]
 - !private ["Ps23CustomStringConvertible", "rectValueToPixel"]
 - !private ["Ps23CustomStringConvertible", "renderer"]
 - !private ["Ps23CustomStringConvertible", "restrainViewPort"]
@@ -826,18 +719,11 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "setMinMaxScaleY"]
 - !private ["Ps23CustomStringConvertible", "setMinimumScaleX"]
 - !private ["Ps23CustomStringConvertible", "setMinimumScaleY"]
-- ["Ps23CustomStringConvertible", "setVisibleXRange"]
-- ["Ps23CustomStringConvertible", "setVisibleXRangeMaximum"]
-- ["Ps23CustomStringConvertible", "setVisibleXRangeMinimum"]
-- ["Ps23CustomStringConvertible", "setVisibleYRange"]
-- ["Ps23CustomStringConvertible", "setVisibleYRangeMaximum"]
-- ["Ps23CustomStringConvertible", "setVisibleYRangeMinimum"]
 - !private ["Ps23CustomStringConvertible", "viewPortHandler"]
 - !private ["Ps23CustomStringConvertible", "x"]
 - !private ["Ps23CustomStringConvertible", "xAxis"]
 - !private ["Ps23CustomStringConvertible", "y"]
 - ["Ps23CustomStringConvertible", ""]
-- ["Sd", "deinit"]
 - !private ["Sd", "init"]
 - ["Ps9Equatable", "AxisDependency"]
 - !private ["Ps9Equatable", "CGFloat"]
@@ -846,7 +732,6 @@ depends-member:
 - !private ["Ps9Equatable", "Double"]
 - !private ["Ps9Equatable", "HorizontalBarChartRenderer"]
 - !private ["Ps9Equatable", "HorizontalBarHighlighter"]
-- !private ["Ps9Equatable", "RawValue"]
 - !private ["Ps9Equatable", "Swift"]
 - !private ["Ps9Equatable", "TransformerHorizontalBarChart"]
 - !private ["Ps9Equatable", "XAxisRendererHorizontalBarChart"]
@@ -870,7 +755,6 @@ depends-member:
 - !private ["Ps9Equatable", "bothSided"]
 - !private ["Ps9Equatable", "bottom"]
 - !private ["Ps9Equatable", "calculateLegendOffsets"]
-- ["Ps9Equatable", "calculateOffsets"]
 - !private ["Ps9Equatable", "contentBottom"]
 - !private ["Ps9Equatable", "contentLeft"]
 - !private ["Ps9Equatable", "contentTop"]
@@ -881,22 +765,16 @@ depends-member:
 - !private ["Ps9Equatable", "extraRightOffset"]
 - !private ["Ps9Equatable", "extraTopOffset"]
 - !private ["Ps9Equatable", "getAxisRange"]
-- ["Ps9Equatable", "getBarBounds"]
 - !private ["Ps9Equatable", "getDataSetForEntry"]
-- ["Ps9Equatable", "getHighlightByTouchPoint"]
-- ["Ps9Equatable", "getMarkerPosition"]
-- ["Ps9Equatable", "getPosition"]
 - !private ["Ps9Equatable", "getRequiredHeightSpace"]
 - !private ["Ps9Equatable", "getTransformer"]
-- ["Ps9Equatable", "highestVisibleX"]
 - !private ["Ps9Equatable", "highlighter"]
 - !private ["Ps9Equatable", "init"]
-- ["Ps9Equatable", "initialize"]
+- !private ["Ps9Equatable", "initialize"]
 - !private ["Ps9Equatable", "isEnabled"]
 - !private ["Ps9Equatable", "labelPosition"]
 - !private ["Ps9Equatable", "labelRotatedWidth"]
 - !private ["Ps9Equatable", "left"]
-- ["Ps9Equatable", "lowestVisibleX"]
 - !private ["Ps9Equatable", "max"]
 - !private ["Ps9Equatable", "min"]
 - !private ["Ps9Equatable", "minOffset"]
@@ -906,7 +784,7 @@ depends-member:
 - !private ["Ps9Equatable", "pointValueToPixel"]
 - !private ["Ps9Equatable", "prepareMatrixValuePx"]
 - !private ["Ps9Equatable", "prepareOffsetMatrix"]
-- ["Ps9Equatable", "prepareValuePxMatrix"]
+- !private ["Ps9Equatable", "prepareValuePxMatrix"]
 - !private ["Ps9Equatable", "rectValueToPixel"]
 - !private ["Ps9Equatable", "renderer"]
 - !private ["Ps9Equatable", "restrainViewPort"]
@@ -916,12 +794,6 @@ depends-member:
 - !private ["Ps9Equatable", "setMinMaxScaleY"]
 - !private ["Ps9Equatable", "setMinimumScaleX"]
 - !private ["Ps9Equatable", "setMinimumScaleY"]
-- ["Ps9Equatable", "setVisibleXRange"]
-- ["Ps9Equatable", "setVisibleXRangeMaximum"]
-- ["Ps9Equatable", "setVisibleXRangeMinimum"]
-- ["Ps9Equatable", "setVisibleYRange"]
-- ["Ps9Equatable", "setVisibleYRangeMaximum"]
-- ["Ps9Equatable", "setVisibleYRangeMinimum"]
 - !private ["Ps9Equatable", "top"]
 - !private ["Ps9Equatable", "viewPortHandler"]
 - !private ["Ps9Equatable", "x"]
@@ -932,7 +804,6 @@ depends-member:
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps25ExpressibleByFloatLiteral", "init"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "init"]
-- !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Ps13FloatingPoint", "init"]
@@ -943,7 +814,6 @@ depends-member:
 - !private ["Ps8Hashable", "Double"]
 - !private ["Ps8Hashable", "HorizontalBarChartRenderer"]
 - !private ["Ps8Hashable", "HorizontalBarHighlighter"]
-- !private ["Ps8Hashable", "RawValue"]
 - !private ["Ps8Hashable", "Swift"]
 - !private ["Ps8Hashable", "TransformerHorizontalBarChart"]
 - !private ["Ps8Hashable", "XAxisRendererHorizontalBarChart"]
@@ -967,7 +837,6 @@ depends-member:
 - !private ["Ps8Hashable", "bothSided"]
 - !private ["Ps8Hashable", "bottom"]
 - !private ["Ps8Hashable", "calculateLegendOffsets"]
-- ["Ps8Hashable", "calculateOffsets"]
 - !private ["Ps8Hashable", "contentBottom"]
 - !private ["Ps8Hashable", "contentLeft"]
 - !private ["Ps8Hashable", "contentTop"]
@@ -978,22 +847,16 @@ depends-member:
 - !private ["Ps8Hashable", "extraRightOffset"]
 - !private ["Ps8Hashable", "extraTopOffset"]
 - !private ["Ps8Hashable", "getAxisRange"]
-- ["Ps8Hashable", "getBarBounds"]
 - !private ["Ps8Hashable", "getDataSetForEntry"]
-- ["Ps8Hashable", "getHighlightByTouchPoint"]
-- ["Ps8Hashable", "getMarkerPosition"]
-- ["Ps8Hashable", "getPosition"]
 - !private ["Ps8Hashable", "getRequiredHeightSpace"]
 - !private ["Ps8Hashable", "getTransformer"]
-- ["Ps8Hashable", "highestVisibleX"]
 - !private ["Ps8Hashable", "highlighter"]
 - !private ["Ps8Hashable", "init"]
-- ["Ps8Hashable", "initialize"]
+- !private ["Ps8Hashable", "initialize"]
 - !private ["Ps8Hashable", "isEnabled"]
 - !private ["Ps8Hashable", "labelPosition"]
 - !private ["Ps8Hashable", "labelRotatedWidth"]
 - !private ["Ps8Hashable", "left"]
-- ["Ps8Hashable", "lowestVisibleX"]
 - !private ["Ps8Hashable", "max"]
 - !private ["Ps8Hashable", "min"]
 - !private ["Ps8Hashable", "minOffset"]
@@ -1002,7 +865,7 @@ depends-member:
 - !private ["Ps8Hashable", "pointValueToPixel"]
 - !private ["Ps8Hashable", "prepareMatrixValuePx"]
 - !private ["Ps8Hashable", "prepareOffsetMatrix"]
-- ["Ps8Hashable", "prepareValuePxMatrix"]
+- !private ["Ps8Hashable", "prepareValuePxMatrix"]
 - !private ["Ps8Hashable", "rectValueToPixel"]
 - !private ["Ps8Hashable", "renderer"]
 - !private ["Ps8Hashable", "restrainViewPort"]
@@ -1012,22 +875,14 @@ depends-member:
 - !private ["Ps8Hashable", "setMinMaxScaleY"]
 - !private ["Ps8Hashable", "setMinimumScaleX"]
 - !private ["Ps8Hashable", "setMinimumScaleY"]
-- ["Ps8Hashable", "setVisibleXRange"]
-- ["Ps8Hashable", "setVisibleXRangeMaximum"]
-- ["Ps8Hashable", "setVisibleXRangeMinimum"]
-- ["Ps8Hashable", "setVisibleYRange"]
-- ["Ps8Hashable", "setVisibleYRangeMaximum"]
-- ["Ps8Hashable", "setVisibleYRangeMinimum"]
 - !private ["Ps8Hashable", "top"]
 - !private ["Ps8Hashable", "viewPortHandler"]
 - !private ["Ps8Hashable", "x"]
 - !private ["Ps8Hashable", "xAxis"]
 - !private ["Ps8Hashable", "y"]
 - ["Ps8Hashable", ""]
-- ["C6Charts9Highlight", "deinit"]
 - !private ["C6Charts9Highlight", "drawX"]
 - !private ["C6Charts9Highlight", "drawY"]
-- ["C6Charts26HorizontalBarChartRenderer", "deinit"]
 - !private ["C6Charts26HorizontalBarChartRenderer", "init"]
 - !private ["C6Charts22HorizontalBarChartView", "BarChartData"]
 - ["C6Charts22HorizontalBarChartView", "BarChartDataEntry"]
@@ -1088,19 +943,16 @@ depends-member:
 - ["C6Charts22HorizontalBarChartView", "setVisibleYRangeMinimum"]
 - !private ["C6Charts22HorizontalBarChartView", "viewPortHandler"]
 - !private ["C6Charts22HorizontalBarChartView", "xAxis"]
-- ["C6Charts24HorizontalBarHighlighter", "deinit"]
+- !private ["C6Charts24HorizontalBarHighlighter", "deinit"]
 - !private ["C6Charts24HorizontalBarHighlighter", "init"]
 - !private ["P6Charts16IBarChartDataSet", "axisDependency"]
-- ["P6Charts16IBarChartDataSet", "deinit"]
 - !private ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "axisDependency"]
 - !private ["P6Charts13IChartDataSet", "axisDependency"]
 - !private ["P6Charts12IHighlighter", "getHighlight"]
 - !private ["P6Charts12IHighlighter", "init"]
-- ["SQ", "deinit"]
-- !private ["OC6Charts5XAxis13LabelPosition", "RawValue"]
 - !private ["OC6Charts5XAxis13LabelPosition", "bothSided"]
 - !private ["OC6Charts5XAxis13LabelPosition", "bottom"]
-- ["OC6Charts5XAxis13LabelPosition", "deinit"]
+- !private ["OC6Charts5XAxis13LabelPosition", "deinit"]
 - !private ["OC6Charts5XAxis13LabelPosition", "top"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
@@ -1127,34 +979,21 @@ depends-member:
 - !private ["PSo15NSAccessibility", "_xAxis"]
 - !private ["PSo15NSAccessibility", "_xAxisRenderer"]
 - !private ["PSo15NSAccessibility", "calculateLegendOffsets"]
-- ["PSo15NSAccessibility", "calculateOffsets"]
 - !private ["PSo15NSAccessibility", "extraBottomOffset"]
 - !private ["PSo15NSAccessibility", "extraLeftOffset"]
 - !private ["PSo15NSAccessibility", "extraRightOffset"]
 - !private ["PSo15NSAccessibility", "extraTopOffset"]
 - !private ["PSo15NSAccessibility", "getAxisRange"]
-- ["PSo15NSAccessibility", "getBarBounds"]
-- ["PSo15NSAccessibility", "getHighlightByTouchPoint"]
-- ["PSo15NSAccessibility", "getMarkerPosition"]
-- ["PSo15NSAccessibility", "getPosition"]
 - !private ["PSo15NSAccessibility", "getTransformer"]
-- ["PSo15NSAccessibility", "highestVisibleX"]
 - !private ["PSo15NSAccessibility", "highlighter"]
 - !private ["PSo15NSAccessibility", "init"]
-- ["PSo15NSAccessibility", "initialize"]
-- ["PSo15NSAccessibility", "lowestVisibleX"]
+- !private ["PSo15NSAccessibility", "initialize"]
 - !private ["PSo15NSAccessibility", "max"]
 - !private ["PSo15NSAccessibility", "min"]
 - !private ["PSo15NSAccessibility", "minOffset"]
 - !private ["PSo15NSAccessibility", "prepareOffsetMatrix"]
-- ["PSo15NSAccessibility", "prepareValuePxMatrix"]
+- !private ["PSo15NSAccessibility", "prepareValuePxMatrix"]
 - !private ["PSo15NSAccessibility", "renderer"]
-- ["PSo15NSAccessibility", "setVisibleXRange"]
-- ["PSo15NSAccessibility", "setVisibleXRangeMaximum"]
-- ["PSo15NSAccessibility", "setVisibleXRangeMinimum"]
-- ["PSo15NSAccessibility", "setVisibleYRange"]
-- ["PSo15NSAccessibility", "setVisibleYRangeMaximum"]
-- ["PSo15NSAccessibility", "setVisibleYRangeMinimum"]
 - !private ["PSo15NSAccessibility", "viewPortHandler"]
 - !private ["PSo15NSAccessibility", "xAxis"]
 - ["PSo15NSAccessibility", ""]
@@ -1180,34 +1019,21 @@ depends-member:
 - !private ["PSo30NSAccessibilityElementProtocol", "_xAxis"]
 - !private ["PSo30NSAccessibilityElementProtocol", "_xAxisRenderer"]
 - !private ["PSo30NSAccessibilityElementProtocol", "calculateLegendOffsets"]
-- ["PSo30NSAccessibilityElementProtocol", "calculateOffsets"]
 - !private ["PSo30NSAccessibilityElementProtocol", "extraBottomOffset"]
 - !private ["PSo30NSAccessibilityElementProtocol", "extraLeftOffset"]
 - !private ["PSo30NSAccessibilityElementProtocol", "extraRightOffset"]
 - !private ["PSo30NSAccessibilityElementProtocol", "extraTopOffset"]
 - !private ["PSo30NSAccessibilityElementProtocol", "getAxisRange"]
-- ["PSo30NSAccessibilityElementProtocol", "getBarBounds"]
-- ["PSo30NSAccessibilityElementProtocol", "getHighlightByTouchPoint"]
-- ["PSo30NSAccessibilityElementProtocol", "getMarkerPosition"]
-- ["PSo30NSAccessibilityElementProtocol", "getPosition"]
 - !private ["PSo30NSAccessibilityElementProtocol", "getTransformer"]
-- ["PSo30NSAccessibilityElementProtocol", "highestVisibleX"]
 - !private ["PSo30NSAccessibilityElementProtocol", "highlighter"]
 - !private ["PSo30NSAccessibilityElementProtocol", "init"]
-- ["PSo30NSAccessibilityElementProtocol", "initialize"]
-- ["PSo30NSAccessibilityElementProtocol", "lowestVisibleX"]
+- !private ["PSo30NSAccessibilityElementProtocol", "initialize"]
 - !private ["PSo30NSAccessibilityElementProtocol", "max"]
 - !private ["PSo30NSAccessibilityElementProtocol", "min"]
 - !private ["PSo30NSAccessibilityElementProtocol", "minOffset"]
 - !private ["PSo30NSAccessibilityElementProtocol", "prepareOffsetMatrix"]
-- ["PSo30NSAccessibilityElementProtocol", "prepareValuePxMatrix"]
+- !private ["PSo30NSAccessibilityElementProtocol", "prepareValuePxMatrix"]
 - !private ["PSo30NSAccessibilityElementProtocol", "renderer"]
-- ["PSo30NSAccessibilityElementProtocol", "setVisibleXRange"]
-- ["PSo30NSAccessibilityElementProtocol", "setVisibleXRangeMaximum"]
-- ["PSo30NSAccessibilityElementProtocol", "setVisibleXRangeMinimum"]
-- ["PSo30NSAccessibilityElementProtocol", "setVisibleYRange"]
-- ["PSo30NSAccessibilityElementProtocol", "setVisibleYRangeMaximum"]
-- ["PSo30NSAccessibilityElementProtocol", "setVisibleYRangeMinimum"]
 - !private ["PSo30NSAccessibilityElementProtocol", "viewPortHandler"]
 - !private ["PSo30NSAccessibilityElementProtocol", "xAxis"]
 - ["PSo30NSAccessibilityElementProtocol", ""]
@@ -1233,34 +1059,21 @@ depends-member:
 - !private ["PSo29NSAnimatablePropertyContainer", "_xAxis"]
 - !private ["PSo29NSAnimatablePropertyContainer", "_xAxisRenderer"]
 - !private ["PSo29NSAnimatablePropertyContainer", "calculateLegendOffsets"]
-- ["PSo29NSAnimatablePropertyContainer", "calculateOffsets"]
 - !private ["PSo29NSAnimatablePropertyContainer", "extraBottomOffset"]
 - !private ["PSo29NSAnimatablePropertyContainer", "extraLeftOffset"]
 - !private ["PSo29NSAnimatablePropertyContainer", "extraRightOffset"]
 - !private ["PSo29NSAnimatablePropertyContainer", "extraTopOffset"]
 - !private ["PSo29NSAnimatablePropertyContainer", "getAxisRange"]
-- ["PSo29NSAnimatablePropertyContainer", "getBarBounds"]
-- ["PSo29NSAnimatablePropertyContainer", "getHighlightByTouchPoint"]
-- ["PSo29NSAnimatablePropertyContainer", "getMarkerPosition"]
-- ["PSo29NSAnimatablePropertyContainer", "getPosition"]
 - !private ["PSo29NSAnimatablePropertyContainer", "getTransformer"]
-- ["PSo29NSAnimatablePropertyContainer", "highestVisibleX"]
 - !private ["PSo29NSAnimatablePropertyContainer", "highlighter"]
 - !private ["PSo29NSAnimatablePropertyContainer", "init"]
-- ["PSo29NSAnimatablePropertyContainer", "initialize"]
-- ["PSo29NSAnimatablePropertyContainer", "lowestVisibleX"]
+- !private ["PSo29NSAnimatablePropertyContainer", "initialize"]
 - !private ["PSo29NSAnimatablePropertyContainer", "max"]
 - !private ["PSo29NSAnimatablePropertyContainer", "min"]
 - !private ["PSo29NSAnimatablePropertyContainer", "minOffset"]
 - !private ["PSo29NSAnimatablePropertyContainer", "prepareOffsetMatrix"]
-- ["PSo29NSAnimatablePropertyContainer", "prepareValuePxMatrix"]
+- !private ["PSo29NSAnimatablePropertyContainer", "prepareValuePxMatrix"]
 - !private ["PSo29NSAnimatablePropertyContainer", "renderer"]
-- ["PSo29NSAnimatablePropertyContainer", "setVisibleXRange"]
-- ["PSo29NSAnimatablePropertyContainer", "setVisibleXRangeMaximum"]
-- ["PSo29NSAnimatablePropertyContainer", "setVisibleXRangeMinimum"]
-- ["PSo29NSAnimatablePropertyContainer", "setVisibleYRange"]
-- ["PSo29NSAnimatablePropertyContainer", "setVisibleYRangeMaximum"]
-- ["PSo29NSAnimatablePropertyContainer", "setVisibleYRangeMinimum"]
 - !private ["PSo29NSAnimatablePropertyContainer", "viewPortHandler"]
 - !private ["PSo29NSAnimatablePropertyContainer", "xAxis"]
 - ["PSo29NSAnimatablePropertyContainer", ""]
@@ -1286,38 +1099,24 @@ depends-member:
 - !private ["PSo25NSAppearanceCustomization", "_xAxis"]
 - !private ["PSo25NSAppearanceCustomization", "_xAxisRenderer"]
 - !private ["PSo25NSAppearanceCustomization", "calculateLegendOffsets"]
-- ["PSo25NSAppearanceCustomization", "calculateOffsets"]
 - !private ["PSo25NSAppearanceCustomization", "extraBottomOffset"]
 - !private ["PSo25NSAppearanceCustomization", "extraLeftOffset"]
 - !private ["PSo25NSAppearanceCustomization", "extraRightOffset"]
 - !private ["PSo25NSAppearanceCustomization", "extraTopOffset"]
 - !private ["PSo25NSAppearanceCustomization", "getAxisRange"]
-- ["PSo25NSAppearanceCustomization", "getBarBounds"]
-- ["PSo25NSAppearanceCustomization", "getHighlightByTouchPoint"]
-- ["PSo25NSAppearanceCustomization", "getMarkerPosition"]
-- ["PSo25NSAppearanceCustomization", "getPosition"]
 - !private ["PSo25NSAppearanceCustomization", "getTransformer"]
-- ["PSo25NSAppearanceCustomization", "highestVisibleX"]
 - !private ["PSo25NSAppearanceCustomization", "highlighter"]
 - !private ["PSo25NSAppearanceCustomization", "init"]
-- ["PSo25NSAppearanceCustomization", "initialize"]
-- ["PSo25NSAppearanceCustomization", "lowestVisibleX"]
+- !private ["PSo25NSAppearanceCustomization", "initialize"]
 - !private ["PSo25NSAppearanceCustomization", "max"]
 - !private ["PSo25NSAppearanceCustomization", "min"]
 - !private ["PSo25NSAppearanceCustomization", "minOffset"]
 - !private ["PSo25NSAppearanceCustomization", "prepareOffsetMatrix"]
-- ["PSo25NSAppearanceCustomization", "prepareValuePxMatrix"]
+- !private ["PSo25NSAppearanceCustomization", "prepareValuePxMatrix"]
 - !private ["PSo25NSAppearanceCustomization", "renderer"]
-- ["PSo25NSAppearanceCustomization", "setVisibleXRange"]
-- ["PSo25NSAppearanceCustomization", "setVisibleXRangeMaximum"]
-- ["PSo25NSAppearanceCustomization", "setVisibleXRangeMinimum"]
-- ["PSo25NSAppearanceCustomization", "setVisibleYRange"]
-- ["PSo25NSAppearanceCustomization", "setVisibleYRangeMaximum"]
-- ["PSo25NSAppearanceCustomization", "setVisibleYRangeMinimum"]
 - !private ["PSo25NSAppearanceCustomization", "viewPortHandler"]
 - !private ["PSo25NSAppearanceCustomization", "xAxis"]
 - ["PSo25NSAppearanceCustomization", ""]
-- ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "CGFloat"]
 - !private ["PSo8NSCoding", "CGPoint"]
 - !private ["PSo8NSCoding", "CGRect"]
@@ -1340,34 +1139,21 @@ depends-member:
 - !private ["PSo8NSCoding", "_xAxis"]
 - !private ["PSo8NSCoding", "_xAxisRenderer"]
 - !private ["PSo8NSCoding", "calculateLegendOffsets"]
-- ["PSo8NSCoding", "calculateOffsets"]
 - !private ["PSo8NSCoding", "extraBottomOffset"]
 - !private ["PSo8NSCoding", "extraLeftOffset"]
 - !private ["PSo8NSCoding", "extraRightOffset"]
 - !private ["PSo8NSCoding", "extraTopOffset"]
 - !private ["PSo8NSCoding", "getAxisRange"]
-- ["PSo8NSCoding", "getBarBounds"]
-- ["PSo8NSCoding", "getHighlightByTouchPoint"]
-- ["PSo8NSCoding", "getMarkerPosition"]
-- ["PSo8NSCoding", "getPosition"]
 - !private ["PSo8NSCoding", "getTransformer"]
-- ["PSo8NSCoding", "highestVisibleX"]
 - !private ["PSo8NSCoding", "highlighter"]
 - !private ["PSo8NSCoding", "init"]
-- ["PSo8NSCoding", "initialize"]
-- ["PSo8NSCoding", "lowestVisibleX"]
+- !private ["PSo8NSCoding", "initialize"]
 - !private ["PSo8NSCoding", "max"]
 - !private ["PSo8NSCoding", "min"]
 - !private ["PSo8NSCoding", "minOffset"]
 - !private ["PSo8NSCoding", "prepareOffsetMatrix"]
-- ["PSo8NSCoding", "prepareValuePxMatrix"]
+- !private ["PSo8NSCoding", "prepareValuePxMatrix"]
 - !private ["PSo8NSCoding", "renderer"]
-- ["PSo8NSCoding", "setVisibleXRange"]
-- ["PSo8NSCoding", "setVisibleXRangeMaximum"]
-- ["PSo8NSCoding", "setVisibleXRangeMinimum"]
-- ["PSo8NSCoding", "setVisibleYRange"]
-- ["PSo8NSCoding", "setVisibleYRangeMaximum"]
-- ["PSo8NSCoding", "setVisibleYRangeMinimum"]
 - !private ["PSo8NSCoding", "viewPortHandler"]
 - !private ["PSo8NSCoding", "xAxis"]
 - ["PSo8NSCoding", ""]
@@ -1394,34 +1180,21 @@ depends-member:
 - !private ["PSo21NSDraggingDestination", "_xAxis"]
 - !private ["PSo21NSDraggingDestination", "_xAxisRenderer"]
 - !private ["PSo21NSDraggingDestination", "calculateLegendOffsets"]
-- ["PSo21NSDraggingDestination", "calculateOffsets"]
 - !private ["PSo21NSDraggingDestination", "extraBottomOffset"]
 - !private ["PSo21NSDraggingDestination", "extraLeftOffset"]
 - !private ["PSo21NSDraggingDestination", "extraRightOffset"]
 - !private ["PSo21NSDraggingDestination", "extraTopOffset"]
 - !private ["PSo21NSDraggingDestination", "getAxisRange"]
-- ["PSo21NSDraggingDestination", "getBarBounds"]
-- ["PSo21NSDraggingDestination", "getHighlightByTouchPoint"]
-- ["PSo21NSDraggingDestination", "getMarkerPosition"]
-- ["PSo21NSDraggingDestination", "getPosition"]
 - !private ["PSo21NSDraggingDestination", "getTransformer"]
-- ["PSo21NSDraggingDestination", "highestVisibleX"]
 - !private ["PSo21NSDraggingDestination", "highlighter"]
 - !private ["PSo21NSDraggingDestination", "init"]
-- ["PSo21NSDraggingDestination", "initialize"]
-- ["PSo21NSDraggingDestination", "lowestVisibleX"]
+- !private ["PSo21NSDraggingDestination", "initialize"]
 - !private ["PSo21NSDraggingDestination", "max"]
 - !private ["PSo21NSDraggingDestination", "min"]
 - !private ["PSo21NSDraggingDestination", "minOffset"]
 - !private ["PSo21NSDraggingDestination", "prepareOffsetMatrix"]
-- ["PSo21NSDraggingDestination", "prepareValuePxMatrix"]
+- !private ["PSo21NSDraggingDestination", "prepareValuePxMatrix"]
 - !private ["PSo21NSDraggingDestination", "renderer"]
-- ["PSo21NSDraggingDestination", "setVisibleXRange"]
-- ["PSo21NSDraggingDestination", "setVisibleXRangeMaximum"]
-- ["PSo21NSDraggingDestination", "setVisibleXRangeMinimum"]
-- ["PSo21NSDraggingDestination", "setVisibleYRange"]
-- ["PSo21NSDraggingDestination", "setVisibleYRangeMaximum"]
-- ["PSo21NSDraggingDestination", "setVisibleYRangeMinimum"]
 - !private ["PSo21NSDraggingDestination", "viewPortHandler"]
 - !private ["PSo21NSDraggingDestination", "xAxis"]
 - ["PSo21NSDraggingDestination", ""]
@@ -1447,34 +1220,21 @@ depends-member:
 - !private ["PSo27NSGestureRecognizerDelegate", "_xAxis"]
 - !private ["PSo27NSGestureRecognizerDelegate", "_xAxisRenderer"]
 - !private ["PSo27NSGestureRecognizerDelegate", "calculateLegendOffsets"]
-- ["PSo27NSGestureRecognizerDelegate", "calculateOffsets"]
 - !private ["PSo27NSGestureRecognizerDelegate", "extraBottomOffset"]
 - !private ["PSo27NSGestureRecognizerDelegate", "extraLeftOffset"]
 - !private ["PSo27NSGestureRecognizerDelegate", "extraRightOffset"]
 - !private ["PSo27NSGestureRecognizerDelegate", "extraTopOffset"]
 - !private ["PSo27NSGestureRecognizerDelegate", "getAxisRange"]
-- ["PSo27NSGestureRecognizerDelegate", "getBarBounds"]
-- ["PSo27NSGestureRecognizerDelegate", "getHighlightByTouchPoint"]
-- ["PSo27NSGestureRecognizerDelegate", "getMarkerPosition"]
-- ["PSo27NSGestureRecognizerDelegate", "getPosition"]
 - !private ["PSo27NSGestureRecognizerDelegate", "getTransformer"]
-- ["PSo27NSGestureRecognizerDelegate", "highestVisibleX"]
 - !private ["PSo27NSGestureRecognizerDelegate", "highlighter"]
 - !private ["PSo27NSGestureRecognizerDelegate", "init"]
-- ["PSo27NSGestureRecognizerDelegate", "initialize"]
-- ["PSo27NSGestureRecognizerDelegate", "lowestVisibleX"]
+- !private ["PSo27NSGestureRecognizerDelegate", "initialize"]
 - !private ["PSo27NSGestureRecognizerDelegate", "max"]
 - !private ["PSo27NSGestureRecognizerDelegate", "min"]
 - !private ["PSo27NSGestureRecognizerDelegate", "minOffset"]
 - !private ["PSo27NSGestureRecognizerDelegate", "prepareOffsetMatrix"]
-- ["PSo27NSGestureRecognizerDelegate", "prepareValuePxMatrix"]
+- !private ["PSo27NSGestureRecognizerDelegate", "prepareValuePxMatrix"]
 - !private ["PSo27NSGestureRecognizerDelegate", "renderer"]
-- ["PSo27NSGestureRecognizerDelegate", "setVisibleXRange"]
-- ["PSo27NSGestureRecognizerDelegate", "setVisibleXRangeMaximum"]
-- ["PSo27NSGestureRecognizerDelegate", "setVisibleXRangeMinimum"]
-- ["PSo27NSGestureRecognizerDelegate", "setVisibleYRange"]
-- ["PSo27NSGestureRecognizerDelegate", "setVisibleYRangeMaximum"]
-- ["PSo27NSGestureRecognizerDelegate", "setVisibleYRangeMinimum"]
 - !private ["PSo27NSGestureRecognizerDelegate", "viewPortHandler"]
 - !private ["PSo27NSGestureRecognizerDelegate", "xAxis"]
 - ["PSo27NSGestureRecognizerDelegate", ""]
@@ -1593,7 +1353,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "axisRange"]
 - !private ["PSo16NSObjectProtocol", "barWidth"]
 - !private ["PSo16NSObjectProtocol", "calculateLegendOffsets"]
-- ["PSo16NSObjectProtocol", "calculateOffsets"]
 - !private ["PSo16NSObjectProtocol", "contentBottom"]
 - !private ["PSo16NSObjectProtocol", "contentLeft"]
 - !private ["PSo16NSObjectProtocol", "contentTop"]
@@ -1604,22 +1363,16 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "extraRightOffset"]
 - !private ["PSo16NSObjectProtocol", "extraTopOffset"]
 - !private ["PSo16NSObjectProtocol", "getAxisRange"]
-- ["PSo16NSObjectProtocol", "getBarBounds"]
 - !private ["PSo16NSObjectProtocol", "getDataSetForEntry"]
 - !private ["PSo16NSObjectProtocol", "getHighlight"]
-- ["PSo16NSObjectProtocol", "getHighlightByTouchPoint"]
-- ["PSo16NSObjectProtocol", "getMarkerPosition"]
-- ["PSo16NSObjectProtocol", "getPosition"]
 - !private ["PSo16NSObjectProtocol", "getRequiredHeightSpace"]
 - !private ["PSo16NSObjectProtocol", "getTransformer"]
-- ["PSo16NSObjectProtocol", "highestVisibleX"]
 - !private ["PSo16NSObjectProtocol", "highlighter"]
 - !private ["PSo16NSObjectProtocol", "init"]
-- ["PSo16NSObjectProtocol", "initialize"]
+- !private ["PSo16NSObjectProtocol", "initialize"]
 - !private ["PSo16NSObjectProtocol", "isEnabled"]
 - !private ["PSo16NSObjectProtocol", "labelPosition"]
 - !private ["PSo16NSObjectProtocol", "labelRotatedWidth"]
-- ["PSo16NSObjectProtocol", "lowestVisibleX"]
 - !private ["PSo16NSObjectProtocol", "max"]
 - !private ["PSo16NSObjectProtocol", "min"]
 - !private ["PSo16NSObjectProtocol", "minOffset"]
@@ -1628,7 +1381,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "pointValueToPixel"]
 - !private ["PSo16NSObjectProtocol", "prepareMatrixValuePx"]
 - !private ["PSo16NSObjectProtocol", "prepareOffsetMatrix"]
-- ["PSo16NSObjectProtocol", "prepareValuePxMatrix"]
+- !private ["PSo16NSObjectProtocol", "prepareValuePxMatrix"]
 - !private ["PSo16NSObjectProtocol", "rectValueToPixel"]
 - !private ["PSo16NSObjectProtocol", "renderer"]
 - !private ["PSo16NSObjectProtocol", "restrainViewPort"]
@@ -1638,12 +1391,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "setMinMaxScaleY"]
 - !private ["PSo16NSObjectProtocol", "setMinimumScaleX"]
 - !private ["PSo16NSObjectProtocol", "setMinimumScaleY"]
-- ["PSo16NSObjectProtocol", "setVisibleXRange"]
-- ["PSo16NSObjectProtocol", "setVisibleXRangeMaximum"]
-- ["PSo16NSObjectProtocol", "setVisibleXRangeMinimum"]
-- ["PSo16NSObjectProtocol", "setVisibleYRange"]
-- ["PSo16NSObjectProtocol", "setVisibleYRangeMaximum"]
-- ["PSo16NSObjectProtocol", "setVisibleYRangeMinimum"]
 - !private ["PSo16NSObjectProtocol", "viewPortHandler"]
 - !private ["PSo16NSObjectProtocol", "x"]
 - !private ["PSo16NSObjectProtocol", "xAxis"]
@@ -1733,34 +1480,21 @@ depends-member:
 - !private ["PSo18NSTouchBarProvider", "_xAxis"]
 - !private ["PSo18NSTouchBarProvider", "_xAxisRenderer"]
 - !private ["PSo18NSTouchBarProvider", "calculateLegendOffsets"]
-- ["PSo18NSTouchBarProvider", "calculateOffsets"]
 - !private ["PSo18NSTouchBarProvider", "extraBottomOffset"]
 - !private ["PSo18NSTouchBarProvider", "extraLeftOffset"]
 - !private ["PSo18NSTouchBarProvider", "extraRightOffset"]
 - !private ["PSo18NSTouchBarProvider", "extraTopOffset"]
 - !private ["PSo18NSTouchBarProvider", "getAxisRange"]
-- ["PSo18NSTouchBarProvider", "getBarBounds"]
-- ["PSo18NSTouchBarProvider", "getHighlightByTouchPoint"]
-- ["PSo18NSTouchBarProvider", "getMarkerPosition"]
-- ["PSo18NSTouchBarProvider", "getPosition"]
 - !private ["PSo18NSTouchBarProvider", "getTransformer"]
-- ["PSo18NSTouchBarProvider", "highestVisibleX"]
 - !private ["PSo18NSTouchBarProvider", "highlighter"]
 - !private ["PSo18NSTouchBarProvider", "init"]
-- ["PSo18NSTouchBarProvider", "initialize"]
-- ["PSo18NSTouchBarProvider", "lowestVisibleX"]
+- !private ["PSo18NSTouchBarProvider", "initialize"]
 - !private ["PSo18NSTouchBarProvider", "max"]
 - !private ["PSo18NSTouchBarProvider", "min"]
 - !private ["PSo18NSTouchBarProvider", "minOffset"]
 - !private ["PSo18NSTouchBarProvider", "prepareOffsetMatrix"]
-- ["PSo18NSTouchBarProvider", "prepareValuePxMatrix"]
+- !private ["PSo18NSTouchBarProvider", "prepareValuePxMatrix"]
 - !private ["PSo18NSTouchBarProvider", "renderer"]
-- ["PSo18NSTouchBarProvider", "setVisibleXRange"]
-- ["PSo18NSTouchBarProvider", "setVisibleXRangeMaximum"]
-- ["PSo18NSTouchBarProvider", "setVisibleXRangeMinimum"]
-- ["PSo18NSTouchBarProvider", "setVisibleYRange"]
-- ["PSo18NSTouchBarProvider", "setVisibleYRangeMaximum"]
-- ["PSo18NSTouchBarProvider", "setVisibleYRangeMinimum"]
 - !private ["PSo18NSTouchBarProvider", "viewPortHandler"]
 - !private ["PSo18NSTouchBarProvider", "xAxis"]
 - ["PSo18NSTouchBarProvider", ""]
@@ -1844,34 +1578,21 @@ depends-member:
 - !private ["PSo33NSUserInterfaceItemIdentification", "_xAxis"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "_xAxisRenderer"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "calculateLegendOffsets"]
-- ["PSo33NSUserInterfaceItemIdentification", "calculateOffsets"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "extraBottomOffset"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "extraLeftOffset"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "extraRightOffset"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "extraTopOffset"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "getAxisRange"]
-- ["PSo33NSUserInterfaceItemIdentification", "getBarBounds"]
-- ["PSo33NSUserInterfaceItemIdentification", "getHighlightByTouchPoint"]
-- ["PSo33NSUserInterfaceItemIdentification", "getMarkerPosition"]
-- ["PSo33NSUserInterfaceItemIdentification", "getPosition"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "getTransformer"]
-- ["PSo33NSUserInterfaceItemIdentification", "highestVisibleX"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "highlighter"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "init"]
-- ["PSo33NSUserInterfaceItemIdentification", "initialize"]
-- ["PSo33NSUserInterfaceItemIdentification", "lowestVisibleX"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "initialize"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "max"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "min"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "minOffset"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "prepareOffsetMatrix"]
-- ["PSo33NSUserInterfaceItemIdentification", "prepareValuePxMatrix"]
+- !private ["PSo33NSUserInterfaceItemIdentification", "prepareValuePxMatrix"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "renderer"]
-- ["PSo33NSUserInterfaceItemIdentification", "setVisibleXRange"]
-- ["PSo33NSUserInterfaceItemIdentification", "setVisibleXRangeMaximum"]
-- ["PSo33NSUserInterfaceItemIdentification", "setVisibleXRangeMinimum"]
-- ["PSo33NSUserInterfaceItemIdentification", "setVisibleYRange"]
-- ["PSo33NSUserInterfaceItemIdentification", "setVisibleYRangeMaximum"]
-- ["PSo33NSUserInterfaceItemIdentification", "setVisibleYRangeMinimum"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "viewPortHandler"]
 - !private ["PSo33NSUserInterfaceItemIdentification", "xAxis"]
 - ["PSo33NSUserInterfaceItemIdentification", ""]
@@ -1933,25 +1654,20 @@ depends-member:
 - ["CSo6NSView", "setVisibleYRangeMinimum"]
 - !private ["CSo6NSView", "viewPortHandler"]
 - !private ["CSo6NSView", "xAxis"]
-- ["Sq", "deinit"]
-- !private ["Ps16RawRepresentable", "RawValue"]
 - !private ["Ps16RawRepresentable", "bothSided"]
 - !private ["Ps16RawRepresentable", "bottom"]
 - !private ["Ps16RawRepresentable", "left"]
 - !private ["Ps16RawRepresentable", "top"]
 - !private ["Ps12SignedNumber", "init"]
 - !private ["Ps10Strideable", "init"]
-- ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
-- ["C6Charts11Transformer", "deinit"]
 - !private ["C6Charts11Transformer", "init"]
 - !private ["C6Charts11Transformer", "pixelToValues"]
 - !private ["C6Charts11Transformer", "pointValueToPixel"]
 - !private ["C6Charts11Transformer", "prepareMatrixValuePx"]
 - !private ["C6Charts11Transformer", "rectValueToPixel"]
-- ["C6Charts29TransformerHorizontalBarChart", "deinit"]
 - !private ["C6Charts29TransformerHorizontalBarChart", "init"]
 - !private ["C6Charts15ViewPortHandler", "contentBottom"]
 - !private ["C6Charts15ViewPortHandler", "contentLeft"]
@@ -1966,11 +1682,9 @@ depends-member:
 - !private ["C6Charts5XAxis", "_axisMaximum"]
 - !private ["C6Charts5XAxis", "_axisMinimum"]
 - !private ["C6Charts5XAxis", "axisRange"]
-- ["C6Charts5XAxis", "deinit"]
 - !private ["C6Charts5XAxis", "isEnabled"]
 - !private ["C6Charts5XAxis", "labelPosition"]
 - !private ["C6Charts5XAxis", "labelRotatedWidth"]
-- ["C6Charts31XAxisRendererHorizontalBarChart", "deinit"]
 - !private ["C6Charts31XAxisRendererHorizontalBarChart", "init"]
 - ["C6Charts5YAxis", "AxisDependency"]
 - !private ["C6Charts5YAxis", "_axisMinimum"]
@@ -1978,7 +1692,6 @@ depends-member:
 - !private ["C6Charts5YAxis", "getRequiredHeightSpace"]
 - !private ["C6Charts5YAxis", "needsOffset"]
 - !private ["C6Charts13YAxisRenderer", "init"]
-- ["C6Charts31YAxisRendererHorizontalBarChart", "deinit"]
 - !private ["C6Charts31YAxisRendererHorizontalBarChart", "init"]
 - !private ["Ps15_CVarArgAligned", "init"]
 - !private ["Ps22_CVarArgPassedAsDouble", "init"]
@@ -2004,34 +1717,21 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "_xAxis"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "_xAxisRenderer"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "calculateLegendOffsets"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "calculateOffsets"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "extraBottomOffset"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "extraLeftOffset"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "extraRightOffset"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "extraTopOffset"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "getAxisRange"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "getBarBounds"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "getHighlightByTouchPoint"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "getMarkerPosition"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "getPosition"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "getTransformer"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "highestVisibleX"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "highlighter"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "initialize"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "lowestVisibleX"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "initialize"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "max"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "min"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "minOffset"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "prepareOffsetMatrix"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "prepareValuePxMatrix"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "prepareValuePxMatrix"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "renderer"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "setVisibleXRange"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "setVisibleXRangeMaximum"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "setVisibleXRangeMinimum"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "setVisibleYRange"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "setVisibleYRangeMaximum"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "setVisibleYRangeMinimum"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "viewPortHandler"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "xAxis"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
@@ -2042,6 +1742,7 @@ depends-member:
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - ["Ps9_Hashable", "AxisDependency"]
 - !private ["Ps9_Hashable", "CGFloat"]
@@ -2050,7 +1751,6 @@ depends-member:
 - !private ["Ps9_Hashable", "Double"]
 - !private ["Ps9_Hashable", "HorizontalBarChartRenderer"]
 - !private ["Ps9_Hashable", "HorizontalBarHighlighter"]
-- !private ["Ps9_Hashable", "RawValue"]
 - !private ["Ps9_Hashable", "Swift"]
 - !private ["Ps9_Hashable", "TransformerHorizontalBarChart"]
 - !private ["Ps9_Hashable", "XAxisRendererHorizontalBarChart"]
@@ -2074,7 +1774,6 @@ depends-member:
 - !private ["Ps9_Hashable", "bothSided"]
 - !private ["Ps9_Hashable", "bottom"]
 - !private ["Ps9_Hashable", "calculateLegendOffsets"]
-- ["Ps9_Hashable", "calculateOffsets"]
 - !private ["Ps9_Hashable", "contentBottom"]
 - !private ["Ps9_Hashable", "contentLeft"]
 - !private ["Ps9_Hashable", "contentTop"]
@@ -2085,22 +1784,16 @@ depends-member:
 - !private ["Ps9_Hashable", "extraRightOffset"]
 - !private ["Ps9_Hashable", "extraTopOffset"]
 - !private ["Ps9_Hashable", "getAxisRange"]
-- ["Ps9_Hashable", "getBarBounds"]
 - !private ["Ps9_Hashable", "getDataSetForEntry"]
-- ["Ps9_Hashable", "getHighlightByTouchPoint"]
-- ["Ps9_Hashable", "getMarkerPosition"]
-- ["Ps9_Hashable", "getPosition"]
 - !private ["Ps9_Hashable", "getRequiredHeightSpace"]
 - !private ["Ps9_Hashable", "getTransformer"]
-- ["Ps9_Hashable", "highestVisibleX"]
 - !private ["Ps9_Hashable", "highlighter"]
 - !private ["Ps9_Hashable", "init"]
-- ["Ps9_Hashable", "initialize"]
+- !private ["Ps9_Hashable", "initialize"]
 - !private ["Ps9_Hashable", "isEnabled"]
 - !private ["Ps9_Hashable", "labelPosition"]
 - !private ["Ps9_Hashable", "labelRotatedWidth"]
 - !private ["Ps9_Hashable", "left"]
-- ["Ps9_Hashable", "lowestVisibleX"]
 - !private ["Ps9_Hashable", "max"]
 - !private ["Ps9_Hashable", "min"]
 - !private ["Ps9_Hashable", "minOffset"]
@@ -2109,7 +1802,7 @@ depends-member:
 - !private ["Ps9_Hashable", "pointValueToPixel"]
 - !private ["Ps9_Hashable", "prepareMatrixValuePx"]
 - !private ["Ps9_Hashable", "prepareOffsetMatrix"]
-- ["Ps9_Hashable", "prepareValuePxMatrix"]
+- !private ["Ps9_Hashable", "prepareValuePxMatrix"]
 - !private ["Ps9_Hashable", "rectValueToPixel"]
 - !private ["Ps9_Hashable", "renderer"]
 - !private ["Ps9_Hashable", "restrainViewPort"]
@@ -2119,12 +1812,6 @@ depends-member:
 - !private ["Ps9_Hashable", "setMinMaxScaleY"]
 - !private ["Ps9_Hashable", "setMinimumScaleX"]
 - !private ["Ps9_Hashable", "setMinimumScaleY"]
-- ["Ps9_Hashable", "setVisibleXRange"]
-- ["Ps9_Hashable", "setVisibleXRangeMaximum"]
-- ["Ps9_Hashable", "setVisibleXRangeMinimum"]
-- ["Ps9_Hashable", "setVisibleYRange"]
-- ["Ps9_Hashable", "setVisibleYRangeMaximum"]
-- ["Ps9_Hashable", "setVisibleYRangeMinimum"]
 - !private ["Ps9_Hashable", "top"]
 - !private ["Ps9_Hashable", "viewPortHandler"]
 - !private ["Ps9_Hashable", "x"]
@@ -2142,9 +1829,9 @@ depends-nominal:
 - "P6Charts16AnimatorDelegate"
 - "Ps9AnyObject"
 - "C6Charts8AxisBase"
-- "OC6Charts5YAxis14AxisDependency"
-- "C6Charts12BarChartData"
-- "C6Charts17BarChartDataEntry"
+- !private "OC6Charts5YAxis14AxisDependency"
+- !private "C6Charts12BarChartData"
+- !private "C6Charts17BarChartDataEntry"
 - "P6Charts20BarChartDataProvider"
 - !private "C6Charts16BarChartRenderer"
 - "C6Charts12BarChartView"
@@ -2153,13 +1840,13 @@ depends-nominal:
 - !private "C6Charts35BarLineScatterCandleBubbleChartData"
 - "P6Charts43BarLineScatterCandleBubbleChartDataProvider"
 - !private "Ps19BinaryFloatingPoint"
-- "Sb"
-- "V12CoreGraphics7CGFloat"
-- "VSC7CGPoint"
-- "VSC6CGRect"
+- !private "Sb"
+- !private "V12CoreGraphics7CGFloat"
+- !private "VSC7CGPoint"
+- !private "VSC6CGRect"
 - "Ps7CVarArg"
 - !private "C6Charts9ChartData"
-- "C6Charts14ChartDataEntry"
+- !private "C6Charts14ChartDataEntry"
 - !private "C6Charts18ChartDataEntryBase"
 - "P6Charts17ChartDataProvider"
 - !private "C6Charts16ChartHighlighter"
@@ -2170,34 +1857,31 @@ depends-nominal:
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
-- "Sd"
+- !private "Sd"
 - "Ps9Equatable"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps25ExpressibleByFloatLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
-- !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - !private "Ps13FloatingPoint"
 - "Ps8Hashable"
-- "C6Charts9Highlight"
-- "C6Charts26HorizontalBarChartRenderer"
+- !private "C6Charts9Highlight"
+- !private "C6Charts26HorizontalBarChartRenderer"
 - "C6Charts22HorizontalBarChartView"
-- "C6Charts24HorizontalBarHighlighter"
-- "P6Charts16IBarChartDataSet"
+- !private "C6Charts24HorizontalBarHighlighter"
+- !private "P6Charts16IBarChartDataSet"
 - !private "P6Charts39IBarLineScatterCandleBubbleChartDataSet"
 - !private "P6Charts13IChartDataSet"
 - !private "P6Charts12IHighlighter"
-- "SQ"
-- "OC6Charts5XAxis13LabelPosition"
+- !private "OC6Charts5XAxis13LabelPosition"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
 - "PSo15NSAccessibility"
 - "PSo30NSAccessibilityElementProtocol"
 - "PSo29NSAnimatablePropertyContainer"
 - "PSo25NSAppearanceCustomization"
-- "CSo7NSCoder"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - "PSo21NSDraggingDestination"
@@ -2214,21 +1898,20 @@ depends-nominal:
 - "C6Charts8NSUIView"
 - "PSo33NSUserInterfaceItemIdentification"
 - "CSo6NSView"
-- "Sq"
 - !private "Ps16RawRepresentable"
 - !private "Ps12SignedNumber"
 - !private "Ps10Strideable"
-- "SS"
+- !private "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
-- "C6Charts11Transformer"
-- "C6Charts29TransformerHorizontalBarChart"
+- !private "C6Charts11Transformer"
+- !private "C6Charts29TransformerHorizontalBarChart"
 - !private "C6Charts15ViewPortHandler"
-- "C6Charts5XAxis"
-- "C6Charts31XAxisRendererHorizontalBarChart"
+- !private "C6Charts5XAxis"
+- !private "C6Charts31XAxisRendererHorizontalBarChart"
 - "C6Charts5YAxis"
 - !private "C6Charts13YAxisRenderer"
-- "C6Charts31YAxisRendererHorizontalBarChart"
+- !private "C6Charts31YAxisRendererHorizontalBarChart"
 - !private "Ps15_CVarArgAligned"
 - !private "Ps22_CVarArgPassedAsDouble"
 - "Ps37_DefaultCustomPlaygroundQuickLookable"
@@ -2239,6 +1922,7 @@ depends-nominal:
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - !private "Ps21_ObjectiveCBridgeable"
@@ -2246,6 +1930,15 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.apinotesc"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/Charts/Source/Supporting Files/Charts.h"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Charts.build/Debug/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
@@ -2260,4 +1953,5 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuickLook.apinotesc"
 interface-hash: "1ec759c98b60bb693ac261d8bd21adb7"

@@ -6,52 +6,51 @@ provides-nominal:
 provides-member:
 - ["C6Charts24CandleStickChartRenderer", ""]
 provides-dynamic-lookup:
-- "drawData"
-- "drawExtras"
 - "dataProvider"
+- "drawData"
 - "drawDataSet"
+- "drawExtras"
 - "drawHighlighted"
 - "drawValues"
 depends-top-level:
-- "CGPoint"
-- "Animator"
-- !private ">"
-- !private "NSUIColor"
-- !private "Dictionary"
-- !private "/"
-- "ViewPortHandler"
-- !private "-"
-- !private "Array"
-- !private "+"
-- !private "==="
-- !private "StringLiteralType"
-- !private "IBarLineScatterCandleBubbleChartDataSet"
-- !private "||"
-- "AssignmentPrecedence"
-- "LineScatterCandleRadarRenderer"
-- "CGRect"
 - !private "!"
-- !private "ChartUtils"
 - !private "!="
-- "CastingPrecedence"
-- !private "stride"
-- !private "NSFontAttributeName"
+- !private "*"
+- !private "+"
+- !private "-"
 - !private "..<"
-- "Highlight"
-- !private "??"
-- !private "CandleChartDataEntry"
+- !private "/"
 - !private "<"
-- "ICandleChartDataSet"
-- !private "Double"
+- !private "==="
+- !private ">"
+- !private "??"
+- "Animator"
+- !private "Array"
+- "AssignmentPrecedence"
+- "CGContext"
+- !private "CGFloat"
+- "CGPoint"
+- "CGRect"
+- !private "CandleChartDataEntry"
 - "CandleChartDataProvider"
 - "CandleStickChartRenderer"
-- "CGContext"
-- !private "*"
+- "CastingPrecedence"
+- !private "ChartUtils"
+- !private "Dictionary"
+- !private "Double"
+- "Highlight"
+- !private "IBarLineScatterCandleBubbleChartDataSet"
+- "ICandleChartDataSet"
+- "LineScatterCandleRadarRenderer"
+- !private "NSFontAttributeName"
 - !private "NSForegroundColorAttributeName"
-- !private "CGFloat"
+- !private "NSUIColor"
+- !private "StringLiteralType"
+- "ViewPortHandler"
+- !private "stride"
+- !private "||"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
-- ["C6Charts8Animator", "deinit"]
 - !private ["C6Charts8Animator", "phaseY"]
 - !private ["Ps9AnyObject", "CGFloat"]
 - ["Ps9AnyObject", "CGPoint"]
@@ -60,30 +59,25 @@ depends-member:
 - !private ["Ps9AnyObject", "Double"]
 - !private ["Ps9AnyObject", "NSFontAttributeName"]
 - !private ["Ps9AnyObject", "NSForegroundColorAttributeName"]
-- ["Ps9AnyObject", "_bodyRect"]
-- ["Ps9AnyObject", "_closePoints"]
-- ["Ps9AnyObject", "_lineSegments"]
-- ["Ps9AnyObject", "_openPoints"]
-- ["Ps9AnyObject", "_rangePoints"]
-- ["Ps9AnyObject", "_shadowPoints"]
+- !private ["Ps9AnyObject", "_bodyRect"]
+- !private ["Ps9AnyObject", "_closePoints"]
+- !private ["Ps9AnyObject", "_openPoints"]
+- !private ["Ps9AnyObject", "_rangePoints"]
+- !private ["Ps9AnyObject", "_shadowPoints"]
 - !private ["Ps9AnyObject", "_xBounds"]
 - !private ["Ps9AnyObject", "animator"]
 - !private ["Ps9AnyObject", "cgColor"]
 - !private ["Ps9AnyObject", "close"]
-- ["Ps9AnyObject", "dataProvider"]
+- !private ["Ps9AnyObject", "dataProvider"]
 - !private ["Ps9AnyObject", "dataSetIndex"]
 - !private ["Ps9AnyObject", "dataSets"]
-- ["Ps9AnyObject", "drawData"]
-- ["Ps9AnyObject", "drawDataSet"]
-- ["Ps9AnyObject", "drawExtras"]
+- !private ["Ps9AnyObject", "drawDataSet"]
 - !private ["Ps9AnyObject", "drawHighlightLines"]
-- ["Ps9AnyObject", "drawHighlighted"]
 - !private ["Ps9AnyObject", "drawText"]
-- ["Ps9AnyObject", "drawValues"]
 - !private ["Ps9AnyObject", "fill"]
 - !private ["Ps9AnyObject", "getDataSetByIndex"]
 - !private ["Ps9AnyObject", "high"]
-- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "isDrawingValuesAllowed"]
 - !private ["Ps9AnyObject", "isInBoundsLeft"]
 - !private ["Ps9AnyObject", "isInBoundsRight"]
@@ -115,17 +109,9 @@ depends-member:
 - !private ["Ps9AnyObject", "x"]
 - !private ["Ps9AnyObject", "y"]
 - ["Ps9AnyObject", ""]
-- !private ["Sa", "Element"]
-- !private ["Sa", "Index"]
-- !private ["Sa", "IndexDistance"]
-- ["Sa", "Iterator"]
-- !private ["Sa", "SubSequence"]
-- ["Sa", "_Element"]
 - !private ["Sa", "count"]
-- ["Sa", "deinit"]
 - ["Sa", "init"]
 - !private ["Sa", "subscript"]
-- ["OC6Charts5YAxis14AxisDependency", "deinit"]
 - !private ["C6Charts35BarLineScatterCandleBubbleChartData", "dataSets"]
 - !private ["C6Charts35BarLineScatterCandleBubbleChartData", "getDataSetByIndex"]
 - !private ["P6Charts43BarLineScatterCandleBubbleChartDataProvider", "candleData"]
@@ -167,41 +153,11 @@ depends-member:
 - !private ["C6Charts34BarLineScatterCandleBubbleRenderer", "shouldDrawValues"]
 - !private ["C6Charts34BarLineScatterCandleBubbleRenderer", "stride"]
 - !private ["C6Charts34BarLineScatterCandleBubbleRenderer", "viewPortHandler"]
-- !private ["Ps23BidirectionalCollection", "Element"]
-- !private ["Ps23BidirectionalCollection", "Index"]
-- !private ["Ps23BidirectionalCollection", "IndexDistance"]
-- !private ["Ps23BidirectionalCollection", "Indices"]
-- ["Ps23BidirectionalCollection", "Iterator"]
-- !private ["Ps23BidirectionalCollection", "SubSequence"]
-- ["Ps23BidirectionalCollection", "_Element"]
 - !private ["Ps23BidirectionalCollection", "count"]
 - ["Ps23BidirectionalCollection", "init"]
 - !private ["Ps23BidirectionalCollection", "subscript"]
-- !private ["Ps22BidirectionalIndexable", "Element"]
-- !private ["Ps22BidirectionalIndexable", "Index"]
-- !private ["Ps22BidirectionalIndexable", "IndexDistance"]
-- !private ["Ps22BidirectionalIndexable", "Indices"]
-- ["Ps22BidirectionalIndexable", "Iterator"]
-- !private ["Ps22BidirectionalIndexable", "SubSequence"]
-- ["Ps22BidirectionalIndexable", "_Element"]
-- !private ["Ps22BidirectionalIndexable", "count"]
-- ["Ps22BidirectionalIndexable", "init"]
-- !private ["Ps22BidirectionalIndexable", "subscript"]
-- !private ["Vs18BidirectionalSlice", "Index"]
-- !private ["Vs18BidirectionalSlice", "IndexDistance"]
-- !private ["Vs18BidirectionalSlice", "Indices"]
-- !private ["Vs18BidirectionalSlice", "Iterator"]
-- !private ["Vs18BidirectionalSlice", "SubSequence"]
-- !private ["Vs18BidirectionalSlice", "_Element"]
 - !private ["Ps19BinaryFloatingPoint", "init"]
-- !private ["Ps17BitwiseOperations", "IntegerLiteralType"]
-- !private ["Ps17BitwiseOperations", "Stride"]
-- !private ["Ps17BitwiseOperations", "_DisabledRangeIndex"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- ["Sb", "deinit"]
-- ["VSC17CGAffineTransform", "deinit"]
-- ["CSo7CGColor", "deinit"]
-- ["CSo9CGContext", "deinit"]
 - !private ["CSo9CGContext", "fill"]
 - !private ["CSo9CGContext", "restoreGState"]
 - !private ["CSo9CGContext", "saveGState"]
@@ -211,14 +167,11 @@ depends-member:
 - !private ["CSo9CGContext", "setStrokeColor"]
 - !private ["CSo9CGContext", "stroke"]
 - !private ["CSo9CGContext", "strokeLineSegments"]
-- ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["V12CoreGraphics7CGFloat", "init"]
 - !private ["VSC7CGPoint", "applying"]
-- ["VSC7CGPoint", "deinit"]
 - ["VSC7CGPoint", "init"]
 - !private ["VSC7CGPoint", "x"]
 - !private ["VSC7CGPoint", "y"]
-- ["VSC6CGRect", "deinit"]
 - ["VSC6CGRect", "init"]
 - !private ["VSC6CGRect", "origin"]
 - !private ["VSC6CGRect", "size"]
@@ -229,39 +182,23 @@ depends-member:
 - ["Ps7CVarArg", "CGRect"]
 - !private ["Ps7CVarArg", "ChartUtils"]
 - !private ["Ps7CVarArg", "Double"]
-- !private ["Ps7CVarArg", "Element"]
-- !private ["Ps7CVarArg", "Index"]
-- !private ["Ps7CVarArg", "IndexDistance"]
-- !private ["Ps7CVarArg", "IntegerLiteralType"]
-- ["Ps7CVarArg", "Iterator"]
-- !private ["Ps7CVarArg", "Key"]
 - !private ["Ps7CVarArg", "NSFontAttributeName"]
 - !private ["Ps7CVarArg", "NSForegroundColorAttributeName"]
-- !private ["Ps7CVarArg", "Stride"]
-- !private ["Ps7CVarArg", "SubSequence"]
-- !private ["Ps7CVarArg", "Value"]
-- !private ["Ps7CVarArg", "_DisabledRangeIndex"]
-- ["Ps7CVarArg", "_Element"]
-- ["Ps7CVarArg", "_bodyRect"]
-- ["Ps7CVarArg", "_closePoints"]
-- ["Ps7CVarArg", "_lineSegments"]
-- ["Ps7CVarArg", "_openPoints"]
-- ["Ps7CVarArg", "_rangePoints"]
-- ["Ps7CVarArg", "_shadowPoints"]
+- !private ["Ps7CVarArg", "_bodyRect"]
+- !private ["Ps7CVarArg", "_closePoints"]
+- !private ["Ps7CVarArg", "_openPoints"]
+- !private ["Ps7CVarArg", "_rangePoints"]
+- !private ["Ps7CVarArg", "_shadowPoints"]
 - !private ["Ps7CVarArg", "_xBounds"]
 - !private ["Ps7CVarArg", "animator"]
 - !private ["Ps7CVarArg", "cgColor"]
 - !private ["Ps7CVarArg", "close"]
 - !private ["Ps7CVarArg", "count"]
-- ["Ps7CVarArg", "dataProvider"]
+- !private ["Ps7CVarArg", "dataProvider"]
 - !private ["Ps7CVarArg", "dataSetIndex"]
 - !private ["Ps7CVarArg", "dataSets"]
-- ["Ps7CVarArg", "drawData"]
-- ["Ps7CVarArg", "drawDataSet"]
-- ["Ps7CVarArg", "drawExtras"]
+- !private ["Ps7CVarArg", "drawDataSet"]
 - !private ["Ps7CVarArg", "drawHighlightLines"]
-- ["Ps7CVarArg", "drawHighlighted"]
-- ["Ps7CVarArg", "drawValues"]
 - !private ["Ps7CVarArg", "getDataSetByIndex"]
 - !private ["Ps7CVarArg", "high"]
 - ["Ps7CVarArg", "init"]
@@ -287,16 +224,13 @@ depends-member:
 - !private ["Ps7CVarArg", "y"]
 - ["Ps7CVarArg", ""]
 - !private ["C6Charts15CandleChartData", "dataSets"]
-- ["C6Charts15CandleChartData", "deinit"]
 - !private ["C6Charts15CandleChartData", "getDataSetByIndex"]
 - !private ["C6Charts20CandleChartDataEntry", "close"]
-- ["C6Charts20CandleChartDataEntry", "deinit"]
 - !private ["C6Charts20CandleChartDataEntry", "high"]
 - !private ["C6Charts20CandleChartDataEntry", "low"]
 - !private ["C6Charts20CandleChartDataEntry", "open"]
 - !private ["C6Charts20CandleChartDataEntry", "x"]
 - !private ["P6Charts23CandleChartDataProvider", "candleData"]
-- ["P6Charts23CandleChartDataProvider", "deinit"]
 - !private ["P6Charts23CandleChartDataProvider", "getTransformer"]
 - ["C6Charts24CandleStickChartRenderer", "Animator"]
 - ["C6Charts24CandleStickChartRenderer", "CGContext"]
@@ -351,61 +285,33 @@ depends-member:
 - !private ["P6Charts17ChartDataProvider", "candleData"]
 - !private ["P6Charts17ChartDataProvider", "getTransformer"]
 - !private ["C6Charts10ChartUtils", "drawText"]
-- !private ["Ps10Collection", "Element"]
-- !private ["Ps10Collection", "Index"]
-- !private ["Ps10Collection", "IndexDistance"]
-- !private ["Ps10Collection", "Indices"]
-- ["Ps10Collection", "Iterator"]
-- !private ["Ps10Collection", "Key"]
-- !private ["Ps10Collection", "SubSequence"]
-- !private ["Ps10Collection", "Value"]
-- ["Ps10Collection", "_Element"]
 - !private ["Ps10Collection", "count"]
 - ["Ps10Collection", "init"]
 - !private ["Ps10Collection", "subscript"]
-- !private ["Ps10Comparable", "IntegerLiteralType"]
-- !private ["Ps10Comparable", "Stride"]
-- !private ["Ps10Comparable", "_DisabledRangeIndex"]
 - !private ["Ps10Comparable", "init"]
-- !private ["Vs14CountableRange", "Iterator"]
-- !private ["Vs14CountableRange", "_Element"]
-- ["Vs14CountableRange", "deinit"]
 - !private ["Ps28CustomDebugStringConvertible", "CGFloat"]
 - ["Ps28CustomDebugStringConvertible", "CGPoint"]
 - ["Ps28CustomDebugStringConvertible", "CGRect"]
 - !private ["Ps28CustomDebugStringConvertible", "ChartUtils"]
 - !private ["Ps28CustomDebugStringConvertible", "Double"]
-- !private ["Ps28CustomDebugStringConvertible", "Element"]
-- !private ["Ps28CustomDebugStringConvertible", "Index"]
-- !private ["Ps28CustomDebugStringConvertible", "IndexDistance"]
-- ["Ps28CustomDebugStringConvertible", "Iterator"]
-- !private ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "NSFontAttributeName"]
 - !private ["Ps28CustomDebugStringConvertible", "NSForegroundColorAttributeName"]
-- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
-- !private ["Ps28CustomDebugStringConvertible", "Value"]
-- ["Ps28CustomDebugStringConvertible", "_Element"]
-- ["Ps28CustomDebugStringConvertible", "_bodyRect"]
-- ["Ps28CustomDebugStringConvertible", "_closePoints"]
-- ["Ps28CustomDebugStringConvertible", "_lineSegments"]
-- ["Ps28CustomDebugStringConvertible", "_openPoints"]
-- ["Ps28CustomDebugStringConvertible", "_rangePoints"]
-- ["Ps28CustomDebugStringConvertible", "_shadowPoints"]
+- !private ["Ps28CustomDebugStringConvertible", "_bodyRect"]
+- !private ["Ps28CustomDebugStringConvertible", "_closePoints"]
+- !private ["Ps28CustomDebugStringConvertible", "_openPoints"]
+- !private ["Ps28CustomDebugStringConvertible", "_rangePoints"]
+- !private ["Ps28CustomDebugStringConvertible", "_shadowPoints"]
 - !private ["Ps28CustomDebugStringConvertible", "_xBounds"]
 - !private ["Ps28CustomDebugStringConvertible", "animator"]
 - !private ["Ps28CustomDebugStringConvertible", "applying"]
 - !private ["Ps28CustomDebugStringConvertible", "cgColor"]
 - !private ["Ps28CustomDebugStringConvertible", "close"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
-- ["Ps28CustomDebugStringConvertible", "dataProvider"]
+- !private ["Ps28CustomDebugStringConvertible", "dataProvider"]
 - !private ["Ps28CustomDebugStringConvertible", "dataSetIndex"]
 - !private ["Ps28CustomDebugStringConvertible", "dataSets"]
-- ["Ps28CustomDebugStringConvertible", "drawData"]
-- ["Ps28CustomDebugStringConvertible", "drawDataSet"]
-- ["Ps28CustomDebugStringConvertible", "drawExtras"]
+- !private ["Ps28CustomDebugStringConvertible", "drawDataSet"]
 - !private ["Ps28CustomDebugStringConvertible", "drawHighlightLines"]
-- ["Ps28CustomDebugStringConvertible", "drawHighlighted"]
-- ["Ps28CustomDebugStringConvertible", "drawValues"]
 - !private ["Ps28CustomDebugStringConvertible", "getDataSetByIndex"]
 - !private ["Ps28CustomDebugStringConvertible", "height"]
 - !private ["Ps28CustomDebugStringConvertible", "high"]
@@ -434,9 +340,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "x"]
 - !private ["Ps28CustomDebugStringConvertible", "y"]
 - ["Ps28CustomDebugStringConvertible", ""]
-- !private ["Ps29CustomPlaygroundQuickLookable", "IntegerLiteralType"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "_DisabledRangeIndex"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "applying"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "height"]
@@ -446,17 +349,6 @@ depends-member:
 - !private ["Ps29CustomPlaygroundQuickLookable", "width"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "x"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "y"]
-- !private ["Ps17CustomReflectable", "Element"]
-- !private ["Ps17CustomReflectable", "Index"]
-- !private ["Ps17CustomReflectable", "IndexDistance"]
-- !private ["Ps17CustomReflectable", "IntegerLiteralType"]
-- ["Ps17CustomReflectable", "Iterator"]
-- !private ["Ps17CustomReflectable", "Key"]
-- !private ["Ps17CustomReflectable", "Stride"]
-- !private ["Ps17CustomReflectable", "SubSequence"]
-- !private ["Ps17CustomReflectable", "Value"]
-- !private ["Ps17CustomReflectable", "_DisabledRangeIndex"]
-- ["Ps17CustomReflectable", "_Element"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "applying"]
 - !private ["Ps17CustomReflectable", "count"]
@@ -473,40 +365,24 @@ depends-member:
 - ["Ps23CustomStringConvertible", "CGRect"]
 - !private ["Ps23CustomStringConvertible", "ChartUtils"]
 - !private ["Ps23CustomStringConvertible", "Double"]
-- !private ["Ps23CustomStringConvertible", "Element"]
-- !private ["Ps23CustomStringConvertible", "Index"]
-- !private ["Ps23CustomStringConvertible", "IndexDistance"]
-- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
-- ["Ps23CustomStringConvertible", "Iterator"]
-- !private ["Ps23CustomStringConvertible", "Key"]
 - !private ["Ps23CustomStringConvertible", "NSFontAttributeName"]
 - !private ["Ps23CustomStringConvertible", "NSForegroundColorAttributeName"]
-- !private ["Ps23CustomStringConvertible", "Stride"]
-- !private ["Ps23CustomStringConvertible", "SubSequence"]
-- !private ["Ps23CustomStringConvertible", "Value"]
-- !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
-- ["Ps23CustomStringConvertible", "_Element"]
-- ["Ps23CustomStringConvertible", "_bodyRect"]
-- ["Ps23CustomStringConvertible", "_closePoints"]
+- !private ["Ps23CustomStringConvertible", "_bodyRect"]
+- !private ["Ps23CustomStringConvertible", "_closePoints"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
-- ["Ps23CustomStringConvertible", "_lineSegments"]
-- ["Ps23CustomStringConvertible", "_openPoints"]
-- ["Ps23CustomStringConvertible", "_rangePoints"]
-- ["Ps23CustomStringConvertible", "_shadowPoints"]
+- !private ["Ps23CustomStringConvertible", "_openPoints"]
+- !private ["Ps23CustomStringConvertible", "_rangePoints"]
+- !private ["Ps23CustomStringConvertible", "_shadowPoints"]
 - !private ["Ps23CustomStringConvertible", "_xBounds"]
 - !private ["Ps23CustomStringConvertible", "animator"]
 - !private ["Ps23CustomStringConvertible", "cgColor"]
 - !private ["Ps23CustomStringConvertible", "close"]
 - !private ["Ps23CustomStringConvertible", "count"]
-- ["Ps23CustomStringConvertible", "dataProvider"]
+- !private ["Ps23CustomStringConvertible", "dataProvider"]
 - !private ["Ps23CustomStringConvertible", "dataSetIndex"]
 - !private ["Ps23CustomStringConvertible", "dataSets"]
-- ["Ps23CustomStringConvertible", "drawData"]
-- ["Ps23CustomStringConvertible", "drawDataSet"]
-- ["Ps23CustomStringConvertible", "drawExtras"]
+- !private ["Ps23CustomStringConvertible", "drawDataSet"]
 - !private ["Ps23CustomStringConvertible", "drawHighlightLines"]
-- ["Ps23CustomStringConvertible", "drawHighlighted"]
-- ["Ps23CustomStringConvertible", "drawValues"]
 - !private ["Ps23CustomStringConvertible", "getDataSetByIndex"]
 - !private ["Ps23CustomStringConvertible", "high"]
 - ["Ps23CustomStringConvertible", "init"]
@@ -568,55 +444,31 @@ depends-member:
 - !private ["C6Charts12DataRenderer", "shouldDrawValues"]
 - !private ["C6Charts12DataRenderer", "stride"]
 - !private ["C6Charts12DataRenderer", "viewPortHandler"]
-- !private ["Vs27DefaultBidirectionalIndices", "Index"]
-- !private ["Vs27DefaultBidirectionalIndices", "Iterator"]
-- !private ["Vs27DefaultBidirectionalIndices", "SubSequence"]
-- !private ["Vs27DefaultBidirectionalIndices", "_Element"]
-- !private ["Vs26DefaultRandomAccessIndices", "Index"]
-- !private ["Vs26DefaultRandomAccessIndices", "IndexDistance"]
-- !private ["Vs26DefaultRandomAccessIndices", "Indices"]
-- !private ["Vs26DefaultRandomAccessIndices", "Iterator"]
-- !private ["Vs26DefaultRandomAccessIndices", "SubSequence"]
-- !private ["Vs26DefaultRandomAccessIndices", "_Element"]
-- !private ["Vs10Dictionary", "Key"]
-- !private ["Vs10Dictionary", "Value"]
-- ["Vs10Dictionary", "deinit"]
-- ["Sd", "deinit"]
 - !private ["Sd", "init"]
 - !private ["Ps9Equatable", "CGFloat"]
 - ["Ps9Equatable", "CGPoint"]
 - ["Ps9Equatable", "CGRect"]
 - !private ["Ps9Equatable", "ChartUtils"]
 - !private ["Ps9Equatable", "Double"]
-- !private ["Ps9Equatable", "IntegerLiteralType"]
-- !private ["Ps9Equatable", "Iterator"]
 - !private ["Ps9Equatable", "NSFontAttributeName"]
 - !private ["Ps9Equatable", "NSForegroundColorAttributeName"]
-- !private ["Ps9Equatable", "Stride"]
-- !private ["Ps9Equatable", "_DisabledRangeIndex"]
-- !private ["Ps9Equatable", "_Element"]
-- ["Ps9Equatable", "_bodyRect"]
-- ["Ps9Equatable", "_closePoints"]
+- !private ["Ps9Equatable", "_bodyRect"]
+- !private ["Ps9Equatable", "_closePoints"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
-- ["Ps9Equatable", "_lineSegments"]
-- ["Ps9Equatable", "_openPoints"]
-- ["Ps9Equatable", "_rangePoints"]
-- ["Ps9Equatable", "_shadowPoints"]
+- !private ["Ps9Equatable", "_openPoints"]
+- !private ["Ps9Equatable", "_rangePoints"]
+- !private ["Ps9Equatable", "_shadowPoints"]
 - !private ["Ps9Equatable", "_xBounds"]
 - !private ["Ps9Equatable", "animator"]
 - !private ["Ps9Equatable", "applying"]
 - !private ["Ps9Equatable", "center"]
 - !private ["Ps9Equatable", "cgColor"]
 - !private ["Ps9Equatable", "close"]
-- ["Ps9Equatable", "dataProvider"]
+- !private ["Ps9Equatable", "dataProvider"]
 - !private ["Ps9Equatable", "dataSetIndex"]
 - !private ["Ps9Equatable", "dataSets"]
-- ["Ps9Equatable", "drawData"]
-- ["Ps9Equatable", "drawDataSet"]
-- ["Ps9Equatable", "drawExtras"]
+- !private ["Ps9Equatable", "drawDataSet"]
 - !private ["Ps9Equatable", "drawHighlightLines"]
-- ["Ps9Equatable", "drawHighlighted"]
-- ["Ps9Equatable", "drawValues"]
 - !private ["Ps9Equatable", "getDataSetByIndex"]
 - !private ["Ps9Equatable", "height"]
 - !private ["Ps9Equatable", "high"]
@@ -644,63 +496,42 @@ depends-member:
 - !private ["Ps9Equatable", "x"]
 - !private ["Ps9Equatable", "y"]
 - ["Ps9Equatable", ""]
-- !private ["Ps25ExpressibleByArrayLiteral", "Element"]
-- !private ["Ps25ExpressibleByArrayLiteral", "Index"]
-- !private ["Ps25ExpressibleByArrayLiteral", "IndexDistance"]
-- ["Ps25ExpressibleByArrayLiteral", "Iterator"]
-- !private ["Ps25ExpressibleByArrayLiteral", "SubSequence"]
-- ["Ps25ExpressibleByArrayLiteral", "_Element"]
 - !private ["Ps25ExpressibleByArrayLiteral", "count"]
 - ["Ps25ExpressibleByArrayLiteral", "init"]
 - !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
-- !private ["Ps30ExpressibleByDictionaryLiteral", "Key"]
-- !private ["Ps30ExpressibleByDictionaryLiteral", "Value"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps25ExpressibleByFloatLiteral", "init"]
-- !private ["Ps27ExpressibleByIntegerLiteral", "IntegerLiteralType"]
-- !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
-- !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
-- !private ["Sf", "deinit"]
-- !private ["Vs7Float80", "deinit"]
 - !private ["Ps13FloatingPoint", "init"]
 - !private ["Ps8Hashable", "CGFloat"]
 - ["Ps8Hashable", "CGPoint"]
 - ["Ps8Hashable", "CGRect"]
 - !private ["Ps8Hashable", "ChartUtils"]
 - !private ["Ps8Hashable", "Double"]
-- !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "NSFontAttributeName"]
 - !private ["Ps8Hashable", "NSForegroundColorAttributeName"]
-- !private ["Ps8Hashable", "Stride"]
-- !private ["Ps8Hashable", "_DisabledRangeIndex"]
-- ["Ps8Hashable", "_bodyRect"]
-- ["Ps8Hashable", "_closePoints"]
+- !private ["Ps8Hashable", "_bodyRect"]
+- !private ["Ps8Hashable", "_closePoints"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
-- ["Ps8Hashable", "_lineSegments"]
-- ["Ps8Hashable", "_openPoints"]
-- ["Ps8Hashable", "_rangePoints"]
-- ["Ps8Hashable", "_shadowPoints"]
+- !private ["Ps8Hashable", "_openPoints"]
+- !private ["Ps8Hashable", "_rangePoints"]
+- !private ["Ps8Hashable", "_shadowPoints"]
 - !private ["Ps8Hashable", "_xBounds"]
 - !private ["Ps8Hashable", "animator"]
 - !private ["Ps8Hashable", "center"]
 - !private ["Ps8Hashable", "cgColor"]
 - !private ["Ps8Hashable", "close"]
-- ["Ps8Hashable", "dataProvider"]
+- !private ["Ps8Hashable", "dataProvider"]
 - !private ["Ps8Hashable", "dataSetIndex"]
 - !private ["Ps8Hashable", "dataSets"]
-- ["Ps8Hashable", "drawData"]
-- ["Ps8Hashable", "drawDataSet"]
-- ["Ps8Hashable", "drawExtras"]
+- !private ["Ps8Hashable", "drawDataSet"]
 - !private ["Ps8Hashable", "drawHighlightLines"]
-- ["Ps8Hashable", "drawHighlighted"]
-- ["Ps8Hashable", "drawValues"]
 - !private ["Ps8Hashable", "getDataSetByIndex"]
 - !private ["Ps8Hashable", "high"]
-- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "isDrawingValuesAllowed"]
 - !private ["Ps8Hashable", "isInBoundsLeft"]
 - !private ["Ps8Hashable", "isInBoundsRight"]
@@ -722,7 +553,6 @@ depends-member:
 - !private ["Ps8Hashable", "y"]
 - ["Ps8Hashable", ""]
 - !private ["C6Charts9Highlight", "dataSetIndex"]
-- ["C6Charts9Highlight", "deinit"]
 - !private ["C6Charts9Highlight", "setDraw"]
 - !private ["C6Charts9Highlight", "x"]
 - !private ["C6Charts9Highlight", "y"]
@@ -730,7 +560,6 @@ depends-member:
 - !private ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "barSpace"]
 - !private ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "color"]
 - !private ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "decreasingColor"]
-- ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "deinit"]
 - !private ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "entryForIndex"]
 - !private ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "entryForXValue"]
 - !private ["P6Charts39IBarLineScatterCandleBubbleChartDataSet", "highlightColor"]
@@ -754,7 +583,6 @@ depends-member:
 - !private ["P6Charts19ICandleChartDataSet", "barSpace"]
 - !private ["P6Charts19ICandleChartDataSet", "color"]
 - !private ["P6Charts19ICandleChartDataSet", "decreasingColor"]
-- ["P6Charts19ICandleChartDataSet", "deinit"]
 - !private ["P6Charts19ICandleChartDataSet", "entryForIndex"]
 - !private ["P6Charts19ICandleChartDataSet", "entryForXValue"]
 - !private ["P6Charts19ICandleChartDataSet", "highlightColor"]
@@ -814,49 +642,7 @@ depends-member:
 - !private ["P6Charts35ILineScatterCandleRadarChartDataSet", "shadowColorSameAsCandle"]
 - !private ["P6Charts35ILineScatterCandleRadarChartDataSet", "shadowWidth"]
 - !private ["P6Charts35ILineScatterCandleRadarChartDataSet", "showCandleBar"]
-- ["P6Charts15IValueFormatter", "deinit"]
 - !private ["P6Charts15IValueFormatter", "stringForValue"]
-- ["SQ", "deinit"]
-- !private ["Ps9Indexable", "Element"]
-- !private ["Ps9Indexable", "Index"]
-- !private ["Ps9Indexable", "IndexDistance"]
-- !private ["Ps9Indexable", "Indices"]
-- ["Ps9Indexable", "Iterator"]
-- !private ["Ps9Indexable", "Key"]
-- !private ["Ps9Indexable", "SubSequence"]
-- !private ["Ps9Indexable", "Value"]
-- ["Ps9Indexable", "_Element"]
-- !private ["Ps9Indexable", "count"]
-- ["Ps9Indexable", "init"]
-- !private ["Ps9Indexable", "subscript"]
-- !private ["Ps13IndexableBase", "Element"]
-- !private ["Ps13IndexableBase", "Index"]
-- !private ["Ps13IndexableBase", "IndexDistance"]
-- !private ["Ps13IndexableBase", "Indices"]
-- ["Ps13IndexableBase", "Iterator"]
-- !private ["Ps13IndexableBase", "Key"]
-- !private ["Ps13IndexableBase", "SubSequence"]
-- !private ["Ps13IndexableBase", "Value"]
-- ["Ps13IndexableBase", "_Element"]
-- !private ["Ps13IndexableBase", "count"]
-- ["Ps13IndexableBase", "init"]
-- !private ["Ps13IndexableBase", "subscript"]
-- ["Vs16IndexingIterator", "Element"]
-- !private ["Si", "IntegerLiteralType"]
-- !private ["Si", "Stride"]
-- !private ["Si", "_DisabledRangeIndex"]
-- ["Si", "deinit"]
-- !private ["Vs5Int16", "deinit"]
-- !private ["Vs5Int32", "deinit"]
-- !private ["Vs5Int64", "deinit"]
-- !private ["Vs4Int8", "deinit"]
-- !private ["Ps7Integer", "IntegerLiteralType"]
-- !private ["Ps7Integer", "Stride"]
-- !private ["Ps7Integer", "_DisabledRangeIndex"]
-- !private ["Ps17IntegerArithmetic", "IntegerLiteralType"]
-- !private ["Ps17IntegerArithmetic", "Stride"]
-- !private ["Ps17IntegerArithmetic", "_DisabledRangeIndex"]
-- ["Ps16IteratorProtocol", "Element"]
 - ["C6Charts30LineScatterCandleRadarRenderer", "Animator"]
 - ["C6Charts30LineScatterCandleRadarRenderer", "CGContext"]
 - !private ["C6Charts30LineScatterCandleRadarRenderer", "CGFloat"]
@@ -882,7 +668,6 @@ depends-member:
 - !private ["C6Charts30LineScatterCandleRadarRenderer", "_xBounds"]
 - !private ["C6Charts30LineScatterCandleRadarRenderer", "animator"]
 - ["C6Charts30LineScatterCandleRadarRenderer", "dataProvider"]
-- ["C6Charts30LineScatterCandleRadarRenderer", "deinit"]
 - ["C6Charts30LineScatterCandleRadarRenderer", "drawData"]
 - ["C6Charts30LineScatterCandleRadarRenderer", "drawDataSet"]
 - ["C6Charts30LineScatterCandleRadarRenderer", "drawExtras"]
@@ -898,36 +683,15 @@ depends-member:
 - ["C6Charts30LineScatterCandleRadarRenderer", ""]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
-- !private ["Ps10MirrorPath", "IntegerLiteralType"]
-- !private ["Ps10MirrorPath", "Stride"]
-- !private ["Ps10MirrorPath", "_DisabledRangeIndex"]
-- !private ["Ps17MutableCollection", "Element"]
-- !private ["Ps17MutableCollection", "Index"]
-- !private ["Ps17MutableCollection", "IndexDistance"]
-- ["Ps17MutableCollection", "Iterator"]
-- !private ["Ps17MutableCollection", "SubSequence"]
-- ["Ps17MutableCollection", "_Element"]
 - !private ["Ps17MutableCollection", "count"]
 - ["Ps17MutableCollection", "init"]
 - !private ["Ps17MutableCollection", "subscript"]
-- !private ["Ps16MutableIndexable", "Element"]
-- !private ["Ps16MutableIndexable", "Index"]
-- !private ["Ps16MutableIndexable", "IndexDistance"]
-- ["Ps16MutableIndexable", "Iterator"]
-- !private ["Ps16MutableIndexable", "SubSequence"]
-- ["Ps16MutableIndexable", "_Element"]
-- !private ["Ps16MutableIndexable", "count"]
-- ["Ps16MutableIndexable", "init"]
-- !private ["Ps16MutableIndexable", "subscript"]
 - !private ["PSo8NSCoding", "cgColor"]
 - !private ["PSo8NSCoding", "lineHeight"]
 - !private ["CSo7NSColor", "cgColor"]
-- ["CSo7NSColor", "deinit"]
 - !private ["PSo9NSCopying", "cgColor"]
 - !private ["PSo9NSCopying", "lineHeight"]
-- ["CSo6NSFont", "deinit"]
 - !private ["CSo6NSFont", "lineHeight"]
-- !private ["CSo8NSNumber", "deinit"]
 - ["CSo8NSObject", "Animator"]
 - ["CSo8NSObject", "CGContext"]
 - !private ["CSo8NSObject", "CGFloat"]
@@ -991,28 +755,23 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "Double"]
 - !private ["PSo16NSObjectProtocol", "NSFontAttributeName"]
 - !private ["PSo16NSObjectProtocol", "NSForegroundColorAttributeName"]
-- ["PSo16NSObjectProtocol", "_bodyRect"]
-- ["PSo16NSObjectProtocol", "_closePoints"]
-- ["PSo16NSObjectProtocol", "_lineSegments"]
-- ["PSo16NSObjectProtocol", "_openPoints"]
-- ["PSo16NSObjectProtocol", "_rangePoints"]
-- ["PSo16NSObjectProtocol", "_shadowPoints"]
+- !private ["PSo16NSObjectProtocol", "_bodyRect"]
+- !private ["PSo16NSObjectProtocol", "_closePoints"]
+- !private ["PSo16NSObjectProtocol", "_openPoints"]
+- !private ["PSo16NSObjectProtocol", "_rangePoints"]
+- !private ["PSo16NSObjectProtocol", "_shadowPoints"]
 - !private ["PSo16NSObjectProtocol", "_xBounds"]
 - !private ["PSo16NSObjectProtocol", "animator"]
 - !private ["PSo16NSObjectProtocol", "cgColor"]
 - !private ["PSo16NSObjectProtocol", "close"]
-- ["PSo16NSObjectProtocol", "dataProvider"]
+- !private ["PSo16NSObjectProtocol", "dataProvider"]
 - !private ["PSo16NSObjectProtocol", "dataSetIndex"]
 - !private ["PSo16NSObjectProtocol", "dataSets"]
-- ["PSo16NSObjectProtocol", "drawData"]
-- ["PSo16NSObjectProtocol", "drawDataSet"]
-- ["PSo16NSObjectProtocol", "drawExtras"]
+- !private ["PSo16NSObjectProtocol", "drawDataSet"]
 - !private ["PSo16NSObjectProtocol", "drawHighlightLines"]
-- ["PSo16NSObjectProtocol", "drawHighlighted"]
-- ["PSo16NSObjectProtocol", "drawValues"]
 - !private ["PSo16NSObjectProtocol", "getDataSetByIndex"]
 - !private ["PSo16NSObjectProtocol", "high"]
-- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "isDrawingValuesAllowed"]
 - !private ["PSo16NSObjectProtocol", "isInBoundsLeft"]
 - !private ["PSo16NSObjectProtocol", "isInBoundsRight"]
@@ -1039,55 +798,12 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "cgColor"]
 - !private ["PSo14NSSecureCoding", "lineHeight"]
 - !private ["OSC15NSTextAlignment", "center"]
-- ["OSC15NSTextAlignment", "deinit"]
-- ["Os5Never", "deinit"]
-- ["Sq", "deinit"]
-- !private ["Ps22RandomAccessCollection", "Element"]
-- !private ["Ps22RandomAccessCollection", "Index"]
-- !private ["Ps22RandomAccessCollection", "IndexDistance"]
-- !private ["Ps22RandomAccessCollection", "Indices"]
-- ["Ps22RandomAccessCollection", "Iterator"]
-- !private ["Ps22RandomAccessCollection", "SubSequence"]
-- ["Ps22RandomAccessCollection", "_Element"]
 - !private ["Ps22RandomAccessCollection", "count"]
 - ["Ps22RandomAccessCollection", "init"]
 - !private ["Ps22RandomAccessCollection", "subscript"]
-- !private ["Ps21RandomAccessIndexable", "Element"]
-- !private ["Ps21RandomAccessIndexable", "Index"]
-- !private ["Ps21RandomAccessIndexable", "IndexDistance"]
-- !private ["Ps21RandomAccessIndexable", "Indices"]
-- ["Ps21RandomAccessIndexable", "Iterator"]
-- !private ["Ps21RandomAccessIndexable", "SubSequence"]
-- ["Ps21RandomAccessIndexable", "_Element"]
-- !private ["Ps21RandomAccessIndexable", "count"]
-- ["Ps21RandomAccessIndexable", "init"]
-- !private ["Ps21RandomAccessIndexable", "subscript"]
-- !private ["Vs17RandomAccessSlice", "Index"]
-- !private ["Vs17RandomAccessSlice", "IndexDistance"]
-- !private ["Vs17RandomAccessSlice", "Indices"]
-- !private ["Vs17RandomAccessSlice", "Iterator"]
-- !private ["Vs17RandomAccessSlice", "SubSequence"]
-- !private ["Vs17RandomAccessSlice", "_Element"]
-- !private ["Vs5Range", "Iterator"]
-- !private ["Vs5Range", "deinit"]
-- !private ["Ps26RangeReplaceableCollection", "Element"]
-- !private ["Ps26RangeReplaceableCollection", "Index"]
-- !private ["Ps26RangeReplaceableCollection", "IndexDistance"]
-- ["Ps26RangeReplaceableCollection", "Iterator"]
-- !private ["Ps26RangeReplaceableCollection", "SubSequence"]
-- ["Ps26RangeReplaceableCollection", "_Element"]
 - !private ["Ps26RangeReplaceableCollection", "count"]
 - ["Ps26RangeReplaceableCollection", "init"]
 - !private ["Ps26RangeReplaceableCollection", "subscript"]
-- !private ["Ps25RangeReplaceableIndexable", "Element"]
-- !private ["Ps25RangeReplaceableIndexable", "Index"]
-- !private ["Ps25RangeReplaceableIndexable", "IndexDistance"]
-- ["Ps25RangeReplaceableIndexable", "Iterator"]
-- !private ["Ps25RangeReplaceableIndexable", "SubSequence"]
-- ["Ps25RangeReplaceableIndexable", "_Element"]
-- !private ["Ps25RangeReplaceableIndexable", "count"]
-- ["Ps25RangeReplaceableIndexable", "init"]
-- !private ["Ps25RangeReplaceableIndexable", "subscript"]
 - !private ["Ps16RawRepresentable", "center"]
 - ["C6Charts8Renderer", "Animator"]
 - ["C6Charts8Renderer", "CGContext"]
@@ -1125,82 +841,36 @@ depends-member:
 - !private ["C6Charts8Renderer", "shouldDrawValues"]
 - !private ["C6Charts8Renderer", "stride"]
 - !private ["C6Charts8Renderer", "viewPortHandler"]
-- ["Ps8Sequence", "Element"]
-- !private ["Ps8Sequence", "Index"]
-- !private ["Ps8Sequence", "IndexDistance"]
-- !private ["Ps8Sequence", "Indices"]
-- ["Ps8Sequence", "Iterator"]
-- !private ["Ps8Sequence", "Key"]
-- !private ["Ps8Sequence", "SubSequence"]
-- !private ["Ps8Sequence", "Value"]
-- ["Ps8Sequence", "_Element"]
 - !private ["Ps8Sequence", "count"]
 - ["Ps8Sequence", "init"]
 - !private ["Ps8Sequence", "subscript"]
-- !private ["Ps13SignedInteger", "IntegerLiteralType"]
-- !private ["Ps13SignedInteger", "Stride"]
-- !private ["Ps13SignedInteger", "_DisabledRangeIndex"]
-- !private ["Ps12SignedNumber", "IntegerLiteralType"]
-- !private ["Ps12SignedNumber", "Stride"]
-- !private ["Ps12SignedNumber", "_DisabledRangeIndex"]
 - !private ["Ps12SignedNumber", "init"]
-- !private ["Vs5Slice", "Index"]
-- !private ["Vs5Slice", "Iterator"]
-- !private ["Vs5Slice", "SubSequence"]
-- !private ["Vs5Slice", "_Element"]
-- ["Vs12StaticString", "deinit"]
 - !private ["Vs12StaticString", "init"]
-- !private ["Vs13StrideThrough", "Iterator"]
-- ["Vs13StrideThrough", "deinit"]
-- !private ["Vs21StrideThroughIterator", "Element"]
-- !private ["Ps10Strideable", "IntegerLiteralType"]
-- !private ["Ps10Strideable", "Stride"]
-- !private ["Ps10Strideable", "_DisabledRangeIndex"]
 - !private ["Ps10Strideable", "init"]
-- ["SS", "deinit"]
-- ["C6Charts11Transformer", "deinit"]
 - !private ["C6Charts11Transformer", "pixelForValues"]
 - !private ["C6Charts11Transformer", "pointValuesToPixel"]
 - !private ["C6Charts11Transformer", "rectValueToPixel"]
 - !private ["C6Charts11Transformer", "valueToPixelMatrix"]
-- ["Su", "deinit"]
-- !private ["Vs6UInt16", "deinit"]
-- !private ["Vs6UInt32", "deinit"]
-- !private ["Vs6UInt64", "deinit"]
-- !private ["Vs5UInt8", "deinit"]
-- ["C6Charts15ViewPortHandler", "deinit"]
 - !private ["C6Charts15ViewPortHandler", "isInBoundsLeft"]
 - !private ["C6Charts15ViewPortHandler", "isInBoundsRight"]
 - !private ["C6Charts15ViewPortHandler", "isInBoundsY"]
 - !private ["CC6Charts34BarLineScatterCandleBubbleRenderer7XBounds", "min"]
 - !private ["CC6Charts34BarLineScatterCandleBubbleRenderer7XBounds", "range"]
 - !private ["CC6Charts34BarLineScatterCandleBubbleRenderer7XBounds", "set"]
-- !private ["Ps14_ArrayProtocol", "Element"]
-- !private ["Ps14_ArrayProtocol", "Index"]
-- !private ["Ps14_ArrayProtocol", "IndexDistance"]
-- ["Ps14_ArrayProtocol", "Iterator"]
-- !private ["Ps14_ArrayProtocol", "SubSequence"]
-- ["Ps14_ArrayProtocol", "_Element"]
 - !private ["Ps14_ArrayProtocol", "count"]
 - ["Ps14_ArrayProtocol", "init"]
 - !private ["Ps14_ArrayProtocol", "subscript"]
+- !private ["Ps23_BidirectionalIndexable", "count"]
+- ["Ps23_BidirectionalIndexable", "init"]
+- !private ["Ps23_BidirectionalIndexable", "subscript"]
 - !private ["Ps15_CVarArgAligned", "init"]
 - !private ["Ps22_CVarArgPassedAsDouble", "init"]
-- !private ["Ps24_DestructorSafeContainer", "Element"]
-- !private ["Ps24_DestructorSafeContainer", "Index"]
-- !private ["Ps24_DestructorSafeContainer", "IndexDistance"]
-- ["Ps24_DestructorSafeContainer", "Iterator"]
-- !private ["Ps24_DestructorSafeContainer", "SubSequence"]
-- ["Ps24_DestructorSafeContainer", "_Element"]
 - !private ["Ps24_DestructorSafeContainer", "count"]
 - ["Ps24_DestructorSafeContainer", "init"]
 - !private ["Ps24_DestructorSafeContainer", "subscript"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "init"]
-- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "IntegerLiteralType"]
-- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
-- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "_DisabledRangeIndex"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
@@ -1210,35 +880,27 @@ depends-member:
 - ["Ps9_Hashable", "CGRect"]
 - !private ["Ps9_Hashable", "ChartUtils"]
 - !private ["Ps9_Hashable", "Double"]
-- !private ["Ps9_Hashable", "IntegerLiteralType"]
 - !private ["Ps9_Hashable", "NSFontAttributeName"]
 - !private ["Ps9_Hashable", "NSForegroundColorAttributeName"]
-- !private ["Ps9_Hashable", "Stride"]
-- !private ["Ps9_Hashable", "_DisabledRangeIndex"]
-- ["Ps9_Hashable", "_bodyRect"]
-- ["Ps9_Hashable", "_closePoints"]
+- !private ["Ps9_Hashable", "_bodyRect"]
+- !private ["Ps9_Hashable", "_closePoints"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
-- ["Ps9_Hashable", "_lineSegments"]
-- ["Ps9_Hashable", "_openPoints"]
-- ["Ps9_Hashable", "_rangePoints"]
-- ["Ps9_Hashable", "_shadowPoints"]
+- !private ["Ps9_Hashable", "_openPoints"]
+- !private ["Ps9_Hashable", "_rangePoints"]
+- !private ["Ps9_Hashable", "_shadowPoints"]
 - !private ["Ps9_Hashable", "_xBounds"]
 - !private ["Ps9_Hashable", "animator"]
 - !private ["Ps9_Hashable", "center"]
 - !private ["Ps9_Hashable", "cgColor"]
 - !private ["Ps9_Hashable", "close"]
-- ["Ps9_Hashable", "dataProvider"]
+- !private ["Ps9_Hashable", "dataProvider"]
 - !private ["Ps9_Hashable", "dataSetIndex"]
 - !private ["Ps9_Hashable", "dataSets"]
-- ["Ps9_Hashable", "drawData"]
-- ["Ps9_Hashable", "drawDataSet"]
-- ["Ps9_Hashable", "drawExtras"]
+- !private ["Ps9_Hashable", "drawDataSet"]
 - !private ["Ps9_Hashable", "drawHighlightLines"]
-- ["Ps9_Hashable", "drawHighlighted"]
-- ["Ps9_Hashable", "drawValues"]
 - !private ["Ps9_Hashable", "getDataSetByIndex"]
 - !private ["Ps9_Hashable", "high"]
-- ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "isDrawingValuesAllowed"]
 - !private ["Ps9_Hashable", "isInBoundsLeft"]
 - !private ["Ps9_Hashable", "isInBoundsRight"]
@@ -1259,26 +921,15 @@ depends-member:
 - !private ["Ps9_Hashable", "x"]
 - !private ["Ps9_Hashable", "y"]
 - ["Ps9_Hashable", ""]
-- !private ["Ps14_Incrementable", "IntegerLiteralType"]
-- !private ["Ps14_Incrementable", "Stride"]
-- !private ["Ps14_Incrementable", "_DisabledRangeIndex"]
-- !private ["Ps8_Integer", "IntegerLiteralType"]
-- !private ["Ps8_Integer", "Stride"]
-- !private ["Ps8_Integer", "_DisabledRangeIndex"]
-- !private ["Ps18_IntegerArithmetic", "IntegerLiteralType"]
-- !private ["Ps18_IntegerArithmetic", "Stride"]
-- !private ["Ps18_IntegerArithmetic", "_DisabledRangeIndex"]
-- !private ["Ps21_ObjectiveCBridgeable", "Element"]
-- !private ["Ps21_ObjectiveCBridgeable", "Index"]
-- !private ["Ps21_ObjectiveCBridgeable", "IndexDistance"]
-- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
-- ["Ps21_ObjectiveCBridgeable", "Iterator"]
-- !private ["Ps21_ObjectiveCBridgeable", "Key"]
-- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
-- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
-- !private ["Ps21_ObjectiveCBridgeable", "Value"]
-- !private ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
-- ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps10_Indexable", "count"]
+- ["Ps10_Indexable", "init"]
+- !private ["Ps10_Indexable", "subscript"]
+- !private ["Ps14_IndexableBase", "count"]
+- ["Ps14_IndexableBase", "init"]
+- !private ["Ps14_IndexableBase", "subscript"]
+- !private ["Ps17_MutableIndexable", "count"]
+- ["Ps17_MutableIndexable", "init"]
+- !private ["Ps17_MutableIndexable", "subscript"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "applying"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
@@ -1290,40 +941,33 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "width"]
 - !private ["Ps21_ObjectiveCBridgeable", "x"]
 - !private ["Ps21_ObjectiveCBridgeable", "y"]
-- ["Vs26_OptionalNilComparisonType", "deinit"]
-- !private ["Ps14_SignedInteger", "IntegerLiteralType"]
-- !private ["Ps14_SignedInteger", "Stride"]
-- !private ["Ps14_SignedInteger", "_DisabledRangeIndex"]
-- !private ["Ps11_Strideable", "IntegerLiteralType"]
-- !private ["Ps11_Strideable", "Stride"]
-- !private ["Ps11_Strideable", "_DisabledRangeIndex"]
+- !private ["Ps22_RandomAccessIndexable", "count"]
+- ["Ps22_RandomAccessIndexable", "init"]
+- !private ["Ps22_RandomAccessIndexable", "subscript"]
+- !private ["Ps26_RangeReplaceableIndexable", "count"]
+- ["Ps26_RangeReplaceableIndexable", "init"]
+- !private ["Ps26_RangeReplaceableIndexable", "subscript"]
 - !private ["Ps11_Strideable", "init"]
 depends-nominal:
 - !private "Ps16AbsoluteValuable"
-- "C6Charts8Animator"
+- !private "C6Charts8Animator"
 - "Ps9AnyObject"
 - "Sa"
-- "OC6Charts5YAxis14AxisDependency"
 - !private "C6Charts35BarLineScatterCandleBubbleChartData"
 - !private "P6Charts43BarLineScatterCandleBubbleChartDataProvider"
 - "C6Charts34BarLineScatterCandleBubbleRenderer"
 - "Ps23BidirectionalCollection"
-- "Ps22BidirectionalIndexable"
-- !private "Vs18BidirectionalSlice"
 - !private "Ps19BinaryFloatingPoint"
-- !private "Ps17BitwiseOperations"
-- "Sb"
-- "VSC17CGAffineTransform"
-- "CSo7CGColor"
-- "CSo9CGContext"
-- "V12CoreGraphics7CGFloat"
+- !private "Sb"
+- !private "CSo9CGContext"
+- !private "V12CoreGraphics7CGFloat"
 - "VSC7CGPoint"
 - "VSC6CGRect"
 - !private "VSC6CGSize"
 - "Ps7CVarArg"
-- "C6Charts15CandleChartData"
-- "C6Charts20CandleChartDataEntry"
-- "P6Charts23CandleChartDataProvider"
+- !private "C6Charts15CandleChartData"
+- !private "C6Charts20CandleChartDataEntry"
+- !private "P6Charts23CandleChartDataProvider"
 - "C6Charts24CandleStickChartRenderer"
 - !private "C6Charts9ChartData"
 - !private "C6Charts14ChartDataEntry"
@@ -1332,91 +976,54 @@ depends-nominal:
 - !private "C6Charts10ChartUtils"
 - "Ps10Collection"
 - !private "Ps10Comparable"
-- "Vs14CountableRange"
 - "Ps28CustomDebugStringConvertible"
 - "Ps29CustomPlaygroundQuickLookable"
 - "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "C6Charts12DataRenderer"
-- !private "Vs27DefaultBidirectionalIndices"
-- !private "Vs26DefaultRandomAccessIndices"
-- "Vs10Dictionary"
-- "Sd"
+- !private "Sd"
 - "Ps9Equatable"
 - "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
-- !private "Ps30ExpressibleByDictionaryLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps25ExpressibleByFloatLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
-- !private "Sf"
-- !private "Vs7Float80"
 - !private "Ps13FloatingPoint"
 - "Ps8Hashable"
-- "C6Charts9Highlight"
-- "P6Charts39IBarLineScatterCandleBubbleChartDataSet"
-- "P6Charts19ICandleChartDataSet"
+- !private "C6Charts9Highlight"
+- !private "P6Charts39IBarLineScatterCandleBubbleChartDataSet"
+- !private "P6Charts19ICandleChartDataSet"
 - !private "P6Charts13IChartDataSet"
 - !private "P6Charts35ILineScatterCandleRadarChartDataSet"
-- "P6Charts15IValueFormatter"
-- "SQ"
-- "Ps9Indexable"
-- "Ps13IndexableBase"
-- "Vs16IndexingIterator"
-- "Si"
-- !private "Vs5Int16"
-- !private "Vs5Int32"
-- !private "Vs5Int64"
-- !private "Vs4Int8"
-- !private "Ps7Integer"
-- !private "Ps17IntegerArithmetic"
-- "Ps16IteratorProtocol"
+- !private "P6Charts15IValueFormatter"
 - "C6Charts30LineScatterCandleRadarRenderer"
 - !private "Ps25LosslessStringConvertible"
-- !private "Ps10MirrorPath"
 - "Ps17MutableCollection"
-- "Ps16MutableIndexable"
 - !private "PSo8NSCoding"
-- "CSo7NSColor"
+- !private "CSo7NSColor"
 - !private "PSo9NSCopying"
-- "CSo6NSFont"
-- !private "CSo8NSNumber"
+- !private "CSo6NSFont"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "PSo19NSPasteboardReading"
 - !private "PSo19NSPasteboardWriting"
 - !private "PSo14NSSecureCoding"
-- "OSC15NSTextAlignment"
-- "Os5Never"
-- "Sq"
+- !private "OSC15NSTextAlignment"
 - "Ps22RandomAccessCollection"
-- "Ps21RandomAccessIndexable"
-- !private "Vs17RandomAccessSlice"
-- !private "Vs5Range"
 - "Ps26RangeReplaceableCollection"
-- "Ps25RangeReplaceableIndexable"
 - !private "Ps16RawRepresentable"
 - "C6Charts8Renderer"
 - "Ps8Sequence"
-- !private "Ps13SignedInteger"
 - !private "Ps12SignedNumber"
-- !private "Vs5Slice"
-- "Vs12StaticString"
-- "Vs13StrideThrough"
-- !private "Vs21StrideThroughIterator"
+- !private "Vs12StaticString"
 - !private "Ps10Strideable"
-- "SS"
-- "C6Charts11Transformer"
-- "Su"
-- !private "Vs6UInt16"
-- !private "Vs6UInt32"
-- !private "Vs6UInt64"
-- !private "Vs5UInt8"
-- "C6Charts15ViewPortHandler"
+- !private "C6Charts11Transformer"
+- !private "C6Charts15ViewPortHandler"
 - !private "CC6Charts34BarLineScatterCandleBubbleRenderer7XBounds"
 - "Ps14_ArrayProtocol"
+- "Ps23_BidirectionalIndexable"
 - !private "Ps15_CVarArgAligned"
 - !private "Ps22_CVarArgPassedAsDouble"
 - "Ps24_DestructorSafeContainer"
@@ -1428,16 +1035,25 @@ depends-nominal:
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
 - !private "Ps26_ExpressibleByColorLiteral"
 - "Ps9_Hashable"
-- !private "Ps14_Incrementable"
-- !private "Ps8_Integer"
-- !private "Ps18_IntegerArithmetic"
+- "Ps10_Indexable"
+- "Ps14_IndexableBase"
+- "Ps17_MutableIndexable"
 - "Ps21_ObjectiveCBridgeable"
-- "Vs26_OptionalNilComparisonType"
-- !private "Ps14_SignedInteger"
+- "Ps22_RandomAccessIndexable"
+- "Ps26_RangeReplaceableIndexable"
 - !private "Ps11_Strideable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.apinotesc"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/Charts/Source/Supporting Files/Charts.h"
 - "/Users/endotsuyoshi/Documents/ios/shoanaorigin2/shoana/Build/Intermediates/Charts.build/Debug/Charts.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
@@ -1452,4 +1068,5 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuickLook.apinotesc"
 interface-hash: "a1027bbe4b45a79cd0e57a5863458027"
