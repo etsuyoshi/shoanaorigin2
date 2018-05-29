@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Charts/Charts.h>
+@import Charts;
 #import "Quiz.h"
 #import "Siwake.h"
 

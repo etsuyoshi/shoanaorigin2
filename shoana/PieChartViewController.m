@@ -150,7 +150,7 @@
 {
     if ([key isEqualToString:@"toggleXValues"])
     {
-        _chartView.drawSliceTextEnabled = !_chartView.isDrawSliceTextEnabled;
+        _chartView.drawCenterTextEnabled = !_chartView.isDrawCenterTextEnabled;
         
         [_chartView setNeedsDisplay];
         return;

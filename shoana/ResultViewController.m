@@ -28,6 +28,13 @@
 
 @implementation ResultViewController
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+//    [self setupPieChartView];
+//    [pieChartView animateWithXAxisDuration:1.4 easingOption:ChartEasingOptionEaseOutBack];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -40,15 +47,11 @@
     pieChartView.delegate = self;
     pieChartView.entryLabelColor = UIColor.whiteColor;
     pieChartView.entryLabelFont = [UIFont fontWithName:@"HelveticaNeue-Light" size:12.f];
-    pieChartView.descriptionText = @"チャートの説明";
+    pieChartView.chartDescription.text = @"チャートの説明";
+    pieChartView.chartDescription.enabled = NO;
     [self.view addSubview:pieChartView];
-    
+
     [self updateChartData];
-    
-    [self setupPieChartView:pieChartView];
-    
-    [pieChartView animateWithXAxisDuration:1.4 easingOption:ChartEasingOptionEaseOutBack];
-    
     
     
     //問題を全て解答した直後の成績画面であればルートに戻る終了ボタンを追加する
@@ -294,16 +297,15 @@
 
 
 
-- (void)setupPieChartView:(PieChartView *)chartView
-{
-    NSLog(@"%s", __func__);
-    chartView.usePercentValuesEnabled = YES;
-    chartView.drawSlicesUnderHoleEnabled = NO;
-    chartView.holeRadiusPercent = 0.58;
-    chartView.transparentCircleRadiusPercent = 0.61;
-    chartView.chartDescription.enabled = NO;
-    [chartView setExtraOffsetsWithLeft:5.f top:10.f right:5.f bottom:5.f];
-    chartView.drawCenterTextEnabled = YES;
+- (void)setupPieChartView{
+    NSLog(@"%s %@", __func__, pieChartView.chartDescription);
+    pieChartView.usePercentValuesEnabled = YES;
+    pieChartView.drawSlicesUnderHoleEnabled = NO;
+    pieChartView.holeRadiusPercent = 0.58;
+    pieChartView.transparentCircleRadiusPercent = 0.61;
+    pieChartView.chartDescription.enabled = NO;
+    [pieChartView setExtraOffsetsWithLeft:5.f top:10.f right:5.f bottom:5.f];
+    pieChartView.drawCenterTextEnabled = YES;
     
     NSMutableParagraphStyle *paragraphStyle = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
     paragraphStyle.lineBreakMode = NSLineBreakByTruncatingTail;
@@ -367,15 +369,15 @@
                                 NSForegroundColorAttributeName: [UIColor colorWithRed:51/255.f green:181/255.f blue:229/255.f alpha:1.f]
                                 } range:NSMakeRange(centerText.length - 3, 3)];
     
-    chartView.centerAttributedText = centerText;
+    pieChartView.centerAttributedText = centerText;
     
-    chartView.drawHoleEnabled = YES;
-    chartView.rotationAngle = 0.0;
-    chartView.rotationEnabled = YES;
-    chartView.highlightPerTapEnabled = YES;
+    pieChartView.drawHoleEnabled = YES;
+    pieChartView.rotationAngle = 0.0;
+    pieChartView.rotationEnabled = YES;
+    pieChartView.highlightPerTapEnabled = YES;
     
     
-    ChartLegend *l = chartView.legend;
+    ChartLegend *l = pieChartView.legend;
     l.horizontalAlignment = ChartLegendHorizontalAlignmentRight;
     l.verticalAlignment = ChartLegendVerticalAlignmentTop;
     l.orientation = ChartLegendOrientationVertical;

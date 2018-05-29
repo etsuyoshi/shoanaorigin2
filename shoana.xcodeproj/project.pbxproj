@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E4DCD1231198E10D082CA35 /* Pods_shoana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A75A86DD0B045CEDF0904B /* Pods_shoana.framework */; };
+		0F0DD73BBA4F26BF0F472713 /* Pods_shoana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFFDE0D80D2620350C97D53 /* Pods_shoana.framework */; };
 		2A11A2E71E611120001C4740 /* SiwakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A11A2E61E611120001C4740 /* SiwakeViewController.m */; };
 		2A1AF2861E6319630024B298 /* Siwake.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1AF2851E6319630024B298 /* Siwake.m */; };
 		2A3E65F41E350DCB001C17DE /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3E65F31E350DCB001C17DE /* ConfigViewController.m */; };
@@ -39,8 +39,6 @@
 		2A66EA461E1A5A14009B5637 /* _homu6.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2A66EA361E1A5A14009B5637 /* _homu6.csv */; };
 		2A66EA541E1A5A68009B5637 /* Quiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A66EA531E1A5A68009B5637 /* Quiz.m */; };
 		2A66EA571E1A5A7A009B5637 /* QuizItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A66EA561E1A5A7A009B5637 /* QuizItem.m */; };
-		2A7005881E2C6D8700780D58 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7005831E2C6C1A00780D58 /* Charts.framework */; };
-		2A7005891E2C6D8700780D58 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7005831E2C6C1A00780D58 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2A76C5571E73A3F700F31BC0 /* twitter@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A76C5541E73A3F700F31BC0 /* twitter@1x.png */; };
 		2A76C5581E73A3F700F31BC0 /* twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A76C5551E73A3F700F31BC0 /* twitter@2x.png */; };
 		2A76C5591E73A3F700F31BC0 /* twitter@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A76C5561E73A3F700F31BC0 /* twitter@3x.png */; };
@@ -81,37 +79,6 @@
 		2AFE2C0A1E3087BB00D30F37 /* ResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFE2C091E3087BB00D30F37 /* ResultModel.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		2A7005821E2C6C1A00780D58 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2A70057C1E2C6C1A00780D58 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 06165F241D8110E600722320;
-			remoteInfo = Charts;
-		};
-		2A7005841E2C6C1A00780D58 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2A70057C1E2C6C1A00780D58 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 06B120D51D811E6200D14B02;
-			remoteInfo = ChartsRealm;
-		};
-		2A7005861E2C6C1A00780D58 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2A70057C1E2C6C1A00780D58 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 06165F2E1D8110E600722320;
-			remoteInfo = ChartsTests;
-		};
-		2A70058A1E2C6D8700780D58 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2A70057C1E2C6C1A00780D58 /* Charts.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 06165F231D8110E600722320;
-			remoteInfo = Charts;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		2A70058C1E2C6D8700780D58 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -119,7 +86,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2A7005891E2C6D8700780D58 /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,8 +93,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		03A75A86DD0B045CEDF0904B /* Pods_shoana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_shoana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B6B951D484BA36EF74AE465 /* Pods-shoana.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shoana.debug.xcconfig"; path = "Pods/Target Support Files/Pods-shoana/Pods-shoana.debug.xcconfig"; sourceTree = "<group>"; };
+		205214D73E524E9EE80F5319 /* Pods-shoana.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shoana.debug.xcconfig"; path = "Pods/Target Support Files/Pods-shoana/Pods-shoana.debug.xcconfig"; sourceTree = "<group>"; };
 		2A11A2E51E611120001C4740 /* SiwakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiwakeViewController.h; sourceTree = "<group>"; };
 		2A11A2E61E611120001C4740 /* SiwakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiwakeViewController.m; sourceTree = "<group>"; };
 		2A1AF2841E6319630024B298 /* Siwake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Siwake.h; sourceTree = "<group>"; };
@@ -170,7 +135,6 @@
 		2A66EA531E1A5A68009B5637 /* Quiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Quiz.m; path = Quiz/Quiz.m; sourceTree = "<group>"; };
 		2A66EA551E1A5A7A009B5637 /* QuizItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuizItem.h; path = Quiz/QuizItem.h; sourceTree = "<group>"; };
 		2A66EA561E1A5A7A009B5637 /* QuizItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuizItem.m; path = Quiz/QuizItem.m; sourceTree = "<group>"; };
-		2A70057C1E2C6C1A00780D58 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = ../../Charts/Charts.xcodeproj; sourceTree = "<group>"; };
 		2A76C5541E73A3F700F31BC0 /* twitter@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter@1x.png"; sourceTree = "<group>"; };
 		2A76C5551E73A3F700F31BC0 /* twitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter@2x.png"; sourceTree = "<group>"; };
 		2A76C5561E73A3F700F31BC0 /* twitter@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter@3x.png"; sourceTree = "<group>"; };
@@ -221,10 +185,8 @@
 		2AFB7EEF1E30EF4000647605 /* Shoana-Prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Shoana-Prefix.h"; sourceTree = "<group>"; };
 		2AFE2C081E3087BB00D30F37 /* ResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultModel.h; sourceTree = "<group>"; };
 		2AFE2C091E3087BB00D30F37 /* ResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultModel.m; sourceTree = "<group>"; };
-		3493851A01C8E7849172C37F /* Pods-boki3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-boki3.release.xcconfig"; path = "Pods/Target Support Files/Pods-boki3/Pods-boki3.release.xcconfig"; sourceTree = "<group>"; };
-		44EBAF795055A4785E1B5C93 /* Pods-shoana.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shoana.release.xcconfig"; path = "Pods/Target Support Files/Pods-shoana/Pods-shoana.release.xcconfig"; sourceTree = "<group>"; };
-		C79682FC3FCC28113497C6D5 /* Pods-boki3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-boki3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-boki3/Pods-boki3.debug.xcconfig"; sourceTree = "<group>"; };
-		CAF91474EE1B755453166AE9 /* Pods_boki3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_boki3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0B6FB1940793D58995C0B55 /* Pods-shoana.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shoana.release.xcconfig"; path = "Pods/Target Support Files/Pods-shoana/Pods-shoana.release.xcconfig"; sourceTree = "<group>"; };
+		CBFFDE0D80D2620350C97D53 /* Pods_shoana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_shoana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,8 +194,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A7005881E2C6D8700780D58 /* Charts.framework in Frameworks */,
-				0E4DCD1231198E10D082CA35 /* Pods_shoana.framework in Frameworks */,
+				0F0DD73BBA4F26BF0F472713 /* Pods_shoana.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,8 +204,7 @@
 		20131A39C8359FE10E562CD0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				03A75A86DD0B045CEDF0904B /* Pods_shoana.framework */,
-				CAF91474EE1B755453166AE9 /* Pods_boki3.framework */,
+				CBFFDE0D80D2620350C97D53 /* Pods_shoana.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -273,7 +233,6 @@
 				2AE370691E9F848F00459F31 /* GoogleService-Info.plist */,
 				2A76C55A1E73AB7300F31BC0 /* SNS */,
 				2AAEDCB21E611267008B2CAE /* Siwake */,
-				2A70057C1E2C6C1A00780D58 /* Charts.xcodeproj */,
 				2A66EA511E1A5A27009B5637 /* Quiz */,
 				2A66EA301E1A59F4009B5637 /* res */,
 				2A66EA191E1A5968009B5637 /* AppDelegate.h */,
@@ -367,16 +326,6 @@
 			name = Quiz;
 			sourceTree = "<group>";
 		};
-		2A70057D1E2C6C1A00780D58 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2A7005831E2C6C1A00780D58 /* Charts.framework */,
-				2A7005851E2C6C1A00780D58 /* ChartsRealm.framework */,
-				2A7005871E2C6C1A00780D58 /* ChartsTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		2A76C55A1E73AB7300F31BC0 /* SNS */ = {
 			isa = PBXGroup;
 			children = (
@@ -426,10 +375,8 @@
 		AE20AA291EF4CCB39C23628F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0B6B951D484BA36EF74AE465 /* Pods-shoana.debug.xcconfig */,
-				44EBAF795055A4785E1B5C93 /* Pods-shoana.release.xcconfig */,
-				C79682FC3FCC28113497C6D5 /* Pods-boki3.debug.xcconfig */,
-				3493851A01C8E7849172C37F /* Pods-boki3.release.xcconfig */,
+				205214D73E524E9EE80F5319 /* Pods-shoana.debug.xcconfig */,
+				A0B6FB1940793D58995C0B55 /* Pods-shoana.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -441,18 +388,16 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A66EA2D1E1A5968009B5637 /* Build configuration list for PBXNativeTarget "shoana" */;
 			buildPhases = (
-				708DBB28B504E6ECB1A70115 /* [CP] Check Pods Manifest.lock */,
+				038D79E3204238F3A4FA98C9 /* [CP] Check Pods Manifest.lock */,
 				2A66EA0F1E1A5968009B5637 /* Sources */,
 				2A66EA101E1A5968009B5637 /* Frameworks */,
 				2A66EA111E1A5968009B5637 /* Resources */,
 				2A70058C1E2C6D8700780D58 /* Embed Frameworks */,
-				27D360C491BB24703B8D87BC /* [CP] Embed Pods Frameworks */,
-				BC91AB0476595878A76122F8 /* [CP] Copy Pods Resources */,
+				5A55FD43075946F790F4E32F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2A70058B1E2C6D8700780D58 /* PBXTargetDependency */,
 			);
 			name = shoana;
 			productName = shoana;
@@ -465,7 +410,7 @@
 		2A66EA0B1E1A5968009B5637 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = com.endo;
 				TargetAttributes = {
 					2A66EA121E1A5968009B5637 = {
@@ -487,42 +432,12 @@
 			mainGroup = 2A66EA0A1E1A5968009B5637;
 			productRefGroup = 2A66EA141E1A5968009B5637 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 2A70057D1E2C6C1A00780D58 /* Products */;
-					ProjectRef = 2A70057C1E2C6C1A00780D58 /* Charts.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				2A66EA121E1A5968009B5637 /* shoana */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		2A7005831E2C6C1A00780D58 /* Charts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Charts.framework;
-			remoteRef = 2A7005821E2C6C1A00780D58 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2A7005851E2C6C1A00780D58 /* ChartsRealm.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ChartsRealm.framework;
-			remoteRef = 2A7005841E2C6C1A00780D58 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2A7005871E2C6C1A00780D58 /* ChartsTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ChartsTests.xctest;
-			remoteRef = 2A7005861E2C6C1A00780D58 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2A66EA111E1A5968009B5637 /* Resources */ = {
@@ -584,49 +499,52 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		27D360C491BB24703B8D87BC /* [CP] Embed Pods Frameworks */ = {
+		038D79E3204238F3A4FA98C9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-shoana-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A55FD43075946F790F4E32F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-shoana/Pods-shoana-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-shoana/Pods-shoana-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		708DBB28B504E6ECB1A70115 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		BC91AB0476595878A76122F8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-shoana/Pods-shoana-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -661,14 +579,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		2A70058B1E2C6D8700780D58 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Charts;
-			targetProxy = 2A70058A1E2C6D8700780D58 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		2A66EA221E1A5968009B5637 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -698,15 +608,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -746,15 +664,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -781,9 +707,9 @@
 		};
 		2A66EA2E1E1A5968009B5637 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B6B951D484BA36EF74AE465 /* Pods-shoana.debug.xcconfig */;
+			baseConfigurationReference = 205214D73E524E9EE80F5319 /* Pods-shoana.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -791,7 +717,10 @@
 				GCC_PREFIX_HEADER = "shoana/Shoana-Prefix.h";
 				INFOPLIST_FILE = shoana/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited) ";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					" ",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.endo.shoana3;
 				PRODUCT_NAME = "簿記3級問題";
 				SWIFT_VERSION = 3.0;
@@ -801,9 +730,9 @@
 		};
 		2A66EA2F1E1A5968009B5637 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44EBAF795055A4785E1B5C93 /* Pods-shoana.release.xcconfig */;
+			baseConfigurationReference = A0B6FB1940793D58995C0B55 /* Pods-shoana.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -811,7 +740,10 @@
 				GCC_PREFIX_HEADER = "shoana/Shoana-Prefix.h";
 				INFOPLIST_FILE = shoana/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited) ";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					" ",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.endo.shoana3;
 				PRODUCT_NAME = "簿記3級問題";
 				SWIFT_VERSION = 3.0;
