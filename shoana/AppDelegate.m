@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "DetailViewController.h"
+#import <DeployGateSDK/DeployGateSDK.h>
 
 @interface AppDelegate () <UISplitViewControllerDelegate>
 
@@ -24,6 +25,9 @@
     splitViewController.delegate = self;
     
     [FIRApp configure];
+    [[DeployGateSDK sharedInstance]
+     launchApplicationWithAuthor:@"tuyo1009@gmail.com"
+     key:@"b7bc79a24d61144914b3b12224581111df479658"];
     
     return YES;
 }

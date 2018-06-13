@@ -303,8 +303,8 @@
                     
                     
                     
-                    NSString *sectionNo = [eachInLine objectAtIndex:0];//SECT001
-                    NSString *questionNo = [eachInLine objectAtIndex:1];//Q0010
+                    NSString *sectionNo = [eachInLine objectAtIndex:0];//SECT001~
+                    NSString *questionNo = [eachInLine objectAtIndex:1];//Q0010~
                     int intQuestionNo = (int)[[questionNo substringWithRange:NSMakeRange(1, 3)] integerValue];
                     NSString *questionStr = [eachInLine objectAtIndex:2];
                     NSString *sentence =[eachInLine objectAtIndex:3];
@@ -329,6 +329,11 @@
                     ResultModel *myResultModel = [[ResultModel alloc] initWithSection:self];
                     curItem.kaitou = [NSString stringWithFormat:@"%d", [myResultModel getAnswer:[questionNo intValue]]];
                     curItem.seikai = [NSString stringWithFormat:@"%d", [myResultModel getCorrect:[questionNo intValue]]];
+                    
+                    NSLog(@"Quiz初期化時: section = %d, no = %d, kaitou ＝%@, seikai =%@",
+                          self.section,
+                          curItem.intQuestionNo,
+                          curItem.kaitou, curItem.seikai);
                     
                     
                     curItem.category = questionStr;
@@ -396,6 +401,9 @@
             QuizItem *tmpQuizItem = self.quizItemsArray[i];
             tmpQuizItem.seikai = [NSString stringWithFormat:@"%d", [myResultModel getCorrect:i]];
             tmpQuizItem.kaitou = [NSString stringWithFormat:@"%d", [myResultModel getAnswer:i]];
+            tmpQuizItem.gotou =
+            [NSString stringWithFormat:@"%ld",
+             [tmpQuizItem.kaitou integerValue] - [tmpQuizItem.seikai integerValue]];
             [arrQuizItems_tmp addObject:tmpQuizItem];
             tmpQuizItem = nil;
         }
@@ -418,5 +426,57 @@
         return strReturn;
     }
 }
+
+//誤答回数が多い順に配列を返す(誤答のみ返す)
+-(NSArray *)getArrayWithSortByMistakes{
+    [self updateAllResult];
+    NSMutableArray *arrNo = [NSMutableArray array];
+    NSMutableArray *arrMistakes = [NSMutableArray array];
+    
+    for(QuizItem *eachQuizItem in self.quizItemsArray){
+//    for(int i = 0;i < self.quizItemsArray.count;i++){
+//        QuizItem *eachQuizItem = self.quizItemsArray[i];
+        
+        //誤りがあるものだけを選択する
+        int gotou = (int)[eachQuizItem.kaitou integerValue] - (int)[eachQuizItem.seikai integerValue];
+        
+        //↓であれば、初期化の方法に違いがあるのか？→masterviewconと比較してみてみよう
+        //↓いや、しかし、であれば問題文の回答数状況も誤った数字が出るはず（
+        //↓わかること：ResultModelに格納されているデータとQuiz（内のQuizItem配列)のデータにズレがある（ResultModelに最初の問題が入ってない？）
+        NSLog(@"self.section = %d, self.sectionName = %@, questionNo = %d, kaitou = %@, seikai = %@, str = %@",
+              self.section, self.sectionName,
+              eachQuizItem.intQuestionNo,
+              eachQuizItem.kaitou,
+              eachQuizItem.seikai,
+              [eachQuizItem.question substringToIndex:10]);
+        
+        if(gotou > 0){
+            [arrNo addObject:eachQuizItem];
+            [arrMistakes addObject:[NSNumber numberWithInteger:gotou]];
+        }
+        
+    }
+//    NSSortDescriptor *kaitouSortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"self.kaitou" ascending:NO];//回答数が多い順
+//    NSSortDescriptor *seikaiSortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"self.seikai" ascending:YES];//正解が少ない順
+    NSSortDescriptor *gotouSortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"self.gotou" ascending:NO];
+    
+    // 上記のソート条件を適用
+    //arrNo = (NSMutableArray *)[arrNo sortedArrayUsingDescriptors:@[seikaiSortDescriptor,kaitouSortDescriptor]];
+    arrNo = (NSMutableArray *)[arrNo sortedArrayUsingDescriptors:@[gotouSortDescriptor]];
+    
+    for(QuizItem *tmpQuizItem in arrNo){
+        int gotou = (int)[tmpQuizItem.kaitou integerValue] - (int)[tmpQuizItem.seikai integerValue];
+        NSLog(@"no %d : kaitou = %d, seikai = %d, gotou = %d",
+              (int)tmpQuizItem.intQuestionNo,
+              (int)[tmpQuizItem.kaitou integerValue],
+              (int)[tmpQuizItem.seikai integerValue],
+              gotou);
+    }
+    
+    
+    return arrNo;
+}
+
+
 
 @end

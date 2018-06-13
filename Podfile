@@ -41,6 +41,7 @@ target 'shoana' do
   pod 'Firebase/Core'#analytics
   pod 'Firebase/Messaging'#push
   pod 'Firebase/Database'#database
+  pod "DeployGateSDK"
 end
 use_frameworks!
 

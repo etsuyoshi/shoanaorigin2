@@ -10,6 +10,7 @@
 // 解説表示なしモード：ひたすら問題を解くだけ（正解、不正解だけ表示しない）
 
 #import "ConfigViewController.h"
+#import "ResultListViewController.h"
 #import "ResultModel.h"
 #import "QuizSector.h"
 #import "SiwakeSector.h"
@@ -84,7 +85,7 @@
 */
 
 -(void)setConfig:(int)selectedConfigNo{
-    NSLog(@"%s, %d", __func__, selectedConfigNo);//選ばれたピッカー番号
+    NSLog(@"%s, %d", __func__, (int)selectedConfigNo);//選ばれたピッカー番号
     
     NSString *strSelectedLabelInPicker = arrPicker[selectedConfigNo];//選択されたピッカーのラベルを取得
     //選択されたラベルと等しいdictConfigKeyのキー（該当するキー全部の配列）
@@ -161,6 +162,10 @@
             
             [self presentViewController:alertController animated:YES completion:nil];
         }
+    }else{
+        NSLog(@"結果リストへ遷移");
+        ResultListViewController *resultListViewCon = [[ResultListViewController alloc]init];
+        [self.navigationController pushViewController:resultListViewCon animated:YES];
     }
 }
 
@@ -342,8 +347,11 @@
         cell.textLabel.text = @"モード選択";
         //cell.detailTextLabel.text = @"テストモード";
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    }else{
+    }else if(indexPath.row == 1){
         cell.textLabel.text = @"成績表リセット";
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }else{
+        cell.textLabel.text = @"誤答問題リストへ";
         cell.accessoryType = UITableViewCellAccessoryNone;
     }
     
@@ -353,7 +361,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 2;
+    return 3;
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{

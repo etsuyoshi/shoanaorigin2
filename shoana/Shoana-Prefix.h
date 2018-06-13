@@ -35,6 +35,10 @@
 #define QUIZ_CONFIG_KEY_JAKUTEN @"quizJakuten"
 
 
+#define MIN(a,b)    ((a) < (b) ? (a) : (b))
+#define MAX(a,b)    ((a) > (b) ? (a) : (b))
+
+
 
 //release版でnslogを出力しない
 #if !defined(NS_BLOCK_ASSERTIONS)

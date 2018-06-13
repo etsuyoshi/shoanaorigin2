@@ -27,14 +27,22 @@
         NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
         
         //NSUserDefaultsにNSArray,NSDictionaryなどをネストして保存できない！
-//        NSArray *arrAnswer =
         self.arrAnswerInSection =
-        (NSMutableArray *)[userDefaults arrayForKey:
-         [NSString stringWithFormat:@"%@%d", USER_DEFAULTS_ANSWER, self.section]];
-//        NSArray *arrCorrect =
+        (NSMutableArray *)
+        [userDefaults arrayForKey:
+         [NSString stringWithFormat:@"%@%d", USER_DEFAULTS_ANSWER, self.section]];//section:1start
         self.arrCorrectInSection =
-         (NSMutableArray *)[userDefaults arrayForKey:
-          [NSString stringWithFormat:@"%@%d", USER_DEFAULTS_CORRECT, self.section]];
+         (NSMutableArray *)
+        [userDefaults arrayForKey:
+         [NSString stringWithFormat:@"%@%d", USER_DEFAULTS_CORRECT, self.section]];
+        
+//        if(myQuiz.section == 1){
+//            NSLog(@"%d章::%@", myQuiz.section, myQuiz.sectionName);
+//            for(int i = 0;i < self.arrAnswerInSection.count;i++){
+//                NSLog(@"回答数=%d", [self.arrAnswerInSection[i] integerValue]);
+//                NSLog(@"正解数=%d", [self.arrCorrectInSection[i] integerValue]);
+//            }
+//        }
         
         //[userDefaults ....]
         if(self.arrAnswerInSection.count > 0){
@@ -61,9 +69,7 @@
              setObject:self.arrCorrectInSection
              forKey:[NSString stringWithFormat:@"%@%d", USER_DEFAULTS_CORRECT, self.section]];
             [userDefaults synchronize];
-            
         }
-        
         userDefaults = nil;
     }
     

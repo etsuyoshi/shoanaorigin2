@@ -30,6 +30,7 @@
 // 回答回数
 @property (strong, nonatomic) NSString *kaitou;
 @property (strong, nonatomic) NSString *seikai;
+@property (strong, nonatomic) NSString *gotou;
 
 
 // ランダムに並び替えられた選択肢の配列

@@ -50,6 +50,8 @@
 //        }else{
             //弱点克服モードじゃなかったら通常通り、指名された番号(self.quizNo)を表示する
             myQuizItem = (QuizItem *)self.quiz.quizItemsArray[self.quizNo];
+        NSLog(@"detail quiz no = %d, kaitou = %@, seikai=%@, str=%@",
+              self.quizNo, myQuizItem.kaitou, myQuizItem.seikai, myQuizItem.question);
 //        }
         
         
@@ -135,7 +137,6 @@
     
     for(UIView *view in self.answer2Btn.subviews){
         if([view isKindOfClass:[UILabel class]]){
-            NSLog(@"hit");
             view.frame = CGRectMake(0, 0, self.answer2Btn.bounds.size.width-margin,
                                     self.answer2Btn.bounds.size.height-margin);
             view.center = CGPointMake(self.answer2Btn.bounds.size.width/2,
@@ -266,26 +267,31 @@
 //     initWithTarget:self
 //     action:@selector(disappearExp:)];
 //    [allView addGestureRecognizer:gesture];
-    
-    //次へ進むボタン
-    UIButton *btnNext = [UIButton buttonWithType:UIButtonTypeCustom];
-    btnNext.frame = CGRectMake(0, 0, widthBtn, heightBtn);
-    btnNext.center = CGPointMake(viewExp.bounds.size.width-marginBtn - widthBtn/2,
-                                 viewExp.bounds.size.height - marginBtn - heightBtn/2);
-    btnNext.layer.cornerRadius = 3;
-    btnNext.layer.borderColor = [[UIColor blackColor] CGColor];
-    btnNext.layer.borderWidth = 1;
-    //btnNext.backgroundColor = [UIColor blueColor];
-    [btnNext setTitle:@"次へ" forState:UIControlStateNormal];
-    [btnNext setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    btnNext.titleLabel.font = [UIFont systemFontOfSize:23.f];
-    [viewExp addSubview:btnNext];
+    UIButton *btnNext;
+    if(!self.isSingle){
+        //次へ進むボタン
+        btnNext = [UIButton buttonWithType:UIButtonTypeCustom];
+        btnNext.frame = CGRectMake(0, 0, widthBtn, heightBtn);
+        btnNext.center = CGPointMake(viewExp.bounds.size.width-marginBtn - widthBtn/2,
+                                     viewExp.bounds.size.height - marginBtn - heightBtn/2);
+        btnNext.layer.cornerRadius = 3;
+        btnNext.layer.borderColor = [[UIColor blackColor] CGColor];
+        btnNext.layer.borderWidth = 1;
+        //btnNext.backgroundColor = [UIColor blueColor];
+        [btnNext setTitle:@"次へ" forState:UIControlStateNormal];
+        [btnNext setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        btnNext.titleLabel.font = [UIFont systemFontOfSize:23.f];
+        [viewExp addSubview:btnNext];
+    }
     
     //やめるボタン
     UIButton *btnStop = [UIButton buttonWithType:UIButtonTypeCustom];
-    btnStop.frame = CGRectMake(0, 0, widthBtn, heightBtn);
-    btnStop.center = CGPointMake(viewExp.bounds.size.width/4,
-                                 viewExp.bounds.size.height-marginBtn-heightBtn/2);
+    
+    btnStop.frame = self.isSingle?CGRectMake(0, 0, viewExp.bounds.size.width-marginBtn,heightBtn):CGRectMake(0, 0, widthBtn, heightBtn);
+    btnStop.center =
+        self.isSingle?
+        CGPointMake(viewExp.bounds.size.width/2,viewExp.bounds.size.height-marginBtn-heightBtn/2):
+        CGPointMake(viewExp.bounds.size.width/4,viewExp.bounds.size.height-marginBtn-heightBtn/2);
     btnStop.layer.cornerRadius = 3;
     btnStop.layer.borderColor = [[UIColor blackColor] CGColor];
     btnStop.layer.borderWidth = 1;
@@ -295,7 +301,7 @@
     [viewExp addSubview:btnStop];
     
     
-    [btnNext addTarget:self action:@selector(tappedNext) forControlEvents:UIControlEventTouchUpInside];
+    if(!self.isSingle)[btnNext addTarget:self action:@selector(tappedNext) forControlEvents:UIControlEventTouchUpInside];
     [btnStop addTarget:self action:@selector(tappedStop) forControlEvents:UIControlEventTouchUpInside];
 }
 
@@ -307,6 +313,7 @@
 }
 
 -(void)tappedRightNavItem{
+    
     NSLog(@"tapped right nav item");
     
     //ダイアログを開いてイェスならばチェックマークをつける
@@ -461,39 +468,47 @@
     NSLog(@"%s", __func__);
     [viewExp removeFromSuperview];
     
+    if(self.isSingle){
+        //一つ前のビューに戻る
+        [self.navigationController popViewControllerAnimated:YES];
+    }else{
+        //最初のビューに戻る
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    }
     
-    //ダイアログを開いてイェスならばチェックマークをつける
-    UIAlertController * alertController =
-    [UIAlertController
-     alertControllerWithTitle:@"途中ですが"
-     message:@"全て終了しますか？"
-     preferredStyle:UIAlertControllerStyleAlert];
-    [alertController addAction:
-     [UIAlertAction
-      actionWithTitle:@"終了する"
-      style:UIAlertActionStyleDefault
-      handler:^(UIAlertAction *alert){
-          
-          [FIRAnalytics
-           logEventWithName:@"close:quiz:detail"
-           parameters:@{@"no":[NSNumber numberWithInt:_quizNo],
-                        @"category":myQuizItem.category,
-                        @"sectorName":myQuizItem.sectorName}];
-          
-          
-          [self.navigationController popToRootViewControllerAnimated:YES];
-      }]];
-    
-    [alertController addAction:
-     [UIAlertAction
-      actionWithTitle:@"キャンセル"
-      style:UIAlertActionStyleCancel
-      handler:^(UIAlertAction *alert){
-          //終了ボタンを押した瞬間に回答できないようになっているので、キャンセルしたら再度回答できるようにする
-          isAnswerable = YES;
-      }]];
-    
-    [self presentViewController:alertController animated:YES completion:nil];
+    //終了する前のボタンで他に選択肢があれば、もう一度聞いてもいいかも（現状は不要）
+//    //ダイアログを開いてイェスならばチェックマークをつける
+//    UIAlertController * alertController =
+//    [UIAlertController
+//     alertControllerWithTitle:@"途中ですが"
+//     message:@"全て終了しますか？"
+//     preferredStyle:UIAlertControllerStyleAlert];
+//    [alertController addAction:
+//     [UIAlertAction
+//      actionWithTitle:@"終了する"
+//      style:UIAlertActionStyleDefault
+//      handler:^(UIAlertAction *alert){
+//
+//          [FIRAnalytics
+//           logEventWithName:@"close:quiz:detail"
+//           parameters:@{@"no":[NSNumber numberWithInt:_quizNo],
+//                        @"category":myQuizItem.category,
+//                        @"sectorName":myQuizItem.sectorName}];
+//
+//
+//          [self.navigationController popToRootViewControllerAnimated:YES];
+//      }]];
+//
+//    [alertController addAction:
+//     [UIAlertAction
+//      actionWithTitle:@"キャンセル"
+//      style:UIAlertActionStyleCancel
+//      handler:^(UIAlertAction *alert){
+//          //終了ボタンを押した瞬間に回答できないようになっているので、キャンセルしたら再度回答できるようにする
+//          isAnswerable = YES;
+//      }]];
+//
+//    [self presentViewController:alertController animated:YES completion:nil];
     
 }
 
@@ -572,13 +587,14 @@
         
     }
     
-    [self setNavigationBar];
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
     NSLog(@"%s, %d", __func__, self.quizNo);
+    [self setNavigationBar];
     
     [self configureView];
 }
@@ -593,23 +609,36 @@
 -(void)setNavigationBar{
     NSLog(@"%s", __func__);
     
-    UIBarButtonItem *btnRight = [[UIBarButtonItem alloc]
-                                 initWithTitle:@"メニュー"
-                                 //initWithTitle:@"途中終了"
-                                 style:UIBarButtonItemStylePlain
-                                 target:self
-                                 action:@selector(tappedRightNavItem)];
-//    UIBarButtonItem *btnLeft = [[UIBarButtonItem alloc]
-//                                initWithTitle:@"設定"
-//                                style:UIBarButtonItemStylePlain
-//                                target:self
-//                                action:@selector(goConfig)];
+    UIBarButtonItem *btnRight;
+    if(!self.isSingle){
+        NSLog(@"is not single");
+        btnRight = [[UIBarButtonItem alloc]
+                                     initWithTitle:@"メニュー"
+                                     style:UIBarButtonItemStylePlain
+                                     target:self
+                                     action:@selector(tappedRightNavItem)];
+    }else{
+        NSLog(@"is single");
+        btnRight = [[UIBarButtonItem alloc]
+                    initWithTitle:@"終了"
+                    style:UIBarButtonItemStylePlain
+                    target:self
+                    action:@selector(exitSingle)];
+    }
     
-    // ナビゲーションバーの左側に追加する。
+    // ナビゲーションバーの右側に追加する。
     self.navigationItem.rightBarButtonItem = btnRight;
     //self.navigationItem.leftBarButtonItem = btnLeft;
     
+    // 戻るボタンの挙動が不安定なので戻れないようにする→過去の問題一覧を作って戻れるようにする
+    self.navigationItem.hidesBackButton = YES;
     
+    
+}
+
+-(void)exitSingle{
+    NSLog(@"%d", self.isSingle);
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 -(void)goNext{

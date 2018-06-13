@@ -45,4 +45,7 @@
 //CSVファイルからクイズデータを読み込むメソッド
 - (BOOL)readFromCSV:(NSString *)filePath;
 - (BOOL)updateAllResult;
+
+//誤った回数が多い順に問題番号を返す
+-(NSArray *)getArrayWithSortByMistakes;
 @end

@@ -207,6 +207,10 @@ Apache License
 
 
 
+## DeployGateSDK
+
+Copyright 2015 DeployGate Inc. All rights reserved.
+
 ## Firebase
 
 Copyright 2018 Google

@@ -2,6 +2,7 @@ PODS:
   - Charts (3.0.5):
     - Charts/Core (= 3.0.5)
   - Charts/Core (3.0.5)
+  - DeployGateSDK (1.0.7)
   - Firebase/Core (5.0.1):
     - Firebase/CoreOnly
     - FirebaseAnalytics (= 5.0.0)
@@ -50,6 +51,7 @@ PODS:
 
 DEPENDENCIES:
   - Charts (~> 3.0.1)
+  - DeployGateSDK
   - Firebase/Core
   - Firebase/Database
   - Firebase/Messaging
@@ -58,6 +60,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Charts
+    - DeployGateSDK
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
@@ -73,6 +76,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Charts: 45cdc985b764c838b35ee47eb1365d15735f6d1a
+  DeployGateSDK: df3d5838db7e35c05a711c35a3bdeef3c2b016ba
   Firebase: d6861c2059d8c32d1e6dd8932e22ada346d90a3a
   FirebaseAnalytics: 19812b49fa5f283dd6b23edf8a14b5d477029ab8
   FirebaseCore: cafc814b2d84fc8733f09e653041cc2165332ad7
@@ -86,6 +90,6 @@ SPEC CHECKSUMS:
   Realm: 2627602ad6818451f0cb8c2a6e072f7f10a5f360
   RealmSwift: 4764ca7657f2193c256fb032c0b123926f70dbcd
 
-PODFILE CHECKSUM: b87d447d6fdb7795e362170c9e89b0a0a06dfe98
+PODFILE CHECKSUM: 2b629081c3ca10b7853f45166ae9a1e8133e6437
 
 COCOAPODS: 1.5.2

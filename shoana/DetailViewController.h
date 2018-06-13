@@ -11,6 +11,7 @@
 
 @interface DetailViewController : UIViewController<UIPickerViewDelegate, UIPickerViewDataSource>
 
+@property BOOL isSingle;//単発の問題のみ（不正解問題の回答モード）
 @property (weak, nonatomic) NSString *strConfigKey;//ConfigViewControllerで設定する問題モード
 //@property (strong, nonatomic) NSDate *detailItem;
 @property (strong, nonatomic) Quiz *quiz;//章番号はquiz.

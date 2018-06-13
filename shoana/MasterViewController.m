@@ -64,6 +64,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    
+    
 #ifdef QUIZ_FLAG
     self.title = @"証券アナリスト問題集";
 #else
@@ -82,6 +85,20 @@
     //全ファイル読み込み実行
     quizSector = [[QuizSector alloc]init];
     [quizSector readAll];//全csvデータ読み込み
+    
+    
+    NSLog(@"before transit kaitou = %@, seikai = %@",
+          ((QuizItem *)((Quiz *)quizSector.quizSectsArray[0]).quizItemsArray[0]).kaitou,
+          ((QuizItem *)((Quiz *)quizSector.quizSectsArray[0]).quizItemsArray[0]).seikai);
+    
+    
+    
+    //section=1における全questionNo,kaitou,seikai,strSentenceを見てみよう
+    for(QuizItem *quizItem in ((Quiz *)quizSector.quizSectsArray[0]).quizItemsArray){
+        NSLog(@"section = %@, questionNo = %d, kaitou=%@, seikai=%@, sentence=%@",
+              quizItem.sectorName, quizItem.intQuestionNo, quizItem.kaitou, quizItem.seikai, quizItem.question);
+    }
+    
 #else
     siwakeSector = [[SiwakeSector alloc]init];
     [siwakeSector readAll];
@@ -415,9 +432,7 @@
 //}
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    didUpdate = YES;//問題を解いた（解こうとした）場合に更新したことにする
-    
+    didUpdate = YES;//問題を解いた（解こうとした）場合に状態を更新したことにする(回答状況が変更@更新されたらtableを更新するため)
     
 #ifdef QUIZ_FLAG
     DetailViewController *controller = [[self storyboard] instantiateViewControllerWithIdentifier:@"detail"];

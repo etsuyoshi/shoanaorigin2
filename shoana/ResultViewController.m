@@ -10,6 +10,7 @@
 //
 @import Charts;
 #import "ResultModel.h"
+#import "ResultListViewController.h"
 
 
 /*
@@ -31,8 +32,8 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
-//    [self setupPieChartView];
-//    [pieChartView animateWithXAxisDuration:1.4 easingOption:ChartEasingOptionEaseOutBack];
+    [self setupPieChartView];
+    [pieChartView animateWithXAxisDuration:1.4 easingOption:ChartEasingOptionEaseOutBack];
 }
 
 - (void)viewDidLoad {
@@ -57,10 +58,20 @@
     //問題を全て解答した直後の成績画面であればルートに戻る終了ボタンを追加する
     if(self.isAfterQuiz){
         [self setNavigationBar];
+    }else{
+        //コンフィグ画面からん遷移した時のナビゲーションバー
+        [self setNavigationBarFromConfig];
     }
-   
-    
+}
 
+-(void)setNavigationBarFromConfig{
+    UIBarButtonItem *btnRight = [[UIBarButtonItem alloc]
+                                initWithTitle:@"弱点リスト"
+                                style:UIBarButtonItemStylePlain
+                                target:self
+                                action:@selector(tappedList)];
+    self.navigationItem.leftBarButtonItem = btnRight;
+    
 }
 
 -(void)setNavigationBar{
@@ -72,11 +83,18 @@
                                  action:@selector(tappedQuit)];
     // ナビゲーションバーの左側に追加する。
     self.navigationItem.rightBarButtonItem = btnRight;
-    //self.navigationItem.leftBarButtonItem = btnLeft;
+    
     
     
 }
 
+//誤答問題リストへ移動
+-(void)tappedList{
+    ResultListViewController *listView = [[ResultListViewController alloc]init];
+    [self.navigationController pushViewController:listView animated:YES];
+}
+
+//終了する
 -(void)tappedQuit{
     //ダイアログを開いてイェスならばチェックマークをつける
     UIAlertController * alertController =
@@ -183,21 +201,23 @@
                     }
                 }
                 
-                [arrDataForGraph addObject:[NSNumber numberWithInt:sumAnswer-sumCorrect]];
+                if(sumAnswer > 0){
+                    [arrDataForGraph addObject:[NSNumber numberWithInt:sumAnswer-sumCorrect]];
                 
 #ifdef QUIZ_FLAG
-                [arrLabelForGraph addObject:[NSString stringWithFormat:@"SECT.%d", myQuiz.section]];
+                    [arrLabelForGraph addObject:[NSString stringWithFormat:@"SECT.%d", myQuiz.section]];
 #else
-                [arrLabelForGraph addObject:[NSString stringWithFormat:@"SECT.%d", ((Siwake *)myQuiz).section]];
-                
-                NSLog(@"add section = %@",
-                      [NSString stringWithFormat:@"SECT.%d", ((Siwake *)myQuiz).section]);
+                    [arrLabelForGraph addObject:[NSString stringWithFormat:@"SECT.%d", ((Siwake *)myQuiz).section]];
+                    
+                    NSLog(@"add section = %@",
+                          [NSString stringWithFormat:@"SECT.%d", ((Siwake *)myQuiz).section]);
 #endif
                 
-                self.title = @"苦手セクション";
+                }
                 
             }
         }
+        self.title = @"苦手セクション";
         
     }
             
@@ -243,7 +263,7 @@
     }
     
     PieChartDataSet *dataSet =
-    [[PieChartDataSet alloc] initWithValues:values label:@"解答状況"];
+    [[PieChartDataSet alloc] initWithValues:values label:@""];
     dataSet.sliceSpace = 2.0;
     
     
@@ -316,20 +336,36 @@
     
     if(self.arrQuiz){
         int countAllQuiz = 0;
+        NSLog(@"array = %ld", self.arrQuiz.count);
         
 #ifdef QUIZ_FLAG
         for(int i = 0;i < self.arrQuiz.count;i++){
-            countAllQuiz += self.myQuiz.quizItemsArray.count;
+            @autoreleasepool {
+                Quiz *quiz = (Quiz *)self.arrQuiz[i];
+                NSArray *arrQuizItems = quiz.quizItemsArray;
+                for(int j = 0;j < arrQuizItems.count; j++){
+                    QuizItem *quizItem = arrQuizItems[j];
+                    NSLog(@"j = %d, quiz items kaitou = %@", j, quizItem.kaitou);
+                    if(!([quizItem isEqual:[NSNull null]] ||
+                       quizItem == nil)){
+                        countAllQuiz += (int)[quizItem.kaitou integerValue];
+                    }
+                    quizItem = nil;
+                }
+                quiz = nil;
+            }
+            //NSLog(@"i=%d, quizNo = %ld", i, ((Quiz *)self.arrQuiz[i]).kai);
+//            countAllQuiz += ((Quiz *)self.arrQuiz[i]).quizItemsArray.count;
         }
 #else
         for(int i =0;i < self.arrQuiz.count;i++){
-            countAllQuiz += ((Siwake *)self.myQuiz).siwakeItemsArray.count;
+            countAllQuiz += ((Siwake *)self.arrQuiz[i]).siwakeItemsArray.count;
         }
 #endif
-        
+        NSLog(@"countAllQuiz = %ld", countAllQuiz);
         NSString *strPlain =
         [NSString stringWithFormat:
-         @"全問題成績\n%d回回答中", countAllQuiz];
+         @"全問中誤答数\n(%ld問解答中)", countAllQuiz];
         
         centerText =
         [[NSMutableAttributedString alloc] initWithString:strPlain];
@@ -338,11 +374,15 @@
 #ifdef QUIZ_FLAG
         NSString *strPlain =
         [NSString stringWithFormat:
-         @"第%d章成績\n%ld回回答中", self.myQuiz.section,self.myQuiz.quizItemsArray.count];
+         @"第%d章成績\n%ld問解答中",
+         self.myQuiz.section,
+         self.myQuiz.quizItemsArray.count];
 #else
         NSString *strPlain =
         [NSString stringWithFormat:
-         @"第%d章成績\n%ld回回答中", ((Siwake *)self.myQuiz).section,((Siwake *)self.myQuiz).siwakeItemsArray.count];
+         @"第%d章成績\n%(%ld問解答中)",
+         ((Siwake *)self.myQuiz).section,
+         ((Siwake *)self.myQuiz).siwakeItemsArray.count];
         
 #endif
         
@@ -350,24 +390,28 @@
         [[NSMutableAttributedString alloc] initWithString:strPlain];
     }else{
         centerText =
-        [[NSMutableAttributedString alloc] initWithString:@"第１章成績\n100回回答中"];
+        [[NSMutableAttributedString alloc] initWithString:@"第１章成績\n100問回答中"];
     }
     //NSMutableAttributedString *centerText = [[NSMutableAttributedString alloc] initWithString:@"\n"];
     
     [centerText setAttributes:@{
                                 NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue-Light" size:13.f],
                                 NSParagraphStyleAttributeName: paragraphStyle
-                                } range:NSMakeRange(0, centerText.length)];
+                                }
+                        range:NSMakeRange(0, centerText.length)];
     
     [centerText addAttributes:@{
                                 NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue-Light" size:11.f],
                                 NSForegroundColorAttributeName: UIColor.grayColor
-                                } range:NSMakeRange(1, centerText.length - 1)];
+                                }
+                        range:NSMakeRange(1, centerText.length - 1)];
     
     [centerText addAttributes:@{
                                 NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue-LightItalic" size:11.f],
                                 NSForegroundColorAttributeName: [UIColor colorWithRed:51/255.f green:181/255.f blue:229/255.f alpha:1.f]
-                                } range:NSMakeRange(centerText.length - 3, 3)];
+                                }
+                        range:NSMakeRange(6 , centerText.length - 6)];
+                        //range:NSMakeRange(centerText.length - 6, 6)];
     
     pieChartView.centerAttributedText = centerText;
     

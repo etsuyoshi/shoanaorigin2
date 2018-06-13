@@ -13,6 +13,7 @@
 @synthesize explanation = _explanation;
 @synthesize kaitou = _kaitou;
 @synthesize seikai = _seikai;
+@synthesize gotou = _gotou;
 
 // 初期化処理
 - (id)init
@@ -30,6 +31,7 @@
         _explanation = nil;
         _kaitou = nil;
         _seikai = nil;
+        _gotou = nil;
     }
     return self;
 }
