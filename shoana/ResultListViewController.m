@@ -86,7 +86,7 @@
     @autoreleasepool{
 #ifdef QUIZ_FLAG
         for(Quiz *quiz in quizSectorResult.quizSectsArray){
-#elseif
+#else
         for(Siwake *quiz in SiwakeSectorResult.quizSectsArray){
 #endif
             [quiz updateAllResult];//なぜかデータ更新(userDef探索)しないと正しいデータが入らない
