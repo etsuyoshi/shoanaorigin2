@@ -444,7 +444,6 @@
                         parameters:@{@"row":[NSNumber numberWithInt:(int)indexPath.row],
                                      @"section":tmpQuiz.sectionName}];
     
-    
 #else
     SiwakeViewController *controller = [[SiwakeViewController alloc]init];
     //本来的にはここでインスタンス作成せずにviewdidloadで作成したグローバル変数から選択されたセル番号に応じたsiwakeセクションを返す
@@ -452,7 +451,13 @@
     controller.siwake = tmpSiwake;
 //    siwakeViewCon.quizNo = 0;//テスト：最初の番号を指定
 //    [self.navigationController pushViewController:siwakeViewCon animated:YES];
+    
+    [FIRAnalytics logEventWithName:@"tap:quiz:top"
+                        parameters:@{@"row":[NSNumber numberWithInt:(int)indexPath.row],
+                                     @"section":tmpSiwake.sectionName}];
 #endif
+    
+    
     
     //最初の1問目の選択
     if([self.strConfigKey isEqualToString:QUIZ_CONFIG_KEY_TEST] ||

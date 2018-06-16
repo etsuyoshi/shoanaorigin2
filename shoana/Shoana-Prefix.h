@@ -8,14 +8,12 @@
 
 #ifndef Shoana_Prefix_h
 #define Shoana_Prefix_h
-
-
 #endif /* Shoana_Prefix_h */
 
 
 
 //QUIZ_FLAGを宣言するいないで判定する
-#define QUIZ_FLAG
+//#define QUIZ_FLAG
 
 #ifndef QUIZ_FLAG
 #define SIWAKE_FLAG

@@ -7,6 +7,7 @@
 //
 
 #import "QuizSector.h"
+#import "Siwake.h"
 
 @interface SiwakeSector : QuizSector
 //@property (retain, nonatomic) NSMutableArray *quizSectsArray;//defined superclass

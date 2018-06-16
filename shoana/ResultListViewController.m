@@ -14,8 +14,12 @@
 #endif
 
 
-
+#ifdef QUIZ_FLAG
 #import "DetailViewController.h"
+#else
+#import "SiwakeViewController.h"
+#endif
+
 #import "ResultListViewController.h"
 @import Charts;
 
@@ -84,14 +88,22 @@
     arrSectionType = [NSMutableArray new];
     arrQuestionSectionNo = [NSMutableArray new];
     @autoreleasepool{
+        
+
+#ifdef QUIZ_FLAG
         for(Quiz *quiz in quizSectorResult.quizSectsArray){
             [quiz updateAllResult];//なぜかデータ更新(userDef探索)しないと正しいデータが入らない
+            NSArray *arrQuizItems = [(Quiz *)quiz getArrayWithSortByMistakes];
+#else
+        for(Siwake *siwake in siwakeSectorResult.quizSectsArray){
+            [siwake updateAllResult];//なぜかデータ更新(userDef探索)しないと正しいデータが入らない
+            NSArray *arrQuizItems = [(Siwake *)siwake getArrayWithSortByMistakes];
+#endif
+            
             NSMutableArray *arrCellContents = [NSMutableArray new];
             NSMutableArray *arrCellType = [NSMutableArray new];
             NSMutableArray *arrNo = [NSMutableArray new];
             
-            
-            NSArray *arrQuizItems = [(Quiz *)quiz getArrayWithSortByMistakes];
             int index_row = 0;
             for(QuizItem *tmpItem in arrQuizItems){
                 
@@ -151,8 +163,8 @@
     NSLog(@"quiz sector count = %ld", (int)quizSectorResult.quizSectsArray.count);
     return quizSectorResult.quizSectsArray.count;
 #else
-    NSLog(@"siwake sector count = %ld", siwakeSector.quizSectsArray.count);
-    return siwakeSector.quizSectsArray.count;
+    NSLog(@"siwake sector count = %ld", siwakeSectorResult.quizSectsArray.count);
+    return siwakeSectorResult.quizSectsArray.count;
 #endif
 }
 
@@ -160,7 +172,11 @@
     int numberOfRows = 0;
     //間違えた問題だけ表示する
     @autoreleasepool{
+#ifdef QUIZ_FLAG
         Quiz *tmpQuiz = ((Quiz *)quizSectorResult.quizSectsArray[section]);
+#else
+        Siwake *tmpQuiz = ((Siwake *)siwakeSectorResult.quizSectsArray[section]);
+#endif
         numberOfRows = (int)[[tmpQuiz getArrayWithSortByMistakes] count];
         tmpQuiz = nil;
     }
@@ -197,7 +213,7 @@
 #else
     SiwakeViewController *controller = [[SiwakeViewController alloc]init];
     //本来的にはここでインスタンス作成せずにviewdidloadで作成したグローバル変数から選択されたセル番号に応じたsiwakeセクションを返す
-    Siwake *tmpSiwake = siwakeSector.quizSectsArray[indexPath.section];
+    Siwake *tmpSiwake = siwakeSectorResult.quizSectsArray[indexPath.section];
     controller.siwake = tmpSiwake;
 #endif
     

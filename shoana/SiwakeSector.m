@@ -6,7 +6,7 @@
 //  Copyright © 2017年 com.endo. All rights reserved.
 //
 
-#import "Siwake.h"
+
 #import "SiwakeSector.h"
 
 @implementation SiwakeSector

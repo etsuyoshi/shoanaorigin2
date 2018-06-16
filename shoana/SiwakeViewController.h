@@ -13,5 +13,6 @@
 
 @property (strong, nonatomic) Siwake *siwake;
 @property int quizNo;
+@property BOOL isSingle;//単発の問題のみ（不正解問題の回答モード）
 
 @end

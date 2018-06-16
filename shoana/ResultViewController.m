@@ -60,17 +60,17 @@
         [self setNavigationBar];
     }else{
         //コンフィグ画面からん遷移した時のナビゲーションバー
-        [self setNavigationBarFromConfig];
+        [self setNavigationBarFromMaster];
     }
 }
 
--(void)setNavigationBarFromConfig{
+-(void)setNavigationBarFromMaster{
     UIBarButtonItem *btnRight = [[UIBarButtonItem alloc]
                                 initWithTitle:@"弱点リスト"
                                 style:UIBarButtonItemStylePlain
                                 target:self
                                 action:@selector(tappedList)];
-    self.navigationItem.leftBarButtonItem = btnRight;
+    self.navigationItem.rightBarButtonItem = btnRight;
     
 }
 
