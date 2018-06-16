@@ -84,7 +84,11 @@
     arrSectionType = [NSMutableArray new];
     arrQuestionSectionNo = [NSMutableArray new];
     @autoreleasepool{
+#ifdef QUIZ_FLAG
         for(Quiz *quiz in quizSectorResult.quizSectsArray){
+#elseif
+        for(Siwake *quiz in SiwakeSectorResult.quizSectsArray){
+#endif
             [quiz updateAllResult];//なぜかデータ更新(userDef探索)しないと正しいデータが入らない
             NSMutableArray *arrCellContents = [NSMutableArray new];
             NSMutableArray *arrCellType = [NSMutableArray new];
